@@ -226,7 +226,6 @@ export function Calc({
 
                     <AccordionContent>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-3 bg-gray-50 rounded-lg p-4">
-                        {/* Start + End calendars */}
                         <Calendar28
                           SubscriptionDate="Start"
                           defaultDate={new Date()}
@@ -242,8 +241,6 @@ export function Calc({
                             )
                           }
                         />
-
-                        {/* Workload slider + $ output */}
                         <div className="col-span-2 space-y-2">
                           <div className="flex justify-between items-center mb-4">
                             <Label className="text-sm font-medium text-gray-900">
@@ -321,8 +318,6 @@ export function Calc({
                 </Accordion>
               </div>
             </div>
-
-            {/* Submit Button */}
             <Button type="submit" className="w-full">
               Calculate
             </Button>

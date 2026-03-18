@@ -1,6 +1,7 @@
 import React from "react";
 import { Superannuation } from "../AnimationComponents/Superannuation";
 import { Button } from "@/components/ui/button";
+import { motion } from "motion/react";
 
 type referenceProp = {
   reference: any;
@@ -8,25 +9,43 @@ type referenceProp = {
 
 const HeroSection = ({ reference }: referenceProp) => {
   return (
-    <div className="bg-gradient-to-b from-[rgb(3,181,183)] to-[#9bdbdc] p-6 pb-16">
-      <div className="mt-24 flex flex-col items-center p-10">
-        <div className="flex rounded-full bg-[RGB(82,105,127)] w-24 h-24 justify-center items-center mb-5">
-          <Superannuation />
-        </div>
+    // Background: Your "Daylight Teal" (Bright & Engaging)
+    <div className="bg-gradient-to-t from-emerald-100 to-emerald-200 p-6 pb-24 relative">
+      <div
+        className="absolute inset-0 opacity-[0.05]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, #000000 1px, transparent 1px)",
+          backgroundSize: "24px 24px",
+        }}
+      />
 
-        <h2 className="text-center text-[RGB(255,255,255)] font-bold xs:text-[2rem] sm:text-[3rem] md:text-[3.7rem]">
+      <div className="mt-24 flex flex-col items-center p-10 relative z-10">
+        <motion.div
+          animate={{ y: [0, -10, 0] }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="flex rounded-full bg-[#a7d7f3] shadow-inner border border-[#4FB3B8]/30 w-24 h-24 justify-center items-center mb-5"
+        >
+          <Superannuation />
+        </motion.div>
+
+        <h2 className="text-center text-emerald-900 font-bold xs:text-[2rem] sm:text-[3rem] md:text-[3.7rem] drop-shadow-sm">
           What Your Super Owns
         </h2>
 
-        <h3 className="text-center text-[rgb(255,255,255)] xs:text-sm sm:text-lg md:text-xl max-w-xl mx-auto mt-3 leading-snug">
+        <h3 className="text-center text-emerald-800 xs:text-sm sm:text-lg md:text-xl max-w-xl mx-auto mt-3 leading-snug font-medium">
           See how your super is invested. Enter your balance to view your share
           of the companies, property, and assets it owns.
         </h3>
       </div>
 
-      <div className="flex justify-center mb-5">
+      <div className="flex justify-center mb-5 relative z-10">
         <Button
-          className="flex items-center justify-center gap-2 bg-[rgb(251,99,64)] hover:bg-[rgb(230,85,55)] active:bg-[rgb(200,70,40)] w-[15rem] h-12 text-[0.9rem] font-bold text-white"
+          className="bg-[#F59E0B] text-[#451a03] font-bold px-8 py-4 rounded-full text-lg h-auto hover:bg-[#d97706] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
           onClick={() => {
             reference.current?.scrollIntoView({
               behavior: "smooth",
@@ -38,7 +57,7 @@ const HeroSection = ({ reference }: referenceProp) => {
           Enter Your Details
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4"
+            className="w-4 h-4 ml-2"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

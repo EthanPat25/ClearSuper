@@ -31,7 +31,7 @@ const SuperGapCalcSection = () => {
               <TooltipTrigger asChild>
                 <Button
                   onClick={() => setInflation(true)}
-                  className="rounded-3xl w-36"
+                  className="rounded-xl w-36 bg-[rgb(82,105,127)] border p-5"
                   variant={inflation ? "default" : "outline"}
                 >
                   <p className="font-normal">Adjust For Inflation</p>
@@ -49,7 +49,7 @@ const SuperGapCalcSection = () => {
                 <Button
                   onClick={() => setInflation(false)}
                   variant={inflation ? "outline" : "default"}
-                  className="rounded-3xl w-36"
+                  className="rounded-xl w-36 border p-5"
                 >
                   <p className="font-normal">Ignore Inflation</p>
                 </Button>
@@ -60,7 +60,7 @@ const SuperGapCalcSection = () => {
             </Tooltip>
           </TooltipProvider>
 
-          <Info className="w-6 h-6 ml-2" />
+          <Info className="w-7 h-7 ml-2 hover:scale-105" />
         </div>
 
         <Breakdown />

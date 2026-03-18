@@ -20,7 +20,7 @@ const TheDifference = () => {
           alt="Picture Displaying Downward Arrow"
         />
       </div>
-      <MoneyBag initialSize={130}></MoneyBag>
+      <MoneyBag responsiveSizing="w-[7rem] h-[7rem]"></MoneyBag>
       <p className="text-sm text-[RGB(251,99,64)] font-semibold">
         The Difference
       </p>

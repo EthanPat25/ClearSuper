@@ -15,7 +15,10 @@ export const House = React.memo(({ initialSize }: sizeProps) => {
   // ✅ Use dynamic import to avoid SSR issues
   const Player: any = dynamic(
     () => import("@lordicon/react").then((mod) => mod.Player),
-    { ssr: false }
+    {
+      ssr: false,
+      loading: () => <div style={{ width: size, height: size }} />,
+    }
   );
 
   const playerRef = React.useRef<any>(null);

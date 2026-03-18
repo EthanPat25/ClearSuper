@@ -14,7 +14,12 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Learn } from "../AnimationComponents/Learn";
 import House from "./NavBarIcons/House";
+import Gap from "./NavBarIcons/Gap";
 import Pie from "./NavBarIcons/Pie";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
+import { motion } from "motion/react";
+import { IconBackground } from "@tabler/icons-react";
 
 const components: {
   title: string;
@@ -24,55 +29,113 @@ const components: {
   icon: React.ReactNode;
 }[] = [
   {
-    title: "What Your Fund Invests In",
-    coming: "Coming Soon",
-    href: "/holdings",
-    description:
-      "See exactly which companies and assets your super fund owns, in dollars.",
-    icon: <Pie></Pie>,
-  },
-  {
     title: "Super Gap Calculator",
     href: "/SuperGap",
-    description: "Learn How Breaks or Part Time Work Affect Your Super",
-    icon: <House></House>,
+    description: "See how career breaks or part-time work impact your super",
+    icon: <Gap></Gap>,
   },
   {
     title: "FHSS vs. Savings Calculator",
     href: "/FHSS",
-    description: "Compare FHSS vs. a savings account for your home deposit",
+    description: "Compare FHSS and a savings account for your home deposit",
     icon: <House></House>,
   },
 ];
 
 export function NavigationMenuDemo() {
+  const parentVariants = {
+    hover: {},
+  };
+
+  const arrowVariants = {
+    hover: { x: 2, scale: 1.05, IconBackground: "#F59E0B" },
+  };
+
+  const titleVariants = {
+    hover: { color: "#F59E0B" },
+  };
+
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>My Super</NavigationMenuTrigger>
+    <NavigationMenu className="flex justify-center w-full">
+      <NavigationMenuList className="gap-8">
+        <NavigationMenuItem className="hidden md:block">
+          <NavigationMenuLink
+            asChild
+            className={cn(
+              navigationMenuTriggerStyle(),
+              "text-[0.95rem] font-[500]",
+            )}
+          >
+            <Link href="/financeOverview">View Your Fund</Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Super Tools</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[350px] gap-3 p-4 md:w-[350px] grid-cols-1 lg:w-[400px] ">
-              {components.map((component, key) => (
-                <div key={key} className="flex items-center">
-                  <ListItem
+
+        <NavigationMenuItem className="hidden md:block">
+          <NavigationMenuTrigger className="text-[0.95rem] font-[500]">
+            Super Tools
+          </NavigationMenuTrigger>
+          <NavigationMenuContent className="rounded-2xl">
+            <div className="grid w-[450px] gap-x-6 p-6">
+              <ul className="flex flex-col gap-2 w-full">
+                {components.map((component) => (
+                  <NavigationMenuLink
                     key={component.title}
-                    title={component.title}
                     href={component.href}
-                    icon={component.icon}
                   >
-                    {component.description}
-                  </ListItem>
-                </div>
-              ))}
-            </ul>
+                    <motion.li
+                      variants={parentVariants}
+                      whileHover="hover"
+                      key={component.title}
+                      className="flex items-start gap-4 rounded-lg p-3 transition-colors hover:bg-slate-100 text-emerald-950"
+                    >
+                      <div className="flex items-center justify-center rounded-lg">
+                        <div className="flex justify-center items-center rounded-[1.1rem] h-[4rem] w-[4rem] bg-emerald-100">
+                          <div className="h-[2rem] w-[2rem]">
+                            {component.icon}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col flex-1 gap-[0.3rem]">
+                        <div className="flex items-center">
+                          <motion.p
+                            variants={titleVariants}
+                            className="text-[0.95rem] font-[500] text-gray-900"
+                          >
+                            {component.title}
+                          </motion.p>
+                          <motion.div variants={arrowVariants}>
+                            <ChevronRight className="ml-1 h-5 w-5 text-emerald-950 " />
+                          </motion.div>
+                        </div>
+                        <p className="text-[0.95rem] text-gray-500">
+                          {component.description}
+                        </p>
+                      </div>
+                    </motion.li>
+                  </NavigationMenuLink>
+                ))}
+              </ul>
+            </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Learn</NavigationMenuTrigger>
+        <NavigationMenuItem className="hidden md:block">
+          <NavigationMenuLink
+            asChild
+            className={cn(
+              navigationMenuTriggerStyle(),
+              "text-[0.95rem] font-[500]",
+            )}
+          >
+            <Link href="/financeOverview">About</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        {/*
+        <NavigationMenuItem className="hidden md:block">
+          <NavigationMenuTrigger className="text-sm font-[500]">
+            About
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -81,7 +144,7 @@ export function NavigationMenuDemo() {
                     className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <div className="mb-2 mt-4 text-lg font-medium">
+                    <div className="mb-2 mt-4 text-lg font-medium flex justify-center items-center">
                       <Learn></Learn>
                     </div>
                   </a>
@@ -102,16 +165,7 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-      </NavigationMenuList>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger
-            className={navigationMenuTriggerStyle()}
-            onClick={() => console.log("Clicked About")}
-          >
-            About
-          </NavigationMenuTrigger>
-        </NavigationMenuItem>
+        */}
       </NavigationMenuList>
     </NavigationMenu>
   );
@@ -131,7 +185,7 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, ListItemProps>(
             ref={ref}
             className={cn(
               "block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-              className
+              className,
             )}
             {...props}
           >
@@ -154,6 +208,6 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, ListItemProps>(
         </NavigationMenuLink>
       </li>
     );
-  }
+  },
 );
 ListItem.displayName = "ListItem";

@@ -11,7 +11,7 @@ const EverydayTerms = () => {
   return (
     <div className=" bg-gray-100 w-full rounded-[5rem] pb-16">
       <div className="flex flex-col items-center p-10 w-full">
-        <p className="text-sm text-[RGB(251,99,64)] font-semibold">
+        <p className="text-sm text-emerald-700 font-semibold">
           Understand Your Gap
         </p>
         <h2 className="font-bold xs:text-[1rem] sm:text-[1.7rem] md:text-[2.3rem]">
