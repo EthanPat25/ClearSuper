@@ -13,7 +13,6 @@ if (!supabaseUrl || !supabaseKey) {
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function GET(Request: NextRequest) {
-  console.log("✅ /api/holdings route hit:");
   const { searchParams } = new URL(Request.url);
   const fund = searchParams.get("fund");
   const option = searchParams.get("option");

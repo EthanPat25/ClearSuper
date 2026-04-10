@@ -1,786 +1,760 @@
 Effective Date,Option,Asset Class,Internal/External,Name/kind of investment item,Units,Value (AUD),Weighting,% Ownership / Property Held,Currency,Security Identifier
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,481.767274,0.00000021,,ARS,
-31/12/2024,Sustainable Growth,Cash,,Australia Government Bond,,15471762.92,0.00659228,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Australia & New Zealand Banking Group Ltd,,13718385.1,0.0058452,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Bank of America Corp,,-289936.802,-0.00012354,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Bank of Nova Scotia/Australia,,4249969.417,0.00181085,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Bank of Queensland Ltd,,634941.557,0.00027054,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,-960202.9702,-0.00040913,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Bendigo & Adelaide Bank Ltd,,5327239.167,0.00226986,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Canadian Imperial Bank of Commerce/Sydney,,622788.4727,0.00026536,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Citigroup Inc,,59837.67094,0.0000255,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Commonwealth Bank of Australia,,29896401.83,0.0127384,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Cooperatieve Rabobank UA/Australia,,7885248.949,0.00335979,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Credit Union Australia Ltd,,5138826.23,0.00218958,,AUD,
-31/12/2024,Sustainable Growth,Cash,,DBS Bank Ltd/Australia,,1492135.449,0.00063578,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Defence Bank Ltd,,935168.2722,0.00039846,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,-6456.009563,-0.00000275,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Heritage and People's Choice Ltd,,473840.8094,0.0002019,,AUD,
-31/12/2024,Sustainable Growth,Cash,,HSBC Holdings PLC,,-40155.26193,-0.00001711,,AUD,
-31/12/2024,Sustainable Growth,Cash,,IMB Ltd,,469839.7996,0.00020019,,AUD,
-31/12/2024,Sustainable Growth,Cash,,ING Bank Australia Ltd,,628033.4683,0.0002676,,AUD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,11335438.27,0.00482986,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Macquarie Bank Ltd,,3548189.443,0.00151183,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Macquarie Group Ltd,,495498.5792,0.00021112,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Merrill Lynch & Co,,-5012.623248,-0.00000214,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Mitsubishi UFJ Financial Group Inc,,1505463.805,0.00064146,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Mizuho Bank Ltd/Sydney,,1630896.581,0.0006949,,AUD,
-31/12/2024,Sustainable Growth,Cash,,MUFG Bank Ltd/Sydney,,288953.9873,0.00012312,,AUD,
-31/12/2024,Sustainable Growth,Cash,,National Australia Bank Ltd,,32460455.63,0.01383091,,AUD,
-31/12/2024,Sustainable Growth,Cash,,NBN Co Ltd,,283880.7344,0.00012096,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Newcastle Greater Mutual Group Ltd,,626249.8306,0.00026684,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Norfina Ltd,,6949684.798,0.00296116,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Oversea-Chinese Banking Corp Ltd,,447640.6347,0.00019073,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Police & Nurses Ltd,,2746971.68,0.00117044,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Royal Bank of Canada,,62743.41211,0.00002673,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Standard Chartered PLC,,1342921.904,0.0005722,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Sumitomo Mitsui Banking Corp/Sydney,,12193223.6,0.00519535,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Suncorp Bank,,3730338.622,0.00158944,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Teachers Mutual Bank Ltd,,1946068.626,0.00082919,,AUD,
-31/12/2024,Sustainable Growth,Cash,,UBS AG/Australia,,5597515.017,0.00238502,,AUD,
-31/12/2024,Sustainable Growth,Cash,,UBS Group AG,,-18674.96869,-0.00000796,,AUD,
-31/12/2024,Sustainable Growth,Cash,,United Overseas Bank Ltd/Sydney,,1510900.61,0.00064377,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Westpac Banking Corp,,17721393.8,0.00755082,,AUD,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,19453.41886,0.00000829,,CAD,
-31/12/2024,Sustainable Growth,Cash,,Citigroup Inc,,15628.77587,0.00000666,,CAD,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,-157.670718,-0.00000007,,CAD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,104714.111,0.00004462,,CAD,
-31/12/2024,Sustainable Growth,Cash,,Merrill Lynch & Co,,211.996371,0.00000009,,CAD,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,2180.785931,0.00000093,,CHF,
-31/12/2024,Sustainable Growth,Cash,,CIT Bank,,0.086375,0,,CHF,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,350053.3013,0.00014915,,CHF,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,8.310279,0,,CZK,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,107889.2214,0.00004597,,DKK,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,747838.2512,0.00031864,,EUR,
-31/12/2024,Sustainable Growth,Cash,,Citigroup Inc,,-48365.56643,-0.00002061,,EUR,
-31/12/2024,Sustainable Growth,Cash,,Credit Suisse Group AG,,0.000916,0,,EUR,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,8760.268418,0.00000373,,EUR,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,1900324.439,0.0008097,,EUR,
-31/12/2024,Sustainable Growth,Cash,,Macquarie Group Ltd,,-15.684596,-0.00000001,,EUR,
-31/12/2024,Sustainable Growth,Cash,,Merrill Lynch & Co,,-4795.669685,-0.00000204,,EUR,
-31/12/2024,Sustainable Growth,Cash,,Morgan Stanley,,-25719.80109,-0.00001096,,EUR,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,123755.0143,0.00005273,,GBP,
-31/12/2024,Sustainable Growth,Cash,,Citigroup Inc,,12176.72571,0.00000519,,GBP,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,-4401.797034,-0.00000188,,GBP,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,530297.7058,0.00022595,,GBP,
-31/12/2024,Sustainable Growth,Cash,,Merrill Lynch & Co,,202.729031,0.00000009,,GBP,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,0.003052,0,,HKD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,440527.2343,0.0001877,,HKD,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,59.372957,0.00000003,,ILS,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,3848.187364,0.00000164,,ILS,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,83475.47255,0.00003557,,JPY,
-31/12/2024,Sustainable Growth,Cash,,Citigroup Inc,,-23817.7023,-0.00001015,,JPY,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,-16121.93791,-0.00000687,,JPY,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,781291.2505,0.0003329,,JPY,
-31/12/2024,Sustainable Growth,Cash,,Merrill Lynch & Co,,233.393906,0.0000001,,JPY,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,188412.0719,0.00008028,,KRW,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,94487.83521,0.00004026,,MXN,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,1146.246571,0.00000049,,NOK,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,-5405.440329,-0.0000023,,NZD,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,0.788658,0,,NZD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,44405.75124,0.00001892,,NZD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,62.033342,0.00000003,,PLN,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,5889.69385,0.00000251,,RON,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,0.014143,0,,RUB,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,46.850159,0.00000002,,SEK,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,0.00061,0,,SEK,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,3044.842531,0.0000013,,SEK,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,9258.707146,0.00000394,,SGD,
-31/12/2024,Sustainable Growth,Cash,,CSI Bank,,0.000305,0,,SGD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,55493.55433,0.00002364,,SGD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,31373.35529,0.00001337,,TWD,
-31/12/2024,Sustainable Growth,Cash,,Barclays Bank PLC,,2471225.574,0.00105295,,USD,
-31/12/2024,Sustainable Growth,Cash,,BNP Paribas SA,,3028267.957,0.0012903,,USD,
-31/12/2024,Sustainable Growth,Cash,,Citigroup Inc,,275551.1547,0.00011741,,USD,
-31/12/2024,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,1064973.684,0.00045377,,USD,
-31/12/2024,Sustainable Growth,Cash,,HSBC Holdings PLC,,-946581.6504,-0.00040332,,USD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,28703519.33,0.01223013,,USD,
-31/12/2024,Sustainable Growth,Cash,,Macquarie Group Ltd,,-14.954802,-0.00000001,,USD,
-31/12/2024,Sustainable Growth,Cash,,Merrill Lynch & Co,,11455.33415,0.00000488,,USD,
-31/12/2024,Sustainable Growth,Cash,,Royal Bank of Canada,,2287903.987,0.00097484,,USD,
-31/12/2024,Sustainable Growth,Cash,,SSB Bank,,30370.40377,0.00001294,,USD,
-31/12/2024,Sustainable Growth,Cash,,Westpac Banking Corp,,-25633.4658,-0.00001092,,USD,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,0.000253,0,,ZA1,
-31/12/2024,Sustainable Growth,Cash,,JPMorgan Chase & Co,,1292.830917,0.00000055,,ZAR,
-31/12/2024,Sustainable Growth,Cash Total,,,,234548972.5,0.09993776,,,
-31/12/2024,Sustainable Growth,Fixed Income,Externally Managed,BlackRock Inc,,117294070.3,0.04997723,,,
-31/12/2024,Sustainable Growth,Fixed Income,Externally Managed,JPMorgan Chase & Co,,46077146.96,0.01963277,,,
-31/12/2024,Sustainable Growth,Fixed Income,Externally Managed,PIMCO Australia Pty Ltd,,204666835.8,0.08720544,,,
-31/12/2024,Sustainable Growth,Fixed Income,Externally Managed,Wellington,,6255203.983,0.00266525,,,
-31/12/2024,Sustainable Growth,Fixed Income Total,,,,374293257.1,0.15948068,,,
-31/12/2024,Sustainable Growth,Listed Equity,,3i Group PLC,23949.08565,1726528.08,0.00073565,,,GB00B1YW4409
-31/12/2024,Sustainable Growth,Listed Equity,,3M Co,2068.274019,431225.86,0.00018374,,,US88579Y1010
-31/12/2024,Sustainable Growth,Listed Equity,,a2 Milk Co Ltd/The,93348.24248,539552.8415,0.0002299,,,NZATME0002S8
-31/12/2024,Sustainable Growth,Listed Equity,,ABB Ltd,30730.95693,2687497.092,0.0011451,,,CH0012221716
-31/12/2024,Sustainable Growth,Listed Equity,,Abbott Laboratories,10763.35662,1966313.926,0.00083782,,,US0028241000
-31/12/2024,Sustainable Growth,Listed Equity,,AbbVie Inc,4107.232702,1178801.992,0.00050227,,,US00287Y1091
-31/12/2024,Sustainable Growth,Listed Equity,,Accent Group Ltd,65577.39234,153451.0981,0.00006538,,,AU000000AX19
-31/12/2024,Sustainable Growth,Listed Equity,,Accenture PLC,21957.696,12475971.7,0.00531582,,,IE00B4BNMY34
-31/12/2024,Sustainable Growth,Listed Equity,,ACS Actividades de Construccion y Servicios SA,5991.90015,485425.6479,0.00020683,,,ES0167050915
-31/12/2024,Sustainable Growth,Listed Equity,,adidas AG,2049.75907,811780.3411,0.00034589,,,DE000A1EWWW0
-31/12/2024,Sustainable Growth,Listed Equity,,Adobe Inc,1949.469767,1400129.561,0.00059657,,,US00724F1012
-31/12/2024,Sustainable Growth,Listed Equity,,Adriatic Metals PLC,56452.62091,220165.2216,0.00009381,,,AU0000004772
-31/12/2024,Sustainable Growth,Listed Equity,,Advanced Drainage Systems Inc,4320.188205,806611.8977,0.00034369,,,US00790R1041
-31/12/2024,Sustainable Growth,Listed Equity,,Advanced Micro Devices Inc,3544.841147,691563.2137,0.00029466,,,US0079031078
-31/12/2024,Sustainable Growth,Listed Equity,,Advantest Corp,2468.659776,233354.7326,0.00009943,,,JP3122400009
-31/12/2024,Sustainable Growth,Listed Equity,,Adyen NV,4176.783311,10038127.95,0.00427709,,,NL0012969182
-31/12/2024,Sustainable Growth,Listed Equity,,AECOM,554.676993,95696.67818,0.00004077,,,US00766T1007
-31/12/2024,Sustainable Growth,Listed Equity,,Aflac Inc,716.682791,119734.5816,0.00005102,,,US0010551028
-31/12/2024,Sustainable Growth,Listed Equity,,AGCO Corp,11959.50781,1805660.645,0.00076936,,,US0010841023
-31/12/2024,Sustainable Growth,Listed Equity,,Agilent Technologies Inc,20704.09687,4492269.033,0.00191409,,,US00846U1016
-31/12/2024,Sustainable Growth,Listed Equity,,AIA Group Ltd,275631.7702,3226526.318,0.00137477,,,HK0000069689
-31/12/2024,Sustainable Growth,Listed Equity,,Airbnb Inc,8374.156834,1777352.74,0.0007573,,,US0090661010
-31/12/2024,Sustainable Growth,Listed Equity,,Air Canada,27000.9663,674977.1604,0.0002876,,,CA0089118776
-31/12/2024,Sustainable Growth,Listed Equity,,Air Liquide SA,9593.653758,2517771.739,0.00107278,,,FR0000120073
-31/12/2024,Sustainable Growth,Listed Equity,,Akamai Technologies Inc,3476.953003,537140.5215,0.00022887,,,US00971T1016
-31/12/2024,Sustainable Growth,Listed Equity,,Allegion plc,9641.659337,2035002.896,0.00086708,,,IE00BFRT3W74
-31/12/2024,Sustainable Growth,Listed Equity,,Allstate Corp/The,1971.841996,613989.206,0.00026161,,,US0200021014
-31/12/2024,Sustainable Growth,Listed Equity,,Ally Financial Inc,1899.325115,110465.4739,0.00004707,,,US02005N1000
-31/12/2024,Sustainable Growth,Listed Equity,,Alphabet Inc,15368.95002,4727227.394,0.0020142,,,US02079K1079
-31/12/2024,Sustainable Growth,Listed Equity,,Alphabet Inc,46055.06774,14080956.67,0.00599968,,,US02079K3059
-31/12/2024,Sustainable Growth,Listed Equity,,Alpha HPA Ltd,567069.1904,504691.5795,0.00021504,,,AU0000033060
-31/12/2024,Sustainable Growth,Listed Equity,,ALS Ltd,373701.0557,5635411.92,0.00240116,,,AU000000ALQ6
-31/12/2024,Sustainable Growth,Listed Equity,,Alstom SA,3318.03303,119641.9451,0.00005098,,,FR0010220475
-31/12/2024,Sustainable Growth,Listed Equity,,Amazon.com Inc,84237.03715,29848604.67,0.01271804,,,US0231351067
-31/12/2024,Sustainable Growth,Listed Equity,,Amcor PLC,84451.7571,1264242.804,0.00053867,,,AU000000AMC4
-31/12/2024,Sustainable Growth,Listed Equity,,American Water Works Co Inc,15848.13957,3186521.677,0.00135773,,,US0304201033
-31/12/2024,Sustainable Growth,Listed Equity,,Amotiv Ltd,4467.142995,47351.71575,0.00002018,,,AU0000340770
-31/12/2024,Sustainable Growth,Listed Equity,,AMP Ltd,343576.4396,544568.6567,0.00023203,,,AU000000AMP6
-31/12/2024,Sustainable Growth,Listed Equity,,Analog Devices Inc,12495.37996,4287762.946,0.00182695,,,US0326541051
-31/12/2024,Sustainable Growth,Listed Equity,,Annaly Capital Management Inc,12712.05493,375725.7595,0.00016009,,,US0357108390
-31/12/2024,Sustainable Growth,Listed Equity,,ANTA Sports Products Ltd,212990.3421,3447593.639,0.00146897,,,KYG040111059
-31/12/2024,Sustainable Growth,Listed Equity,,ANZ Group Holdings Ltd,770974.5927,22003614.88,0.00937541,,,AU000000ANZ3
-31/12/2024,Sustainable Growth,Listed Equity,,A O Smith Corp,3089.682001,340381.5023,0.00014503,,,US8318652091
-31/12/2024,Sustainable Growth,Listed Equity,,AP Moller - Maersk A/S,253.809083,656882.9103,0.00027989,,,DK0010244425
-31/12/2024,Sustainable Growth,Listed Equity,,AP Moller - Maersk A/S,440.501479,1176120.349,0.00050113,,,DK0010244508
-31/12/2024,Sustainable Growth,Listed Equity,,Apple Inc,56155.83825,22712662.55,0.00967752,,,US0378331005
-31/12/2024,Sustainable Growth,Listed Equity,,Applied Materials Inc,4326.326257,1136381.229,0.00048419,,,US0382221051
-31/12/2024,Sustainable Growth,Listed Equity,,AppLovin Corp,459.787883,240479.8711,0.00010246,,,US03831W1080
-31/12/2024,Sustainable Growth,Listed Equity,,Aptiv PLC,27455.4665,2681913.291,0.00114272,,,JE00BTDN8H13
-31/12/2024,Sustainable Growth,Listed Equity,,Arafura Rare Earths Ltd,261760.3487,30102.44381,0.00001283,,,AU000000ARU5
-31/12/2024,Sustainable Growth,Listed Equity,,ARB Corp Ltd,35708.87288,1450137.328,0.00061788,,,AU000000ARB5
-31/12/2024,Sustainable Growth,Listed Equity,,Arcadium Lithium PLC,48556.73999,398165.2679,0.00016965,,,AU0000305724
-31/12/2024,Sustainable Growth,Listed Equity,,Argenx SE,105.689497,106056.4552,0.00004519,,,NL0010832176
-31/12/2024,Sustainable Growth,Listed Equity,,Arista Networks Inc,3395.178648,606103.6818,0.00025825,,,US0404132054
-31/12/2024,Sustainable Growth,Listed Equity,,Asahi Kasei Corp,38341.37215,430478.1029,0.00018342,,,JP3111200006
-31/12/2024,Sustainable Growth,Listed Equity,,ASML Holding NV,7410.562026,8411685.174,0.00358409,,,NL0010273215
-31/12/2024,Sustainable Growth,Listed Equity,,Assa Abloy AB,89667.64825,4283403.939,0.00182509,,,SE0007100581
-31/12/2024,Sustainable Growth,Listed Equity,,Associated British Foods PLC,10618.32286,438804.738,0.00018697,,,GB0006731235
-31/12/2024,Sustainable Growth,Listed Equity,,Astellas Pharma Inc,25843.78203,407553.7888,0.00017365,,,JP3942400007
-31/12/2024,Sustainable Growth,Listed Equity,,AstraZeneca PLC,8067.022856,1708142.168,0.00072781,,,GB0009895292
-31/12/2024,Sustainable Growth,Listed Equity,,ASX Ltd,55345.96691,3601915.526,0.00153472,,,AU000000ASX7
-31/12/2024,Sustainable Growth,Listed Equity,,Atlassian Corp,2149.276917,844853.4544,0.00035998,,,US0494681010
-31/12/2024,Sustainable Growth,Listed Equity,,AT&T Inc,25044.55343,921044.1408,0.00039244,,,US00206R1023
-31/12/2024,Sustainable Growth,Listed Equity,,AUB Group Ltd,28189.62163,879516.1947,0.00037475,,,AU000000AUB9
-31/12/2024,Sustainable Growth,Listed Equity,,Auckland International Airport Ltd,107650.7122,835369.527,0.00035594,,,NZAIAE0002S6
-31/12/2024,Sustainable Growth,Listed Equity,,Audinate Group Ltd,9227.79663,68377.97303,0.00002913,,,AU000000AD88
-31/12/2024,Sustainable Growth,Listed Equity,,Aussie Broadband Ltd,78200.57342,279958.0528,0.00011929,,,AU0000106643
-31/12/2024,Sustainable Growth,Listed Equity,,Australian Clinical Labs Ltd,30079.65226,103474.0038,0.00004409,,,AU0000148496
-31/12/2024,Sustainable Growth,Listed Equity,,Australian Ethical Investment Ltd,52285.65925,281296.8468,0.00011986,,,AU000000AEF4
-31/12/2024,Sustainable Growth,Listed Equity,,Australian Finance Group Ltd,57385.77721,86652.52359,0.00003692,,,AU000000AFG9
-31/12/2024,Sustainable Growth,Listed Equity,,Autodesk Inc,408.871775,195187.3239,0.00008317,,,US0527691069
-31/12/2024,Sustainable Growth,Listed Equity,,Automatic Data Processing Inc,3129.026266,1479382.797,0.00063034,,,US0530151036
-31/12/2024,Sustainable Growth,Listed Equity,,Aviva PLC,132795.381,1259266.314,0.00053655,,,GB00BPQY8M80
-31/12/2024,Sustainable Growth,Listed Equity,,Axon Enterprise Inc,470.58827,451716.0987,0.00019247,,,US05464C1018
-31/12/2024,Sustainable Growth,Listed Equity,,Ball Corp,29772.77045,2651009.989,0.00112956,,,US0584981064
-31/12/2024,Sustainable Growth,Listed Equity,,Bandai Namco Holdings Inc,14426.23057,560262.7219,0.00023872,,,JP3778630008
-31/12/2024,Sustainable Growth,Listed Equity,,Bank of America Corp,43379.75246,3079286.312,0.00131204,,,US0605051046
-31/12/2024,Sustainable Growth,Listed Equity,,Bank of New York Mellon Corp/The,16409.6444,2036264.203,0.00086762,,,US0640581007
-31/12/2024,Sustainable Growth,Listed Equity,,Bank of Nova Scotia/The,2314.36854,200621.8238,0.00008548,,,CA0641491075
-31/12/2024,Sustainable Growth,Listed Equity,,Bank of Queensland Ltd,53255.87498,356814.3624,0.00015203,,,AU000000BOQ8
-31/12/2024,Sustainable Growth,Listed Equity,,Bapcor Ltd,108445.5107,511862.8106,0.0002181,,,AU000000BAP9
-31/12/2024,Sustainable Growth,Listed Equity,,Barclays PLC,96871.75252,525438.6036,0.00022388,,,GB0031348658
-31/12/2024,Sustainable Growth,Listed Equity,,Bayer AG,913.404117,29504.57304,0.00001257,,,DE000BAY0017
-31/12/2024,Sustainable Growth,Listed Equity,,Becton Dickinson & Co,28567.47571,10467743.22,0.00446015,,,US0758871091
-31/12/2024,Sustainable Growth,Listed Equity,,Bega Cheese Ltd,42884.42452,247443.1295,0.00010543,,,AU000000BGA8
-31/12/2024,Sustainable Growth,Listed Equity,,Bellevue Gold Ltd,165807.5699,186533.5198,0.00007948,,,AU0000019374
-31/12/2024,Sustainable Growth,Listed Equity,,Bendigo & Adelaide Bank Ltd,73953.5634,968791.6806,0.00041279,,,AU000000BEN6
-31/12/2024,Sustainable Growth,Listed Equity,,BioMarin Pharmaceutical Inc,2387.656877,253477.6502,0.000108,,,US09061G1013
-31/12/2024,Sustainable Growth,Listed Equity,,Bio-Rad Laboratories Inc,3133.655003,1662661.723,0.00070843,,,US0905722072
-31/12/2024,Sustainable Growth,Listed Equity,,BKW AG,4801.543264,1285306.316,0.00054765,,,CH0130293662
-31/12/2024,Sustainable Growth,Listed Equity,,Block Inc,5893.189639,830821.8753,0.000354,,,AU0000187353
-31/12/2024,Sustainable Growth,Listed Equity,,BlueScope Steel Ltd,123611.5077,2310299.079,0.00098438,,,AU000000BSL0
-31/12/2024,Sustainable Growth,Listed Equity,,BNP Paribas SA,1139.440778,112853.2773,0.00004809,,,FR0000131104
-31/12/2024,Sustainable Growth,Listed Equity,,Boliden AB,3922.854675,178047.149,0.00007586,,,SE0020050417
-31/12/2024,Sustainable Growth,Listed Equity,,Booking Holdings Inc,461.330796,3701986.84,0.00157736,,,US09857L1089
-31/12/2024,Sustainable Growth,Listed Equity,,Booz Allen Hamilton Holding Corp,2582.063834,536722.3074,0.00022869,,,US0995021062
-31/12/2024,Sustainable Growth,Listed Equity,,Bouygues SA,9044.552254,431712.9265,0.00018395,,,FR0000120503
-31/12/2024,Sustainable Growth,Listed Equity,,BPER Banca SPA,24500.67682,251348.2537,0.0001071,,,IT0000066123
-31/12/2024,Sustainable Growth,Listed Equity,,BrainChip Holdings Ltd,231951.9714,90461.26886,0.00003854,,,AU000000BRN8
-31/12/2024,Sustainable Growth,Listed Equity,,Brambles Ltd,649576.7115,12497855.93,0.00532515,,,AU000000BXB1
-31/12/2024,Sustainable Growth,Listed Equity,,Breville Group Ltd,76577.44862,2709310.132,0.0011544,,,AU000000BRG2
-31/12/2024,Sustainable Growth,Listed Equity,,Bristol-Myers Squibb Co,6652.26664,607691.5161,0.00025893,,,US1101221083
-31/12/2024,Sustainable Growth,Listed Equity,,Broadcom Inc,13820.63746,5175121.683,0.00220504,,,US11135F1012
-31/12/2024,Sustainable Growth,Listed Equity,,Brother Industries Ltd,3085.82472,85545.00916,0.00003645,,,JP3830000000
-31/12/2024,Sustainable Growth,Listed Equity,,Brown & Brown Inc,6497.203948,1070572.152,0.00045615,,,US1152361010
-31/12/2024,Sustainable Growth,Listed Equity,,Bunge Global SA,6098.361103,765902.5441,0.00032634,,,CH1300646267
-31/12/2024,Sustainable Growth,Listed Equity,,Cadence Design Systems Inc,357.184211,173333.7138,0.00007385,,,US1273871087
-31/12/2024,Sustainable Growth,Listed Equity,,Calix Ltd,7912.159936,5934.119952,0.00000253,,,AU0000017840
-31/12/2024,Sustainable Growth,Listed Equity,,Canadian Imperial Bank of Commerce,7020.251238,716876.6813,0.00030545,,,CA1360691010
-31/12/2024,Sustainable Growth,Listed Equity,,Canadian Pacific Kansas City Ltd,22069.48802,2579615.357,0.00109914,,,CA13646K1084
-31/12/2024,Sustainable Growth,Listed Equity,,Canadian Tire Corp Ltd,9026.037306,1532819.322,0.00065311,,,CA1366812024
-31/12/2024,Sustainable Growth,Listed Equity,,Capricorn Metals Ltd,24189.42738,151909.6039,0.00006473,,,AU000000CMM9
-31/12/2024,Sustainable Growth,Listed Equity,,Capstone Copper Corp,59413.49421,582846.3781,0.00024834,,,AU0000318552
-31/12/2024,Sustainable Growth,Listed Equity,,Cardinal Health Inc,3608.100554,689219.1749,0.00029367,,,US14149Y1082
-31/12/2024,Sustainable Growth,Listed Equity,,CAR Group Ltd,97827.07295,3524709.438,0.00150183,,,AU000000CAR3
-31/12/2024,Sustainable Growth,Listed Equity,,Carlsberg AS,3129.797722,484328.8687,0.00020637,,,DK0010181759
-31/12/2024,Sustainable Growth,Listed Equity,,Carnival Corp,22390.74417,901198.9706,0.00038399,,,PA1436583006
-31/12/2024,Sustainable Growth,Listed Equity,,Carvana Co,178.206378,58531.93872,0.00002494,,,US1468691027
-31/12/2024,Sustainable Growth,Listed Equity,,Caterpillar Inc,518.418553,303741.4456,0.00012942,,,US1491231015
-31/12/2024,Sustainable Growth,Listed Equity,,CBRE Group Inc,17962.30237,3808884.24,0.00162291,,,US12504L1098
-31/12/2024,Sustainable Growth,Listed Equity,,CDW Corp/DE,4018.515242,1129584.739,0.0004813,,,US12514G1085
-31/12/2024,Sustainable Growth,Listed Equity,,Centene Corp,9385.535886,918316.6652,0.00039128,,,US15135B1017
-31/12/2024,Sustainable Growth,Listed Equity,,Cettire Ltd,26470.80553,39970.91635,0.00001703,,,AU0000122210
-31/12/2024,Sustainable Growth,Listed Equity,,Chalice Mining Ltd,56939.58175,62918.23783,0.00002681,,,AU000000CHN7
-31/12/2024,Sustainable Growth,Listed Equity,,Challenger Ltd,95442.84113,573611.4752,0.00024441,,,AU000000CGF5
-31/12/2024,Sustainable Growth,Listed Equity,,Champion Iron Ltd,397275.5776,2284334.571,0.00097332,,,AU000000CIA2
-31/12/2024,Sustainable Growth,Listed Equity,,Charles Schwab Corp/The,69679.45353,8329122.752,0.00354891,,,US8085131055
-31/12/2024,Sustainable Growth,Listed Equity,,Check Point Software Technologies Ltd,1572.227695,474093.3732,0.000202,,,IL0010824113
-31/12/2024,Sustainable Growth,Listed Equity,,Chorus Ltd,103578.8671,822416.205,0.00035042,,,NZCNUE0001S2
-31/12/2024,Sustainable Growth,Listed Equity,,Cintas Corp,6718.611871,1982541.206,0.00084473,,,US1729081059
-31/12/2024,Sustainable Growth,Listed Equity,,Cisco Systems Inc,14311.2836,1368372.752,0.00058304,,,US17275R1023
-31/12/2024,Sustainable Growth,Listed Equity,,Citigroup Inc,19133.65618,2175269.413,0.00092685,,,US1729674242
-31/12/2024,Sustainable Growth,Listed Equity,,CK Asset Holdings Ltd,57473.48541,381202.5197,0.00016242,,,KYG2177B1014
-31/12/2024,Sustainable Growth,Listed Equity,,Clarity Pharmaceuticals Ltd,126656.9317,528159.4053,0.00022504,,,AU0000165375
-31/12/2024,Sustainable Growth,Listed Equity,,Cleanaway Waste Management Ltd,694630.6996,1840771.354,0.00078432,,,AU000000CWY3
-31/12/2024,Sustainable Growth,Listed Equity,,Coca-Cola HBC AG,10470.20328,578605.8515,0.00024654,,,CH0198251305
-31/12/2024,Sustainable Growth,Listed Equity,,Cochlear Ltd,20253.68822,5871139.141,0.0025016,,,AU000000COH5
-31/12/2024,Sustainable Growth,Listed Equity,,Codan Ltd,17397.17611,280094.5353,0.00011934,,,AU000000CDA3
-31/12/2024,Sustainable Growth,Listed Equity,,Coles Group Ltd,316665.6996,5981815.066,0.00254876,,,AU0000030678
-31/12/2024,Sustainable Growth,Listed Equity,,Colgate-Palmolive Co,18470.97532,2712099.439,0.00115558,,,US1941621039
-31/12/2024,Sustainable Growth,Listed Equity,,Comcast Corp,19861.91081,1203936.867,0.00051298,,,US20030N1019
-31/12/2024,Sustainable Growth,Listed Equity,,Commonwealth Bank of Australia,513681.6665,78721715.39,0.03354213,,,AU000000CBA7
-31/12/2024,Sustainable Growth,Listed Equity,,Computershare Ltd,84081.90404,2854580.642,0.00121629,,,AU000000CPU5
-31/12/2024,Sustainable Growth,Listed Equity,,Constellation Energy Corp,287.753155,103970.376,0.0000443,,,US21037T1097
-31/12/2024,Sustainable Growth,Listed Equity,,Constellation Software Inc/Canada,34.715528,173289.1467,0.00007384,,,CA21037X1006
-31/12/2024,Sustainable Growth,Listed Equity,,Continental AG,3593.442886,389559.4885,0.00016599,,,DE0005439004
-31/12/2024,Sustainable Growth,Listed Equity,,Cooper Cos Inc/The,19622.60285,2913519.956,0.00124141,,,US2166485019
-31/12/2024,Sustainable Growth,Listed Equity,,Corebridge Financial Inc,29226.61738,1412828.323,0.00060198,,,US21871X1090
-31/12/2024,Sustainable Growth,Listed Equity,,Corpay Inc,762.198706,416608.7171,0.00017751,,,US2199481068
-31/12/2024,Sustainable Growth,Listed Equity,,Costco Wholesale Corp,2968.563381,4393128.592,0.00187185,,,US22160K1051
-31/12/2024,Sustainable Growth,Listed Equity,,Credit Agricole SA,61147.69417,1359123.996,0.0005791,,,FR0000045072
-31/12/2024,Sustainable Growth,Listed Equity,,Credit Corp Group Ltd,9969.726303,159415.9236,0.00006792,,,AU000000CCP3
-31/12/2024,Sustainable Growth,Listed Equity,,Crowdstrike Holdings Inc,331.726157,183321.3635,0.00007811,,,US22788C1053
-31/12/2024,Sustainable Growth,Listed Equity,,CSL Ltd,178811.5944,50349768.74,0.02145327,,,AU000000CSL8
-31/12/2024,Sustainable Growth,Listed Equity,,CyberArk Software Ltd,59.402126,31962.87987,0.00001362,,,IL0011334468
-31/12/2024,Sustainable Growth,Listed Equity,,Dai-ichi Life Holdings Inc,3934.426518,171236.6876,0.00007296,,,JP3476480003
-31/12/2024,Sustainable Growth,Listed Equity,,Daikin Industries Ltd,617.164944,118351.8004,0.00005043,,,JP3481800005
-31/12/2024,Sustainable Growth,Listed Equity,,Dai Nippon Printing Co Ltd,27772.42248,633477.0455,0.00026991,,,JP3493800001
-31/12/2024,Sustainable Growth,Listed Equity,,Daito Trust Construction Co Ltd,1465.766742,264741.5893,0.0001128,,,JP3486800000
-31/12/2024,Sustainable Growth,Listed Equity,,Daiwa House Industry Co Ltd,6711.668766,335081.1509,0.00014277,,,JP3505000004
-31/12/2024,Sustainable Growth,Listed Equity,,Danaher Corp,26664.90605,9886019.839,0.00421228,,,US2358511028
-31/12/2024,Sustainable Growth,Listed Equity,,Danone SA,1634.715645,178037.1432,0.00007586,,,FR0000120644
-31/12/2024,Sustainable Growth,Listed Equity,,Data#3 Ltd,17284.51546,110448.0538,0.00004706,,,AU000000DTL4
-31/12/2024,Sustainable Growth,Listed Equity,,Datadog Inc,3091.996369,713583.7206,0.00030405,,,US23804L1035
-31/12/2024,Sustainable Growth,Listed Equity,,De Grey Mining Ltd,194006.827,342422.0533,0.0001459,,,AU000000DEG6
-31/12/2024,Sustainable Growth,Listed Equity,,Dell Technologies Inc,217.550643,40491.86025,0.00001725,,,US24703L2025
-31/12/2024,Sustainable Growth,Listed Equity,,Deterra Royalties Ltd,60214.15247,223996.6472,0.00009544,,,AU0000107484
-31/12/2024,Sustainable Growth,Listed Equity,,Deutsche Bank AG,31593.44494,879233.6845,0.00037463,,,DE0005140008
-31/12/2024,Sustainable Growth,Listed Equity,,Deutsche Boerse AG,602.507277,224104.7647,0.00009549,,,DE0005810055
-31/12/2024,Sustainable Growth,Listed Equity,,Deutsche Telekom AG,10254.967,495491.0604,0.00021112,,,DE0005557508
-31/12/2024,Sustainable Growth,Listed Equity,,Dexcom Inc,1278.30289,160564.6714,0.00006841,,,US2521311074
-31/12/2024,Sustainable Growth,Listed Equity,,DNB Bank ASA,8151.977454,263041.6239,0.00011208,,,NO0010161896
-31/12/2024,Sustainable Growth,Listed Equity,,DocuSign Inc,6100.675471,886206.4989,0.0003776,,,US2561631068
-31/12/2024,Sustainable Growth,Listed Equity,,Dollar General Corp,467.502445,57249.50854,0.00002439,,,US2566771059
-31/12/2024,Sustainable Growth,Listed Equity,,Domain Holdings Australia Ltd,15287.01249,38676.1416,0.00001648,,,AU000000DHG9
-31/12/2024,Sustainable Growth,Listed Equity,,Domino's Pizza Enterprises Ltd,8856.4612,260734.2177,0.00011109,,,AU000000DMP0
-31/12/2024,Sustainable Growth,Listed Equity,,DoorDash Inc,6879.846213,1863997.745,0.00079422,,,US25809K1051
-31/12/2024,Sustainable Growth,Listed Equity,,Dover Corp,2328.254751,705451.9784,0.00030058,,,US2600031080
-31/12/2024,Sustainable Growth,Listed Equity,,Downer EDI Ltd,806989.7942,4236696.42,0.00180519,,,AU000000DOW2
-31/12/2024,Sustainable Growth,Listed Equity,,DuPont de Nemours Inc,1487.367515,183173.3365,0.00007805,,,US26614N1028
-31/12/2024,Sustainable Growth,Listed Equity,,Dynatrace Inc,10187.85031,894306.1716,0.00038105,,,US2681501092
-31/12/2024,Sustainable Growth,Listed Equity,,Eagers Automotive Ltd,22730.76844,269132.2983,0.00011467,,,AU000000APE3
-31/12/2024,Sustainable Growth,Listed Equity,,Eaton Corp PLC,249.180346,133562.9182,0.00005691,,,IE00B8KQN827
-31/12/2024,Sustainable Growth,Listed Equity,,eBay Inc,84256.78915,8430441.877,0.00359208,,,US2786421030
-31/12/2024,Sustainable Growth,Listed Equity,,EBOS Group Ltd,18375.5449,624584.7713,0.00026613,,,NZEBOE0001S6
-31/12/2024,Sustainable Growth,Listed Equity,,EBR Systems Inc,353584.2362,362423.8422,0.00015442,,,AU0000182552
-31/12/2024,Sustainable Growth,Listed Equity,,Ecolab Inc,21350.35193,8080133.192,0.00344282,,,US2788651006
-31/12/2024,Sustainable Growth,Listed Equity,,Edwards Lifesciences Corp,22842.11525,2731166.584,0.00116371,,,US28176E1082
-31/12/2024,Sustainable Growth,Listed Equity,,Eiffage SA,2783.413897,394382.6094,0.00016804,,,FR0000130452
-31/12/2024,Sustainable Growth,Listed Equity,,Eisai Co Ltd,11571.8427,514816.0455,0.00021936,,,JP3160400002
-31/12/2024,Sustainable Growth,Listed Equity,,Elders Ltd,31212.92945,223484.5749,0.00009522,,,AU000000ELD6
-31/12/2024,Sustainable Growth,Listed Equity,,Electronic Arts Inc,3615.815116,854387.0636,0.00036404,,,US2855121099
-31/12/2024,Sustainable Growth,Listed Equity,,Elevance Health Inc,1033.751281,615926.4251,0.00026244,,,US0367521038
-31/12/2024,Sustainable Growth,Listed Equity,,Eli Lilly & Co,7861.274117,9801992.439,0.00417648,,,US5324571083
-31/12/2024,Sustainable Growth,Listed Equity,,EMCOR Group Inc,61.716494,45244.47776,0.00001928,,,US29084Q1004
-31/12/2024,Sustainable Growth,Listed Equity,,Emerald Resources NL,82577.29142,268376.1971,0.00011435,,,AU000000EMR4
-31/12/2024,Sustainable Growth,Listed Equity,,Empire Co Ltd,26615.23821,1311839.032,0.00055895,,,CA2918434077
-31/12/2024,Sustainable Growth,Listed Equity,,Endeavour Mining PLC,25512.82733,735394.6537,0.00031334,,,GB00BL6K5J42
-31/12/2024,Sustainable Growth,Listed Equity,,Endesa SA,70173.9685,2437623.052,0.00103863,,,ES0130670112
-31/12/2024,Sustainable Growth,Listed Equity,,Enel SpA,95439.92985,1099135.263,0.00046832,,,IT0003128367
-31/12/2024,Sustainable Growth,Listed Equity,,Enphase Energy Inc,5906.928754,655233.5741,0.00027919,,,US29355A1079
-31/12/2024,Sustainable Growth,Listed Equity,,EPAM Systems Inc,1922.468801,726014.14,0.00030934,,,US29414B1044
-31/12/2024,Sustainable Growth,Listed Equity,,Equifax Inc,8526.304609,3509535.219,0.00149536,,,US2944291051
-31/12/2024,Sustainable Growth,Listed Equity,,Equitable Holdings Inc,23177.62947,1765789.846,0.00075238,,,US29452E1010
-31/12/2024,Sustainable Growth,Listed Equity,,Erste Group Bank AG,18408.48737,1836772.493,0.00078262,,,AT0000652011
-31/12/2024,Sustainable Growth,Listed Equity,,EssilorLuxottica SA,9478.058283,3734639.405,0.00159127,,,FR0000121667
-31/12/2024,Sustainable Growth,Listed Equity,,Euronext NV,8073.288923,1462288.169,0.00062306,,,NL0006294274
-31/12/2024,Sustainable Growth,Listed Equity,,Evolution Mining Ltd,624325.077,3003003.62,0.00127953,,,AU000000EVN4
-31/12/2024,Sustainable Growth,Listed Equity,,EVT Ltd,6698.861522,76233.04412,0.00003248,,,AU000000EVT1
-31/12/2024,Sustainable Growth,Listed Equity,,Exelon Corp,8825.458699,536526.3113,0.00022861,,,US30161N1019
-31/12/2024,Sustainable Growth,Listed Equity,,Expedia Group Inc,3755.448684,1130182.918,0.00048155,,,US30212P3038
-31/12/2024,Sustainable Growth,Listed Equity,,Expeditors International of Washington Inc,4354.09868,778976.844,0.00033191,,,US3021301094
-31/12/2024,Sustainable Growth,Listed Equity,,Experian PLC,2281.195924,158964.0155,0.00006773,,,GB00B19NLV48
-31/12/2024,Sustainable Growth,Listed Equity,,F5 Inc,2251.109133,914296.0747,0.00038957,,,US3156161024
-31/12/2024,Sustainable Growth,Listed Equity,,Fairfax Financial Holdings Ltd,231.436854,519812.9831,0.00022148,,,CA3039011026
-31/12/2024,Sustainable Growth,Listed Equity,,FANUC Corp,8563.163598,367411.4522,0.00015655,,,JP3802400006
-31/12/2024,Sustainable Growth,Listed Equity,,Fastenal Co,4418.900999,513224.8554,0.00021868,,,US3119001044
-31/12/2024,Sustainable Growth,Listed Equity,,Fast Retailing Co Ltd,1311.475506,725380.4505,0.00030907,,,JP3802300008
-31/12/2024,Sustainable Growth,Listed Equity,,FedEx Corp,677.338526,307769.7583,0.00013114,,,US31428X1063
-31/12/2024,Sustainable Growth,Listed Equity,,Ferguson Enterprises Inc,102.603672,28763.49681,0.00001226,,,US31488V1070
-31/12/2024,Sustainable Growth,Listed Equity,,FirstService Corp,1542.91236,451180.3455,0.00019224,,,CA33767E2024
-31/12/2024,Sustainable Growth,Listed Equity,,First Solar Inc,17805.55628,5068321.47,0.00215953,,,US3364331070
-31/12/2024,Sustainable Growth,Listed Equity,,Fiserv Inc,3726.904805,1236502.926,0.00052686,,,US3377381088
-31/12/2024,Sustainable Growth,Listed Equity,,Fisher & Paykel Healthcare Corp Ltd,67056.04439,2340352.134,0.00099719,,,NZFAPE0001S2
-31/12/2024,Sustainable Growth,Listed Equity,,FleetPartners Group Ltd,80775.46221,217285.9934,0.00009258,,,AU0000272924
-31/12/2024,Sustainable Growth,Listed Equity,,Fletcher Building Ltd,154064.1795,392863.6578,0.00016739,,,NZFBUE0001S0
-31/12/2024,Sustainable Growth,Listed Equity,,Flight Centre Travel Group Ltd,22575.86005,376565.3456,0.00016045,,,AU000000FLT9
-31/12/2024,Sustainable Growth,Listed Equity,,Fortescue Ltd,396604.4076,7238030.44,0.00308402,,,AU000000FMG4
-31/12/2024,Sustainable Growth,Listed Equity,,Fortinet Inc,5345.419871,815691.2999,0.00034755,,,US34959E1091
-31/12/2024,Sustainable Growth,Listed Equity,,Futu Holdings Ltd,322.468683,41660.77837,0.00001775,,,US36118L1061
-31/12/2024,Sustainable Growth,Listed Equity,,G8 Education Ltd,248776.2088,324652.9562,0.00013833,,,AU000000GEM7
-31/12/2024,Sustainable Growth,Listed Equity,,Garmin Ltd,1277.531434,425589.3311,0.00018134,,,CH0114405324
-31/12/2024,Sustainable Growth,Listed Equity,,Gartner Inc,5750.49565,4499624.688,0.00191722,,,US3666511072
-31/12/2024,Sustainable Growth,Listed Equity,,GEA Group AG,11161.42801,892654.3991,0.00038035,,,DE0006602006
-31/12/2024,Sustainable Growth,Listed Equity,,Geberit AG,165.091623,151408.6437,0.00006451,,,CH0030170408
-31/12/2024,Sustainable Growth,Listed Equity,,General Electric Co,7463.838541,2010649.49,0.00085671,,,US3696043013
-31/12/2024,Sustainable Growth,Listed Equity,,General Mills Inc,1250.530468,128799.6931,0.00005488,,,US3703341046
-31/12/2024,Sustainable Growth,Listed Equity,,General Motors Co,10213.30837,878725.5726,0.00037441,,,US37045V1008
-31/12/2024,Sustainable Growth,Listed Equity,,Genesis Minerals Ltd,55598.77178,137328.9663,0.00005851,,,AU000000GMD9
-31/12/2024,Sustainable Growth,Listed Equity,,Genmab A/S,870.974027,291537.5797,0.00012422,,,DK0010272202
-31/12/2024,Sustainable Growth,Listed Equity,,Gentrack Group Ltd,19420.62067,225084.9935,0.00009591,,,NZGTKE0002S9
-31/12/2024,Sustainable Growth,Listed Equity,,Gilead Sciences Inc,2966.249012,442529.9534,0.00018856,,,US3755581036
-31/12/2024,Sustainable Growth,Listed Equity,,Givaudan SA,195.178414,1379559.245,0.00058781,,,CH0010645932
-31/12/2024,Sustainable Growth,Listed Equity,,Global-e Online Ltd,1016.007789,89482.19749,0.00003813,,,IL0011741688
-31/12/2024,Sustainable Growth,Listed Equity,,Gold Road Resources Ltd,225876.4494,463046.7213,0.0001973,,,AU000000GOR5
-31/12/2024,Sustainable Growth,Listed Equity,,Grab Holdings Ltd,117772.8148,897823.9269,0.00038255,,,KYG4124C1096
-31/12/2024,Sustainable Growth,Listed Equity,,GrainCorp Ltd,68840.10405,505286.3637,0.00021529,,,AU000000GNC9
-31/12/2024,Sustainable Growth,Listed Equity,,Groupe Bruxelles Lambert NV,4192.092882,463081.8237,0.00019731,,,BE0003797140
-31/12/2024,Sustainable Growth,Listed Equity,,Guzman y Gomez Ltd,3851.956553,156273.8774,0.00006659,,,AU0000336679
-31/12/2024,Sustainable Growth,Listed Equity,,GWA Group Ltd,13582.27898,32869.11512,0.00001401,,,AU000000GWA4
-31/12/2024,Sustainable Growth,Listed Equity,,Hansen Technologies Ltd,18303.64962,97924.52547,0.00004172,,,AU000000HSN3
-31/12/2024,Sustainable Growth,Listed Equity,,Hartford Financial Services Group Inc/The,8538.477,1508696.411,0.00064283,,,US4165151048
-31/12/2024,Sustainable Growth,Listed Equity,,Harvey Norman Holdings Ltd,40242.08757,187930.549,0.00008007,,,AU000000HVN7
-31/12/2024,Sustainable Growth,Listed Equity,,Healius Ltd,292283.4356,400428.3067,0.00017062,,,AU0000033359
-31/12/2024,Sustainable Growth,Listed Equity,,Helia Group Ltd,31393.77944,140330.1941,0.00005979,,,AU0000251498
-31/12/2024,Sustainable Growth,Listed Equity,,Henry Schein Inc,13619.27039,1522173.157,0.00064857,,,US8064071025
-31/12/2024,Sustainable Growth,Listed Equity,,Hikma Pharmaceuticals PLC,7339.634096,295888.932,0.00012607,,,GB00B0LCW083
-31/12/2024,Sustainable Growth,Listed Equity,,Hilton Worldwide Holdings Inc,3827.194109,1527786.959,0.00065097,,,US43300A2033
-31/12/2024,Sustainable Growth,Listed Equity,,Hitachi Ltd,13731.92,555595.412,0.00023673,,,JP3788600009
-31/12/2024,Sustainable Growth,Listed Equity,,HMC Capital Ltd,195723.6739,1929835.424,0.00082227,,,AU0000058943
-31/12/2024,Sustainable Growth,Listed Equity,,Hologic Inc,1887.753272,219798.3266,0.00009365,,,US4364401012
-31/12/2024,Sustainable Growth,Listed Equity,,Home Depot Inc/The,4825.458406,3031664.485,0.00129175,,,US4370761029
-31/12/2024,Sustainable Growth,Listed Equity,,Hong Kong Exchanges & Clearing Ltd,2160.077304,132401.9306,0.00005641,,,HK0388045442
-31/12/2024,Sustainable Growth,Listed Equity,,Hongkong Land Holdings Ltd,65959.50339,474068.9489,0.00020199,,,BMG4587L1090
-31/12/2024,Sustainable Growth,Listed Equity,,HP Inc,2018.129367,106358.0097,0.00004532,,,US40434L1052
-31/12/2024,Sustainable Growth,Listed Equity,,HUB24 Ltd,24606.66265,1712623.72,0.00072972,,,AU000000HUB4
-31/12/2024,Sustainable Growth,Listed Equity,,H World Group Ltd,17612.2419,939566.0995,0.00040033,,,US44332N1063
-31/12/2024,Sustainable Growth,Listed Equity,,iA Financial Corp Inc,3780.135282,565961.9778,0.00024115,,,CA45075E1043
-31/12/2024,Sustainable Growth,Listed Equity,,Iberdrola SA,258582.4529,5751812.311,0.00245076,,,ES0144580Y14
-31/12/2024,Sustainable Growth,Listed Equity,,IDP Education Ltd,68769.61884,868560.286,0.00037008,,,AU000000IEL5
-31/12/2024,Sustainable Growth,Listed Equity,,IGM Financial Inc,4243.00899,218758.9591,0.00009321,,,CA4495861060
-31/12/2024,Sustainable Growth,Listed Equity,,IGO Ltd,176368.7646,841279.0072,0.00035846,,,AU000000IGO4
-31/12/2024,Sustainable Growth,Listed Equity,,Iluka Resources Ltd,67110.17013,338906.3591,0.0001444,,,AU000000ILU1
-31/12/2024,Sustainable Growth,Listed Equity,,Imdex Ltd,122685.9651,284631.4389,0.00012128,,,AU000000IMD5
-31/12/2024,Sustainable Growth,Listed Equity,,Immutep Ltd,1414460.883,516278.2297,0.00021998,,,AU000000IMM6
-31/12/2024,Sustainable Growth,Listed Equity,,Imugene Ltd,1222414.743,45229.34476,0.00001927,,,AU000000IMU9
-31/12/2024,Sustainable Growth,Listed Equity,,Incyte Corp,10483.31803,1169478.767,0.0004983,,,US45337C1027
-31/12/2024,Sustainable Growth,Listed Equity,,Industria de Diseno Textil SA,791.514041,65711.95853,0.000028,,,ES0148396007
-31/12/2024,Sustainable Growth,Listed Equity,,Infomedia Ltd,89382.88408,137649.6415,0.00005865,,,AU000000IFM0
-31/12/2024,Sustainable Growth,Listed Equity,,Infratil Ltd,72901.57802,843471.2577,0.00035939,,,NZIFTE0003S3
-31/12/2024,Sustainable Growth,Listed Equity,,Inghams Group Ltd,52416.10843,166683.2248,0.00007102,,,AU000000ING6
-31/12/2024,Sustainable Growth,Listed Equity,,Insignia Financial Ltd,84322.04911,299343.2743,0.00012755,,,AU000000IFL2
-31/12/2024,Sustainable Growth,Listed Equity,,Insulet Corp,1212.729115,511357.8157,0.00021788,,,US45784P1012
-31/12/2024,Sustainable Growth,Listed Equity,,Insurance Australia Group Ltd,673842.2346,5700705.305,0.00242898,,,AU000000IAG3
-31/12/2024,Sustainable Growth,Listed Equity,,Integral Diagnostics Ltd,78592.66213,228704.6468,0.00009745,,,AU000000IDX2
-31/12/2024,Sustainable Growth,Listed Equity,,Intel Corp,4230.665691,137002.093,0.00005837,,,US4581401001
-31/12/2024,Sustainable Growth,Listed Equity,,Intercontinental Exchange Inc,1319.190068,317487.707,0.00013528,,,US45866F1049
-31/12/2024,Sustainable Growth,Listed Equity,,InterContinental Hotels Group PLC,935.00489,188260.2105,0.00008021,,,GB00BHJYC057
-31/12/2024,Sustainable Growth,Listed Equity,,International Business Machines Corp,1386.306755,492209.9879,0.00020972,,,US4592001014
-31/12/2024,Sustainable Growth,Listed Equity,,Intuit Inc,2083.703142,2115169.868,0.00090124,,,US4612021034
-31/12/2024,Sustainable Growth,Listed Equity,,Intuitive Surgical Inc,4882.956814,4116463.112,0.00175396,,,US46120E6023
-31/12/2024,Sustainable Growth,Listed Equity,,IperionX Ltd,9294.503594,51119.76977,0.00002178,,,AU0000208910
-31/12/2024,Sustainable Growth,Listed Equity,,IPH Ltd,32924.33366,165609.3983,0.00007056,,,AU000000IPH9
-31/12/2024,Sustainable Growth,Listed Equity,,IRESS Ltd,33878.98443,315413.3451,0.00013439,,,AU000000IRE2
-31/12/2024,Sustainable Growth,Listed Equity,,James Hardie Industries PLC,172319.087,8628016.689,0.00367627,,,AU000000JHX1
-31/12/2024,Sustainable Growth,Listed Equity,,Japan Exchange Group Inc,5785.92135,105246.5265,0.00004484,,,JP3183200009
-31/12/2024,Sustainable Growth,Listed Equity,,Japan Post Holdings Co Ltd,7945.998654,121714.5316,0.00005186,,,JP3752900005
-31/12/2024,Sustainable Growth,Listed Equity,,Japan Post Insurance Co Ltd,9488.911014,283480.6225,0.00012079,,,JP3233250004
-31/12/2024,Sustainable Growth,Listed Equity,,JB Hi-Fi Ltd,66885.68833,6198965.595,0.00264129,,,AU000000JBH7
-31/12/2024,Sustainable Growth,Listed Equity,,Johns Lyng Group Ltd,18989.24897,71019.79115,0.00003026,,,AU000000JLG8
-31/12/2024,Sustainable Growth,Listed Equity,,Johnson & Johnson,7632.787445,1782853.461,0.00075965,,,US4781601046
-31/12/2024,Sustainable Growth,Listed Equity,,Jones Lang LaSalle Inc,10020.97097,4097082.438,0.0017457,,,US48020Q1076
-31/12/2024,Sustainable Growth,Listed Equity,,JPMorgan Chase & Co,11032.59483,4271377.385,0.00181997,,,US46625H1005
-31/12/2024,Sustainable Growth,Listed Equity,,Judo Capital Holdings Ltd,185902.6721,338342.8632,0.00014416,,,AU0000182271
-31/12/2024,Sustainable Growth,Listed Equity,,KBC Group NV,15578.4168,1942078.24,0.00082749,,,BE0003565737
-31/12/2024,Sustainable Growth,Listed Equity,,KDDI Corp,10183.22158,527654.9355,0.00022483,,,JP3496400007
-31/12/2024,Sustainable Growth,Listed Equity,,Kimberly-Clark Corp,7996.143305,1692343.731,0.00072108,,,US4943681035
-31/12/2024,Sustainable Growth,Listed Equity,,Kingspan Group PLC,39192.01747,4617773.546,0.00196756,,,IE0004927939
-31/12/2024,Sustainable Growth,Listed Equity,,Kinross Gold Corp,37724.2072,565569.5227,0.00024098,,,CA4969024047
-31/12/2024,Sustainable Growth,Listed Equity,,KLA Corp,666.53814,678347.7527,0.00028903,,,US4824801009
-31/12/2024,Sustainable Growth,Listed Equity,,Koninklijke Ahold Delhaize NV,26842.81778,1413691.93,0.00060235,,,NL0011794037
-31/12/2024,Sustainable Growth,Listed Equity,,Koninklijke KPN NV,126650.7325,744538.3149,0.00031724,,,NL0000009082
-31/12/2024,Sustainable Growth,Listed Equity,,Koninklijke Philips NV,804.628796,32835.18081,0.00001399,,,NL0000009538
-31/12/2024,Sustainable Growth,Listed Equity,,Kyowa Kirin Co Ltd,12189.00764,297567.4046,0.00012679,,,JP3256000005
-31/12/2024,Sustainable Growth,Listed Equity,,Lam Research Corp,3140.598109,366381.9748,0.00015611,,,US5128073062
-31/12/2024,Sustainable Growth,Listed Equity,,Legal & General Group PLC,464778.578,2160444.627,0.00092053,,,GB0005603997
-31/12/2024,Sustainable Growth,Listed Equity,,Legrand SA,35121.19072,5523773.548,0.0023536,,,FR0010307819
-31/12/2024,Sustainable Growth,Listed Equity,,Life360 Inc,26230.66046,591239.0868,0.00025192,,,AU0000045098
-31/12/2024,Sustainable Growth,Listed Equity,,Lifestyle Communities Ltd,88396.1313,756670.8839,0.00032241,,,AU000000LIC9
-31/12/2024,Sustainable Growth,Listed Equity,,Liontown Resources Ltd,278631.281,146281.4262,0.00006233,,,AU000000LTR4
-31/12/2024,Sustainable Growth,Listed Equity,,Lovisa Holdings Ltd,9298.950725,280456.3539,0.0001195,,,AU000000LOV7
-31/12/2024,Sustainable Growth,Listed Equity,,Lowe's Cos Inc,1643.97312,655305.7684,0.00027922,,,US5486611073
-31/12/2024,Sustainable Growth,Listed Equity,,Lynas Rare Earths Ltd,507387.0971,3262499.034,0.0013901,,,AU000000LYC6
-31/12/2024,Sustainable Growth,Listed Equity,,MAC Copper Ltd,21867.95005,376347.4203,0.00016036,,,AU0000319733
-31/12/2024,Sustainable Growth,Listed Equity,,Macquarie Group Ltd,115704.1079,25645815.51,0.01092729,,,AU000000MQG1
-31/12/2024,Sustainable Growth,Listed Equity,,Macquarie Technology Group Ltd,630.010212,55636.2018,0.00002371,,,AU000000MAQ4
-31/12/2024,Sustainable Growth,Listed Equity,,MA Financial Group Ltd,6762.603731,41387.13484,0.00001763,,,AU0000156218
-31/12/2024,Sustainable Growth,Listed Equity,,Magellan Financial Group Ltd,28683.25316,318957.7751,0.0001359,,,AU000000MFG4
-31/12/2024,Sustainable Growth,Listed Equity,,Makita Corp,6017.358204,299489.9815,0.00012761,,,JP3862400003
-31/12/2024,Sustainable Growth,Listed Equity,,Manulife Financial Corp,16046.28854,795771.2984,0.00033907,,,CA56501R1064
-31/12/2024,Sustainable Growth,Listed Equity,,MarketAxess Holdings Inc,327.868876,119698.7474,0.000051,,,US57060D1081
-31/12/2024,Sustainable Growth,Listed Equity,,Marks & Spencer Group PLC,87169.14814,662094.1662,0.00028211,,,GB0031274896
-31/12/2024,Sustainable Growth,Listed Equity,,Marsh & McLennan Cos Inc,6686.210712,2293818.976,0.00097736,,,US5717481023
-31/12/2024,Sustainable Growth,Listed Equity,,Marvell Technology Inc,2745.612545,489789.0735,0.00020869,,,US5738741041
-31/12/2024,Sustainable Growth,Listed Equity,,Masco Corp,10491.03259,1229644.248,0.00052393,,,US5745991068
-31/12/2024,Sustainable Growth,Listed Equity,,Mastercard Inc,19797.34737,16837097.97,0.00717403,,,US57636Q1040
-31/12/2024,Sustainable Growth,Listed Equity,,Match Group Inc,4452.073615,235205.2477,0.00010022,,,US57667L1070
-31/12/2024,Sustainable Growth,Listed Equity,,McKesson Corp,891.031888,820169.5567,0.00034946,,,US58155Q1031
-31/12/2024,Sustainable Growth,Listed Equity,,McMillan Shakespeare Ltd,9479.059527,142185.8929,0.00006058,,,AU000000MMS5
-31/12/2024,Sustainable Growth,Listed Equity,,Medibank Pvt Ltd,1085227.001,4113010.334,0.00175249,,,AU000000MPL3
-31/12/2024,Sustainable Growth,Listed Equity,,Medtronic PLC,445.901672,57528.26651,0.00002451,,,IE00BTN1Y115
-31/12/2024,Sustainable Growth,Listed Equity,,Megaport Ltd,20578.35708,151662.4917,0.00006462,,,AU000000MP15
-31/12/2024,Sustainable Growth,Listed Equity,,MEIJI Holdings Co Ltd,7483.124946,246167.4549,0.00010489,,,JP3918000005
-31/12/2024,Sustainable Growth,Listed Equity,,MercadoLibre Inc,2589.26473,7111183.588,0.00302997,,,US58733R1023
-31/12/2024,Sustainable Growth,Listed Equity,,Merck & Co Inc,5628.544289,904348.8416,0.00038533,,,US58933Y1055
-31/12/2024,Sustainable Growth,Listed Equity,,Mercury NZ Ltd,19182.25792,101540.9988,0.00004327,,,NZMRPE0001S2
-31/12/2024,Sustainable Growth,Listed Equity,,Mesoblast Ltd,121158.3756,375590.9643,0.00016003,,,AU000000MSB8
-31/12/2024,Sustainable Growth,Listed Equity,,Meta Platforms Inc,7088.139382,6703022.678,0.00285606,,,US30303M1027
-31/12/2024,Sustainable Growth,Listed Equity,,Metcash Ltd,1103553.014,3421014.344,0.00145764,,,AU000000MTS0
-31/12/2024,Sustainable Growth,Listed Equity,,MetLife Inc,3381.292437,447161.7917,0.00019053,,,US59156R1086
-31/12/2024,Sustainable Growth,Listed Equity,,Micron Technology Inc,2258.052239,306933.1758,0.00013078,,,US5951121038
-31/12/2024,Sustainable Growth,Listed Equity,,Microsoft Corp,64761.78721,44088013.09,0.01878523,,,US5949181045
-31/12/2024,Sustainable Growth,Listed Equity,,Mitsubishi Chemical Group Corp,16432.01663,135045.441,0.00005754,,,JP3897700005
-31/12/2024,Sustainable Growth,Listed Equity,,Mitsubishi Electric Corp,12497.59012,345108.7003,0.00014705,,,JP3902400005
-31/12/2024,Sustainable Growth,Listed Equity,,Mitsubishi UFJ Financial Group Inc,30241.08226,573708.1153,0.00024445,,,JP3902900004
-31/12/2024,Sustainable Growth,Listed Equity,,Mitsui Chemicals Inc,9257.47416,330129.2122,0.00014066,,,JP3888300005
-31/12/2024,Sustainable Growth,Listed Equity,,Mizrahi Tefahot Bank Ltd,2053.616351,143463.9488,0.00006113,,,IL0006954379
-31/12/2024,Sustainable Growth,Listed Equity,,Mizuho Financial Group Inc,20289.29753,807563.1219,0.00034409,,,JP3885780001
-31/12/2024,Sustainable Growth,Listed Equity,,Molina Healthcare Inc,135.004832,63463.06348,0.00002704,,,US60855R1005
-31/12/2024,Sustainable Growth,Listed Equity,,Monash IVF Group Ltd,151081.6371,191873.6791,0.00008175,,,AU000000MVF3
-31/12/2024,Sustainable Growth,Listed Equity,,Mondelez International Inc,11270.20333,1087247.432,0.00046326,,,US6092071058
-31/12/2024,Sustainable Growth,Listed Equity,,MongoDB Inc,498.360692,187391.3503,0.00007984,,,US60937P1066
-31/12/2024,Sustainable Growth,Listed Equity,,Monolithic Power Systems Inc,320.154315,305960.2847,0.00013037,,,US6098391054
-31/12/2024,Sustainable Growth,Listed Equity,,Moody's Corp,1356.991421,1037485.307,0.00044206,,,US6153691059
-31/12/2024,Sustainable Growth,Listed Equity,,Morgan Stanley,8392.671782,1704153.591,0.00072611,,,US6174464486
-31/12/2024,Sustainable Growth,Listed Equity,,Mosaic Co/The,5351.591521,212455.977,0.00009052,,,US61945C1036
-31/12/2024,Sustainable Growth,Listed Equity,,Motorola Solutions Inc,1102.410881,823011.1924,0.00035067,,,US6200763075
-31/12/2024,Sustainable Growth,Listed Equity,,MSCI Inc,194.406957,188397.1903,0.00008027,,,US55354G1004
-31/12/2024,Sustainable Growth,Listed Equity,,MTU Aero Engines AG,1106.268162,595758.5702,0.00025384,,,DE000A0D9PT0
-31/12/2024,Sustainable Growth,Listed Equity,,MyState Ltd,22430.5871,100040.4185,0.00004263,,,AU000000MYS0
-31/12/2024,Sustainable Growth,Listed Equity,,Nanosonics Ltd,59393.65682,178774.907,0.00007617,,,AU000000NAN9
-31/12/2024,Sustainable Growth,Listed Equity,,Nasdaq Inc,1351.591227,168766.076,0.00007191,,,US6311031081
-31/12/2024,Sustainable Growth,Listed Equity,,National Australia Bank Ltd,1028318.109,38150601.85,0.01625539,,,AU000000NAB4
-31/12/2024,Sustainable Growth,Listed Equity,,NatWest Group PLC,131596.5381,1070349.348,0.00045606,,,GB00BM8PJY71
-31/12/2024,Sustainable Growth,Listed Equity,,NetApp Inc,4570.10641,856816.5257,0.00036508,,,US64110D1046
-31/12/2024,Sustainable Growth,Listed Equity,,Netflix Inc,1508.196832,2171179.847,0.00092511,,,US64110L1061
-31/12/2024,Sustainable Growth,Listed Equity,,Netwealth Group Ltd,6014.744551,172923.9058,0.00007368,,,AU000000NWL7
-31/12/2024,Sustainable Growth,Listed Equity,,Neuren Pharmaceuticals Ltd,53232.02919,665400.3649,0.00028352,,,NZNEUE0001S8
-31/12/2024,Sustainable Growth,Listed Equity,,Newmont Corp,43506.95236,2590403.944,0.00110373,,,AU0000297962
-31/12/2024,Sustainable Growth,Listed Equity,,NEXTDC Ltd,240405.8213,3622915.727,0.00154367,,,AU000000NXT8
-31/12/2024,Sustainable Growth,Listed Equity,,nib holdings Ltd/Australia,45935.15632,251724.6566,0.00010726,,,AU000000NHF0
-31/12/2024,Sustainable Growth,Listed Equity,,Nice Ltd,310.896841,85608.12971,0.00003648,,,IL0002730112
-31/12/2024,Sustainable Growth,Listed Equity,,Nickel Industries Ltd,197055.3352,162570.6515,0.00006927,,,AU0000018236
-31/12/2024,Sustainable Growth,Listed Equity,,Nick Scali Ltd,6268.231012,94086.14749,0.00004009,,,AU000000NCK1
-31/12/2024,Sustainable Growth,Listed Equity,,NIDEC CORP,6865.960002,201450.9617,0.00008584,,,JP3734800000
-31/12/2024,Sustainable Growth,Listed Equity,,NIKE Inc,4535.390882,554297.0667,0.00023618,,,US6541061031
-31/12/2024,Sustainable Growth,Listed Equity,,Nine Entertainment Co Holdings Ltd,259967.4138,321059.756,0.0001368,,,AU000000NEC4
-31/12/2024,Sustainable Growth,Listed Equity,,Nippon Telegraph & Telephone Corp,702487.9975,1140664.6,0.00048602,,,JP3735400008
-31/12/2024,Sustainable Growth,Listed Equity,,Nissan Motor Co Ltd,38881.39147,191798.4094,0.00008172,,,JP3672400003
-31/12/2024,Sustainable Growth,Listed Equity,,Nomura Holdings Inc,6788.814384,64974.88615,0.00002768,,,JP3762600009
-31/12/2024,Sustainable Growth,Listed Equity,,Norsk Hydro ASA,84791.5202,754114.5239,0.00032132,,,NO0005052605
-31/12/2024,Sustainable Growth,Listed Equity,,Northern Star Resources Ltd,579184.9275,8942615.28,0.00381031,,,AU000000NST8
-31/12/2024,Sustainable Growth,Listed Equity,,Northern Trust Corp,7534.041054,1247257.056,0.00053144,,,US6658591044
-31/12/2024,Sustainable Growth,Listed Equity,,Novartis AG,10316.6835,1630870.916,0.00069489,,,CH0012005267
-31/12/2024,Sustainable Growth,Listed Equity,,Novonesis (Novozymes) B,34664.85112,3169604.289,0.00135052,,,DK0060336014
-31/12/2024,Sustainable Growth,Listed Equity,,Novonix Ltd,37433.7244,27513.79114,0.00001172,,,AU000000NVX4
-31/12/2024,Sustainable Growth,Listed Equity,,Novo Nordisk A/S,47200.76267,6607661.319,0.00281542,,,DK0062498333
-31/12/2024,Sustainable Growth,Listed Equity,,Nufarm Ltd,85139.58001,301394.1132,0.00012842,,,AU000000NUF3
-31/12/2024,Sustainable Growth,Listed Equity,,Nuix Ltd,42808.82329,270551.7632,0.00011528,,,AU0000119307
-31/12/2024,Sustainable Growth,Listed Equity,,Nutanix Inc,58280.42548,5758857.194,0.00245376,,,US67059N1081
-31/12/2024,Sustainable Growth,Listed Equity,,NVIDIA Corp,141221.2488,30630059.76,0.013051,,,US67066G1040
-31/12/2024,Sustainable Growth,Listed Equity,,Okta Inc,7953.713216,1012279.094,0.00043132,,,US6792951054
-31/12/2024,Sustainable Growth,Listed Equity,,Olympus Corp,20597.88001,501792.8314,0.00021381,,,JP3201200007
-31/12/2024,Sustainable Growth,Listed Equity,,Ono Pharmaceutical Co Ltd,25535.19956,428929.7286,0.00018276,,,JP3197600004
-31/12/2024,Sustainable Growth,Listed Equity,,ON Semiconductor Corp,857.859272,87358.51749,0.00003722,,,US6821891057
-31/12/2024,Sustainable Growth,Listed Equity,,oOh!media Ltd,153637.255,181291.9609,0.00007725,,,AU000000OML6
-31/12/2024,Sustainable Growth,Listed Equity,,Opthea Ltd,209433.9241,169641.4785,0.00007228,,,AU000000OPT2
-31/12/2024,Sustainable Growth,Listed Equity,,Oracle Corp,4322.468976,1163363.048,0.00049569,,,US68389X1054
-31/12/2024,Sustainable Growth,Listed Equity,,Orica Ltd,81042.29007,1343681.169,0.00057252,,,AU000000ORI1
-31/12/2024,Sustainable Growth,Listed Equity,,Orion Oyj,6593.63597,471758.5302,0.00020101,,,FI0009014377
-31/12/2024,Sustainable Growth,Listed Equity,,ORIX Corp,15660.56045,548490.1771,0.0002337,,,JP3200450009
-31/12/2024,Sustainable Growth,Listed Equity,,Orkla ASA,8192.864631,114587.4722,0.00004882,,,NO0003733800
-31/12/2024,Sustainable Growth,Listed Equity,,Orora Ltd,758346.614,1865532.671,0.00079488,,,AU000000ORA8
-31/12/2024,Sustainable Growth,Listed Equity,,Otsuka Corp,5168.756406,191705.6495,0.00008168,,,JP3188200004
-31/12/2024,Sustainable Growth,Listed Equity,,Oversea-Chinese Banking Corp Ltd,96972.04182,1916146.285,0.00081644,,,SG1S04926220
-31/12/2024,Sustainable Growth,Listed Equity,,Palantir Technologies Inc,7355.834676,898525.034,0.00038285,,,US69608A1088
-31/12/2024,Sustainable Growth,Listed Equity,,Palo Alto Networks Inc,21145.66959,6214432.753,0.00264788,,,US6974351057
-31/12/2024,Sustainable Growth,Listed Equity,,Pan American Silver Corp,1388.621124,45348.48548,0.00001932,,,CA6979001089
-31/12/2024,Sustainable Growth,Listed Equity,,Panasonic Holdings Corp,19749.27821,333465.3822,0.00014208,,,JP3866800000
-31/12/2024,Sustainable Growth,Listed Equity,,Patriot Battery Metals Inc,208109.4478,84284.33005,0.00003591,,,AU0000251258
-31/12/2024,Sustainable Growth,Listed Equity,,Paychex Inc,1607.714679,364101.9978,0.00015514,,,US7043261079
-31/12/2024,Sustainable Growth,Listed Equity,,Paycom Software Inc,490.64613,162428.7101,0.00006921,,,US70432V1026
-31/12/2024,Sustainable Growth,Listed Equity,,PayPal Holdings Inc,2352.941349,324353.6207,0.0001382,,,US70450Y1038
-31/12/2024,Sustainable Growth,Listed Equity,,PepsiCo Inc,8070.974555,1982189.113,0.00084458,,,US7134481081
-31/12/2024,Sustainable Growth,Listed Equity,,Perenti Ltd,141945.7478,198014.3219,0.00008437,,,AU0000061897
-31/12/2024,Sustainable Growth,Listed Equity,,Perpetual Ltd,35313.18415,702379.2327,0.00029927,,,AU000000PPT9
-31/12/2024,Sustainable Growth,Listed Equity,,Perseus Mining Ltd,230694.1746,592884.0286,0.00025262,,,AU000000PRU3
-31/12/2024,Sustainable Growth,Listed Equity,,PEXA Group Ltd,38781.84718,506490.9242,0.00021581,,,AU0000158594
-31/12/2024,Sustainable Growth,Listed Equity,,Pfizer Inc,1508.968288,64657.88709,0.00002755,,,US7170811035
-31/12/2024,Sustainable Growth,Listed Equity,,Pilbara Minerals Ltd,1320828.312,2892614.004,0.0012325,,,AU000000PLS0
-31/12/2024,Sustainable Growth,Listed Equity,,Pinnacle Investment Management Group Ltd,82267.27486,1879807.23,0.00080096,,,AU000000PNI7
-31/12/2024,Sustainable Growth,Listed Equity,,Pinterest Inc,9997.300636,468257.639,0.00019952,,,US72352L1061
-31/12/2024,Sustainable Growth,Listed Equity,,Platinum Asset Management Ltd,91341.10406,63025.3618,0.00002685,,,AU000000PTM6
-31/12/2024,Sustainable Growth,Listed Equity,,PolyNovo Ltd,188421.9717,384380.8224,0.00016378,,,AU000000PNV0
-31/12/2024,Sustainable Growth,Listed Equity,,Pool Corp,515.332728,283772.1712,0.00012091,,,US73278L1052
-31/12/2024,Sustainable Growth,Listed Equity,,Predictive Discovery Ltd,240086.515,55219.89846,0.00002353,,,AU000000PDI8
-31/12/2024,Sustainable Growth,Listed Equity,,Premier Investments Ltd,16958.39252,544873.1517,0.00023216,,,AU000000PMV2
-31/12/2024,Sustainable Growth,Listed Equity,,Procter & Gamble Co/The,16815.43036,4553188.885,0.00194004,,,US7427181091
-31/12/2024,Sustainable Growth,Listed Equity,,Progressive Corp/The,818.515007,316763.9191,0.00013497,,,US7433151039
-31/12/2024,Sustainable Growth,Listed Equity,,Pro Medicus Ltd,14747.22503,3688575.925,0.00157165,,,AU000000PME8
-31/12/2024,Sustainable Growth,Listed Equity,,Prudential Financial Inc,6046.673539,1157574.442,0.00049322,,,US7443201022
-31/12/2024,Sustainable Growth,Listed Equity,,PTC Inc,2666.924014,792000.8372,0.00033746,,,US69370C1009
-31/12/2024,Sustainable Growth,Listed Equity,,Puma SE,1495.082077,110920.1856,0.00004726,,,DE0006969603
-31/12/2024,Sustainable Growth,Listed Equity,,PWR Holdings Ltd,3227.875849,25371.10418,0.00001081,,,AU000000PWH0
-31/12/2024,Sustainable Growth,Listed Equity,,PYC Therapeutics Ltd,271128.0413,357889.0146,0.00015249,,,AU000000PYC7
-31/12/2024,Sustainable Growth,Listed Equity,,Qantas Airways Ltd,695096.9436,6235019.584,0.00265665,,,AU000000QAN2
-31/12/2024,Sustainable Growth,Listed Equity,,QBE Insurance Group Ltd,546878.7068,10500071.17,0.00447392,,,AU000000QBE9
-31/12/2024,Sustainable Growth,Listed Equity,,Qorvo Inc,5508.197125,622124.2423,0.00026508,,,US74736K1016
-31/12/2024,Sustainable Growth,Listed Equity,,QUALCOMM Inc,5373.192294,1333166.115,0.00056804,,,US7475251036
-31/12/2024,Sustainable Growth,Listed Equity,,Qube Holdings Ltd,363961.3464,1444926.545,0.00061566,,,AU000000QUB5
-31/12/2024,Sustainable Growth,Listed Equity,,Ramelius Resources Ltd,224729.0896,465189.2156,0.00019821,,,AU000000RMS4
-31/12/2024,Sustainable Growth,Listed Equity,,Ramsay Health Care Ltd,60127.33915,2076798.294,0.00088489,,,AU000000RHC8
-31/12/2024,Sustainable Growth,Listed Equity,,Rational AG,154.291236,212628.9915,0.0000906,,,DE0007010803
-31/12/2024,Sustainable Growth,Listed Equity,,Raymond James Financial Inc,1198.842904,300761.1561,0.00012815,,,US7547301090
-31/12/2024,Sustainable Growth,Listed Equity,,REA Group Ltd,21222.5227,4951426.77,0.00210973,,,AU000000REA9
-31/12/2024,Sustainable Growth,Listed Equity,,Recruit Holdings Co Ltd,10491.80405,1201689.353,0.00051202,,,JP3970300004
-31/12/2024,Sustainable Growth,Listed Equity,,Redox Ltd/Australia,98339.80967,448429.5321,0.00019107,,,AU0000284895
-31/12/2024,Sustainable Growth,Listed Equity,,Reece Ltd,39896.69374,892888.0058,0.00038045,,,AU000000REH4
-31/12/2024,Sustainable Growth,Listed Equity,,Regeneron Pharmaceuticals Inc,349.46965,402063.6592,0.00017131,,,US75886F1075
-31/12/2024,Sustainable Growth,Listed Equity,,Regions Financial Corp,4502.218266,171028.3018,0.00007287,,,US7591EP1005
-31/12/2024,Sustainable Growth,Listed Equity,,Regis Resources Ltd,84698.57286,215981.3608,0.00009203,,,AU000000RRL8
-31/12/2024,Sustainable Growth,Listed Equity,,Reliance Inc,1259.787942,547864.8193,0.00023344,,,US7595091023
-31/12/2024,Sustainable Growth,Listed Equity,,Reliance Worldwide Corp Ltd,278852.3102,1399838.597,0.00059645,,,AU000000RWC7
-31/12/2024,Sustainable Growth,Listed Equity,,RELX PLC,26504.50106,1945600.257,0.00082899,,,GB00B2B0DG97
-31/12/2024,Sustainable Growth,Listed Equity,,ResMed Inc,253.037627,93462.2865,0.00003982,,,US7611521078
-31/12/2024,Sustainable Growth,Listed Equity,,ResMed Inc,268733.5374,9881332.17,0.00421029,,,AU000000RMD6
-31/12/2024,Sustainable Growth,Listed Equity,,Resolute Mining Ltd,500821.8001,197824.6147,0.00008429,,,AU000000RSG6
-31/12/2024,Sustainable Growth,Listed Equity,,Ricoh Co Ltd,4397.300226,81862.77167,0.00003488,,,JP3973400009
-31/12/2024,Sustainable Growth,Listed Equity,,Robinhood Markets Inc,1668.659717,100418.7383,0.00004279,,,US7707001027
-31/12/2024,Sustainable Growth,Listed Equity,,ROBLOX Corp,3621.215309,338405.101,0.00014419,,,US7710491033
-31/12/2024,Sustainable Growth,Listed Equity,,Roche Holding AG,7787.078681,3545857.911,0.00151084,,,CH0012032048
-31/12/2024,Sustainable Growth,Listed Equity,,Rollins Inc,780.713654,58444.76417,0.0000249,,,US7757111049
-31/12/2024,Sustainable Growth,Listed Equity,,Roper Technologies Inc,7291.76254,6122301.148,0.00260862,,,US7766961061
-31/12/2024,Sustainable Growth,Listed Equity,,Royal Bank of Canada,308.582472,60062.65435,0.00002559,,,CA7800871021
-31/12/2024,Sustainable Growth,Listed Equity,,RPM International Inc,8720.540658,1733262.916,0.00073852,,,US7496851038
-31/12/2024,Sustainable Growth,Listed Equity,,Safran SA,2096.046441,743525.015,0.0003168,,,FR0000073272
-31/12/2024,Sustainable Growth,Listed Equity,,Salesforce Inc,10830.42862,5848239.041,0.00249185,,,US79466L3024
-31/12/2024,Sustainable Growth,Listed Equity,,Samsara Inc,6721.697696,474313.1302,0.0002021,,,US79589L1061
-31/12/2024,Sustainable Growth,Listed Equity,,Sandfire Resources Ltd,261931.2573,2430722.068,0.00103569,,,AU000000SFR8
-31/12/2024,Sustainable Growth,Listed Equity,,Sandoz Group AG,1882.353079,124695.1374,0.00005313,,,CH1243598427
-31/12/2024,Sustainable Growth,Listed Equity,,SAP SE,12255.01542,4843191.01,0.00206361,,,DE0007164600
-31/12/2024,Sustainable Growth,Listed Equity,,Sayona Mining Ltd,1195465.13,32277.55777,0.00001375,,,AU000000SYA5
-31/12/2024,Sustainable Growth,Listed Equity,,Schindler Holding AG,651.109016,287200.2216,0.00012237,,,CH0024638212
-31/12/2024,Sustainable Growth,Listed Equity,,Schneider Electric SE,12916.34154,5203916.68,0.00221731,,,FR0000121972
-31/12/2024,Sustainable Growth,Listed Equity,,Seagate Technology Holdings PLC,557.762818,77752.57658,0.00003313,,,IE00BKVD2N49
-31/12/2024,Sustainable Growth,Listed Equity,,Sea Ltd,6075.217417,1041073.357,0.00044359,,,US81141R1005
-31/12/2024,Sustainable Growth,Listed Equity,,Secom Co Ltd,5323.047642,293707.9637,0.00012514,,,JP3421800008
-31/12/2024,Sustainable Growth,Listed Equity,,Securitas AB,29876.95494,597875.8162,0.00025475,,,SE0000163594
-31/12/2024,Sustainable Growth,Listed Equity,,SEEK Ltd,123867.9133,2795698.803,0.0011912,,,AU000000SEK6
-31/12/2024,Sustainable Growth,Listed Equity,,SEI Investments Co,11667.50327,1554285.182,0.00066226,,,US7841171033
-31/12/2024,Sustainable Growth,Listed Equity,,Seiko Epson Corp,3857.2809,113987.3333,0.00004857,,,JP3414750004
-31/12/2024,Sustainable Growth,Listed Equity,,Sekisui Chemical Co Ltd,9257.47416,258299.9456,0.00011006,,,JP3419400001
-31/12/2024,Sustainable Growth,Listed Equity,,Sekisui House Ltd,79067.30465,3073126.431,0.00130941,,,JP3420600003
-31/12/2024,Sustainable Growth,Listed Equity,,Select Harvests Ltd,18305.87319,77799.96104,0.00003315,,,AU000000SHV6
-31/12/2024,Sustainable Growth,Listed Equity,,ServiceNow Inc,629.508243,1077855.57,0.00045926,,,US81762P1021
-31/12/2024,Sustainable Growth,Listed Equity,,Service Stream Ltd,375538.7106,585840.3885,0.00024962,,,AU000000SSM2
-31/12/2024,Sustainable Growth,Listed Equity,,ServiceTitan Inc,1136.223939,188780.3546,0.00008044,,,US81764X1037
-31/12/2024,Sustainable Growth,Listed Equity,,Shionogi & Co Ltd,4628.73708,105555.7262,0.00004498,,,JP3347200002
-31/12/2024,Sustainable Growth,Listed Equity,,Shopify Inc,23076.71033,3963089.092,0.00168861,,,CA82509L1076
-31/12/2024,Sustainable Growth,Listed Equity,,Siemens AG,3484.667565,1098917.11,0.00046823,,,DE0007236101
-31/12/2024,Sustainable Growth,Listed Equity,,Siemens Energy AG,3206.94334,270211.2754,0.00011513,,,DE000ENER6Y0
-31/12/2024,Sustainable Growth,Listed Equity,,Siemens Healthineers AG,31368.72252,2686091.53,0.0011445,,,DE000SHL1006
-31/12/2024,Sustainable Growth,Listed Equity,,Sigma Healthcare Ltd,902912.4234,2365630.549,0.00100796,,,AU000000SIG5
-31/12/2024,Sustainable Growth,Listed Equity,,Sika AG,14012.40079,5389144.794,0.00229623,,,CH0418792922
-31/12/2024,Sustainable Growth,Listed Equity,,Silex Systems Ltd,10329.20272,52162.47373,0.00002223,,,AU000000SLX4
-31/12/2024,Sustainable Growth,Listed Equity,,Sims Ltd,62147.91323,738317.2091,0.00031459,,,AU000000SGM7
-31/12/2024,Sustainable Growth,Listed Equity,,Singapore Technologies Engineering Ltd,35564.1299,196211.2468,0.0000836,,,SG1F60858221
-31/12/2024,Sustainable Growth,Listed Equity,,Sino Land Co Ltd,75602.70564,123396.9849,0.00005258,,,HK0083000502
-31/12/2024,Sustainable Growth,Listed Equity,,SITC International Holdings Co Ltd,69431.0562,298828.2572,0.00012733,,,KYG8187G1055
-31/12/2024,Sustainable Growth,Listed Equity,,SiteMinder Ltd,83062.76988,501699.1301,0.00021377,,,AU0000183543
-31/12/2024,Sustainable Growth,Listed Equity,,Skandinaviska Enskilda Banken AB,7331.919535,162314.82,0.00006916,,,SE0000148884
-31/12/2024,Sustainable Growth,Listed Equity,,Skyworks Solutions Inc,7034.137449,1007489.802,0.00042928,,,US83088M1027
-31/12/2024,Sustainable Growth,Listed Equity,,SmartGroup Corp Ltd,39030.98559,303270.758,0.00012922,,,AU000000SIQ4
-31/12/2024,Sustainable Growth,Listed Equity,,Smurfit WestRock PLC,28041.15024,2448072.485,0.00104309,,,IE00028FXN24
-31/12/2024,Sustainable Growth,Listed Equity,,Snap Inc,11240.11654,195519.752,0.00008331,,,US83304A1060
-31/12/2024,Sustainable Growth,Listed Equity,,Snap-on Inc,2206.364675,1209749.944,0.00051546,,,US8330341012
-31/12/2024,Sustainable Growth,Listed Equity,,Snowflake Inc,1289.874733,321682.2377,0.00013706,,,US8334451098
-31/12/2024,Sustainable Growth,Listed Equity,,Societe Generale SA,12635.68077,573961.0527,0.00024456,,,FR0000130809
-31/12/2024,Sustainable Growth,Listed Equity,,SoftBank Group Corp,3548.698428,334973.3245,0.00014273,,,JP3436100006
-31/12/2024,Sustainable Growth,Listed Equity,,Solventum Corp,1897.010747,202400.9174,0.00008624,,,US83444M1018
-31/12/2024,Sustainable Growth,Listed Equity,,Sompo Holdings Inc,6711.668766,284108.5338,0.00012105,,,JP3165000005
-31/12/2024,Sustainable Growth,Listed Equity,,Sonic Healthcare Ltd,72725.41409,1964313.434,0.00083696,,,AU000000SHL7
-31/12/2024,Sustainable Growth,Listed Equity,,Sony Group Corp,20366.44315,705144.5763,0.00030045,,,JP3435000009
-31/12/2024,Sustainable Growth,Listed Equity,,Spark New Zealand Ltd,121944.7766,328031.449,0.00013977,,,NZTELE0001S4
-31/12/2024,Sustainable Growth,Listed Equity,,Spotify Technology SA,3426.036895,2475555.823,0.0010548,,,LU1778762911
-31/12/2024,Sustainable Growth,Listed Equity,,SS&C Technologies Holdings Inc,10186.3074,1246738.876,0.00053122,,,US78467J1007
-31/12/2024,Sustainable Growth,Listed Equity,,Standard Chartered PLC,34224.11051,684383.9113,0.00029161,,,GB0004082847
-31/12/2024,Sustainable Growth,Listed Equity,,Stanley Black & Decker Inc,1084.667389,140657.2601,0.00005993,,,US8545021011
-31/12/2024,Sustainable Growth,Listed Equity,,Stantec Inc,1080.038652,136790.5211,0.00005828,,,CA85472N1096
-31/12/2024,Sustainable Growth,Listed Equity,,State Street Corp,12159.69231,1927600.419,0.00082132,,,US8574771031
-31/12/2024,Sustainable Growth,Listed Equity,,Steadfast Group Ltd,146117.1566,847479.5084,0.0003611,,,AU000000SDF8
-31/12/2024,Sustainable Growth,Listed Equity,,Steel Dynamics Inc,1471.166935,271042.5811,0.00011549,,,US8581191009
-31/12/2024,Sustainable Growth,Listed Equity,,STERIS PLC,15840.84257,5259216.022,0.00224087,,,IE00BFY8C754
-31/12/2024,Sustainable Growth,Listed Equity,,Stryker Corp,422.757987,245843.5127,0.00010475,,,US8636671013
-31/12/2024,Sustainable Growth,Listed Equity,,Subaru Corp,13423.33753,389157.6447,0.00016581,,,JP3814800003
-31/12/2024,Sustainable Growth,Listed Equity,,Sumitomo Mitsui Financial Group Inc,7637.416182,295432.3457,0.00012588,,,JP3890350006
-31/12/2024,Sustainable Growth,Listed Equity,,Suncorp Group Ltd,729424.0782,13866351.73,0.00590824,,,AU000000SUN6
-31/12/2024,Sustainable Growth,Listed Equity,,Superloop Ltd,134930.3988,295497.5734,0.00012591,,,AU000000SLC8
-31/12/2024,Sustainable Growth,Listed Equity,,Super Retail Group Ltd,41631.07479,631959.7153,0.00026927,,,AU000000SUL0
-31/12/2024,Sustainable Growth,Listed Equity,,Svenska Handelsbanken AB,4309.354221,71936.52986,0.00003065,,,SE0007100599
-31/12/2024,Sustainable Growth,Listed Equity,,Swire Pacific Ltd,56316.30114,824921.5725,0.00035149,,,HK0019000162
-31/12/2024,Sustainable Growth,Listed Equity,,Symrise AG,19471.67238,3342844.859,0.00142434,,,DE000SYM9999
-31/12/2024,Sustainable Growth,Listed Equity,,Synchrony Financial,15135.97025,1589014.08,0.00067705,,,US87165B1035
-31/12/2024,Sustainable Growth,Listed Equity,,Syrah Resources Ltd,114922.7569,23559.16516,0.00001004,,,AU000000SYR9
-31/12/2024,Sustainable Growth,Listed Equity,,Taiwan Semiconductor Manufacturing Co Ltd,105414.4479,5582696.726,0.0023787,,,TW0002330008
-31/12/2024,Sustainable Growth,Listed Equity,,Taiwan Semiconductor Manufacturing Co Ltd,20303.9598,6476345.026,0.00275947,,,US8740391003
-31/12/2024,Sustainable Growth,Listed Equity,,Talanx AG,3059.59521,420364.0347,0.00017911,,,DE000TLX1005
-31/12/2024,Sustainable Growth,Listed Equity,,Target Corp,1459.595093,318675.7109,0.00013578,,,US87612E1064
-31/12/2024,Sustainable Growth,Listed Equity,,Technology One Ltd,114496.7802,3584894.188,0.00152747,,,AU000000TNE8
-31/12/2024,Sustainable Growth,Listed Equity,,TE Connectivity PLC,450.530409,104033.4888,0.00004433,,,IE000IVNQZ81
-31/12/2024,Sustainable Growth,Listed Equity,,Teleflex Inc,354.869843,102010.3913,0.00004347,,,US8793691069
-31/12/2024,Sustainable Growth,Listed Equity,,Telefonaktiebolaget LM Ericsson,201437.2375,2646512.958,0.00112764,,,SE0000108656
-31/12/2024,Sustainable Growth,Listed Equity,,Telenor ASA,20485.2474,369683.3058,0.00015752,,,NO0010063308
-31/12/2024,Sustainable Growth,Listed Equity,,Telia Co AB,98448.60895,441361.6216,0.00018806,,,SE0000667925
-31/12/2024,Sustainable Growth,Listed Equity,,Telix Pharmaceuticals Ltd,73473.79086,1808189.993,0.00077044,,,AU000000TLX2
-31/12/2024,Sustainable Growth,Listed Equity,,Telstra Group Ltd,5158934.233,20687326.28,0.00881456,,,AU000000TLS2
-31/12/2024,Sustainable Growth,Listed Equity,,Temple & Webster Group Ltd,84116.49519,1101926.087,0.00046951,,,AU000000TPW5
-31/12/2024,Sustainable Growth,Listed Equity,,Terna - Rete Elettrica Nazionale,14722.46974,187624.5461,0.00007994,,,IT0003242622
-31/12/2024,Sustainable Growth,Listed Equity,,Terumo Corp,94325.9073,2968234.072,0.00126472,,,JP3546800008
-31/12/2024,Sustainable Growth,Listed Equity,,Tesla Inc,9113.98331,5944586.966,0.0025329,,,US88160R1014
-31/12/2024,Sustainable Growth,Listed Equity,,Texas Instruments Inc,8415.078375,2548512.229,0.00108588,,,US8825081040
-31/12/2024,Sustainable Growth,Listed Equity,,Thales SA,894.889169,207511.9612,0.00008842,,,FR0000121329
-31/12/2024,Sustainable Growth,Listed Equity,,Thermo Fisher Scientific Inc,16074.54805,13506358.93,0.00575485,,,US8835561023
-31/12/2024,Sustainable Growth,Listed Equity,,TIS Inc,2545.805394,97771.0467,0.00004166,,,JP3104890003
-31/12/2024,Sustainable Growth,Listed Equity,,TJX Cos Inc/The,23619.12411,4608618.883,0.00196366,,,US8725401090
-31/12/2024,Sustainable Growth,Listed Equity,,T-Mobile US Inc,5341.56259,1904293.162,0.00081139,,,US8725901040
-31/12/2024,Sustainable Growth,Listed Equity,,Tokio Marine Holdings Inc,6480.231912,381465.7252,0.00016254,,,JP3910660004
-31/12/2024,Sustainable Growth,Listed Equity,,Tokyo Electron Ltd,1388.621124,345137.2442,0.00014706,,,JP3571400005
-31/12/2024,Sustainable Growth,Listed Equity,,Toro Co/The,6586.692865,852126.4578,0.00036308,,,US8910921084
-31/12/2024,Sustainable Growth,Listed Equity,,Toronto-Dominion Bank/The,9720.347868,835407.0352,0.00035595,,,CA8911605092
-31/12/2024,Sustainable Growth,Listed Equity,,TPG Telecom Ltd,31642.81877,142076.2563,0.00006054,,,AU0000090128
-31/12/2024,Sustainable Growth,Listed Equity,,Trade Desk Inc/The,2858.245147,542565.6945,0.00023118,,,US88339J1051
-31/12/2024,Sustainable Growth,Listed Equity,,Travelers Cos Inc/The,3333.462154,1296935.632,0.0005526,,,US89417E1091
-31/12/2024,Sustainable Growth,Listed Equity,,Treasury Wine Estates Ltd,119547.773,1354476.268,0.00057712,,,AU000000TWE9
-31/12/2024,Sustainable Growth,Listed Equity,,Trimble Inc,46602.14008,5318432.074,0.0022661,,,US8962391004
-31/12/2024,Sustainable Growth,Listed Equity,,Tuas Ltd,2566.735721,16324.43919,0.00000696,,,AU0000089724
-31/12/2024,Sustainable Growth,Listed Equity,,Twilio Inc,13332.84642,2327407.001,0.00099167,,,US90138F1021
-31/12/2024,Sustainable Growth,Listed Equity,,Tyro Payments Ltd,140865.8362,114805.6565,0.00004892,,,AU0000066508
-31/12/2024,Sustainable Growth,Listed Equity,,Tyson Foods Inc,1381.678018,128181.5176,0.00005462,,,US9024941034
-31/12/2024,Sustainable Growth,Listed Equity,,Uber Technologies Inc,5269.045709,513330.9152,0.00021872,,,US90353T1007
-31/12/2024,Sustainable Growth,Listed Equity,,UBS Group AG,22869.047,1130196.087,0.00048156,,,CH0244767585
-31/12/2024,Sustainable Growth,Listed Equity,,UCB SA,1529.026149,491498.6281,0.00020942,,,BE0003739530
-31/12/2024,Sustainable Growth,Listed Equity,,Unibail-Rodamco-Westfield,51285.0548,308736.0299,0.00013155,,,AU0000009771
-31/12/2024,Sustainable Growth,Listed Equity,,Unilever PLC,21914.59008,2011414.001,0.00085703,,,GB00B10RZP78
-31/12/2024,Sustainable Growth,Listed Equity,,UnitedHealth Group Inc,3059.59521,2499760.692,0.00106511,,,US91324P1021
-31/12/2024,Sustainable Growth,Listed Equity,,United Therapeutics Corp,768.370355,437877.4091,0.00018657,,,US91307C1027
-31/12/2024,Sustainable Growth,Listed Equity,,US Bancorp,3070.395596,237191.3462,0.00010106,,,US9029733048
-31/12/2024,Sustainable Growth,Listed Equity,,Vault Minerals Ltd,927415.797,306047.213,0.0001304,,,AU0000355588
-31/12/2024,Sustainable Growth,Listed Equity,,Veeva Systems Inc,8069.89211,2740361.486,0.00116763,,,US9224751084
-31/12/2024,Sustainable Growth,Listed Equity,,Ventia Services Group Pty Ltd,60787.83236,218836.1965,0.00009324,,,AU0000184459
-31/12/2024,Sustainable Growth,Listed Equity,,Veralto Corp,13883.16433,2283776.608,0.00097308,,,US92338C1036
-31/12/2024,Sustainable Growth,Listed Equity,,Verisk Analytics Inc,1606.943223,714851.6088,0.00030459,,,US92345Y1064
-31/12/2024,Sustainable Growth,Listed Equity,,Verizon Communications Inc,17247.44582,1113987.499,0.00047465,,,US92343V1044
-31/12/2024,Sustainable Growth,Listed Equity,,Vertiv Holdings Co,921.118679,169019.2911,0.00007202,,,US92537N1081
-31/12/2024,Sustainable Growth,Listed Equity,,Vestas Wind Systems A/S,206470.7258,4541652.868,0.00193513,,,DK0061539921
-31/12/2024,Sustainable Growth,Listed Equity,,Viatris Inc,54315.91526,1092195.984,0.00046537,,,US92556V1061
-31/12/2024,Sustainable Growth,Listed Equity,,Visa Inc,17786.43438,9078938.42,0.0038684,,,US92826C8394
-31/12/2024,Sustainable Growth,Listed Equity,,Vodafone Group PLC,708476.0404,978797.5799,0.00041705,,,GB00BH4HKS39
-31/12/2024,Sustainable Growth,Listed Equity,,Vulcan Energy Resources Ltd,40545.23366,216917.0001,0.00009243,,,AU0000066086
-31/12/2024,Sustainable Growth,Listed Equity,,Vulcan Steel Ltd,10381.08591,70072.32991,0.00002986,,,AU0000181984
-31/12/2024,Sustainable Growth,Listed Equity,,Walmart Inc,16150.43513,2356766.236,0.00100418,,,US9311421039
-31/12/2024,Sustainable Growth,Listed Equity,,Wartsila OYJ Abp,2288.13903,65476.64897,0.0000279,,,FI0009003727
-31/12/2024,Sustainable Growth,Listed Equity,,Waste Management Inc,14890.23841,4852945.499,0.00206777,,,US94106L1098
-31/12/2024,Sustainable Growth,Listed Equity,,Waters Corp,7625.188065,4568831.895,0.00194671,,,US9418481035
-31/12/2024,Sustainable Growth,Listed Equity,,Watts Water Technologies Inc,7358.807915,2416289.509,0.00102954,,,US9427491025
-31/12/2024,Sustainable Growth,Listed Equity,,Webjet Group Ltd,194010.5329,168789.1636,0.00007192,,,AU0000350118
-31/12/2024,Sustainable Growth,Listed Equity,,WEB Travel Group Ltd,145249.9661,666697.3444,0.00028407,,,AU000000WEB7
-31/12/2024,Sustainable Growth,Listed Equity,,Weebit Nano Ltd,19765.27331,71154.98393,0.00003032,,,AU000000WBT5
-31/12/2024,Sustainable Growth,Listed Equity,,Wells Fargo & Co,12477.53226,1415524.293,0.00060313,,,US9497461015
-31/12/2024,Sustainable Growth,Listed Equity,,Wesfarmers Ltd,281198.9436,20114160.44,0.00857034,,,AU000000WES1
-31/12/2024,Sustainable Growth,Listed Equity,,West African Resources Ltd,155490.9674,223129.5382,0.00009507,,,AU000000WAF6
-31/12/2024,Sustainable Growth,Listed Equity,,Westgold Resources Ltd,164377.0761,465187.1254,0.00019821,,,AU000000WGX6
-31/12/2024,Sustainable Growth,Listed Equity,,Westlake Corp,2469.431232,457272.535,0.00019484,,,US9604131022
-31/12/2024,Sustainable Growth,Listed Equity,,Westpac Banking Corp,1100198.501,35558415.55,0.0151509,,,AU000000WBC1
-31/12/2024,Sustainable Growth,Listed Equity,,WH Group Ltd,524204.4743,655047.4154,0.00027911,,,KYG960071028
-31/12/2024,Sustainable Growth,Listed Equity,,WiseTech Global Ltd,58406.3019,7070666.908,0.0030127,,,AU000000WTC3
-31/12/2024,Sustainable Growth,Listed Equity,,Woolworths Group Ltd,251682.1616,7673789.106,0.00326969,,,AU000000WOW2
-31/12/2024,Sustainable Growth,Listed Equity,,Workday Inc,13102.0886,5460279.286,0.00232654,,,US98138H1014
-31/12/2024,Sustainable Growth,Listed Equity,,WW Grainger Inc,972.806243,1656119.551,0.00070565,,,US3848021040
-31/12/2024,Sustainable Growth,Listed Equity,,Xero Ltd,79101.85766,13333409.13,0.00568116,,,NZXROE0001S2
-31/12/2024,Sustainable Growth,Listed Equity,,Xylem Inc/NY,18697.95334,3503733.422,0.00149289,,,US98419M1009
-31/12/2024,Sustainable Growth,Listed Equity,,Yangzijiang Shipbuilding Holdings Ltd,86017.36407,304497.0561,0.00012974,,,SG1U76934819
-31/12/2024,Sustainable Growth,Listed Equity,,Yaskawa Electric Corp,1697.203596,70936.55293,0.00003022,,,JP3932000007
-31/12/2024,Sustainable Growth,Listed Equity,,Zalando SE,1228.158239,66530.27296,0.00002835,,,DE000ZAL1111
-31/12/2024,Sustainable Growth,Listed Equity,,Zebra Technologies Corp,1143.298059,713178.6752,0.00030387,,,US9892071054
-31/12/2024,Sustainable Growth,Listed Equity,,Zillow Group Inc,431.244005,51576.5438,0.00002198,,,US98954M2008
-31/12/2024,Sustainable Growth,Listed Equity,,Zip Co Ltd,206285.3554,610604.652,0.00026017,,,AU0000218307
-31/12/2024,Sustainable Growth,Listed Equity,,Zoetis Inc,698.939299,183926.6403,0.00007837,,,US98978V1035
-31/12/2024,Sustainable Growth,Listed Equity,,Zoom Communications Inc,8240.694915,1086203.844,0.00046281,,,US98980L1017
-31/12/2024,Sustainable Growth,Listed Equity,,Zscaler Inc,374.156247,109022.8971,0.00004645,,,US98980G1022
-31/12/2024,Sustainable Growth,Listed Equity Total,,,53312361.89,1336544315,0.56948128,,,
-31/12/2024,Sustainable Growth,Listed Infrastructure,,Atlas Arteria Ltd,265852.4503,1262799.139,0.00053806,,,AU0000013559
-31/12/2024,Sustainable Growth,Listed Infrastructure,,Transurban Group,854500.9965,11441768.34,0.00487516,,,AU000000TCL6
-31/12/2024,Sustainable Growth,Listed Infrastructure Total,,,1120353.447,12704567.48,0.00541322,,,
-31/12/2024,Sustainable Growth,Listed Property,,Arena REIT,700466.2051,2724813.538,0.001161,,,AU000000ARF6
-31/12/2024,Sustainable Growth,Listed Property,,Camden Property Trust,3791.707125,710635.0531,0.00030279,,,US1331311027
-31/12/2024,Sustainable Growth,Listed Property,,Centuria Capital Group,177133.6711,314412.2662,0.00013397,,,AU000000CNI5
-31/12/2024,Sustainable Growth,Listed Property,,Charter Hall Group,338929.4556,4863637.688,0.00207232,,,AU000000CHC0
-31/12/2024,Sustainable Growth,Listed Property,,Charter Hall Long Wale REIT,127370.2763,476364.8333,0.00020297,,,AU000000CLW0
-31/12/2024,Sustainable Growth,Listed Property,,Cromwell Property Group,190636.6429,72441.92431,0.00003087,,,AU000000CMW8
-31/12/2024,Sustainable Growth,Listed Property,,Dexus,213618.6743,1422700.371,0.00060619,,,AU000000DXS1
-31/12/2024,Sustainable Growth,Listed Property,,Dexus Industria REIT,39057.66837,100378.2077,0.00004277,,,AU0000192833
-31/12/2024,Sustainable Growth,Listed Property,,DigiCo Infrastructure REIT,133844.8399,595609.5374,0.00025378,,,AU0000367088
-31/12/2024,Sustainable Growth,Listed Property,,Equinix Inc,78.68853,119833.0425,0.00005106,,,US29444U7000
-31/12/2024,Sustainable Growth,Listed Property,,Goodman Group,631708.6509,22514096.32,0.00959292,,,AU000000GMG2
-31/12/2024,Sustainable Growth,Listed Property,,GPT Group/The,408507.5155,1785177.843,0.00076064,,,AU000000GPT8
-31/12/2024,Sustainable Growth,Listed Property,,Growthpoint Properties Australia Ltd,201457.9948,479470.0276,0.00020429,,,AU000000GOZ8
-31/12/2024,Sustainable Growth,Listed Property,,Host Hotels & Resorts Inc,43439.92604,1229213.444,0.00052375,,,US44107P1049
-31/12/2024,Sustainable Growth,Listed Property,,Ingenia Communities Group,36425.70806,166829.7429,0.00007108,,,AU000000INA9
-31/12/2024,Sustainable Growth,Listed Property,,Kimco Realty Corp,10410.80115,393967.6509,0.00016786,,,US49446R1095
-31/12/2024,Sustainable Growth,Listed Property,,Klepierre SA,18246.48157,848355.6263,0.00036147,,,FR0000121964
-31/12/2024,Sustainable Growth,Listed Property,,Lendlease Corp Ltd,149505.8704,931421.5724,0.00039686,,,AU000000LLC3
-31/12/2024,Sustainable Growth,Listed Property,,Mirvac Group,1214310.537,2276832.26,0.00097012,,,AU000000MGR9
-31/12/2024,Sustainable Growth,Listed Property,,National Storage REIT,30614.79035,71638.60941,0.00003052,,,AU000000NSR2
-31/12/2024,Sustainable Growth,Listed Property,,Prologis Inc,9281.389301,1584499.472,0.00067513,,,US74340W1036
-31/12/2024,Sustainable Growth,Listed Property,,Scentre Group,2566621.179,8803510.644,0.00375104,,,AU000000SCG8
-31/12/2024,Sustainable Growth,Listed Property,,Simon Property Group Inc,2268.081169,630842.7,0.00026879,,,US8288061091
-31/12/2024,Sustainable Growth,Listed Property,,Stockland,539368.5711,2588969.141,0.00110312,,,AU000000SGP0
-31/12/2024,Sustainable Growth,Listed Property,,Vicinity Ltd,787055.4513,1652816.448,0.00070424,,,AU000000VCX7
-31/12/2024,Sustainable Growth,Listed Property,,WP Carey Inc,3322.661767,292366.3319,0.00012457,,,US92936U1097
-31/12/2024,Sustainable Growth,Listed Property Total,,,8577473.438,57650834.29,0.02456415,,,
-31/12/2024,Sustainable Growth,Unlisted Equity,Externally Managed,Brandon Capital Partners,,4813400.844,0.00205092,,,
-31/12/2024,Sustainable Growth,Unlisted Equity,Externally Managed,Generation Investment Management LLP,,23085539.39,0.0098364,,,
-31/12/2024,Sustainable Growth,Unlisted Equity,Externally Managed,IFM Investors Pty Ltd,,1443808.584,0.00061518,,,
-31/12/2024,Sustainable Growth,Unlisted Equity,Externally Managed,Stafford Capital Management LLC,,84395888.72,0.03595981,,,
-31/12/2024,Sustainable Growth,Unlisted Equity,Externally Managed,Stone Point Capital LLC,,3608379.754,0.00153748,,,
-31/12/2024,Sustainable Growth,Unlisted Equity Total,,,,117347017.3,0.04999979,,,
-31/12/2024,Sustainable Growth,Unlisted Infrastructure,Externally Managed,Generate Capital,,44202693.4,0.0188341,,,
-31/12/2024,Sustainable Growth,Unlisted Infrastructure,Internally Managed,Generate Capital PBC,,,,1.38%,,
-31/12/2024,Sustainable Growth,Unlisted Infrastructure,Internally Managed,Intera Hold Co Pty Ltd,,,,20.20%,,
-31/12/2024,Sustainable Growth,Unlisted Infrastructure,Internally Managed,Intera Hold Trust and Intera Hold (T) Pty Ltd,,,,20.20%,,
-31/12/2024,Sustainable Growth,Unlisted Infrastructure External Total,,,,44202693.4,0.0188341,,,
-31/12/2024,Sustainable Growth,Unlisted Infrastructure Internal Total,,,,49675028.57,0.02116578,,,
-31/12/2024,Sustainable Growth,Unlisted Property,Externally Managed,IFM Investors Pty Ltd,,30785962.11,0.01311743,,,
-31/12/2024,Sustainable Growth,Unlisted Property,Externally Managed,Investa Property Group,,116416239.9,0.0496032,,,
-31/12/2024,Sustainable Growth,Unlisted Property Total,,,,147202202,0.06272063,,,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,366.904246,0.00000015,,ARS,
+30/06/2025,Sustainable Growth,Cash,,Australia & New Zealand Banking Group Ltd,,8136490.542,0.00339152,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Australia Treasury Bill,,5357679.281,0.00223324,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Bank of America Corp,,-100965.2058,-0.00004209,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Bank of Nova Scotia/Australia,,1339419.82,0.00055831,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Bank of Queensland Ltd,,3116048.544,0.00129886,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,-502593.832,-0.0002095,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Bendigo & Adelaide Bank Ltd,,3276021.07,0.00136554,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Canadian Imperial Bank of Commerce/Sydney,,1080940.759,0.00045057,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Citigroup Inc,,464090.0574,0.00019345,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Commonwealth Bank of Australia,,25619406.55,0.01067891,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Cooperatieve Rabobank UA/Australia,,4088573.523,0.00170424,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Credit Agricole Corporate & Investment Bank SA/Sydney,,1339419.82,0.00055831,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Credit Union Australia Ltd,,4890757.432,0.00203861,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Defence Bank Ltd,,840775.6587,0.00035046,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,59174.90351,0.00002467,,AUD,
+30/06/2025,Sustainable Growth,Cash,,HSBC Holdings PLC,,-13666.47003,-0.0000057,,AUD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,13678269.82,0.0057015,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Macquarie Bank Ltd,,4612725.365,0.00192272,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Macquarie Group Ltd,,788538.9952,0.00032869,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Merrill Lynch,,3755.72165,0.00000157,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Mitsubishi UFJ Financial Group Inc,,920019.0089,0.00038349,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Mizuho Bank Ltd/Sydney,,841045.8009,0.00035057,,AUD,
+30/06/2025,Sustainable Growth,Cash,,MUFG Bank Ltd/Sydney,,970104.0699,0.00040437,,AUD,
+30/06/2025,Sustainable Growth,Cash,,MyState Bank Ltd,,3353011.803,0.00139763,,AUD,
+30/06/2025,Sustainable Growth,Cash,,National Australia Bank Ltd,,25205713.2,0.01050647,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Newcastle Greater Mutual Group Ltd,,2387761.688,0.00099529,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Norfina Ltd,,12063263.82,0.00502832,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Oversea-Chinese Banking Corp Ltd/Sydney,,1485416.581,0.00061916,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Police & Nurses Ltd,,2242895.106,0.0009349,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Royal Bank of Canada,,2579997.427,0.00107542,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Royal Bank of Canada/Sydney,,2708539.068,0.001129,,AUD,
+30/06/2025,Sustainable Growth,Cash,,SSB Bank,,-4287.52001,-0.00000179,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Standard Chartered Bank/Australia,,1339419.82,0.00055831,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Sumitomo Mitsui Banking Corp/Sydney,,11037943.47,0.00460093,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Teachers Mutual Bank Ltd,,3092194.503,0.00128892,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Telstra Group Ltd,,2119522.735,0.00088348,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Toronto-Dominion Bank/The,,21705.57005,0.00000905,,AUD,
+30/06/2025,Sustainable Growth,Cash,,UBS AG/Australia,,4853675.454,0.00202315,,AUD,
+30/06/2025,Sustainable Growth,Cash,,UBS Group AG,,127984.0637,0.00005335,,AUD,
+30/06/2025,Sustainable Growth,Cash,,United Overseas Bank Ltd/Sydney,,1624885.098,0.0006773,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Westpac Banking Corp,,11747811.63,0.00489683,,AUD,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,55575.9901,0.00002317,,CAD,
+30/06/2025,Sustainable Growth,Cash,,Citigroup Inc,,-5574.328531,-0.00000232,,CAD,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,7438.047811,0.0000031,,CAD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,-964507.9389,-0.00040203,,CAD,
+30/06/2025,Sustainable Growth,Cash,,Merrill Lynch,,-472.188527,-0.0000002,,CAD,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,2137.181996,0.00000089,,CHF,
+30/06/2025,Sustainable Growth,Cash,,Citigroup Inc,,4265.613944,0.00000178,,CHF,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,616603.0368,0.00025702,,CHF,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,7.685501,0,,CZK,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,223449.3991,0.00009314,,DKK,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,703146.7931,0.00029309,,EUR,
+30/06/2025,Sustainable Growth,Cash,,Citigroup Inc,,-288.125228,-0.00000012,,EUR,
+30/06/2025,Sustainable Growth,Cash,,Credit Suisse Group AG,,0.001136,0,,EUR,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,-57168.0538,-0.00002383,,EUR,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,1435392.688,0.00059831,,EUR,
+30/06/2025,Sustainable Growth,Cash,,Macquarie Group Ltd,,-36.797463,-0.00000002,,EUR,
+30/06/2025,Sustainable Growth,Cash,,Merrill Lynch,,-633.919398,-0.00000026,,EUR,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,52802.52947,0.00002201,,GBP,
+30/06/2025,Sustainable Growth,Cash,,Citigroup Inc,,-20810.89643,-0.00000867,,GBP,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,7284.992143,0.00000304,,GBP,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,866564.243,0.00036121,,GBP,
+30/06/2025,Sustainable Growth,Cash,,Merrill Lynch,,139.617816,0.00000006,,GBP,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,0.002557,0,,HKD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,39753.24658,0.00001657,,HKD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,2174.56785,0.00000091,,ILS,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,109544.563,0.00004566,,JPY,
+30/06/2025,Sustainable Growth,Cash,,Citigroup Inc,,230.196161,0.0000001,,JPY,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,43852.09641,0.00001828,,JPY,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,976228.8894,0.00040692,,JPY,
+30/06/2025,Sustainable Growth,Cash,,Merrill Lynch,,4928.377872,0.00000205,,JPY,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,20131.80114,0.00000839,,KRW,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,12.28358,0.00000001,,MXN,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,-0.000284,0,,NOK,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,12015.40788,0.00000501,,NOK,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,-4734.824408,-0.00000197,,NZD,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,2.874737,0,,NZD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,42103.31362,0.00001755,,NZD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,0.005059,0,,PLN,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,5751.961445,0.0000024,,RON,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,0.01983,0,,RUB,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,-1738.047627,-0.00000072,,SEK,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,0.000568,0,,SEK,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,8902.925491,0.00000371,,SEK,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,46942.62652,0.00001957,,SGD,
+30/06/2025,Sustainable Growth,Cash,,Credit Suisse Group AG,,0.000284,0,,SGD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,6658.787199,0.00000278,,SGD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,22219.53277,0.00000926,,TWD,
+30/06/2025,Sustainable Growth,Cash,,Barclays Bank PLC,,69093.33729,0.0000288,,USD,
+30/06/2025,Sustainable Growth,Cash,,BNP Paribas SA,,-994724.4808,-0.00041463,,USD,
+30/06/2025,Sustainable Growth,Cash,,Citigroup Inc,,67259.68222,0.00002804,,USD,
+30/06/2025,Sustainable Growth,Cash,,Goldman Sachs Group Inc/The,,454620.7188,0.0001895,,USD,
+30/06/2025,Sustainable Growth,Cash,,HSBC Holdings PLC,,9970.738233,0.00000416,,USD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,15780322.39,0.00657769,,USD,
+30/06/2025,Sustainable Growth,Cash,,Macquarie Group Ltd,,-30.950975,-0.00000001,,USD,
+30/06/2025,Sustainable Growth,Cash,,Merrill Lynch,,-32291.31662,-0.00001346,,USD,
+30/06/2025,Sustainable Growth,Cash,,SSB Bank,,204071.0196,0.00008506,,USD,
+30/06/2025,Sustainable Growth,Cash,,Westpac Banking Corp,,-876922.0299,-0.00036553,,USD,
+30/06/2025,Sustainable Growth,Cash,,JPMorgan Chase & Co,,1207.233728,0.0000005,,ZAR,
+30/06/2025,Sustainable Growth,Cash Total,,,,187736724.2,0.07825409,,,
+30/06/2025,Sustainable Growth,Fixed Income,Externally Managed,BlackRock Investment Management (Australia) Limited,,119941512.4,0.04999509,,,
+30/06/2025,Sustainable Growth,Fixed Income,Externally Managed,JPMorgan Asset Management (Australia) Limited,,42842779.69,0.01785811,,,
+30/06/2025,Sustainable Growth,Fixed Income,Externally Managed,PIMCO Australia Pty Ltd,,207232910.2,0.08638066,,,
+30/06/2025,Sustainable Growth,Fixed Income,Externally Managed,Wellington Management Australia Pty Ltd,,11652273.54,0.004857,,,
+30/06/2025,Sustainable Growth,Fixed Income Total,,,,381669475.8,0.15909086,,,
+30/06/2025,Sustainable Growth,Listed Equity,,3i Group PLC,23681.05471,2040123.497,0.00085038,,,GB00B1YW4409
+30/06/2025,Sustainable Growth,Listed Equity,,a2 Milk Co Ltd/The,88066.69847,705414.2548,0.00029404,,,NZATME0002S8
+30/06/2025,Sustainable Growth,Listed Equity,,ABB Ltd,30387.02533,2755844.853,0.00114872,,,CH0012221716
+30/06/2025,Sustainable Growth,Listed Equity,,Abbott Laboratories,13345.57571,2769713.519,0.0011545,,,US0028241000
+30/06/2025,Sustainable Growth,Listed Equity,,AbbVie Inc,3271.744738,926682.3203,0.00038627,,,US00287Y1091
+30/06/2025,Sustainable Growth,Listed Equity,,Accent Group Ltd,61867.09342,86304.59532,0.00003597,,,AU000000AX19
+30/06/2025,Sustainable Growth,Listed Equity,,Accenture PLC,19544.16253,8913641.174,0.00371546,,,IE00B4BNMY34
+30/06/2025,Sustainable Growth,Listed Equity,,ACS Actividades de Construccion y Servicios SA,5924.840612,625604.3779,0.00026077,,,ES0167050915
+30/06/2025,Sustainable Growth,Listed Equity,,adidas AG,2740.057613,971526.1627,0.00040496,,,DE000A1EWWW0
+30/06/2025,Sustainable Growth,Listed Equity,,Adobe Inc,2701.153677,1594601.869,0.00066468,,,US00724F1012
+30/06/2025,Sustainable Growth,Listed Equity,,Adriatic Metals PLC,53258.59183,302508.8016,0.00012609,,,AU0000004772
+30/06/2025,Sustainable Growth,Listed Equity,,Advanced Drainage Systems Inc,7059.337939,1237255.748,0.00051572,,,US00790R1041
+30/06/2025,Sustainable Growth,Listed Equity,,Advanced Micro Devices Inc,5713.538842,1237126.973,0.00051567,,,US0079031078
+30/06/2025,Sustainable Growth,Listed Equity,,Adyen NV,4618.064712,12890752.04,0.00537324,,,NL0012969182
+30/06/2025,Sustainable Growth,Listed Equity,,AECOM,5850.846851,1007593.765,0.00041999,,,US00766T1007
+30/06/2025,Sustainable Growth,Listed Equity,,AGCO Corp,11833.42682,1862724.207,0.00077644,,,US0010841023
+30/06/2025,Sustainable Growth,Listed Equity,,Agilent Technologies Inc,34231.75394,6164170.72,0.0025694,,,US00846U1016
+30/06/2025,Sustainable Growth,Listed Equity,,Agnico Eagle Mines Ltd,1830.773461,332158.7546,0.00013845,,,CA0084741085
+30/06/2025,Sustainable Growth,Listed Equity,,Airbnb Inc,9261.425244,1870232.724,0.00077957,,,US0090661010
+30/06/2025,Sustainable Growth,Listed Equity,,Air Liquide SA,9492.514367,2977871.199,0.00124126,,,FR0000120073
+30/06/2025,Sustainable Growth,Listed Equity,,Aisin Corp,4042.958059,78884.25245,0.00003288,,,JP3102000001
+30/06/2025,Sustainable Growth,Listed Equity,,Akamai Technologies Inc,4464.798777,543392.6184,0.0002265,,,US00971T1016
+30/06/2025,Sustainable Growth,Listed Equity,,Alamos Gold Inc,12434.00309,503631.1404,0.00020993,,,CA0115321089
+30/06/2025,Sustainable Growth,Listed Equity,,Align Technology Inc,2817.102662,813858.3122,0.00033924,,,US0162551016
+30/06/2025,Sustainable Growth,Listed Equity,,Allegion plc,7955.473508,1749512.231,0.00072925,,,IE00BFRT3W74
+30/06/2025,Sustainable Growth,Listed Equity,,Alphabet Inc,15196.94537,4113505.976,0.00171463,,,US02079K1079
+30/06/2025,Sustainable Growth,Listed Equity,,Alphabet Inc,51140.77253,13752252,0.00573234,,,US02079K3059
+30/06/2025,Sustainable Growth,Listed Equity,,Alpha HPA Ltd,417823.3846,357238.9939,0.00014891,,,AU0000033060
+30/06/2025,Sustainable Growth,Listed Equity,,ALS Ltd,305935.3524,5231494.526,0.00218064,,,AU000000ALQ6
+30/06/2025,Sustainable Growth,Listed Equity,,Alstom SA,965.733,34250.07939,0.00001428,,,FR0010220475
+30/06/2025,Sustainable Growth,Listed Equity,,Amazon.com Inc,47658.83335,15954637.14,0.00665035,,,US0231351067
+30/06/2025,Sustainable Growth,Listed Equity,,Amcor PLC,149183.2931,2118402.762,0.00088301,,,AU000000AMC4
+30/06/2025,Sustainable Growth,Listed Equity,,American Water Works Co Inc,15681.06338,3328591.941,0.00138745,,,US0304201033
+30/06/2025,Sustainable Growth,Listed Equity,,AMETEK Inc,148.750344,41074.0281,0.00001712,,,US0311001004
+30/06/2025,Sustainable Growth,Listed Equity,,Amgen Inc,80.096339,34124.81634,0.00001422,,,US0311621009
+30/06/2025,Sustainable Growth,Listed Equity,,Amotiv Ltd,4214.396809,33757.31844,0.00001407,,,AU0000340770
+30/06/2025,Sustainable Growth,Listed Equity,,AMP Ltd,324137.251,408412.9363,0.00017024,,,AU000000AMP6
+30/06/2025,Sustainable Growth,Listed Equity,,Amrize Ltd,1636.25378,124148.1048,0.00005175,,,CH1430134226
+30/06/2025,Sustainable Growth,Listed Equity,,Analog Devices Inc,13113.4818,4762754.16,0.00198525,,,US0326541051
+30/06/2025,Sustainable Growth,Listed Equity,,ANTA Sports Products Ltd,198308.4075,3642755.099,0.00151841,,,KYG040111059
+30/06/2025,Sustainable Growth,Listed Equity,,ANZ Group Holdings Ltd,817924.1201,23850667.34,0.00994165,,,AU000000ANZ3
+30/06/2025,Sustainable Growth,Listed Equity,,AP Moller - Maersk A/S,134.25672,379536.3875,0.0001582,,,DK0010244508
+30/06/2025,Sustainable Growth,Listed Equity,,AP Moller - Maersk A/S,140.359299,394260.7339,0.00016434,,,DK0010244425
+30/06/2025,Sustainable Growth,Listed Equity,,Apple Inc,52497.42898,16435336.09,0.00685072,,,US0378331005
+30/06/2025,Sustainable Growth,Listed Equity,,Applied Materials Inc,5119.300289,1430060.738,0.00059609,,,US0382221051
+30/06/2025,Sustainable Growth,Listed Equity,,AppLovin Corp,454.642076,242864.2666,0.00010123,,,US03831W1080
+30/06/2025,Sustainable Growth,Listed Equity,,ARB Corp Ltd,29296.18185,957985.1464,0.00039932,,,AU000000ARB5
+30/06/2025,Sustainable Growth,Listed Equity,,Arista Networks Inc,5710.487552,891493.0694,0.0003716,,,US0404132054
+30/06/2025,Sustainable Growth,Listed Equity,,Asahi Kasei Corp,16858.37228,182898.5481,0.00007624,,,JP3111200006
+30/06/2025,Sustainable Growth,Listed Equity,,ASML Holding NV,8667.883153,10520242.39,0.00438514,,,NL0010273215
+30/06/2025,Sustainable Growth,Listed Equity,,Assa Abloy AB,126390.8229,5973755.759,0.00249003,,,SE0007100581
+30/06/2025,Sustainable Growth,Listed Equity,,Astellas Pharma Inc,4958.344789,74195.48905,0.00003093,,,JP3942400007
+30/06/2025,Sustainable Growth,Listed Equity,,AstraZeneca PLC,8122.336999,1718777.729,0.00071644,,,GB0009895292
+30/06/2025,Sustainable Growth,Listed Equity,,ASX Ltd,44321.92064,3091897.184,0.00128879,,,AU000000ASX7
+30/06/2025,Sustainable Growth,Listed Equity,,Atlassian Corp Ltd,2125.222859,658596.9524,0.00027452,,,US0494681010
+30/06/2025,Sustainable Growth,Listed Equity,,AT&T Inc,51153.33613,2258911.345,0.00094158,,,US00206R1023
+30/06/2025,Sustainable Growth,Listed Equity,,AUB Group Ltd,26594.6829,943579.3492,0.00039331,,,AU000000AUB9
+30/06/2025,Sustainable Growth,Listed Equity,,Auckland International Airport Ltd,112018.4757,795331.1776,0.00033152,,,NZAIAE0002S6
+30/06/2025,Sustainable Growth,Listed Equity,,Audinate Group Ltd,8705.697738,65118.61908,0.00002714,,,AU000000AD88
+30/06/2025,Sustainable Growth,Listed Equity,,Aussie Broadband Ltd,91127.32811,356307.8529,0.00014852,,,AU0000106643
+30/06/2025,Sustainable Growth,Listed Equity,,Australian Clinical Labs Ltd,28377.77762,78890.22177,0.00003288,,,AU0000148496
+30/06/2025,Sustainable Growth,Listed Equity,,Australian Ethical Investment Ltd,49327.39242,315202.0375,0.00013139,,,AU000000AEF4
+30/06/2025,Sustainable Growth,Listed Equity,,Australian Finance Group Ltd,54138.95114,123978.1981,0.00005168,,,AU000000AFG9
+30/06/2025,Sustainable Growth,Listed Equity,,Autodesk Inc,1333.413337,629869.1799,0.00026255,,,US0527691069
+30/06/2025,Sustainable Growth,Listed Equity,,Automatic Data Processing Inc,3094.007148,1456003.362,0.0006069,,,US0530151036
+30/06/2025,Sustainable Growth,Listed Equity,,Aviva PLC,131309.1752,1700138.178,0.00070867,,,GB00BPQY8M80
+30/06/2025,Sustainable Growth,Listed Equity,,Axon Enterprise Inc,670.52078,847106.0889,0.0003531,,,US05464C1018
+30/06/2025,Sustainable Growth,Listed Equity,,Ball Corp,29458.8963,2521323.714,0.00105096,,,US0584981064
+30/06/2025,Sustainable Growth,Listed Equity,,Banco Bilbao Vizcaya Argentaria SA,23868.70899,558142.5194,0.00023265,,,ES0113211835
+30/06/2025,Sustainable Growth,Listed Equity,,Banco Santander SA,47782.4245,601419.4028,0.00025069,,,ES0113900J37
+30/06/2025,Sustainable Growth,Listed Equity,,Bandai Namco Holdings Inc,3203.853556,175013.4297,0.00007295,,,JP3778630008
+30/06/2025,Sustainable Growth,Listed Equity,,Bank Hapoalim BM,1476.061103,43220.55659,0.00001802,,,IL0006625771
+30/06/2025,Sustainable Growth,Listed Equity,,Bank Leumi Le-Israel BM,8273.570397,234760.5538,0.00009785,,,IL0006046119
+30/06/2025,Sustainable Growth,Listed Equity,,Bank of America Corp,42894.25936,3097209.667,0.00129101,,,US0605051046
+30/06/2025,Sustainable Growth,Listed Equity,,Bank of Montreal,762.822275,128734.3754,0.00005366,,,CA0636711016
+30/06/2025,Sustainable Growth,Listed Equity,,Bank of New York Mellon Corp/The,12726.92684,1769360.348,0.00073752,,,US0640581007
+30/06/2025,Sustainable Growth,Listed Equity,,Bank of Nova Scotia/The,2898.724646,244092.8681,0.00010174,,,CA0641491075
+30/06/2025,Sustainable Growth,Listed Equity,,Bank of Queensland Ltd,41163.61562,320252.9295,0.00013349,,,AU000000BOQ8
+30/06/2025,Sustainable Growth,Listed Equity,,Bapcor Ltd,138556.9483,692784.7417,0.00028877,,,AU000000BAP9
+30/06/2025,Sustainable Growth,Listed Equity,,Barclays PLC,95787.5931,675590.9163,0.00028161,,,GB0031348658
+30/06/2025,Sustainable Growth,Listed Equity,,Becton Dickinson & Co,16127.41743,4238876.407,0.00176689,,,US0758871091
+30/06/2025,Sustainable Growth,Listed Equity,,Bega Cheese Ltd,40458.06951,220901.0595,0.00009208,,,AU000000BGA8
+30/06/2025,Sustainable Growth,Listed Equity,,Bellevue Gold Ltd,178861.1822,160975.064,0.0000671,,,AU0000019374
+30/06/2025,Sustainable Growth,Listed Equity,,Bendigo & Adelaide Bank Ltd,69769.34966,881884.5797,0.00036759,,,AU000000BEN6
+30/06/2025,Sustainable Growth,Listed Equity,,BioMarin Pharmaceutical Inc,7448.959518,624810.1121,0.00026044,,,US09061G1013
+30/06/2025,Sustainable Growth,Listed Equity,,BKW AG,4747.805841,1577266.725,0.00065745,,,CH0130293662
+30/06/2025,Sustainable Growth,Listed Equity,,Block Inc,10990.46886,1128171.628,0.00047025,,,AU0000380420
+30/06/2025,Sustainable Growth,Listed Equity,,BlueScope Steel Ltd,132026.6652,3051136.233,0.0012718,,,AU000000BSL0
+30/06/2025,Sustainable Growth,Listed Equity,,BNP Paribas SA,1466.144413,200426.1597,0.00008354,,,FR0000131104
+30/06/2025,Sustainable Growth,Listed Equity,,BOC Hong Kong Holdings Ltd,60644.37088,401977.6576,0.00016756,,,HK2388011192
+30/06/2025,Sustainable Growth,Listed Equity,,Boliden AB,10631.45405,502316.5002,0.00020938,,,SE0020050417
+30/06/2025,Sustainable Growth,Listed Equity,,Booking Holdings Inc,487.443434,4305984.626,0.00179486,,,US09857L1089
+30/06/2025,Sustainable Growth,Listed Equity,,Booz Allen Hamilton Holding Corp,3400.661703,540338.606,0.00022523,,,US0995021062
+30/06/2025,Sustainable Growth,Listed Equity,,Bouygues SA,5899.667477,405786.9327,0.00016914,,,FR0000120503
+30/06/2025,Sustainable Growth,Listed Equity,,BPER Banca SPA,9378.899874,129623.4066,0.00005403,,,IT0000066123
+30/06/2025,Sustainable Growth,Listed Equity,,BrainChip Holdings Ltd,218828.3763,42671.53337,0.00001779,,,AU000000BRN8
+30/06/2025,Sustainable Growth,Listed Equity,,Brambles Ltd,558824.7204,13087674.95,0.00545532,,,AU000000BXB1
+30/06/2025,Sustainable Growth,Listed Equity,,Breville Group Ltd,86415.01432,2548378.772,0.00106224,,,AU000000BRG2
+30/06/2025,Sustainable Growth,Listed Equity,,Bristol-Myers Squibb Co,12213.54745,862691.86,0.00035959,,,US1101221083
+30/06/2025,Sustainable Growth,Listed Equity,,Broadcom Inc,14477.60396,6089496.502,0.00253828,,,US11135F1012
+30/06/2025,Sustainable Growth,Listed Equity,,Cadence Design Systems Inc,656.027157,308468.4011,0.00012858,,,US1273871087
+30/06/2025,Sustainable Growth,Listed Equity,,CaixaBank SA,6918.798036,91136.75723,0.00003799,,,ES0140609019
+30/06/2025,Sustainable Growth,Listed Equity,,Canadian Pacific Kansas City Ltd,21836.82436,2641344.423,0.00110099,,,CA13646K1084
+30/06/2025,Sustainable Growth,Listed Equity,,Canadian Tire Corp Ltd,2135.902371,442813.5097,0.00018458,,,CA1366812024
+30/06/2025,Sustainable Growth,Listed Equity,,Capricorn Metals Ltd,22820.81537,217938.7868,0.00009084,,,AU000000CMM9
+30/06/2025,Sustainable Growth,Listed Equity,,Capstone Copper Corp,148566.2349,1399493.932,0.00058335,,,AU0000318552
+30/06/2025,Sustainable Growth,Listed Equity,,Cardinal Health Inc,7033.9842,1803172.88,0.00075161,,,US14149Y1082
+30/06/2025,Sustainable Growth,Listed Equity,,CAR Group Ltd,92294.99559,3453678.735,0.00143959,,,AU000000CAR3
+30/06/2025,Sustainable Growth,Listed Equity,,Carnival Corp,6019.430574,258283.9484,0.00010766,,,PA1436583006
+30/06/2025,Sustainable Growth,Listed Equity,,Carvana Co,309.705844,159240.8358,0.00006638,,,US1468691027
+30/06/2025,Sustainable Growth,Listed Equity,,Catalyst Metals Ltd,3796.942869,19820.04178,0.00000826,,,AU000000CYL6
+30/06/2025,Sustainable Growth,Listed Equity,,Catapult Sports Ltd,29579.79323,173337.5883,0.00007225,,,AU000000CAT9
+30/06/2025,Sustainable Growth,Listed Equity,,CDW Corp/DE,2218.287176,604507.376,0.00025198,,,US12514G1085
+30/06/2025,Sustainable Growth,Listed Equity,,Cencora Inc,288.34682,131930.7151,0.00005499,,,US03073E1055
+30/06/2025,Sustainable Growth,Listed Equity,,Centene Corp,9280.495801,768666.0736,0.0003204,,,US15135B1017
+30/06/2025,Sustainable Growth,Listed Equity,,Cettire Ltd,24973.11559,8490.859299,0.00000354,,,AU0000122210
+30/06/2025,Sustainable Growth,Listed Equity,,Chalice Mining Ltd,53718.00094,90514.83158,0.00003773,,,AU000000CHN7
+30/06/2025,Sustainable Growth,Listed Equity,,Challenger Ltd,204528.7096,1652591.973,0.00068885,,,AU000000CGF5
+30/06/2025,Sustainable Growth,Listed Equity,,Champion Iron Ltd,374810.5175,1562959.858,0.00065149,,,AU000000CIA2
+30/06/2025,Sustainable Growth,Listed Equity,,Charles Schwab Corp/The,82945.14589,11547898.24,0.0048135,,,US8085131055
+30/06/2025,Sustainable Growth,Listed Equity,,Check Point Software Technologies Ltd,1554.631797,524852.8027,0.00021877,,,IL0010824113
+30/06/2025,Sustainable Growth,Listed Equity,,Chorus Ltd,97718.48529,763181.3701,0.00031812,,,NZCNUE0001S2
+30/06/2025,Sustainable Growth,Listed Equity,,Cigna Group/The,1521.067617,767276.3182,0.00031982,,,US1255231003
+30/06/2025,Sustainable Growth,Listed Equity,,Cintas Corp,6643.419195,2259279.521,0.00094173,,,US1729081059
+30/06/2025,Sustainable Growth,Listed Equity,,Cisco Systems Inc,28325.87955,2998778.551,0.00124998,,,US17275R1023
+30/06/2025,Sustainable Growth,Listed Equity,,Citigroup Inc,19323.05105,2509770.516,0.00104614,,,US1729674242
+30/06/2025,Sustainable Growth,Listed Equity,,CK Asset Holdings Ltd,56830.25951,382219.447,0.00015932,,,KYG2177B1014
+30/06/2025,Sustainable Growth,Listed Equity,,Clarity Pharmaceuticals Ltd,140428.8375,351072.0936,0.00014634,,,AU0000165375
+30/06/2025,Sustainable Growth,Listed Equity,,Cleanaway Waste Management Ltd,655354.5779,1782564.452,0.00074302,,,AU000000CWY3
+30/06/2025,Sustainable Growth,Listed Equity,,Cloudflare Inc,1781.952835,532478.5616,0.00022195,,,US18915M1071
+30/06/2025,Sustainable Growth,Listed Equity,,Coca-Cola Co/The,4752.382775,513055.741,0.00021386,,,US1912161007
+30/06/2025,Sustainable Growth,Listed Equity,,Coca-Cola HBC AG,13509.58249,1074584.657,0.00044792,,,CH0198251305
+30/06/2025,Sustainable Growth,Listed Equity,,Cochlear Ltd,20303.29272,6099515.199,0.00254245,,,AU000000COH5
+30/06/2025,Sustainable Growth,Listed Equity,,Codan Ltd,16412.86244,330062.6636,0.00013758,,,AU000000CDA3
+30/06/2025,Sustainable Growth,Listed Equity,,Cognizant Technology Solutions Corp,2387.633721,284286.3476,0.0001185,,,US1924461023
+30/06/2025,Sustainable Growth,Listed Equity,,Coles Group Ltd,298720.991,6225345.452,0.0025949,,,AU0000030678
+30/06/2025,Sustainable Growth,Listed Equity,,Colgate-Palmolive Co,18264.25374,2533334.347,0.00105597,,,US1941621039
+30/06/2025,Sustainable Growth,Listed Equity,,Comcast Corp,19639.6223,1069563.014,0.00044582,,,US20030N1019
+30/06/2025,Sustainable Growth,Listed Equity,,Commerzbank AG,3559.328736,170733.1958,0.00007117,,,DE000CBK1001
+30/06/2025,Sustainable Growth,Listed Equity,,Commonwealth Bank of Australia,484660.3296,89540995.89,0.03732327,,,AU000000CBA7
+30/06/2025,Sustainable Growth,Listed Equity,,Computershare Ltd,98599.71675,3933142.701,0.00163945,,,AU000000CPU5
+30/06/2025,Sustainable Growth,Listed Equity,,Concordia Financial Group Ltd,7933.351662,78544.02608,0.00003274,,,JP3305990008
+30/06/2025,Sustainable Growth,Listed Equity,,Continental AG,3553.226158,471607.129,0.00019658,,,DE0005439004
+30/06/2025,Sustainable Growth,Listed Equity,,Corebridge Financial Inc,31744.08616,1719562.158,0.00071676,,,US21871X1090
+30/06/2025,Sustainable Growth,Listed Equity,,Costco Wholesale Corp,2458.576193,3713806.235,0.00154802,,,US22160K1051
+30/06/2025,Sustainable Growth,Listed Equity,,Credit Agricole SA,60503.05546,1740994.259,0.0007257,,,FR0000045072
+30/06/2025,Sustainable Growth,Listed Equity,,Credit Corp Group Ltd,9405.649822,127258.4421,0.00005304,,,AU000000CCP3
+30/06/2025,Sustainable Growth,Listed Equity,,Crowdstrike Holdings Inc,460.744654,358071.0492,0.00014925,,,US22788C1053
+30/06/2025,Sustainable Growth,Listed Equity,,CSL Ltd,173718.2468,41602045.74,0.01734093,,,AU000000CSL8
+30/06/2025,Sustainable Growth,Listed Equity,,Cummins Inc,1032.098538,515773.6615,0.00021499,,,US2310211063
+30/06/2025,Sustainable Growth,Listed Equity,,CVS Health Corp,1003.874114,105664.5091,0.00004404,,,US1266501006
+30/06/2025,Sustainable Growth,Listed Equity,,Dai-ichi Life Holdings Inc,15561.57442,180172.4044,0.0000751,,,JP3476480003
+30/06/2025,Sustainable Growth,Listed Equity,,Daikin Industries Ltd,610.25782,109755.0902,0.00004575,,,JP3481800005
+30/06/2025,Sustainable Growth,Listed Equity,,Dai Nippon Printing Co Ltd,32343.66447,748268.6026,0.0003119,,,JP3493800001
+30/06/2025,Sustainable Growth,Listed Equity,,Daito Trust Construction Co Ltd,1220.51564,202104.0788,0.00008424,,,JP3486800000
+30/06/2025,Sustainable Growth,Listed Equity,,Danaher Corp,42334.04153,12760611.22,0.00531899,,,US2358511028
+30/06/2025,Sustainable Growth,Listed Equity,,Danone SA,1616.420401,200818.0291,0.00008371,,,FR0000120644
+30/06/2025,Sustainable Growth,Listed Equity,,Danske Bank A/S,7919.620861,491117.3461,0.00020471,,,DK0010274414
+30/06/2025,Sustainable Growth,Listed Equity,,Data#3 Ltd,16306.57601,124093.0434,0.00005173,,,AU000000DTL4
+30/06/2025,Sustainable Growth,Listed Equity,,Datadog Inc,1973.421226,404500.9135,0.00016861,,,US23804L1035
+30/06/2025,Sustainable Growth,Listed Equity,,Dell Technologies Inc,2340.33874,437820.2963,0.0001825,,,US24703L2025
+30/06/2025,Sustainable Growth,Listed Equity,,Deterra Royalties Ltd,56807.29994,213595.4478,0.00008903,,,AU0000107484
+30/06/2025,Sustainable Growth,Listed Equity,,Deutsche Bank AG,26492.0548,1194368.007,0.00049785,,,DE0005140008
+30/06/2025,Sustainable Growth,Listed Equity,,Deutsche Boerse AG,1298.323512,643939.6656,0.00026841,,,DE0005810055
+30/06/2025,Sustainable Growth,Listed Equity,,Deutsche Lufthansa AG,11562.09723,148696.3664,0.00006198,,,DE0008232125
+30/06/2025,Sustainable Growth,Listed Equity,,Deutsche Telekom AG,10140.19651,562505.634,0.00023447,,,DE0005557508
+30/06/2025,Sustainable Growth,Listed Equity,,Dexcom Inc,1803.311859,240193.9309,0.00010012,,,US2521311074
+30/06/2025,Sustainable Growth,Listed Equity,,DNB Bank ASA,29496.04892,1239093.323,0.00051649,,,NO0010161896
+30/06/2025,Sustainable Growth,Listed Equity,,Docusign Inc,630.091199,74887.92571,0.00003122,,,US2561631068
+30/06/2025,Sustainable Growth,Listed Equity,,Dollarama Inc,2593.595736,556496.6007,0.00023196,,,CA25675T1075
+30/06/2025,Sustainable Growth,Listed Equity,,Dollar General Corp,869.617394,151776.6656,0.00006326,,,US2566771059
+30/06/2025,Sustainable Growth,Listed Equity,,Domain Holdings Australia Ltd,14422.08963,63312.97346,0.00002639,,,AU000000DHG9
+30/06/2025,Sustainable Growth,Listed Equity,,Domino's Pizza Enterprises Ltd,13295.17798,256198.0796,0.00010679,,,AU000000DMP0
+30/06/2025,Sustainable Growth,Listed Equity,,DoorDash Inc,5657.852815,2128202.176,0.0008871,,,US25809K1051
+30/06/2025,Sustainable Growth,Listed Equity,,Dover Corp,2302.197627,643673.8678,0.0002683,,,US2600031080
+30/06/2025,Sustainable Growth,Listed Equity,,Downer EDI Ltd,772995.9718,4877604.582,0.00203313,,,AU000000DOW2
+30/06/2025,Sustainable Growth,Listed Equity,,Dynatrace Inc,8599.295509,724448.165,0.00030197,,,US2681501092
+30/06/2025,Sustainable Growth,Listed Equity,,Eagers Automotive Ltd,21444.6858,374209.7673,0.00015598,,,AU000000APE3
+30/06/2025,Sustainable Growth,Listed Equity,,eBay Inc,47432.16757,5389180.126,0.00224637,,,US2786421030
+30/06/2025,Sustainable Growth,Listed Equity,,EBOS Group Ltd,21779.62791,775136.9573,0.0003231,,,NZEBOE0001S6
+30/06/2025,Sustainable Growth,Listed Equity,,EBR Systems Inc,363247.7601,434081.0733,0.00018094,,,AU0000182552
+30/06/2025,Sustainable Growth,Listed Equity,,Ecolab Inc,20858.1835,8575614.5,0.00357456,,,US2788651006
+30/06/2025,Sustainable Growth,Listed Equity,,Edwards Lifesciences Corp,35451.07954,4230760.55,0.0017635,,,US28176E1082
+30/06/2025,Sustainable Growth,Listed Equity,,Eiffage SA,2752.262769,587878.5064,0.00024504,,,FR0000130452
+30/06/2025,Sustainable Growth,Listed Equity,,Eisai Co Ltd,11442.33413,501392.1808,0.00020899,,,JP3160400002
+30/06/2025,Sustainable Growth,Listed Equity,,Elders Ltd,29446.93519,185515.6917,0.00007733,,,AU000000ELD6
+30/06/2025,Sustainable Growth,Listed Equity,,Electronic Arts Inc,3740.117615,911416.4692,0.0003799,,,US2855121099
+30/06/2025,Sustainable Growth,Listed Equity,,Elevance Health Inc,1648.458937,978384.9647,0.00040782,,,US0367521038
+30/06/2025,Sustainable Growth,Listed Equity,,Eli Lilly & Co,6512.863788,7746963.781,0.00322916,,,US5324571083
+30/06/2025,Sustainable Growth,Listed Equity,,EMCOR Group Inc,61.025782,49808.6254,0.00002076,,,US29084Q1004
+30/06/2025,Sustainable Growth,Listed Equity,,Emerald Resources NL,77905.15634,305388.2129,0.00012729,,,AU000000EMR4
+30/06/2025,Sustainable Growth,Listed Equity,,Empire Co Ltd,26317.3685,1663109.808,0.00069323,,,CA2918434077
+30/06/2025,Sustainable Growth,Listed Equity,,Endesa SA,69388.60262,3342090.797,0.00139308,,,ES0130670112
+30/06/2025,Sustainable Growth,Listed Equity,,Enel SpA,111158.4619,1603988.633,0.00066859,,,IT0003128367
+30/06/2025,Sustainable Growth,Listed Equity,,EQT Holdings Ltd,2756.454657,93719.45835,0.00003906,,,AU000000EQT1
+30/06/2025,Sustainable Growth,Listed Equity,,Equifax Inc,15027.17918,5947355.557,0.00247903,,,US2944291051
+30/06/2025,Sustainable Growth,Listed Equity,,Equitable Holdings Inc,24393.53072,2088162.161,0.00087041,,,US29452E1010
+30/06/2025,Sustainable Growth,Listed Equity,,Erste Group Bank AG,8670.23798,1122816.064,0.00046802,,,AT0000652011
+30/06/2025,Sustainable Growth,Listed Equity,,EssilorLuxottica SA,9378.137537,3912239.076,0.00163073,,,FR0000121667
+30/06/2025,Sustainable Growth,Listed Equity,,Eurofins Scientific SE,1140.419301,123460.5807,0.00005146,,,FR0014000MR3
+30/06/2025,Sustainable Growth,Listed Equity,,Euronext NV,7982.93511,2074766.91,0.00086482,,,NL0006294274
+30/06/2025,Sustainable Growth,Listed Equity,,Evolution Mining Ltd,639024.2633,4977999.011,0.00207497,,,AU000000EVN4
+30/06/2025,Sustainable Growth,Listed Equity,,Evonik Industries AG,3880.476914,121636.0929,0.0000507,,,DE000EVNK013
+30/06/2025,Sustainable Growth,Listed Equity,,EVT Ltd,6319.847081,105225.4539,0.00004386,,,AU000000EVT1
+30/06/2025,Sustainable Growth,Listed Equity,,Expedia Group Inc,3713.418836,955793.8381,0.0003984,,,US30212P3038
+30/06/2025,Sustainable Growth,Listed Equity,,Experian PLC,2255.665468,176968.3983,0.00007377,,,GB00B19NLV48
+30/06/2025,Sustainable Growth,Listed Equity,,F5 Inc,2225.915399,999666.4704,0.00041669,,,US3156161024
+30/06/2025,Sustainable Growth,Listed Equity,,Fairfax Financial Holdings Ltd,76.282228,209680.6737,0.0000874,,,CA3039011026
+30/06/2025,Sustainable Growth,Listed Equity,,Ferguson Enterprises Inc,101.455363,33710.08513,0.00001405,,,US31488V1070
+30/06/2025,Sustainable Growth,Listed Equity,,FirstService Corp,1525.64455,405422.441,0.00016899,,,CA33767E2024
+30/06/2025,Sustainable Growth,Listed Equity,,First Solar Inc,19853.53013,5014958.994,0.00209038,,,US3364331070
+30/06/2025,Sustainable Growth,Listed Equity,,Fiserv Inc,2902.538757,763602.2076,0.00031829,,,US3377381088
+30/06/2025,Sustainable Growth,Listed Equity,,Fisher & Paykel Healthcare Corp Ltd,57357.66356,1926006.051,0.00080281,,,NZFAPE0001S2
+30/06/2025,Sustainable Growth,Listed Equity,,FleetPartners Group Ltd,76205.27271,233188.1345,0.0000972,,,AU0000272924
+30/06/2025,Sustainable Growth,Listed Equity,,Fletcher Building Ltd,145347.3926,392437.96,0.00016358,,,NZFBUE0001S0
+30/06/2025,Sustainable Growth,Listed Equity,,Flight Centre Travel Group Ltd,21298.54196,265805.8037,0.0001108,,,AU000000FLT9
+30/06/2025,Sustainable Growth,Listed Equity,,Fortescue Ltd,391138.363,5976594.186,0.00249122,,,AU000000FMG4
+30/06/2025,Sustainable Growth,Listed Equity,,Fortinet Inc,7493.966032,1208914.456,0.00050391,,,US34959E1091
+30/06/2025,Sustainable Growth,Listed Equity,,Fresenius Medical Care AG,1056.508851,92065.15771,0.00003838,,,DE0005785802
+30/06/2025,Sustainable Growth,Listed Equity,,Futu Holdings Ltd,1008.451048,190179.9995,0.00007927,,,US36118L1061
+30/06/2025,Sustainable Growth,Listed Equity,,G8 Education Ltd,234700.7163,276946.8452,0.00011544,,,AU000000GEM7
+30/06/2025,Sustainable Growth,Listed Equity,,Garmin Ltd,1263.233688,402322.6288,0.0001677,,,CH0114405324
+30/06/2025,Sustainable Growth,Listed Equity,,Gartner Inc,2010.459302,1240051.663,0.00051689,,,US3666511072
+30/06/2025,Sustainable Growth,Listed Equity,,GEA Group AG,6519.841986,693685.8159,0.00028915,,,DE0006602006
+30/06/2025,Sustainable Growth,Listed Equity,,General Electric Co,7841.812989,3079887.461,0.00128379,,,US3696043013
+30/06/2025,Sustainable Growth,Listed Equity,,General Motors Co,422.60354,31733.14729,0.00001323,,,US37045V1008
+30/06/2025,Sustainable Growth,Listed Equity,,Genesis Minerals Ltd,71876.89769,309070.6601,0.00012883,,,AU000000GMD9
+30/06/2025,Sustainable Growth,Listed Equity,,Genmab A/S,861.226349,271893.9412,0.00011333,,,DK0010272202
+30/06/2025,Sustainable Growth,Listed Equity,,Gentrack Group Ltd,18321.82266,211250.6153,0.00008806,,,NZGTKE0002S9
+30/06/2025,Sustainable Growth,Listed Equity,,George Weston Ltd,686.540048,209679.8194,0.0000874,,,CA9611485090
+30/06/2025,Sustainable Growth,Listed Equity,,Gilead Sciences Inc,2933.051648,496204.2189,0.00020683,,,US3755581036
+30/06/2025,Sustainable Growth,Listed Equity,,Givaudan SA,160.192678,1179507.2,0.00049165,,,CH0010645932
+30/06/2025,Sustainable Growth,Listed Equity,,GoDaddy Inc,755.194052,207492.5486,0.00008649,,,US3802371076
+30/06/2025,Sustainable Growth,Listed Equity,,Goldman Sachs Group Inc/The,1263.233688,1364238.413,0.00056865,,,US38141G1040
+30/06/2025,Sustainable Growth,Listed Equity,,Gold Road Resources Ltd,213096.6008,696825.8847,0.00029046,,,AU000000GOR5
+30/06/2025,Sustainable Growth,Listed Equity,,Grab Holdings Ltd,37583.49068,288464.1192,0.00012024,,,KYG4124C1096
+30/06/2025,Sustainable Growth,Listed Equity,,GrainCorp Ltd,64945.20438,505273.6901,0.00021061,,,AU000000GNC9
+30/06/2025,Sustainable Growth,Listed Equity,,Guzman y Gomez Ltd,2720.09351,76951.44541,0.00003208,,,AU0000336679
+30/06/2025,Sustainable Growth,Listed Equity,,GWA Group Ltd,12813.80812,30753.13948,0.00001282,,,AU000000GWA4
+30/06/2025,Sustainable Growth,Listed Equity,,Hansen Technologies Ltd,17268.04865,85994.88226,0.00003585,,,AU000000HSN3
+30/06/2025,Sustainable Growth,Listed Equity,,Hartford Insurance Group Inc/The,8442.916942,1634474.513,0.0006813,,,US4165151048
+30/06/2025,Sustainable Growth,Listed Equity,,Harvey Norman Holdings Ltd,37965.23317,200076.7788,0.0000834,,,AU000000HVN7
+30/06/2025,Sustainable Growth,Listed Equity,,Healius Ltd,127939.4934,100432.5023,0.00004186,,,AU0000033359
+30/06/2025,Sustainable Growth,Listed Equity,,Heidelberg Materials AG,3553.98898,1269665.79,0.00052923,,,DE0006047004
+30/06/2025,Sustainable Growth,Listed Equity,,Helia Group Ltd,29617.55288,166746.8227,0.0000695,,,AU0000251498
+30/06/2025,Sustainable Growth,Listed Equity,,Hikma Pharmaceuticals PLC,11280.61581,468929.3177,0.00019546,,,GB00B0LCW083
+30/06/2025,Sustainable Growth,Listed Equity,,Hitachi Ltd,9687.842895,430345.5077,0.00017938,,,JP3788600009
+30/06/2025,Sustainable Growth,Listed Equity,,HMC Capital Ltd,238897.958,1218379.586,0.00050786,,,AU0000058943
+30/06/2025,Sustainable Growth,Listed Equity,,Holcim AG,1636.25378,184747.9345,0.00007701,,,CH0012214059
+30/06/2025,Sustainable Growth,Listed Equity,,Home Depot Inc/The,3950.656563,2210221.597,0.00092128,,,US4370761029
+30/06/2025,Sustainable Growth,Listed Equity,,Hong Kong Exchanges & Clearing Ltd,3966.675831,322916.6364,0.0001346,,,HK0388045442
+30/06/2025,Sustainable Growth,Listed Equity,,Hongkong Land Holdings Ltd,61483.47538,541328.5281,0.00022564,,,BMG4587L1090
+30/06/2025,Sustainable Growth,Listed Equity,,HP Inc,12295.93226,458928.0616,0.00019129,,,US40434L1052
+30/06/2025,Sustainable Growth,Listed Equity,,HSBC Holdings PLC,25478.26399,469783.8999,0.00019582,,,GB0005405286
+30/06/2025,Sustainable Growth,Listed Equity,,HUB24 Ltd,21781.79539,1942282.695,0.0008096,,,AU000000HUB4
+30/06/2025,Sustainable Growth,Listed Equity,,Hubbell Inc,3293.290188,2052357.743,0.00085548,,,US4435106079
+30/06/2025,Sustainable Growth,Listed Equity,,Humana Inc,2309.825849,861686.4603,0.00035918,,,US4448591028
+30/06/2025,Sustainable Growth,Listed Equity,,iA Financial Corp Inc,5339.755927,891467.019,0.00037159,,,CA45075E1043
+30/06/2025,Sustainable Growth,Listed Equity,,Iberdrola SA,255856.3933,7465461.476,0.00311182,,,ES0144580Y14
+30/06/2025,Sustainable Growth,Listed Equity,,IDEXX Laboratories Inc,3294.610799,2696317.321,0.0011239,,,US45168D1046
+30/06/2025,Sustainable Growth,Listed Equity,,IDP Education Ltd,44989.22786,165110.4662,0.00006882,,,AU000000IEL5
+30/06/2025,Sustainable Growth,Listed Equity,,IGO Ltd,183655.2596,765842.4327,0.00031923,,,AU000000IGO4
+30/06/2025,Sustainable Growth,Listed Equity,,Iluka Resources Ltd,63313.14828,240589.9634,0.00010028,,,AU000000ILU1
+30/06/2025,Sustainable Growth,Listed Equity,,Imdex Ltd,115744.524,314825.1053,0.00013123,,,AU000000IMD5
+30/06/2025,Sustainable Growth,Listed Equity,,Immutep Ltd,1488582.696,357259.8471,0.00014892,,,AU000000IMM6
+30/06/2025,Sustainable Growth,Listed Equity,,Incyte Corp,11959.52763,1242761.628,0.00051802,,,US45337C1027
+30/06/2025,Sustainable Growth,Listed Equity,,Infineon Technologies AG,5986.629216,387265.9206,0.00016142,,,DE0006231004
+30/06/2025,Sustainable Growth,Listed Equity,,Infomedia Ltd,84325.69583,99925.94956,0.00004165,,,AU000000IFM0
+30/06/2025,Sustainable Growth,Listed Equity,,Infratil Ltd,30763.12325,301170.9766,0.00012554,,,NZIFTE0003S3
+30/06/2025,Sustainable Growth,Listed Equity,,ING Groep NV,29060.4774,969530.879,0.00040413,,,NL0011821202
+30/06/2025,Sustainable Growth,Listed Equity,,Inghams Group Ltd,49450.46091,175549.1362,0.00007317,,,AU000000ING6
+30/06/2025,Sustainable Growth,Listed Equity,,Insignia Financial Ltd,79551.1975,288770.8469,0.00012037,,,AU000000IFL2
+30/06/2025,Sustainable Growth,Listed Equity,,Insulet Corp,1199.156617,574885.2173,0.00023963,,,US45784P1012
+30/06/2025,Sustainable Growth,Listed Equity,,Insurance Australia Group Ltd,588140.4921,5310908.644,0.00221374,,,AU000000IAG3
+30/06/2025,Sustainable Growth,Listed Equity,,Integral Diagnostics Ltd,149865.4215,380658.1706,0.00015867,,,AU000000IDX2
+30/06/2025,Sustainable Growth,Listed Equity,,Intel Corp,19744.89177,674884.5276,0.00028131,,,US4581401001
+30/06/2025,Sustainable Growth,Listed Equity,,Intercontinental Exchange Inc,4383.939616,1227315.789,0.00051158,,,US45866F1049
+30/06/2025,Sustainable Growth,Listed Equity,,International Business Machines Corp,3159.609864,1421209.726,0.0005924,,,US4592001014
+30/06/2025,Sustainable Growth,Listed Equity,,Intuit Inc,2060.382965,2476263.73,0.00103218,,,US4612021034
+30/06/2025,Sustainable Growth,Listed Equity,,Intuitive Surgical Inc,6100.307204,5058316.834,0.00210845,,,US46120E6023
+30/06/2025,Sustainable Growth,Listed Equity,,IperionX Ltd,19327.34823,91804.9041,0.00003827,,,AU0000208910
+30/06/2025,Sustainable Growth,Listed Equity,,IPH Ltd,31061.50998,142261.7157,0.0000593,,,AU000000IPH9
+30/06/2025,Sustainable Growth,Listed Equity,,IRESS Ltd,31962.14763,255697.181,0.00010658,,,AU000000IRE2
+30/06/2025,Sustainable Growth,Listed Equity,,James Hardie Industries PLC,127501.2786,5316803.32,0.0022162,,,AU000000JHX1
+30/06/2025,Sustainable Growth,Listed Equity,,Japan Exchange Group Inc,5721.167064,88269.43798,0.00003679,,,JP3183200009
+30/06/2025,Sustainable Growth,Listed Equity,,Japan Post Bank Co Ltd,28300.70641,464891.7604,0.00019378,,,JP3946750001
+30/06/2025,Sustainable Growth,Listed Equity,,Japan Post Holdings Co Ltd,22503.25712,317477.8738,0.00013233,,,JP3752900005
+30/06/2025,Sustainable Growth,Listed Equity,,Japan Post Insurance Co Ltd,12815.41422,441476.5416,0.00018402,,,JP3233250004
+30/06/2025,Sustainable Growth,Listed Equity,,JB Hi-Fi Ltd,68138.76345,7519112.547,0.00313418,,,AU000000JBH7
+30/06/2025,Sustainable Growth,Listed Equity,,JDE Peet's NV,8522.250459,370020.8585,0.00015424,,,NL0014332678
+30/06/2025,Sustainable Growth,Listed Equity,,Johns Lyng Group Ltd,17914.85752,56790.09832,0.00002367,,,AU000000JLG8
+30/06/2025,Sustainable Growth,Listed Equity,,Johnson & Johnson,9175.989149,2138753.861,0.00089149,,,US4781601046
+30/06/2025,Sustainable Growth,Listed Equity,,Jones Lang LaSalle Inc,10146.30255,3960053.816,0.00165066,,,US48020Q1076
+30/06/2025,Sustainable Growth,Listed Equity,,JPMorgan Chase & Co,6593.835747,2916943.496,0.00121587,,,US46625H1005
+30/06/2025,Sustainable Growth,Listed Equity,,Judo Capital Holdings Ltd,175384.4972,274476.7416,0.00011441,,,AU0000182271
+30/06/2025,Sustainable Growth,Listed Equity,,KBC Group NV,17940.65148,2816948.948,0.00117419,,,BE0003565737
+30/06/2025,Sustainable Growth,Listed Equity,,Kingspan Group PLC,45683.54029,5907942.376,0.0024626,,,IE0004927939
+30/06/2025,Sustainable Growth,Listed Equity,,Kinross Gold Corp,56906.54173,1354212.983,0.00056448,,,CA4969024047
+30/06/2025,Sustainable Growth,Listed Equity,,KLA Corp,659.078446,900836.0861,0.00037549,,,US4824801009
+30/06/2025,Sustainable Growth,Listed Equity,,Knorr-Bremse AG,3000.942831,441037.5908,0.00018384,,,DE000KBX1006
+30/06/2025,Sustainable Growth,Listed Equity,,Komatsu Ltd,8314.7628,416080.5633,0.00017343,,,JP3304200003
+30/06/2025,Sustainable Growth,Listed Equity,,Koninklijke Ahold Delhaize NV,11240.18623,714728.5964,0.00029792,,,NL0011794037
+30/06/2025,Sustainable Growth,Listed Equity,,Kubota Corp,6331.424884,108486.6998,0.00004522,,,JP3266400005
+30/06/2025,Sustainable Growth,Listed Equity,,Kyowa Kirin Co Ltd,12052.59195,313913.2434,0.00013085,,,JP3256000005
+30/06/2025,Sustainable Growth,Listed Equity,,Lam Research Corp,6852.432498,1017800.838,0.00042425,,,US5128073062
+30/06/2025,Sustainable Growth,Listed Equity,,Lasertec Corp,1830.773461,375391.4095,0.00015647,,,JP3979200007
+30/06/2025,Sustainable Growth,Listed Equity,,Legal & General Group PLC,459878.7324,2448273.467,0.00102051,,,GB0005603997
+30/06/2025,Sustainable Growth,Listed Equity,,Legrand SA,47330.0827,9622156.706,0.00401079,,,FR0010307819
+30/06/2025,Sustainable Growth,Listed Equity,,Life360 Inc,24746.55767,796344.2258,0.00033194,,,AU0000045098
+30/06/2025,Sustainable Growth,Listed Equity,,Lifestyle Communities Ltd,81814.04349,572698.3044,0.00023872,,,AU000000LIC9
+30/06/2025,Sustainable Growth,Listed Equity,,Linde PLC,527.873014,377916.3208,0.00015753,,,IE000S9YS762
+30/06/2025,Sustainable Growth,Listed Equity,,Liontown Resources Ltd,262866.6203,184006.6342,0.0000767,,,AU000000LTR4
+30/06/2025,Sustainable Growth,Listed Equity,,Lloyds Banking Group PLC,342741.388,549692.8896,0.00022913,,,GB0008706128
+30/06/2025,Sustainable Growth,Listed Equity,,Logitech International SA,1566.074131,214470.4119,0.0000894,,,CH0025751329
+30/06/2025,Sustainable Growth,Listed Equity,,Lovisa Holdings Ltd,8772.82601,277923.128,0.00011585,,,AU000000LOV7
+30/06/2025,Sustainable Growth,Listed Equity,,Lowe's Cos Inc,4586.087519,1552628.732,0.00064718,,,US5486611073
+30/06/2025,Sustainable Growth,Listed Equity,,Lynas Rare Earths Ltd,378107.337,3255504.172,0.00135699,,,AU000000LYC6
+30/06/2025,Sustainable Growth,Listed Equity,,MAC Copper Ltd,11852.31742,218082.6406,0.0000909,,,AU0000319733
+30/06/2025,Sustainable Growth,Listed Equity,,Macquarie Group Ltd,111911.8075,25597587.73,0.01066981,,,AU000000MQG1
+30/06/2025,Sustainable Growth,Listed Equity,,MA Financial Group Ltd,6379.982825,48424.06964,0.00002018,,,AU0000156218
+30/06/2025,Sustainable Growth,Listed Equity,,Magellan Financial Group Ltd,27060.38528,231636.898,0.00009655,,,AU000000MFG4
+30/06/2025,Sustainable Growth,Listed Equity,,Makita Corp,8696.173938,409077.031,0.00017052,,,JP3862400003
+30/06/2025,Sustainable Growth,Listed Equity,,Manulife Financial Corp,20748.76589,1010261.614,0.00042111,,,CA56501R1064
+30/06/2025,Sustainable Growth,Listed Equity,,Marsh & McLennan Cos Inc,6611.380659,2205710.335,0.0009194,,,US5717481023
+30/06/2025,Sustainable Growth,Listed Equity,,Marvell Technology Inc,2714.884478,320640.9697,0.00013365,,,US5738741041
+30/06/2025,Sustainable Growth,Listed Equity,,Masco Corp,5676.923372,557513.9844,0.00023239,,,US5745991068
+30/06/2025,Sustainable Growth,Listed Equity,,Mastercard Inc,13955.92548,11966724.29,0.00498808,,,US57636Q1040
+30/06/2025,Sustainable Growth,Listed Equity,,McKesson Corp,1518.77915,1698223.83,0.00070787,,,US58155Q1031
+30/06/2025,Sustainable Growth,Listed Equity,,McMillan Shakespeare Ltd,8942.744448,139059.6762,0.00005796,,,AU000000MMS5
+30/06/2025,Sustainable Growth,Listed Equity,,Medibank Pvt Ltd,965481.7026,4875682.598,0.00203233,,,AU000000MPL3
+30/06/2025,Sustainable Growth,Listed Equity,,Medtronic PLC,2410.51839,320630.0232,0.00013365,,,IE00BTN1Y115
+30/06/2025,Sustainable Growth,Listed Equity,,Megaport Ltd,19414.05558,280338.9626,0.00011685,,,AU000000MP15
+30/06/2025,Sustainable Growth,Listed Equity,,MercadoLibre Inc,2689.55606,10726336.17,0.00447105,,,US58733R1023
+30/06/2025,Sustainable Growth,Listed Equity,,Merck & Co Inc,17580.76498,2123587.94,0.00088517,,,US58933Y1055
+30/06/2025,Sustainable Growth,Listed Equity,,Mesoblast Ltd,114303.3639,189172.0708,0.00007885,,,AU000000MSB8
+30/06/2025,Sustainable Growth,Listed Equity,,Meta Platforms Inc,7926.486262,8927230.097,0.00372113,,,US30303M1027
+30/06/2025,Sustainable Growth,Listed Equity,,Metcash Ltd,1018439.66,3982099.072,0.00165985,,,AU000000MTS0
+30/06/2025,Sustainable Growth,Listed Equity,,MetLife Inc,8087.441762,992434.6788,0.00041368,,,US59156R1086
+30/06/2025,Sustainable Growth,Listed Equity,,Micron Technology Inc,5260.42241,989314.2017,0.00041237,,,US5951121038
+30/06/2025,Sustainable Growth,Listed Equity,,Microsoft Corp,71669.86373,54397355.5,0.02267439,,,US5949181045
+30/06/2025,Sustainable Growth,Listed Equity,,Mitsubishi Chemical Group Corp,35623.80025,285255.2463,0.0001189,,,JP3897700005
+30/06/2025,Sustainable Growth,Listed Equity,,Mitsubishi Electric Corp,29597.50428,972700.8327,0.00040545,,,JP3902400005
+30/06/2025,Sustainable Growth,Listed Equity,,Mitsubishi UFJ Financial Group Inc,12052.59195,252480.2135,0.00010524,,,JP3902900004
+30/06/2025,Sustainable Growth,Listed Equity,,Mizuho Financial Group Inc,20062.22584,846257.6474,0.00035274,,,JP3885780001
+30/06/2025,Sustainable Growth,Listed Equity,,Molina Healthcare Inc,379.885493,172683.1297,0.00007198,,,US60855R1005
+30/06/2025,Sustainable Growth,Listed Equity,,Monash IVF Group Ltd,142533.5992,100486.1909,0.00004189,,,AU000000MVF3
+30/06/2025,Sustainable Growth,Listed Equity,,Mondelez International Inc,1635.490958,168303.2102,0.00007015,,,US6092071058
+30/06/2025,Sustainable Growth,Listed Equity,,MongoDB Inc,2376.95421,761633.6532,0.00031747,,,US60937P1066
+30/06/2025,Sustainable Growth,Listed Equity,,Monolithic Power Systems Inc,316.571244,353298.0473,0.00014726,,,US6098391054
+30/06/2025,Sustainable Growth,Listed Equity,,Moody's Corp,3271.336961,2503806.987,0.00104366,,,US6153691059
+30/06/2025,Sustainable Growth,Listed Equity,,Morgan Stanley,8298.743532,1783720.172,0.00074351,,,US6174464486
+30/06/2025,Sustainable Growth,Listed Equity,,Motorola Solutions Inc,1373.080095,880941.8719,0.0003672,,,US6200763075
+30/06/2025,Sustainable Growth,Listed Equity,,MSCI Inc,1837.638861,1617211.928,0.0006741,,,US55354G1004
+30/06/2025,Sustainable Growth,Listed Equity,,Myer Holdings Ltd,230564.6358,139491.6046,0.00005814,,,AU000000MYR2
+30/06/2025,Sustainable Growth,Listed Equity,,MyState Ltd,21161.48841,89089.86619,0.00003714,,,AU000000MYS0
+30/06/2025,Sustainable Growth,Listed Equity,,Nanosonics Ltd,56033.22706,226934.5696,0.00009459,,,AU000000NAN9
+30/06/2025,Sustainable Growth,Listed Equity,,National Australia Bank Ltd,957886.8453,37702426.23,0.01571546,,,AU000000NAB4
+30/06/2025,Sustainable Growth,Listed Equity,,NatWest Group PLC,130123.7494,1391475.272,0.00058001,,,GB00BM8PJY71
+30/06/2025,Sustainable Growth,Listed Equity,,Nestle SA,32713.39463,4943457.081,0.00206058,,,CH0038863350
+30/06/2025,Sustainable Growth,Listed Equity,,NetApp Inc,4518.959158,734714.4256,0.00030625,,,US64110D1046
+30/06/2025,Sustainable Growth,Listed Equity,,Netflix Inc,1729.318098,3533656.433,0.00147293,,,US64110L1061
+30/06/2025,Sustainable Growth,Listed Equity,,Netwealth Group Ltd,5674.436719,190604.3294,0.00007945,,,AU000000NWL7
+30/06/2025,Sustainable Growth,Listed Equity,,Neuren Pharmaceuticals Ltd,50222.35829,708637.4754,0.00029538,,,NZNEUE0001S8
+30/06/2025,Sustainable Growth,Listed Equity,,Newmont Corp,40185.78215,3508620.639,0.00146249,,,AU0000297962
+30/06/2025,Sustainable Growth,Listed Equity,,Newmont Corp,6082.744823,540750.3088,0.0002254,,,US6516391066
+30/06/2025,Sustainable Growth,Listed Equity,,NEXTDC Ltd,312287.5351,4528169.258,0.00188747,,,AU000000NXT8
+30/06/2025,Sustainable Growth,Listed Equity,,nib holdings Ltd/Australia,43336.19416,306820.2547,0.00012789,,,AU000000NHF0
+30/06/2025,Sustainable Growth,Listed Equity,,Nice Ltd,128.154142,33186.99501,0.00001383,,,IL0002730112
+30/06/2025,Sustainable Growth,Listed Equity,,Nick Scali Ltd,1455.844393,26510.9264,0.00001105,,,AU000000NCK1
+30/06/2025,Sustainable Growth,Listed Equity,,NIDEC CORP,12967.97868,384263.681,0.00016017,,,JP3734800000
+30/06/2025,Sustainable Growth,Listed Equity,,NIKE Inc,21224.98453,2300790.269,0.00095904,,,US6541061031
+30/06/2025,Sustainable Growth,Listed Equity,,Nine Entertainment Co Holdings Ltd,245258.7347,398545.444,0.00016613,,,AU000000NEC4
+30/06/2025,Sustainable Growth,Listed Equity,,Nippon Yusen KK,2517.313508,137962.6255,0.00005751,,,JP3753000003
+30/06/2025,Sustainable Growth,Listed Equity,,Nissan Motor Co Ltd,74985.42966,277406.8654,0.00011563,,,JP3672400003
+30/06/2025,Sustainable Growth,Listed Equity,,Nokia Oyj,18290.95252,144351.1095,0.00006017,,,FI0009000681
+30/06/2025,Sustainable Growth,Listed Equity,,Nomura Holdings Inc,30894.30215,310698.7637,0.00012951,,,JP3762600009
+30/06/2025,Sustainable Growth,Listed Equity,,Nordea Bank Abp,31321.48262,707451.5465,0.00029489,,,FI4000297767
+30/06/2025,Sustainable Growth,Listed Equity,,Northern Star Resources Ltd,600105.9181,11131964.78,0.00464012,,,AU000000NST8
+30/06/2025,Sustainable Growth,Listed Equity,,Novartis AG,5627.339924,1037424.251,0.00043243,,,CH0012005267
+30/06/2025,Sustainable Growth,Listed Equity,,Novonesis Novozymes B,35183.97123,3835772.421,0.00159886,,,DK0060336014
+30/06/2025,Sustainable Growth,Listed Equity,,Novonix Ltd,35315.7642,13419.9904,0.00000559,,,AU000000NVX4
+30/06/2025,Sustainable Growth,Listed Equity,,Novo Nordisk A/S,39783.43396,4198715.269,0.00175015,,,DK0062498333
+30/06/2025,Sustainable Growth,Listed Equity,,NTT Inc,364095.072,592324.5093,0.0002469,,,JP3735400008
+30/06/2025,Sustainable Growth,Listed Equity,,Nufarm Ltd,80322.47338,197593.2845,0.00008236,,,AU000000NUF3
+30/06/2025,Sustainable Growth,Listed Equity,,Nuix Ltd,61013.30572,133619.1395,0.0000557,,,AU0000119307
+30/06/2025,Sustainable Growth,Listed Equity,,Nutanix Inc,38918.06693,4539401.9,0.00189215,,,US67059N1081
+30/06/2025,Sustainable Growth,Listed Equity,,NVIDIA Corp,147958.166,35669353.26,0.01486802,,,US67066G1040
+30/06/2025,Sustainable Growth,Listed Equity,,Okta Inc,3850.726845,587406.9755,0.00024485,,,US6792951054
+30/06/2025,Sustainable Growth,Listed Equity,,Olympus Corp,12662.84977,229413.9172,0.00009563,,,JP3201200007
+30/06/2025,Sustainable Growth,Listed Equity,,Ono Pharmaceutical Co Ltd,12586.56754,207289.6455,0.0000864,,,JP3197600004
+30/06/2025,Sustainable Growth,Listed Equity,,oOh!media Ltd,144944.6229,250029.4781,0.00010422,,,AU000000OML6
+30/06/2025,Sustainable Growth,Listed Equity,,Opthea Ltd,197584.376,118550.6256,0.00004942,,,AU000000OPT2
+30/06/2025,Sustainable Growth,Listed Equity,,Ora Banda Mining Ltd,46940.84251,35909.74452,0.00001497,,,AU0000050130
+30/06/2025,Sustainable Growth,Listed Equity,,Oracle Corp,4274.093208,1425871.669,0.00059434,,,US68389X1054
+30/06/2025,Sustainable Growth,Listed Equity,,O'Reilly Automotive Inc,517.193503,71129.39357,0.00002965,,,US67103H1077
+30/06/2025,Sustainable Growth,Listed Equity,,Orica Ltd,76457.00373,1490147.003,0.00062114,,,AU000000ORI1
+30/06/2025,Sustainable Growth,Listed Equity,,Orion Oyj,6519.841986,745653.8615,0.00031081,,,FI0009014377
+30/06/2025,Sustainable Growth,Listed Equity,,ORIX Corp,10069.25403,346768.0522,0.00014454,,,JP3200450009
+30/06/2025,Sustainable Growth,Listed Equity,,Orora Ltd,235925.8072,445899.7756,0.00018586,,,AU000000ORA8
+30/06/2025,Sustainable Growth,Listed Equity,,Otsuka Corp,5110.909244,158544.9283,0.00006609,,,JP3188200004
+30/06/2025,Sustainable Growth,Listed Equity,,Oversea-Chinese Banking Corp Ltd,85283.53037,1666463.198,0.00069463,,,SG1S04926220
+30/06/2025,Sustainable Growth,Listed Equity,,Palantir Technologies Inc,7273.510394,1512970.075,0.00063065,,,US69608A1088
+30/06/2025,Sustainable Growth,Listed Equity,,Palo Alto Networks Inc,22380.32522,6988494.323,0.00291301,,,US6974351057
+30/06/2025,Sustainable Growth,Listed Equity,,Pan American Silver Corp,10832.07631,468060.4936,0.0001951,,,CA6979001089
+30/06/2025,Sustainable Growth,Listed Equity,,Panasonic Holdings Corp,5187.191472,85236.6702,0.00003553,,,JP3866800000
+30/06/2025,Sustainable Growth,Listed Equity,,Pantoro Gold Ltd,22198.48035,67261.39547,0.00002804,,,AU000000PNR8
+30/06/2025,Sustainable Growth,Listed Equity,,Paycom Software Inc,1060.322963,374393.432,0.00015606,,,US70432V1026
+30/06/2025,Sustainable Growth,Listed Equity,,PayPal Holdings Inc,1044.303695,118429.3101,0.00004936,,,US70450Y1038
+30/06/2025,Sustainable Growth,Listed Equity,,PepsiCo Inc,17063.57148,3437970.517,0.00143305,,,US7134481081
+30/06/2025,Sustainable Growth,Listed Equity,,Perenti Ltd,133914.6088,216941.6663,0.00009043,,,AU0000061897
+30/06/2025,Sustainable Growth,Listed Equity,,Perpetual Ltd,43722.88098,789635.2305,0.00032914,,,AU000000PPT9
+30/06/2025,Sustainable Growth,Listed Equity,,Perseus Mining Ltd,217641.7442,739981.9303,0.00030845,,,AU000000PRU3
+30/06/2025,Sustainable Growth,Listed Equity,,PEXA Group Ltd,9332.228275,126918.3045,0.0000529,,,AU0000158594
+30/06/2025,Sustainable Growth,Listed Equity,,Pfizer Inc,15065.73994,557249.613,0.00023228,,,US7170811035
+30/06/2025,Sustainable Growth,Listed Equity,,Pilbara Minerals Ltd,1335991.084,1783548.104,0.00074343,,,AU000000PLS0
+30/06/2025,Sustainable Growth,Listed Equity,,Pinnacle Investment Management Group Ltd,84281.6518,1731145.128,0.00072159,,,AU000000PNI7
+30/06/2025,Sustainable Growth,Listed Equity,,Pinterest Inc,9885.413865,540918.5035,0.00022547,,,US72352L1061
+30/06/2025,Sustainable Growth,Listed Equity,,Platinum Asset Management Ltd,86173.12181,39639.63603,0.00001652,,,AU000000PTM6
+30/06/2025,Sustainable Growth,Listed Equity,,PolyNovo Ltd,177761.2575,212424.7028,0.00008854,,,AU000000PNV0
+30/06/2025,Sustainable Growth,Listed Equity,,Predictive Discovery Ltd,226502.6761,87203.53379,0.00003635,,,AU000000PDI8
+30/06/2025,Sustainable Growth,Listed Equity,,Premier Investments Ltd,15998.90476,323657.8433,0.00013491,,,AU000000PMV2
+30/06/2025,Sustainable Growth,Listed Equity,,Procter & Gamble Co/The,11408.00713,2773363.387,0.00115602,,,US7427181091
+30/06/2025,Sustainable Growth,Listed Equity,,Progressive Corp/The,379.122671,154379.6059,0.00006435,,,US7433151039
+30/06/2025,Sustainable Growth,Listed Equity,,Pro Medicus Ltd,9360.259903,2668422.893,0.00111228,,,AU000000PME8
+30/06/2025,Sustainable Growth,Listed Equity,,Pure Storage Inc,3303.783274,290275.1814,0.000121,,,US74624M1027
+30/06/2025,Sustainable Growth,Listed Equity,,PWR Holdings Ltd,3045.246076,21103.55531,0.0000088,,,AU000000PWH0
+30/06/2025,Sustainable Growth,Listed Equity,,PYC Therapeutics Ltd,323209.7381,418556.6143,0.00017447,,,AU000000PYC7
+30/06/2025,Sustainable Growth,Listed Equity,,Qantas Airways Ltd,579446.884,6223259.534,0.00259403,,,AU000000QAN2
+30/06/2025,Sustainable Growth,Listed Equity,,QBE Insurance Group Ltd,608048.7496,14222260.25,0.00592825,,,AU000000QBE9
+30/06/2025,Sustainable Growth,Listed Equity,,QUALCOMM Inc,6058.33451,1472267.267,0.00061368,,,US7475251036
+30/06/2025,Sustainable Growth,Listed Equity,,Qube Holdings Ltd,343368.8016,1469618.471,0.00061258,,,AU000000QUB5
+30/06/2025,Sustainable Growth,Listed Equity,,Ramelius Resources Ltd,434349.4786,1094560.686,0.00045624,,,AU000000RMS4
+30/06/2025,Sustainable Growth,Listed Equity,,Ramsay Health Care Ltd,72341.49177,2654209.333,0.00110635,,,AU000000RHC8
+30/06/2025,Sustainable Growth,Listed Equity,,Rational AG,152.564455,194568.5542,0.0000811,,,DE0007010803
+30/06/2025,Sustainable Growth,Listed Equity,,REA Group Ltd,12785.46422,3074776.29,0.00128166,,,AU000000REA9
+30/06/2025,Sustainable Growth,Listed Equity,,Recruit Holdings Co Ltd,10374.38294,935384.101,0.0003899,,,JP3970300004
+30/06/2025,Sustainable Growth,Listed Equity,,Reddit Inc,1956.639136,449547.804,0.00018738,,,US75734B1008
+30/06/2025,Sustainable Growth,Listed Equity,,Reece Ltd,46750.47013,670869.2464,0.00027964,,,AU000000REH4
+30/06/2025,Sustainable Growth,Listed Equity,,Regeneron Pharmaceuticals Inc,1650.747404,1322411.518,0.00055122,,,US75886F1075
+30/06/2025,Sustainable Growth,Listed Equity,,Regis Healthcare Ltd,11296.42948,88564.00709,0.00003692,,,AU000000REG6
+30/06/2025,Sustainable Growth,Listed Equity,,Regis Resources Ltd,99116.2917,435120.5206,0.00018137,,,AU000000RRL8
+30/06/2025,Sustainable Growth,Listed Equity,,Reliance Inc,2720.987056,1303300.279,0.00054325,,,US7595091023
+30/06/2025,Sustainable Growth,Listed Equity,,Reliance Worldwide Corp Ltd,307155.8102,1259338.822,0.00052493,,,AU000000RWC7
+30/06/2025,Sustainable Growth,Listed Equity,,RELX PLC,26225.08206,2158939.494,0.00089991,,,GB00B2B0DG97
+30/06/2025,Sustainable Growth,Listed Equity,,ResMed Inc,250.205706,98501.67662,0.00004106,,,US7611521078
+30/06/2025,Sustainable Growth,Listed Equity,,ResMed Inc,269512.6802,10605323.96,0.00442061,,,AU000000RMD6
+30/06/2025,Sustainable Growth,Listed Equity,,Resolute Mining Ltd,472485.8368,288216.3604,0.00012014,,,AU000000RSG6
+30/06/2025,Sustainable Growth,Listed Equity,,Ricoh Co Ltd,10603.22963,152951.6102,0.00006375,,,JP3973400009
+30/06/2025,Sustainable Growth,Listed Equity,,Robinhood Markets Inc,772.738965,110401.3837,0.00004602,,,US7707001027
+30/06/2025,Sustainable Growth,Listed Equity,,ROBLOX Corp,5020.133393,805856.4667,0.0003359,,,US7710491033
+30/06/2025,Sustainable Growth,Listed Equity,,Roche Holding AG,7002.708487,3468743.492,0.00144587,,,CH0012032048
+30/06/2025,Sustainable Growth,Listed Equity,,Rockwell Automation Inc,573.642351,290755.7518,0.0001212,,,US7739031091
+30/06/2025,Sustainable Growth,Listed Equity,,Rollins Inc,5135.319557,442106.8617,0.00018428,,,US7757111049
+30/06/2025,Sustainable Growth,Listed Equity,,Roper Technologies Inc,7214.890428,6240464.621,0.00260121,,,US7766961061
+30/06/2025,Sustainable Growth,Listed Equity,,RPM International Inc,5657.089993,948157.1175,0.00039522,,,US7496851038
+30/06/2025,Sustainable Growth,Listed Equity,,Salesforce Inc,12490.097,5197107.734,0.0021663,,,US79466L3024
+30/06/2025,Sustainable Growth,Listed Equity,,Samsara Inc,3113.840528,189011.3329,0.00007879,,,US79589L1061
+30/06/2025,Sustainable Growth,Listed Equity,,Sandfire Resources Ltd,237851.274,2668691.294,0.00111239,,,AU000000SFR8
+30/06/2025,Sustainable Growth,Listed Equity,,SAP SE,12124.66086,5606360.628,0.00233689,,,DE0007164600
+30/06/2025,Sustainable Growth,Listed Equity,,Saputo Inc,31657.12442,986646.5207,0.00041126,,,CA8029121057
+30/06/2025,Sustainable Growth,Listed Equity,,Sartorius AG,542.366638,209838.906,0.00008747,,,DE0007165631
+30/06/2025,Sustainable Growth,Listed Equity,,SBI Holdings Inc,1907.055688,101334.0815,0.00004224,,,JP3436120004
+30/06/2025,Sustainable Growth,Listed Equity,,Schindler Holding AG,1319.682536,727312.3262,0.00030316,,,CH0024638212
+30/06/2025,Sustainable Growth,Listed Equity,,Schneider Electric SE,9596.183423,3881162.071,0.00161778,,,FR0000121972
+30/06/2025,Sustainable Growth,Listed Equity,,SCREEN Holdings Co Ltd,1830.773461,227439.6187,0.0000948,,,JP3494600004
+30/06/2025,Sustainable Growth,Listed Equity,,Sea Ltd,3859.11789,941828.5151,0.00039258,,,US81141R1005
+30/06/2025,Sustainable Growth,Listed Equity,,Secom Co Ltd,1373.080095,75179.81966,0.00003134,,,JP3421800008
+30/06/2025,Sustainable Growth,Listed Equity,,SEEK Ltd,130220.241,3131796.796,0.00130542,,,AU000000SEK6
+30/06/2025,Sustainable Growth,Listed Equity,,Sekisui House Ltd,78233.75163,2630600.985,0.00109651,,,JP3420600003
+30/06/2025,Sustainable Growth,Listed Equity,,Select Harvests Ltd,17270.14641,70980.30173,0.00002959,,,AU000000SHV6
+30/06/2025,Sustainable Growth,Listed Equity,,ServiceNow Inc,731.546562,1147613.318,0.00047836,,,US81762P1021
+30/06/2025,Sustainable Growth,Listed Equity,,Service Stream Ltd,314785.4437,624849.1057,0.00026046,,,AU000000SSM2
+30/06/2025,Sustainable Growth,Listed Equity,,Shionogi & Co Ltd,4576.933651,125420.5686,0.00005228,,,JP3347200002
+30/06/2025,Sustainable Growth,Listed Equity,,Shopify Inc,32336.22533,5691590.137,0.00237242,,,CA82509L1076
+30/06/2025,Sustainable Growth,Listed Equity,,Siemens AG,3445.668217,1343295.097,0.00055992,,,DE0007236101
+30/06/2025,Sustainable Growth,Listed Equity,,Siemens Energy AG,5742.526088,1008635.308,0.00042043,,,DE000ENER6Y0
+30/06/2025,Sustainable Growth,Listed Equity,,Siemens Healthineers AG,38187.11808,3218904.618,0.00134173,,,DE000SHL1006
+30/06/2025,Sustainable Growth,Listed Equity,,Sigma Healthcare Ltd,1459103.449,4362719.312,0.00181851,,,AU000000SIG5
+30/06/2025,Sustainable Growth,Listed Equity,,Sika AG,10296.61249,4251612.703,0.0017722,,,CH0418792922
+30/06/2025,Sustainable Growth,Listed Equity,,Silex Systems Ltd,9744.787444,41123.00302,0.00001714,,,AU000000SLX4
+30/06/2025,Sustainable Growth,Listed Equity,,Sims Ltd,51795.05565,794536.1537,0.00033119,,,AU000000SGM7
+30/06/2025,Sustainable Growth,Listed Equity,,Singapore Technologies Engineering Ltd,121670.1529,1135528.68,0.00047332,,,SG1F60858221
+30/06/2025,Sustainable Growth,Listed Equity,,SITC International Holdings Co Ltd,155615.7441,760761.5643,0.00031711,,,KYG8187G1055
+30/06/2025,Sustainable Growth,Listed Equity,,SiteMinder Ltd,93731.34565,415229.8612,0.00017308,,,AU0000183543
+30/06/2025,Sustainable Growth,Listed Equity,,Skandinaviska Enskilda Banken AB,20940.9971,553554.0061,0.00023074,,,SE0000148884
+30/06/2025,Sustainable Growth,Listed Equity,,SmartGroup Corp Ltd,36822.65405,271382.9603,0.00011312,,,AU000000SIQ4
+30/06/2025,Sustainable Growth,Listed Equity,,Smurfit WestRock PLC,27745.53139,1822877.264,0.00075983,,,IE00028FXN24
+30/06/2025,Sustainable Growth,Listed Equity,,Snap Inc,15320.52258,203151.5101,0.00008468,,,US83304A1060
+30/06/2025,Sustainable Growth,Listed Equity,,Snap-on Inc,2181.671707,1035923.711,0.0004318,,,US8330341012
+30/06/2025,Sustainable Growth,Listed Equity,,Snowflake Inc,1982.575093,676952.5083,0.00028217,,,US8334451098
+30/06/2025,Sustainable Growth,Listed Equity,,Societe Generale SA,12494.26605,1086523.902,0.00045289,,,FR0000130809
+30/06/2025,Sustainable Growth,Listed Equity,,SoftBank Group Corp,3508.982466,389775.6059,0.00016247,,,JP3436100006
+30/06/2025,Sustainable Growth,Listed Equity,,Sompo Holdings Inc,6636.553795,304618.7193,0.00012697,,,JP3165000005
+30/06/2025,Sustainable Growth,Listed Equity,,Sonic Healthcare Ltd,68610.68772,1838080.324,0.00076616,,,AU000000SHL7
+30/06/2025,Sustainable Growth,Listed Equity,,Sony Group Corp,20138.50807,793524.4453,0.00033076,,,JP3435000009
+30/06/2025,Sustainable Growth,Listed Equity,,Spark New Zealand Ltd,115045.2712,258851.8601,0.0001079,,,NZTELE0001S4
+30/06/2025,Sustainable Growth,Listed Equity,,Spotify Technology SA,1509.625283,1767598.785,0.00073679,,,LU1778762911
+30/06/2025,Sustainable Growth,Listed Equity,,Standard Chartered PLC,33841.0846,854102.0082,0.00035601,,,GB0004082847
+30/06/2025,Sustainable Growth,Listed Equity,,Stantec Inc,1067.951185,176955.8117,0.00007376,,,CA85472N1096
+30/06/2025,Sustainable Growth,Listed Equity,,State Street Corp,1042.015228,169082.0136,0.00007048,,,US8574771031
+30/06/2025,Sustainable Growth,Listed Equity,,Steadfast Group Ltd,196687.2346,1182090.28,0.00049273,,,AU000000SDF8
+30/06/2025,Sustainable Growth,Listed Equity,,STERIS PLC,18430.89821,6755886.726,0.00281605,,,IE00BFY8C754
+30/06/2025,Sustainable Growth,Listed Equity,,STMicroelectronics NV,1263.233688,58682.59032,0.00002446,,,NL0000226223
+30/06/2025,Sustainable Growth,Listed Equity,,Stryker Corp,528.635837,319133.5871,0.00013302,,,US8636671013
+30/06/2025,Sustainable Growth,Listed Equity,,Subaru Corp,21282.74148,565556.6027,0.00023574,,,JP3814800003
+30/06/2025,Sustainable Growth,Listed Equity,,Sumitomo Mitsui Financial Group Inc,15103.88105,579825.9714,0.00024169,,,JP3890350006
+30/06/2025,Sustainable Growth,Listed Equity,,Sumitomo Mitsui Trust Group Inc,6026.295974,244395.2432,0.00010187,,,JP3892100003
+30/06/2025,Sustainable Growth,Listed Equity,,Suncorp Group Ltd,481998.318,10415983.65,0.00434168,,,AU000000SUN6
+30/06/2025,Sustainable Growth,Listed Equity,,Superloop Ltd,127296.1808,383161.5041,0.00015971,,,AU000000SLC8
+30/06/2025,Sustainable Growth,Listed Equity,,Super Retail Group Ltd,39275.63298,559285.0136,0.00023313,,,AU000000SUL0
+30/06/2025,Sustainable Growth,Listed Equity,,Svenska Handelsbanken AB,19693.78268,398715.8906,0.0001662,,,SE0007100599
+30/06/2025,Sustainable Growth,Listed Equity,,Swire Pacific Ltd,54160.38154,707996.3923,0.00029511,,,HK0019000162
+30/06/2025,Sustainable Growth,Listed Equity,,Symrise AG,19266.39574,3076184.695,0.00128224,,,DE000SYM9999
+30/06/2025,Sustainable Growth,Listed Equity,,Synchrony Financial,14166.37247,1442685.126,0.00060135,,,US87165B1035
+30/06/2025,Sustainable Growth,Listed Equity,,Synopsys Inc,3140.485884,2456800.65,0.00102407,,,US8716071076
+30/06/2025,Sustainable Growth,Listed Equity,,Taiwan Semiconductor Manufacturing Co Ltd,111207.9929,6157540.426,0.00256664,,,TW0002330008
+30/06/2025,Sustainable Growth,Listed Equity,,Taiwan Semiconductor Manufacturing Co Ltd,20089.90891,6943104.4,0.00289409,,,US8740391003
+30/06/2025,Sustainable Growth,Listed Equity,,Talanx AG,3025.353144,595542.9251,0.00024824,,,DE000TLX1005
+30/06/2025,Sustainable Growth,Listed Equity,,Target Corp,665.181024,100129.8674,0.00004174,,,US87612E1064
+30/06/2025,Sustainable Growth,Listed Equity,,T&D Holdings Inc,2746.160191,91962.19196,0.00003833,,,JP3539220008
+30/06/2025,Sustainable Growth,Listed Equity,,Technology One Ltd,96691.24977,3965308.153,0.00165285,,,AU000000TNE8
+30/06/2025,Sustainable Growth,Listed Equity,,Techtronic Industries Co Ltd,22884.66826,383895.0014,0.00016002,,,HK0669013440
+30/06/2025,Sustainable Growth,Listed Equity,,TE Connectivity PLC,445.488209,114657.0471,0.00004779,,,IE000IVNQZ81
+30/06/2025,Sustainable Growth,Listed Equity,,Telefonaktiebolaget LM Ericsson,132036.1448,1711085.074,0.00071323,,,SE0000108656
+30/06/2025,Sustainable Growth,Listed Equity,,Telenor ASA,25001.50007,590736.9312,0.00024624,,,NO0010063308
+30/06/2025,Sustainable Growth,Listed Equity,,Telix Pharmaceuticals Ltd,126109.1883,3079586.378,0.00128366,,,AU000000TLX2
+30/06/2025,Sustainable Growth,Listed Equity,,Telstra Group Ltd,4572866.33,22132673.04,0.00922554,,,AU000000TLS2
+30/06/2025,Sustainable Growth,Listed Equity,,Temenos AG,852.835304,92777.92358,0.00003867,,,CH0012453913
+30/06/2025,Sustainable Growth,Listed Equity,,Temple & Webster Group Ltd,49678.48291,1059145.256,0.00044148,,,AU000000TPW5
+30/06/2025,Sustainable Growth,Listed Equity,,Teradyne Inc,4206.964848,577233.9624,0.00024061,,,US8807701029
+30/06/2025,Sustainable Growth,Listed Equity,,Terumo Corp,93331.49317,2612752.496,0.00108907,,,JP3546800008
+30/06/2025,Sustainable Growth,Listed Equity,,Tesla Inc,8780.084388,4255865.73,0.00177397,,,US88160R1014
+30/06/2025,Sustainable Growth,Listed Equity,,Texas Instruments Inc,1714.824475,543269.7888,0.00022645,,,US8825081040
+30/06/2025,Sustainable Growth,Listed Equity,,Thales SA,884.873839,395608.1603,0.0001649,,,FR0000121329
+30/06/2025,Sustainable Growth,Listed Equity,,Thermo Fisher Scientific Inc,12544.72003,7761321.711,0.00323514,,,US8835561023
+30/06/2025,Sustainable Growth,Listed Equity,,TIS Inc,5263.473699,269006.3309,0.00011213,,,JP3104890003
+30/06/2025,Sustainable Growth,Listed Equity,,TJX Cos Inc/The,30108.52159,5673458.964,0.00236486,,,US8725401090
+30/06/2025,Sustainable Growth,Listed Equity,,T-Mobile US Inc,5281.781434,1920252.147,0.00080042,,,US8725901040
+30/06/2025,Sustainable Growth,Listed Equity,,Tokio Marine Holdings Inc,7475.658297,482598.4368,0.00020116,,,JP3910660004
+30/06/2025,Sustainable Growth,Listed Equity,,Tokyo Electron Ltd,1907.055688,557639.6441,0.00023244,,,JP3571400005
+30/06/2025,Sustainable Growth,Listed Equity,,TOPPAN Holdings Inc,1830.773461,75909.90923,0.00003164,,,JP3629000005
+30/06/2025,Sustainable Growth,Listed Equity,,Toronto-Dominion Bank/The,8848.738393,991125.9046,0.00041313,,,CA8911605092
+30/06/2025,Sustainable Growth,Listed Equity,,TPG Telecom Ltd,36173.04817,192802.3467,0.00008037,,,AU0000090128
+30/06/2025,Sustainable Growth,Listed Equity,,Trade Desk Inc/The,2826.25653,310463.4254,0.00012941,,,US88339J1051
+30/06/2025,Sustainable Growth,Listed Equity,,Trane Technologies PLC,1534.798418,1024393.339,0.000427,,,IE00BK9ZQ967
+30/06/2025,Sustainable Growth,Listed Equity,,Travelers Cos Inc/The,3296.155051,1345621.919,0.00056089,,,US89417E1091
+30/06/2025,Sustainable Growth,Listed Equity,,Treasury Wine Estates Ltd,112783.8875,880842.1615,0.00036716,,,AU000000TWE9
+30/06/2025,Sustainable Growth,Listed Equity,,Trimble Inc,52744.29257,6115070.345,0.00254894,,,US8962391004
+30/06/2025,Sustainable Growth,Listed Equity,,Twilio Inc,3711.130369,704228.5385,0.00029354,,,US90138F1021
+30/06/2025,Sustainable Growth,Listed Equity,,Tyro Payments Ltd,132895.7974,116948.3017,0.00004875,,,AU0000066508
+30/06/2025,Sustainable Growth,Listed Equity,,Tyson Foods Inc,1144.233413,97670.58175,0.00004071,,,US9024941034
+30/06/2025,Sustainable Growth,Listed Equity,,Uber Technologies Inc,4640.2479,660616.6617,0.00027536,,,US90353T1007
+30/06/2025,Sustainable Growth,Listed Equity,,UCB SA,1083.207631,323919.7553,0.00013502,,,BE0003739530
+30/06/2025,Sustainable Growth,Listed Equity,,Ulta Beauty Inc,145.699055,104006.9116,0.00004335,,,US90384S3031
+30/06/2025,Sustainable Growth,Listed Equity,,Unibail-Rodamco-Westfield,48383.40109,346425.1518,0.0001444,,,AU0000009771
+30/06/2025,Sustainable Growth,Listed Equity,,UniCredit SpA,1302.900446,132812.5529,0.00005536,,,IT0005239360
+30/06/2025,Sustainable Growth,Listed Equity,,Unilever PLC,21683.55941,2010315.138,0.00083796,,,GB00B10RZP78
+30/06/2025,Sustainable Growth,Listed Equity,,Unipol Assicurazioni SpA,12143.3678,365959.9283,0.00015254,,,IT0004810054
+30/06/2025,Sustainable Growth,Listed Equity,,UnitedHealth Group Inc,3478.469575,1655875.72,0.00069022,,,US91324P1021
+30/06/2025,Sustainable Growth,Listed Equity,,United Therapeutics Corp,2035.972653,892708.8479,0.00037211,,,US91307C1027
+30/06/2025,Sustainable Growth,Listed Equity,,Vault Minerals Ltd,874943.6003,367476.3121,0.00015317,,,AU0000355588
+30/06/2025,Sustainable Growth,Listed Equity,,Veeva Systems Inc,7129.337335,3132839.807,0.00130586,,,US9224751084
+30/06/2025,Sustainable Growth,Listed Equity,,Ventia Services Group Pty Ltd,284233.4808,1472329.431,0.00061371,,,AU0000184459
+30/06/2025,Sustainable Growth,Listed Equity,,Veolia Environnement SA,2615.717582,141727.962,0.00005908,,,FR0000124141
+30/06/2025,Sustainable Growth,Listed Equity,,Veralto Corp,13734.82923,2115710.7,0.00088189,,,US92338C1036
+30/06/2025,Sustainable Growth,Listed Equity,,Verizon Communications Inc,29749.30591,1964221.361,0.00081874,,,US92343V1044
+30/06/2025,Sustainable Growth,Listed Equity,,Vestas Wind Systems A/S,225218.8749,5137789.233,0.00214158,,,DK0061539921
+30/06/2025,Sustainable Growth,Listed Equity,,Visa Inc,24951.18969,13517845.28,0.00563463,,,US92826C8394
+30/06/2025,Sustainable Growth,Listed Equity,,Vodafone Group PLC,700546.9903,1139366.401,0.00047492,,,GB00BH4HKS39
+30/06/2025,Sustainable Growth,Listed Equity,,Volkswagen AG,3212.244601,515647.4221,0.00021494,,,DE0007664039
+30/06/2025,Sustainable Growth,Listed Equity,,Vulcan Energy Resources Ltd,38251.22758,139234.4684,0.00005804,,,AU0000066086
+30/06/2025,Sustainable Growth,Listed Equity,,Vulcan Steel Ltd,9793.735143,56999.53853,0.00002376,,,AU0000181984
+30/06/2025,Sustainable Growth,Listed Equity,,Walmart Inc,13296.75508,1983911.978,0.00082695,,,US9311421039
+30/06/2025,Sustainable Growth,Listed Equity,,Walt Disney Co/The,5084.210464,962070.561,0.00040102,,,US2546871060
+30/06/2025,Sustainable Growth,Listed Equity,,Wartsila OYJ Abp,12138.79087,435724.9685,0.00018162,,,FI0009003727
+30/06/2025,Sustainable Growth,Listed Equity,,Waste Management Inc,14733.26071,5144220.215,0.00214426,,,US94106L1098
+30/06/2025,Sustainable Growth,Listed Equity,,Watts Water Technologies Inc,7281.228989,2731946.893,0.00113875,,,US9427491025
+30/06/2025,Sustainable Growth,Listed Equity,,WEB Travel Group Ltd,156217.2778,695166.8863,0.00028977,,,AU000000WEB7
+30/06/2025,Sustainable Growth,Listed Equity,,Weebit Nano Ltd,18646.97523,30301.33824,0.00001263,,,AU000000WBT5
+30/06/2025,Sustainable Growth,Listed Equity,,Wells Fargo & Co,3647.81612,445964.7972,0.00018589,,,US9497461015
+30/06/2025,Sustainable Growth,Listed Equity,,Wesfarmers Ltd,272428.5014,23088315.49,0.00962388,,,AU000000WES1
+30/06/2025,Sustainable Growth,Listed Equity,,West African Resources Ltd,146693.4543,332994.1412,0.0001388,,,AU000000WAF6
+30/06/2025,Sustainable Growth,Listed Equity,,Westgold Resources Ltd,155076.7965,445070.4058,0.00018552,,,AU000000WGX6
+30/06/2025,Sustainable Growth,Listed Equity,,Westpac Banking Corp,972376.2672,32924660.41,0.01372395,,,AU000000WBC1
+30/06/2025,Sustainable Growth,Listed Equity,,West Pharmaceutical Services Inc,6808.201056,2273036.377,0.00094747,,,US9553061055
+30/06/2025,Sustainable Growth,Listed Equity,,WH Group Ltd,518337.736,760705.9621,0.00031708,,,KYG960071028
+30/06/2025,Sustainable Growth,Listed Equity,,Williams-Sonoma Inc,1798.734925,448400.5879,0.00018691,,,US9699041011
+30/06/2025,Sustainable Growth,Listed Equity,,Wise PLC,17753.16281,386071.0816,0.00016093,,,GB00BL9YR756
+30/06/2025,Sustainable Growth,Listed Equity,,WiseTech Global Ltd,51040.32772,5564926.932,0.00231962,,,AU000000WTC3
+30/06/2025,Sustainable Growth,Listed Equity,,Wix.com Ltd,620.17451,149954.7638,0.00006251,,,IL0011301780
+30/06/2025,Sustainable Growth,Listed Equity,,Wolters Kluwer NV,2344.915674,596213.6671,0.00024852,,,NL0000395903
+30/06/2025,Sustainable Growth,Listed Equity,,Woolworths Group Ltd,246799.5268,7677933.278,0.00320038,,,AU000000WOW2
+30/06/2025,Sustainable Growth,Listed Equity,,Workday Inc,13857.85363,5074975.012,0.0021154,,,US98138H1014
+30/06/2025,Sustainable Growth,Listed Equity,,WW Grainger Inc,1328.836403,2109267.996,0.0008792,,,US3848021040
+30/06/2025,Sustainable Growth,Listed Equity,,Xero Ltd,4097.487739,736728.2956,0.00030709,,,AU0000403172
+30/06/2025,Sustainable Growth,Listed Equity,,Xero Ltd,74274.58882,13354571.07,0.00556657,,,NZXROE0001S2
+30/06/2025,Sustainable Growth,Listed Equity,,Xylem Inc/NY,18500.83349,3651892.607,0.00152221,,,US98419M1009
+30/06/2025,Sustainable Growth,Listed Equity,,Yangzijiang Shipbuilding Holdings Ltd,201766.4918,536634.5318,0.00022368,,,SG1U76934819
+30/06/2025,Sustainable Growth,Listed Equity,,Yara International ASA,20133.93113,1129355.259,0.00047075,,,NO0010208051
+30/06/2025,Sustainable Growth,Listed Equity,,Yum! Brands Inc,6638.079439,1500924.105,0.00062563,,,US9884981013
+30/06/2025,Sustainable Growth,Listed Equity,,Zalando SE,2469.255705,123619.5529,0.00005153,,,DE000ZAL1111
+30/06/2025,Sustainable Growth,Listed Equity,,Zip Co Ltd,220416.3794,676678.2849,0.00028206,,,AU0000218307
+30/06/2025,Sustainable Growth,Listed Equity,,Zoetis Inc,1804.837503,429487.1572,0.00017902,,,US98978V1035
+30/06/2025,Sustainable Growth,Listed Equity,,Zoom Communications Inc,10994.55745,1308240.774,0.00054531,,,US98980L1017
+30/06/2025,Sustainable Growth,Listed Equity,,ZOZO Inc,3890.393604,63989.14822,0.00002667,,,JP3399310006
+30/06/2025,Sustainable Growth,Listed Equity,,Zscaler Inc,197.570969,94644.7404,0.00003945,,,US98980G1022
+30/06/2025,Sustainable Growth,Listed Equity Total,,,48073942.96,1359658092,0.56674477,,,
+30/06/2025,Sustainable Growth,Listed Infrastructure,,Atlas Arteria Ltd,234434.3009,1193270.592,0.00049739,,,AU0000013559
+30/06/2025,Sustainable Growth,Listed Infrastructure,,Transurban Group,806499.5875,11274864.23,0.00469969,,,AU000000TCL6
+30/06/2025,Sustainable Growth,Listed Infrastructure Total,,,1040933.888,12468134.83,0.00519708,,,
+30/06/2025,Sustainable Growth,Listed Property,,Arena REIT,730327.7033,2709515.779,0.0011294,,,AU000000ARF6
+30/06/2025,Sustainable Growth,Listed Property,,Centuria Capital Group,167111.6369,281583.1082,0.00011737,,,AU000000CNI5
+30/06/2025,Sustainable Growth,Listed Property,,Charter Hall Group,318746.8312,6116751.691,0.00254964,,,AU000000CHC0
+30/06/2025,Sustainable Growth,Listed Property,,Charter Hall Long Wale REIT,120163.8019,490268.3117,0.00020436,,,AU000000CLW0
+30/06/2025,Sustainable Growth,Listed Property,,Cromwell Property Group,179850.625,61149.2125,0.00002549,,,AU000000CMW8
+30/06/2025,Sustainable Growth,Listed Property,,Dexus,201532.3575,1340190.177,0.00055863,,,AU000000DXS1
+30/06/2025,Sustainable Growth,Listed Property,,Dexus Industria REIT,36847.82715,100226.0899,0.00004178,,,AU0000192833
+30/06/2025,Sustainable Growth,Listed Property,,DigiCo Infrastructure REIT,18476.35754,62080.56133,0.00002588,,,AU0000367088
+30/06/2025,Sustainable Growth,Listed Property,,Equinix Inc,441.674097,536108.1768,0.00022347,,,US29444U7000
+30/06/2025,Sustainable Growth,Listed Property,,Extra Space Storage Inc,5766.936401,1297439.691,0.00054081,,,US30225T1025
+30/06/2025,Sustainable Growth,Listed Property,,Goodman Group,708299.3448,24252169.57,0.010109,,,AU000000GMG2
+30/06/2025,Sustainable Growth,Listed Property,,GPT Group/The,369466.3158,1788216.968,0.00074538,,,AU000000GPT8
+30/06/2025,Sustainable Growth,Listed Property,,Growthpoint Properties Australia Ltd,190059.7163,442839.139,0.00018459,,,AU000000GOZ8
+30/06/2025,Sustainable Growth,Listed Property,,Ingenia Communities Group,34364.78035,187975.3485,0.00007835,,,AU000000INA9
+30/06/2025,Sustainable Growth,Listed Property,,Klepierre SA,18042.27245,1080679.234,0.00045046,,,FR0000121964
+30/06/2025,Sustainable Growth,Listed Property,,Lendlease Corp Ltd,141046.9877,758832.7937,0.0003163,,,AU000000LLC3
+30/06/2025,Sustainable Growth,Listed Property,,Mirvac Group,1244966.417,2738926.118,0.00114166,,,AU000000MGR9
+30/06/2025,Sustainable Growth,Listed Property,,National Storage REIT,28882.63816,66430.06777,0.00002769,,,AU000000NSR2
+30/06/2025,Sustainable Growth,Listed Property,,Public Storage,318.859711,142763.1271,0.00005951,,,US74460D1090
+30/06/2025,Sustainable Growth,Listed Property,,SBA Communications Corp,266.987796,95673.16976,0.00003988,,,US78410G1040
+30/06/2025,Sustainable Growth,Listed Property,,Scentre Group,2459715.941,8756588.749,0.00365,,,AU000000SCG8
+30/06/2025,Sustainable Growth,Listed Property,,Simon Property Group Inc,6735.72069,1652299.472,0.00068873,,,US8288061091
+30/06/2025,Sustainable Growth,Listed Property,,Stockland,712611.2495,3819596.297,0.00159212,,,AU000000SGP0
+30/06/2025,Sustainable Growth,Listed Property,,Vicinity Ltd,742524.6933,1834035.992,0.00076448,,,AU000000VCX7
+30/06/2025,Sustainable Growth,Listed Property,,Welltower Inc,4319.099722,1013161.216,0.00042231,,,US95040Q1040
+30/06/2025,Sustainable Growth,Listed Property Total,,,8440886.775,61625500.06,0.02568729,,,
+30/06/2025,Sustainable Growth,Unlisted Equity,Externally Managed,Brandon Capital Partners Pty Ltd,,7736393.091,0.00322475,,,
+30/06/2025,Sustainable Growth,Unlisted Equity,Externally Managed,Generation Investment Management LLP,,22539286.37,0.00939503,,,
+30/06/2025,Sustainable Growth,Unlisted Equity,Externally Managed,IFM Investors Pty Ltd,,1467554.386,0.00061172,,,
+30/06/2025,Sustainable Growth,Unlisted Equity,Externally Managed,Stafford Capital Partners Pty Limited,,84160874.07,0.03508068,,,
+30/06/2025,Sustainable Growth,Unlisted Equity,Externally Managed,Stone Point Capital LLC,,4049189.886,0.00168782,,,
+30/06/2025,Sustainable Growth,Unlisted Equity Total,,,,119953297.8,0.05,,,
+30/06/2025,Sustainable Growth,Unlisted Infrastructure,Externally Managed,Generate Capital PBC,,41431059.78,0.01726966,,,
+30/06/2025,Sustainable Growth,Unlisted Infrastructure,Externally Managed,Kohlberg Kravis Roberts & Co LP,,4439281.471,0.00185042,,,
+30/06/2025,Sustainable Growth,Unlisted Infrastructure,Internally Managed,Generate Capital PBC,,,,1.38%,,
+30/06/2025,Sustainable Growth,Unlisted Infrastructure,Internally Managed,Intera Hold Co Pty Ltd,,,,20.20%,,
+30/06/2025,Sustainable Growth,Unlisted Infrastructure,Internally Managed,Intera Hold Trust and Intera Hold (T) Pty Ltd,,,,20.20%,,
+30/06/2025,Sustainable Growth,Unlisted Infrastructure External Total,,,,45870341.25,0.01912008,,,
+30/06/2025,Sustainable Growth,Unlisted Infrastructure Internal Total,,,,50089414.29,0.02087871,,,
+30/06/2025,Sustainable Growth,Unlisted Property,Externally Managed,Heitman Capital Management LLC,,17256657.22,0.00719307,,,
+30/06/2025,Sustainable Growth,Unlisted Property,Externally Managed,Investa Wholesale Funds Management Limited,,118666539.4,0.04946364,,,
+30/06/2025,Sustainable Growth,Unlisted Property,Externally Managed,ISPT Operations Pty Ltd,,30955677.89,0.01290322,,,
+30/06/2025,Sustainable Growth,Unlisted Property Total,,,,166878874.5,0.06955994,,,

@@ -1,0 +1,304 @@
+Option_Name,Asset_Class,Name,Currency,Security_Identifier,Dollar_Value,Weighting_Percentage,Listing_Status,Super_Fund,Weighting_Percentage_Clean
+Asset-class_Australian_Shares_Index_Superannuation,Cash,COMMONWEALTH BANK OF AUSTRALIA,AUD,,37413008.0,0.46,,ART,0.4648371448225833
+Asset-class_Australian_Shares_Index_Superannuation,Cash,STATE STREET BANK AND TRUST,AUD,,6870791.0,0.09,,ART,0.08536600080679697
+Asset-class_Australian_Shares_Index_Superannuation,Cash,JPMORGAN CHASE & CO,AUD,,4803976.0,0.06,,ART,0.059686900546361166
+Asset-class_Australian_Shares_Index_Superannuation,Cash,STATE STREET BANK AND TRUST,USD,,142.0,0.0,,ART,1.764276065821995e-06
+Asset-class_Australian_Shares_Index_Superannuation,Cash,STATE STREET BANK AND TRUST,NZD,,7.0,0.0,,ART,8.697135535742229e-08
+Asset-class_Australian_Shares_Index_Superannuation,Cash,,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Equity,CommBank,,CBA AU,942154304.0,11.71,Listed,ART,11.705776682101268
+Asset-class_Australian_Shares_Index_Superannuation,Equity,BHP,,BHP AU,569170744.0,7.07,Listed,ART,7.071650147924633
+Asset-class_Australian_Shares_Index_Superannuation,Equity,NAB,,NAB AU,364352332.0,4.53,Listed,ART,4.526888020239643
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Westpac,,WBC AU,353456446.0,4.39,Listed,ART,4.391512309776792
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Csl,,CSL AU,352132224.0,4.38,Listed,ART,4.37505954090049
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Wesfarmers,,WES AU,292477013.0,3.63,Listed,ART,3.63387460450006
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Anz,,ANZ AU,263464341.0,3.27,Listed,ART,3.27340726073144
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Macquarie,,MQG AU,256575948.0,3.19,Listed,ART,3.187822564239358
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Telstra,,TLS AU,172560005.0,2.14,Listed,ART,2.143968216476224
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Woodside Energy,,WDS AU,136553311.0,1.7,Listed,ART,1.6966037908876574
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Rio Tinto,,RIO AU,124095350.0,1.54,Listed,ART,1.5418201118648136
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Woolworths,,WOW AU,114775744.0,1.43,Listed,ART,1.426028859690933
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Aristocrat Leisure,,ALL AU,113997195.0,1.42,Listed,ART,1.4163557937277664
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Qbe Insurance,,QBE AU,109309559.0,1.36,Listed,ART,1.3581143571074454
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Brambles,,BXB AU,99705398.0,1.24,Listed,ART,1.238787657215889
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Xero,,XRO AU,84858772.0,1.05,Listed,ART,1.054326059258068
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Coles,,COL AU,83838773.0,1.04,Listed,ART,1.0416531027590374
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Fortescue,,FMG AU,79416905.0,0.99,Listed,ART,0.9867136951630926
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Northern Star Resources,,NST AU,79095114.0,0.98,Listed,ART,0.9827156095328325
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Santos,,STO AU,77625467.0,0.96,Listed,ART,0.9644560107489797
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Suncorp,,SUN AU,73295350.0,0.91,Listed,ART,0.9106565615566631
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Resmed,,RMD AU,71837276.0,0.89,Listed,ART,0.8925407512721748
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Insurance Australia,,IAG AU,69527333.0,0.86,Listed,ART,0.8638409121995477
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Computershare,,CPU AU,65893219.0,0.82,Listed,ART,0.8186889378990644
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Wisetech Global,,WTC AU,65800038.0,0.82,Listed,ART,0.8175312124899845
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Cochlear,,COH AU,61098389.0,0.76,Listed,ART,0.7591156716407174
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Origin Energy,,ORG AU,56544470.0,0.7,Listed,ART,0.702535599123872
+Asset-class_Australian_Shares_Index_Superannuation,Equity,James Hardie Industries,,JHX AU,54984975.0,0.68,Listed,ART,0.6831596857205687
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Qantas Airways,,QAN AU,51874700.0,0.64,Listed,ART,0.6445161382513821
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Pro Medicus,,PME AU,49992978.0,0.62,Listed,ART,0.6211367221448278
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Evolution Mining,,EVN AU,49946005.0,0.62,Listed,ART,0.6205531070769416
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Asx,,ASX AU,47640537.0,0.59,Listed,ART,0.5919088675493465
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Medibank Pvt,,MPL AU,46638333.0,0.58,Listed,ART,0.5794570046601136
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Car,,CAR AU,42532734.0,0.53,Listed,ART,0.528447074719531
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Sigma Healthcare,,SIG AU,42019721.0,0.52,Listed,ART,0.5220731553015343
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Technology One,,TNE AU,41848280.0,0.52,Listed,ART,0.5199430901395583
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Sonic Healthcare,,SHL AU,41620515.0,0.52,Listed,ART,0.5171132286034178
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Amcor,,AMC AU,41561838.0,0.52,Listed,ART,0.5163841974293739
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Lottery,,TLC AU,38969777.0,0.48,Listed,ART,0.4841791890952146
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Rea,,REA AU,38952693.0,0.48,Listed,ART,0.48396692929022517
+Asset-class_Australian_Shares_Index_Superannuation,Equity,South32,,S32 AU,38925581.0,0.48,Listed,ART,0.48363007680644654
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Jb Hi-Fi,,JBH AU,38710636.0,0.48,Listed,ART,0.4809594970954035
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Newmont,,NEM AU,34144131.0,0.42,Listed,ART,0.42422305008162553
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Sgh,,SGH AU,34098875.0,0.42,Listed,ART,0.4236607678447604
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nextdc,,NXT AU,30559648.0,0.38,Listed,ART,0.3796877151151057
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Orica,,ORI AU,29516584.0,0.37,Listed,ART,0.36672818800017215
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bluescope Steel,,BSL AU,28253679.0,0.35,Listed,ART,0.3510372509233628
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Seek,,SEK AU,27190285.0,0.34,Listed,ART,0.33782513414351273
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Als,,ALQ AU,27095790.0,0.34,Listed,ART,0.3366510829685842
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bendigo & Adelaide Bank,,BEN AU,26760814.0,0.33,Listed,ART,0.3324891805782688
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Hub24,,HUB AU,26055461.0,0.32,Listed,ART,0.32372553680463684
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Lynas Rare Earths,,LYC AU,25623457.0,0.32,Listed,ART,0.31835811203323283
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ampol,,ALD AU,23747059.0,0.3,Listed,ART,0.2950448438546676
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ramsay Health Care,,RHC AU,23209551.0,0.29,Listed,ART,0.2883665868153166
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Qube,,QUB AU,22030828.0,0.27,Listed,ART,0.2737215672580356
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Steadfast,,SDF AU,21634568.0,0.27,Listed,ART,0.2687982430760453
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Treasury Wine Estates,,TWE AU,20401931.0,0.25,Listed,ART,0.25348337013980143
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bank Of Queensland,,BOQ AU,20296939.0,0.25,Listed,ART,0.25217889920527475
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Worley,,WOR AU,19913788.0,0.25,Listed,ART,0.24741844752291026
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Endeavour,,EDV AU,19760455.0,0.25,Listed,ART,0.2455133648327646
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Fisher & Paykel Healthcare,,FPH AU,19544902.0,0.24,Listed,ART,0.24283523103828483
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Telix Pharmaceuticals,,TLX AU,19471699.0,0.24,Listed,ART,0.24192572187739492
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Cleanaway Waste Management,,CWY AU,19386857.0,0.24,Listed,ART,0.2408716042015043
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Sandfire Resources,,SFR AU,18599125.0,0.23,Listed,ART,0.23108444424458813
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Aurizon,,AZJ AU,18406381.0,0.23,Listed,ART,0.22868970039930087
+Asset-class_Australian_Shares_Index_Superannuation,Equity,A2 Milk,,A2M AU,18155564.0,0.23,Listed,ART,0.22557342976548905
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Dyno Nobel,,DNL AU,17498530.0,0.22,Listed,ART,0.21741012440893068
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ebos,,EBO AU,17381145.0,0.22,Listed,ART,0.21595167690198336
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Life360,,360 AU,17339448.0,0.22,Listed,ART,0.2154336133870779
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Block,,XYZ AU,17093985.0,0.21,Listed,ART,0.2123838634156352
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ansell,,ANN AU,15735069.0,0.2,Listed,ART,0.19550003965322277
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Metcash,,MTS AU,15698073.0,0.2,Listed,ART,0.19504038361567946
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Perseus Mining,,PRU AU,14920978.0,0.19,Listed,ART,0.1853853828454686
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Challenger,,CGF AU,14653353.0,0.18,Listed,ART,0.1820602815629643
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ventia Services,,VNT AU,14543549.0,0.18,Listed,ART,0.1806960240338691
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Genesis Minerals,,GMD AU,14536634.0,0.18,Listed,ART,0.18061010875925532
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Netwealth,,NWL AU,14441542.0,0.18,Listed,ART,0.17942864017016272
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Pilbara Minerals,,PLS AU,13249401.0,0.16,Listed,ART,0.16461690894914088
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Downer Group,,DOW AU,13061590.0,0.16,Listed,ART,0.1622834550604219
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Mineral Resources,,MIN AU,12163089.0,0.15,Listed,ART,0.1511200479518506
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Aub,,AUB AU,11959186.0,0.15,Listed,ART,0.14858665934164425
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Pinnacle Investment Management,,PNI AU,11860900.0,0.15,Listed,ART,0.14736550696555
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Amp,,AMP AU,11802011.0,0.15,Listed,ART,0.14663384180188668
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Regis Resources,,RRL AU,11648887.0,0.14,Listed,ART,0.14473135582792243
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Zip,,ZIP AU,11452872.0,0.14,Listed,ART,0.14229597151072454
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Gold Road Resources,,GOR AU,11442642.0,0.14,Listed,ART,0.14216886908710932
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Viva Energy,,VEA AU,11433575.0,0.14,Listed,ART,0.1420562163329628
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Capricorn Metals,,CMM AU,11387474.0,0.14,Listed,ART,0.14148343541105815
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nib,,NHF AU,11298132.0,0.14,Listed,ART,0.14037340757815203
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Harvey Norman,,HVN AU,11188327.0,0.14,Listed,ART,0.1390091376245775
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Reliance Worldwide,,RWC AU,10641977.0,0.13,Listed,ART,0.13222102333893068
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Igo,,IGO AU,10515531.0,0.13,Listed,ART,0.13064999762471288
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Paladin Energy,,PDN AU,10472624.0,0.13,Listed,ART,0.13011690048980992
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Light & Wonder,,LNW AU,10387518.0,0.13,Listed,ART,0.12905950275137434
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Reece,,REH AU,10234488.0,0.13,Listed,ART,0.12715818467846773
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ramelius Resources,,RMS AU,9451469.0,0.12,Listed,ART,0.11742958129266581
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Vault Minerals,,VAU AU,9414467.0,0.12,Listed,ART,0.11696985070824648
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Breville,,BRG AU,9075308.0,0.11,Listed,ART,0.11275597672086533
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Boss Energy,,BOE AU,8986231.0,0.11,Listed,ART,0.11164924137498347
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Insignia Financial,,IFL AU,8966172.0,0.11,Listed,ART,0.11140001874396711
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Beach Energy,,BPT AU,8861117.0,0.11,Listed,ART,0.11009476506724225
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Orora,,ORA AU,8739333.0,0.11,Listed,ART,0.10858166227569249
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Sims,,SGM AU,8603929.0,0.11,Listed,ART,0.10689933807557586
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Eagers Automotive,,APE AU,8415982.0,0.1,Listed,ART,0.1045641944576671
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Alcoa,,AAI AU,8171849.0,0.1,Listed,ART,0.1015309690437423
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Westgold Resources,,WGX AU,7882962.0,0.1,Listed,ART,0.09794169848157948
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Flight Centre Travel,,FLT AU,7878777.0,0.1,Listed,ART,0.09788970203555508
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Droneshield,,DRO AU,7796858.0,0.1,Listed,ART,0.09687190111276583
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Super Retail,,SUL AU,7591157.0,0.09,Listed,ART,0.09431617328871197
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Arb,,ARB AU,7483687.0,0.09,Listed,ART,0.0929809144943888
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Lovisa,,LOV AU,7305776.0,0.09,Listed,ART,0.09077046295110389
+Asset-class_Australian_Shares_Index_Superannuation,Equity,West African Resources,,WAF AU,7241759.0,0.09,Listed,ART,0.0899750850574016
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Graincorp,,GNC AU,7185054.0,0.09,Listed,ART,0.08927055495660978
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nine Entertainment,,NEC AU,7093633.0,0.09,Listed,ART,0.08813469663116251
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Perpetual,,PPT AU,6998721.0,0.09,Listed,ART,0.08695546444835056
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Megaport,,MP1 AU,6943676.0,0.09,Listed,ART,0.08627155898325779
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Austal,,ASB AU,6715601.0,0.08,Listed,ART,0.08343784585852293
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Auckland Airport,,AIA AU,6620726.0,0.08,Listed,ART,0.08225907338144643
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Emerald Resources Nl,,EMR AU,6374666.0,0.08,Listed,ART,0.07920190599583968
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Codan,,CDA AU,6370674.0,0.08,Listed,ART,0.07915230747432728
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Helia,,HLI AU,6243992.0,0.08,Listed,ART,0.077578349582986
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Karoon Energy,,KAR AU,6169861.0,0.08,Listed,ART,0.07665731050527155
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Temple & Webster,,TPW AU,6141639.0,0.08,Listed,ART,0.0763066668494291
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Corporate Travel Management,,CTD AU,6057702.0,0.08,Listed,ART,0.07526379332733825
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Chorus,,CNU AU,5787058.0,0.07,Listed,ART,0.07190118254171622
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Mesoblast,,MSB AU,5758448.0,0.07,Listed,ART,0.0715457181878911
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Deep Yellow,,DYL AU,5715991.0,0.07,Listed,ART,0.07101821206868966
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Premier Investments,,PMV AU,5694594.0,0.07,Listed,ART,0.07075236548432069
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Deterra Royalties,,DRR AU,5614659.0,0.07,Listed,ART,0.0697592147285356
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Champion Iron,,CIA AU,5530140.0,0.07,Listed,ART,0.06870911015947076
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Iluka Resources,,ILU AU,5516468.0,0.07,Listed,ART,0.06853924267797838
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Spartan Resources,,SPR AU,5489580.0,0.07,Listed,ART,0.06820517327757118
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bapcor,,BAP AU,5363895.0,0.07,Listed,ART,0.06664360259212866
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Pexa,,PXA AU,5321472.0,0.07,Listed,ART,0.06611651890522467
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Magellan Financial,,MFG AU,5128513.0,0.06,Listed,ART,0.06371910379687998
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Web Travel,,WEB AU,5071986.0,0.06,Listed,ART,0.06301678525341012
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Tabcorp,,TAH AU,5056485.0,0.06,Listed,ART,0.06282419339921078
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Neuren Pharmaceuticals,,NEU AU,4945183.0,0.06,Listed,ART,0.061441324000069096
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Domino'S Pizza Enterprises,,DMP AU,4483010.0,0.06,Listed,ART,0.05569906511155396
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Iress,,IRE AU,4467343.0,0.06,Listed,ART,0.05550441079378471
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Inghams,,ING AU,4426803.0,0.06,Listed,ART,0.05500072240147187
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nrw,,NWH AU,4333069.0,0.05,Listed,ART,0.05383612625531863
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bellevue Gold,,BGL AU,4317982.0,0.05,Listed,ART,0.05364867813556472
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Liontown Resources,,LTR AU,4212067.0,0.05,Listed,ART,0.052332739406610235
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nexgen Energy,,NXG AU,4193822.0,0.05,Listed,ART,0.052106054781110786
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Monadelphous,,MND AU,4090090.0,0.05,Listed,ART,0.05081723869054847
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nickel Industries,,NIC AU,4078886.0,0.05,Listed,ART,0.050678034824059255
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Evt,,EVT AU,4020276.0,0.05,Listed,ART,0.0499498360901309
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Iph,,IPH AU,3977249.0,0.05,Listed,ART,0.0494152480177075
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Elders,,ELD AU,3895185.0,0.05,Listed,ART,0.04839564554541442
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bega Cheese,,BGA AU,3876784.0,0.05,Listed,ART,0.04816702270113843
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Resolute Mining,,RSG AU,3687593.0,0.05,Listed,ART,0.04581642303093471
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Data#3,,DTL AU,3657715.0,0.05,Listed,ART,0.04544520443731055
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Adriatic Metals,,ADT AU,3405872.0,0.04,Listed,ART,0.042316186287699224
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Judo Capital,,JDO AU,3347090.0,0.04,Listed,ART,0.04158585054332494
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Amotiv,,AOV AU,3337574.0,0.04,Listed,ART,0.0414676191979562
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Capstone Copper,,CSC AU,3326708.0,0.04,Listed,ART,0.0413326148054828
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nick Scali,,NCK AU,3321909.0,0.04,Listed,ART,0.04127298972914562
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nanosonics,,NAN AU,3315710.0,0.04,Listed,ART,0.04119597038173695
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nufarm,,NUF AU,3272115.0,0.04,Listed,ART,0.04065432520505027
+Asset-class_Australian_Shares_Index_Superannuation,Equity,News,,NWS AU,3218775.0,0.04,Listed,ART,0.03999160347722671
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Imdex,,IMD AU,3207258.0,0.04,Listed,ART,0.039848510748705074
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Service Stream,,SSM AU,3185080.0,0.04,Listed,ART,0.039572960645974084
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Dicker Data,,DDR AU,3114731.0,0.04,Listed,ART,0.03869891094911133
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Idp Education,,IEL AU,3068242.0,0.04,Listed,ART,0.038121309329224015
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Collins Foods,,CKF AU,3058578.0,0.04,Listed,ART,0.03800123916091342
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Siteminder,,SDR AU,3050216.0,0.04,Listed,ART,0.037897345664699315
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ridley,,RIC AU,2986198.0,0.04,Listed,ART,0.03710195534651768
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Smartgroup,,SIQ AU,2940928.0,0.04,Listed,ART,0.03653949916694189
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Aussie Broadband,,ABB AU,2852760.0,0.04,Listed,ART,0.03544405767277715
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Develop Global,,DVP AU,2794976.0,0.03,Listed,ART,0.034726121558780965
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Hansen Technologies,,HSN AU,2607739.0,0.03,Listed,ART,0.032399799321201295
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ooh!Media,,OML AU,2575361.0,0.03,Listed,ART,0.031997519529235206
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Credit,,CCP AU,2553266.0,0.03,Listed,ART,0.031723000658289174
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Infratil,,IFT AU,2542220.0,0.03,Listed,ART,0.031585759859535156
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Spark New Zealand,,SPK AU,2475272.0,0.03,Listed,ART,0.03075396581689677
+Asset-class_Australian_Shares_Index_Superannuation,Equity,G8 Education,,GEM AU,2449340.0,0.03,Listed,ART,0.03043177421873553
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Silex Systems,,SLX AU,2390683.0,0.03,Listed,ART,0.029702991534278342
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Clarity Pharmaceuticals,,CU6 AU,2356583.0,0.03,Listed,ART,0.029279316788894328
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Fletcher Building,,FBU AU,2299567.0,0.03,Listed,ART,0.028570922675028785
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Perenti,,PRN AU,2103248.0,0.03,Listed,ART,0.026131761316112535
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Johns Lyng,,JLG AU,2043427.0,0.03,Listed,ART,0.02538851653770734
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Gqg Partners,,GQG AU,2014261.0,0.03,Listed,ART,0.02502614417337097
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Kelsian,,KLS AU,1950304.0,0.02,Listed,ART,0.024231511748428875
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Domain Australia,,DHG AU,1902792.0,0.02,Listed,ART,0.02364119988618004
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Mac Copper,,MAC AU,1863156.0,0.02,Listed,ART,0.02314874322318764
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Polynovo,,PNV AU,1817874.0,0.02,Listed,ART,0.02258613794985981
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Stanmore Resources,,SMR AU,1807923.0,0.02,Listed,ART,0.02246250195597957
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Southern Cross Gold Consolidated,,SX2 AU,1787913.0,0.02,Listed,ART,0.022213888124450708
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Pwr,,PWH AU,1761382.0,0.02,Listed,ART,0.021884254263166744
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Audinate,,AD8 AU,1753822.0,0.02,Listed,ART,0.021790325199380726
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Lifestyle Communities,,LIC AU,1733599.0,0.02,Listed,ART,0.021539064953753132
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Healius,,HLS AU,1652841.0,0.02,Listed,ART,0.020535688851473888
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Nuix,,NXL AU,1639624.0,0.02,Listed,ART,0.02037147450807974
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Propel Funeral Partners,,PFP AU,1605130.0,0.02,Listed,ART,0.019942904517837038
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ma Financial,,MAF AU,1602157.0,0.02,Listed,ART,0.019905966540768802
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Select Harvests,,SHV AU,1602000.0,0.02,Listed,ART,0.01990401589751293
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bannerman Energy,,BMN AU,1561821.0,0.02,Listed,ART,0.019404812742240662
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Myer,,MYR AU,1551249.0,0.02,Listed,ART,0.019273461146692282
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Chalice Mining,,CHN AU,1538163.0,0.02,Listed,ART,0.01911087441009125
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Regis Healthcare,,REG AU,1520231.0,0.02,Listed,ART,0.018888078646624208
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Superloop,,SLC AU,1510791.0,0.02,Listed,ART,0.018770791561685055
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Tuas,,TUA AU,1481627.0,0.02,Listed,ART,0.01840844404630736
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Mcmillan Shakespeare,,MMS AU,1473987.0,0.02,Listed,ART,0.018313521024174405
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Amplitude Energy,,AEL AU,1444852.0,0.02,Listed,ART,0.017951533818697477
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Gwa,,GWA AU,1332143.0,0.02,Listed,ART,0.016551183177128944
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Redox,,RDX AU,1325546.0,0.02,Listed,ART,0.01646921888694424
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Fleetpartners,,FPR AU,1321798.0,0.02,Listed,ART,0.01642265193839001
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Wa1 Resources,,WA1 AU,1269861.0,0.02,Listed,ART,0.015777361755075946
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Star Entertainment,,SGR AU,1215546.0,0.02,Listed,ART,0.015102526159899035
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Gentrack,,GTK AU,1149006.0,0.01,Listed,ART,0.014275801304830053
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Ora Banda Mining,,OBM AU,1148253.0,0.01,Listed,ART,0.014266445671889462
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Jumbo Interactive,,JIN AU,1105854.0,0.01,Listed,ART,0.013739660172489555
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Catalyst Metals,,CYL AU,974886.0,0.01,Listed,ART,0.012112450962710856
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Guzman Y Gomez,,GYG AU,964712.0,0.01,Listed,ART,0.011986044309938512
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Strike Energy,,STX AU,940803.0,0.01,Listed,ART,0.011688987433475566
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Alpha Hpa,,A4N AU,903186.0,0.01,Listed,ART,0.011221615794264117
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Australian Clinical Labs,,ACL AU,876918.0,0.01,Listed,ART,0.01089524957104572
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Accent,,AX1 AU,863256.0,0.01,Listed,ART,0.010725506334346706
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Maas,,MGH AU,772589.0,0.01,Listed,ART,0.009599016066319362
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Eqt,,EQT AU,760913.0,0.01,Listed,ART,0.009453947845583182
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Appen,,APX AU,753470.0,0.01,Listed,ART,0.009361472445879567
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Lotus Resources,,LOT AU,746482.0,0.01,Listed,ART,0.009274650184274187
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Clinuvel Pharmaceuticals,,CUV AU,596604.0,0.01,Listed,ART,0.007412494070237081
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Iperionx,,IPX AU,567749.0,0.01,Listed,ART,0.00705398571897445
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Vulcan Energy Resources,,VUL AU,543790.0,0.01,Listed,ART,0.0067563076185446665
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Mystate,,MYS AU,493943.0,0.01,Listed,ART,0.006136984597044463
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Australian Finance,,AFG AU,477288.0,0.01,Listed,ART,0.0059300548936904824
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Catapult International,,CAT AU,456108.0,0.01,Listed,ART,0.005666904421337595
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Australian Ethical Investment,,AEF AU,435305.0,0.01,Listed,ART,0.005408437977694673
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bravura Solutions,,BVS AU,405352.0,0.01,Listed,ART,0.005036287548120263
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Weebit Nano,,WBT AU,397994.0,0.0,Listed,ART,0.004944868229160276
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Brainchip,,BRN AU,396509.0,0.0,Listed,ART,0.004926417877345165
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Pantoro Gold,,PNR AU,368965.0,0.0,Listed,ART,0.004584198018493045
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Tyro Payments,,TYR AU,343985.0,0.0,Listed,ART,0.004273834524660416
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Infomedia,,IFM AU,343807.0,0.0,Listed,ART,0.00427162296733847
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Integral Diagnostics,,IDX AU,247079.0,0.0,Listed,ART,0.0030698279300509345
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Bannerman Resources,,BMNXX AU,231971.0,0.0,Listed,ART,0.002882118896230944
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Kogancom,,KGN AU,208538.0,0.0,Listed,ART,0.0025909760719323043
+Asset-class_Australian_Shares_Index_Superannuation,Equity,Vulcan Steel,,VSL AU,112018.0,0.0,Listed,ART,0.0013917653263468188
+Asset-class_Australian_Shares_Index_Superannuation,Equity,,,,,,Listed,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Property,GOODMAN GROUP,,GMG AU,210199650.0,2.61,Listed,ART,2.611621208022256
+Asset-class_Australian_Shares_Index_Superannuation,Property,SCENTRE GROUP,,SCG AU,59822506.0,0.74,Listed,ART,0.7432634896710754
+Asset-class_Australian_Shares_Index_Superannuation,Property,STOCKLAND,,SGP AU,42579788.0,0.53,Listed,ART,0.5290316961702436
+Asset-class_Australian_Shares_Index_Superannuation,Property,VICINITY LTD.,,VCX AU,32733031.0,0.41,Listed,ART,0.4066908672895029
+Asset-class_Australian_Shares_Index_Superannuation,Property,GPT GROUP,,GPT AU,30558842.0,0.38,Listed,ART,0.3796777009847602
+Asset-class_Australian_Shares_Index_Superannuation,Property,MIRVAC GROUP,,MGR AU,28149361.0,0.35,Listed,ART,0.3497411540879092
+Asset-class_Australian_Shares_Index_Superannuation,Property,CHARTER HALL GROUP,,CHC AU,28148229.0,0.35,Listed,ART,0.3497270895772999
+Asset-class_Australian_Shares_Index_Superannuation,Property,DEXUS,,DXS AU,23767539.0,0.3,Listed,ART,0.29529929719148473
+Asset-class_Australian_Shares_Index_Superannuation,Property,LENDLEASE CORP. LTD.,,LLC AU,10728579.0,0.13,Listed,ART,0.13329700809845405
+Asset-class_Australian_Shares_Index_Superannuation,Property,NATIONAL STORAGE REIT,,NSR AU,9753639.0,0.12,Listed,ART,0.12118388621385902
+Asset-class_Australian_Shares_Index_Superannuation,Property,REGION GROUP,,RGN AU,7877718.0,0.1,Listed,ART,0.09787654451193745
+Asset-class_Australian_Shares_Index_Superannuation,Property,CHARTER HALL LONG WALE REIT,,CLW AU,7855035.0,0.1,Listed,ART,0.09759472004714138
+Asset-class_Australian_Shares_Index_Superannuation,Property,HOMECO DAILY NEEDS REIT,,HDN AU,6742149.0,0.08,Listed,ART,0.08376769093595562
+Asset-class_Australian_Shares_Index_Superannuation,Property,INGENIA COMMUNITIES GROUP,,INA AU,6171374.0,0.08,Listed,ART,0.0766761087425081
+Asset-class_Australian_Shares_Index_Superannuation,Property,CHARTER HALL RETAIL REIT,,CQR AU,5841697.0,0.07,Listed,ART,0.07258004366819826
+Asset-class_Australian_Shares_Index_Superannuation,Property,BWP TRUST,,BWP AU,5775697.0,0.07,Listed,ART,0.07176002803197112
+Asset-class_Australian_Shares_Index_Superannuation,Property,WAYPOINT REIT LTD.,,WPR AU,4965952.0,0.06,Listed,ART,0.06169936801141457
+Asset-class_Australian_Shares_Index_Superannuation,Property,CENTURIA INDUSTRIAL REIT,,CIP AU,4722166.0,0.06,Listed,ART,0.05867045389181963
+Asset-class_Australian_Shares_Index_Superannuation,Property,HMC CAPITAL LTD.,,HMC AU,4503396.0,0.06,Listed,ART,0.05595235054731345
+Asset-class_Australian_Shares_Index_Superannuation,Property,ARENA REIT,,ARF AU,4377196.0,0.05,Listed,ART,0.0543843812550125
+Asset-class_Australian_Shares_Index_Superannuation,Property,DIGICO INFRASTRUCTURE REIT,,DGT AU,4362043.0,0.05,Listed,ART,0.054196113119622344
+Asset-class_Australian_Shares_Index_Superannuation,Property,CENTURIA CAPITAL GROUP,,CNI AU,3072456.0,0.04,Listed,ART,0.03817366608514918
+Asset-class_Australian_Shares_Index_Superannuation,Property,CHARTER HALL SOCIAL INFRASTRUCTURE REIT,,CQE AU,2616691.0,0.03,Listed,ART,0.0325110232602241
+Asset-class_Australian_Shares_Index_Superannuation,Property,GROWTHPOINT PROPERTIES AUSTRALIA LTD.,,GOZ AU,1291136.0,0.02,Listed,ART,0.01604169255296583
+Asset-class_Australian_Shares_Index_Superannuation,Property,RURAL FUNDS TRUST,,RFF AU,1257197.0,0.02,Listed,ART,0.015620018148755034
+Asset-class_Australian_Shares_Index_Superannuation,Property,ABACUS STORAGE KING,,ASK AU,1171375.0,0.01,Listed,ART,0.014553724483114363
+Asset-class_Australian_Shares_Index_Superannuation,Property,CROMWELL PROPERTY GROUP,,CMW AU,891110.0,0.01,Listed,ART,0.011071577781793225
+Asset-class_Australian_Shares_Index_Superannuation,Property,ABACUS GROUP,,ABG AU,797260.0,0.01,Listed,ART,0.009905540396036928
+Asset-class_Australian_Shares_Index_Superannuation,Property,DEXUS INDUSTRIA REIT,,DXI AU,745503.0,0.01,Listed,ART,0.009262486619003484
+Asset-class_Australian_Shares_Index_Superannuation,Property,HEALTHCO REIT,,HCW AU,698675.0,0.01,Listed,ART,0.008680673100621003
+Asset-class_Australian_Shares_Index_Superannuation,Property,CENTURIA OFFICE REIT,,COF AU,670767.0,0.01,Listed,ART,0.008333930731290297
+Asset-class_Australian_Shares_Index_Superannuation,Property,GDI PROPERTY GROUP PARTNERSHIP,,GDI AU,400914.0,0.0,Listed,ART,0.004981147708823658
+Asset-class_Australian_Shares_Index_Superannuation,Property,,,,,,Listed,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Infrastructure,TRANSURBAN GROUP,,TCL AU,132259383.0,1.64,Listed,ART,1.6432539711780596
+Asset-class_Australian_Shares_Index_Superannuation,Infrastructure,APA GROUP,,APA AU,34500840.0,0.43,Listed,ART,0.42865497368136707
+Asset-class_Australian_Shares_Index_Superannuation,Infrastructure,ATLAS ARTERIA LTD.,,ALX AU,20380717.0,0.25,Listed,ART,0.2532197972351511
+Asset-class_Australian_Shares_Index_Superannuation,Infrastructure,,,,,,Listed,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Assettotal,,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Kind,SWAPS,,,0.0,0.0,,ART,0.0
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Kind,FORWARDS,,,1.0,0.0,,ART,1.2424479336774615e-08
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Kind,FUTURES,,,91976.0,0.0,,ART,0.0011427539114791819
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Kind,OPTIONS,,,0.0,0.0,,ART,0.0
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Kind,OTHERS,,,0.0,0.0,,ART,0.0
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Kind,,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Assetclass,CASH,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Assetclass,FIXED INCOME,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Assetclass,EQUITIES,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Assetclass,PROPERTY,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Assetclass,INFRASTRUCTURE,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Assetclass,ALTERNATIVES,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Assetclass,,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Currency,AUD,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Currency,USD,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Currency,CURRENCIES OF OTHER DEVELOPED MARKETS,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Derivatives By Currency,CURRENCIES OF EMERGING MARKETS,,,,,,ART,
+Asset-class_Australian_Shares_Index_Superannuation,Optiontotal,,,,,,,ART,
