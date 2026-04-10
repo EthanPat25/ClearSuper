@@ -1,0 +1,270 @@
+Option Code,Option Name,Asset Class,Filter,Sub-Filter,Name,Name Type,Currency,Issuer Type,Security Identifier,Units Held,Location,Address,% Ownership,$ Value,Weighting (%),Actual Currency Exposure (%),Actual Asset Allocation (%),Effect of Derivatives Exposure (%),Classification,Sort Order,Value Range,Geo Latitude,Geo Longitude
+ARAS,Australian Shares,Cash,,,Australia & New Zealand Banking Group Ltd,Name of Institution,United States Dollar,,,,,,,-8153.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,BRED Banque Populaire,Name of Institution,United States Dollar,,,,,,,-5365.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Commonwealth Bank of Australia,Name of Institution,Australia Dollar,,,,,,,10049436.0,0.12,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Commonwealth Bank of Australia,Name of Institution,United States Dollar,,,,,,,-14132.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,JP Morgan Securities LLC,Name of Institution,Australia Dollar,,,,,,,-8043.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,JP Morgan Securities LLC,Name of Institution,United States Dollar,,,,,,,92489.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,JP Morgan Securities PLC,Name of Institution,Australia Dollar,,,,,,,5020177.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,JPMorgan Chase Bank NA,Name of Institution,Australia Dollar,,,,,,,38667697.0,0.45,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,JPMorgan Chase Bank NA,Name of Institution,Canada Dollar,,,,,,,4.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,JPMorgan Chase Bank NA,Name of Institution,United States Dollar,,,,,,,1278.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,MUFG Bank Ltd/London,Name of Institution,United Kingdom Pound,,,,,,,1.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,National Australia Bank Ltd,Name of Institution,Australia Dollar,,,,,,,5298980.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,National Australia Bank Ltd,Name of Institution,United Kingdom Pound,,,,,,,2.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,National Australia Bank Ltd,Name of Institution,United States Dollar,,,,,,,-14132.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Royal Bank of Canada,Name of Institution,United Kingdom Pound,,,,,,,1.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Royal Bank of Canada,Name of Institution,United States Dollar,,,,,,,-17393.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Royal Bank of Canada/Sydney,Name of Institution,Australia Dollar,,,,,,,8482844.0,0.1,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Skandinaviska Enskilda Banken AB,Name of Institution,United States Dollar,,,,,,,-6571.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Standard Chartered Bank,Name of Institution,United Kingdom Pound,,,,,,,1.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Sumitomo Mitsui Banking Corp/Sydney,Name of Institution,Australia Dollar,,,,,,,3343787.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Cash,,,Total,Total,,,,,,,,70882909.0,0.82,,,,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Asset Class,,Equity,Asset Class,,,,,,,,,,,95.04,1.31,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Asset Class,,Infrastructure,Asset Class,,,,,,,,,,,2.49,,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Asset Class,,Property,Asset Class,,,,,,,,,,,1.4,,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Asset Class,,Fixed Income,Asset Class,,,,,,,,,,,1.17,-0.07,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Asset Class,,Alternatives,Asset Class,,,,,,,,,,,0.31,,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Asset Class,,Cash,Asset Class,,,,,,,,,,,-0.41,-1.24,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Asset Class,,Total,Total,,,,,,,,,,,100.0,0.0,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Currency,,AUD,Currency Exposure,,,,,,,,,,96.2,,0.0,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Currency,,Currencies of other developed markets,Currency Exposure,,,,,,,,,,3.8,,,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Currency,,USD,Currency Exposure,,,,,,,,,,0.0,,,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Currency,,Total,Total,,,,,,,,,,100.0,,0.0,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Kind,,Futures,Kind of Derivatives,,,,,,,,211681.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Kind,,Swaps,Kind of Derivatives,,,,,,,,6920.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Derivatives,By Kind,,,Total,,,,,,,,218601.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,AMP Bank Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,686455.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Australia & New Zealand Banking Group Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,19999652.0,0.23,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Bank of Nova Scotia/Australia,Name of Issuer/Counterparty,,Corporate,,,,,,277148.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Bendigo & Adelaide Bank Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,3999874.0,0.05,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,BRED Banque Populaire COBPFA,Name of Issuer/Counterparty,,Corporate,,,,,,-3215.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Canadian Imperial Bank of Commerce/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,789431.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Commonwealth Bank of Australia,Name of Issuer/Counterparty,,Corporate,,,,,,15161689.0,0.18,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Cooperatieve Rabobank UA/Australia,Name of Issuer/Counterparty,,Corporate,,,,,,1723623.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Cooperatieve Rabobank UA/NY,Name of Issuer/Counterparty,,Corporate,,,,,,-192.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,ING Bank NV/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,1096821.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Mitsubishi UFJ Trust & Banking Corp,Name of Issuer/Counterparty,,Corporate,,,,,,-1339.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Mitsubishi UFJ Trust & Banking Corp/London,Name of Issuer/Counterparty,,Corporate,,,,,,-2369.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Mizuho Bank Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,-1072.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Mizuho Bank Ltd/London,Name of Issuer/Counterparty,,Corporate,,,,,,-1078.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Mizuho Bank Ltd/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,-539.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,MUFG Bank Ltd/London,Name of Issuer/Counterparty,,Corporate,,,,,,-2133.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,MUFG Bank Ltd/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,688805.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,National Australia Bank Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,13403659.0,0.16,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,National Australia Bank Ltd/London,Name of Issuer/Counterparty,,Corporate,,,,,,-1072.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Norfina Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,1240070.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Oversea-Chinese Banking Corp Ltd/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,2210628.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Royal Bank of Canada/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,6254103.0,0.07,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Skandinaviska Enskilda Banken AB,Name of Issuer/Counterparty,,Corporate,,,,,,-139.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Standard Chartered Bank/Australia,Name of Issuer/Counterparty,,Corporate,,,,,,1383280.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Sumitomo Mitsui Banking Corp,Name of Issuer/Counterparty,,Corporate,,,,,,-2710.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Sumitomo Mitsui Banking Corp/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,2763942.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,UBS AG/London,Name of Issuer/Counterparty,,Corporate,,,,,,-1004.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Westpac Banking Corp,Name of Issuer/Counterparty,,Corporate,,,,,,28956179.0,0.34,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Commonwealth of Australia,Name of Issuer/Counterparty,,Government,,,,,,3793153.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Agence Centrale des Organismes de Securite Sociale,Name of Issuer/Counterparty,,Semi Government,,,,,,-1627.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,Export-Import Bank of Korea,Name of Issuer/Counterparty,,Semi Government,,,,,,-542.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,NBN Co Ltd,Name of Issuer/Counterparty,,Semi Government,,,,,,3051967.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,All Assets,,European Investment Bank,Name of Issuer/Counterparty,,Supranational,,,,,,-110.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Externally Managed,,IFM Investors,Name of Fund Manager,,,,,,,,592182.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Agence Centrale des Organismes de Securite Sociale,Name of Issuer/Counterparty,,Semi Government,,,,,,-1618.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,AMP Bank Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,682672.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Australia & New Zealand Banking Group Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,19889441.0,0.23,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Bank of Nova Scotia/Australia,Name of Issuer/Counterparty,,Corporate,,,,,,275621.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Bendigo & Adelaide Bank Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,3977833.0,0.05,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,BRED Banque Populaire COBPFA,Name of Issuer/Counterparty,,Corporate,,,,,,-3197.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Canadian Imperial Bank of Commerce/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,785081.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Commonwealth Bank of Australia,Name of Issuer/Counterparty,,Corporate,,,,,,15078138.0,0.18,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Commonwealth of Australia,Name of Issuer/Counterparty,,Government,,,,,,3772251.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Cooperatieve Rabobank UA/Australia,Name of Issuer/Counterparty,,Corporate,,,,,,1714125.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Cooperatieve Rabobank UA/NY,Name of Issuer/Counterparty,,Corporate,,,,,,-191.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,European Investment Bank,Name of Issuer/Counterparty,,Supranational,,,,,,-110.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Export-Import Bank of Korea,Name of Issuer/Counterparty,,Semi Government,,,,,,-539.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,ING Bank NV/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,1090777.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Mitsubishi UFJ Trust & Banking Corp,Name of Issuer/Counterparty,,Corporate,,,,,,-1332.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Mitsubishi UFJ Trust & Banking Corp/London,Name of Issuer/Counterparty,,Corporate,,,,,,-2356.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Mizuho Bank Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,-1066.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Mizuho Bank Ltd/London,Name of Issuer/Counterparty,,Corporate,,,,,,-1072.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Mizuho Bank Ltd/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,-536.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,MUFG Bank Ltd/London,Name of Issuer/Counterparty,,Corporate,,,,,,-2121.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,MUFG Bank Ltd/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,685009.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,National Australia Bank Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,13329796.0,0.15,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,National Australia Bank Ltd/London,Name of Issuer/Counterparty,,Corporate,,,,,,-1066.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,NBN Co Ltd,Name of Issuer/Counterparty,,Semi Government,,,,,,3035149.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Norfina Ltd,Name of Issuer/Counterparty,,Corporate,,,,,,1233237.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Oversea-Chinese Banking Corp Ltd/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,2198446.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Royal Bank of Canada/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,6219639.0,0.07,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Skandinaviska Enskilda Banken AB,Name of Issuer/Counterparty,,Corporate,,,,,,-138.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Standard Chartered Bank/Australia,Name of Issuer/Counterparty,,Corporate,,,,,,1375657.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Sumitomo Mitsui Banking Corp,Name of Issuer/Counterparty,,Corporate,,,,,,-2695.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Sumitomo Mitsui Banking Corp/Sydney,Name of Issuer/Counterparty,,Corporate,,,,,,2748711.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,UBS AG/London,Name of Issuer/Counterparty,,Corporate,,,,,,-998.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,Westpac Banking Corp,Name of Issuer/Counterparty,,Corporate,,,,,,28796611.0,0.33,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Externally Managed,,,Total,,,,,,,,592182.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Fixed Income,Internally Managed,,,Total,,,,,,,,106869157.0,1.24,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,29Metals Ltd,Name,,,BNNVRL0,21431078,Australia,,,6322168.0,0.07,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,A2 Milk Company Ltd,Name,,,BWSRTS7,164548,New Zealand,,,1318033.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,AET AND D HOLDINGS NO. 1,Name,,,583032S,91789,Australia,,,0.0,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,AGL Energy Ltd,Name,,,BSS7GP5,145407,Australia,,,1414809.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Alcidion Group Ltd,Name,,,BYWMP73,13359748,Australia,,,1335975.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Alpha HPA Ltd,Name,,,BH0K666,5669654,Australia,,,4847554.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,ALS Ltd,Name,,,B86SZR5,100138,Australia,,,1712359.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Amcor PLC,Name,,,6066608,190705,Australia,,,2708015.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Amp Ltd,Name,,,6709958,703411,Australia,,,886298.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Ampol Ltd,Name,,,BM91201,1926897,Australia,,,49598333.0,0.58,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Ansell Ltd,Name,,,6286611,33055,Australia,,,1001225.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Anz Group Holdings Ltd,Name,,,6065586,2889189,Australia,,,84248763.0,0.98,,,,,,,nan,nan
+ARAS,Australian Shares,Infrastructure,Listed,,APA Group,Name,,,6247306,380124,Australia,,,3105614.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Arb Corporation Ltd,Name,,,BWV03W5,369978,Australia,,,12098292.0,0.14,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Aristocrat Leisure Ltd,Name,,,6253983,3416279,Australia,,,222638875.0,2.59,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Asx Ltd,Name,,,6129222,1947705,Australia,,,135871873.0,1.58,,,,,,,nan,nan
+ARAS,Australian Shares,Infrastructure,Listed,,Atlas Arteria Group,Name,,,BZ03TZ1,243310,Australia,,,1238446.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Auckland International Airport Ltd,Name,,,BLRZSS8,12600033,New Zealand,,,89460234.0,1.04,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Audinate Group Ltd,Name,,,BZ9N3B6,742873,Australia,,,5556691.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Aurizon Holdings Ltd,Name,,,B87CVM3,466172,Australia,,,1412500.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,AVJennings Ltd,Name,,,6523556,5374,Australia,,,3574.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Baby Bunting Group Ltd,Name,,,BYRJS58,1593501,Australia,,,2932041.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Bank of Queensland Ltd,Name,,,6076243,193674,Australia,,,1506784.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Bapcor Ltd,Name,,,BLD2CY7,4495253,Australia,,,22476266.0,0.26,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,BCI Minerals Ltd,Name,,,B1J0VB5,79295888,Australia,,,26960602.0,0.31,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Bendigo And Adelaide Bank Ltd,Name,,,6091280,137122,Australia,,,1733218.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,BHP Group Ltd,Name,,,6144690,15329283,Australia,,,563351155.0,6.55,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Block Inc,Name,,,BQD3643,14013,Australia,,,1438399.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Bluescope Steel Ltd,Name,,,6533232,3867804,Australia,,,89384949.0,1.04,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Brambles Ltd,Name,,,AU000000BXB1,377464,Australia,,,8840217.0,0.1,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Calix Ltd,Name,,,BD3DLF8,3199504,Australia,,,1087831.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Carsales.Com Ltd,Name,,,BW0BGZ3,83875,Australia,,,3138586.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Cedar Woods Properties Ltd,Name,,,6182281,886468,Australia,,,6285056.0,0.07,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Challenger Ltd,Name,,,6726300,193972,Australia,,,1567293.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Charter Hall Group,Name,,,B15F6S6,130499,Australia,,,2504285.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Chrysos Corporation Ltd,Name,,,BPNXX01,726162,Australia,,,3412959.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Cleanaway Waste Management Ltd,Name,,,BYQ8KW7,395638,Australia,,,1076136.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Cochlear Ltd,Name,,,6211798,55962,Australia,,,16812016.0,0.2,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Coles Group Ltd,Name,,,BYWR0T5,364637,Australia,,,7599041.0,0.09,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Commonwealth Bank of Australia,Name,,,6215035,4374800,Australia,,,808244334.0,9.39,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Computershare Ltd,Name,,,6180412,6055118,Australia,,,241538658.0,2.81,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Corporate Travel Management Ltd,Name,,,B3R1D52,1063544,Australia,,,14730083.0,0.17,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Csl Ltd,Name,,,6185495,1490412,Australia,,,356923750.0,4.15,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Dexus,Name,,,B033YN6,309202,Australia,,,2056196.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Downer EDI Ltd,Name,,,6465573,235322,Australia,,,1484883.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Dyno Nobel Ltd,Name,,,BVBH523,609510,Australia,,,1639582.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,EBOS Group Ltd,Name,,,BH36SD2,1075965,New Zealand,,,38293578.0,0.44,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Endeavour Group Ltd,Name,,,BNVS144,19859126,Australia,,,79635097.0,0.93,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Evolution Mining Ltd,Name,,,B3X0F91,27534671,Australia,,,214495091.0,2.49,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Fineos Corporation Holdings Plc,Name,,,BK5XVJ9,608208,Ireland,,,1417125.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Fisher & Paykel Healthcare Corporation Ltd,Name,,,6423968,2457431,New Zealand,,,82643416.0,0.96,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Flight Centre Travel Group Ltd,Name,,,6352147,34253,Australia,,,427477.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Fortescue Metals Group Ltd,Name,,,6086253,537471,Australia,,,8212554.0,0.1,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Genesis Minerals Ltd,Name,,,B23G0X1,17106626,Australia,,,73558493.0,0.85,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Gentrack Group Ltd,Name,,,BNJZLK3,376892,New Zealand,,,4345561.0,0.05,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Goodman Group,Name,,,B03FYZ4,543544,Australia,,,18610960.0,0.22,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Gpt Group,Name,,,6365866,527363,Australia,,,2552435.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Hipages Group Holdings Ltd,Name,,,BNG3S32,773066,Australia,,,722817.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,HUB24 Ltd,Name,,,BD4T5X1,31083,Australia,,,2771670.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,IDP Education Ltd,Name,,,BDB6DD1,49358,Australia,,,181145.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,IGO Ltd,Name,,,6439567,248004,Australia,,,1034178.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Inghams Group Ltd,Name,,,BZCNHW2,2403040,Australia,,,8530792.0,0.1,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Insurance Australia Group Ltd,Name,,,6271026,671875,Australia,,,6067035.0,0.07,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,James Hardie Industries Plc,Name,,,B60QWJ2,2186526,Australia,,,91178114.0,1.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Jb Hi-Fi Ltd,Name,,,6702623,1333716,Australia,,,147175541.0,1.71,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Jervois Global Ltd,Name,,,6473015,54589148,Australia,,,600481.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Johns Lyng Group Ltd,Name,,,BYPHBX3,1138610,Australia,,,3609392.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Lendlease Group,Name,,,6512004,234989,Australia,,,1264241.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Life360 Inc,Name,,,BJMXQ67,61311,United States,,,1972999.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Lifestyle Communities Ltd,Name,,,6137195,1693050,Australia,,,11851353.0,0.14,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Light & Wonder Inc,Name,,,BMXNX11,6765,United States,,,997224.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Lottery Corporation Ltd,Name,,,BNRQW72,28046445,Australia,,,149487550.0,1.74,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Lovisa Holdings Ltd,Name,,,BT9PVP0,150352,Australia,,,4763141.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Lynas Rare Earths Ltd,Name,,,6121176,7598320,Australia,,,65421531.0,0.76,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,MA Financial Group Ltd,Name,,,BMYZBN4,711100,Australia,,,5397247.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Maas Group Holdings Ltd,Name,,,BLD4919,891654,Australia,,,3780614.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Macquarie Group Ltd,Name,,,B28YTC2,1308148,Australia,,,299212707.0,3.48,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Macquarie Telecom Group Ltd,Name,,,6175054,65856,Australia,,,4382027.0,0.05,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Magellan Financial Group Ltd,Name,,,BQ3SBX2,4795,Australia,,,206.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Magnetica Ltd,Name,,,AU00530998S1,65439,Australia,,,0.0,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Medibank Private Ltd,Name,,,BRTNNQ5,18955994,Australia,,,95727771.0,1.11,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Megaport Ltd,Name,,,BZ5ZWZ3,1246370,Australia,,,17997589.0,0.21,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Metcash Ltd,Name,,,B0744W4,194815,Australia,,,761728.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Mineral Resources Ltd,Name,,,B17ZL56,190012,Australia,,,4096649.0,0.05,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Mirvac Group,Name,,,6161978,1204089,Australia,,,2648995.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Murray Cod Australia Ltd,Name,,,BZ1LFP6,859647,Australia,,,919822.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,National Australia Bank Ltd,Name,,,6624608,12326224,Australia,,,485160172.0,5.64,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Newmont Corp,Name,,,BRDVMB3,31809,United States,,,2777237.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,NEXTDC Ltd,Name,,,B5LMKP4,3988906,Australia,,,57839136.0,0.67,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Nido Education Ltd,Name,,,BRJ98J1,2070429,Australia,,,1428596.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Northern Star Resources Ltd,Name,,,6717456,391628,Australia,,,7264692.0,0.08,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Norwood Immunology Pty Ltd,Name,,,526966SZ,26893,Australia,,,0.0,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Objective Corporation Ltd,Name,,,6283407,339213,Australia,,,6499330.0,0.08,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Orica Ltd,Name,,,6458001,5305740,Australia,,,103408867.0,1.2,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Origin Energy Ltd,Name,,,6214861,25835727,Australia,,,278767489.0,3.24,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Orora Ltd,Name,,,BH4TCW7,238247,Australia,,,450287.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Pepper Money Ltd,Name,,,BMBPP68,4606050,Australia,,,8290890.0,0.1,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Perseus Mining Ltd,Name,,,B02FBC1,242696,Australia,,,825166.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Pilbara Minerals Ltd,Name,,,B2368L5,29742544,Australia,,,39706296.0,0.46,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Pinnacle Investment Management Group Ltd,Name,,,BD0F7H1,455542,Australia,,,9356826.0,0.11,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Premier Investments Ltd,Name,,,6699781,681332,Australia,,,13783354.0,0.16,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Pro Medicus Ltd,Name,,,6292782,15120,Australia,,,4310427.0,0.05,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Propel Funeral Partners Ltd,Name,,,BYWQNJ3,273216,Australia,,,1237668.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Pwr Holdings Ltd,Name,,,BZ168Z2,793236,Australia,,,5497124.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Qantas Airways Ltd,Name,,,6710347,599657,Australia,,,6440311.0,0.07,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,QBE Insurance Group Ltd,Name,,,6715740,11655427,Australia,,,272620443.0,3.17,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Qube Holdings Ltd,Name,,,B1L4BC6,313670,Australia,,,1342509.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Ramsay Health Care Ltd,Name,,,6041995,33073,Australia,,,1213463.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Rea Group Ltd,Name,,,6198578,80459,Australia,,,19349555.0,0.22,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Reece Ltd,Name,,,6728801,4012027,Australia,,,57572587.0,0.67,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Reliance Worldwide Corporation Ltd,Name,,,BD1DM79,7401786,Australia,,,30347324.0,0.35,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Resmed Inc,Name,,,6221667,4436305,United States,,,174568600.0,2.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Rio Tinto Ltd,Name,,,6220103,102405,Australia,,,10970606.0,0.13,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Rio Tinto Plc,Name,,,0718875,3685220,United Kingdom,,,327114130.0,3.8,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Sandfire Resources Ltd,Name,,,6739739,5351733,Australia,,,60046441.0,0.7,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Santos Ltd,Name,,,6776703,798954,Australia,,,6119986.0,0.07,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Scentre Group,Name,,,BLZH0Z7,1286729,Australia,,,4580755.0,0.05,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,SciDev Ltd,Name,,,BYW3822,1477868,Australia,,,532032.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,SEEK Ltd,Name,,,B0767Y3,63276,Australia,,,1521794.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,SGH Ltd,Name,,,BR858V2,1971805,Australia,,,106615517.0,1.24,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Sigma Healthcare Ltd,Name,,,BF13K02,1196081,Australia,,,3576282.0,0.04,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Siteminder Ltd,Name,,,BLH35X6,3634937,Australia,,,16102773.0,0.19,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,SKYCITY Entertainment Group Ltd,Name,,,6151311,6767689,New Zealand,,,5583343.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Sonic Healthcare Ltd,Name,,,6821120,85446,Australia,,,2289107.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,South32 Ltd,Name,,,BWSW5D9,24244451,Australia,,,70551354.0,0.82,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Steadfast Group Ltd,Name,,,BCT5FD7,9005302,Australia,,,54121865.0,0.63,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Stockland Corporation Ltd,Name,,,6850856,555838,Australia,,,2979290.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Suncorp Group Ltd,Name,,,6585084,249704,Australia,,,5396107.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Syrah Resources Ltd,Name,,,B23HV20,28913554,Australia,,,7372956.0,0.09,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Tabcorp Holdings Ltd,Name,,,6873262,18454817,Australia,,,13195194.0,0.15,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Technologyone Ltd,Name,,,6302410,107151,Australia,,,4394272.0,0.05,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Telix Pharmaceuticals Ltd,Name,,,BF7M092,752234,Australia,,,18369560.0,0.21,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Telstra Group Ltd,Name,,,6087289,29422915,Australia,,,142406908.0,1.65,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Temple & Webster Group Ltd,Name,,,BZ1MWM5,1154350,Australia,,,24610733.0,0.29,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Tpg Telecom Ltd,Name,,,BMB2257,6669850,Australia,,,35550302.0,0.41,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Trajan Group Holdings Ltd,Name,,,BMXT0M9,945287,Australia,,,675880.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Infrastructure,Listed,,Transurban Group,Name,,,6200882,15030688,Australia,,,210129013.0,2.44,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Treasury Wine Estates Ltd,Name,,,B61JC67,143893,Australia,,,1123807.0,0.01,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Vicinity Centres,Name,,,BY7QXS7,33727253,Australia,,,83306315.0,0.97,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Virgin Australia International Holdings Pty Ltd,Name,,,AU00000VAIH2,223306,Australia,,,0.0,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Viva Energy Group Ltd,Name,,,BYQM3N1,116155,Australia,,,250894.0,0.0,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Washington H Soul Pattinson And Company Ltd,Name,,,6821807,51998,Australia,,,2184454.0,0.03,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Wesfarmers Ltd,Name,,,6948836,3485557,Australia,,,295400927.0,3.43,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Westpac Banking Corp,Name,,,6076146,12418843,Australia,,,420502035.0,4.89,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Whitehaven Coal Ltd,Name,,,B1XQXC4,6576669,Australia,,,35711313.0,0.41,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,WiseTech Global Ltd,Name,,,BZ8GX83,47744,Australia,,,5205482.0,0.06,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Woodside Energy Group Ltd,Name,,,BMGT167,11731941,Australia,,,277225757.0,3.22,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Woolworths Group Ltd,Name,,,6981239,4237539,Australia,,,131829831.0,1.53,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Worley Ltd,Name,,,6562474,125298,Australia,,,1638898.0,0.02,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Xero Ltd,Name,,,B8P4LP4,666776,New Zealand,,,119886274.0,1.39,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Xero Ltd,Name,,,BVLH3Z2,51258,New Zealand,,,9216176.0,0.11,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Listed,,Total,Total,,,,687187062,,,,8045620461.0,93.48,,,,,,,nan,nan
+ARAS,Australian Shares,Infrastructure,Listed,,Total,Total,,,,15654121,,,,214473073.0,2.49,,,,,,,nan,nan
+ARAS,Australian Shares,Property,Listed,,Total,Total,,,,38519506,,,,120503472.0,1.4,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Unlisted,Internally Managed,Athena Financial Pty Ltd,Name,,,,,,,0.23,,,,,,,,,nan,nan
+ARAS,Australian Shares,Alternatives,Unlisted,Internally Managed,BCI Ltd Convertible Note,Name,,,,,,,,,,,,,,,,nan,nan
+ARAS,Australian Shares,Alternatives,Unlisted,Internally Managed,Federation Mining Convertible Note,Name,,,,,,,,,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Unlisted,Internally Managed,Federation Mining Pty Ltd,Name,,,,,,,8.27,,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Unlisted,Internally Managed,Slate 1 Trust,Name,,,,,,,8.73,,,,,,,,,nan,nan
+ARAS,Australian Shares,Alternatives,Unlisted,Internally Managed,Syrah Resources Convertible Note,Name,,,,,,,,,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Unlisted,Private Equity,Slate 1 Trust,Name,,,,,,,,,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Unlisted,Private Equity,Athena Financial Pty Ltd,Name,,,,,,,,,,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Unlisted,Private Equity,Federation Mining Pty Ltd,Name,,,,,,,,,,,,,,,,nan,nan
+ARAS,Australian Shares,Alternatives,Unlisted,Internally Managed,Total,Total,,,,,,,,26421845.0,0.31,,,,,,,nan,nan
+ARAS,Australian Shares,Equity,Unlisted,Internally Managed,Total,Total,,,,,,,,21036776.0,0.24,,,,,,,nan,nan

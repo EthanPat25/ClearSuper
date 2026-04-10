@@ -2,45 +2,38 @@ import pandas as pd
 from abc import ABC, abstractmethod
 import os
 
+
+# Abolute path which gives data directory
+DATA_DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+
+
 def run_all_parsers():
-    os.chdir("data")
-    root_directory = os.getcwd()
-    for super_fund_directory in os.listdir(root_directory):
-        if not os.path.isdir(super_fund_directory):
+
+    # Check Directory Exist
+    if not os.path.isdir(DATA_DIRECTORY):
+        return 1
+    
+    for Super_Fund in os.listdir(DATA_DIRECTORY):
+        fund_dir = os.path.join(DATA_DIRECTORY, Super_Fund)
+
+        if not os.path.isdir(fund_dir):
             continue
-        os.chdir(super_fund_directory)
-        if os.path.exists("Raw"):
-            os.chdir("Raw")
-            current_directory = os.getcwd()
-            for raw_data_file in os.listdir(current_directory):
-                raw_data_path = os.path.join(current_directory, raw_data_file)
-                normalized_directory = os.path.join(current_directory, "..", "Normalised")
-                create_fund_parser(super_fund_directory, raw_data_path, normalized_directory)
-        os.chdir(root_directory)
 
+        raw_dir = os.path.join(fund_dir, "Raw")
+        normalised_dir = os.path.join(fund_dir, "Normalised")
 
-def create_fund_parser(fund_name: str, file_path, output_directory):
-    if fund_name == "AustralianSuper":
-        FundParser = AustralianSuper(file_path)          
-        FundParser.parse() 
-        FundParser.remove_totals()
-        FundParser.remove_derivatives()
-        FundParser.normalise_company_names()
-        FundParser.normalise_percentage()
-        FundParser.normalise_dollar()
-        FundParser.recompute_percentages()
-        FundParser.save_to_normalized_file(output_directory)
-        print(fund_name + " " + os.path.splitext(os.path.basename(file_path))[0] + ": Completed")
-    elif fund_name == "Rest":
-        FundParser = Rest(file_path)
-        FundParser.parse() 
-        FundParser.remove_totals()
-        FundParser.normalise_company_names()
-        FundParser.normalise_percentage()
-        FundParser.normalise_dollar()
-        FundParser.recompute_percentages()
-        FundParser.save_to_normalized_file(output_directory)
-        print(fund_name + " " + os.path.splitext(os.path.basename(file_path))[0] + ": Completed")
+        if not os.path.isdir(raw_dir):
+            continue
+
+        # Make Normalises If doesn't exist
+        if not os.path.isdir(normalised_dir):
+            os.makedirs(normalised_dir, exist_ok=True)
+
+        for raw_file in os.listdir(raw_dir):
+            file_path = os.path.join(raw_dir, raw_file)
+            fund = FUNDS[Super_Fund](file_path)
+            fund.run(normalised_dir)
+
 
 class superFund(ABC):
     def __init__(self, file_path):
@@ -48,6 +41,18 @@ class superFund(ABC):
         self.totals_df = None 
         self.derivatives_df = None
         self.file_path = file_path 
+        self.as_of_date = None
+
+    def run(self, Normalised_Directory):
+        self.parse() 
+        self.remove_totals()
+        self.normalise_company_names()
+        self.normalise_percentage()
+        self.normalise_dollar()
+        self.remove_derivatives()
+        self.recompute_percentages()
+        self.save_to_normalized_file(Normalised_Directory)
+        print(self.file_path + " " + os.path.splitext(os.path.basename(self.file_path))[0] + ": Completed")
 
     @abstractmethod
     def parse(self):
@@ -58,6 +63,10 @@ class superFund(ABC):
     def remove_totals(self):
         pass
 
+    def remove_derivatives(self):
+        # Default no-op. Funds that have derivative rows override this.
+        pass
+
     def save_to_normalized_file(self, output_directory):
         file_name = os.path.splitext(os.path.basename(self.file_path))[0]
         full_output_path = os.path.join(output_directory, f"{file_name}.normalised.csv")
@@ -65,21 +74,26 @@ class superFund(ABC):
 
     def normalise_percentage(self):
         if "Weighting_Percentage" in self.df.columns:
-            self.df["Weighting_Percentage"] = (
+            self.df["Weighting_Percentage"] = pd.to_numeric(
                 self.df["Weighting_Percentage"]
                 .astype(str)
                 .str.replace('%', '', regex=False)
+                .str.strip(),
+                errors="coerce"
             )
           
     def normalise_dollar(self):
         if "Dollar_Value" in self.df.columns:
-          self.df["Dollar_Value"] = (
+          self.df["Dollar_Value"] = pd.to_numeric(
                 self.df["Dollar_Value"]
                 .astype(str)
                 .str.replace(r'[$,]', '', regex=True)
-                .str.replace("-", "", regex=False)
+                .str.replace(r'^\s*-\s*$', '', regex=True)
+                .str.strip(),
+                errors="coerce"
             )
-
+          
+    # Clean Names - remove trailing whitespace etc
     def normalise_company_names(self):
         if "Name" not in self.df.columns:
             return
@@ -89,7 +103,6 @@ class superFund(ABC):
             & self.df["Asset_Class"].str.contains("Equity", case=False, na=False)
         )
 
-        # Clean names
         self.df.loc[mask, "Name"] = (
             self.df.loc[mask, "Name"]
             .str.replace(r"\s+", " ", regex=True)
@@ -98,16 +111,26 @@ class superFund(ABC):
         )
 
 
+    # Always check dollar values are in AUD
     def recompute_percentages(self):
-        if "Dollar_Value" in self.df.columns:
-            # ensure numeric
-            self.df["Dollar_Value"] = pd.to_numeric(self.df["Dollar_Value"], errors="coerce")
-            total = self.df["Dollar_Value"].sum()
-            
-            if total > 0:
-                self.df["Weighting_Percentage_Clean"] = (self.df["Dollar_Value"] / total) * 100
-            else:
-                self.df["Weighting_Percentage_Clean"] = 0
+        if "Dollar_Value" not in self.df.columns:
+            return
+
+        self.df["Dollar_Value"] = pd.to_numeric(self.df["Dollar_Value"], errors="coerce")
+
+        null_count = self.df["Dollar_Value"].isna().sum()
+        if null_count > 0:
+            print(f"WARNING: {null_count} rows have unparseable Dollar_Value...")
+
+        total = self.df["Dollar_Value"].sum()
+
+        if total <= 0:
+            raise ValueError(
+                f"Dollar_Value total is {total}. All values may have failed to parse — "
+                "check the source file format hasn't changed."
+            )
+
+        self.df["Weighting_Percentage_Clean"] = (self.df["Dollar_Value"] / total) * 100
 
 class AustralianSuper(superFund):
     def parse(self):
@@ -121,10 +144,7 @@ class AustralianSuper(superFund):
         df["combined"] = df["Filter"].fillna('') + " " + df["Sub-Filter"].fillna('')
         df["Listing_Status"] = df["combined"].str.extract(r'(?i)(Listed|Unlisted)', expand=False)
         df["Management_Type"] = df["combined"].str.extract(r'(?i)(Internally Managed|Externally Managed)', expand=False)
-        df.drop(columns=["combined"], inplace=True)
-        df.drop(columns=["Filter"], inplace=True)
-        df.drop(columns=["Sub-Filter"], inplace=True)
-
+        df.drop(columns=["combined", "Filter", "Sub-Filter"], inplace=True)
 
         df["Management_Type"] = df["Management_Type"].fillna("").str.title()
         df["Listing_Status"] = df["Listing_Status"].fillna("").str.title()
@@ -141,9 +161,7 @@ class AustralianSuper(superFund):
         df.rename(columns = {
             "Option Name": "Option_Name",
             "Asset Class": "Asset_Class",
-            "Name": "Name",
             "Name Type": "Name_Type",
-            "Currency": "Currency",
             "Security Identifier": "Security_Identifier",
             "$ Value": "Dollar_Value",
             "Weighting (%)": "Weighting_Percentage",
@@ -215,61 +233,51 @@ class Rest(superFund):
     def remove_totals(self):
       if 'Asset_Class' in self.df.columns:
         values = self.df['Asset_Class'].astype(str).str.strip()
-        mask = values.str.contains(r'(?i)^(SUB TOTAL|TOTAL)', na=False)
+        mask = values.str.contains(r'(?i)total', na=False)
         clean_mask = mask.fillna(False)
-        
         self.totals_df = self.df[clean_mask]
         self.df = self.df[~clean_mask]
-        
         self.df = self.df.reset_index(drop=True)
-
 
 
 class AwareSuper(superFund):
     def parse(self):
-        df = pd.read_csv(self.file_path)
 
+        # Broader Encoding for AwareSuper
+        df = pd.read_csv(self.file_path, skiprows=1, encoding="latin-1")
 
+        # Remove "-"
+        def clean(col):
+            return df[col].replace("-", None).replace("", None)
+        
         df["Name"] = (
-            df["NAME OF INSTITUTION"]
-            .fillna(df["NAME / KIND OF INVESTMENT ITEM"])
-            .fillna(df["NAME OF ISSUER / COUNTERPARTY"])
-            .fillna(df["NAME OF FUND MANAGER"])
+            clean("NAME OF INSTITUTION")
+            .fillna(clean("NAME / KIND OF INVESTMENT ITEM"))
+            .fillna(clean("NAME OF ISSUER / COUNTERPARTY"))
+            .fillna(clean("NAME OF FUND MANAGER"))
         )
 
         df = df[[
-            "ASSET CLASS", "INTERNALLY MANAGED OR EXTERNALLY MANAGED", "VALUE(AUD)", "WEIGHTING(%)", "SECURITY IDENTIFIER"
+            "ASSET CLASS", "INTERNALLY MANAGED OR EXTERNALLY MANAGED", "Name", "VALUE(AUD)", "WEIGHTING(%)", "SECURITY IDENTIFIER"
         ]]
 
-        df["combined"] = df["Filter"].fillna('') + " " + df["Sub-Filter"].fillna('')
-        df["Listing_Status"] = df["combined"].str.extract(r'(?i)(Listed|Unlisted)', expand=False)
-        df["Management_Type"] = df["combined"].str.extract(r'(?i)(Internally Managed|Externally Managed)', expand=False)
-        df.drop(columns=["combined"], inplace=True)
-        df.drop(columns=["Filter"], inplace=True)
-        df.drop(columns=["Sub-Filter"], inplace=True)
+        df["Listing_Status"] = df["ASSET CLASS"].str.extract(r'(?i)^(LISTED|UNLISTED)', expand=False)
+        df["ASSET CLASS"] = df["ASSET CLASS"].str.replace(r'(?i)^(LISTED|UNLISTED)\s*', '', regex=True)
 
+        df["Management_Type"] = df["INTERNALLY MANAGED OR EXTERNALLY MANAGED"].replace("-", None)
+        df["Management_Type"] = df["Management_Type"].replace({
+            "Internally Managed": "Internally",
+            "Externally Managed": "Externally"
+        })
 
-        df["Management_Type"] = df["Management_Type"].fillna("").str.title()
-        df["Listing_Status"] = df["Listing_Status"].fillna("").str.title()
         df["Super_Fund"] = self.__class__.__name__
 
-        df["Management_Type"] = (
-            df["Management_Type"]
-            .replace({
-                "Internally Managed": "Internally",
-                "Externally Managed": "Externally"
-            })
-        )
 
-        df.rename(columns = {
-            "Option Name": "Option_Name",
-            "Asset Class": "Asset_Class",
-            "Name": "Name",
-            "Name Type": "Name_Type",
-            "Currency": "Currency",
-            "Security Identifier": "Security_Identifier",
-            "$ Value": "Dollar_Value",
-            "Weighting (%)": "Weighting_Percentage",
+        df.rename(columns={
+            "ASSET CLASS": "Asset_Class",
+            "SECURITY IDENTIFIER": "Security_Identifier",
+            "VALUE(AUD)": "Dollar_Value",
+            "WEIGHTING(%)": "Weighting_Percentage",
         }, inplace=True)
 
         self.df = df
@@ -310,16 +318,19 @@ class ART(superFund):
         df.rename(columns = {
             "OptionName": "Option_Name",
             "Type": "Asset_Class",
-            "Name": "Name",
-            "Currency": "Currency",
             "SecurityIdentifier": "Security_Identifier",
             "Value": "Dollar_Value",
             "Weighting": "Weighting_Percentage",
-            #"Location": "Location"    
         }, inplace=True)
 
         self.df = df
 
+    def remove_totals(self):
+        pass
+
+
+    def remove_derivatives(self):
+        pass
 
 def test(df):
     suffixes = ["GROUP", "LTD", "LIMITED", "CORP", "CORPORATION",
@@ -339,33 +350,14 @@ def test(df):
         .str.strip()                                     
         .str.title()
     )
+        
+FUNDS = {
+    "AustralianSuper": AustralianSuper,
+    "Rest":            Rest,
+    "Aware":           AwareSuper,
+    "ART":             ART,
+}
 
-      
-    overrides = {
-        r"(?i)^amazon.*": "Amazon",
-        r"(?i)^eli lilly.*": "Eli Lilly",     
-        r"(?i)^booking holdings.*": "Booking Holdings",     
-        r"(?i)^merck.*": "Merck",
-        r"(?i)^bhp$": "BHP",
-        r"(?i)^national.*australia.*bank.*": "NAB",
-        r"(?i)^westpac.*": "Westpac", 
-        r"(?i)^taiwan semiconductor.*": "TSMC",
-        r"(?i)^commonwealth bank.*": "CommBank",
-        r"(?i)^auckland.*airport.*": "Auckland Airport",
-        r"(?i)^mirvac.*": "Mirvac",
-        r"(?i)^carsales.*": "Carsales",
-        r"(?i)^citigroup.*": "Citi",
-        r"(?i)^goodman.*": "Goodman",
-        r"(?i)^jpmorgan.*": "JPMORGAN",
-        r"(?i)^downer.*": "Downer Group",
-        r"(?i)^citi.*": "Citi Bank",
-        r"(?i)^costco.*": "Costco",
-        r"(?i)^meta.*": "Meta",
-    }
+if __name__ == "__main__":
+    run_all_parsers()
 
-    for pattern, replacement in overrides.items():
-        df.loc[mask, "Name"] = df.loc[mask, "Name"].str.replace(
-            pattern, replacement, regex=True
-    )
-
-run_all_parsers()
