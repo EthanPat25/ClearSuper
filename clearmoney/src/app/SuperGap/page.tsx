@@ -7,6 +7,7 @@ import UnderStand from "./UnderStand";
 import { CloseGapCalculator } from "./CloseGapCalculator";
 import HeroSection from "./HeroSection";
 import SuperGapCalcSection from "./SuperGapCalcSection";
+import { motion } from "motion/react";
 
 export default function SuperContributions() {
   const [view, setView] = React.useState<"terms" | "case" | "close">("terms");

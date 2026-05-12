@@ -1,3 +1,4 @@
+import React from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -20,17 +21,7 @@ import { Slide } from "./Slider";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { projectInvestmentGrowth } from "./Forumula2";
 import { Calendar28 } from "./Calendar";
-import {
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-} from "@/components/ui/popover";
-import {
-  Tooltip,
-  TooltipTrigger,
-  TooltipContent,
-  TooltipProvider,
-} from "@/components/ui/tooltip";
+import Link from "next/link";
 
 export type Inputs = {
   currentAge: number;
@@ -48,7 +39,37 @@ export function Calc({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
-  const { register, handleSubmit } = useForm<Inputs>();
+  const { register, handleSubmit, watch, setValue } = useForm<Inputs>({
+    defaultValues: {
+      currentAge: 25,
+      retireAge: 65,
+      superSG: 11.5,
+      superReturn: 7,
+    },
+  });
+
+  const age = watch("currentAge");
+
+  // Median super balance by age (Approx ABS/ASFA 2024 data)
+  const medianBalances: Record<number, number> = {
+    20: 5000,
+    25: 15000,
+    30: 45000,
+    35: 80000,
+    40: 120000,
+    45: 170000,
+    50: 220000,
+    55: 290000,
+    60: 360000,
+    65: 420000,
+  };
+
+  const getMedian = (currentAge: number) => {
+    const roundedAge = Math.floor(Number(currentAge) / 5) * 5;
+    return medianBalances[roundedAge] || null;
+  };
+
+  const median = getMedian(age);
 
   const onSubmit: SubmitHandler<Inputs> = (data) =>
     console.log(projectInvestmentGrowth(data));
@@ -58,7 +79,7 @@ export function Calc({
       className={cn("flex flex-col gap-4 xs:mb-16 md:mb-0", className)}
       {...props}
     >
-      <Card className="xs:w-[28rem] md:w-[31.75rem] relative flex flex-col">
+      <Card className="xs:w-[28rem] md:w-[31.75rem] min-h-[640px] relative flex flex-col shadow-sm">
         {/* Settings */}
         <CardHeader>
           <CardTitle className="text-xl font-bold">
@@ -69,171 +90,109 @@ export function Calc({
           </CardDescription>
         </CardHeader>
 
-        <CardContent className="flex-1">
+        <CardContent className="flex-1 flex flex-col justify-between pt-0">
           <form
-            className="h-[34rem] flex flex-col justify-between"
+            className="flex flex-col h-full"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              {/* Age */}
-              <div className="space-y-1">
-                <Label
-                  htmlFor="age"
-                  className="text-sm font-medium text-gray-900"
-                >
-                  Your Age (min: 18)
-                </Label>
-                <Input
-                  id="age"
-                  type="number"
-                  required
-                  placeholder="23"
-                  className="h-10 text-sm font-normal text-gray-900 placeholder:text-gray-400"
-                  {...register("currentAge", { required: true })}
-                />
-              </div>
-
-              {/* Retirement Age */}
-              <div className="space-y-1">
-                <Label
-                  htmlFor="retire"
-                  className="text-sm font-medium text-gray-900"
-                >
-                  Retirement Age (min: 60)
-                </Label>
-                <Input
-                  id="retire"
-                  type="number"
-                  required
-                  placeholder="65"
-                  className="h-10 text-sm font-normal text-gray-900 placeholder:text-gray-400"
-                  {...register("retireAge", { required: true })}
-                />
-              </div>
-
-              {/* Salary */}
-              <div className="space-y-1">
-                <Label
-                  htmlFor="salary"
-                  className="text-sm font-medium text-gray-900"
-                >
-                  Current Salary
-                </Label>
-                <div className="relative">
+            <div className="space-y-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {/* Age */}
+                <div className="space-y-1">
+                  <Label htmlFor="age" className="text-sm font-medium text-gray-900">
+                    Your Age
+                  </Label>
                   <Input
-                    id="salary"
+                    id="age"
                     type="number"
                     required
-                    placeholder="70,000"
-                    className="pl-[1.3rem] h-10 text-sm font-normal text-gray-900 placeholder:text-gray-400"
-                    {...register("salary", { required: true })}
+                    placeholder="23"
+                    className="h-10 text-sm font-normal text-gray-900"
+                    {...register("currentAge", { required: true })}
                   />
-                  <span className="absolute left-2 top-1/2 -translate-y-1/2 text-sm">
-                    $
-                  </span>
                 </div>
-              </div>
 
-              {/* Super SG % */}
-
-              {/* Super Balance */}
-              <div className="space-y-1">
-                <Label
-                  htmlFor="balance"
-                  className="text-sm font-medium text-gray-900"
-                >
-                  Current Super Balance
-                </Label>
-                <div className="relative">
+                {/* Retirement Age */}
+                <div className="space-y-1">
+                  <Label htmlFor="retire" className="text-sm font-medium text-gray-900">
+                    Retirement Age
+                  </Label>
                   <Input
-                    id="balance"
+                    id="retire"
                     type="number"
                     required
-                    placeholder="10,000"
-                    className="pl-[1.3rem] h-10 text-sm font-normal text-gray-900 placeholder:text-gray-400"
-                    {...register("superBalance", { required: true })}
+                    placeholder="65"
+                    className="h-10 text-sm font-normal text-gray-900"
+                    {...register("retireAge", { required: true })}
                   />
-                  <span className="absolute left-2 top-1/2 -translate-y-1/2 text-sm">
-                    $
-                  </span>
                 </div>
-              </div>
-              <div className="space-y-1">
-                <Label
-                  htmlFor="sg"
-                  className="text-sm font-medium text-gray-900"
-                >
-                  Super SG %
-                </Label>
-                <div className="relative">
-                  <Input
-                    id="sg"
-                    type="number"
-                    required
-                    defaultValue={12}
-                    placeholder="12"
-                    className="pr-8 h-10 text-sm font-normal text-gray-900 placeholder:text-gray-400"
-                    {...register("superSG", { required: true })}
-                  />
-                  <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500">
-                    %
-                  </span>
+
+                {/* Salary */}
+                <div className="space-y-1">
+                  <Label htmlFor="salary" className="text-sm font-medium text-gray-900">
+                    Current Salary
+                  </Label>
+                  <div className="relative">
+                    <Input
+                      id="salary"
+                      type="number"
+                      required
+                      placeholder="70,000"
+                      className="pl-7 h-10 text-sm font-normal text-gray-900"
+                      {...register("salary", { required: true })}
+                    />
+                    <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-sm text-gray-500">$</span>
+                  </div>
+                </div>
+
+                {/* Super Balance */}
+                <div className="space-y-1">
+                  <div className="flex justify-between items-end">
+                    <Label htmlFor="balance" className="text-sm font-medium text-gray-900">
+                      Super Balance
+                    </Label>
+                    {median && (
+                      <button
+                        type="button"
+                        onClick={() => setValue("superBalance", median)}
+                        className="text-[10px] font-semibold text-emerald-600 hover:underline"
+                      >
+                        Use Median (${median.toLocaleString()})
+                      </button>
+                    )}
+                  </div>
+                  <div className="relative">
+                    <Input
+                      id="balance"
+                      type="number"
+                      required
+                      placeholder="10,000"
+                      className="pl-7 h-10 text-sm font-normal text-gray-900"
+                      {...register("superBalance", { required: true })}
+                    />
+                    <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-sm text-gray-500">$</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Super Return % */}
-              <div className="space-y-1">
-                <Label
-                  htmlFor="return"
-                  className="text-sm font-medium text-gray-900"
-                >
-                  Super Return %
-                </Label>
-                <div className="relative">
-                  <Input
-                    id="return"
-                    type="number"
-                    step="any"
-                    defaultValue={7.5}
-                    placeholder="7.5"
-                    className="pr-8 h-10 text-sm font-normal text-gray-900 placeholder:text-gray-400"
-                    {...register("superReturn", {
-                      required: true,
-                      valueAsNumber: true,
-                    })}
-                  />
-                  <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500">
-                    %
-                  </span>
-                </div>
-              </div>
-
-              {/* Accordion for breaks */}
-              <div className="col-span-2">
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger className="group">
-                      <div className="flex w-full items-center justify-between">
-                        <Label className="text-sm font-medium text-gray-900">
-                          Periods of Reduced or No Work
-                        </Label>
-                        {/* Change this Button to something that won't render a <button> */}
-                        <span className="inline-flex items-center justify-center w-9 h-7 rounded-lg border border-gray-300">
-                          <Plus className="w-6 h-6 text-gray-700" />
-                        </span>
+              {/* Accordion for breaks and advanced settings */}
+              <div className="col-span-2 space-y-2">
+                <Accordion type="multiple" className="w-full">
+                  <AccordionItem value="career-break" className="border-b-0">
+                    <AccordionTrigger className="hover:no-underline py-2">
+                      <div className="flex items-center gap-2">
+                        <Plus className="w-4 h-4 text-gray-700" />
+                        <span className="text-sm font-medium text-gray-900">Add a career break or reduced hours</span>
                       </div>
                     </AccordionTrigger>
-
-                    <AccordionContent>
+                    <AccordionContent className="pt-2">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-3 bg-gray-50 rounded-lg p-4">
-                        {/* Start + End calendars */}
                         <Calendar28
-                          SubscriptionDate="Start"
+                          SubscriptionDate="Start Age"
                           defaultDate={new Date()}
                         />
-
                         <Calendar28
-                          SubscriptionDate={"End"}
+                          SubscriptionDate={"End Age"}
                           defaultDate={
                             new Date(
                               new Date().setFullYear(
@@ -242,78 +201,58 @@ export function Calc({
                             )
                           }
                         />
-
-                        {/* Workload slider + $ output */}
                         <div className="col-span-2 space-y-2">
-                          <div className="flex justify-between items-center mb-4">
+                          <div className="flex justify-between items-center mb-2">
                             <Label className="text-sm font-medium text-gray-900">
-                              Workload During Break (% Current salary)
+                              Workload During Break
                             </Label>
-                            <div className="flex items-center">
-                              <Popover>
-                                <TooltipProvider>
-                                  <Tooltip>
-                                    <TooltipTrigger asChild>
-                                      <PopoverTrigger asChild>
-                                        <Button
-                                          variant="outline"
-                                          className="w-32 h-7"
-                                        >
-                                          <Info className="h-3 w-3" />
-                                          <p className="text-sm">
-                                            Manual Input
-                                          </p>
-                                        </Button>
-                                      </PopoverTrigger>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                      <p>
-                                        Manually input salary instead of using
-                                        the slider.
-                                      </p>
-                                    </TooltipContent>
-                                  </Tooltip>
-                                </TooltipProvider>
-
-                                <PopoverContent className="w-64 p-4 space-y-3">
-                                  <div className="space-y-2">
-                                    <Label className="text-sm font-medium text-gray-900">
-                                      Salary
-                                    </Label>
-                                    <div className="relative">
-                                      <Input
-                                        type="number"
-                                        placeholder="35,000"
-                                        className="pl-7 h-10 text-sm font-normal text-gray-900 placeholder:text-gray-400"
-                                        {...register("incomeDuringBreak")}
-                                      />
-                                      <span className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500">
-                                        $
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <div className="space-y-2">
-                                    <Label className="text-sm font-medium text-gray-900">
-                                      SG%
-                                    </Label>
-                                    <div className="relative">
-                                      <Input
-                                        type="number"
-                                        step="any"
-                                        placeholder="e.g. 15"
-                                        defaultValue={12}
-                                        className="pr-8 h-10 text-sm font-normal text-gray-900 placeholder:text-gray-400"
-                                      />
-                                      <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500">
-                                        %
-                                      </span>
-                                    </div>
-                                  </div>
-                                </PopoverContent>
-                              </Popover>
-                            </div>
+                            <span className="text-xs font-medium text-gray-500">0% of salary</span>
                           </div>
                           <Slide className="w-full" />
+                        </div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="advanced" className="border-b-0">
+                    <AccordionTrigger className="hover:no-underline py-2">
+                      <div className="flex items-center gap-2">
+                        <Info className="w-4 h-4 text-gray-400" />
+                        <span className="text-sm font-medium text-gray-500">Advanced Model Settings</span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="pt-2">
+                      <div className="grid grid-cols-2 gap-4 p-4 bg-gray-50/50 rounded-lg border border-dashed">
+                        <div className="space-y-1">
+                          <Label htmlFor="sg" className="text-xs font-medium text-gray-600">
+                            Super SG %
+                          </Label>
+                          <div className="relative">
+                            <Input
+                              id="sg"
+                              type="number"
+                              defaultValue={11.5}
+                              className="h-9 text-xs"
+                              {...register("superSG")}
+                            />
+                            <span className="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] text-gray-400">%</span>
+                          </div>
+                        </div>
+                        <div className="space-y-1">
+                          <Label htmlFor="return" className="text-xs font-medium text-gray-600">
+                            Est. Return %
+                          </Label>
+                          <div className="relative">
+                            <Input
+                              id="return"
+                              type="number"
+                              step="any"
+                              defaultValue={7}
+                              className="h-9 text-xs"
+                              {...register("superReturn")}
+                            />
+                            <span className="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] text-gray-400">%</span>
+                          </div>
                         </div>
                       </div>
                     </AccordionContent>
@@ -321,11 +260,15 @@ export function Calc({
                 </Accordion>
               </div>
             </div>
-
-            {/* Submit Button */}
-            <Button type="submit" className="w-full">
-              Calculate
-            </Button>
+            
+            <div className="mt-auto pt-6">
+              <Button type="submit" className="w-full">
+                Calculate
+              </Button>
+              <p className="text-[10px] text-center text-gray-400 mt-4">
+                This is a model, not financial advice. <Link href="/about" className="underline">Read disclaimer</Link>.
+              </p>
+            </div>
           </form>
         </CardContent>
       </Card>

@@ -5,47 +5,21 @@ import dynamic from "next/dynamic";
 import ICON from "../../../public/Briefcase.json";
 
 type sizeProps = {
-  initialSize: number;
+  responsiveSizing: string;
 };
 
-export const Briefcase = React.memo(({ initialSize }: sizeProps) => {
-  const [windowsize, updatewindowsize] = React.useState<number | null>(null);
-  const [size, updatesize] = React.useState(initialSize);
-
+export const Briefcase = React.memo(({ responsiveSizing }: sizeProps) => {
   const Player: any = dynamic(
     () => import("@lordicon/react").then((mod) => mod.Player),
-    { ssr: false }
+    { ssr: false },
   );
 
   const playerRef = React.useRef<any>(null);
 
-  React.useEffect(() => {
-    const handleResize = () => updatewindowsize(window.innerWidth);
-    handleResize(); // set initial size on mount
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  React.useEffect(() => {
-    if (windowsize === null) return;
-
-    if (windowsize >= 3200) {
-      updatesize(450);
-    } else if (windowsize >= 2560) {
-      updatesize(350);
-    } else if (windowsize >= 1920) {
-      updatesize(300);
-    } else if (windowsize >= 1536) {
-      updatesize(200);
-    } else if (windowsize <= 1024) {
-      updatesize(170);
-    }
-  }, [windowsize]);
-
   return (
-    <div>
+    <div className={responsiveSizing}>
       <Player
-        size={size}
+        size={"100%"}
         icon={ICON}
         ref={(instance: any) => {
           if (instance) {

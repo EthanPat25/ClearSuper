@@ -1,3 +1,5 @@
+import SuperContributions from "./financeOverview/page";
+
 export default function Home() {
-  return <></>;
+  return <SuperContributions />;
 }
