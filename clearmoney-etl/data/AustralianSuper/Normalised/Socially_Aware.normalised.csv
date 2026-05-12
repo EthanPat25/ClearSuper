@@ -1,0 +1,1534 @@
+Option_Name,Asset_Class,Name,Currency,Security_Identifier,Dollar_Value,Weighting_Percentage,Listing_Status,Management_Type,Super_Fund,Weighting_Percentage_Clean
+Socially Aware,Cash,Australia & New Zealand Banking Group Ltd,Australia Dollar,,1422863.0,0.04,,,AustralianSuper,0.03685977946147167
+Socially Aware,Cash,Australia & New Zealand Banking Group Ltd,United States Dollar,,1192418.0,0.04,,,AustralianSuper,0.030890018579363663
+Socially Aware,Cash,Australia & New Zealand Banking Group Ltd/New Zealand,Australia Dollar,,19.0,0.0,,,AustralianSuper,4.922018562349022e-07
+Socially Aware,Cash,Bank of America NA,Australia Dollar,,-2824.0,0.0,,,AustralianSuper,-7.315673905301914e-05
+Socially Aware,Cash,Bank of Montreal/London,Canada Dollar,,90759.0,0.0,,,AustralianSuper,0.00235114464579071
+Socially Aware,Cash,Barclays Bank PLC,Australia Dollar,,353898.0,0.01,,,AustralianSuper,0.009167855395674706
+Socially Aware,Cash,BNP Paribas SA,Australia Dollar,,-1049503.0,-0.03,,,AustralianSuper,-0.02718775393284729
+Socially Aware,Cash,BRED Banque Populaire,United States Dollar,,784611.0,0.02,,,AustralianSuper,0.02032563108538541
+Socially Aware,Cash,Citibank NA,Australia Dollar,,-54088.0,0.0,,,AustralianSuper,-0.0014011691578964941
+Socially Aware,Cash,Commonwealth Bank of Australia,Australia Dollar,,7700835.0,0.24,,,AustralianSuper,0.19949290955572122
+Socially Aware,Cash,Commonwealth Bank of Australia,Euro Member Countries,,66805.0,0.0,,,AustralianSuper,0.0017306076318827706
+Socially Aware,Cash,Commonwealth Bank of Australia,United States Dollar,,2066859.0,0.06,,,AustralianSuper,0.05354272823030598
+Socially Aware,Cash,Deutsche Bank AG,Australia Dollar,,22336.0,0.0,,,AustralianSuper,0.0005786221400454092
+Socially Aware,Cash,Goldman Sachs International,Australia Dollar,,-899393.0,-0.03,,,AustralianSuper,-0.02329910021498302
+Socially Aware,Cash,Hongkong and Shanghai Banking Corporation Ltd,Australia Dollar,,-373288.0,-0.01,,,AustralianSuper,-0.00967016034264285
+Socially Aware,Cash,JP Morgan Securities LLC,Australia Dollar,,-373.0,0.0,,,AustralianSuper,-9.662699598716764e-06
+Socially Aware,Cash,JP Morgan Securities LLC,Canada Dollar,,-9397.0,0.0,,,AustralianSuper,-0.00024343267594944084
+Socially Aware,Cash,JP Morgan Securities LLC,Euro Member Countries,,601009.0,0.02,,,AustralianSuper,0.015569355021783278
+Socially Aware,Cash,JP Morgan Securities LLC,Japan Yen,,-9942.0,0.0,,,AustralianSuper,-0.00025755109761512623
+Socially Aware,Cash,JP Morgan Securities LLC,United Kingdom Pound,,-107681.0,0.0,,,AustralianSuper,-0.0027895151621700263
+Socially Aware,Cash,JP Morgan Securities LLC,United States Dollar,,1339452.0,0.04,,,AustralianSuper,0.03469898740723959
+Socially Aware,Cash,JP Morgan Securities PLC,Australia Dollar,,898285.0,0.03,,,AustralianSuper,0.02327039707515627
+Socially Aware,Cash,JP Morgan Securities PLC,Canada Dollar,,78053.0,0.0,,,AustralianSuper,0.0020219911307738326
+Socially Aware,Cash,JP Morgan Securities PLC,Euro Member Countries,,415411.0,0.01,,,AustralianSuper,0.01076137185791563
+Socially Aware,Cash,JP Morgan Securities PLC,Japan Yen,,219548.0,0.01,,,AustralianSuper,0.005687470164876859
+Socially Aware,Cash,JP Morgan Securities PLC,Korea (South) Won,,132153.0,0.0,,,AustralianSuper,0.0034234711530005805
+Socially Aware,Cash,JP Morgan Securities PLC,United Kingdom Pound,,252783.0,0.01,,,AustralianSuper,0.00654843483287512
+Socially Aware,Cash,JP Morgan Securities PLC,United States Dollar,,3244446.0,0.1,,,AustralianSuper,0.08404854440283703
+Socially Aware,Cash,JPMorgan Chase Bank NA,Australia Dollar,,16777526.0,0.52,,,AustralianSuper,0.43462786527522806
+Socially Aware,Cash,JPMorgan Chase Bank NA,Brazil Real,,138548.0,0.0,,,AustralianSuper,0.0035891359356649065
+Socially Aware,Cash,JPMorgan Chase Bank NA,Canada Dollar,,1425914.0,0.04,,,AustralianSuper,0.03693881671743865
+Socially Aware,Cash,JPMorgan Chase Bank NA,China Yuan Renminbi (offshore),,679014.0,0.02,,,AustralianSuper,0.017590102695236098
+Socially Aware,Cash,JPMorgan Chase Bank NA,Czech Republic Koruna,,-33.0,0.0,,,AustralianSuper,-8.548769081974616e-07
+Socially Aware,Cash,JPMorgan Chase Bank NA,Denmark Krone,,126450.0,0.0,,,AustralianSuper,0.0032757328800475465
+Socially Aware,Cash,JPMorgan Chase Bank NA,Euro Member Countries,,1298908.0,0.04,,,AustralianSuper,0.03364868045675602
+Socially Aware,Cash,JPMorgan Chase Bank NA,Hong Kong Dollar,,122496.0,0.0,,,AustralianSuper,0.003173303083228978
+Socially Aware,Cash,JPMorgan Chase Bank NA,Hungary Forint,,1.0,0.0,,,AustralianSuper,2.5905360854468538e-08
+Socially Aware,Cash,JPMorgan Chase Bank NA,India Rupee,,77219.0,0.0,,,AustralianSuper,0.002000386059821206
+Socially Aware,Cash,JPMorgan Chase Bank NA,Israel Shekel,,9765.0,0.0,,,AustralianSuper,0.00025296584874388525
+Socially Aware,Cash,JPMorgan Chase Bank NA,Japan Yen,,579817.0,0.02,,,AustralianSuper,0.015020368614555383
+Socially Aware,Cash,JPMorgan Chase Bank NA,Korea (South) Won,,44435.0,0.0,,,AustralianSuper,0.0011511047095683093
+Socially Aware,Cash,JPMorgan Chase Bank NA,Mexico Peso,,474039.0,0.01,,,AustralianSuper,0.01228015135409141
+Socially Aware,Cash,JPMorgan Chase Bank NA,New Zealand Dollar,,1997.0,0.0,,,AustralianSuper,5.173300562637367e-05
+Socially Aware,Cash,JPMorgan Chase Bank NA,Norway Krone,,43263.0,0.0,,,AustralianSuper,0.0011207436266468722
+Socially Aware,Cash,JPMorgan Chase Bank NA,Poland Zloty,,2953.0,0.0,,,AustralianSuper,7.64985306032456e-05
+Socially Aware,Cash,JPMorgan Chase Bank NA,Qatar Riyal,,-2282.0,0.0,,,AustralianSuper,-5.91160334698972e-05
+Socially Aware,Cash,JPMorgan Chase Bank NA,South Africa Rand,,72490.0,0.0,,,AustralianSuper,0.001877879608340424
+Socially Aware,Cash,JPMorgan Chase Bank NA,Sweden Krona,,17757.0,0.0,,,AustralianSuper,0.00046000149269279783
+Socially Aware,Cash,JPMorgan Chase Bank NA,Switzerland Franc,,828927.0,0.03,,,AustralianSuper,0.02147365305701204
+Socially Aware,Cash,JPMorgan Chase Bank NA,Taiwan New Dollar,,89919.0,0.0,,,AustralianSuper,0.0023293841426729562
+Socially Aware,Cash,JPMorgan Chase Bank NA,Turkey Lira,,234.0,0.0,,,AustralianSuper,6.061854439945638e-06
+Socially Aware,Cash,JPMorgan Chase Bank NA,United Arab Emirates Dirham,,-364.0,0.0,,,AustralianSuper,-9.429551351026547e-06
+Socially Aware,Cash,JPMorgan Chase Bank NA,United Kingdom Pound,,919493.0,0.03,,,AustralianSuper,0.023819797968157835
+Socially Aware,Cash,JPMorgan Chase Bank NA,United States Dollar,,4370314.0,0.14,,,AustralianSuper,0.1132145612173358
+Socially Aware,Cash,Mitsubishi UFJ Trust & Banking Corp/London,Euro Member Countries,,35625.0,0.0,,,AustralianSuper,0.0009228784804404417
+Socially Aware,Cash,Morgan Stanley & Co International PLC,Australia Dollar,,-97251.0,0.0,,,AustralianSuper,-0.0025193222484579197
+Socially Aware,Cash,MUFG Bank Ltd/London,Euro Member Countries,,115796.0,0.0,,,AustralianSuper,0.0029997371655040386
+Socially Aware,Cash,MUFG Bank Ltd/London,United Kingdom Pound,,73565.0,0.0,,,AustralianSuper,0.0019057278712589778
+Socially Aware,Cash,National Australia Bank Ltd,Australia Dollar,,1725120.0,0.05,,,AustralianSuper,0.044689856117260764
+Socially Aware,Cash,National Australia Bank Ltd,United Kingdom Pound,,141719.0,0.0,,,AustralianSuper,0.0036712818349344265
+Socially Aware,Cash,National Australia Bank Ltd,United States Dollar,,2066859.0,0.06,,,AustralianSuper,0.05354272823030598
+Socially Aware,Cash,Royal Bank of Canada,Australia Dollar,,-391903.0,-0.01,,,AustralianSuper,-0.010152388634948783
+Socially Aware,Cash,Royal Bank of Canada,United Kingdom Pound,,74724.0,0.0,,,AustralianSuper,0.0019357521844893066
+Socially Aware,Cash,Royal Bank of Canada,United States Dollar,,2543826.0,0.08,,,AustralianSuper,0.06589873048097927
+Socially Aware,Cash,Royal Bank of Canada/Sydney,Australia Dollar,,5748917.0,0.18,,,AustralianSuper,0.1489277694073887
+Socially Aware,Cash,Skandinaviska Enskilda Banken AB,Euro Member Countries,,50888.0,0.0,,,AustralianSuper,0.0013182720031621948
+Socially Aware,Cash,Skandinaviska Enskilda Banken AB,Norway Krone,,-43.0,0.0,,,AustralianSuper,-1.1139305167421472e-06
+Socially Aware,Cash,Skandinaviska Enskilda Banken AB,Sweden Krona,,-49.0,0.0,,,AustralianSuper,-1.2693626818689583e-06
+Socially Aware,Cash,Skandinaviska Enskilda Banken AB,United States Dollar,,961089.0,0.03,,,AustralianSuper,0.024897357358260312
+Socially Aware,Cash,Societe Generale SA,Australia Dollar,,-214944.0,-0.01,,,AustralianSuper,-0.0055682018835028855
+Socially Aware,Cash,Standard Chartered Bank,Australia Dollar,,6362.0,0.0,,,AustralianSuper,0.00016480990575612882
+Socially Aware,Cash,Standard Chartered Bank,Euro Member Countries,,115796.0,0.0,,,AustralianSuper,0.0029997371655040386
+Socially Aware,Cash,Standard Chartered Bank,United Kingdom Pound,,83743.0,0.0,,,AustralianSuper,0.002169392634035759
+Socially Aware,Cash,State Street Bank and Trust Co,Australia Dollar,,-4715.0,0.0,,,AustralianSuper,-0.00012214377642881915
+Socially Aware,Cash,Sumitomo Mitsui Banking Corp/Sydney,Australia Dollar,,1851442.0,0.06,,,AustralianSuper,0.04796227311111893
+Socially Aware,Cash,Toronto-Dominion Bank/The,Australia Dollar,,-10083.0,0.0,,,AustralianSuper,-0.00026120375349560624
+Socially Aware,Cash,UBS AG,Australia Dollar,,-37681.0,0.0,,,AustralianSuper,-0.0009761399023572289
+Socially Aware,Cash,Westpac Banking Corp,Australia Dollar,,-803376.0,-0.03,,,AustralianSuper,-0.020811745181819514
+Socially Aware,Fixed Income,1011778 BC ULC / New Red Finance Inc,,,385995.0,0.01,,,AustralianSuper,0.009999339763020582
+Socially Aware,Fixed Income,AbbVie Inc,,,798614.0,0.02,,,AustralianSuper,0.020688383853430536
+Socially Aware,Fixed Income,Abertis France SAS,,,387746.0,0.01,,,AustralianSuper,0.010044700049876757
+Socially Aware,Fixed Income,ABN AMRO Bank NV,,,1811944.0,0.06,,,AustralianSuper,0.046939063168089136
+Socially Aware,Fixed Income,AerCap Ireland Capital DAC / AerCap Global Aviation Trust,,,684285.0,0.02,,,AustralianSuper,0.017726649852300002
+Socially Aware,Fixed Income,Agilent Technologies Inc,,,909877.0,0.03,,,AustralianSuper,0.02357069201818127
+Socially Aware,Fixed Income,Air Lease Corp,,,566525.0,0.02,,,AustralianSuper,0.014676034558077786
+Socially Aware,Fixed Income,Alcon Finance Corp,,,780040.0,0.02,,,AustralianSuper,0.02020721768091964
+Socially Aware,Fixed Income,American Express Co,,,1197206.0,0.04,,,AustralianSuper,0.031014053447134857
+Socially Aware,Fixed Income,American International Group Inc,,,462207.0,0.01,,,AustralianSuper,0.011973639124461338
+Socially Aware,Fixed Income,American Water Capital Corp,,,844858.0,0.03,,,AustralianSuper,0.021886351360784578
+Socially Aware,Fixed Income,Amgen Inc,,,2112482.0,0.07,,,AustralianSuper,0.0547246085085694
+Socially Aware,Fixed Income,AMP Bank Ltd,,,555702.0,0.02,,,AustralianSuper,0.014395660837549876
+Socially Aware,Fixed Income,Amphenol Corp,,,458298.0,0.01,,,AustralianSuper,0.011872375068881221
+Socially Aware,Fixed Income,Anheuser-Busch InBev Worldwide Inc,,,1785163.0,0.06,,,AustralianSuper,0.046245291699045614
+Socially Aware,Fixed Income,Arthur J Gallagher & Co,,,735027.0,0.02,,,AustralianSuper,0.019041139672777443
+Socially Aware,Fixed Income,AT&T Inc,,,1455950.0,0.05,,,AustralianSuper,0.037716910136063465
+Socially Aware,Fixed Income,Athene Global Funding,,,1610983.0,0.05,,,AustralianSuper,0.041733095945414286
+Socially Aware,Fixed Income,Australia & New Zealand Banking Group Ltd,,,14018280.0,0.44,,,AustralianSuper,0.3631486019589792
+Socially Aware,Fixed Income,Autozone Inc,,,410625.0,0.01,,,AustralianSuper,0.010637388800866144
+Socially Aware,Fixed Income,Banco De Sabadell Sa,,,568214.0,0.02,,,AustralianSuper,0.014719788712560985
+Socially Aware,Fixed Income,Banco Santander SA,,,920054.0,0.03,,,AustralianSuper,0.023834330875597196
+Socially Aware,Fixed Income,Bank of America Corp,,,2156056.0,0.07,,,AustralianSuper,0.05585340870244202
+Socially Aware,Fixed Income,Bank of Montreal,,,12929.0,0.0,,,AustralianSuper,0.0003349304104874237
+Socially Aware,Fixed Income,Bank of Montreal/London,,,26695.0,0.0,,,AustralianSuper,0.0006915436080100376
+Socially Aware,Fixed Income,Bank of New York Mellon Corp/The,,,343983.0,0.01,,,AustralianSuper,0.00891100374280265
+Socially Aware,Fixed Income,Bank of Nova Scotia/Australia,,,392210.0,0.01,,,AustralianSuper,0.010160341580731105
+Socially Aware,Fixed Income,Banque Federative du Credit Mutuel SA,,,1058080.0,0.03,,,AustralianSuper,0.02740994421289607
+Socially Aware,Fixed Income,Barclays PLC,,,1630638.0,0.05,,,AustralianSuper,0.04224226581300887
+Socially Aware,Fixed Income,Becton Dickinson & Co,,,587912.0,0.02,,,AustralianSuper,0.015230072510672306
+Socially Aware,Fixed Income,Bendigo & Adelaide Bank Ltd,,,2440936.0,0.08,,,AustralianSuper,0.06323332790266302
+Socially Aware,Fixed Income,Berry Global Inc,,,819695.0,0.03,,,AustralianSuper,0.021234494765603587
+Socially Aware,Fixed Income,BPCE SA,,,2471820.0,0.08,,,AustralianSuper,0.06403338906729242
+Socially Aware,Fixed Income,BRED Banque Populaire COBPFA,,,470172.0,0.01,,,AustralianSuper,0.01217997532366718
+Socially Aware,Fixed Income,Bristol-Myers Squibb Co,,,641013.0,0.02,,,AustralianSuper,0.01660567307740544
+Socially Aware,Fixed Income,Brixmor Operating Partnership LP,,,524581.0,0.02,,,AustralianSuper,0.01358946010239796
+Socially Aware,Fixed Income,Broadcom Inc,,,463137.0,0.01,,,AustralianSuper,0.011997731110055993
+Socially Aware,Fixed Income,Brown & Brown Inc,,,651615.0,0.02,,,AustralianSuper,0.016880321713184515
+Socially Aware,Fixed Income,Cadence Design Systems Inc,,,307568.0,0.01,,,AustralianSuper,0.00796766002728718
+Socially Aware,Fixed Income,Caisse Nationale de Reassurance Mutuelle Agricole Groupama,,,1360956.0,0.04,,,AustralianSuper,0.035256056287054076
+Socially Aware,Fixed Income,CaixaBank SA,,,483767.0,0.02,,,AustralianSuper,0.01253215870448368
+Socially Aware,Fixed Income,Canadian Imperial Bank of Commerce,,,601907.0,0.02,,,AustralianSuper,0.015592618035830593
+Socially Aware,Fixed Income,Canadian Imperial Bank of Commerce/Sydney,,,877689.0,0.03,,,AustralianSuper,0.022736850262997637
+Socially Aware,Fixed Income,Cardinal Health Inc,,,275594.0,0.01,,,AustralianSuper,0.007139362019326401
+Socially Aware,Fixed Income,Charter Communications Operating LLC / Charter Communications Operating Capital,,,556504.0,0.02,,,AustralianSuper,0.014416436936955159
+Socially Aware,Fixed Income,Cisco Systems Inc,,,269114.0,0.01,,,AustralianSuper,0.006971495280989445
+Socially Aware,Fixed Income,Citigroup Inc,,,1756946.0,0.05,,,AustralianSuper,0.04551432013181508
+Socially Aware,Fixed Income,Comcast Corp,,,1130584.0,0.04,,,AustralianSuper,0.029288186496288456
+Socially Aware,Fixed Income,Commerzbank AG,,,762985.0,0.02,,,AustralianSuper,0.019765401751546677
+Socially Aware,Fixed Income,Commonwealth Bank of Australia,,,12147784.0,0.38,,,AustralianSuper,0.3146927281021392
+Socially Aware,Fixed Income,Cooperatieve Rabobank UA/Australia,,,2516880.0,0.08,,,AustralianSuper,0.06520068462739477
+Socially Aware,Fixed Income,Cooperatieve Rabobank UA/NY,,,28100.0,0.0,,,AustralianSuper,0.0007279406400105659
+Socially Aware,Fixed Income,Covivio Hotels SACA,,,1961763.0,0.06,,,AustralianSuper,0.05082017842594475
+Socially Aware,Fixed Income,Credit Mutuel Arkea SA,,,1374219.0,0.04,,,AustralianSuper,0.035599639088066896
+Socially Aware,Fixed Income,Crown Castle Inc,,,544498.0,0.02,,,AustralianSuper,0.01410541717453641
+Socially Aware,Fixed Income,DBS Bank Ltd/Australia,,,281065.0,0.01,,,AustralianSuper,0.007281090248561199
+Socially Aware,Fixed Income,Dell International LLC / EMC Corp,,,440348.0,0.01,,,AustralianSuper,0.01140737384154351
+Socially Aware,Fixed Income,easyJet PLC,,,1241174.0,0.04,,,AustralianSuper,0.03215306035318413
+Socially Aware,Fixed Income,Element Fleet Management Corp,,,535953.0,0.02,,,AustralianSuper,0.013884055866034974
+Socially Aware,Fixed Income,ERAC USA Finance LLC,,,696727.0,0.02,,,AustralianSuper,0.0180489643520513
+Socially Aware,Fixed Income,Eurogrid GmbH,,,291234.0,0.01,,,AustralianSuper,0.0075445218630902896
+Socially Aware,Fixed Income,Extra Space Storage LP,,,812902.0,0.03,,,AustralianSuper,0.02105851964931918
+Socially Aware,Fixed Income,Federal Realty OP LP,,,529225.0,0.02,,,AustralianSuper,0.013709764598206112
+Socially Aware,Fixed Income,Fiserv Inc,,,561644.0,0.02,,,AustralianSuper,0.014549590491747127
+Socially Aware,Fixed Income,Flowers Foods Inc,,,580038.0,0.02,,,AustralianSuper,0.01502609369930422
+Socially Aware,Fixed Income,Ford Motor Co,,,135273.0,0.0,,,AustralianSuper,0.0035042958788665222
+Socially Aware,Fixed Income,Ford Motor Credit Co LLC,,,249038.0,0.01,,,AustralianSuper,0.0064514192564751344
+Socially Aware,Fixed Income,General Motors Co,,,390012.0,0.01,,,AustralianSuper,0.010103401597572982
+Socially Aware,Fixed Income,General Motors Financial Co Inc,,,4075083.0,0.13,,,AustralianSuper,0.10556649562691021
+Socially Aware,Fixed Income,Generali,,,1377493.0,0.04,,,AustralianSuper,0.03568445323950443
+Socially Aware,Fixed Income,Goldman Sachs Group Inc/The,,,1420401.0,0.04,,,AustralianSuper,0.03679600046304796
+Socially Aware,Fixed Income,Goldstory SAS,,,1260025.0,0.04,,,AustralianSuper,0.03264140231065171
+Socially Aware,Fixed Income,Guardian Life Global Funding,,,438636.0,0.01,,,AustralianSuper,0.01136302386376066
+Socially Aware,Fixed Income,Haleon Netherlands Capital BV,,,378142.0,0.01,,,AustralianSuper,0.009795904964230441
+Socially Aware,Fixed Income,HCA Inc,,,831807.0,0.03,,,AustralianSuper,0.02154826049627291
+Socially Aware,Fixed Income,Healthpeak OP LLC,,,842052.0,0.03,,,AustralianSuper,0.02181366091822694
+Socially Aware,Fixed Income,Hewlett Packard Enterprise Co,,,265764.0,0.01,,,AustralianSuper,0.006884712322126976
+Socially Aware,Fixed Income,Home Depot Inc/The,,,1594067.0,0.05,,,AustralianSuper,0.041294880861200096
+Socially Aware,Fixed Income,HSBC Holdings PLC,,,1170920.0,0.04,,,AustralianSuper,0.0303331051317143
+Socially Aware,Fixed Income,Hyatt Hotels Corp,,,413210.0,0.01,,,AustralianSuper,0.010704354158674944
+Socially Aware,Fixed Income,Icon Investments Six DAC,,,762266.0,0.02,,,AustralianSuper,0.019746775797092313
+Socially Aware,Fixed Income,IFM Investors,,,853223.0,0.03,,,AustralianSuper,0.022103049704332207
+Socially Aware,Fixed Income,ING Bank Australia Ltd,,,1090407.0,0.03,,,AustralianSuper,0.028247386813238472
+Socially Aware,Fixed Income,ING Bank NV/Sydney,,,1143633.0,0.04,,,AustralianSuper,0.029626225550078416
+Socially Aware,Fixed Income,ING Groep NV,,,1013006.0,0.03,,,AustralianSuper,0.026242285977741756
+Socially Aware,Fixed Income,Inmobiliaria Colonial Socimi SA,,,1083228.0,0.03,,,AustralianSuper,0.028061412227664242
+Socially Aware,Fixed Income,Intesa Sanpaolo SpA,,,439668.0,0.01,,,AustralianSuper,0.011389758196162472
+Socially Aware,Fixed Income,Intuit Inc,,,790324.0,0.02,,,AustralianSuper,0.02047362841194699
+Socially Aware,Fixed Income,J M Smucker Co/The,,,911692.0,0.03,,,AustralianSuper,0.02361771024813213
+Socially Aware,Fixed Income,JPMorgan Chase & Co,,,2171547.0,0.07,,,AustralianSuper,0.05625470864743859
+Socially Aware,Fixed Income,Keycorp,,,536616.0,0.02,,,AustralianSuper,0.01390123112028149
+Socially Aware,Fixed Income,Kojamo Oyj,,,501807.0,0.02,,,AustralianSuper,0.012999491414298294
+Socially Aware,Fixed Income,Korea Development Bank/London,,,26545.0,0.0,,,AustralianSuper,0.0006876578038818673
+Socially Aware,Fixed Income,Kroger Co/The,,,473416.0,0.01,,,AustralianSuper,0.012264012314279076
+Socially Aware,Fixed Income,Lowe's Cos Inc,,,987753.0,0.03,,,AustralianSuper,0.025588097900083862
+Socially Aware,Fixed Income,Marriott International Inc/MD,,,884484.0,0.03,,,AustralianSuper,0.022912877190003747
+Socially Aware,Fixed Income,Mercedes-Benz International Finance BV,,,1328819.0,0.04,,,AustralianSuper,0.034423535705274025
+Socially Aware,Fixed Income,Micron Technology Inc,,,484253.0,0.02,,,AustralianSuper,0.01254474870985895
+Socially Aware,Fixed Income,Mitsubishi UFJ Trust & Banking Corp,,,195861.0,0.01,,,AustralianSuper,0.0050738498823170615
+Socially Aware,Fixed Income,Mitsubishi UFJ Trust & Banking Corp/London,,,346423.0,0.01,,,AustralianSuper,0.008974212823287553
+Socially Aware,Fixed Income,Mizuho Bank Ltd,,,156824.0,0.0,,,AustralianSuper,0.004062582310641174
+Socially Aware,Fixed Income,Mizuho Bank Ltd/London,,,199729.0,0.01,,,AustralianSuper,0.005174051818102147
+Socially Aware,Fixed Income,Mizuho Bank Ltd/Sydney,,,78844.0,0.0,,,AustralianSuper,0.002042482271209717
+Socially Aware,Fixed Income,Morgan Stanley,,,1333017.0,0.04,,,AustralianSuper,0.03453228641014108
+Socially Aware,Fixed Income,Motability Operations Group PLC,,,393234.0,0.01,,,AustralianSuper,0.010186868670246079
+Socially Aware,Fixed Income,MUFG Bank Ltd/London,,,311993.0,0.01,,,AustralianSuper,0.008082291249068202
+Socially Aware,Fixed Income,MUFG Bank Ltd/Sydney,,,1547206.0,0.05,,,AustralianSuper,0.04008092974619884
+Socially Aware,Fixed Income,National Australia Bank Ltd,,,10648043.0,0.33,,,AustralianSuper,0.2758413963088977
+Socially Aware,Fixed Income,National Australia Bank Ltd/London,,,156822.0,0.0,,,AustralianSuper,0.004062530499919464
+Socially Aware,Fixed Income,National Bank of Canada,,,367800.0,0.01,,,AustralianSuper,0.009527991722273527
+Socially Aware,Fixed Income,NatWest Group PLC,,,1212480.0,0.04,,,AustralianSuper,0.03140973192882601
+Socially Aware,Fixed Income,Netflix Inc,,,685740.0,0.02,,,AustralianSuper,0.017764342152343255
+Socially Aware,Fixed Income,Nn Group Nv,,,1768744.0,0.06,,,AustralianSuper,0.0458199515791761
+Socially Aware,Fixed Income,Norfina Ltd,,,495545.0,0.02,,,AustralianSuper,0.012837272044627613
+Socially Aware,Fixed Income,NorteGas Energia Distribucion SA,,,366550.0,0.01,,,AustralianSuper,0.009495610021205442
+Socially Aware,Fixed Income,Oracle Corp,,,655480.0,0.02,,,AustralianSuper,0.016980445932887035
+Socially Aware,Fixed Income,Oversea-Chinese Banking Corp Ltd/Sydney,,,2573916.0,0.08,,,AustralianSuper,0.06667822278909023
+Socially Aware,Fixed Income,PNC Financial Services Group Inc/The,,,1044512.0,0.03,,,AustralianSuper,0.027058460276822637
+Socially Aware,Fixed Income,Prudential Financial Inc,,,653934.0,0.02,,,AustralianSuper,0.01694039624500603
+Socially Aware,Fixed Income,Raiffeisen Bank International Ag,,,1181718.0,0.04,,,AustralianSuper,0.030612831218220848
+Socially Aware,Fixed Income,RCI Banque SA,,,2412992.0,0.08,,,AustralianSuper,0.06250942849894575
+Socially Aware,Fixed Income,RGA Global Funding,,,878771.0,0.03,,,AustralianSuper,0.02276487986344217
+Socially Aware,Fixed Income,Rogers Communications Inc,,,632150.0,0.02,,,AustralianSuper,0.016376073864152286
+Socially Aware,Fixed Income,Royal Bank of Canada,,,578316.0,0.02,,,AustralianSuper,0.014981484667912827
+Socially Aware,Fixed Income,Royal Bank of Canada/London,,,35486.0,0.0,,,AustralianSuper,0.0009192776352816704
+Socially Aware,Fixed Income,Royal Bank of Canada/Sydney,,,5884896.0,0.18,,,AustralianSuper,0.15245035447101846
+Socially Aware,Fixed Income,Royalty Pharma Plc,,,457503.0,0.01,,,AustralianSuper,0.01185178030700192
+Socially Aware,Fixed Income,Scentre Group Trust 1 / Scentre Group Trust 2,,,269503.0,0.01,,,AustralianSuper,0.006981572466361833
+Socially Aware,Fixed Income,Skandinaviska Enskilda Banken AB,,,20278.0,0.0,,,AustralianSuper,0.0005253089074069129
+Socially Aware,Fixed Income,Smurfit Kappa Treasury ULC,,,755215.0,0.02,,,AustralianSuper,0.019564117097707456
+Socially Aware,Fixed Income,Societe Generale SA,,,2966398.0,0.09,,,AustralianSuper,0.07684561062797375
+Socially Aware,Fixed Income,Standard Chartered Bank/Australia,,,1679903.0,0.05,,,AustralianSuper,0.043518493415504254
+Socially Aware,Fixed Income,State Street Corp,,,1178392.0,0.04,,,AustralianSuper,0.030526669988018885
+Socially Aware,Fixed Income,Sumitomo Mitsui Banking Corp,,,396397.0,0.01,,,AustralianSuper,0.010268807326628764
+Socially Aware,Fixed Income,Sumitomo Mitsui Banking Corp/Brussels,,,26710.0,0.0,,,AustralianSuper,0.0006919321884228546
+Socially Aware,Fixed Income,Sumitomo Mitsui Banking Corp/Sydney,,,2940893.0,0.09,,,AustralianSuper,0.07618489439938055
+Socially Aware,Fixed Income,Sydney Airport Finance Co Pty Ltd,,,1374034.0,0.04,,,AustralianSuper,0.03559484659630882
+Socially Aware,Fixed Income,Synopsys Inc,,,244771.0,0.01,,,AustralianSuper,0.006340881081709117
+Socially Aware,Fixed Income,Sysco Corp,,,694418.0,0.02,,,AustralianSuper,0.01798914887383833
+Socially Aware,Fixed Income,Takeda Pharmaceutical Co Ltd,,,550998.0,0.02,,,AustralianSuper,0.014273802020090454
+Socially Aware,Fixed Income,Telefonica Emisiones SA,,,1453408.0,0.05,,,AustralianSuper,0.037651058708771404
+Socially Aware,Fixed Income,Telstra Group Ltd,,,748223.0,0.02,,,AustralianSuper,0.01938298681461301
+Socially Aware,Fixed Income,THE MITSUBISHI TRUST + BANK,,,6377.0,0.0,,,AustralianSuper,0.00016519848616894587
+Socially Aware,Fixed Income,T-Mobile USA Inc,,,1255860.0,0.04,,,AustralianSuper,0.032533506482692855
+Socially Aware,Fixed Income,Trane Technologies Financing Ltd,,,631468.0,0.02,,,AustralianSuper,0.016358406408049538
+Socially Aware,Fixed Income,Transurban Finance Co Pty Ltd,,,862683.0,0.03,,,AustralianSuper,0.022348114418015482
+Socially Aware,Fixed Income,Travelex Financing PLC,,,546.0,0.0,,,AustralianSuper,1.4144327026539822e-05
+Socially Aware,Fixed Income,Travelex Issuerco 2 PLC,,,39707.0,0.0,,,AustralianSuper,0.0010286241634483821
+Socially Aware,Fixed Income,Triton Container International Ltd,,,710742.0,0.02,,,AustralianSuper,0.018412027984426677
+Socially Aware,Fixed Income,Truist Financial Corp,,,551968.0,0.02,,,AustralianSuper,0.014298930220119289
+Socially Aware,Fixed Income,Tyco Electronics Group SA,,,892103.0,0.03,,,AustralianSuper,0.023110250134353943
+Socially Aware,Fixed Income,UBS AG/London,,,186815.0,0.01,,,AustralianSuper,0.00483950998802754
+Socially Aware,Fixed Income,Udr Inc,,,594690.0,0.02,,,AustralianSuper,0.015405659046543892
+Socially Aware,Fixed Income,UniCredit SpA,,,1576167.0,0.05,,,AustralianSuper,0.04083117490190511
+Socially Aware,Fixed Income,United Overseas Bank Ltd/Sydney,,,1617330.0,0.05,,,AustralianSuper,0.0418975172707576
+Socially Aware,Fixed Income,Upjohn Finance BV,,,245878.0,0.01,,,AustralianSuper,0.006369558316175015
+Socially Aware,Fixed Income,US Bancorp,,,1042148.0,0.03,,,AustralianSuper,0.026997220003762677
+Socially Aware,Fixed Income,Verisk Analytics Inc,,,1117601.0,0.03,,,AustralianSuper,0.02895185719631489
+Socially Aware,Fixed Income,Verisure Holding AB,,,1442917.0,0.05,,,AustralianSuper,0.03737928556804718
+Socially Aware,Fixed Income,Virgin Money UK PLC,,,405505.0,0.01,,,AustralianSuper,0.010504753353291263
+Socially Aware,Fixed Income,Vonovia SE,,,609021.0,0.02,,,AustralianSuper,0.01577690877294928
+Socially Aware,Fixed Income,Walmart Inc,,,189012.0,0.01,,,AustralianSuper,0.004896424065824807
+Socially Aware,Fixed Income,Westpac Banking Corp,,,20062823.0,0.63,,,AustralianSuper,0.519734669574331
+Socially Aware,Fixed Income,ZF Finance GmbH,,,1676427.0,0.05,,,AustralianSuper,0.04342844638117412
+Socially Aware,Fixed Income,Zimmer Biomet Holdings Inc,,,347780.0,0.01,,,AustralianSuper,0.009009366397967067
+Socially Aware,Fixed Income,Canada,,,6877150.0,0.22,,,AustralianSuper,0.1781550524003083
+Socially Aware,Fixed Income,Commonwealth of Australia,,,2030888.0,0.06,,,AustralianSuper,0.05261088649500989
+Socially Aware,Fixed Income,Federal Republic of Germany,,,1637373.0,0.05,,,AustralianSuper,0.04241673841836371
+Socially Aware,Fixed Income,French Republic,,,8493537.0,0.27,,,AustralianSuper,0.2200281409157801
+Socially Aware,Fixed Income,Japan,,,22250724.0,0.7,,,AustralianSuper,0.5764130344931836
+Socially Aware,Fixed Income,Kingdom of Belgium,,,240521.0,0.01,,,AustralianSuper,0.006230783298077627
+Socially Aware,Fixed Income,Kingdom of Norway,,,237980.0,0.01,,,AustralianSuper,0.006164957776146422
+Socially Aware,Fixed Income,Kingdom of Spain,,,5729419.0,0.18,,,AustralianSuper,0.14842266668144827
+Socially Aware,Fixed Income,Kingdom of Sweden,,,631715.0,0.02,,,AustralianSuper,0.01636480503218059
+Socially Aware,Fixed Income,People's Republic of China,,,31291679.0,0.98,,,AustralianSuper,0.8106222362371952
+Socially Aware,Fixed Income,Portuguese Republic,,,127279.0,0.0,,,AustralianSuper,0.0032972084241959005
+Socially Aware,Fixed Income,Republic of Austria,,,946401.0,0.03,,,AustralianSuper,0.024516859418029877
+Socially Aware,Fixed Income,Republic of Italy,,,12712531.0,0.4,,,AustralianSuper,0.32932270292861776
+Socially Aware,Fixed Income,Swiss Confederation,,,2222396.0,0.07,,,AustralianSuper,0.05757197034152745
+Socially Aware,Fixed Income,United Kingdom of Great Britain and Northern Ireland,,,4893627.0,0.15,,,AustralianSuper,0.12677117332217028
+Socially Aware,Fixed Income,United Mexican States,,,643770.0,0.02,,,AustralianSuper,0.01667709415728121
+Socially Aware,Fixed Income,United States of America,,,37180657.0,1.16,,,AustralianSuper,0.9631783363912216
+Socially Aware,Fixed Income,Federal Home Loan Mortgage Corp,,,720055.0,0.02,,,AustralianSuper,0.018653284610064342
+Socially Aware,Fixed Income,Federal National Mortgage Association,,,28745922.0,0.9,,,AustralianSuper,0.7446734825044059
+Socially Aware,Fixed Income,Government National Mortgage Association,,,11243597.0,0.35,,,AustralianSuper,0.2912694375872199
+Socially Aware,Fixed Income,PUMA-Series 2017-1,,,1604.0,0.0,,,AustralianSuper,4.1552198810567535e-05
+Socially Aware,Fixed Income,Adif Alta Velocidad,,,1199433.0,0.04,,,AustralianSuper,0.031071744685757758
+Socially Aware,Fixed Income,Agence Centrale des Organismes de Securite Sociale,,,237991.0,0.01,,,AustralianSuper,0.006165242735115822
+Socially Aware,Fixed Income,BNG Bank NV,,,3802758.0,0.12,,,AustralianSuper,0.09851181823221707
+Socially Aware,Fixed Income,Bpifrance SACA,,,1996197.0,0.06,,,AustralianSuper,0.05171220362160752
+Socially Aware,Fixed Income,CNP Assurances SA,,,283428.0,0.01,,,AustralianSuper,0.007342304616260308
+Socially Aware,Fixed Income,Export-Import Bank of Korea,,,79265.0,0.0,,,AustralianSuper,0.0020533884281294483
+Socially Aware,Fixed Income,Korea Development Bank/The,,,229481.0,0.01,,,AustralianSuper,0.005944788114244294
+Socially Aware,Fixed Income,Kreditanstalt fuer Wiederaufbau,,,7082779.0,0.22,,,AustralianSuper,0.1834819458474518
+Socially Aware,Fixed Income,La Banque Postale SA,,,1341540.0,0.04,,,AustralianSuper,0.03475307780070372
+Socially Aware,Fixed Income,Logicor Financing Sarl,,,611502.0,0.02,,,AustralianSuper,0.015841179973229216
+Socially Aware,Fixed Income,NBN Co Ltd,,,2086690.0,0.07,,,AustralianSuper,0.05405645744141095
+Socially Aware,Fixed Income,People's Republic of China,,,929931.0,0.03,,,AustralianSuper,0.02409019812475678
+Socially Aware,Fixed Income,Queensland Treasury Corp,,,735197.0,0.02,,,AustralianSuper,0.019045543584122703
+Socially Aware,Fixed Income,Regie Autonome des Transports Parisiens EPIC,,,1268301.0,0.04,,,AustralianSuper,0.0328557950770833
+Socially Aware,Fixed Income,Republic of Bulgaria,,,2720915.0,0.09,,,AustralianSuper,0.07048628492933626
+Socially Aware,Fixed Income,Republic of Chile,,,1951860.0,0.06,,,AustralianSuper,0.05056363763740296
+Socially Aware,Fixed Income,Republic of Colombia,,,505792.0,0.02,,,AustralianSuper,0.01310272427730335
+Socially Aware,Fixed Income,Republic of Korea,,,903051.0,0.03,,,AustralianSuper,0.023393862024988665
+Socially Aware,Fixed Income,UNEDIC ASSEO,,,857838.0,0.03,,,AustralianSuper,0.022222602944675582
+Socially Aware,Fixed Income,United Mexican States,,,2059570.0,0.06,,,AustralianSuper,0.05335390405503776
+Socially Aware,Fixed Income,European Investment Bank,,,16131.0,0.0,,,AustralianSuper,0.0004178793759434319
+Socially Aware,Fixed Income,European Union,,,3467151.0,0.11,,,AustralianSuper,0.08981779779193144
+Socially Aware,Fixed Income,AustralianSuper,,,1959.0,0.0,,,AustralianSuper,5.074860191390387e-05
+Socially Aware,Fixed Income,Bentham Asset Management Pty Ltd,,,1942.0,0.0,,,AustralianSuper,5.030821077937789e-05
+Socially Aware,Fixed Income,State Street Global Advisors,,,39550548.0,1.24,,,AustralianSuper,1.0245712179319788
+Socially Aware,Fixed Income,Fixed Income Private Debt,,,57697461.0,1.8,,,AustralianSuper,1.494673547591625
+Socially Aware,Fixed Income,AXA Investment Managers Ltd,,,323783770.0,10.13,,Externally,AustralianSuper,8.387735400670245
+Socially Aware,Fixed Income,Barings,,,66059.0,0.0,,Externally,AustralianSuper,0.001711282232685337
+Socially Aware,Fixed Income,Bentham Asset Management Pty Ltd,,,1942.0,0.0,,Externally,AustralianSuper,5.030821077937789e-05
+Socially Aware,Fixed Income,Churchill Asset Management,,,16631791.0,0.52,,Externally,AustralianSuper,0.43085254751110214
+Socially Aware,Fixed Income,IFM Investors,,,881803.0,0.03,,Externally,AustralianSuper,0.022843424917552917
+Socially Aware,Fixed Income,"Marathon Asset Management, LP",,,3599.0,0.0,,Externally,AustralianSuper,9.323339371523226e-05
+Socially Aware,Fixed Income,Maxcap,,,2554854.0,0.08,,Externally,AustralianSuper,0.06618441480048236
+Socially Aware,Fixed Income,State Street Global Advisors,,,39550548.0,1.24,,Externally,AustralianSuper,1.0245712179319788
+Socially Aware,Fixed Income,Agence Centrale des Organismes de Securite Sociale,,,237996.0,0.01,,Internally,AustralianSuper,0.006165372261920094
+Socially Aware,Fixed Income,AMP Bank Ltd,,,555531.0,0.02,,Internally,AustralianSuper,0.01439123102084376
+Socially Aware,Fixed Income,Australia & New Zealand Banking Group Ltd,,,14013320.0,0.44,,Internally,AustralianSuper,0.36302011136914103
+Socially Aware,Fixed Income,Bank of Montreal,,,12929.0,0.0,,Internally,AustralianSuper,0.0003349304104874237
+Socially Aware,Fixed Income,Bank of Montreal/London,,,26695.0,0.0,,Internally,AustralianSuper,0.0006915436080100376
+Socially Aware,Fixed Income,Bank of Nova Scotia/Australia,,,392141.0,0.01,,Internally,AustralianSuper,0.010158554110832146
+Socially Aware,Fixed Income,Bendigo & Adelaide Bank Ltd,,,2439943.0,0.08,,Internally,AustralianSuper,0.06320760387933452
+Socially Aware,Fixed Income,BRED Banque Populaire COBPFA,,,470182.0,0.01,,Internally,AustralianSuper,0.012180234377275724
+Socially Aware,Fixed Income,Canadian Imperial Bank of Commerce/Sydney,,,877493.0,0.03,,Internally,AustralianSuper,0.022731772812270158
+Socially Aware,Fixed Income,Commonwealth Bank of Australia,,,12144025.0,0.38,,Internally,AustralianSuper,0.31459534985068727
+Socially Aware,Fixed Income,Commonwealth of Australia,,,1514841.0,0.05,,Internally,AustralianSuper,0.03924250274214397
+Socially Aware,Fixed Income,Cooperatieve Rabobank UA/Australia,,,2516452.0,0.08,,Internally,AustralianSuper,0.06518959713294906
+Socially Aware,Fixed Income,Cooperatieve Rabobank UA/NY,,,28101.0,0.0,,Internally,AustralianSuper,0.0007279665453714204
+Socially Aware,Fixed Income,DBS Bank Ltd/Australia,,,281065.0,0.01,,Internally,AustralianSuper,0.007281090248561199
+Socially Aware,Fixed Income,European Investment Bank,,,16132.0,0.0,,Internally,AustralianSuper,0.00041790528130428644
+Socially Aware,Fixed Income,Export-Import Bank of Korea,,,79267.0,0.0,,Internally,AustralianSuper,0.0020534402388511573
+Socially Aware,Fixed Income,ING Bank Australia Ltd,,,1090407.0,0.03,,Internally,AustralianSuper,0.028247386813238472
+Socially Aware,Fixed Income,ING Bank NV/Sydney,,,1143361.0,0.04,,Internally,AustralianSuper,0.029619179291926
+Socially Aware,Fixed Income,Korea Development Bank/London,,,26545.0,0.0,,Internally,AustralianSuper,0.0006876578038818673
+Socially Aware,Fixed Income,Korea Development Bank/The,,,229481.0,0.01,,Internally,AustralianSuper,0.005944788114244294
+Socially Aware,Fixed Income,Mitsubishi UFJ Trust & Banking Corp,,,195865.0,0.01,,Internally,AustralianSuper,0.00507395350376048
+Socially Aware,Fixed Income,Mitsubishi UFJ Trust & Banking Corp/London,,,346430.0,0.01,,Internally,AustralianSuper,0.008974394160813534
+Socially Aware,Fixed Income,Mizuho Bank Ltd,,,156828.0,0.0,,Internally,AustralianSuper,0.004062685932084592
+Socially Aware,Fixed Income,Mizuho Bank Ltd/London,,,199733.0,0.01,,Internally,AustralianSuper,0.005174155439545564
+Socially Aware,Fixed Income,Mizuho Bank Ltd/Sydney,,,78846.0,0.0,,Internally,AustralianSuper,0.0020425340819314264
+Socially Aware,Fixed Income,MUFG Bank Ltd/London,,,311999.0,0.01,,Internally,AustralianSuper,0.008082446681233329
+Socially Aware,Fixed Income,MUFG Bank Ltd/Sydney,,,1547034.0,0.05,,Internally,AustralianSuper,0.04007647402413188
+Socially Aware,Fixed Income,National Australia Bank Ltd,,,10644719.0,0.33,,Internally,AustralianSuper,0.2757552868894174
+Socially Aware,Fixed Income,National Australia Bank Ltd/London,,,156826.0,0.0,,Internally,AustralianSuper,0.004062634121362882
+Socially Aware,Fixed Income,NBN Co Ltd,,,2085932.0,0.07,,Internally,AustralianSuper,0.05403682117788326
+Socially Aware,Fixed Income,Norfina Ltd,,,495237.0,0.02,,Internally,AustralianSuper,0.012829293193484435
+Socially Aware,Fixed Income,Oversea-Chinese Banking Corp Ltd/Sydney,,,2573367.0,0.08,,Internally,AustralianSuper,0.06666400074598114
+Socially Aware,Fixed Income,PUMA-Series 2017-1,,,1604.0,0.0,,Internally,AustralianSuper,4.1552198810567535e-05
+Socially Aware,Fixed Income,Republic of Austria,,,17764.0,0.0,,Internally,AustralianSuper,0.0004601828302187791
+Socially Aware,Fixed Income,Royal Bank of Canada,,,12975.0,0.0,,Internally,AustralianSuper,0.0003361220570867293
+Socially Aware,Fixed Income,Royal Bank of Canada/London,,,35486.0,0.0,,Internally,AustralianSuper,0.0009192776352816704
+Socially Aware,Fixed Income,Royal Bank of Canada/Sydney,,,5883343.0,0.18,,Internally,AustralianSuper,0.15241012344561147
+Socially Aware,Fixed Income,Skandinaviska Enskilda Banken AB,,,20279.0,0.0,,Internally,AustralianSuper,0.0005253348127677675
+Socially Aware,Fixed Income,Standard Chartered Bank/Australia,,,1679559.0,0.05,,Internally,AustralianSuper,0.04350958197137032
+Socially Aware,Fixed Income,Sumitomo Mitsui Banking Corp,,,396405.0,0.01,,Internally,AustralianSuper,0.010269014569515601
+Socially Aware,Fixed Income,Sumitomo Mitsui Banking Corp/Brussels,,,26710.0,0.0,,Internally,AustralianSuper,0.0006919321884228546
+Socially Aware,Fixed Income,Sumitomo Mitsui Banking Corp/Sydney,,,2940206.0,0.09,,Internally,AustralianSuper,0.07616709741647353
+Socially Aware,Fixed Income,THE MITSUBISHI TRUST + BANK,,,6377.0,0.0,,Internally,AustralianSuper,0.00016519848616894587
+Socially Aware,Fixed Income,UBS AG/London,,,186818.0,0.01,,Internally,AustralianSuper,0.004839587704110103
+Socially Aware,Fixed Income,United Kingdom of Great Britain and Northern Ireland,,,25881.0,0.0,,Internally,AustralianSuper,0.0006704566442745002
+Socially Aware,Fixed Income,United Overseas Bank Ltd/Sydney,,,1617330.0,0.05,,Internally,AustralianSuper,0.0418975172707576
+Socially Aware,Fixed Income,Westpac Banking Corp,,,18805267.0,0.59,,Internally,AustralianSuper,0.48715722759962893
+Socially Aware,Fixed Income,Fixed Income Private Debt,,,38481410.0,1.2,,Internally,AustralianSuper,0.9968748122387541
+Socially Aware,Fixed Income,,,,383474367.0,12.0,,Externally,AustralianSuper,9.9340418555739
+Socially Aware,Fixed Income,,,,127026136.0,3.97,,Internally,AustralianSuper,3.290657891028796
+Socially Aware,Equity,3I,,B1YW440,2410232.0,0.08,Listed,,AustralianSuper,0.06243792970298741
+Socially Aware,Equity,A2 Milk Company,,BWSRTS7,131409.0,0.0,Listed,,AustralianSuper,0.003404197564524856
+Socially Aware,Equity,Abbvie,,B92SR70,1712879.0,0.05,Listed,,AustralianSuper,0.044372748595041214
+Socially Aware,Equity,Abu Dhabi Commercial Bank Pjsc,,6545464,1141608.0,0.04,Listed,,AustralianSuper,0.029573767194348118
+Socially Aware,Equity,Abu Dhabi Islamic Bank Pjsc,,6001728,1035862.0,0.03,Listed,,AustralianSuper,0.02683437890543149
+Socially Aware,Equity,Accenture,,B4BNMY3,3714380.0,0.12,Listed,,AustralianSuper,0.09622235425062084
+Socially Aware,Equity,Adobe,,2008154,603723.0,0.02,Listed,,AustralianSuper,0.01563966217114231
+Socially Aware,Equity,Advantest,,6870490,853983.0,0.03,Listed,,AustralianSuper,0.022122737778581602
+Socially Aware,Equity,Adyen Nv,,BZ1HM42,2457557.0,0.08,Listed,,AustralianSuper,0.06366390090542513
+Socially Aware,Equity,Aegon,,BPH0Y27,1148642.0,0.04,Listed,,AustralianSuper,0.02975598550259845
+Socially Aware,Equity,Aena Sme Sa,,BTMKJR0,1993291.0,0.06,Listed,,AustralianSuper,0.05163692264296444
+Socially Aware,Equity,Aib,,BF0L353,1132288.0,0.04,Listed,,AustralianSuper,0.02933232923118447
+Socially Aware,Equity,Air Canada,,BSDHYK1,1034618.0,0.03,Listed,,AustralianSuper,0.02680215263652853
+Socially Aware,Equity,Airbus Se,,4012250,3396821.0,0.11,Listed,,AustralianSuper,0.08799587376303666
+Socially Aware,Equity,Alibaba,,BK6YZP5,2673554.0,0.08,Listed,,AustralianSuper,0.06925938113390778
+Socially Aware,Equity,Allstate,,2019952,1146353.0,0.04,Listed,,AustralianSuper,0.02969668813160257
+Socially Aware,Equity,Alnylam Pharmaceuticals,,B00FWN1,1658712.0,0.05,Listed,,AustralianSuper,0.04296953291363721
+Socially Aware,Equity,Alphabet,,BYVY8G0,6443922.0,0.2,Listed,,AustralianSuper,0.16693212472804858
+Socially Aware,Equity,Alphabet,,BYY88Y7,12318502.0,0.39,Listed,,AustralianSuper,0.31911523949649234
+Socially Aware,Equity,Als,,B86SZR5,187921.0,0.01,Listed,,AustralianSuper,0.004868161317132582
+Socially Aware,Equity,Amazon,,2000019,34045646.0,1.07,Listed,,AustralianSuper,0.8819647451534932
+Socially Aware,Equity,Ambev Sa,,BRABEVACNOR1,632941.0,0.02,Listed,,AustralianSuper,0.01639656500458817
+Socially Aware,Equity,Amcor,,6066608,190240.0,0.01,Listed,,AustralianSuper,0.004928235848954094
+Socially Aware,Equity,America Movil Sab De Cv,,BMVRB77,157725.0,0.0,Listed,,AustralianSuper,0.00408592304077105
+Socially Aware,Equity,American Express,,2026082,5847397.0,0.18,Listed,,AustralianSuper,0.15147892934433677
+Socially Aware,Equity,American International,,2027342,1853772.0,0.06,Listed,,AustralianSuper,0.04802263260190985
+Socially Aware,Equity,Ameriprise Financial,,B0J7D57,725392.0,0.02,Listed,,AustralianSuper,0.01879154152094464
+Socially Aware,Equity,Ametek,,2089212,3376853.0,0.11,Listed,,AustralianSuper,0.08747859551749464
+Socially Aware,Equity,Amp,,6709958,72284.0,0.0,Listed,,AustralianSuper,0.0018725431040044036
+Socially Aware,Equity,Amphenol,,2145084,5185878.0,0.16,Listed,,AustralianSuper,0.13434204093724958
+Socially Aware,Equity,Ampol,,BM91201,5710992.0,0.18,Listed,,AustralianSuper,0.14794530859698296
+Socially Aware,Equity,Analog Devices,,2032067,1374341.0,0.04,Listed,,AustralianSuper,0.03560279954209114
+Socially Aware,Equity,Ansell,,6286611,100181.0,0.0,Listed,,AustralianSuper,0.0025952249557615126
+Socially Aware,Equity,Anz,,6065586,1965987.0,0.06,Listed,,AustralianSuper,0.05092960267019404
+Socially Aware,Equity,Aon,,BLP1HW5,739569.0,0.02,Listed,,AustralianSuper,0.01915880182177844
+Socially Aware,Infrastructure,APA Group,,6247306,239730.0,0.01,Listed,,AustralianSuper,0.006210292157641742
+Socially Aware,Equity,Apple,,2046251,27077524.0,0.85,Listed,,AustralianSuper,0.7014530302655323
+Socially Aware,Equity,Applied Materials,,2046552,1714516.0,0.05,Listed,,AustralianSuper,0.04441515567075998
+Socially Aware,Equity,Applovin,,BMV3LG4,3913156.0,0.12,Listed,,AustralianSuper,0.10137171825982869
+Socially Aware,Equity,Aptiv,,BTDN8H1,2090714.0,0.07,Listed,,AustralianSuper,0.054160700613489335
+Socially Aware,Equity,Arcelormittal Sa,,BYPBS67,2151416.0,0.07,Listed,,AustralianSuper,0.05573320782807728
+Socially Aware,Equity,Archer-Daniels-Midland,,2047317,1644644.0,0.05,Listed,,AustralianSuper,0.04260509629713655
+Socially Aware,Equity,Arista Networks,,BL9XPM3,1505854.0,0.05,Listed,,AustralianSuper,0.039009691264144865
+Socially Aware,Equity,Aristocrat Leisure,,6253983,923642.0,0.03,Listed,,AustralianSuper,0.02392727931034303
+Socially Aware,Equity,Arthur J Gallagher &,,2359506,536219.0,0.02,Listed,,AustralianSuper,0.013890946692022264
+Socially Aware,Equity,Asahi,,6054409,1602796.0,0.05,Listed,,AustralianSuper,0.04152100875609875
+Socially Aware,Equity,Asml Nv,,B929F46,3497274.0,0.11,Listed,,AustralianSuper,0.0905981449769506
+Socially Aware,Equity,Astrazeneca,,0989529,6883412.0,0.22,Listed,,AustralianSuper,0.17831727176997897
+Socially Aware,Equity,Asx,,6129222,18088406.0,0.57,Listed,,AustralianSuper,0.46858668471213377
+Socially Aware,Equity,At&T,,2831811,3895154.0,0.12,Listed,,AustralianSuper,0.10090536995372654
+Socially Aware,Infrastructure,Atlas Arteria Group,,BZ03TZ1,122152.0,0.0,Listed,,AustralianSuper,0.0031643916390950407
+Socially Aware,Equity,Atlassian,,BQ1PC76,1660524.0,0.05,Listed,,AustralianSuper,0.04301647342750551
+Socially Aware,Equity,Auckland Airport,,BLRZSS8,12486976.0,0.39,Listed,,AustralianSuper,0.3234796192610881
+Socially Aware,Equity,Aurizon,,B87CVM3,121747.0,0.0,Listed,,AustralianSuper,0.0031538999679489813
+Socially Aware,Equity,Auto Europe,,MFY77EU,0.0,,Listed,,AustralianSuper,0.0
+Socially Aware,Equity,Auto Trader,,BVYVFW2,1200170.0,0.04,Listed,,AustralianSuper,0.031090836936707507
+Socially Aware,Equity,Aviva,,BPQY8M8,2409796.0,0.08,Listed,,AustralianSuper,0.062426634965654856
+Socially Aware,Equity,Axa Sa,,7088429,774570.0,0.02,Listed,,AustralianSuper,0.020065515357045694
+Socially Aware,Equity,Axon Enterprise,,BDT5S35,1006436.0,0.03,Listed,,AustralianSuper,0.026072087756927896
+Socially Aware,Equity,Azul Sa,,BDCT500,1285.0,0.0,Listed,,AustralianSuper,3.328838869799207e-05
+Socially Aware,Equity,Bae Systems,,0263494,2211599.0,0.07,Listed,,AustralianSuper,0.057292270160381756
+Socially Aware,Equity,Baidu,,B0J2D41,1282628.0,0.04,Listed,,AustralianSuper,0.03322694118204527
+Socially Aware,Equity,Baker Hughes,,BDHLTQ5,3944475.0,0.12,Listed,,AustralianSuper,0.10218304825642978
+Socially Aware,Equity,Banco Btg Pactual Sa,,BZBZVC7,1193678.0,0.04,Listed,,AustralianSuper,0.03092265933404029
+Socially Aware,Equity,Banco Do Brasil Sa,,2328595,974289.0,0.03,Listed,,AustralianSuper,0.025239308121539298
+Socially Aware,Equity,Bank Central Asia Tbk Pt,,B01C1P6,1007880.0,0.03,Listed,,AustralianSuper,0.026109495098001746
+Socially Aware,Equity,Bank Hapoalim Bm,,6075808,1221209.0,0.04,Listed,,AustralianSuper,0.03163585982372467
+Socially Aware,Equity,Bank Leumi Le Israel Bm,,6076425,2839005.0,0.09,Listed,,AustralianSuper,0.07354544899264044
+Socially Aware,Equity,Bank Mandiri (Persero) Tbk Pt,,6651048,1076700.0,0.03,Listed,,AustralianSuper,0.027892302032006273
+Socially Aware,Equity,Bank Of America,,2295677,6123728.0,0.19,Listed,,AustralianSuper,0.1586373836146129
+Socially Aware,Equity,Bank Of Baroda,,BVF87C6,951161.0,0.03,Listed,,AustralianSuper,0.024640168935697145
+Socially Aware,Equity,Bank Of China,,B154564,722239.0,0.02,Listed,,AustralianSuper,0.0187098619181705
+Socially Aware,Equity,Bank Of Ireland,,BD1RP61,1204179.0,0.04,Listed,,AustralianSuper,0.031194691528373064
+Socially Aware,Equity,Bank Of New York Mellon,,B1Z77F6,927113.0,0.03,Listed,,AustralianSuper,0.02401719681786889
+Socially Aware,Equity,Bank Of Queensland,,6076243,116613.0,0.0,Listed,,AustralianSuper,0.0030209018453221394
+Socially Aware,Equity,Bapcor,,BLD2CY7,8420436.0,0.26,Listed,,AustralianSuper,0.21813443313195763
+Socially Aware,Equity,Bayer Ag,,5069211,898151.0,0.03,Listed,,AustralianSuper,0.02326692575680177
+Socially Aware,Equity,Bayerische Motoren Werke Ag,,5756029,3690984.0,0.12,Listed,,AustralianSuper,0.09561627242806969
+Socially Aware,Equity,Bce,,B188TH2,1156242.0,0.04,Listed,,AustralianSuper,0.02995286624509241
+Socially Aware,Equity,Bendigo And Adelaide Bank,,6091280,162764.0,0.01,Listed,,AustralianSuper,0.004216460154116717
+Socially Aware,Equity,Bharti Airtel,,6442327,2246904.0,0.07,Listed,,AustralianSuper,0.05820685892534877
+Socially Aware,Equity,Biogen,,2455965,1634496.0,0.05,Listed,,AustralianSuper,0.0423422086951854
+Socially Aware,Equity,Block,,BQD3643,126451.0,0.0,Listed,,AustralianSuper,0.003275758785408401
+Socially Aware,Equity,Bluescope Steel,,6533232,17735055.0,0.55,Listed,,AustralianSuper,0.4594329995488465
+Socially Aware,Equity,Bnp Paribas Sa,,7309681,5664882.0,0.18,Listed,,AustralianSuper,0.14675081240798343
+Socially Aware,Equity,Boc Hong Kong,,6536112,963894.0,0.03,Listed,,AustralianSuper,0.024970021895457096
+Socially Aware,Equity,Booking,,BDRXDB4,7623794.0,0.24,Listed,,AustralianSuper,0.1974971346501321
+Socially Aware,Equity,Boston Scientific,,2113434,5314502.0,0.17,Listed,,AustralianSuper,0.13767409207179473
+Socially Aware,Equity,Bouygues Sa,,4002121,1095821.0,0.03,Listed,,AustralianSuper,0.028387638436904568
+Socially Aware,Equity,Brambles,,AU000000BXB1,727129.0,0.02,Listed,,AustralianSuper,0.018836539132748853
+Socially Aware,Equity,Brazilian Electric Power,,2311120,1006293.0,0.03,Listed,,AustralianSuper,0.026068383290325705
+Socially Aware,Equity,Bridgestone,,6132101,812756.0,0.03,Listed,,AustralianSuper,0.02105473746663443
+Socially Aware,Equity,Bristol-Myers Squibb,,2126335,3448250.0,0.11,Listed,,AustralianSuper,0.08932816056642112
+Socially Aware,Equity,Broadcom,,BDZ78H9,8394892.0,0.26,Listed,,AustralianSuper,0.21747270659429108
+Socially Aware,Equity,Builders Firstsource,,B0BV2M7,903151.0,0.03,Listed,,AustralianSuper,0.023396452561074112
+Socially Aware,Equity,Bunge Global Sa,,BQ6BPG9,1648244.0,0.05,Listed,,AustralianSuper,0.042698355596212635
+Socially Aware,Equity,Cadence Design Systems,,2302232,1252702.0,0.04,Listed,,AustralianSuper,0.03245169735311444
+Socially Aware,Equity,Caixabank Sa,,B283W97,4748720.0,0.15,Listed,,AustralianSuper,0.12301730519683184
+Socially Aware,Equity,Canadian Pacific Kansas City,,BMBQR09,746518.0,0.02,Listed,,AustralianSuper,0.01933881817435614
+Socially Aware,Equity,Canara Bank,,BS5WYP9,1131091.0,0.04,Listed,,AustralianSuper,0.029301320514241672
+Socially Aware,Equity,Capital One Financial,,2654461,3190273.0,0.1,Listed,,AustralianSuper,0.0826451732892679
+Socially Aware,Equity,Carrefour Sa,,5641567,1108268.0,0.03,Listed,,AustralianSuper,0.028710082463460136
+Socially Aware,Equity,Carsales,,BW0BGZ3,320249.0,0.01,Listed,,AustralianSuper,0.008296165908282693
+Socially Aware,Equity,Cathay Financial,,6425663,1278122.0,0.04,Listed,,AustralianSuper,0.03311021162603504
+Socially Aware,Equity,Cbre,,B6WVMH3,4346590.0,0.14,Listed,,AustralianSuper,0.11259998243642438
+Socially Aware,Equity,Cellnex Telecom Sa,,BX90C05,5402167.0,0.17,Listed,,AustralianSuper,0.13994508553110174
+Socially Aware,Equity,Cencosud Sa,,B00R3L2,1128445.0,0.04,Listed,,AustralianSuper,0.029232774929420745
+Socially Aware,Equity,Centene,,2807061,994905.0,0.03,Listed,,AustralianSuper,0.025773373040915017
+Socially Aware,Property,Centuria Capital Group,,6518745,201.0,0.0,Listed,,AustralianSuper,5.206977531748176e-06
+Socially Aware,Equity,Cf Industries,,B0G4K50,2618677.0,0.08,Listed,,AustralianSuper,0.0678377726462971
+Socially Aware,Equity,Challenger,,6726300,101343.0,0.0,Listed,,AustralianSuper,0.0026253269850744047
+Socially Aware,Equity,Charles Schwab,,2779397,2771003.0,0.09,Listed,,AustralianSuper,0.07178383264381488
+Socially Aware,Property,Charter Hall Group,,B15F6S6,205670.0,0.01,Listed,,AustralianSuper,0.0053279555669385435
+Socially Aware,Equity,China Citic Bank,,B1W0JF2,773346.0,0.02,Listed,,AustralianSuper,0.020033807195359823
+Socially Aware,Equity,Chipotle Mexican Grill,,B0X7DZ3,1471555.0,0.05,Listed,,AustralianSuper,0.038121163292197446
+Socially Aware,Equity,Church & Dwight,,2195841,624602.0,0.02,Listed,,AustralianSuper,0.01618054020042276
+Socially Aware,Equity,Cigna,,BHJ0775,4643202.0,0.15,Listed,,AustralianSuper,0.12028382333019001
+Socially Aware,Equity,Cintas,,2197137,2519706.0,0.08,Listed,,AustralianSuper,0.0652738931771695
+Socially Aware,Equity,Citi Bank,,2297907,1949630.0,0.06,Listed,,AustralianSuper,0.05050586868269749
+Socially Aware,Equity,Citi Bank,,BQRX1X3,1772566.0,0.06,Listed,,AustralianSuper,0.04591896186836188
+Socially Aware,Equity,Ck Asset,,BYZQ077,964739.0,0.03,Listed,,AustralianSuper,0.024991911925379123
+Socially Aware,Equity,Cleanaway Waste Management,,BYQ8KW7,137507.0,0.0,Listed,,AustralianSuper,0.0035621684550154052
+Socially Aware,Equity,Cloudflare,,BJXC5M2,4418788.0,0.14,Listed,,AustralianSuper,0.1144702976793953
+Socially Aware,Equity,Cme,,2965839,3691768.0,0.12,Listed,,AustralianSuper,0.09563658223097961
+Socially Aware,Equity,Coca-Cola,,2206657,8537937.0,0.27,Listed,,AustralianSuper,0.22117833893771852
+Socially Aware,Equity,Coca-Cola Icecek As,,B058ZV4,505385.0,0.02,Listed,,AustralianSuper,0.01309218079543558
+Socially Aware,Equity,Cochlear,,6211798,6465673.0,0.2,Listed,,AustralianSuper,0.16749559223199414
+Socially Aware,Equity,Coles,,BYWR0T5,632905.0,0.02,Listed,,AustralianSuper,0.01639563241159741
+Socially Aware,Equity,Colgate-Palmolive,,2209106,2641519.0,0.08,Listed,,AustralianSuper,0.06842950289893487
+Socially Aware,Equity,Comcast,,2044545,1838028.0,0.06,Listed,,AustralianSuper,0.047614778600617094
+Socially Aware,Equity,Commercial Bank Psqc,,6150448,837938.0,0.03,Listed,,AustralianSuper,0.021707086263671658
+Socially Aware,Equity,CommBank,,6215035,80444930.0,2.52,Listed,,AustralianSuper,2.0839549405624616
+Socially Aware,Equity,Compagnie Financiere Richemont Sa,,BCRWZ18,3707358.0,0.12,Listed,,AustralianSuper,0.09604044680670076
+Socially Aware,Equity,Companhia De Saneamento Basico Do Estado De Sao Paulo Sabesp,,B1YCHL8,874801.0,0.03,Listed,,AustralianSuper,0.02266203558084993
+Socially Aware,Equity,Compass,,BD6K457,3656959.0,0.11,Listed,,AustralianSuper,0.09473484252499641
+Socially Aware,Equity,Computershare,,6180412,25824743.0,0.81,Listed,,AustralianSuper,0.6689992863889103
+Socially Aware,Equity,Conagra Brands,,2215460,1321646.0,0.04,Listed,,AustralianSuper,0.03423771655186492
+Socially Aware,Equity,Constellation Software,,B15C4L6,1173854.0,0.04,Listed,,AustralianSuper,0.03040911146046131
+Socially Aware,Equity,Contemporary Amperex Technology,,BHQPSY7,1254771.0,0.04,Listed,,AustralianSuper,0.03250529554472234
+Socially Aware,Equity,Corebridge Financial,,BMTX0G9,1244516.0,0.04,Listed,,AustralianSuper,0.03223963606915976
+Socially Aware,Equity,Corpay,,BMX5GK7,3848302.0,0.12,Listed,,AustralianSuper,0.09969165198697298
+Socially Aware,Equity,Corporate Travel Management,,B3R1D52,3283647.0,0.1,Listed,,AustralianSuper,0.08506406045369304
+Socially Aware,Equity,Corteva,,BK73B42,1208063.0,0.04,Listed,,AustralianSuper,0.03129530794993182
+Socially Aware,Equity,Costco,,2701271,7324035.0,0.23,Listed,,AustralianSuper,0.18973176958575746
+Socially Aware,Equity,Crh,,B01ZKD6,5028138.0,0.16,Listed,,AustralianSuper,0.13025572931606572
+Socially Aware,Equity,Csl,,6185495,34634635.0,1.08,Listed,,AustralianSuper,0.8972227177378059
+Socially Aware,Equity,Cspc Pharmaceutical,,6191997,319383.0,0.01,Listed,,AustralianSuper,0.008273731865782724
+Socially Aware,Equity,Ctbc Financial,,6527666,732442.0,0.02,Listed,,AustralianSuper,0.01897417431496864
+Socially Aware,Equity,Cvs Health,,2577609,1077591.0,0.03,Listed,,AustralianSuper,0.027915383708527603
+Socially Aware,Equity,Daifuku,,6250025,876294.0,0.03,Listed,,AustralianSuper,0.02270071228460565
+Socially Aware,Equity,Dai-Ichi Life,,B601QS4,702742.0,0.02,Listed,,AustralianSuper,0.018204785097590926
+Socially Aware,Equity,Daiichi Sankyo,,B0J7D91,766959.0,0.02,Listed,,AustralianSuper,0.019868349655582335
+Socially Aware,Equity,Daimler Truck Ag,,BP6VLQ4,3336867.0,0.1,Listed,,AustralianSuper,0.08644274375836786
+Socially Aware,Equity,Daito Trust Construction,,6250508,745945.0,0.02,Listed,,AustralianSuper,0.019323974402586534
+Socially Aware,Equity,Datadog,,BKT9Y49,1888369.0,0.06,Listed,,AustralianSuper,0.0489188803713919
+Socially Aware,Equity,Dbs,,6175203,4759556.0,0.15,Listed,,AustralianSuper,0.12329801568705084
+Socially Aware,Equity,Deckers Outdoor,,2267278,1122274.0,0.04,Listed,,AustralianSuper,0.02907291294758782
+Socially Aware,Equity,Deere &,,2261203,1352128.0,0.04,Listed,,AustralianSuper,0.035027363761430834
+Socially Aware,Equity,Delta Air Lines,,B1W9D46,3117956.0,0.1,Listed,,AustralianSuper,0.0807717753083553
+Socially Aware,Equity,Dexcom,,B0796X4,1655320.0,0.05,Listed,,AustralianSuper,0.042881661929618856
+Socially Aware,Property,Dexus,,B033YN6,162072.0,0.01,Listed,,AustralianSuper,0.004198533644405425
+Socially Aware,Equity,Diageo,,0237400,672178.0,0.02,Listed,,AustralianSuper,0.017413013648434953
+Socially Aware,Equity,Diebold Nixdorf,,BPLJQW4,5192.0,0.0,Listed,,AustralianSuper,0.00013450063355640064
+Socially Aware,Equity,Disco,,6270948,3096414.0,0.1,Listed,,AustralianSuper,0.08021372202482834
+Socially Aware,Equity,Dollar General,,B5B1S13,1256595.0,0.04,Listed,,AustralianSuper,0.03255254692292089
+Socially Aware,Equity,Dollarama,,B4TP9G2,2098315.0,0.07,Listed,,AustralianSuper,0.05435760726134414
+Socially Aware,Equity,Dominion Energy,,2542049,1876170.0,0.06,Listed,,AustralianSuper,0.04860286087432823
+Socially Aware,Equity,Downer Group,,6465573,96021.0,0.0,Listed,,AustralianSuper,0.0024874586546069235
+Socially Aware,Equity,Dsv A/S,,B1WT5G2,923816.0,0.03,Listed,,AustralianSuper,0.023931786843131707
+Socially Aware,Equity,Dubai Islamic Bank Pjsc,,6283452,1223035.0,0.04,Listed,,AustralianSuper,0.03168316301264493
+Socially Aware,Equity,Dyno Nobel,,BVBH523,103387.0,0.0,Listed,,AustralianSuper,0.0026782775426609385
+Socially Aware,Equity,Eagle Investments Holdco Class B Shares,,W8B3674,0.0,,Listed,,AustralianSuper,0.0
+Socially Aware,Equity,Eaton,,B8KQN82,991464.0,0.03,Listed,,AustralianSuper,0.02568423269421479
+Socially Aware,Equity,Ebay,,2293819,2340405.0,0.07,Listed,,AustralianSuper,0.06062903607060243
+Socially Aware,Equity,Ebos,,BH36SD2,13655519.0,0.43,Listed,,AustralianSuper,0.3537511473500513
+Socially Aware,Equity,Edison International,,2829515,1372658.0,0.04,Listed,,AustralianSuper,0.03555920081977307
+Socially Aware,Equity,Edwards Lifesciences,,2567116,1240927.0,0.04,Listed,,AustralianSuper,0.032146661729053075
+Socially Aware,Equity,Eiffage Sa,,B13X013,982811.0,0.03,Listed,,AustralianSuper,0.025460073606741074
+Socially Aware,Equity,Elevance Health,,BSPHGL4,5748846.0,0.18,Listed,,AustralianSuper,0.14892593012676802
+Socially Aware,Equity,Eli Lilly,,2516152,1662982.0,0.05,Listed,,AustralianSuper,0.043080148804485796
+Socially Aware,Equity,Emcor,,2474164,1377821.0,0.04,Listed,,AustralianSuper,0.03569295019786469
+Socially Aware,Equity,Emirates Nbd Bank Pjsc,,B28PFX8,957262.0,0.03,Listed,,AustralianSuper,0.02479821754227026
+Socially Aware,Equity,Empire Company,,2314000,1536411.0,0.05,Listed,,AustralianSuper,0.039801281375774857
+Socially Aware,Equity,Endeavour,,BNVS144,138327.0,0.0,Listed,,AustralianSuper,0.003583410850916069
+Socially Aware,Equity,Endesa Sa,,5271782,1553982.0,0.05,Listed,,AustralianSuper,0.04025646447134872
+Socially Aware,Equity,Equatorial Energia Sa,,B128R96,1246596.0,0.04,Listed,,AustralianSuper,0.03229351921973706
+Socially Aware,Equity,Equitable,,BKRMR96,674708.0,0.02,Listed,,AustralianSuper,0.017478554211396758
+Socially Aware,Equity,Essilorluxottica Sa,,7212477,1391632.0,0.04,Listed,,AustralianSuper,0.03605072913662576
+Socially Aware,Equity,Eurazeo Se,,7042395,858772.0,0.03,Listed,,AustralianSuper,0.022246798551713656
+Socially Aware,Equity,Evolution Mining,,B3X0F91,22247392.0,0.7,Listed,,AustralianSuper,0.5763267178308165
+Socially Aware,Equity,Expedia,,B748CK2,1329544.0,0.04,Listed,,AustralianSuper,0.034442317091893514
+Socially Aware,Equity,Expeditors International Of Washington,,2325507,707909.0,0.02,Listed,,AustralianSuper,0.018338638097125968
+Socially Aware,Equity,Fair Isaac,,2330299,2649709.0,0.08,Listed,,AustralianSuper,0.06864166780433298
+Socially Aware,Equity,Fairfax Financial,,2566351,1240428.0,0.04,Listed,,AustralianSuper,0.0321337349539867
+Socially Aware,Equity,Ferrari Nv,,BD6G507,4399464.0,0.14,Listed,,AustralianSuper,0.11396970248624358
+Socially Aware,Equity,Fidelity National Financial,,BNBRDD4,1616372.0,0.05,Listed,,AustralianSuper,0.041872699935059016
+Socially Aware,Equity,Fidelity National Information Services,,2769796,1467140.0,0.05,Listed,,AustralianSuper,0.03800679112402497
+Socially Aware,Equity,First Abu Dhabi Bank Pjsc,,6624471,1038664.0,0.03,Listed,,AustralianSuper,0.02690696572654571
+Socially Aware,Equity,Fiserv,,2342034,1923645.0,0.06,Listed,,AustralianSuper,0.04983271788089413
+Socially Aware,Equity,Fisher & Paykel Healthcare,,6423968,21240299.0,0.66,Listed,,AustralianSuper,0.5502376102518072
+Socially Aware,Equity,Flight Centre Travel,,6352147,54627.0,0.0,Listed,,AustralianSuper,0.0014151321473970526
+Socially Aware,Equity,Flutter Entertainment,,BWZMZF4,1918791.0,0.06,Listed,,AustralianSuper,0.049706973259306536
+Socially Aware,Equity,Fortescue Metals,,6086253,586326.0,0.02,Listed,,AustralianSuper,0.01518898660835712
+Socially Aware,Equity,Fortinet,,B5B2106,2381557.0,0.07,Listed,,AustralianSuper,0.061695093480485526
+Socially Aware,Equity,Fox,,BJJMGL2,2103596.0,0.07,Listed,,AustralianSuper,0.05449441347201659
+Socially Aware,Equity,Fuyao Glass Industry,,BP3R6K4,913416.0,0.03,Listed,,AustralianSuper,0.023662371090245233
+Socially Aware,Property,Gaming And Leisure Properties Inc,,BFPK4S5,971456.0,0.03,Listed,,AustralianSuper,0.025165918234238586
+Socially Aware,Equity,Ge Vernova,,BP6H4Y1,788722.0,0.02,Listed,,AustralianSuper,0.02043212802385813
+Socially Aware,Equity,General Dynamics,,2365161,3389227.0,0.11,Listed,,AustralianSuper,0.08779914845270784
+Socially Aware,Equity,General Motors,,B665KZ5,3802557.0,0.12,Listed,,AustralianSuper,0.09850661125468531
+Socially Aware,Equity,Genmab A/S,,4595739,1273483.0,0.04,Listed,,AustralianSuper,0.03299003665703115
+Socially Aware,Equity,George Weston,,2956662,2227885.0,0.07,Listed,,AustralianSuper,0.05771416486725764
+Socially Aware,Equity,Gilead Sciences,,2369174,6307303.0,0.2,Listed,,AustralianSuper,0.16339296023347194
+Socially Aware,Equity,Givaudan Sa,,5980613,1687548.0,0.05,Listed,,AustralianSuper,0.04371653989923667
+Socially Aware,Equity,Gmr Airports,,B192HJ1,1215132.0,0.04,Listed,,AustralianSuper,0.03147843294581206
+Socially Aware,Property,Goodman Group,,B03FYZ4,1575763.0,0.05,Listed,,AustralianSuper,0.040820709136119904
+Socially Aware,Property,Gpt Group,,6365866,210083.0,0.01,Listed,,AustralianSuper,0.005442275924389313
+Socially Aware,Equity,Great-West Lifeco,,2384951,1308940.0,0.04,Listed,,AustralianSuper,0.03390856303684804
+Socially Aware,Equity,Grupo Financiero Banorte Sab De Cv,,2421041,908493.0,0.03,Listed,,AustralianSuper,0.023534838998758686
+Socially Aware,Equity,Grupo Mexico Sab De Cv,,2643674,1008337.0,0.03,Listed,,AustralianSuper,0.026121333847912237
+Socially Aware,Equity,Halliburton,,2405302,4668204.0,0.15,Listed,,AustralianSuper,0.12093150916227344
+Socially Aware,Equity,Hana Financial,,B0RNRF5,1337926.0,0.04,Listed,,AustralianSuper,0.03465945582657567
+Socially Aware,Equity,Hang Seng Bank,,6408374,791296.0,0.02,Listed,,AustralianSuper,0.020498808422697537
+Socially Aware,Equity,Hartford Financial Services,,2476193,2205620.0,0.07,Listed,,AustralianSuper,0.057137382007832895
+Socially Aware,Equity,Hca Healthcare,,B4MGBG6,8246645.0,0.26,Listed,,AustralianSuper,0.21363231456369866
+Socially Aware,Equity,Heico,,2237561,1744916.0,0.05,Listed,,AustralianSuper,0.04520267864073582
+Socially Aware,Equity,Heineken Nv,,7792559,2333610.0,0.07,Listed,,AustralianSuper,0.060453009143596324
+Socially Aware,Equity,Hengan International Company,,6136233,1084297.0,0.03,Listed,,AustralianSuper,0.028089105058417666
+Socially Aware,Equity,Hermes International Sca,,5253973,2710963.0,0.08,Listed,,AustralianSuper,0.07022847477811259
+Socially Aware,Equity,Hologic,,2433530,788229.0,0.02,Listed,,AustralianSuper,0.02041935668095688
+Socially Aware,Equity,Home Depot,,2434209,2439326.0,0.08,Listed,,AustralianSuper,0.06319162027168732
+Socially Aware,Equity,Hon Hai Precision Industry,,6438564,1090022.0,0.03,Listed,,AustralianSuper,0.0282374132493095
+Socially Aware,Equity,Hong Kong Exchanges And Clearing,,6267359,1248147.0,0.04,Listed,,AustralianSuper,0.03233369843442234
+Socially Aware,Equity,Howmet Aerospace,,BKLJ8V2,3581969.0,0.11,Listed,,AustralianSuper,0.09279219951451981
+Socially Aware,Equity,Hoya,,6441506,744764.0,0.02,Listed,,AustralianSuper,0.019293380171417407
+Socially Aware,Equity,Hp,,BYX4D52,1981309.0,0.06,Listed,,AustralianSuper,0.051326524609206205
+Socially Aware,Equity,Hsbc,,GB0005405286,3065709.0,0.1,Listed,,AustralianSuper,0.07941829791979188
+Socially Aware,Equity,Hub24,,BD4T5X1,163993.0,0.01,Listed,,AustralianSuper,0.004248297842606858
+Socially Aware,Equity,Ia Financial,,BJ2ZH37,1370617.0,0.04,Listed,,AustralianSuper,0.0355063279782691
+Socially Aware,Equity,Iberdrola Sa,,B288C92,1010492.0,0.03,Listed,,AustralianSuper,0.02617715990055362
+Socially Aware,Equity,Icici Bank,,BSZ2BY7,1655339.0,0.05,Listed,,AustralianSuper,0.04288215413147509
+Socially Aware,Equity,Idp Education,,BDB6DD1,23649.0,0.0,Listed,,AustralianSuper,0.0006126358788473263
+Socially Aware,Equity,Igo,,6439567,63684.0,0.0,Listed,,AustralianSuper,0.0016497570006559741
+Socially Aware,Equity,Indian Hotels /The,,B1FRT61,1486763.0,0.05,Listed,,AustralianSuper,0.0385151320200722
+Socially Aware,Equity,Indus Towers,,B92P9G4,718916.0,0.02,Listed,,AustralianSuper,0.018623778404051102
+Socially Aware,Equity,Industria De Diseno Textil Sa,,BP9DL90,1264893.0,0.04,Listed,,AustralianSuper,0.032767509607291266
+Socially Aware,Equity,Ing Groep Nv,,BZ57390,5910590.0,0.18,Listed,,AustralianSuper,0.1531159668128132
+Socially Aware,Equity,Insulet,,B1XGNW4,813084.0,0.03,Listed,,AustralianSuper,0.021063234424994696
+Socially Aware,Equity,Insurance Australia,,6271026,483970.0,0.02,Listed,,AustralianSuper,0.012537417492737138
+Socially Aware,Equity,Interactive Brokers,,B1WT4X2,1635252.0,0.05,Listed,,AustralianSuper,0.04236179314799138
+Socially Aware,Equity,Intuitive Surgical,,2871301,6387421.0,0.2,Listed,,AustralianSuper,0.16546844593441026
+Socially Aware,Equity,Isuzu Motors,,6467104,764125.0,0.02,Listed,,AustralianSuper,0.01979493386292077
+Socially Aware,Equity,Itau Unibanco Sa,,B037HR3,2373383.0,0.07,Listed,,AustralianSuper,0.061483343060861104
+Socially Aware,Equity,James Hardie Industries,,B60QWJ2,11538188.0,0.36,Listed,,AustralianSuper,0.29890092374669863
+Socially Aware,Equity,Jb Hi-Fi,,6702623,18016231.0,0.56,Listed,,AustralianSuper,0.46671696529246254
+Socially Aware,Equity,Jiangsu Expressway,,6005504,830648.0,0.03,Listed,,AustralianSuper,0.02151823618304258
+Socially Aware,Equity,Johnson & Johnson,,2475833,2244204.0,0.07,Listed,,AustralianSuper,0.05813691445104171
+Socially Aware,Equity,JPMorgan,,2190385,5999744.0,0.19,Listed,,AustralianSuper,0.1554255333544325
+Socially Aware,Equity,Kasikornbank Pcl,,6888794,1405336.0,0.04,Listed,,AustralianSuper,0.03640573620177539
+Socially Aware,Equity,Kawasaki Kisen Kaisha,,6484686,1143352.0,0.04,Listed,,AustralianSuper,0.02961894614367831
+Socially Aware,Equity,Kb Financial,,B3DF0Y6,1876272.0,0.06,Listed,,AustralianSuper,0.04860550322113539
+Socially Aware,Equity,Keyence,,6490995,1979870.0,0.06,Listed,,AustralianSuper,0.05128924679493663
+Socially Aware,Equity,Kinross Gold,,B03Z841,1974704.0,0.06,Listed,,AustralianSuper,0.05115541970076244
+Socially Aware,Equity,Kla,,2480138,1880649.0,0.06,Listed,,AustralianSuper,0.0487188909855954
+Socially Aware,Equity,Komatsu,,6496584,1158765.0,0.04,Listed,,AustralianSuper,0.030018225470528234
+Socially Aware,Equity,Komercni Banka As,,4519449,1197569.0,0.04,Listed,,AustralianSuper,0.03102345709312503
+Socially Aware,Equity,Kraft Heinz,,BYRY499,1250698.0,0.04,Listed,,AustralianSuper,0.03239978300996209
+Socially Aware,Equity,Kuaishou Technology,,BLC90T0,1567567.0,0.05,Listed,,AustralianSuper,0.04060838879855668
+Socially Aware,Equity,Kweichow Moutai,,BP3R2F1,1233545.0,0.04,Listed,,AustralianSuper,0.03195542835522539
+Socially Aware,Equity,Lasertec,,6506267,1717734.0,0.05,Listed,,AustralianSuper,0.04449851912198966
+Socially Aware,Equity,Legrand Sa,,B11ZRK9,2000505.0,0.06,Listed,,AustralianSuper,0.05182380391616858
+Socially Aware,Property,Lendlease Group,,6512004,79917.0,0.0,Listed,,AustralianSuper,0.002070278723406562
+Socially Aware,Equity,Leonardo Spa,,B0DJNG0,1206242.0,0.04,Listed,,AustralianSuper,0.031248134287815834
+Socially Aware,Equity,Lg,,6537030,934681.0,0.03,Listed,,AustralianSuper,0.024213248588815506
+Socially Aware,Equity,Life360,,BJMXQ67,163350.0,0.01,Listed,,AustralianSuper,0.004231640695577436
+Socially Aware,Equity,Lifestyle Communities,,6137195,6223593.0,0.19,Listed,,AustralianSuper,0.16122442247634441
+Socially Aware,Equity,Light & Wonder,,BMXNX11,93249.0,0.0,Listed,,AustralianSuper,0.0024156489943183367
+Socially Aware,Equity,Linde,,BNZHB81,7009753.0,0.22,Listed,,AustralianSuper,0.1815901809656934
+Socially Aware,Equity,Lloyds Banking,,0870612,3156935.0,0.1,Listed,,AustralianSuper,0.08178154036910164
+Socially Aware,Equity,Loblaw Companies,,2521800,2759388.0,0.09,Listed,,AustralianSuper,0.07148294187749023
+Socially Aware,Equity,Loews,,2523022,1476882.0,0.05,Listed,,AustralianSuper,0.0382591611494692
+Socially Aware,Equity,L'Oreal Sa,,4057808,4491360.0,0.14,Listed,,AustralianSuper,0.11635030152732581
+Socially Aware,Equity,Lottery,,BNRQW72,268821.0,0.01,Listed,,AustralianSuper,0.006963905010259086
+Socially Aware,Equity,Lvmh Moet Hennessy Louis Vuitton Se,,4061412,1947913.0,0.06,Listed,,AustralianSuper,0.05046138917811037
+Socially Aware,Equity,Lynas Rare Earths,,6121176,11567536.0,0.36,Listed,,AustralianSuper,0.2996611942770555
+Socially Aware,Equity,Lyondellbasell Industries Nv,,B3SPXZ3,2404617.0,0.08,Listed,,AustralianSuper,0.062292471101789565
+Socially Aware,Equity,Macquarie,,B28YTC2,40426617.0,1.26,Listed,,AustralianSuper,1.0472661015103923
+Socially Aware,Equity,Macrotech Developers,,BM9G370,573246.0,0.02,Listed,,AustralianSuper,0.01485014448838067
+Socially Aware,Equity,Mallinckrodt,,O5E0A45,1096.0,0.0,Listed,,AustralianSuper,2.8392275496497514e-05
+Socially Aware,Equity,Marathon Petroleum,,B3K3L40,5425046.0,0.17,Listed,,AustralianSuper,0.1405377742820911
+Socially Aware,Equity,Mastercard,,B121557,6166778.0,0.19,Listed,,AustralianSuper,0.15975260939939778
+Socially Aware,Equity,Mccormick & Company,,2550161,651655.0,0.02,Listed,,AustralianSuper,0.016881357927618693
+Socially Aware,Equity,Mcdonald'S,,2550707,1205357.0,0.04,Listed,,AustralianSuper,0.031225208043459633
+Socially Aware,Equity,Medibank Private,,BRTNNQ5,15883156.0,0.5,Listed,,AustralianSuper,0.4114588876878171
+Socially Aware,Equity,Meituan,,BGJW376,2244434.0,0.07,Listed,,AustralianSuper,0.05814287268403823
+Socially Aware,Equity,Mercadolibre,,B23X1H3,3933559.0,0.12,Listed,,AustralianSuper,0.1019002653373424
+Socially Aware,Equity,Mercedes Benz Ag,,5529027,1605182.0,0.05,Listed,,AustralianSuper,0.04158281894709751
+Socially Aware,Equity,Merck,,2778844,1448834.0,0.05,Listed,,AustralianSuper,0.03753256758822307
+Socially Aware,Equity,Meta,,B7TL820,26757140.0,0.84,Listed,,AustralianSuper,0.6931533671335343
+Socially Aware,Equity,Metcash,,B0744W4,97334.0,0.0,Listed,,AustralianSuper,0.0025214723934088405
+Socially Aware,Equity,Metlife,,2573209,2124390.0,0.07,Listed,,AustralianSuper,0.055033089545624414
+Socially Aware,Equity,Mettler-Toledo International,,2126249,1756641.0,0.05,Listed,,AustralianSuper,0.045506418996754464
+Socially Aware,Equity,Microchip Technology,,2592174,1417878.0,0.04,Listed,,AustralianSuper,0.03673064123761214
+Socially Aware,Equity,Micron Technology,,2588184,1797710.0,0.06,Listed,,AustralianSuper,0.04657032626168663
+Socially Aware,Equity,Microsoft,,2588173,50088535.0,1.57,Listed,,AustralianSuper,1.2975615738466773
+Socially Aware,Equity,Mineral Resources,,B17ZL56,85439.0,0.0,Listed,,AustralianSuper,0.002213328126044937
+Socially Aware,Property,Mirvac Group,,6161978,196704.0,0.01,Listed,,AustralianSuper,0.005095688101517379
+Socially Aware,Equity,Mitsubishi Estate,,6596729,1214095.0,0.04,Listed,,AustralianSuper,0.03145156908660598
+Socially Aware,Equity,Mitsubishi Ufj Financial,,6335171,1021486.0,0.03,Listed,,AustralianSuper,0.026461963437787648
+Socially Aware,Equity,Mizrahi Tefahot Bank,,6916703,901057.0,0.03,Listed,,AustralianSuper,0.023342206735444855
+Socially Aware,Equity,Molson Coors Beverage,,B067BM3,840852.0,0.03,Listed,,AustralianSuper,0.02178257448520158
+Socially Aware,Equity,Moncler Spa,,BGLP232,1304322.0,0.04,Listed,,AustralianSuper,0.03378893208042211
+Socially Aware,Equity,Monster Beverage,,BZ07BW4,2119585.0,0.07,Listed,,AustralianSuper,0.05490861428671869
+Socially Aware,Equity,Morgan Stanley,,2262314,4837875.0,0.15,Listed,,AustralianSuper,0.12532689764381197
+Socially Aware,Equity,Motorola Solutions,,B5BKPQ4,5610012.0,0.18,Listed,,AustralianSuper,0.14532938525789874
+Socially Aware,Equity,Natera,,BYQRG48,724675.0,0.02,Listed,,AustralianSuper,0.018772967377211985
+Socially Aware,Equity,NAB,,6624608,54355170.0,1.7,Listed,,AustralianSuper,1.4080902931559824
+Socially Aware,Equity,Natwest,,BM8PJY7,4227154.0,0.13,Listed,,AustralianSuper,0.10950594975741008
+Socially Aware,Equity,Nestle Sa,,7123870,3440715.0,0.11,Listed,,AustralianSuper,0.0891329636723827
+Socially Aware,Equity,Netapp,,2630643,1227625.0,0.04,Listed,,AustralianSuper,0.031802068618966936
+Socially Aware,Equity,Netease,,KYG6427A1022,813605.0,0.03,Listed,,AustralianSuper,0.02107673111799987
+Socially Aware,Equity,Netflix,,2857817,14220942.0,0.44,Listed,,AustralianSuper,0.3683986342004675
+Socially Aware,Equity,Newmont,,BRDVMB3,222841.0,0.01,Listed,,AustralianSuper,0.005772776518170623
+Socially Aware,Equity,Newmont,,2636607,1768401.0,0.06,Listed,,AustralianSuper,0.04581106604040301
+Socially Aware,Equity,Next,,3208986,1476263.0,0.05,Listed,,AustralianSuper,0.03824312573110028
+Socially Aware,Equity,Nextdc,,B5LMKP4,15403174.0,0.48,Listed,,AustralianSuper,0.39902478077416753
+Socially Aware,Equity,Nextera Energy,,2328915,1168935.0,0.04,Listed,,AustralianSuper,0.03028168299041818
+Socially Aware,Equity,Nintendo,,6639550,4982902.0,0.16,Listed,,AustralianSuper,0.12908387441245298
+Socially Aware,Equity,Nippon Yusen Kk,,6643960,2559834.0,0.08,Listed,,AustralianSuper,0.0663134234975376
+Socially Aware,Equity,Nokia Oyj,,5902941,1043214.0,0.03,Listed,,AustralianSuper,0.02702483511843354
+Socially Aware,Equity,Norsk Hydro Asa,,B11HK39,2177155.0,0.07,Listed,,AustralianSuper,0.056399985911110444
+Socially Aware,Equity,Northern Star Resources,,6717456,582880.0,0.02,Listed,,AustralianSuper,0.015099716734852619
+Socially Aware,Equity,Northrop Grumman,,2648806,2594484.0,0.08,Listed,,AustralianSuper,0.06721104425114494
+Socially Aware,Equity,Novartis Ag,,7103065,5180728.0,0.16,Listed,,AustralianSuper,0.13420862832884906
+Socially Aware,Equity,Novo Nordisk A/S,,BP6KMJ1,2051451.0,0.06,Listed,,AustralianSuper,0.05314357843026034
+Socially Aware,Equity,Nu /Cayman Islands,,BN6NP19,2440699.0,0.08,Listed,,AustralianSuper,0.06322718833214051
+Socially Aware,Equity,Nvidia,,2379504,41175744.0,1.29,Listed,,AustralianSuper,1.0666725067712177
+Socially Aware,Equity,Old Dominion Freight Line,,2656423,2236741.0,0.07,Listed,,AustralianSuper,0.057943582742984806
+Socially Aware,Equity,Omnicom,,2279303,734299.0,0.02,Listed,,AustralianSuper,0.019022280570075392
+Socially Aware,Equity,Ono Pharmaceutical,,6660107,1311992.0,0.04,Listed,,AustralianSuper,0.033987626198175885
+Socially Aware,Equity,Ooredoo Qpsc,,6158174,1250041.0,0.04,Listed,,AustralianSuper,0.032382763187880706
+Socially Aware,Equity,Oracle,,2661568,1473043.0,0.05,Listed,,AustralianSuper,0.03815971046914889
+Socially Aware,Equity,Orica,,6458001,20509791.0,0.64,Listed,,AustralianSuper,0.5313135369047312
+Socially Aware,Equity,Orora,,BH4TCW7,57538.0,0.0,Listed,,AustralianSuper,0.0014905426528444108
+Socially Aware,Equity,Otis Worldwide,,BK531S8,1041038.0,0.03,Listed,,AustralianSuper,0.026968465053214218
+Socially Aware,Equity,Otsuka,,6267058,818843.0,0.03,Listed,,AustralianSuper,0.02121242339815558
+Socially Aware,Equity,Owens Corning,,B1FW7Q2,1147456.0,0.04,Listed,,AustralianSuper,0.029725261744625052
+Socially Aware,Equity,Palantir Technologies,,BN78DQ4,1215202.0,0.04,Listed,,AustralianSuper,0.031480246321071874
+Socially Aware,Equity,Parker-Hannifin,,2671501,4615046.0,0.14,Listed,,AustralianSuper,0.11955443198997161
+Socially Aware,Equity,Pdd,,BYVW0F7,4416229.0,0.14,Listed,,AustralianSuper,0.11440400586096872
+Socially Aware,Equity,People'S Insurance Company Of China,,B8RZJZ1,917132.0,0.03,Listed,,AustralianSuper,0.023758635411180437
+Socially Aware,Equity,Pepsico,,2681511,1749490.0,0.05,Listed,,AustralianSuper,0.04532116976128416
+Socially Aware,Equity,Pernod Ricard Sa,,4682329,1533999.0,0.05,Listed,,AustralianSuper,0.03973879764539388
+Socially Aware,Equity,Perseus Mining,,B02FBC1,105220.0,0.0,Listed,,AustralianSuper,0.0027257620691071792
+Socially Aware,Equity,Petronet Lng,,B00KT68,1986323.0,0.06,Listed,,AustralianSuper,0.05145641408853051
+Socially Aware,Equity,Pfizer,,2684703,863661.0,0.03,Listed,,AustralianSuper,0.02237344986093115
+Socially Aware,Equity,Phoenix,,BGXQNP2,896841.0,0.03,Listed,,AustralianSuper,0.023232989734082415
+Socially Aware,Equity,Picc Property And Casualty,,6706250,896669.0,0.03,Listed,,AustralianSuper,0.023228534012015446
+Socially Aware,Equity,Pilbara Minerals,,B2368L5,7821282.0,0.24,Listed,,AustralianSuper,0.2026131325545594
+Socially Aware,Equity,Pinnacle Investment Management,,BD0F7H1,85522.0,0.0,Listed,,AustralianSuper,0.002215478270995858
+Socially Aware,Equity,Power Of Canada,,2697701,1965598.0,0.06,Listed,,AustralianSuper,0.05091952548482165
+Socially Aware,Equity,Power Finance,,B1S7225,944128.0,0.03,Listed,,AustralianSuper,0.024457976532807672
+Socially Aware,Equity,Power Grid Of India,,B233HS6,1249941.0,0.04,Listed,,AustralianSuper,0.032380172651795255
+Socially Aware,Equity,Powszechna Kasa Oszczednosci Bank Polski Sa,,B03NGS5,995896.0,0.03,Listed,,AustralianSuper,0.025799045253521793
+Socially Aware,Equity,Premier Investments,,6699781,4557384.0,0.14,Listed,,AustralianSuper,0.11806067707238123
+Socially Aware,Equity,Principal Financial,,2803014,1060853.0,0.03,Listed,,AustralianSuper,0.02748177977854551
+Socially Aware,Equity,Pro Medicus,,6292782,350956.0,0.01,Listed,,AustralianSuper,0.009091641824040859
+Socially Aware,Equity,Procter & Gamble,,2704407,4250128.0,0.13,Listed,,AustralianSuper,0.11010109951768066
+Socially Aware,Equity,Progressive,,2705024,4784469.0,0.15,Listed,,AustralianSuper,0.12394339594201823
+Socially Aware,Equity,Prudential Financial,,2819118,1773637.0,0.06,Listed,,AustralianSuper,0.04594670650983701
+Socially Aware,Equity,Pultegroup,,2708841,1341355.0,0.04,Listed,,AustralianSuper,0.034748285308945644
+Socially Aware,Equity,Qantas Airways,,6710347,368257.0,0.01,Listed,,AustralianSuper,0.009539830472184018
+Socially Aware,Equity,Qbe Insurance,,6715740,27012356.0,0.85,Listed,,AustralianSuper,0.6997648297093683
+Socially Aware,Equity,Qube,,B1L4BC6,171542.0,0.01,Listed,,AustralianSuper,0.004443857411697242
+Socially Aware,Equity,Ramsay Health Care,,6041995,155057.0,0.0,Listed,,AustralianSuper,0.004016807538011328
+Socially Aware,Equity,Raytheon Technologies,,BM5M5Y3,3292390.0,0.1,Listed,,AustralianSuper,0.08529055102364366
+Socially Aware,Equity,Rea,,6198578,280850.0,0.01,Listed,,AustralianSuper,0.0072755205959774884
+Socially Aware,Equity,Rec,,B2Q7WL3,366432.0,0.01,Listed,,AustralianSuper,0.009492553188624615
+Socially Aware,Equity,Recruit,,BQRRZ00,1795678.0,0.06,Listed,,AustralianSuper,0.046517686568430354
+Socially Aware,Equity,Reddit,,BMVNLY2,1469700.0,0.05,Listed,,AustralianSuper,0.038073108847812405
+Socially Aware,Equity,Reece,,6728801,8223194.0,0.26,Listed,,AustralianSuper,0.21302480794630055
+Socially Aware,Equity,Reliance Worldwide,,BD1DM79,7629660.0,0.24,Listed,,AustralianSuper,0.1976490954969044
+Socially Aware,Equity,Republic Services,,2262530,735465.0,0.02,Listed,,AustralianSuper,0.019052486220831704
+Socially Aware,Equity,Resmed,,2732903,960469.0,0.03,Listed,,AustralianSuper,0.02488129603453054
+Socially Aware,Equity,Resmed,,6221667,23361861.0,0.73,Listed,,AustralianSuper,0.6051974394369352
+Socially Aware,Equity,Rio Tinto,,6220103,901089.0,0.03,Listed,,AustralianSuper,0.0233430357069922
+Socially Aware,Equity,Rio Tinto,,0718875,1037749.0,0.03,Listed,,AustralianSuper,0.026883262321363868
+Socially Aware,Equity,Rivian Automotive,,BL98841,839717.0,0.03,Listed,,AustralianSuper,0.02175317190063176
+Socially Aware,Equity,Roblox,,BMWBC20,2292075.0,0.07,Listed,,AustralianSuper,0.059377029980505966
+Socially Aware,Equity,Roche Ag,,7110388,6042841.0,0.19,Listed,,AustralianSuper,0.1565419766911775
+Socially Aware,Equity,Rolls-Royce,,B63H849,2015998.0,0.06,Listed,,AustralianSuper,0.05222515567188687
+Socially Aware,Equity,Ross Stores,,2746711,1330993.0,0.04,Listed,,AustralianSuper,0.03447985395977164
+Socially Aware,Equity,Royal Caribbean Cruises,,2754907,1503342.0,0.05,Listed,,AustralianSuper,0.03894461699767844
+Socially Aware,Equity,S&P Global,,BYV2325,2088872.0,0.07,Listed,,AustralianSuper,0.054112982938795406
+Socially Aware,Equity,Safran Sa,,B058TZ6,3470153.0,0.11,Listed,,AustralianSuper,0.08989556568521656
+Socially Aware,Equity,Sage,,B8C3BL0,1179225.0,0.04,Listed,,AustralianSuper,0.030548249153610662
+Socially Aware,Equity,Salesforce,,2310525,1233840.0,0.04,Listed,,AustralianSuper,0.03196307043667746
+Socially Aware,Equity,Samsara,,BPK3058,1673470.0,0.05,Listed,,AustralianSuper,0.04335184422912746
+Socially Aware,Equity,Samsung Biologics,,BYNJCV6,784471.0,0.02,Listed,,AustralianSuper,0.020322004334865786
+Socially Aware,Equity,Samsung Electronics,,6771720,8267304.0,0.26,Listed,,AustralianSuper,0.21416749341359115
+Socially Aware,Equity,Samsung Fire & Marine Insurance,,6155250,1021474.0,0.03,Listed,,AustralianSuper,0.026461652573457395
+Socially Aware,Equity,Sandfire Resources,,6739739,12669439.0,0.4,Listed,,AustralianSuper,0.328206389118677
+Socially Aware,Equity,Sap Se,,4846288,1697086.0,0.05,Listed,,AustralianSuper,0.04396362523106659
+Socially Aware,Equity,Scb X Pcl,,BPH0717,825552.0,0.03,Listed,,AustralianSuper,0.021386222464128208
+Socially Aware,Property,Scentre Group,,BLZH0Z7,419613.0,0.01,Listed,,AustralianSuper,0.010870226184226105
+Socially Aware,Equity,Schneider Electric Se,,4834108,5056413.0,0.16,Listed,,AustralianSuper,0.13098820339422582
+Socially Aware,Equity,Sea,,BYWD7L4,2788639.0,0.09,Listed,,AustralianSuper,0.07224069958784428
+Socially Aware,Equity,Seagate Technology,,BKVD2N4,3924217.0,0.12,Listed,,AustralianSuper,0.10165825745623996
+Socially Aware,Equity,Seek,,B0767Y3,194454.0,0.01,Listed,,AustralianSuper,0.005037401039594824
+Socially Aware,Equity,Servicenow,,B80NXX8,10366021.0,0.32,Listed,,AustralianSuper,0.26853551462999875
+Socially Aware,Equity,Sherwin-Williams,,2804211,3941973.0,0.12,Listed,,AustralianSuper,0.1021182330435719
+Socially Aware,Equity,Shimadzu,,6804369,1028857.0,0.03,Listed,,AustralianSuper,0.026652911852645938
+Socially Aware,Equity,Shinhan Financial,,6397502,3250493.0,0.1,Listed,,AustralianSuper,0.084205194119924
+Socially Aware,Equity,Siemens Ag,,5727973,2602252.0,0.08,Listed,,AustralianSuper,0.06741227709426247
+Socially Aware,Equity,Sigma Healthcare,,BF13K02,390984.0,0.01,Listed,,AustralianSuper,0.010128581608323526
+Socially Aware,Equity,Sika Ag,,BF2DSG3,2090156.0,0.07,Listed,,AustralianSuper,0.05414624542213254
+Socially Aware,Equity,Singapore Airlines,,6811734,1179987.0,0.04,Listed,,AustralianSuper,0.030567989038581763
+Socially Aware,Equity,Sinotruk Hong Kong,,B296ZH4,420398.0,0.01,Listed,,AustralianSuper,0.010890561892496865
+Socially Aware,Equity,Sitc International,,B61X7R5,714771.0,0.02,Listed,,AustralianSuper,0.01851640068330933
+Socially Aware,Equity,Siteminder,,BLH35X6,5934749.0,0.19,Listed,,AustralianSuper,0.1537418144256963
+Socially Aware,Equity,Sk Hynix,,6450267,1025409.0,0.03,Listed,,AustralianSuper,0.026563590168419728
+Socially Aware,Equity,Sk Square,,BMG3GS6,2076387.0,0.06,Listed,,AustralianSuper,0.05378955450852736
+Socially Aware,Equity,Smurfit Westrock,,BRK49M5,1630510.0,0.05,Listed,,AustralianSuper,0.042238949926819494
+Socially Aware,Equity,Sonic Healthcare,,6821120,291635.0,0.01,Listed,,AustralianSuper,0.007554909912792931
+Socially Aware,Equity,Sony,,6821506,934232.0,0.03,Listed,,AustralianSuper,0.02420161708179185
+Socially Aware,Equity,Spotify Technology Sa,,BFZ1K46,3958727.0,0.12,Listed,,AustralianSuper,0.10255225145932767
+Socially Aware,Equity,Standard Chartered,,408284,715360.0,0.02,Listed,,AustralianSuper,0.01853165894085261
+Socially Aware,Equity,State Bank Of India,,BSQCB24,1515090.0,0.05,Listed,,AustralianSuper,0.03924895317699673
+Socially Aware,Equity,Steadfast,,BCT5FD7,14752009.0,0.46,Listed,,AustralianSuper,0.3821561164733675
+Socially Aware,Equity,Steel Dynamics,,2849472,1718170.0,0.05,Listed,,AustralianSuper,0.0445098138593222
+Socially Aware,Equity,Stellantis Nv,,BMD8KX7,1718806.0,0.05,Listed,,AustralianSuper,0.044526289668825644
+Socially Aware,Equity,Steris,,BFY8C75,1773493.0,0.06,Listed,,AustralianSuper,0.04594297613787397
+Socially Aware,Property,Stockland Corporation Ltd,,6850856,289930.0,0.01,Listed,,AustralianSuper,0.007510741272536063
+Socially Aware,Equity,Stryker,,2853688,1564435.0,0.05,Listed,,AustralianSuper,0.04052725320836049
+Socially Aware,Equity,Subaru,,6356406,2205150.0,0.07,Listed,,AustralianSuper,0.057125206488231293
+Socially Aware,Equity,Sumitomo Mitsui Financial,,6563024,3149247.0,0.1,Listed,,AustralianSuper,0.08158237995485247
+Socially Aware,Equity,Sun Life Financial,,2566124,1425602.0,0.04,Listed,,AustralianSuper,0.036930734244852055
+Socially Aware,Equity,Sun Pharmaceutical Industries,,6582483,1360482.0,0.04,Listed,,AustralianSuper,0.03524377714600906
+Socially Aware,Equity,Suncorp,,6585084,530243.0,0.02,Listed,,AustralianSuper,0.01373613625555596
+Socially Aware,Equity,Swire Pacific,,6867748,888481.0,0.03,Listed,,AustralianSuper,0.023016420917339058
+Socially Aware,Equity,Synchrony Financial,,BP96PS6,2368020.0,0.07,Listed,,AustralianSuper,0.06134441261059858
+Socially Aware,Equity,TSMC,,2113382,25701922.0,0.8,Listed,,AustralianSuper,0.6658175640634036
+Socially Aware,Equity,TSMC,,6889106,8139251.0,0.25,Listed,,AustralianSuper,0.21085023424009386
+Socially Aware,Equity,Technologyone,,6302410,279864.0,0.01,Listed,,AustralianSuper,0.007249977910174983
+Socially Aware,Equity,Telefonica Brasil Sa,,B6XFBX3,1106248.0,0.03,Listed,,AustralianSuper,0.028657753634534107
+Socially Aware,Equity,Telix Pharmaceuticals,,BF7M092,160316.0,0.01,Listed,,AustralianSuper,0.004153043830744978
+Socially Aware,Equity,Telstra,,6087289,20458603.0,0.64,Listed,,AustralianSuper,0.5299874932933125
+Socially Aware,Equity,Tenaris Sa,,BMHVLR3,1602575.0,0.05,Listed,,AustralianSuper,0.04151528367134991
+Socially Aware,Equity,Tencent,,BMMV2K8,6993166.0,0.22,Listed,,AustralianSuper,0.18116048874520033
+Socially Aware,Equity,Tesco,,BLGZ986,1737158.0,0.05,Listed,,AustralianSuper,0.04500170485122685
+Socially Aware,Equity,Tesla,,B616C79,1422376.0,0.04,Listed,,AustralianSuper,0.036847163550735536
+Socially Aware,Equity,Teva Pharmaceutical Industries,,2883878,1952381.0,0.06,Listed,,AustralianSuper,0.050577134330408134
+Socially Aware,Equity,Texas Instruments,,2885409,2279441.0,0.07,Listed,,AustralianSuper,0.059049741651470616
+Socially Aware,Equity,Thermo Fisher Scientific,,2886907,4297975.0,0.13,Listed,,AustralianSuper,0.11134059331848441
+Socially Aware,Equity,Tim Sa,,BN71RB6,1213892.0,0.04,Listed,,AustralianSuper,0.03144631029835252
+Socially Aware,Equity,Titan Company,,6139340,1778564.0,0.06,Listed,,AustralianSuper,0.046074342222766976
+Socially Aware,Equity,Tjx Companies,,2989301,872683.0,0.03,Listed,,AustralianSuper,0.022607168026560168
+Socially Aware,Equity,T-Mobile Us,,B94Q9V0,1186665.0,0.04,Listed,,AustralianSuper,0.030740985038367908
+Socially Aware,Equity,Toast,,BP6D7B7,679765.0,0.02,Listed,,AustralianSuper,0.017609557621237806
+Socially Aware,Equity,Toyota Motor,,6900643,720150.0,0.02,Listed,,AustralianSuper,0.018655745619345517
+Socially Aware,Equity,Toyota Tsusho,,6900580,1252714.0,0.04,Listed,,AustralianSuper,0.03245200821744469
+Socially Aware,Equity,Tpg Telecom,,BMB2257,8598273.0,0.27,Listed,,AustralianSuper,0.22274136479023374
+Socially Aware,Equity,Trade Desk,,BD8FDD1,2151905.0,0.07,Listed,,AustralianSuper,0.05574587554953511
+Socially Aware,Equity,Tradeweb Markets,,BJXMVK2,1396158.0,0.04,Listed,,AustralianSuper,0.036167976799853084
+Socially Aware,Equity,Trane Technologies,,BK9ZQ96,3325835.0,0.1,Listed,,AustralianSuper,0.08615695581742136
+Socially Aware,Infrastructure,Transurban Group,,6200882,20742909.0,0.65,Listed,,AustralianSuper,0.5373525428164031
+Socially Aware,Equity,Travelex International,,MFP46EU,0.0,,Listed,,AustralianSuper,0.0
+Socially Aware,Equity,Treasury Wine Estates,,B61JC67,143597.0,0.0,Listed,,AustralianSuper,0.0037199321026191185
+Socially Aware,Equity,Tripcom,,BNYK8H9,1457087.0,0.05,Listed,,AustralianSuper,0.037746364531355
+Socially Aware,Equity,Turkiye Is Bankasi As,,B03MYS8,151623.0,0.0,Listed,,AustralianSuper,0.003927848528837083
+Socially Aware,Equity,Tyson Foods,,2909730,1396702.0,0.04,Listed,,AustralianSuper,0.03618206931615792
+Socially Aware,Equity,Ulta Beauty,,B28TS42,1553145.0,0.05,Listed,,AustralianSuper,0.040234781684313534
+Socially Aware,Equity,Unicredit Spa,,BYMXPS7,873610.0,0.03,Listed,,AustralianSuper,0.022631182296072257
+Socially Aware,Equity,Unilever,,B10RZP7,4069242.0,0.13,Listed,,AustralianSuper,0.10541518241415926
+Socially Aware,Equity,Union Bank Of India,,6579634,896356.0,0.03,Listed,,AustralianSuper,0.023220425634068
+Socially Aware,Equity,United Airlines,,B4QG225,2741636.0,0.09,Listed,,AustralianSuper,0.0710230699116017
+Socially Aware,Equity,United Overseas Bank,,6916781,2928010.0,0.09,Listed,,AustralianSuper,0.07585115563549241
+Socially Aware,Equity,United Parcel Service,,2517382,999995.0,0.03,Listed,,AustralianSuper,0.025905231327664265
+Socially Aware,Equity,United Rentals,,2134781,1831653.0,0.06,Listed,,AustralianSuper,0.047449631925169856
+Socially Aware,Equity,United Therapeutics,,2430412,1288391.0,0.04,Listed,,AustralianSuper,0.033376233776649576
+Socially Aware,Equity,Unitedhealth,,2917766,6766660.0,0.21,Listed,,AustralianSuper,0.17529276907949806
+Socially Aware,Equity,Upm-Kymmene Oyj,,5051252,1137090.0,0.04,Listed,,AustralianSuper,0.029456726774007628
+Socially Aware,Equity,Us Bancorp,,2736035,749668.0,0.02,Listed,,AustralianSuper,0.01942042006104772
+Socially Aware,Equity,Valero Energy,,2041364,4052735.0,0.13,Listed,,AustralianSuper,0.10498756262253454
+Socially Aware,Equity,Verizon Communications,,2090571,1611511.0,0.05,Listed,,AustralianSuper,0.04174677397594544
+Socially Aware,Equity,Vertex Pharmaceuticals,,2931034,1627838.0,0.05,Listed,,AustralianSuper,0.04216973080261635
+Socially Aware,Property,Vicinity Centres,,BY7QXS7,20950093.0,0.66,Listed,,AustralianSuper,0.5427197190996753
+Socially Aware,Equity,Visa,,B2PZN04,8157499.0,0.26,Listed,,AustralianSuper,0.21132295526496625
+Socially Aware,Equity,Vodafone,,BH4HKS3,3182696.0,0.1,Listed,,AustralianSuper,0.0824488883700736
+Socially Aware,Equity,Volvo Ab,,B1QH830,734086.0,0.02,Listed,,AustralianSuper,0.019016762728213392
+Socially Aware,Equity,Walmart,,2936921,2030298.0,0.06,Listed,,AustralianSuper,0.05259560233210576
+Socially Aware,Equity,Walt Disney,,2270726,1408004.0,0.04,Listed,,AustralianSuper,0.03647485170453511
+Socially Aware,Equity,Want Want China,,B2Q14Z3,721471.0,0.02,Listed,,AustralianSuper,0.01868996660103427
+Socially Aware,Equity,Waste Connections,,BYVG1F6,6512476.0,0.2,Listed,,AustralianSuper,0.16870804083606583
+Socially Aware,Equity,Wec Energy,,BYY8XK8,1899215.0,0.06,Listed,,AustralianSuper,0.04919984991521946
+Socially Aware,Equity,Wells Fargo &,,2649100,1658292.0,0.05,Listed,,AustralianSuper,0.04295865266207834
+Socially Aware,Equity,Wesfarmers,,6948836,42293460.0,1.32,Listed,,AustralianSuper,1.0956273430840309
+Socially Aware,Equity,Westinghouse Air Brake Technologies,,2955733,2549889.0,0.08,Listed,,AustralianSuper,0.06605579468383992
+Socially Aware,Equity,Westpac,,6076146,48044980.0,1.5,Listed,,AustralianSuper,1.2446225441457237
+Socially Aware,Equity,Wh,,BLLHKZ1,897149.0,0.03,Listed,,AustralianSuper,0.02324096858522559
+Socially Aware,Equity,Wipro,,6206051,731857.0,0.02,Listed,,AustralianSuper,0.018959019678868778
+Socially Aware,Equity,Wisetech Global,,BZ8GX83,462759.0,0.01,Listed,,AustralianSuper,0.011987938883653005
+Socially Aware,Equity,Wolters Kluwer Nv,,5671519,1472115.0,0.05,Listed,,AustralianSuper,0.038135670294275954
+Socially Aware,Equity,Woolworths,,6981239,8221603.0,0.26,Listed,,AustralianSuper,0.21298359251718108
+Socially Aware,Equity,Worley,,6562474,145843.0,0.0,Listed,,AustralianSuper,0.0037781155430982546
+Socially Aware,Equity,Ww Grainger,,2380863,1854108.0,0.06,Listed,,AustralianSuper,0.048031336803156945
+Socially Aware,Equity,Xero,,B8P4LP4,24619072.0,0.77,Listed,,AustralianSuper,0.6377659440621424
+Socially Aware,Equity,Xero,,BVLH3Z2,1900008.0,0.06,Listed,,AustralianSuper,0.049220392866377055
+Socially Aware,Equity,Yangzijiang Shipbuilding,,B1VT035,767015.0,0.02,Listed,,AustralianSuper,0.019869800355790182
+Socially Aware,Equity,Yonderland Bv - Class B Ord Shares,,MFW14EU,0.0,,Listed,,AustralianSuper,0.0
+Socially Aware,Equity,Yuanta Financial,,6424110,1275657.0,0.04,Listed,,AustralianSuper,0.03304635491152877
+Socially Aware,Equity,Yum China,,BYW4289,755765.0,0.02,Listed,,AustralianSuper,0.019578365046177413
+Socially Aware,Equity,Yum! Brands,,2098876,329874.0,0.01,Listed,,AustralianSuper,0.008545505006506953
+Socially Aware,Equity,Zhejiang Expressway,,6990763,765322.0,0.02,Listed,,AustralianSuper,0.01982594257986357
+Socially Aware,Equity,Zhongsheng,,B633D97,212838.0,0.01,Listed,,AustralianSuper,0.005513645193543374
+Socially Aware,Property,1200 W Carroll,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,1300 W Carroll,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Abode,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Actis,,,1354.0,0.0,Unlisted,Externally,AustralianSuper,3.50758585969504e-05
+Socially Aware,Equity,Advent,,,4188587.0,0.13,Unlisted,Externally,AustralianSuper,0.1085068577053358
+Socially Aware,Equity,Affinity Equity Partners,,,4879331.0,0.15,Unlisted,Externally,AustralianSuper,0.1264008302833948
+Socially Aware,Equity,Airtree,,,4928950.0,0.15,Unlisted,Externally,AustralianSuper,0.1276862283836327
+Socially Aware,Property,Ala Moana Shopping Centre,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,ALLP JVIM,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Assemble BSB,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,ASSEMBLE HOLDCO,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Assemble SRC,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Assemble TSK,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Assemble VSB,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Assemble WSF,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Athena Financial,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Ausgrid,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Barings,,,77.0,0.0,Unlisted,Externally,AustralianSuper,1.9947127857940775e-06
+Socially Aware,Property,Baseline LLC,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Bentham Asset Management,,,190.0,0.0,Unlisted,Externally,AustralianSuper,4.922018562349022e-06
+Socially Aware,Equity,Bgh Capital,,,3126589.0,0.1,Unlisted,Externally,AustralianSuper,0.08099541628861193
+Socially Aware,Equity,Blackbird Ventures,,,3770126.0,0.12,Unlisted,Externally,AustralianSuper,0.09766647449681405
+Socially Aware,Equity,Blackrock,,,1523417.0,0.05,Unlisted,Externally,AustralianSuper,0.03946466711683189
+Socially Aware,Equity,Blackstone,,,429052.0,0.01,Unlisted,Externally,AustralianSuper,0.011114746885331433
+Socially Aware,Property,Blackstone,,,1339.0,0.0,Unlisted,Externally,AustralianSuper,3.468727818413337e-05
+Socially Aware,Equity,Brandon Capital Partners,,,1361911.0,0.04,Unlisted,Externally,AustralianSuper,0.0352807959066701
+Socially Aware,Infrastructure,Brookfield,,,16072442.0,0.5,Unlisted,Externally,AustralianSuper,0.416362409822516
+Socially Aware,Property,Canada Water,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Catalyst Investment Managers,,,9420.0,0.0,Unlisted,Externally,AustralianSuper,0.0002440284992490936
+Socially Aware,Property,Centuria,,,38311.0,0.0,Unlisted,Externally,AustralianSuper,0.0009924602796955442
+Socially Aware,Property,Charter Hall,,,261953.0,0.01,Unlisted,Externally,AustralianSuper,0.006785986991910596
+Socially Aware,Equity,Cinven,,,9748381.0,0.3,Unlisted,Externally,AustralianSuper,0.2525353275518448
+Socially Aware,Infrastructure,Cirion,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Continuity Capital Private Equity,,,13185.0,0.0,Unlisted,Externally,AustralianSuper,0.0003415621828661677
+Socially Aware,Property,Craigieburn Logistics Estate,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Databank,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Dexus,,,6439.0,0.0,Unlisted,Externally,AustralianSuper,0.00016680461854192292
+Socially Aware,Property,Fitzroy Gas Works BTR,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Fitzroy Gas Works BTS,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Foresight,,,1097976.0,0.03,Unlisted,Externally,AustralianSuper,0.028443464489545944
+Socially Aware,Equity,Frontier,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Generate Capital,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Goldman Sachs,,,7063.0,0.0,Unlisted,Externally,AustralianSuper,0.00018296956371511127
+Socially Aware,Property,GPT,,,1260626.0,0.04,Unlisted,Externally,AustralianSuper,0.03265697143252525
+Socially Aware,Equity,Hamilton Lane,,,16311246.0,0.51,Unlisted,Externally,AustralianSuper,0.4225487136160065
+Socially Aware,Equity,Harbourvest Partners,,,748.0,0.0,Unlisted,Externally,AustralianSuper,1.9377209919142464e-05
+Socially Aware,Property,Houston Center,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Ifm Investors,,,313795.0,0.01,Unlisted,Externally,AustralianSuper,0.008128972709327954
+Socially Aware,Infrastructure,IFM Investors,,,159162765.0,4.98,Unlisted,Externally,AustralianSuper,4.123168861919975
+Socially Aware,Infrastructure,Indara,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Industry Super F/P,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,ISPT,,,38191391.0,1.19,Unlisted,Externally,AustralianSuper,0.989361765389102
+Socially Aware,Property,Kings Cross Estate,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Kingswood,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,KKR,,,3569147.0,0.11,Unlisted,Externally,AustralianSuper,0.0924600409776438
+Socially Aware,Equity,Kps Capital Partners Lp,,,1076891.0,0.03,Unlisted,Externally,AustralianSuper,0.027897249955929477
+Socially Aware,Property,Lend Lease,,,1478812.0,0.05,Unlisted,Externally,AustralianSuper,0.03830915849591832
+Socially Aware,Equity,Leonard Green & Partners,,,14500537.0,0.45,Unlisted,Externally,AustralianSuper,0.3756416435685726
+Socially Aware,Property,M7 Real Estate,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Macquarie Infrastructure,,,367493.0,0.01,Unlisted,Externally,AustralianSuper,0.009520038776491206
+Socially Aware,Equity,Marathon Asset Management,,,434.0,0.0,Unlisted,Externally,AustralianSuper,1.1242926610839345e-05
+Socially Aware,Equity,Marron,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Alternatives,Marron Group Holdings Pty Ltd Unissued Warrants,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Mascot Industrial,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Mesirow Financial,,,41551.0,0.0,Unlisted,Externally,AustralianSuper,0.0010763936488640221
+Socially Aware,Equity,Montreux Equity Partners,,,12009.0,0.0,Unlisted,Externally,AustralianSuper,0.0003110974785013126
+Socially Aware,Property,Moorebank Logistics Estate,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Morgan Stanley,,,37648.0,0.0,Unlisted,Externally,AustralianSuper,0.0009752850254490314
+Socially Aware,Equity,New Mountain Capital,,,7057052.0,0.22,Unlisted,Externally,AustralianSuper,0.1828154786287489
+Socially Aware,Infrastructure,NIIF,,,2045665.0,0.06,Unlisted,Externally,AustralianSuper,0.052993690012356376
+Socially Aware,Equity,Northgate Capital,,,106161.0,0.0,Unlisted,Externally,AustralianSuper,0.0027501390136712343
+Socially Aware,Infrastructure,NSW Ports,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Oak Hill,,,131349.0,0.0,Unlisted,Externally,AustralianSuper,0.0034026432428735875
+Socially Aware,Equity,Oak Hill Capital,,,2921738.0,0.09,Unlisted,Externally,AustralianSuper,0.07568867721221319
+Socially Aware,Infrastructure,Palisade Investment Partners Limited,,,615760.0,0.02,Unlisted,Externally,AustralianSuper,0.015951484999747547
+Socially Aware,Equity,Pantheon Ventures,,,2327.0,0.0,Unlisted,Externally,AustralianSuper,6.028177470834828e-05
+Socially Aware,Infrastructure,Peel Ports,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Perkinelmer Topco Lp And Perkinelmer Topco Gp Llc,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Perpetual,,,7645507.0,0.24,Unlisted,Externally,AustralianSuper,0.19805961775036518
+Socially Aware,Infrastructure,Perth Airport,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Perth Airport Property Fund (PAPF),,,3030995.0,0.09,Unlisted,Externally,AustralianSuper,0.07851901922308986
+Socially Aware,Equity,Platinum Equity,,,5663544.0,0.18,Unlisted,Externally,AustralianSuper,0.14671615103516014
+Socially Aware,Equity,Pomona Capital,,,642.0,0.0,Unlisted,Externally,AustralianSuper,1.66312416685688e-05
+Socially Aware,Property,QIC,,,10495394.0,0.33,Unlisted,Externally,AustralianSuper,0.27188696887982394
+Socially Aware,Equity,Qic Private Capital,,,2370138.0,0.07,Unlisted,Externally,AustralianSuper,0.061399280164888353
+Socially Aware,Infrastructure,Quinbrook,,,1063041.0,0.03,Unlisted,Externally,AustralianSuper,0.027538460708095087
+Socially Aware,Equity,Roark Capital,,,6045490.0,0.19,Unlisted,Externally,AustralianSuper,0.156610599992081
+Socially Aware,Equity,Roc Capital,,,8754.0,0.0,Unlisted,Externally,AustralianSuper,0.00022677552892001756
+Socially Aware,Property,Russell Investments,,,10007.0,0.0,Unlisted,Externally,AustralianSuper,0.00025923494607066664
+Socially Aware,Equity,Silver Lake,,,11500866.0,0.36,Unlisted,Externally,AustralianSuper,0.29793408386888814
+Socially Aware,Equity,Snow Phipps,,,19524.0,0.0,Unlisted,Externally,AustralianSuper,0.0005057762653226437
+Socially Aware,Equity,Square Peg Capital,,,2475771.0,0.08,Unlisted,Externally,AustralianSuper,0.06413574114802842
+Socially Aware,Equity,Stafford Capital Partners,,,33711.0,0.0,Unlisted,Externally,AustralianSuper,0.0008732956197649888
+Socially Aware,Equity,Stone Point Capital Llc,,,594652.0,0.02,Unlisted,Externally,AustralianSuper,0.015404674642831422
+Socially Aware,Infrastructure,Stonepeak,,,2757970.0,0.09,Unlisted,Externally,AustralianSuper,0.07144620807579859
+Socially Aware,Infrastructure,Sydney Airport,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Th Lee,,,5208423.0,0.16,Unlisted,Externally,AustralianSuper,0.13492607729771358
+Socially Aware,Equity,Tpg,,,26108929.0,0.82,Unlisted,Externally,AustralianSuper,0.6763612272686984
+Socially Aware,Infrastructure,Transurban Chesapeake,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Transurban Queensland,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Infrastructure,Vantage EMEA,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Vencap International,,,309188.0,0.01,Unlisted,Externally,AustralianSuper,0.008009626711871418
+Socially Aware,Equity,Vermont Aus Holdco,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Virtual Communities,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Equity,Vista Equity Partners,,,7459495.0,0.23,Unlisted,Externally,AustralianSuper,0.19324090976710376
+Socially Aware,Equity,Weathergage Capital Llc,,,435490.0,0.01,Unlisted,Externally,AustralianSuper,0.011281525598512504
+Socially Aware,Infrastructure,Westconnex,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Wiri NZ,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Wollert,,,,,Unlisted,Internally,AustralianSuper,
+Socially Aware,Property,Broadgate Estate,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Valad ( BREP Diversified Portfolio #1),,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Synergy,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Delphi Ventures Viii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Great Eagle - Dalian,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Columbia Sussex,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Chiswick Park,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,CityView,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Glenborough,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Barings,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Clover Fund Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Equity Office Properties,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Hilton Hawaiian Village Timeshare,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Bentham Asset Management,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Build Club,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ultra Bionics,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Quadron Business Park,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Airbnb,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ivo Ai,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"CB Co-Invest, LP",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Charles River Partnership Xiv Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Blackstone Real Estate Partners Europe III, LP",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Mbo Capital 3,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Marathon Asset Management,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Iceberg Quantum,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Wonder Studios London,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ahay Society,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Manyata,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Index,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,FREO Germany II Partners (SCA) SICAR,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Pomona Capital,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,SCJREP IV Fund,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Europa Emerging Eurpoe Fund,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Startmate Continuity Fund,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Catalyst Buyout Fund 2,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Enhance Labs,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Hall Technologies,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Untitled Spreadsheet,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Harbourvest Partners,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Forum European Realty Exempt III, LP",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Harrison Street Real Estate Partners II, LP",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ta Atlantic And Pacific Vi Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Citi Bank,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Juno - Blackbird Ventures 2022 Core Fund,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,One Future Sports,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Caligra,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Accel Growth Fund Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Five Mile Capital Partners II, LP",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Clarus Lifesciences Ii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Spaceduck,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Starwood Global Opportunity Fund VIII,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Lend Lease,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Forum Asia Realty Exempt III, LP",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,First Mile,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,More Good Days,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Cartesian,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Carlyle Asia Real Estate Partners II, LP",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"True North High Yield Investment Fund II, LLLC",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Walton Street Mexico Fund I, LP",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Assemble Technologies,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Clove Kitchen,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Aquila Space Technologies,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Spice Ai,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Dyno Projects,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,August Capital V Special Opportunities Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Magicbrief,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Kimia,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ravio Technologies,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Factor House,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Local Carbon,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Eesel,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Lava,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Zero2Ipo China Fund Ii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Cdh Fund Iv Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,New Enterprise Associates X Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Dcm Hybrid Rmb Fund Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Orbimed Private Investments Iv Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Trilingual,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Charles River Partnership Xiii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Kiki,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Maveron Equity Partners Iv Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Checkmate Savings,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Pantheon Ventures,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Keytone Ventures Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Floodgate Fund Iii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Unsloth Ai,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Opto Biosystems,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Treefrog Therapeutics Sas,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Dcm Vi Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Orbimed Asia Partners Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Kwetta,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Venrock Associates V Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Idg-Accel China Capital Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Foundation Capital Vi Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Us Venture Partners X Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Hony Capital Fund 2008 Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Redactive Software,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Wynnchurch,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Hyprlabs,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,L Capital Asia,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Operator Technologies Ai,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Fairhaven Capital Partners Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Redpoint Ventures Iv Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Adora,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Housatonic Equity Investors V Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,S2Search Australia,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,New Enterprise Associates Xi Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Felicis Ventures Ii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Tugboat Ventures Ii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Gridiron Capital Fund Ii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,L Capital 3,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"283 Queen Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Dexus,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Allogene Therapeutics,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Goldman Sachs,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Asklepios Biopharmaceutical,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,New Enterprise Associates 13 Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,L Capital Asia Ii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Roc Capital,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Vencap 10 Euro Class,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Vencap 10 Us Class,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Newfit Dallas,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Sv Life Sciences Fund V Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Vencap 11,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Gbs Bioventures Iv,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Montreux Equity Partners,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Assemble SRC,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Cirrus Media,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,August Capital V Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Exactech,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Founder Collective Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Shade Store Llc The,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Global Music Rights Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Anastasia Beverly Hills Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"7 National Circuit, Barton",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Snow Phipps,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Assemble VSB,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Assemble WSF,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Tanium,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"10 Missenden Road, Camperdown",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,General Catalyst V Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Maples Investments Ii Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Amneal Pharmaceuticals,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,705-711 Hay Street Mall,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"585 Reservoir Road, Prospect",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Frontier,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Peepul Capital Fund Iii Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"713-721 Hay Street Mall, Perth",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Leonardo Interactive,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Stafford Capital Partners,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Inventia Healthcare,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Morgan Stanley,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Koninklijke Dsm Nv,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Virtual Communities,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Centuria,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Au10Tix,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Mesirow Financial,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Comfort Healthcare (Cayman),,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Convey Health Solutions,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Great Sangsang,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Horizon Organic Dairy Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Market Track Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ramkhamhaeng Hospital Public,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"2 National Circuit, Barton",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Fitzroy Gas Works BTS,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Asp Global Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,General Catalyst V Supplemental Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Fitzroy Gas Works BTR,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Pushpay,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Milan Laser Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Vencap 12,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Dfj Growth Fund 2006 Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Pt Vidio Dot Com,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"31-35 Victoria Parade, Fitzroy",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Towngas Smart Energy,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Nothing Bundt Franchising Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Shinhan Financial,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Parfums De Coeur,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"6 National Circuit, Barton",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Abano Healthcare,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"2 Julius Avenue, North Ryde",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Hyundai Card,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ventora,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Project44 Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Hop Lun (Hong Kong),,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Athena Financial,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"150 Elizabeth Street, Brisbane",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Clarivate,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Augusta Sportswear,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"6-8 Julius Avenue, North Ryde",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Thatgamecompany,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ho Chi Minh City Development Joint Stock Commercial Bank,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Triplelift,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,M-Daq Pte,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Us Sports Camps,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Northgate Capital,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ifm Investors,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Age Of Learning,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Trumid Financial Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Soham,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Subway,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Kajabi Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Jamf,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"155 Queen Street, Brisbane",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Plaza Premium Lounge Management,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"1 Julius Avenue, North Ryde",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Oak Hill,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"744 Boundary Road, Truganina",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Applause App Quality,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"50 Lonsdale Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Rise Baking,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Barracuda Networks,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Integral Ad Science,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Securonix,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Servicemaster Opco Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Salsify,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ubase,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Dandenong  Works, Dandenong South VIC",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Laurent Bakery,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Zaxby’S Spe Franchisor Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"The Strand Arcade, 250 Elizabeth Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Centralsquare Technologies Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Dfj Fund Ix Continuation Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Jobkorea Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Hazeldene'S Chicken Farm,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Reliance Jio Infocomm,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Heroux-Devtek,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Central West Shopping Centre, Braybrook",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Pediatric Associates Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"61 Eastern Creek Drive, Eastern Creek",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Divisions,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Life Time,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Other Assets,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Nintex Global,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Viking River Cruises,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Digitalai Software,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Melbourne's GPO, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"425 Officer South Rd, Officer South",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Wintergarden Hilton Hotel, 190 Elizabeth Street, Brisbane",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Checkmarx,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Pure Gym,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"The Barrington, 10 Smith Street, Parramatta",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Lot 8-11 Melbourne Business Park,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"7 London Circuit, Canberra",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Visual Comfort &,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Doc Generici Srl,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ezcater,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Solenis Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Powerschool,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Visma As,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Cook & Boardman Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"UNSW Health Translation Hub, Randwick",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Eis,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Insight Global Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Good Sportsman Marketing Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Vinted Uab,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Learneo,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Us Lbm Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Press Ganey Associates Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Sonatype,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Xactly,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Village Roadshow,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Beaver-Visitec International,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Sunrise Medical (Us) Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Stepping Stones Healthcare Services Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Wrench Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Virtus Health,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Eab Global,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Southgate Centre, 2 Riverside Quay Southbank",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Sporta Technologies Pvt,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Hub International,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Mindbody,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Calderys France Sas,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Charter Hall,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Sk Rent-A-Car,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,1-800 Contacts,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"80 Melbourne Drive, Truganina",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Sauce Labs,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Redwood Software,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Scoresby Industry Park, 5 Janine, Scoresby",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Pace Analytical Services Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Lifestance Health,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Barkly Square, 90-106 Sydney Road, Brunswick",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Lock&Lock,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Lend Lease,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Cvent,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Model N,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Wirb-Copernicus,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"1 National Circuit, Barton",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Vencap International,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Covetrus,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"3-5 National Circuit, Barton",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Richmond Marketplace, March Street, Richmond",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Wintergarden Shopping Centre, Brisbane",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Cybercx,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Planview,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Lakeshore Learning Materials Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Veeam Software Gmbh,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Intrafi Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"271 Spring Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Epping,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Midtown Plaza, 246 Bourke Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Yupi Indo Jelly Gum Tbk,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Wagga Wagga Marketplace, Forsyth Street, Wagga Wagga",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Macquarie Infrastructure,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Aspen The,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"515 St Pauls Terrace, Fortitude Valley",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Troon Golf Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Acorns Grow,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,ASSEMBLE HOLDCO,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Catalis Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Kawana Shopping Centre, 119 Point Cartwright Dr, Buddina",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Wollert,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"85 William Angliss Drive, Laverton North",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Coomera Town Centre,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Serveone,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Lend Lease,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Forhealth,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Convergint Technologies Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Magnum Transaction Sub Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Hilton Office Tower, 255 Pitt Street, Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Woodgrove,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Pt Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"18 Marcus Clarke Street, Canberra",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Bessemer Business Park, 13 Bessemer Street, Blacktown",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Blackstone,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Charles Sturt Industrial Estate, 853 - 867 Port Rd, Woodville",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Servicetitan,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Confluent Medical Technologies,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,1200 W Carroll,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"4 National Circuit, Barton",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Uptown, 91 Queen Street, Brisbane",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Werribee,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Mandurah Forum, 330 Pinjarra Road, Mandurah",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Grand Central,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Bendigo Marketplace, 37 Garsed Street, Bendigo",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Abode,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Charter Next Generation,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Alegeus Technologies Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Assemble TSK,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"100 Pacific Highway, North Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,1300 W Carroll,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Bk Japan,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Defence Plaza, 270 Pitt Street, Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Assemble BSB,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Central West Industrial Park, 9 Ashley Street, West Footscray",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"265 Dandenong Hastings Rd, Dandenong",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Pellicano Trusts,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Bkr,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Directv Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Kaseya,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Summit at Kemps Creek,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Engagesmart,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Scottish Pacific Business Finance,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Jaggaer Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Stone Point Capital Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Palisade Investment Partners Limited,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Parklands Estate, Rydalmere",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Ep Global Production Solutions Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Forrest Chase Shopping Centre, Murray Street, Perth",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Vepf Viii Spv I Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Hyperdome,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Karingal Hub, Cranbourne Rd, Frankston",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Southgate Shopping Centre, Sylvania",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Cloud Software,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Portlink Logistics Estate, Altona North",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Duck Creek Technologies Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"World Square Shopping Centre, 680 George Street, Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,ISPT,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Mariner Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Mshc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Omnia Partners Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Affinity Equity Partners,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Boomi Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Discovery Energy Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"295 Queen Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"447 Collins Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Finastra,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Metroplex Westgate, Wacol",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Lend Lease,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Houston Center,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Waurn Ponds Shopping Centre, Waurn Ponds",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Delinea,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Central Plaza One, 345 Queen Street, Brisbane",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Eci Software Solutions,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Watergardens,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"100 St Georges Terrace, Perth",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Baseline LLC,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"345 George Street, Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"44 Clunies Ross Street, Prospect",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"405 Bourke Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Knowbe4,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Casselden, 2 Lonsdale Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Navitas,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Quinbrook,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Kps Capital Partners Lp,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"500 Bourke Street, Melbourne",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Sydney Central, 477 Pitt Street, Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Foresight,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Westfield Doncaster Shopping Centre, Doncaster",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"Burrah Park, Badgerys Creek",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Avalara,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,GPT,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Bgh Capital,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Wellsky,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Robina Town Centre,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"1 William Street, Brisbane",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,ASDI PROPERTY EUR,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Brandon Capital Partners,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"161 Castlereagh Street, Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Kingswood,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"363 George Street, Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Eastland,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Blackrock,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Canberra Centre,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,"275 Kent Street, Sydney",,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,NIIF,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Mascot Industrial,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,M7 Real Estate,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Castle Towers,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Qic Private Capital,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Square Peg Capital,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Stonepeak,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Platinum Equity,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Wiri NZ,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Databank,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Oak Hill Capital,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Perth Airport Property Fund (PAPF),,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Craigieburn Logistics Estate,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,KKR,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Blackbird Ventures,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Advent,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Ala Moana Shopping Centre,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Airtree,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Th Lee,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Inspire Brands,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Industry Super F/P,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Vermont Aus Holdco,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Canada Water,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Leonard Green & Partners,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Perkinelmer Topco Lp And Perkinelmer Topco Gp Llc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,New Mountain Capital,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Moorebank Logistics Estate,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Perpetual,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Cinven,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Cirion,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Silver Lake,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Ausgrid,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Perth Airport,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Tpg,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,NSW Ports,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Brookfield,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Equity,Hamilton Lane,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Generate Capital Inc,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Transurban Chesapeake,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Vantage EMEA Data Centers,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Sydney Airport,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Transurban Queensland,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Peel Ports,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Property,Kings Cross Estate,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Indara,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,Westconnex,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Infrastructure,IFM Investors,,,,,Unlisted,,AustralianSuper,
+Socially Aware,Fixed Income,220 Park Road Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Arcus Infrastructure Partners,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,B9 PA CMBS Borrower LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,B9 Sapphire Icon Way Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,B9 Sapphire Woodinville Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BADGER MEZZ A LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BADGER TERM BORROWER LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Bascom Station Residential LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BOP NE Mezz II LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Austin DC III LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Clifton Dc Mezz 1 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Foster Commerce LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 Austin Dc Iii LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 Dallas LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 La Non-Business Parks LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 OR/TX LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 Pool 4A Nj LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 Southeast Fl/Ga 2 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 W/Ne/Mw 1 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 W/Sw LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 1 Westinghouse LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Mezz 2 Pool 4A Nj LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Owner W/NE/MW 1 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Owner W/NE/MW 2 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Pa 2 Mezz 1 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Southeast FL LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter TX 1B Mezz 1 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter TX 1B Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Wca Mezz 1 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter WCA LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Western B West Az/Ca Mezz 1 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BRE Jupiter Western B West AZ/CA LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,BREP 9 Sapphire Mezz 1 LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Caelum Atom Mezzco LTD,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Canary Wharf Holdings (BP4) Limited,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,CI ATL III-GW LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,CI DAL III-V LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,CI DAL I-V LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,CI ORL I-PRU LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,CI SLC III-V LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,CIR III-LeeVista LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2015-1 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2015-4 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2015-5 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2016-10 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2016-2 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2016-3 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2016-5 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2016-7 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2016-8 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-1 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-10 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-14 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-2 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-3 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-4 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-5 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-7 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-8 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2017-9 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-1 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-10 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-11 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-14 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-5 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-6 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-7 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-8 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2018-9 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2019-2A Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2019-2B Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2019-2F Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2019-2H Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin 2019-3 Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,ColFin Cobalt Owner III LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Dostart Debt & Saris Regis,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,HIP ColFin Marquis Drive LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Icon 10/375 Industrial Owner Pool 6 Dallas LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Icon 400 Cabot Owner Pool 4 NJ LLC (f/k/a 400 Cabot Drive LLC),,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Icon CW Mezz Alpha NR HoldCo Pool 2 West/Northeast/Midwest LLC (f/k/a CW Mezz Alpha NR L.L.C.),,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Icon IPC TX Property Owner Pool 6 Dallas LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Icon Irvine Owner Pool 2 West/Northeast/Midwest LLC (f/k/a CWC AIrvine GL 57 L.L.C.),,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Icon Owner Pool 1 LA Non-Business Parks LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Icon Owner Pool 1 West/Southwest LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Icon Owner Pool 5 NC/TN LP,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Loonie Dutch Mezzco S.A R.L.,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Luna III S.A R.L,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Luna IV Servicios Ambientales S.L.U.,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Marron Group UK Holdings Limited,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Neva 2019-2G Industrial Owner LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Oakhill and Pamlico,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,PGREF V 1301 Participating LP,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,RC 320 South Canal LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,SGS New Finco Limited,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Western B Southeast GA LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Western Clifton DC LLC,,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Western Lehigh Valley DC II LLC (f/k/a IIT Lehigh Valley DC II LLC),,,,,,Internally,AustralianSuper,
+Socially Aware,Fixed Income,Western Valley Crossings DC LLC (f/k/a IIT Valley Crossings DC LLC),,,,,,Internally,AustralianSuper,

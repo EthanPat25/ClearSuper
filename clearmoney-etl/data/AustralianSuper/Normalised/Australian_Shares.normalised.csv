@@ -1,0 +1,250 @@
+Option_Name,Asset_Class,Name,Currency,Security_Identifier,Dollar_Value,Weighting_Percentage,Listing_Status,Management_Type,Super_Fund,Weighting_Percentage_Clean
+Australian Shares,Cash,Australia & New Zealand Banking Group Ltd,United States Dollar,,-8153.0,0.0,,,AustralianSuper,-9.292371138189983e-05
+Australian Shares,Cash,BRED Banque Populaire,United States Dollar,,-5365.0,0.0,,,AustralianSuper,-6.114751767004693e-05
+Australian Shares,Cash,Commonwealth Bank of Australia,Australia Dollar,,10049436.0,0.12,,,AustralianSuper,0.11453831600820238
+Australian Shares,Cash,Commonwealth Bank of Australia,United States Dollar,,-14132.0,0.0,,,AustralianSuper,-0.00016106928606022427
+Australian Shares,Cash,JP Morgan Securities LLC,Australia Dollar,,-8043.0,0.0,,,AustralianSuper,-9.166998781364165e-05
+Australian Shares,Cash,JP Morgan Securities LLC,United States Dollar,,92489.0,0.0,,,AustralianSuper,0.0010541421736784662
+Australian Shares,Cash,JP Morgan Securities PLC,Australia Dollar,,5020177.0,0.06,,,AustralianSuper,0.0572174020157061
+Australian Shares,Cash,JPMorgan Chase Bank NA,Australia Dollar,,38667697.0,0.45,,,AustralianSuper,0.44071457326514835
+Australian Shares,Cash,JPMorgan Chase Bank NA,Canada Dollar,,4.0,0.0,,,AustralianSuper,4.558994793666127e-08
+Australian Shares,Cash,JPMorgan Chase Bank NA,United States Dollar,,1278.0,0.0,,,AustralianSuper,1.4565988365763277e-05
+Australian Shares,Cash,MUFG Bank Ltd/London,United Kingdom Pound,,1.0,0.0,,,AustralianSuper,1.1397486984165317e-08
+Australian Shares,Cash,National Australia Bank Ltd,Australia Dollar,,5298980.0,0.06,,,AustralianSuper,0.06039505557935234
+Australian Shares,Cash,National Australia Bank Ltd,United Kingdom Pound,,2.0,0.0,,,AustralianSuper,2.2794973968330634e-08
+Australian Shares,Cash,National Australia Bank Ltd,United States Dollar,,-14132.0,0.0,,,AustralianSuper,-0.00016106928606022427
+Australian Shares,Cash,Royal Bank of Canada,United Kingdom Pound,,1.0,0.0,,,AustralianSuper,1.1397486984165317e-08
+Australian Shares,Cash,Royal Bank of Canada,United States Dollar,,-17393.0,0.0,,,AustralianSuper,-0.00019823649111558737
+Australian Shares,Cash,Royal Bank of Canada/Sydney,Australia Dollar,,8482844.0,0.1,,,AustralianSuper,0.09668310407870487
+Australian Shares,Cash,Skandinaviska Enskilda Banken AB,United States Dollar,,-6571.0,0.0,,,AustralianSuper,-7.48928869729503e-05
+Australian Shares,Cash,Standard Chartered Bank,United Kingdom Pound,,1.0,0.0,,,AustralianSuper,1.1397486984165317e-08
+Australian Shares,Cash,Sumitomo Mitsui Banking Corp/Sydney,Australia Dollar,,3343787.0,0.04,,,AustralianSuper,0.038110768810321195
+Australian Shares,Fixed Income,AMP Bank Ltd,,,686455.0,0.01,,,AustralianSuper,0.007823861927715205
+Australian Shares,Fixed Income,Australia & New Zealand Banking Group Ltd,,,19999652.0,0.23,,,AustralianSuper,0.22794577335783586
+Australian Shares,Fixed Income,Bank of Nova Scotia/Australia,,,277148.0,0.0,,,AustralianSuper,0.0031587907226874497
+Australian Shares,Fixed Income,Bendigo & Adelaide Bank Ltd,,,3999874.0,0.05,,,AustralianSuper,0.04558851185330127
+Australian Shares,Fixed Income,BRED Banque Populaire COBPFA,,,-3215.0,0.0,,,AustralianSuper,-3.6642920654091496e-05
+Australian Shares,Fixed Income,Canadian Imperial Bank of Commerce/Sydney,,,789431.0,0.01,,,AustralianSuper,0.008997529547396611
+Australian Shares,Fixed Income,Commonwealth Bank of Australia,,,15161689.0,0.18,,,AustralianSuper,0.17280515303546248
+Australian Shares,Fixed Income,Cooperatieve Rabobank UA/Australia,,,1723623.0,0.02,,,AustralianSuper,0.01964497070810798
+Australian Shares,Fixed Income,Cooperatieve Rabobank UA/NY,,,-192.0,0.0,,,AustralianSuper,-2.188317500959741e-06
+Australian Shares,Fixed Income,ING Bank NV/Sydney,,,1096821.0,0.01,,,AustralianSuper,0.01250100307145919
+Australian Shares,Fixed Income,Mitsubishi UFJ Trust & Banking Corp,,,-1339.0,0.0,,,AustralianSuper,-1.526123507179736e-05
+Australian Shares,Fixed Income,Mitsubishi UFJ Trust & Banking Corp/London,,,-2369.0,0.0,,,AustralianSuper,-2.700064666548764e-05
+Australian Shares,Fixed Income,Mizuho Bank Ltd,,,-1072.0,0.0,,,AustralianSuper,-1.2218106047025222e-05
+Australian Shares,Fixed Income,Mizuho Bank Ltd/London,,,-1078.0,0.0,,,AustralianSuper,-1.2286490968930212e-05
+Australian Shares,Fixed Income,Mizuho Bank Ltd/Sydney,,,-539.0,0.0,,,AustralianSuper,-6.143245484465106e-06
+Australian Shares,Fixed Income,MUFG Bank Ltd/London,,,-2133.0,0.0,,,AustralianSuper,-2.4310839737224624e-05
+Australian Shares,Fixed Income,MUFG Bank Ltd/Sydney,,,688805.0,0.01,,,AustralianSuper,0.007850646022127991
+Australian Shares,Fixed Income,National Australia Bank Ltd,,,13403659.0,0.16,,,AustralianSuper,0.15276802899269032
+Australian Shares,Fixed Income,National Australia Bank Ltd/London,,,-1072.0,0.0,,,AustralianSuper,-1.2218106047025222e-05
+Australian Shares,Fixed Income,Norfina Ltd,,,1240070.0,0.01,,,AustralianSuper,0.014133681684453886
+Australian Shares,Fixed Income,Oversea-Chinese Banking Corp Ltd/Sydney,,,2210628.0,0.03,,,AustralianSuper,0.02519560385683141
+Australian Shares,Fixed Income,Royal Bank of Canada/Sydney,,,6254103.0,0.07,,,AustralianSuper,0.07128105754012927
+Australian Shares,Fixed Income,Skandinaviska Enskilda Banken AB,,,-139.0,0.0,,,AustralianSuper,-1.5842506907989792e-06
+Australian Shares,Fixed Income,Standard Chartered Bank/Australia,,,1383280.0,0.02,,,AustralianSuper,0.015765915795456203
+Australian Shares,Fixed Income,Sumitomo Mitsui Banking Corp,,,-2710.0,0.0,,,AustralianSuper,-3.0887189727088015e-05
+Australian Shares,Fixed Income,Sumitomo Mitsui Banking Corp/Sydney,,,2763942.0,0.03,,,AustralianSuper,0.03150199296998786
+Australian Shares,Fixed Income,UBS AG/London,,,-1004.0,0.0,,,AustralianSuper,-1.1443076932101979e-05
+Australian Shares,Fixed Income,Westpac Banking Corp,,,28956179.0,0.34,,,AustralianSuper,0.3300276732636611
+Australian Shares,Fixed Income,Commonwealth of Australia,,,3793153.0,0.04,,,AustralianSuper,0.04323241194644763
+Australian Shares,Fixed Income,Agence Centrale des Organismes de Securite Sociale,,,-1627.0,0.0,,,AustralianSuper,-1.8543711323236975e-05
+Australian Shares,Fixed Income,Export-Import Bank of Korea,,,-542.0,0.0,,,AustralianSuper,-6.177437945417603e-06
+Australian Shares,Fixed Income,NBN Co Ltd,,,3051967.0,0.04,,,AustralianSuper,0.03478475415860208
+Australian Shares,Fixed Income,European Investment Bank,,,-110.0,0.0,,,AustralianSuper,-1.253723568258185e-06
+Australian Shares,Fixed Income,IFM Investors,,,592182.0,0.01,,Externally,AustralianSuper,0.006749386637256986
+Australian Shares,Fixed Income,Agence Centrale des Organismes de Securite Sociale,,,-1618.0,0.0,,Internally,AustralianSuper,-1.8441133940379487e-05
+Australian Shares,Fixed Income,AMP Bank Ltd,,,682672.0,0.01,,Internally,AustralianSuper,0.007780745234454107
+Australian Shares,Fixed Income,Australia & New Zealand Banking Group Ltd,,,19889441.0,0.23,,Internally,AustralianSuper,0.22668964491982402
+Australian Shares,Fixed Income,Bank of Nova Scotia/Australia,,,275621.0,0.0,,Internally,AustralianSuper,0.003141386760062629
+Australian Shares,Fixed Income,Bendigo & Adelaide Bank Ltd,,,3977833.0,0.05,,Internally,AustralianSuper,0.04533729984268328
+Australian Shares,Fixed Income,BRED Banque Populaire COBPFA,,,-3197.0,0.0,,Internally,AustralianSuper,-3.643776588837652e-05
+Australian Shares,Fixed Income,Canadian Imperial Bank of Commerce/Sydney,,,785081.0,0.01,,Internally,AustralianSuper,0.008947950479015492
+Australian Shares,Fixed Income,Commonwealth Bank of Australia,,,15078138.0,0.18,,Internally,AustralianSuper,0.17185288160044848
+Australian Shares,Fixed Income,Commonwealth of Australia,,,3772251.0,0.04,,Internally,AustralianSuper,0.042994181673504606
+Australian Shares,Fixed Income,Cooperatieve Rabobank UA/Australia,,,1714125.0,0.02,,Internally,AustralianSuper,0.019536717376732373
+Australian Shares,Fixed Income,Cooperatieve Rabobank UA/NY,,,-191.0,0.0,,Internally,AustralianSuper,-2.1769200139755756e-06
+Australian Shares,Fixed Income,European Investment Bank,,,-110.0,0.0,,Internally,AustralianSuper,-1.253723568258185e-06
+Australian Shares,Fixed Income,Export-Import Bank of Korea,,,-539.0,0.0,,Internally,AustralianSuper,-6.143245484465106e-06
+Australian Shares,Fixed Income,ING Bank NV/Sydney,,,1090777.0,0.01,,Internally,AustralianSuper,0.012432116660126892
+Australian Shares,Fixed Income,Mitsubishi UFJ Trust & Banking Corp,,,-1332.0,0.0,,Internally,AustralianSuper,-1.5181452662908204e-05
+Australian Shares,Fixed Income,Mitsubishi UFJ Trust & Banking Corp/London,,,-2356.0,0.0,,Internally,AustralianSuper,-2.685247933469349e-05
+Australian Shares,Fixed Income,Mizuho Bank Ltd,,,-1066.0,0.0,,Internally,AustralianSuper,-1.214972112512023e-05
+Australian Shares,Fixed Income,Mizuho Bank Ltd/London,,,-1072.0,0.0,,Internally,AustralianSuper,-1.2218106047025222e-05
+Australian Shares,Fixed Income,Mizuho Bank Ltd/Sydney,,,-536.0,0.0,,Internally,AustralianSuper,-6.109053023512611e-06
+Australian Shares,Fixed Income,MUFG Bank Ltd/London,,,-2121.0,0.0,,Internally,AustralianSuper,-2.417406989341464e-05
+Australian Shares,Fixed Income,MUFG Bank Ltd/Sydney,,,685009.0,0.01,,Internally,AustralianSuper,0.0078073811615361
+Australian Shares,Fixed Income,National Australia Bank Ltd,,,13329796.0,0.15,,Internally,AustralianSuper,0.1519261764115789
+Australian Shares,Fixed Income,National Australia Bank Ltd/London,,,-1066.0,0.0,,Internally,AustralianSuper,-1.214972112512023e-05
+Australian Shares,Fixed Income,NBN Co Ltd,,,3035149.0,0.04,,Internally,AustralianSuper,0.03459307122250238
+Australian Shares,Fixed Income,Norfina Ltd,,,1233237.0,0.01,,Internally,AustralianSuper,0.014055802655891085
+Australian Shares,Fixed Income,Oversea-Chinese Banking Corp Ltd/Sydney,,,2198446.0,0.03,,Internally,AustralianSuper,0.025056759670390307
+Australian Shares,Fixed Income,Royal Bank of Canada/Sydney,,,6219639.0,0.07,,Internally,AustralianSuper,0.070888254548707
+Australian Shares,Fixed Income,Skandinaviska Enskilda Banken AB,,,-138.0,0.0,,Internally,AustralianSuper,-1.572853203814814e-06
+Australian Shares,Fixed Income,Standard Chartered Bank/Australia,,,1375657.0,0.02,,Internally,AustralianSuper,0.015679032752175907
+Australian Shares,Fixed Income,Sumitomo Mitsui Banking Corp,,,-2695.0,0.0,,Internally,AustralianSuper,-3.0716227422325535e-05
+Australian Shares,Fixed Income,Sumitomo Mitsui Banking Corp/Sydney,,,2748711.0,0.03,,Internally,AustralianSuper,0.031328397845732034
+Australian Shares,Fixed Income,UBS AG/London,,,-998.0,0.0,,Internally,AustralianSuper,-1.1374692010196987e-05
+Australian Shares,Fixed Income,Westpac Banking Corp,,,28796611.0,0.33,,Internally,AustralianSuper,0.3282089990605718
+Australian Shares,Fixed Income,,,,592182.0,0.01,,Externally,AustralianSuper,0.006749386637256986
+Australian Shares,Fixed Income,,,,106869157.0,1.24,,Internally,AustralianSuper,1.21803982591622
+Australian Shares,Equity,29Metals,,BNNVRL0,6322168.0,0.07,Listed,,AustralianSuper,0.07205682749170648
+Australian Shares,Equity,A2 Milk Company,,BWSRTS7,1318033.0,0.02,Listed,,AustralianSuper,0.015022263962200367
+Australian Shares,Equity,Aet And D No 1,,583032S,0.0,,Listed,,AustralianSuper,0.0
+Australian Shares,Equity,Agl Energy,,BSS7GP5,1414809.0,0.02,Listed,,AustralianSuper,0.016125267162579948
+Australian Shares,Equity,Alcidion,,BYWMP73,1335975.0,0.02,Listed,,AustralianSuper,0.015226757673670259
+Australian Shares,Equity,Alpha Hpa,,BH0K666,4847554.0,0.06,Listed,,AustralianSuper,0.05524993362003853
+Australian Shares,Equity,Als,,B86SZR5,1712359.0,0.02,Listed,,AustralianSuper,0.01951658941471834
+Australian Shares,Equity,Amcor,,6066608,2708015.0,0.03,Listed,,AustralianSuper,0.030864565715424445
+Australian Shares,Equity,Amp,,6709958,886298.0,0.01,Listed,,AustralianSuper,0.010101569919091754
+Australian Shares,Equity,Ampol,,BM91201,49598333.0,0.58,Listed,,AustralianSuper,0.5652963548037971
+Australian Shares,Equity,Ansell,,6286611,1001225.0,0.01,Listed,,AustralianSuper,0.011411448905720921
+Australian Shares,Equity,Anz,,6065586,84248763.0,0.98,Listed,,AustralianSuper,0.9602241797245287
+Australian Shares,Infrastructure,APA Group,,6247306,3105614.0,0.04,Listed,,AustralianSuper,0.03539619514284159
+Australian Shares,Equity,Arb,,BWV03W5,12098292.0,0.14,Listed,,AustralianSuper,0.13789012560063138
+Australian Shares,Equity,Aristocrat Leisure,,6253983,222638875.0,2.59,Listed,,AustralianSuper,2.5375236799817094
+Australian Shares,Equity,Asx,,6129222,135871873.0,1.58,Listed,,AustralianSuper,1.548597904031663
+Australian Shares,Infrastructure,Atlas Arteria Group,,BZ03TZ1,1238446.0,0.01,Listed,,AustralianSuper,0.014115172165591602
+Australian Shares,Equity,Auckland Airport,,BLRZSS8,89460234.0,1.04,Listed,,AustralianSuper,1.0196218526153835
+Australian Shares,Equity,Audinate,,BZ9N3B6,5556691.0,0.06,Listed,,AustralianSuper,0.06333231334752856
+Australian Shares,Equity,Aurizon,,B87CVM3,1412500.0,0.02,Listed,,AustralianSuper,0.016098950365133514
+Australian Shares,Equity,Avjennings,,6523556,3574.0,0.0,Listed,,AustralianSuper,4.073461848140685e-05
+Australian Shares,Equity,Baby Bunting,,BYRJS58,2932041.0,0.03,Listed,,AustralianSuper,0.03341789913453906
+Australian Shares,Equity,Bank Of Queensland,,6076243,1506784.0,0.02,Listed,,AustralianSuper,0.017173551027948555
+Australian Shares,Equity,Bapcor,,BLD2CY7,22476266.0,0.26,Listed,,AustralianSuper,0.25617294918763744
+Australian Shares,Equity,Bci Minerals,,B1J0VB5,26960602.0,0.31,Listed,,AustralianSuper,0.30728311038026146
+Australian Shares,Equity,Bendigo And Adelaide Bank,,6091280,1733218.0,0.02,Listed,,AustralianSuper,0.019754329595721043
+Australian Shares,Equity,BHP,,6144690,563351155.0,6.55,Listed,,AustralianSuper,6.420787456626999
+Australian Shares,Equity,Block,,BQD3643,1438399.0,0.02,Listed,,AustralianSuper,0.01639413388053641
+Australian Shares,Equity,Bluescope Steel,,6533232,89384949.0,1.04,Listed,,AustralianSuper,1.0187637928077808
+Australian Shares,Equity,Brambles,,AU000000BXB1,8840217.0,0.1,Listed,,AustralianSuper,0.10075625819469698
+Australian Shares,Equity,Calix,,BD3DLF8,1087831.0,0.01,Listed,,AustralianSuper,0.012398539663471543
+Australian Shares,Equity,Carsales,,BW0BGZ3,3138586.0,0.04,Listed,,AustralianSuper,0.03577199308368349
+Australian Shares,Equity,Cedar Woods Properties,,6182281,6285056.0,0.07,Listed,,AustralianSuper,0.07163384395475013
+Australian Shares,Equity,Challenger,,6726300,1567293.0,0.02,Listed,,AustralianSuper,0.017863201567873414
+Australian Shares,Property,Charter Hall Group,,B15F6S6,2504285.0,0.03,Listed,,AustralianSuper,0.028542555692140446
+Australian Shares,Equity,Chrysos,,BPNXX01,3412959.0,0.04,Listed,,AustralianSuper,0.03889915577998988
+Australian Shares,Equity,Cleanaway Waste Management,,BYQ8KW7,1076136.0,0.01,Listed,,AustralianSuper,0.01226524605319173
+Australian Shares,Equity,Cochlear,,6211798,16812016.0,0.2,Listed,,AustralianSuper,0.19161473353757907
+Australian Shares,Equity,Coles,,BYWR0T5,7599041.0,0.09,Listed,,AustralianSuper,0.0866099708896386
+Australian Shares,Equity,CommBank,,6215035,808244334.0,9.39,Listed,,AustralianSuper,9.211954276790365
+Australian Shares,Equity,Computershare,,6180412,241538658.0,2.81,Listed,,AustralianSuper,2.752933710727758
+Australian Shares,Equity,Corporate Travel Management,,B3R1D52,14730083.0,0.17,Listed,,AustralianSuper,0.1678859292681748
+Australian Shares,Equity,Csl,,6185495,356923750.0,4.15,Listed,,AustralianSuper,4.068033794964476
+Australian Shares,Property,Dexus,,B033YN6,2056196.0,0.02,Listed,,AustralianSuper,0.023435467146892788
+Australian Shares,Equity,Downer Group,,6465573,1484883.0,0.02,Listed,,AustralianSuper,0.01692393466550835
+Australian Shares,Equity,Dyno Nobel,,BVBH523,1639582.0,0.02,Listed,,AustralianSuper,0.01868711450447174
+Australian Shares,Equity,Ebos,,BH36SD2,38293578.0,0.44,Listed,,AustralianSuper,0.4364505568321193
+Australian Shares,Equity,Endeavour,,BNVS144,79635097.0,0.93,Listed,,AustralianSuper,0.9076399815402425
+Australian Shares,Equity,Evolution Mining,,B3X0F91,214495091.0,2.49,Listed,,AustralianSuper,2.4447050078398553
+Australian Shares,Equity,Fineos,,BK5XVJ9,1417125.0,0.02,Listed,,AustralianSuper,0.016151663742435277
+Australian Shares,Equity,Fisher & Paykel Healthcare,,6423968,82643416.0,0.96,Listed,,AustralianSuper,0.9419272581869599
+Australian Shares,Equity,Flight Centre Travel,,6352147,427477.0,0.0,Listed,,AustralianSuper,0.0048721635435300375
+Australian Shares,Equity,Fortescue Metals,,6086253,8212554.0,0.1,Listed,,AustralianSuper,0.09360247732175482
+Australian Shares,Equity,Genesis Minerals,,B23G0X1,73558493.0,0.85,Listed,,AustralianSuper,0.8383819665423157
+Australian Shares,Equity,Gentrack,,BNJZLK3,4345561.0,0.05,Listed,,AustralianSuper,0.04952847493639642
+Australian Shares,Property,Goodman Group,,B03FYZ4,18610960.0,0.22,Listed,,AustralianSuper,0.21211817436282138
+Australian Shares,Property,Gpt Group,,6365866,2552435.0,0.03,Listed,,AustralianSuper,0.029091344690428005
+Australian Shares,Equity,Hipages,,BNG3S32,722817.0,0.01,Listed,,AustralianSuper,0.008238297349433423
+Australian Shares,Equity,Hub24,,BD4T5X1,2771670.0,0.03,Listed,,AustralianSuper,0.03159007274940149
+Australian Shares,Equity,Idp Education,,BDB6DD1,181145.0,0.0,Listed,,AustralianSuper,0.0020645977797466267
+Australian Shares,Equity,Igo,,6439567,1034178.0,0.01,Listed,,AustralianSuper,0.01178703029431012
+Australian Shares,Equity,Inghams,,BZCNHW2,8530792.0,0.1,Listed,,AustralianSuper,0.09722959078462162
+Australian Shares,Equity,Insurance Australia,,6271026,6067035.0,0.07,Listed,,AustralianSuper,0.06914895244497543
+Australian Shares,Equity,James Hardie Industries,,B60QWJ2,91178114.0,1.06,Listed,,AustralianSuper,1.0392013675557417
+Australian Shares,Equity,Jb Hi-Fi,,6702623,147175541.0,1.71,Listed,,AustralianSuper,1.6774313129349891
+Australian Shares,Equity,Jervois Global,,6473015,600481.0,0.01,Listed,,AustralianSuper,0.006843974381738575
+Australian Shares,Equity,Johns Lyng,,BYPHBX3,3609392.0,0.04,Listed,,AustralianSuper,0.04113799834075043
+Australian Shares,Property,Lendlease Group,,6512004,1264241.0,0.01,Listed,,AustralianSuper,0.014409170342348147
+Australian Shares,Equity,Life360,,BJMXQ67,1972999.0,0.02,Listed,,AustralianSuper,0.02248723042227119
+Australian Shares,Equity,Lifestyle Communities,,6137195,11851353.0,0.14,Listed,,AustralianSuper,0.1350756415622486
+Australian Shares,Equity,Light & Wonder,,BMXNX11,997224.0,0.01,Listed,,AustralianSuper,0.011365847560297276
+Australian Shares,Equity,Lottery,,BNRQW72,149487550.0,1.74,Listed,,AustralianSuper,1.7037824054197621
+Australian Shares,Equity,Lovisa,,BT9PVP0,4763141.0,0.06,Listed,,AustralianSuper,0.05428783755124418
+Australian Shares,Equity,Lynas Rare Earths,,6121176,65421531.0,0.76,Listed,,AustralianSuper,0.7456410480566679
+Australian Shares,Equity,Ma Financial,,BMYZBN4,5397247.0,0.06,Listed,,AustralianSuper,0.06151505243282531
+Australian Shares,Equity,Maas,,BLD4919,3780614.0,0.04,Listed,,AustralianSuper,0.04308949885715318
+Australian Shares,Equity,Macquarie,,B28YTC2,299212707.0,3.48,Listed,,AustralianSuper,3.4102729335293707
+Australian Shares,Equity,Macquarie Telecom,,6175054,4382027.0,0.05,Listed,,AustralianSuper,0.049944095696761
+Australian Shares,Equity,Magellan Financial,,BQ3SBX2,206.0,0.0,Listed,,AustralianSuper,2.3478823187380554e-06
+Australian Shares,Equity,Magnetica,,AU00530998S1,0.0,,Listed,,AustralianSuper,0.0
+Australian Shares,Equity,Medibank Private,,BRTNNQ5,95727771.0,1.11,Listed,,AustralianSuper,1.0910560239956582
+Australian Shares,Equity,Megaport,,BZ5ZWZ3,17997589.0,0.21,Listed,,AustralianSuper,0.2051272863738569
+Australian Shares,Equity,Metcash,,B0744W4,761728.0,0.01,Listed,,AustralianSuper,0.00868178496547428
+Australian Shares,Equity,Mineral Resources,,B17ZL56,4096649.0,0.05,Listed,,AustralianSuper,0.046691503656193865
+Australian Shares,Property,Mirvac Group,,6161978,2648995.0,0.03,Listed,,AustralianSuper,0.030191886033619008
+Australian Shares,Equity,Murray Cod Australia,,BZ1LFP6,919822.0,0.01,Listed,,AustralianSuper,0.010483659272748911
+Australian Shares,Equity,NAB,,6624608,485160172.0,5.64,Listed,,AustralianSuper,5.529606745605407
+Australian Shares,Equity,Newmont,,BRDVMB3,2777237.0,0.03,Listed,,AustralianSuper,0.031653522559442336
+Australian Shares,Equity,Nextdc,,B5LMKP4,57839136.0,0.67,Listed,,AustralianSuper,0.6592207997353677
+Australian Shares,Equity,Nido Education,,BRJ98J1,1428596.0,0.02,Listed,,AustralianSuper,0.016282404315630637
+Australian Shares,Equity,Northern Star Resources,,6717456,7264692.0,0.08,Listed,,AustralianSuper,0.08279923251396992
+Australian Shares,Equity,Norwood Immunology,,526966SZ,0.0,,Listed,,AustralianSuper,0.0
+Australian Shares,Equity,Objective,,6283407,6499330.0,0.08,Listed,,AustralianSuper,0.07407602908079518
+Australian Shares,Equity,Orica,,6458001,103408867.0,1.2,Listed,,AustralianSuper,1.1786012156797825
+Australian Shares,Equity,Origin Energy,,6214861,278767489.0,3.24,Listed,,AustralianSuper,3.1772488274859483
+Australian Shares,Equity,Orora,,BH4TCW7,450287.0,0.01,Listed,,AustralianSuper,0.005132140221638848
+Australian Shares,Equity,Pepper Money,,BMBPP68,8290890.0,0.1,Listed,,AustralianSuper,0.0944953108621464
+Australian Shares,Equity,Perseus Mining,,B02FBC1,825166.0,0.01,Listed,,AustralianSuper,0.009404818744775759
+Australian Shares,Equity,Pilbara Minerals,,B2368L5,39706296.0,0.46,Listed,,AustralianSuper,0.4525519918494154
+Australian Shares,Equity,Pinnacle Investment Management,,BD0F7H1,9356826.0,0.11,Listed,,AustralianSuper,0.10664430254809963
+Australian Shares,Equity,Premier Investments,,6699781,13783354.0,0.16,Listed,,AustralianSuper,0.15709559781314297
+Australian Shares,Equity,Pro Medicus,,6292782,4310427.0,0.05,Listed,,AustralianSuper,0.04912803562869476
+Australian Shares,Equity,Propel Funeral Partners,,BYWQNJ3,1237668.0,0.01,Listed,,AustralianSuper,0.014106304920717922
+Australian Shares,Equity,Pwr,,BZ168Z2,5497124.0,0.06,Listed,,AustralianSuper,0.06265339924034279
+Australian Shares,Equity,Qantas Airways,,6710347,6440311.0,0.07,Listed,,AustralianSuper,0.07340336079647672
+Australian Shares,Equity,Qbe Insurance,,6715740,272620443.0,3.17,Listed,,AustralianSuper,3.107187950709883
+Australian Shares,Equity,Qube,,B1L4BC6,1342509.0,0.02,Listed,,AustralianSuper,0.015301228853624796
+Australian Shares,Equity,Ramsay Health Care,,6041995,1213463.0,0.01,Listed,,AustralianSuper,0.013830428748266198
+Australian Shares,Equity,Rea,,6198578,19349555.0,0.22,Listed,,AustralianSuper,0.22053630126189094
+Australian Shares,Equity,Reece,,6728801,57572587.0,0.67,Listed,,AustralianSuper,0.6561828109772254
+Australian Shares,Equity,Reliance Worldwide,,BD1DM79,30347324.0,0.35,Listed,,AustralianSuper,0.3458832302942478
+Australian Shares,Equity,Resmed,,6221667,174568600.0,2.03,Listed,,AustralianSuper,1.9896433463439618
+Australian Shares,Equity,Rio Tinto,,6220103,10970606.0,0.13,Listed,,AustralianSuper,0.12503733909340595
+Australian Shares,Equity,Rio Tinto,,0718875,327114130.0,3.8,Listed,,AustralianSuper,3.7282790390115617
+Australian Shares,Equity,Sandfire Resources,,6739739,60046441.0,0.7,Listed,,AustralianSuper,0.6843785297429507
+Australian Shares,Equity,Santos,,6776703,6119986.0,0.07,Listed,,AustralianSuper,0.06975246077827396
+Australian Shares,Property,Scentre Group,,BLZH0Z7,4580755.0,0.05,Listed,,AustralianSuper,0.05220909549015021
+Australian Shares,Equity,Scidev,,BYW3822,532032.0,0.01,Listed,,AustralianSuper,0.0060638277951594426
+Australian Shares,Equity,Seek,,B0767Y3,1521794.0,0.02,Listed,,AustralianSuper,0.01734462730758088
+Australian Shares,Equity,Sgh,,BR858V2,106615517.0,1.24,Listed,,AustralianSuper,1.2151489673175562
+Australian Shares,Equity,Sigma Healthcare,,BF13K02,3576282.0,0.04,Listed,,AustralianSuper,0.04076062754670471
+Australian Shares,Equity,Siteminder,,BLH35X6,16102773.0,0.19,Listed,,AustralianSuper,0.18353114567646872
+Australian Shares,Equity,Skycity Entertainment,,6151311,5583343.0,0.06,Listed,,AustralianSuper,0.06363607917063055
+Australian Shares,Equity,Sonic Healthcare,,6821120,2289107.0,0.03,Listed,,AustralianSuper,0.026090067237861718
+Australian Shares,Equity,South32,,BWSW5D9,70551354.0,0.82,Listed,,AustralianSuper,0.8041081389302398
+Australian Shares,Equity,Steadfast,,BCT5FD7,54121865.0,0.63,Listed,,AustralianSuper,0.6168532518962525
+Australian Shares,Property,Stockland Corporation Ltd,,6850856,2979290.0,0.03,Listed,,AustralianSuper,0.03395641899705389
+Australian Shares,Equity,Suncorp,,6585084,5396107.0,0.06,Listed,,AustralianSuper,0.06150205929766336
+Australian Shares,Equity,Syrah Resources,,B23HV20,7372956.0,0.09,Listed,,AustralianSuper,0.0840331700448236
+Australian Shares,Equity,Tabcorp,,6873262,13195194.0,0.15,Listed,,AustralianSuper,0.1503920518685363
+Australian Shares,Equity,Technologyone,,6302410,4394272.0,0.05,Listed,,AustralianSuper,0.050083657924882105
+Australian Shares,Equity,Telix Pharmaceuticals,,BF7M092,18369560.0,0.21,Listed,,AustralianSuper,0.20936682100484386
+Australian Shares,Equity,Telstra,,6087289,142406908.0,1.65,Listed,,AustralianSuper,1.623080880385228
+Australian Shares,Equity,Temple & Webster,,BZ1MWM5,24610733.0,0.29,Listed,,AustralianSuper,0.28050050903826784
+Australian Shares,Equity,Tpg Telecom,,BMB2257,35550302.0,0.41,Listed,,AustralianSuper,0.40518410432814633
+Australian Shares,Equity,Trajan,,BMXT0M9,675880.0,0.01,Listed,,AustralianSuper,0.007703333502857655
+Australian Shares,Infrastructure,Transurban Group,,6200882,210129013.0,2.44,Listed,,AustralianSuper,2.394942690663005
+Australian Shares,Equity,Treasury Wine Estates,,B61JC67,1123807.0,0.01,Listed,,AustralianSuper,0.012808575655213874
+Australian Shares,Property,Vicinity Centres,,BY7QXS7,83306315.0,0.97,Listed,,AustralianSuper,0.9494826409112761
+Australian Shares,Equity,Virgin Australia International,,AU00000VAIH2,0.0,,Listed,,AustralianSuper,0.0
+Australian Shares,Equity,Viva Energy,,BYQM3N1,250894.0,0.0,Listed,,AustralianSuper,0.0028595610994051734
+Australian Shares,Equity,Washington H Soul Pattinson And Company,,6821807,2184454.0,0.03,Listed,,AustralianSuper,0.02489728603250787
+Australian Shares,Equity,Wesfarmers,,6948836,295400927.0,3.43,Listed,,AustralianSuper,3.3668282205928692
+Australian Shares,Equity,Westpac,,6076146,420502035.0,4.89,Listed,,AustralianSuper,4.792666470727529
+Australian Shares,Equity,Whitehaven Coal,,B1XQXC4,35711313.0,0.41,Listed,,AustralianSuper,0.40701922510495375
+Australian Shares,Equity,Wisetech Global,,BZ8GX83,5205482.0,0.06,Listed,,AustralianSuper,0.059329413341306855
+Australian Shares,Equity,Woodside Energy,,BMGT167,277225757.0,3.22,Listed,,AustralianSuper,3.159676957082877
+Australian Shares,Equity,Woolworths,,6981239,131829831.0,1.53,Listed,,AustralianSuper,1.5025287829472136
+Australian Shares,Equity,Worley,,6562474,1638898.0,0.02,Listed,,AustralianSuper,0.01867931862337457
+Australian Shares,Equity,Xero,,B8P4LP4,119886274.0,1.39,Listed,,AustralianSuper,1.366402247495077
+Australian Shares,Equity,Xero,,BVLH3Z2,9216176.0,0.11,Listed,,AustralianSuper,0.10504124600377678
+Australian Shares,Equity,Athena Financial,,,,,Unlisted,Internally,AustralianSuper,
+Australian Shares,Alternatives,BCI Ltd Convertible Note,,,,,Unlisted,Internally,AustralianSuper,
+Australian Shares,Alternatives,Federation Mining Convertible Note,,,,,Unlisted,Internally,AustralianSuper,
+Australian Shares,Equity,Federation Mining,,,,,Unlisted,Internally,AustralianSuper,
+Australian Shares,Equity,Slate 1 Trust,,,,,Unlisted,Internally,AustralianSuper,
+Australian Shares,Alternatives,Syrah Resources Convertible Note,,,,,Unlisted,Internally,AustralianSuper,
+Australian Shares,Equity,Slate 1 Trust,,,,,Unlisted,,AustralianSuper,
+Australian Shares,Equity,Athena Financial,,,,,Unlisted,,AustralianSuper,
+Australian Shares,Equity,Federation Mining,,,,,Unlisted,,AustralianSuper,

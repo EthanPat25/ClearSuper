@@ -14,7 +14,10 @@ export const Puzzle = React.memo(({ initialSize }: sizeProps) => {
 
   const Player: any = dynamic(
     () => import("@lordicon/react").then((mod) => mod.Player),
-    { ssr: false }
+    {
+      ssr: false,
+      loading: () => <div style={{ width: size, height: size }} />,
+    }
   );
 
   const playerRef = React.useRef<any>(null);
