@@ -64,19 +64,19 @@ const HeroSection = ({
         </motion.div>
 
         <h2 className="text-center text-emerald-900 font-bold xs:text-[2rem] sm:text-[3rem] md:text-[3.7rem] drop-shadow-sm">
-          What Your Super Owns
+          How your fund invests
         </h2>
 
         <h3 className="text-center text-emerald-800 xs:text-sm sm:text-lg md:text-xl max-w-xl mx-auto mt-3 leading-snug font-medium">
-          See how your super is invested. Enter your balance to view your share
-          of the companies, property, and assets it owns.
+          See how your super is invested. <br></br> Enter your balance to view
+          your share of the companies, property, and assets it owns.
         </h3>
       </div>
 
       <div className="flex justify-center mb-5 relative z-10">
         {showSelectedFund && fund ? (
           <Button
-            className="h-11 flex-1 rounded-full bg-[#F59E0B] px-5 text-sm font-bold text-[#451a03] shadow-sm hover:bg-[#d97706] sm:flex-none"
+            className="rounded-full bg-[#F59E0B] px-10 py-5 text-xl font-bold text-[#451a03] shadow-sm hover:bg-[#d97706] sm:flex-none"
             onClick={() => {
               reference.current?.scrollIntoView({
                 behavior: "smooth",
@@ -89,7 +89,7 @@ const HeroSection = ({
           </Button>
         ) : (
           <Button
-            className="h-11 rounded-full bg-[#F59E0B] px-5 text-sm font-bold text-[#451a03] shadow-sm hover:bg-[#d97706] sm:ml-2"
+            className="rounded-full bg-[#F59E0B] px-10 py-8 text-xl font-bold text-[#451a03] shadow-sm hover:bg-[#d97706] sm:ml-2"
             onClick={() => {
               reference.current?.scrollIntoView({
                 behavior: "smooth",

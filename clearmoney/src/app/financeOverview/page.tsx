@@ -272,7 +272,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
               Tools & Calculators
             </p>
             <h2 className="font-extrabold text-4xl lg:text-5xl text-slate-900">
-              Plan for the Future
+              Calculators that Feel Human
             </h2>
           </div>
 
