@@ -2,12 +2,14 @@
 
 import React from "react";
 import HeroSection from "./HeroSection";
-import { createStore, useStateMachine } from "little-state-machine";
+import { useStateMachine } from "little-state-machine";
+import { updateForm } from "./WizardForm/formWizardStore";
 import FinalStep from "./WizardForm/Results";
 import Step1_SelectFund from "./WizardForm/Step1_SelectFund";
 import Step2_KnowledgeLevel from "./WizardForm/Step2_KnowledgeLevel";
 import Step3a_DefaultOption from "./WizardForm/Step3a_DefaultOption";
 import Step3b_SelectOption from "./WizardForm/Step3b_SelectOption";
+import StepBalance from "./WizardForm/StepBalance";
 import Results from "./WizardForm/Results";
 
 type HoldingsData = {
@@ -29,23 +31,14 @@ export type FormDataType = {
   balance: number;
 };
 
-createStore({
-  Fund: "",
-  option: "",
-  age: 0,
-  balance: 0,
-});
-
 export default function Page() {
   const actionButton = React.useRef<HTMLDivElement | null>(null);
-  const [step, updateStep] = React.useState("StepOne");
+  const [step, setStep] = React.useState("StepOne");
+  const [prevStep, setPrevStep] = React.useState("StepThree_One");
 
-  // Defines how to update form
-  function updateForm(currentState, newDataToAdd) {
-    return {
-      ...currentState,
-      ...newDataToAdd,
-    };
+  function updateStep(next: string) {
+    if (next === "StepBalance") setPrevStep(step);
+    setStep(next);
   }
 
   const { actions, state } = useStateMachine({
@@ -56,7 +49,21 @@ export default function Page() {
 
   return (
     <div className="w-full flex flex-col">
-      <HeroSection reference={actionButton}></HeroSection>
+      <HeroSection
+        reference={actionButton}
+        fund={state.Fund}
+        option={state.option}
+        showSelectedFund={step === "StepFour"}
+        onSelectFund={(fund) => {
+          actions.updateForm({
+            Fund: fund.name,
+            option: "",
+            age: 0,
+            balance: 0,
+          });
+          updateStep("StepTwo");
+        }}
+      ></HeroSection>
       <div className="flex w-full min-h-[55rem] justify-center items-center pt-16 pb-16 flex-col">
         {step === "StepOne" && (
           <Step1_SelectFund
@@ -83,9 +90,17 @@ export default function Page() {
           ></Step3b_SelectOption>
         )}
 
+        {step === "StepBalance" && (
+          <StepBalance
+            ref={actionButton}
+            updateStep={updateStep}
+            prevStep={prevStep}
+          />
+        )}
+
         {step === "StepFour" && (
-          <div className="pl-[9rem] pr-[9rem] w-full flex justify-center items-center">
-            <Results ref={actionButton} updateStep={updateStep}></Results>
+          <div className="w-full flex flex-col items-center gap-4 px-0 sm:px-8 lg:px-[9rem]">
+            <Results ref={actionButton}></Results>
           </div>
         )}
 

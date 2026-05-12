@@ -127,45 +127,9 @@ export function NavigationMenuDemo() {
               "text-[0.95rem] font-[500]",
             )}
           >
-            <Link href="/financeOverview">About</Link>
+            <Link href="/about">About</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
-
-        {/*
-        <NavigationMenuItem className="hidden md:block">
-          <NavigationMenuTrigger className="text-sm font-[500]">
-            About
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium flex justify-center items-center">
-                      <Learn></Learn>
-                    </div>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/Superannuation" title="What is Super?">
-                A simple guide to how super works.
-              </ListItem>
-              <ListItem
-                href="/docs/installation"
-                title="First Home Super Saver Scheme"
-              >
-                See how super can boost your first home deposit.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Super & Tax">
-                Concessional vs non-concessional explained.
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        */}
       </NavigationMenuList>
     </NavigationMenu>
   );

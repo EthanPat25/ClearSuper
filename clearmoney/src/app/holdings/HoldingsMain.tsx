@@ -2,15 +2,13 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NumericFormat } from "react-number-format";
 import { Button } from "@/components/ui/button";
-import {
-  IconArrowNarrowLeft,
-  IconArrowNarrowRight,
-  IconSearch,
-} from "@tabler/icons-react";
-import PieOne, { PieSuperPropArray } from "./PieOne";
+import Link from "next/link";
+import { IconSearch } from "@tabler/icons-react";
 import PublicHoldings_copy from "./PublicHoldings";
 import PrivateHoldings from "./PrivateHoldings";
 import BondsandCashHoldings from "./BondsandCashHoldings";
+import ControlsBar from "./ControlsBar";
+import AssetTabs from "./AssetTab";
 
 type PublicHoldingsProps = {
   holdingsData: Holding[] | null;
@@ -18,31 +16,22 @@ type PublicHoldingsProps = {
 };
 
 type Holding = {
-  Name: string;
-  Weighting_Percentage: number;
   Super_Fund: string;
   Option_Name: string;
   Listing_Status: string;
-  Dollar_Value?: number;
-  Domain?: string;
-  Parsed_Name: string;
+  Asset_Class: string;
+  Management_Type: string;
+  Dollar_Value: number;
   Weighting_Percentage_Clean: number;
+  Full_Name: string;
+  companies: {
+    id: string;
+    Parsed_Name: string;
+    Sector: string;
+    Description: string;
+    Country: string;
+  };
 };
-
-const data1: PieSuperPropArray = {
-  data: [
-    {
-      name: "Public Companies",
-      value: 69.5,
-      dollars: 112500,
-      colour: "#00C49F",
-    },
-    { name: "Private Assets", value: 10.9, dollars: 22500, colour: "#0088FE" },
-    { name: "Cash + Bonds", value: 19.6, dollars: 15000, colour: "#FFBB28" },
-  ],
-  dimension: "w-[9rem] h-[9rem]",
-};
-
 const HoldingsMain: React.FC<PublicHoldingsProps> = ({
   holdingsData,
   balance,
@@ -53,6 +42,9 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
 
   const [startIndex, setStartIndex] = React.useState(0);
   const pageSize = 9;
+  const mobileBatchSize = 12;
+  const [mobileVisibleCount, setMobileVisibleCount] =
+    React.useState(mobileBatchSize);
 
   const [searchOpen, setSearchOpen] = React.useState(false);
   const [searchTerm, setSearchTerm] = React.useState("");
@@ -67,23 +59,38 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
     const term = searchTerm.toLowerCase();
     return holdingsData.filter(
       (h) =>
-        h.Name.toLowerCase().includes(term) ||
-        h.Parsed_Name.toLowerCase().includes(term),
+        h.Full_Name.toLowerCase().includes(term) ||
+        h.companies?.Parsed_Name.toLowerCase().includes(term) ||
+        h.companies?.Sector.toLowerCase().includes(term),
     );
   }, [holdingsData, searchTerm]);
 
   React.useEffect(() => {
     setStartIndex(0);
-  }, [searchTerm, AssetView]);
+    setMobileVisibleCount(mobileBatchSize);
+  }, [searchTerm, AssetView, companyMode]);
 
   const pager = filteredHoldings.slice(startIndex, startIndex + pageSize);
+  const mobilePager = filteredHoldings.slice(0, mobileVisibleCount);
 
-  const listedPercentage =
+  const publicWeight =
     holdingsData
-      ?.filter((h) => h.Listing_Status.toLowerCase() === "listed")
+      ?.filter((h) => h.Listing_Status === "Listed")
       .reduce((sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0), 0) ?? 0;
 
-  const listedAmount = (listedPercentage / 100) * balance;
+  const privateWeight =
+    holdingsData
+      ?.filter((h) => h.Listing_Status === "Unlisted")
+      .reduce((sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0), 0) ?? 0;
+
+  const bondsWeight =
+    holdingsData
+      ?.filter(
+        (h) => h.Asset_Class === "Fixed Income" || h.Asset_Class === "Cash",
+      )
+      .reduce((sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0), 0) ?? 0;
+
+  const listedAmount = (publicWeight / 100) * balance;
 
   const totalResults = filteredHoldings.length;
   const rangeLabel =
@@ -95,191 +102,122 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
         )} of ${totalResults} results`;
 
   return (
-    <div className="bg-slate-100 w-full rounded-[5rem]">
-      <div className="grid grid-cols-[0.4fr,2fr,0.4fr] items-center justify-center text-center px-4 sm:px-10 py-6 w-full">
-        <div className="h-full flex items-start justify-start">
-          <PieOne data={data1.data} dimension={data1.dimension} />
-        </div>
+    <div className="bg-slate-100 w-full rounded-[2.5rem] sm:rounded-[3rem] overflow-hidden max-w-7xl">
+      <AssetTabs
+        AssetView={AssetView}
+        setAssetView={setAssetView}
+        weight={{ bondsWeight, privateWeight, publicWeight }}
+      />
 
-        <div className="flex flex-col items-center justify-center w-full">
-          <div className="flex flex-col justify-center items-center mt-10 mb-[0.5rem]"></div>
+      <div className="w-full relative">
+        <AnimatePresence mode="wait">
+          {AssetView === "public" ? (
+            <motion.div
+              key="public-view"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="w-full flex flex-col gap-6"
+            >
+              <ControlsBar
+                companyMode={companyMode}
+                setCompanyMode={setCompanyMode}
+                searchOpen={searchOpen}
+                setSearchOpen={setSearchOpen}
+                searchTerm={searchTerm}
+                setSearchTerm={setSearchTerm}
+                startIndex={startIndex}
+                setStartIndex={setStartIndex}
+                totalResults={totalResults}
+                pageSize={pageSize}
+                rangeLabel={rangeLabel}
+              />
 
-          <div className="flex justify-center gap-2 mb-6">
-            {[
-              { key: "public", label: "Public Companies", color: "#00C49F" },
-              { key: "private", label: "Private Assets", color: "#3B82F6" },
-              { key: "bonds", label: "Bonds + Cash", color: "#F59E0B" },
-            ].map((item) => (
-              <button
-                key={item.key}
-                onClick={() => setAssetView(item.key as any)}
-                className={`
-                  flex items-center justify-center gap-2
-                  px-4 py-2 rounded-3xl text-sm font-medium
-                  xs:w-[7.5rem] sm:w-[9rem] md:w-[11rem]
-                  transition-all duration-200
-                  ${
-                    AssetView === item.key
-                      ? "bg-gray-900 text-white shadow-sm"
-                      : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                  }
-                `}
-              >
-                <div
-                  className="w-3 h-3 rounded-sm"
-                  style={{ backgroundColor: item.color }}
-                />
-                <span>{item.label}</span>
-              </button>
-            ))}
-          </div>
-
-          <AnimatePresence mode="wait">
-            {AssetView === "public" && (
-              <motion.div
-                key="public-bar"
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 12 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 240,
-                  damping: 26,
-                  duration: 0.4,
-                }}
-                className="w-full bg-white shadow-sm border border-gray-200 rounded-2xl px-4 sm:px-6 py-3 flex flex-col gap-3"
-              >
-                <div className="flex items-center justify-between w-full">
-                  <div className="flex-1">
-                    <div className="flex items-center bg-gray-100/80 p-1 rounded-lg w-fit">
-                      <button
-                        onClick={() => setCompanyMode("company")}
-                        className={`px-3 py-1 text-xs font-medium rounded-md transition-all duration-200 ${
-                          companyMode === "company"
-                            ? "bg-white text-gray-900 shadow-sm ring-1 ring-black/5" // White pill active state
-                            : "text-gray-500 hover:text-gray-700"
-                        }`}
-                      >
-                        Companies
-                      </button>
-                      <button
-                        onClick={() => setCompanyMode("industry")}
-                        className={`px-3 py-1 text-xs font-medium rounded-md transition-all duration-200 ${
-                          companyMode === "industry"
-                            ? "bg-white text-gray-900 shadow-sm ring-1 ring-black/5"
-                            : "text-gray-500 hover:text-gray-700"
-                        }`}
-                      >
-                        Industries
-                      </button>
+              <div className="w-full">
+                {totalResults === 0 ? (
+                  <div className="flex flex-col items-center justify-center py-20 text-gray-500">
+                    <IconSearch size={48} className="mb-4 opacity-20" />
+                    <p className="text-lg font-medium">No results found</p>
+                  </div>
+                ) : (
+                  <>
+                    <div className="hidden sm:block">
+                      <PublicHoldings_copy
+                        companyMode={companyMode}
+                        pager={pager}
+                        balance={balance}
+                        holdingsData={holdingsData}
+                      />
                     </div>
-                  </div>
-                  {/* Centered arrows */}
-                  <div className="flex items-center gap-3 justify-center">
-                    <button
-                      className="rounded-full p-2 bg-slate-200 hover:bg-slate-300 hover:scale-105 transition"
-                      onClick={() =>
-                        setStartIndex((prev) => Math.max(0, prev - pageSize))
-                      }
-                      disabled={startIndex === 0}
-                    >
-                      <IconArrowNarrowLeft size={18} />
-                    </button>
-
-                    <h3 className="text-xs sm:text-sm text-gray-500">
-                      {rangeLabel}
-                    </h3>
-
-                    <button
-                      className="rounded-full p-2 bg-slate-200 hover:bg-slate-300 hover:scale-105 transition"
-                      onClick={() =>
-                        setStartIndex((prev) =>
-                          Math.min(
-                            prev + pageSize,
-                            Math.max(totalResults - pageSize, 0),
-                          ),
-                        )
-                      }
-                      disabled={startIndex + pageSize >= totalResults}
-                    >
-                      <IconArrowNarrowRight size={18} />
-                    </button>
-                  </div>
-
-                  <div className="flex-1 flex justify-end items-center gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setSearchOpen((prev) => !prev)}
-                      className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs sm:text-sm text-gray-700 shadow-sm hover:bg-gray-50 transition"
-                    >
-                      <IconSearch
-                        size={16}
-                        className={`text-gray-500 ${searchOpen == true ? "hidden" : "block"}`}
+                    <div className="sm:hidden">
+                      <PublicHoldings_copy
+                        companyMode={companyMode}
+                        pager={mobilePager}
+                        balance={balance}
+                        holdingsData={holdingsData}
                       />
-                      <img
-                        className={`hover:scale-105 h-2 ${searchOpen == true ? "block" : "hidden"}`}
-                        src="data:image/png;base64,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"
-                      />
-                      <span className="hidden sm:inline">
-                        {searchOpen ? "Close" : "Search"}
-                      </span>
-                    </button>
-                  </div>
-                </div>
-
-                {/*Search bar*/}
-                <AnimatePresence>
-                  {searchOpen && (
-                    <motion.div
-                      key="search-input"
-                      initial={{ opacity: 0, y: -6 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -6 }}
-                      transition={{ duration: 0.18, ease: "easeOut" }}
-                      className="mt-1"
-                    >
-                      <div className="relative">
-                        <IconSearch
-                          className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-                          size={18}
-                        />
-                        <input
-                          type="text"
-                          placeholder="Search a company..."
-                          value={searchTerm}
-                          onChange={(e) => setSearchTerm(e.target.value)}
-                          className="w-full pl-9 pr-3 h-9 border border-gray-200 rounded-full text-xs sm:text-sm focus:ring-2 focus:ring-gray-800 focus:outline-none"
-                        />
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-
-        <div></div>
+                      {companyMode === "company" &&
+                        totalResults > mobileVisibleCount && (
+                          <button
+                            onClick={() =>
+                              setMobileVisibleCount((c) => c + mobileBatchSize)
+                            }
+                            className="mt-6 mx-auto block rounded-full bg-gray-900 px-6 py-2 text-sm font-semibold text-white shadow-sm"
+                          >
+                            Show more
+                          </button>
+                        )}
+                    </div>
+                  </>
+                )}
+              </div>
+            </motion.div>
+          ) : AssetView === "private" ? (
+            <motion.div
+              key="private-view"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="w-full"
+            >
+              <PrivateHoldings
+                holdingsData={
+                  holdingsData?.filter(
+                    (h) => h.Listing_Status === "Unlisted",
+                  ) ?? null
+                }
+                balance={balance}
+              />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="bonds-view"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="w-full"
+            >
+              <BondsandCashHoldings
+                holdingsCashData={
+                  holdingsData?.filter((h) => h.Asset_Class === "Cash") ?? null
+                }
+                holdingsbondsData={
+                  holdingsData?.filter(
+                    (h) => h.Asset_Class === "Fixed Income",
+                  ) ?? null
+                }
+                balance={balance}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
-      {AssetView === "public" && (
-        <PublicHoldings_copy
-          companyMode={companyMode}
-          pager={pager}
-          balance={balance}
-        />
-      )}
-
-      {AssetView === "private" && (
-        <PrivateHoldings holdingsData={holdingsData} />
-      )}
-
-      {AssetView === "bonds" && (
-        <BondsandCashHoldings holdingsCashData={holdingsData} />
-      )}
-
       <div className="flex flex-col justify-center items-center mt-12 text-center pb-10">
-        <h1 className="text-xl font-semibold">
+        <h1 className="text-xl font-semibold px-4">
           <NumericFormat
             value={listedAmount}
             thousandSeparator
@@ -288,17 +226,25 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
             fixedDecimalScale
             displayType="text"
           />{" "}
-          of your super is invested across NA Listed Companies
+          of your super is invested across{" "}
+          {holdingsData?.filter((h) => h.Listing_Status === "Listed").length ||
+            0}{" "}
+          Publicly Listed Companies
         </h1>
 
-        <div className="bg-orange-50 border border-orange-200 text-orange-800 rounded-2xl w-[40rem] p-3 mt-4 flex justify-center items-center">
-          <p className="text-[0.75rem] text-justify">
-            <strong>Notice:</strong> Based on your fund’s official holdings data
-            from <span className="font-medium"> December 2024</span> Holdings
-            are released every 6 months. Dollar amounts are calculated using
-            your current balance, assuming the fund held the same weights today.
-            Dollar values are estimates.{" "}
-            <a className="underline cursor-pointer"> Read Full Disclaimer</a>
+        <div className="bg-orange-50 border border-orange-200 text-orange-800 rounded-2xl w-full max-w-[40rem] p-4 mt-6 flex justify-center items-center mx-4">
+          <p className="text-[0.75rem] text-justify leading-relaxed">
+            <strong>Notice:</strong> Based on your fund’s official holdings
+            data. Holdings are typically released by funds every 6 months.
+            Dollar amounts are calculated using your current balance, assuming
+            the fund held the same weights at the time of reporting. Dollar
+            values are estimates.{" "}
+            <Link
+              href="/about"
+              className="underline font-medium hover:text-orange-950 transition-colors"
+            >
+              Read Full Disclaimer
+            </Link>
           </p>
         </div>
       </div>

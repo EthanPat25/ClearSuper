@@ -5,51 +5,21 @@ import dynamic from "next/dynamic";
 import ICON from "../../../public/Trolley.json";
 
 type sizeProps = {
-  initialSize: number;
+  responsiveSizing: string;
 };
 
-export const Trolley = React.memo(({ initialSize }: sizeProps) => {
-  const [windowsize, updatewindowsize] = React.useState<number | null>(null);
-  const [size, updatesize] = React.useState(initialSize);
-
-  // ✅ Use dynamic import to avoid SSR issues
+export const Trolley = React.memo(({ responsiveSizing }: sizeProps) => {
   const Player: any = dynamic(
     () => import("@lordicon/react").then((mod) => mod.Player),
-    {
-      ssr: false,
-      loading: () => <div style={{ width: size, height: size }} />,
-    }
+    { ssr: false },
   );
 
   const playerRef = React.useRef<any>(null);
 
-  React.useEffect(() => {
-    const handleResize = () => updatewindowsize(window.innerWidth);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  React.useEffect(() => {
-    if (windowsize === null) return;
-
-    if (windowsize >= 3200) {
-      updatesize(170);
-    } else if (windowsize >= 2560) {
-      updatesize(170);
-    } else if (windowsize >= 1920) {
-      updatesize(170);
-    } else if (windowsize >= 1536) {
-      updatesize(170);
-    } else if (windowsize <= 1024) {
-      updatesize(170);
-    }
-  }, [windowsize]);
-
   return (
-    <div>
+    <div className={responsiveSizing}>
       <Player
-        size={size}
+        size={"100%"}
         icon={ICON}
         ref={(instance: any) => {
           if (instance) {

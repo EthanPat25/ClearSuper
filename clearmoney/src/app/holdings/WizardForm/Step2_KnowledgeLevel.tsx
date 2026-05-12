@@ -11,7 +11,7 @@ const OPTIONS = [
   {
     id: 1,
     title: "I don't know my super option",
-    desc: "That's okay — we'll use your fund’s default MySuper option.",
+    desc: "That's okay! We'll use your fund’s default MySuper option.",
     icon: "question",
     nextStep: "StepThree_Two",
   },

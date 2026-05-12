@@ -20,15 +20,12 @@ export type dataforwardProps = {
 };
 
 type Holding = {
-  Name: string;
-  Weighting_Percentage: number;
+  Full_Name: string;
   Super_Fund: string;
   Option_Name: string;
   Listing_Status: string;
-  Dollar_Value?: number;
-  Domain?: string;
-  Source_Name: string;
   Asset_Class: string;
+  Dollar_Value?: number;
   Weighting_Percentage_Clean: number;
 };
 
@@ -40,7 +37,7 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
   const percentageCash =
     holdingsCashData?.reduce(
       (sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0),
-      0
+      0,
     ) ?? 0;
 
   const cashAmount = (percentageCash / 100) * balance;
@@ -48,7 +45,7 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
   const percentageBonds =
     holdingsbondsData?.reduce(
       (sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0),
-      0
+      0,
     ) ?? 0;
 
   const bondsAmount = (percentageBonds / 100) * balance;
@@ -80,41 +77,24 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
     }
   }
 
-  console.log(percentageCash);
   return (
-    <div className="bg-gray-100 w-full rounded-[5rem]">
-      {/* Cards + compact arrows */}
-      <div className="flex items-center justify-center gap-4 mt-10">
+    <div className="w-full flex justify-center pt-6">
+      <div className="grid grid-cols-2 gap-x-3 md:gap-x-0 gap-y-6 sm:gap-y-8 w-full max-w-2xl px-6 justify-items-center">
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[17rem] relative"
+          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[16rem] relative"
         >
-          {/* Original name in top-left */}
           <p className="absolute top-4 left-4 text-xs text-gray-400 font-medium leading-none truncate max-w-[65%]">
             {}
           </p>
-
-          {/* Info icon */}
-
-          {/* Logo container */}
           <div className="flex flex-col justify-between items-center gap-6">
-            <Banknote></Banknote>
+            <Banknote responsiveSizing="w-[9rem] h-[7rem]"></Banknote>
           </div>
 
-          {/* Company name + hard-coded dollar value */}
-          <h2 className="xs:text-sm md:text-base font-medium">
-            <span
-              className={`mt-3 px-3 py-1 rounded-full text-xs font-semibold ${getColorForAssetClass(
-                "Property"
-              )}`}
-            >
-              {"Cash"}
-            </span>
-            {}
-          </h2>
-          <h2 className="xs:text-sm md:text-base font-medium mt-2">
+          <h2 className="xs:text-sm md:text-base font-medium mb-2">Cash</h2>
+          <h2 className="xs:text-sm md:text-base font-semibold mt-2">
             <NumericFormat
               value={dataforward.cashAmount}
               thousandSeparator
@@ -130,32 +110,13 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[17rem] relative"
+          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[16rem] relative"
         >
-          {/* Original name in top-left */}
-          <p className="absolute top-4 left-4 text-xs text-gray-400 font-medium leading-none truncate max-w-[65%]">
-            {}
-          </p>
-
-          {/* Info icon */}
-
-          {/* Logo container */}
           <div className="flex flex-col justify-between items-center">
-            <Bond></Bond>
+            <Bond responsiveSizing="w-[9rem] h-[7rem]"></Bond>
           </div>
-
-          {/* Company name + hard-coded dollar value */}
-          <h2 className="xs:text-sm md:text-base font-medium">
-            <span
-              className={`mt-3 px-3 py-1 rounded-full text-xs font-semibold ${getColorForAssetClass(
-                "Equity"
-              )}`}
-            >
-              {"Fixed Interest (Bonds)"}
-            </span>
-            {}
-          </h2>
-          <h2 className="xs:text-sm md:text-base font-medium mt-2">
+          <h2 className="xs:text-sm md:text-base font-medium mb-2">Bonds</h2>
+          <h2 className="xs:text-sm md:text-base font-semibold mt-2">
             <NumericFormat
               value={dataforward.bondsAmount}
               thousandSeparator

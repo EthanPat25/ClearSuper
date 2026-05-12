@@ -53,7 +53,7 @@ const StepFour = ({ updateStep, ref }) => {
         <div className="bg-orange-50 border border-orange-200 text-orange-800 rounded-2xl w-full p-2 mt-4 flex justify-center items-center">
           <p className="text-[0.75rem]">
             <strong>Notice:</strong> ClearSuper shows the likely default MySuper
-            option for your age. This may not be your actual option — please
+            option for your age. This may not be your actual option - please
             check your super account to confirm.{" "}
             <a className="underline cursor-pointer">Full Disclaimer</a>
           </p>

@@ -1,225 +1,210 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { NavigationMenuDemo } from "./NavBar copy";
+import { useStateMachine } from "little-state-machine";
+import { updateForm } from "../holdings/WizardForm/formWizardStore";
+import { NumericFormat } from "react-number-format";
+import * as Dialog from "@radix-ui/react-dialog";
+import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
+import { ChevronDown, X } from "lucide-react";
 
-/**
- * NavBar with a compact "Fund + Option" context selector in the top-right.
- *
- * Usage example:
- * <NavBar
- *   selection={selection}
- *   onChangeSelection={setSelection}
- *   fundOptions={fundOptions}
- * />
- *
- * Where:
- * selection = { fundId: "aus_super", optionId: "high_growth" } OR null
- * fundOptions = [
- *   { id: "aus_super", name: "AustralianSuper", options: [{ id: "high_growth", name: "High Growth" }, ...] },
- *   ...
- * ]
- */
+const NavBar = () => {
+  const { state, actions } = useStateMachine({ actions: { updateForm } });
+  const hasBalance = state.balance > 0;
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [localBalance, setLocalBalance] = useState<number>(state.balance);
 
-const NavBar = ({
-  selection = null,
-  onChangeSelection = () => {},
-  fundOptions = [],
-}) => {
-  // Resolve display label for current selection
-  const current = React.useMemo(() => {
-    if (!selection) return null;
-    const fund = fundOptions.find((f) => f.id === selection.fundId);
-    const option = fund?.options?.find((o) => o.id === selection.optionId);
-    if (!fund || !option) return null;
-    return { fund, option };
-  }, [selection, fundOptions]);
+  const fundName = state.fundName ?? "Rest Super";
+  const optionName = state.optionName ?? "High Growth";
 
-  const displayLabel = current
-    ? `${current.fund.name} — ${current.option.name}`
-    : "Select fund & option";
-
-  // Handy helpers
-  const clearSelection = () => onChangeSelection(null);
-
-  const setFundAndFirstOption = (fundId) => {
-    const fund = fundOptions.find((f) => f.id === fundId);
-    const firstOpt = fund?.options?.[0];
-    if (!fund || !firstOpt) return;
-    onChangeSelection({ fundId: fund.id, optionId: firstOpt.id });
+  const handleSave = () => {
+    actions.updateForm({ balance: localBalance });
+    setDrawerOpen(false);
   };
 
-  const setOption = (fundId, optionId) => {
-    onChangeSelection({ fundId, optionId });
+  const openDrawer = () => {
+    setLocalBalance(state.balance);
+    setDrawerOpen(true);
   };
 
   return (
-    <div className="navbar bg-white fixed top-0 z-50 w-full border-b border-base-200">
-      <div className="mx-auto w-full max-w-[76rem] px-4 md:px-8 grid grid-cols-3 items-center">
-        {/* Left */}
-        <div className="justify-self-start">
-          <a className="text-[1.3rem] font-semibold hover:opacity-80 transition">
-            <span className="font-semibold">ClearSuper</span>
-          </a>
-        </div>
-
-        {/* Center */}
-        <div className="justify-self-center">
-          <NavigationMenuDemo />
-        </div>
-
-        {/* Right */}
-        <div className="justify-self-end flex items-center gap-2">
-          {/* Desktop selector */}
-          <div className="hidden md:block">
-            <div className="dropdown dropdown-end">
-              <button className="btn btn-ghost rounded-full border border-base-200">
-                <span className="font-semibold">{displayLabel}</span>
-                <svg
-                  className="ml-2 h-4 w-4 opacity-60"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-
-              <div className="dropdown-content z-[1] mt-2 w-[360px] rounded-box bg-base-100 shadow border border-base-200">
-                {/* Header */}
-                <div className="px-4 pt-4 pb-2">
-                  <div className="text-sm opacity-70">Currently viewing</div>
-                  <div className="font-semibold">{displayLabel}</div>
-                </div>
-
-                <div className="divider my-0" />
-
-                {/* Fund list + option list */}
-                <div className="p-3">
-                  {fundOptions.length === 0 ? (
-                    <div className="text-sm opacity-70 px-1 py-2">
-                      No funds loaded.
-                    </div>
-                  ) : (
-                    <div className="grid grid-cols-2 gap-3">
-                      {/* Funds column */}
-                      <div className="min-w-0">
-                        <div className="text-xs font-semibold opacity-60 px-2 pb-2">
-                          Funds
-                        </div>
-                        <ul className="menu bg-base-100 rounded-box p-1 max-h-64 overflow-auto">
-                          {fundOptions.map((f) => {
-                            const isActive = current?.fund?.id === f.id;
-                            return (
-                              <li key={f.id}>
-                                <button
-                                  className={isActive ? "active" : ""}
-                                  onClick={() => setFundAndFirstOption(f.id)}
-                                  title={f.name}
-                                >
-                                  <span className="truncate">{f.name}</span>
-                                </button>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-
-                      {/* Options column */}
-                      <div className="min-w-0">
-                        <div className="text-xs font-semibold opacity-60 px-2 pb-2">
-                          Options
-                        </div>
-
-                        {!current ? (
-                          <div className="text-sm opacity-70 px-2 py-2">
-                            Select a fund to view options.
-                          </div>
-                        ) : (
-                          <ul className="menu bg-base-100 rounded-box p-1 max-h-64 overflow-auto">
-                            {current.fund.options?.map((opt) => {
-                              const isActive = current.option.id === opt.id;
-                              return (
-                                <li key={opt.id}>
-                                  <button
-                                    className={isActive ? "active" : ""}
-                                    onClick={() =>
-                                      setOption(current.fund.id, opt.id)
-                                    }
-                                    title={opt.name}
-                                  >
-                                    <span className="truncate">{opt.name}</span>
-                                  </button>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        )}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Footer actions */}
-                  <div className="flex items-center justify-between pt-3">
-                    <button
-                      className="btn btn-ghost btn-sm"
-                      onClick={clearSelection}
-                      disabled={!selection}
-                    >
-                      Clear
-                    </button>
-
-                    <button
-                      className="btn btn-primary btn-sm"
-                      onClick={() => {
-                        // If nothing selected, pick first fund+option to avoid dead-end
-                        if (!current && fundOptions[0]?.options?.[0]) {
-                          onChangeSelection({
-                            fundId: fundOptions[0].id,
-                            optionId: fundOptions[0].options[0].id,
-                          });
-                        }
-                        // Otherwise do nothing (dropdown closes automatically on click outside;
-                        // DaisyUI doesn't auto-close on button click in all configs)
-                      }}
-                    >
-                      Done
-                    </button>
-                  </div>
-
-                  <div className="text-xs opacity-60 pt-2">
-                    Tip: holdings can differ by option.
-                  </div>
-                </div>
-              </div>
-            </div>
+    <>
+      <div className="bg-white fixed top-0 z-50 w-full border-b border-slate-100 shadow-sm">
+        <div className="mx-auto w-full max-w-[85rem] px-4 md:px-8 h-16 relative flex items-center">
+          {/* Left: Logo — absolute, out of flow */}
+          <div className="absolute left-4 md:left-8 flex items-center">
+            <a
+              href="/"
+              className="text-lg md:text-xl font-bold transition text-slate-900"
+            >
+              Clear<span className="text-emerald-600">Super</span>
+            </a>
           </div>
 
-          {/* Mobile overflow button (keep your existing icon) */}
-          <button
-            className="btn btn-square btn-ghost block md:hidden"
-            aria-label="More"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="inline-block h-5 w-5 stroke-current"
+          {/* Center: full width, centers against entire navbar */}
+          <div className="w-full flex justify-center items-center">
+            {/* Desktop: nav menu */}
+            <div className="hidden md:block">
+              <NavigationMenuDemo />
+            </div>
+
+            {/* Mobile: balance pill */}
+            {hasBalance && (
+              <button
+                onClick={openDrawer}
+                className="flex md:hidden items-center gap-1.5 bg-slate-100 hover:bg-slate-200 transition-colors px-4 py-1.5 rounded-full border border-slate-200/50 shadow-inner"
+              >
+                <span className="text-xs font-bold text-slate-400 tracking-widest">
+                  Balance:
+                </span>
+                <span className="text-xs font-black text-slate-900 tabular-nums">
+                  <NumericFormat
+                    value={state.balance}
+                    thousandSeparator
+                    prefix="$"
+                    displayType="text"
+                  />
+                </span>
+                <ChevronDown className="w-3 h-3 text-slate-400" />
+              </button>
+            )}
+          </div>
+
+          {/* Right: absolute, out of flow */}
+          <div className="absolute right-4 md:right-8 flex items-center gap-3">
+            {/* Desktop: fund + option + balance pill */}
+            {hasBalance && (
+              <button
+                onClick={openDrawer}
+                className="hidden md:flex items-center gap-2 bg-slate-100 hover:bg-slate-200 transition-colors px-4 py-2 rounded-full border border-slate-200/50 shadow-inner group"
+              >
+                <span className="text-sm font-bold text-slate-400 group-hover:text-slate-500 transition-colors">
+                  {fundName} · {optionName} ·
+                </span>
+                <span className="text-sm font-black text-slate-900 tabular-nums">
+                  <NumericFormat
+                    value={state.balance}
+                    thousandSeparator
+                    prefix="$"
+                    displayType="text"
+                  />
+                </span>
+                <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
+              </button>
+            )}
+
+            {/* Mobile: hamburger */}
+            <button
+              className="btn btn-square btn-ghost block md:hidden"
+              aria-label="Menu"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 0 012 0zm7 0a1 1 0 11-2 0 1 0 012 0z"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block h-5 w-5 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Drawer / Dropdown */}
+      <Dialog.Root open={drawerOpen} onOpenChange={setDrawerOpen}>
+        <Dialog.Portal>
+          <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
+
+          <Dialog.Content
+            className="
+              fixed z-50 bg-white shadow-xl focus:outline-none
+              data-[state=open]:animate-in data-[state=closed]:animate-out
+              data-[state=closed]:duration-200 data-[state=open]:duration-300
+              bottom-0 left-0 right-0 rounded-t-2xl px-5 pt-4 pb-8
+              data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom
+              md:bottom-auto md:top-[68px] md:left-auto md:right-6
+              md:w-72 md:rounded-2xl md:px-5 md:pt-5 md:pb-5
+              md:data-[state=closed]:slide-out-to-top-2 md:data-[state=open]:slide-in-from-top-2
+            "
+          >
+            <VisuallyHidden.Root>
+              <Dialog.Title>Viewing settings</Dialog.Title>
+            </VisuallyHidden.Root>
+
+            {/* Mobile drag handle */}
+            <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-slate-200 md:hidden" />
+
+            {/* Header */}
+            <div className="flex items-center justify-between mb-5">
+              <p className="text-sm font-semibold text-slate-900">
+                Viewing settings
+              </p>
+              <Dialog.Close className="rounded-full p-1 hover:bg-slate-100 transition-colors">
+                <X className="w-4 h-4 text-slate-400" />
+              </Dialog.Close>
+            </div>
+
+            {/* Fund */}
+            <div className="flex items-center justify-between py-3 border-b border-slate-100">
+              <div>
+                <p className="text-xs text-slate-400 mb-0.5">Fund</p>
+                <p className="text-sm font-medium text-slate-900">{fundName}</p>
+              </div>
+              <button className="text-xs font-medium text-emerald-600 hover:text-emerald-700 transition-colors">
+                Change
+              </button>
+            </div>
+
+            {/* Option */}
+            <div className="flex items-center justify-between py-3 border-b border-slate-100">
+              <div>
+                <p className="text-xs text-slate-400 mb-0.5">
+                  Investment option
+                </p>
+                <p className="text-sm font-medium text-slate-900">
+                  {optionName}
+                </p>
+              </div>
+              <button className="text-xs font-medium text-emerald-600 hover:text-emerald-700 transition-colors">
+                Change
+              </button>
+            </div>
+
+            {/* Balance */}
+            <div className="py-3">
+              <p className="text-xs text-slate-400 mb-1.5">Your balance</p>
+              <NumericFormat
+                value={localBalance}
+                thousandSeparator
+                prefix="$"
+                onValueChange={(values) =>
+                  setLocalBalance(values.floatValue ?? 0)
+                }
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                placeholder="$0"
+              />
+              <p className="text-xs text-slate-400 mt-1.5">
+                Used to estimate your proportional exposure
+              </p>
+            </div>
+
+            {/* Save */}
+            <button
+              onClick={handleSave}
+              className="mt-2 w-full rounded-xl bg-emerald-600 hover:bg-emerald-700 transition-colors px-4 py-2.5 text-sm font-semibold text-white"
+            >
+              Save
+            </button>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
+    </>
   );
 };
 

@@ -2,12 +2,42 @@ import React from "react";
 import { Superannuation } from "../AnimationComponents/Superannuation";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { funds, type FundOption } from "./WizardForm/funds";
 
 type referenceProp = {
   reference: any;
+  fund?: string;
+  option?: string;
+  showSelectedFund?: boolean;
+  onSelectFund?: (fund: FundOption) => void;
 };
 
-const HeroSection = ({ reference }: referenceProp) => {
+const fundDomains: Record<string, string> = {
+  AustralianSuper: "australiansuper.com",
+  Rest: "rest.com.au",
+  Hostplus: "hostplus.com.au",
+  "Australian Retirement Trust": "australianretirementtrust.com",
+  "Aware Super": "aware.com.au",
+};
+
+const HeroSection = ({
+  reference,
+  fund,
+  option,
+  showSelectedFund,
+  onSelectFund,
+}: referenceProp) => {
+  const selectedFundDomain = fund ? fundDomains[fund] : undefined;
+  const [changeFundOpen, setChangeFundOpen] = React.useState(false);
+
   return (
     // Background: Your "Daylight Teal" (Bright & Engaging)
     <div className="bg-gradient-to-t from-emerald-100 to-emerald-200 p-6 pb-24 relative">
@@ -44,28 +74,33 @@ const HeroSection = ({ reference }: referenceProp) => {
       </div>
 
       <div className="flex justify-center mb-5 relative z-10">
-        <Button
-          className="bg-[#F59E0B] text-[#451a03] font-bold px-8 py-4 rounded-full text-lg h-auto hover:bg-[#d97706] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
-          onClick={() => {
-            reference.current?.scrollIntoView({
-              behavior: "smooth",
-              block: "center",
-              inline: "nearest",
-            });
-          }}
-        >
-          Enter Your Details
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
+        {showSelectedFund && fund ? (
+          <Button
+            className="h-11 flex-1 rounded-full bg-[#F59E0B] px-5 text-sm font-bold text-[#451a03] shadow-sm hover:bg-[#d97706] sm:flex-none"
+            onClick={() => {
+              reference.current?.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+                inline: "nearest",
+              });
+            }}
           >
-            <path d="M19 9l-7 7-7-7" />
-          </svg>
-        </Button>
+            View holdings
+          </Button>
+        ) : (
+          <Button
+            className="h-11 rounded-full bg-[#F59E0B] px-5 text-sm font-bold text-[#451a03] shadow-sm hover:bg-[#d97706] sm:ml-2"
+            onClick={() => {
+              reference.current?.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+                inline: "nearest",
+              });
+            }}
+          >
+            Select fund
+          </Button>
+        )}
       </div>
     </div>
   );

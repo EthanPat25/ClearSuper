@@ -4,89 +4,85 @@ import { Highway } from "../AnimationComponents/Highway";
 import { House } from "../AnimationComponents/House";
 import { Briefcase } from "../AnimationComponents/Briefcase";
 import { Puzzle } from "../AnimationComponents/Puzzle";
+import { motion } from "framer-motion";
+
+type Holding = {
+  Full_Name: string;
+  Super_Fund: string;
+  Option_Name: string;
+  Listing_Status: string;
+  Asset_Class: string;
+  Dollar_Value?: number;
+  Weighting_Percentage_Clean: number;
+};
 
 type PrivateHoldingsProps = {
   holdingsData: Holding[] | null;
   balance: number;
 };
 
-type Holding = {
-  Name: string;
-  Weighting_Percentage: number;
-  Super_Fund: string;
-  Option_Name: string;
-  Listing_Status: string;
-  Dollar_Value?: number;
-  Domain?: string;
-  Source_Name: string;
-  Asset_Class: string;
-  Weighting_Percentage_Clean: number;
-};
-
-const PrivateHoldings: React.FC<PrivateHoldingsProps> = ({}) => {
+const PrivateHoldings: React.FC<PrivateHoldingsProps> = ({
+  holdingsData,
+  balance,
+}) => {
   const categories = [
-    { name: "Infrastructure", icon: <Highway initialSize={90} /> },
-    { name: "Property", icon: <House initialSize={90} /> },
-    { name: "Equity", icon: <Briefcase initialSize={90}></Briefcase> },
-    { name: "Alternatives", icon: <Puzzle initialSize={90} /> }, // placeholder
+    {
+      name: "Infrastructure",
+      icon: <Highway responsiveSizing="w-[9rem] h-[7rem]" />,
+    },
+    {
+      name: "Property",
+      icon: <House responsiveSizing="w-[9rem] h-[7rem]" />,
+    },
+    {
+      name: "Equity",
+      icon: <Briefcase responsiveSizing="w-[9rem] h-[7rem]" />,
+    },
+    {
+      name: "Alternatives",
+      icon: <Puzzle responsiveSizing="w-[9rem] h-[7rem]" />,
+    },
   ];
 
-  function getColorForAssetClass(assetClass: string) {
-    switch (assetClass) {
-      case "Infrastructure":
-        return "bg-sky-100 text-sky-700";
-      case "Property":
-        return "bg-green-100 text-green-700";
-      case "Equity":
-        return "bg-yellow-100 text-yellow-700";
-      case "Alternatives":
-        return "bg-orange-100 text-orange-700";
-      default:
-        return "bg-gray-100 text-gray-500";
-    }
+  function getCategoryValue(assetClass: string) {
+    const pct =
+      holdingsData
+        ?.filter((h) => h.Asset_Class === assetClass)
+        .reduce((sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0), 0) ?? 0;
+    return (pct / 100) * balance;
   }
 
   return (
-    <div className="bg-gray-100 w-full rounded-[5rem]">
-      {/* Category Cards */}
-      <div className="mx-auto mt-10 grid grid-cols-2 gap-4 gap-y-7 max-w-2xl place-items-center">
+    <div className="w-full flex justify-center">
+      <div className="grid grid-cols-2 w-full px-3 md:px-10 xl:px-72 pt-6 gap-6 justify-items-center">
         {categories.map((cat, index) => (
-          <div
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            whileHover={{ y: -6 }}
             key={index}
-            className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[16rem] relative"
+            className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[16rem] relative hover:shadow-xl cursor-pointer select-none"
           >
-            {/* Icon */}
             <div className="flex flex-col justify-between items-center gap-6">
               {cat.icon}
             </div>
 
-            {/* Category pill */}
-            <h2 className="mt-4">
-              <span
-                className={`px-3 py-1 rounded-full xs:text-sm md:text-base font-[500] ${getColorForAssetClass(
-                  cat.name,
-                )}`}
-              >
-                {cat.name}
-              </span>
+            <h2 className="xs:text-sm md:text-base font-medium mb-2">
+              {cat.name}
             </h2>
-
-            {/* Dollar + percentage */}
-            <h2 className="xs:text-sm md:text-base font-medium mt-2 flex justify-center text-center items-center gap-2">
-              <p className="font-semibold text-xl ">
-                <NumericFormat
-                  value={0}
-                  thousandSeparator
-                  prefix="$"
-                  displayType="text"
-                />
-              </p>
-            </h2>
-          </div>
+            <p className="font-semibold text-xl">
+              <NumericFormat
+                value={getCategoryValue(cat.name)}
+                thousandSeparator
+                prefix="$"
+                decimalScale={0}
+                displayType="text"
+              />
+            </p>
+          </motion.div>
         ))}
       </div>
-
-      {/* Footer */}
     </div>
   );
 };

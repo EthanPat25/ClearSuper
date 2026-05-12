@@ -137,7 +137,7 @@ export function Footer() {
                 Super Tools
               </div>
               <div className="text-emerald-100/90 hover:text-white cursor-pointer transition-colors">
-                About
+                <Link prefetch={false} href="/about">About</Link>
               </div>
             </div>
           </div>

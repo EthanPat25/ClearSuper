@@ -7,13 +7,6 @@ export type FormDataType = {
   balance: number;
 };
 
-createStore({
-  Fund: "",
-  option: "",
-  age: undefined,
-  balance: 0,
-});
-
 export function updateForm(
   state: FormDataType,
   payload: Partial<FormDataType>

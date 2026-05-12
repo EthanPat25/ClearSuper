@@ -162,10 +162,25 @@ const PublicHoldingsComparison: React.FC<PublicHoldingsProps> = ({}) => {
               const restValueBg =
                 restValue > yourFundValue ? "bg-green-50" : "bg-red-50";
 
+              const mockHolding = {
+                Full_Name: element.fullName,
+                Super_Fund: "",
+                Option_Name: "",
+                Weighting_Percentage_Clean: 0,
+                companies: {
+                  id: element.domain,
+                  Parsed_Name: element.parsedName,
+                  Sector: "",
+                  Description: "",
+                  Country: "",
+                },
+              };
+
               return (
                 <CompanyPopUp
                   key={index}
-                  element={element}
+                  holding={mockHolding}
+                  balance={0}
                   trigger={
                     <motion.div
                       key={element.fullName}
