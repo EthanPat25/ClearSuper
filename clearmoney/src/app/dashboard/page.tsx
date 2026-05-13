@@ -17,7 +17,7 @@ export default function SuperContributions() {
   const router = useRouter();
   return (
     <div className="w-screen flex flex-col bg-slate-50 font-sans overflow-x-hidden">
-      <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white pt-20 pb-32 lg:pt-32 lg:pb-48 relative overflow-visible min-h-[calc(100dvh-4rem)] flex items-center justify-center">
+      <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white pt-20 pb-32 lg:pt-32 lg:pb-48 relative overflow-visible min-h-[calc(100dvh-4rem)] flex justify-center items-center">
         <div
           className="absolute inset-0 opacity-[0.05] overflow-hidden"
           style={{
@@ -27,7 +27,7 @@ export default function SuperContributions() {
           }}
         />
 
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-12 lg:gap-8 items-center relative z-10">
+        <div className="max-w-7xl justify-center items-center grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-12 lg:gap-12 relative z-10">
           <div className="flex flex-col items-center text-center order-1">
             <motion.div
               animate={{ y: [0, -10, 0] }}
@@ -107,7 +107,6 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
                 <Phone />
               </div>
 
-              {/* Fees Card */}
               <motion.div
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 30, opacity: 1 }}

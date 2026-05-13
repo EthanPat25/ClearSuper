@@ -68,18 +68,9 @@ function AccordionItem({ title, body }) {
 export default function AboutPage() {
   return (
     <div className="w-screen min-h-screen flex flex-col bg-slate-50 font-sans overflow-x-hidden">
-      <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white pt-20 pb-32 lg:pt-32 lg:pb-48 relative overflow-visible">
-        <div
-          className="absolute inset-0 opacity-[0.05] overflow-hidden"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle, #000000 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
-          }}
-        />
-
-        <div className="max-w-7xl mx-auto px-6 gap-0 md:gap-12 lg:gap-8 items-center relative z-10">
-          <div className="w- full flex flex-col items-center text-center">
+      <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white relative pt-32 pb-32 overflow-visible min-h-[calc(100dvh-4rem)] flex justify-center items-center">
+        <div className="max-w-7xl px-6 gap-0 md:gap-12 lg:gap-8 items-center relative z-10">
+          <div className="w- full flex flex-col items-center justify-center text-center">
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -139,7 +130,6 @@ export default function AboutPage() {
               </button>
             </div>
           </div>
-          <div className="relative flex flex-col items-center order-2 mt-20 lg:mt-0 z-20 -mb-48 lg:mb-0"></div>
         </div>
       </div>
 
@@ -163,7 +153,8 @@ export default function AboutPage() {
             <div className="space-y-4 text-lg text-slate-600 leading-relaxed text-pretty text-justify">
               <p>
                 I'm a computer science student based in Australia with a deep
-                interest in technology and.
+                interest in technology and building products that solve real
+                problems.
               </p>
               <p>
                 ClearSuper started from a simple realisation. I didn't
@@ -174,8 +165,8 @@ export default function AboutPage() {
                 across their entire career. Working as a disability support
                 worker, I've seen firsthand how much the interaction between
                 people, technology and systems matter. Technology when used
-                responsibility, has the ability to address gaps in the systems
-                we all depend on.
+                responsibly, has the ability to address gaps in the systems we
+                all depend on.
               </p>
               <p>ClearSuper is my attempt at that.</p>
             </div>
@@ -193,7 +184,7 @@ export default function AboutPage() {
 
       <div className="bg-slate-50 py-32 border-t border-slate-200/60">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-col items-center text-center mb-16">
+          <div className="flex flex-col items-center text-center mb-8">
             <p className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-3">
               About ClearSuper
             </p>
@@ -205,41 +196,36 @@ export default function AboutPage() {
           <div className="max-w-[50rem] mx-auto space-y-5 text-lg text-slate-600">
             <p className="text-justify">
               A few years ago I was doing Menulog deliveries during the
-              pandemic. As a gig worker I wasn't earning super, and a family
-              member told me to put some of what I earned in. I didn't. At 19, I
-              wasn't interested. Truth be told, I'd never even opened my super
-              account to have a look.
+              pandemic. As a gig worker I wasn't earning super, so a family
+              member suggested I contribute some of my earnings myself. I
+              didn't. At 19, I wasn't interested. Truth be told, I had never
+              even logged into my account.
             </p>
             <p className="text-justify">
               Turns out I wasn't unusual. Research from AMP found a quarter of
-              Australians have never engaged with their super fund at all, and
-              almost half only check once or twice a year. CSBA research also
-              found Gen Z are the least likely generation to feel their super
-              fund actively supports their understanding of superannuation.
-              Engagement is an ongoing challenge. And I was a clear example of
-              it.
+              Australians have never checked their super. Engagement is an
+              ongoing challenge. And I was a clear example of it.
             </p>
             <p className="text-justify">
-              To me, super never really felt real. Until one day it suddenly
-              felt personal. I saw how it could play out over a lifetime. And
-              that it didn't always play out evenly.
+              Since then I've spent time trying to understand. Both at a system
+              and personal level. I often wonder what could have made my 19 year
+              old self stop and think a little longer. To me, super never really
+              felt real. Until one day it did. I saw how it could play out over
+              a lifetime. And that it didn't always play out evenly.
             </p>
-            <p className="text-justify">
-              I often wonder what could have made my 19-year-old self stop and
-              think a little longer. Just to even open it. Here's the thing.
-              Even if I had, would I have understood what I was looking at?
-              Would I have cared? Super is long-term. In an online space that
-              competes for our limited attention, how do you engage people
-              responsibly with something as long-term as super?
+            <p>
+              It's a hard problem. Super is long term by design, yet digital
+              spaces increasingly demand our attention in ways that aren't.
             </p>
+
             <p className="text-justify">
-              I don't have a clean answer. But it's a question I keep coming
-              back to.
+              It's an observiaton I don't have a clean answer for. But it's
+              something I keep coming back to.
             </p>
             <p className="text-justify">
               People increasingly expect digital experiences to feel visual,
-              personal and tangible. And I believe the digital side of super is
-              only going to become more important in making super feel personal.
+              personal and tangible. I believe the digital side of super is only
+              going to become more important in making super feel personal.
               ClearSuper is a proof of concept that explores some of that. One
               attempt at what more accessible, visual engagement with super
               could look like. The data is public. Making it engaging is the

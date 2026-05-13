@@ -66,7 +66,7 @@ export function NavigationMenuDemo() {
               "text-[0.95rem] font-[500]",
             )}
           >
-            <Link href="/financeOverview">View Your Fund</Link>
+            <Link href="/holdings">View Your Fund</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
