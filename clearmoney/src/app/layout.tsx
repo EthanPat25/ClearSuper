@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "../app/financeOverview/NavBar";
+import NavBar from "../app/dashboard/NavBar";
 import { Footer } from "./components/ui/Footer";
 import StateProvider from "./components/StateProvider";
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         <StateProvider>
           <main className="flex flex-col flex-grow w-screen min-h-screen">
             <NavBar />
-            <div className="flex-grow pt-16">{children}</div>
+            <div className="flex-grow">{children}</div>
           </main>
           <Footer />
         </StateProvider>

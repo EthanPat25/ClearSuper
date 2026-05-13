@@ -16,8 +16,8 @@ import { Mining } from "../AnimationComponents/Mining";
 export default function SuperContributions() {
   const router = useRouter();
   return (
-    <div className="w-screen min-h-screen flex flex-col bg-slate-50 font-sans overflow-x-hidden">
-      <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white pt-20 pb-32 lg:pt-32 lg:pb-48 relative overflow-visible">
+    <div className="w-screen flex flex-col bg-slate-50 font-sans overflow-x-hidden">
+      <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white pt-20 pb-32 lg:pt-32 lg:pb-48 relative overflow-visible min-h-[calc(100dvh-4rem)] flex items-center justify-center">
         <div
           className="absolute inset-0 opacity-[0.05] overflow-hidden"
           style={{
