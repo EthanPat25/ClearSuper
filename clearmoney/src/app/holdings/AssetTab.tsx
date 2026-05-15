@@ -33,7 +33,7 @@ const AssetTabs = ({ AssetView, setAssetView, weight }) => {
           onClick={() => setAssetView(item.key)}
           className={`
             flex items-center justify-center gap-1.5 sm:gap-2.5
-            py-2.5 sm:min-w-[13.75rem] sm:flex-none
+            py-2.5 sm:min-w-[13.8rem] sm:flex-none
             px-2 sm:px-5
             rounded-xl sm:rounded-3xl
             text-xs sm:text-sm font-bold sm:font-medium
@@ -49,7 +49,7 @@ const AssetTabs = ({ AssetView, setAssetView, weight }) => {
             className="h-2 w-2 sm:h-3 sm:w-3 shrink-0 rounded-full sm:rounded-sm"
             style={{ backgroundColor: item.color }}
           />
-          <span className="truncate sm:whitespace-nowrap">
+          <span className="sm:whitespace-nowrap">
             <span className="sm:hidden">{item.mobileLabel}</span>
             <span className="hidden sm:inline">{item.desktopLabel}</span>
           </span>

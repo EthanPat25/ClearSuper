@@ -18,8 +18,6 @@ export async function GET(Request: NextRequest) {
     const fund = searchParams.get("fund");
     const option = searchParams.get("option");
 
-    console.log("Holdings API hit — fund:", fund, "option:", option);
-
     if (!fund || !option) {
       return new Response(JSON.stringify({ error: "Missing parameters" }), {
         status: 400,
@@ -52,16 +50,12 @@ export async function GET(Request: NextRequest) {
       .eq("Listing_Status", "Listed")
       .order("Dollar_Value", { ascending: false });
 
-    console.log("publicError:", publicError);
-
     const { data: private_investments, error: privateError } = await supabase
       .from("Holdings")
       .select(selectString)
       .eq("Option_Id", option)
       .eq("Listing_Status", "Unlisted")
       .order("Dollar_Value", { ascending: false });
-
-    console.log("privateError:", privateError);
 
     const { data: bonds, error: bondsError } = await supabase
       .from("Holdings")
@@ -70,16 +64,12 @@ export async function GET(Request: NextRequest) {
       .eq("Asset_Class", "Fixed Income")
       .order("Dollar_Value", { ascending: false });
 
-    console.log("bondsError:", bondsError);
-
     const { data: cash, error: cashError } = await supabase
       .from("Holdings")
       .select(selectString)
       .eq("Option_Id", option)
       .eq("Asset_Class", "Cash")
       .order("Dollar_Value", { ascending: false });
-
-    console.log("cashError:", cashError);
 
     if (publicError || privateError || bondsError || cashError) {
       return new Response(JSON.stringify({ error: "Database fetch failed" }), {
@@ -100,7 +90,6 @@ export async function GET(Request: NextRequest) {
       },
     );
   } catch (err) {
-    console.log("CAUGHT ERROR:", err);
     return new Response(JSON.stringify({ error: "Server error" }), {
       status: 500,
     });

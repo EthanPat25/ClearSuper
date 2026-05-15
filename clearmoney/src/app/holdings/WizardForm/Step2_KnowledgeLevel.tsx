@@ -113,7 +113,6 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
           disabled={!selected}
           onClick={() => {
             const chosen = OPTIONS.find((o) => o.id === selected);
-            console.log("Here: " + chosen?.nextStep);
 
             actions.updateForm({
               option: chosen?.title,

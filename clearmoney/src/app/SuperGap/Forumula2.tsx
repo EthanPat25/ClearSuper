@@ -15,7 +15,7 @@ export const projectInvestmentGrowth = (data: Inputs) => {
     if (isNaN(value)) {
       console.error(
         `Error: Input '${key}' is not a valid number. Received:`,
-        data[key as keyof Inputs]
+        data[key as keyof Inputs],
       );
       return { nominal: 0, real: 0, fees: 0 };
     }
@@ -75,16 +75,6 @@ export const projectInvestmentGrowth = (data: Inputs) => {
 
   // --- FINAL CALCULATIONS ---
   const nominalBalance = realBalance * Math.pow(1 + inflation, years);
-
-  console.log(
-    `Final real balance after ${years} years (today's dollars): $${realBalance.toFixed(2)}`
-  );
-  console.log(
-    `Final nominal balance after ${years} years (future dollars): $${nominalBalance.toFixed(2)}`
-  );
-  console.log(
-    `Total fees paid (in today's dollars): $${totalFeesPaid.toFixed(2)}`
-  );
 
   return { nominal: nominalBalance, real: realBalance, fees: totalFeesPaid };
 };

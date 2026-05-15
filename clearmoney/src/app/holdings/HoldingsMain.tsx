@@ -1,19 +1,15 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NumericFormat } from "react-number-format";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { IconSearch } from "@tabler/icons-react";
-import PublicHoldings_copy from "./PublicHoldings";
+import PublicHoldings from "./PublicHoldings";
 import PrivateHoldings from "./PrivateHoldings";
 import BondsandCashHoldings from "./BondsandCashHoldings";
 import ControlsBar from "./ControlsBar";
 import AssetTabs from "./AssetTab";
 
-type PublicHoldingsProps = {
-  holdingsData: Holding[] | null;
-  balance: number;
-};
+type AssetViewType = "public" | "private" | "bonds";
 
 type Holding = {
   Super_Fund: string;
@@ -32,14 +28,26 @@ type Holding = {
     Country: string;
   };
 };
-const HoldingsMain: React.FC<PublicHoldingsProps> = ({
-  holdingsData,
+
+type HoldingsMainProps = {
+  publicHoldings: Holding[];
+  privateInvestments: Holding[];
+  bonds: Holding[];
+  cash: Holding[];
+  balance: number;
+};
+
+const sumWeight = (holdings: Holding[]) =>
+  holdings.reduce((sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0), 0);
+
+const HoldingsMain: React.FC<HoldingsMainProps> = ({
+  publicHoldings,
+  privateInvestments,
+  bonds,
+  cash,
   balance,
 }) => {
-  const [AssetView, setAssetView] = React.useState<
-    "public" | "private" | "bonds"
-  >("public");
-
+  const [AssetView, setAssetView] = React.useState<AssetViewType>("public");
   const [startIndex, setStartIndex] = React.useState(0);
   const pageSize = 9;
   const mobileBatchSize = 12;
@@ -52,18 +60,19 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
     "company",
   );
 
+  // Search-filter the listed holdings — no listing-status filter needed,
+  // because publicHoldings is already listed-only.
   const filteredHoldings = React.useMemo(() => {
-    if (!holdingsData) return [];
-    if (!searchTerm.trim()) return holdingsData;
+    if (!searchTerm.trim()) return publicHoldings;
 
     const term = searchTerm.toLowerCase();
-    return holdingsData.filter(
+    return publicHoldings.filter(
       (h) =>
         h.Full_Name.toLowerCase().includes(term) ||
         h.companies?.Parsed_Name.toLowerCase().includes(term) ||
         h.companies?.Sector.toLowerCase().includes(term),
     );
-  }, [holdingsData, searchTerm]);
+  }, [publicHoldings, searchTerm]);
 
   React.useEffect(() => {
     setStartIndex(0);
@@ -73,22 +82,10 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
   const pager = filteredHoldings.slice(startIndex, startIndex + pageSize);
   const mobilePager = filteredHoldings.slice(0, mobileVisibleCount);
 
-  const publicWeight =
-    holdingsData
-      ?.filter((h) => h.Listing_Status === "Listed")
-      .reduce((sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0), 0) ?? 0;
-
-  const privateWeight =
-    holdingsData
-      ?.filter((h) => h.Listing_Status === "Unlisted")
-      .reduce((sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0), 0) ?? 0;
-
-  const bondsWeight =
-    holdingsData
-      ?.filter(
-        (h) => h.Asset_Class === "Fixed Income" || h.Asset_Class === "Cash",
-      )
-      .reduce((sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0), 0) ?? 0;
+  // Weight totals — straight reductions, no filters
+  const publicWeight = sumWeight(publicHoldings);
+  const privateWeight = sumWeight(privateInvestments);
+  const bondsWeight = sumWeight(bonds) + sumWeight(cash);
 
   const listedAmount = (publicWeight / 100) * balance;
 
@@ -143,19 +140,19 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
                 ) : (
                   <>
                     <div className="hidden sm:block">
-                      <PublicHoldings_copy
+                      <PublicHoldings
                         companyMode={companyMode}
                         pager={pager}
                         balance={balance}
-                        holdingsData={holdingsData}
+                        holdingsData={publicHoldings}
                       />
                     </div>
                     <div className="sm:hidden">
-                      <PublicHoldings_copy
+                      <PublicHoldings
                         companyMode={companyMode}
                         pager={mobilePager}
                         balance={balance}
-                        holdingsData={holdingsData}
+                        holdingsData={publicHoldings}
                       />
                       {companyMode === "company" &&
                         totalResults > mobileVisibleCount && (
@@ -183,11 +180,7 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
               className="w-full"
             >
               <PrivateHoldings
-                holdingsData={
-                  holdingsData?.filter(
-                    (h) => h.Listing_Status === "Unlisted",
-                  ) ?? null
-                }
+                holdingsData={privateInvestments}
                 balance={balance}
               />
             </motion.div>
@@ -201,14 +194,8 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
               className="w-full"
             >
               <BondsandCashHoldings
-                holdingsCashData={
-                  holdingsData?.filter((h) => h.Asset_Class === "Cash") ?? null
-                }
-                holdingsbondsData={
-                  holdingsData?.filter(
-                    (h) => h.Asset_Class === "Fixed Income",
-                  ) ?? null
-                }
+                holdingsCashData={cash}
+                holdingsbondsData={bonds}
                 balance={balance}
               />
             </motion.div>
@@ -226,15 +213,13 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
             fixedDecimalScale
             displayType="text"
           />{" "}
-          of your super is invested across{" "}
-          {holdingsData?.filter((h) => h.Listing_Status === "Listed").length ||
-            0}{" "}
-          Publicly Listed Companies
+          of your super is invested across {publicHoldings.length} Publicly
+          Listed Companies
         </h1>
 
         <div className="bg-orange-50 border border-orange-200 text-orange-800 rounded-2xl w-full max-w-[40rem] p-4 mt-6 flex justify-center items-center">
           <p className="text-[0.75rem] text-justify leading-relaxed">
-            <strong>Notice:</strong> Based on your fund’s official holdings
+            <strong>Notice:</strong> Based on your fund&apos;s official holdings
             data. Holdings are typically released by funds every 6 months.
             Dollar amounts are calculated using your current balance, assuming
             the fund held the same weights at the time of reporting. Dollar

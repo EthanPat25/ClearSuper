@@ -5,10 +5,6 @@ import Industries from "./industries";
 import CompanyPopUp from "./CompanyPopUp";
 
 const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
-  console.log("--- PublicHoldings Debug ---");
-  console.log("Balance received:", balance);
-  console.log("Total holdings in list:", holdingsData?.length);
-
   return (
     <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-4 justify-items-center px-3 sm:gap-y-6 sm:px-10 lg:px-40">
       {companyMode === "company" ? (
@@ -38,7 +34,7 @@ const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
                     className="absolute top-4 right-4 w-6 h-6 fill-slate-400 hover:fill-slate-600 transition-colors"
                     viewBox="0 0 512 512"
                     whileHover={{ scale: 1.05 }}
-                    enable-background="new 0 0 512 512"
+                    enableBackground="new 0 0 512 512"
                     xmlSpace="preserve"
                   >
                     <g>

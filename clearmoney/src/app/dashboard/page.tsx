@@ -174,7 +174,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     className="w-[1rem]"
                     viewBox="0 0 492.004 492.004"
-                    enable-background="new 0 0 492.004 492.004"
+                    enableBackground="new 0 0 492.004 492.004"
                     xmlSpace="preserve"
                   >
                     <g>

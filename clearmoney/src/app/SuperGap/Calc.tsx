@@ -99,7 +99,10 @@ export function Calc({
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {/* Age */}
                 <div className="space-y-1">
-                  <Label htmlFor="age" className="text-sm font-medium text-gray-900">
+                  <Label
+                    htmlFor="age"
+                    className="text-sm font-medium text-gray-900"
+                  >
                     Your Age
                   </Label>
                   <Input
@@ -114,7 +117,10 @@ export function Calc({
 
                 {/* Retirement Age */}
                 <div className="space-y-1">
-                  <Label htmlFor="retire" className="text-sm font-medium text-gray-900">
+                  <Label
+                    htmlFor="retire"
+                    className="text-sm font-medium text-gray-900"
+                  >
                     Retirement Age
                   </Label>
                   <Input
@@ -129,7 +135,10 @@ export function Calc({
 
                 {/* Salary */}
                 <div className="space-y-1">
-                  <Label htmlFor="salary" className="text-sm font-medium text-gray-900">
+                  <Label
+                    htmlFor="salary"
+                    className="text-sm font-medium text-gray-900"
+                  >
                     Current Salary
                   </Label>
                   <div className="relative">
@@ -141,14 +150,19 @@ export function Calc({
                       className="pl-7 h-10 text-sm font-normal text-gray-900"
                       {...register("salary", { required: true })}
                     />
-                    <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-sm text-gray-500">$</span>
+                    <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-sm text-gray-500">
+                      $
+                    </span>
                   </div>
                 </div>
 
                 {/* Super Balance */}
                 <div className="space-y-1">
                   <div className="flex justify-between items-end">
-                    <Label htmlFor="balance" className="text-sm font-medium text-gray-900">
+                    <Label
+                      htmlFor="balance"
+                      className="text-sm font-medium text-gray-900"
+                    >
                       Super Balance
                     </Label>
                     {median && (
@@ -170,7 +184,9 @@ export function Calc({
                       className="pl-7 h-10 text-sm font-normal text-gray-900"
                       {...register("superBalance", { required: true })}
                     />
-                    <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-sm text-gray-500">$</span>
+                    <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-sm text-gray-500">
+                      $
+                    </span>
                   </div>
                 </div>
               </div>
@@ -182,7 +198,9 @@ export function Calc({
                     <AccordionTrigger className="hover:no-underline py-2">
                       <div className="flex items-center gap-2">
                         <Plus className="w-4 h-4 text-gray-700" />
-                        <span className="text-sm font-medium text-gray-900">Add a career break or reduced hours</span>
+                        <span className="text-sm font-medium text-gray-900">
+                          Add a career break or reduced hours
+                        </span>
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="pt-2">
@@ -196,8 +214,8 @@ export function Calc({
                           defaultDate={
                             new Date(
                               new Date().setFullYear(
-                                new Date().getFullYear() + 1
-                              )
+                                new Date().getFullYear() + 1,
+                              ),
                             )
                           }
                         />
@@ -206,7 +224,9 @@ export function Calc({
                             <Label className="text-sm font-medium text-gray-900">
                               Workload During Break
                             </Label>
-                            <span className="text-xs font-medium text-gray-500">0% of salary</span>
+                            <span className="text-xs font-medium text-gray-500">
+                              0% of salary
+                            </span>
                           </div>
                           <Slide className="w-full" />
                         </div>
@@ -218,13 +238,18 @@ export function Calc({
                     <AccordionTrigger className="hover:no-underline py-2">
                       <div className="flex items-center gap-2">
                         <Info className="w-4 h-4 text-gray-400" />
-                        <span className="text-sm font-medium text-gray-500">Advanced Model Settings</span>
+                        <span className="text-sm font-medium text-gray-500">
+                          Advanced Model Settings
+                        </span>
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="pt-2">
                       <div className="grid grid-cols-2 gap-4 p-4 bg-gray-50/50 rounded-lg border border-dashed">
                         <div className="space-y-1">
-                          <Label htmlFor="sg" className="text-xs font-medium text-gray-600">
+                          <Label
+                            htmlFor="sg"
+                            className="text-xs font-medium text-gray-600"
+                          >
                             Super SG %
                           </Label>
                           <div className="relative">
@@ -235,11 +260,16 @@ export function Calc({
                               className="h-9 text-xs"
                               {...register("superSG")}
                             />
-                            <span className="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] text-gray-400">%</span>
+                            <span className="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] text-gray-400">
+                              %
+                            </span>
                           </div>
                         </div>
                         <div className="space-y-1">
-                          <Label htmlFor="return" className="text-xs font-medium text-gray-600">
+                          <Label
+                            htmlFor="return"
+                            className="text-xs font-medium text-gray-600"
+                          >
                             Est. Return %
                           </Label>
                           <div className="relative">
@@ -251,7 +281,9 @@ export function Calc({
                               className="h-9 text-xs"
                               {...register("superReturn")}
                             />
-                            <span className="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] text-gray-400">%</span>
+                            <span className="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] text-gray-400">
+                              %
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -260,13 +292,17 @@ export function Calc({
                 </Accordion>
               </div>
             </div>
-            
+
             <div className="mt-auto pt-6">
               <Button type="submit" className="w-full">
                 Calculate
               </Button>
               <p className="text-[10px] text-center text-gray-400 mt-4">
-                This is a model, not financial advice. <Link href="/about" className="underline">Read disclaimer</Link>.
+                This is a model, not financial advice.{" "}
+                <Link href="/about" className="underline">
+                  Read disclaimer
+                </Link>
+                .
               </p>
             </div>
           </form>

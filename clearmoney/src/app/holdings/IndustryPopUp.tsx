@@ -257,7 +257,7 @@ export function IndustryPopUp({
         <div className="px-8 pb-10 space-y-8 max-h-[60vh] overflow-y-auto pt-8">
           <div className="bg-slate-50 rounded-[2rem] p-6 border border-slate-100/50 relative overflow-hidden group">
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
-              Your Proportional Exposure
+              Your Proportional Exposure{" "}
             </p>
             <div className="flex items-center gap-3">
               <span className="text-3xl font-black text-slate-900 tabular-nums tracking-tighter">
@@ -265,18 +265,18 @@ export function IndustryPopUp({
                   value={totalValue}
                   thousandSeparator
                   prefix="$"
-                  decimalScale={2}
+                  decimalScale={0}
                   fixedDecimalScale
                   displayType="text"
                 />
               </span>
               <span className="text-lg font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-lg">
-                {totalWeight.toFixed(2)}%
+                {totalWeight.toFixed(1)}%
               </span>
             </div>
             <p className="text-[11px] text-slate-400 mt-4 leading-relaxed">
-              For illustrative purposes, based on {superFund}&apos;s publicly
-              disclosed APRA holdings. Read Our Disclaimer.
+              For illustrative purposes, estimated from {superFund}&apos;s
+              publicly disclosed APRA holdings. Read Our Disclaimer.
             </p>
           </div>
 

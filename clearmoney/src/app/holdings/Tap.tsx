@@ -29,12 +29,7 @@ const Tap = () => {
         <div className="bg-white flex rounded-3xl w-[13rem] h-[10rem] flex-col justify-center items-center mr-10 shadow-lg">
           <div className="flex justify-center items-center">
             <p className="text-sm">1 Year Net (Avg)</p>
-            <InfoIcon
-              onClick={() => {
-                console.log("Hello");
-              }}
-              className="w-4 h-4 ml-1 hover:scale-110"
-            ></InfoIcon>
+            <InfoIcon className="w-4 h-4 ml-1 hover:scale-110"></InfoIcon>
           </div>
           <p className="font-semibold text-[2rem]">10% pa</p>
         </div>

@@ -16,15 +16,10 @@ export async function GET(Request: NextRequest) {
   const { searchParams } = new URL(Request.url);
   const fund = searchParams.get("fund");
 
-  console.log("API hit — fund:", fund);
-
   const { data, error } = await supabase
     .from("options")
     .select("id, option_name")
     .eq("super_fund_id", fund);
-
-  console.log("data:", data);
-  console.log("error:", error);
 
   return new Response(JSON.stringify(data), {
     status: 200,

@@ -115,7 +115,9 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
           <div className="flex flex-col justify-between items-center">
             <Bond responsiveSizing="w-[9rem] h-[7rem]"></Bond>
           </div>
-          <h2 className="xs:text-sm md:text-base font-medium mb-2">Bonds</h2>
+          <h2 className="xs:text-sm md:text-base font-medium mb-2">
+            Fixed Interest
+          </h2>
           <h2 className="xs:text-sm md:text-base font-semibold mt-2">
             <NumericFormat
               value={dataforward.bondsAmount}

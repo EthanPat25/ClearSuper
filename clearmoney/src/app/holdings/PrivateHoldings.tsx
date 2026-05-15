@@ -54,7 +54,7 @@ const PrivateHoldings: React.FC<PrivateHoldingsProps> = ({
 
   return (
     <div className="w-full flex justify-center">
-      <div className="grid grid-cols-2 w-full px-3 md:px-10 xl:px-72 pt-6 gap-6 justify-items-center">
+      <div className="grid grid-cols-2 w-full px-3 md:px-10 xl:px-72 pt-6 gap-x-3 gap-y-4 sm:gap-6 justify-items-center">
         {categories.map((cat, index) => (
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
@@ -117,19 +117,21 @@ const PrivateHoldings: React.FC<PrivateHoldingsProps> = ({
               <g></g>
             </motion.svg>
 
-            <div className="flex flex-col justify-between items-center gap-6">
+            <div className="flex flex-col justify-between items-center">
               {cat.icon}
             </div>
 
-            <h2 className="xs:text-sm md:text-base font-medium mb-2">
+            <h2 className="text-xs sm:text-sm md:text-base font-medium mb-2">
               {cat.name}
             </h2>
+
             <p className="font-semibold text-xl">
               <NumericFormat
                 value={getCategoryValue(cat.name)}
                 thousandSeparator
                 prefix="$"
-                decimalScale={0}
+                decimalScale={2}
+                fixedDecimalScale
                 displayType="text"
               />
             </p>

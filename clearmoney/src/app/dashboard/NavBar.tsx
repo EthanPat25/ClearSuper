@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavigationMenuDemo } from "./NavBar copy";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "../holdings/WizardForm/formWizardStore";
@@ -10,7 +10,16 @@ import { ChevronDown, X } from "lucide-react";
 
 const NavBar = () => {
   const { state, actions } = useStateMachine({ actions: { updateForm } });
-  const hasBalance = state.balance > 0;
+
+  // Wait for hydration before reading localStorage-backed state.
+  // Otherwise server-render and client-render disagree and React throws.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const hasBalance = mounted && state.balance > 0;
+
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [localBalance, setLocalBalance] = useState<number>(state.balance);
 
@@ -45,7 +54,6 @@ const NavBar = () => {
               <NavigationMenuDemo />
             </div>
 
-            {/* Mobile: balance pill */}
             {hasBalance && (
               <button
                 onClick={openDrawer}

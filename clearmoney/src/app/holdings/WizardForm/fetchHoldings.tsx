@@ -19,7 +19,6 @@ const fetch_holdings = async (params: URLSearchParams) => {
 };
 
 export const fetch_options = async (fund: string) => {
-  console.log("fetch_options called with fund:", fund);
   const params = new URLSearchParams({ fund });
   const res = await fetch(`/api/options?${params.toString()}`, {
     method: "GET",

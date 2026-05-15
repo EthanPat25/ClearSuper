@@ -6,36 +6,46 @@ import { LightBulb } from "../AnimationComponents/LightBulb";
 
 const faqSections = [
   {
+    title: "Not Financial Advice",
+    body: "ClearSuper is not a financial product, is not licensed to provide financial advice, and does not constitute a recommendation. The information displayed is factual data about fund holdings, transformed for clarity. It does not take into account your personal objectives, financial situation, or needs.\n\nBefore making any decision about your superannuation, refer to Moneysmart (moneysmart.gov.au), your fund's Product Disclosure Statement (PDS), or a licensed financial adviser. ClearSuper should not be the sole basis for any financial decision.",
+  },
+  {
     title: "Logos & Fund Affiliation",
-    body: "ClearSuper is not affiliated with, endorsed by, or associated with any super fund or company displayed on this site. Logos are used for identification purposes only. ClearSuper is a proof of concept based on publicly available fund data and is not a financial product. Do not make financial decisions based on information displayed on this site — always refer to your fund's official PDS or holdings data available on your fund's website.",
+    body: "ClearSuper is not affiliated with, endorsed by, or associated with any super fund or company displayed on this site. Logos are used for identification purposes only. ClearSuper is a non-commercial proof of concept based on publicly available fund data and is not a financial product. Do not make financial decisions based on information displayed on this site — always refer to your fund's official PDS or holdings data available on your fund's website.",
   },
   {
     title: "How Dollar Amounts Are Calculated",
-    body: "Superannuation works by pooling member money together. When you contribute to a super fund, your money doesn't sit in a separate account invested individually on your behalf — instead it joins a large pool of money managed collectively by the fund.\n\nClearSuper uses the fund's reported asset allocations to give an indication of how that pooled money is structured. The dollar figures shown are not a breakdown of your exact personal holdings. Rather, they show how much of the fund's total pooled assets are held in each company or asset class, scaled proportionally to your entered balance.\n\nFor example, if a fund holds 2% of its pooled assets in BHP, and your balance is $50,000, ClearSuper would show approximately $1,000 against BHP. This is not $1,000 of your money directly invested in BHP shares — it reflects the structure of the option your money sits within.",
+    body: "Super funds generally invest members' money collectively through large pooled investment portfolios, rather than as separately managed portfolios in each person's name.\n\nClearSuper uses the fund's reported asset allocations to give an indication of how that pooled money is structured. The dollar figures shown are not a breakdown of your exact personal holdings. Rather, they show how much of the fund's total pooled assets are held in each company or asset class, scaled proportionally to your entered balance.\n\nFor example, if a fund holds 2% of its pooled assets in BHP, and your balance is $50,000, ClearSuper would show approximately $1,000 against BHP. This does not mean you directly own $1,000 of BHP shares in your own name - it is an approximation intended to reflect how the investment option your balance sits within is structured.",
   },
+
   {
     title: "Why ClearSuper Doesn't Compare Funds",
-    body: "ClearSuper does not compare different super funds. Holdings are displayed for a single fund at a time. Where multiple options within the same fund are shown, these are presented as a visual representation of how each option is structured relative to the industry or company being viewed — not as a recommendation or comparison.",
+    body: "ClearSuper does not compare different super funds. Holdings are displayed for a single fund at a time. Where multiple options within the same fund are shown, these are presented as a visual representation of how each option is structured relative to the industry or company being viewed - not as a recommendation or comparison.",
   },
   {
     title: "Industry Classification",
-    body: "Industries displayed on ClearSuper are generated using a large language model (LLM) to classify companies into industry categories. While best efforts have been made to manually review these classifications, this is not a perfect method and classifications may be incorrect or inconsistent in some cases. Industry classification can also be subjective — some companies may arguably fit into two or more categories. If you want to verify which industries your fund invests in, cross-reference with the official holdings data released directly by your fund.",
+    body: "Industries displayed on ClearSuper are generated using a large language model (LLM) to classify companies into industry categories. While best efforts have been made to manually review these classifications, this is not a perfect method and classifications may be incorrect or inconsistent in some cases. Industry classification can also be subjective - some companies may arguably fit into two or more categories. If you want to verify which industries your fund invests in, cross-reference with the official holdings data released directly by your fund.",
   },
   {
     title: "Holdings Data & Accuracy",
-    body: "Data for fund holdings is taken from the latest available release. Under APRA, funds are required to disclose holdings every 6 months. There is a 2-month grace period on this requirement, and as a result, different funds will not always update their holdings on the same date.\n\nThis is not a live or current breakdown. Differences in share trading values and the buying and selling of assets by funds may mean the true holdings on today's date are different.\n\nNo one outside of the fund has access to this information — ClearSuper operates only on what is publicly available. Your entered balance is stored only in your browser's local storage to persist your session. It is never sent to or stored on any server.",
+    body: "Data for fund holdings is taken from the latest available release. Under APRA, funds are required to disclose holdings every 6 months. There is a 2-month grace period on this requirement, and as a result, different funds will not always update their holdings on the same date.\n\nThis is not a live or current breakdown. Differences in share trading values and the buying and selling of assets by funds may mean the true holdings on today's date are different.\n\nNo one outside of the fund has access to this information - ClearSuper operates only on what is publicly available. Your entered balance is stored only in your browser's local storage to persist your session. It is never sent to or stored on any server. \n\n Some assets, such as a listed company, may appear more than once in disclosed holdings data. To improve readability, ClearSuper may combine or simplify certain entries.",
   },
+  {
+    title: "Derivatives & Excluded Holdings",
+    body: "Some asset types disclosed by funds such as derivative contracts (forwards, futures, swaps) are excluded or simplified in ClearSuper's holdings display. These instruments are commonly used by funds for portfolio management, hedging, or risk reduction rather than as direct investments in individual companies.\n\nAs a result, some figures shown in ClearSuper may differ slightly from official fund disclosures or total reported percentages. For the complete picture, refer to your fund's full APRA holdings disclosure.",
+  },
+
   {
     title: "Option Comparisons",
     body: "ClearSuper displays how a given company or industry sector is represented across different investment options within the same super fund. This is shown for informational purposes only and does not constitute a recommendation to change your investment option. Any such decision should be made in consultation with your fund or a licensed financial adviser.",
   },
   {
     title: "Accumulation Phase Only",
-    body: "ClearSuper currently displays accumulation phase options only. Pension or retirement phase options are not included. This is not an exclusion by design — it reflects the current scope of the project, which is primarily focused on the accumulation phase relevant to most working Australians.",
+    body: "ClearSuper currently displays accumulation phase options only. Pension or retirement phase options are not included. This is not an exclusion by design - it reflects the current scope of the project, which is primarily focused on the accumulation phase relevant to most working Australians.",
   },
   {
     title: "Calculators & Tools",
-    body: "Any calculators or tools within ClearSuper are models that operate on a number of assumptions. They are designed for illustrative and engagement purposes only — for example, contextualising the impact of career breaks on your super balance in everyday terms such as coffees, dental appointments, or international trips. These are not predictions of future financial outcomes.",
+    body: "Any calculators or tools within ClearSuper are models that operate on a number of assumptions. They are designed for illustrative and engagement purposes only - for example, contextualising the impact of career breaks on your super balance in everyday terms such as coffees, dental appointments, or international trips. These are not predictions of future financial outcomes.",
   },
 ];
 
@@ -83,7 +93,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl lg:text-7xl text-emerald-950 font-extrabold tracking-tight drop-shadow-sm leading-[1.1] mb-6 text-center"
+              className="text-4xl lg:text-7xl text-emerald-950 font-extrabold tracking-tight drop-shadow-sm leading-[1.1] mb-6 text-center"
             >
               The idea behind
               <br />
@@ -114,7 +124,7 @@ export default function AboutPage() {
                     .getElementById("about")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="bg-emerald-600 text-white font-bold px-6 py-3 rounded-full hover:bg-emerald-700 transition"
+                className="bg-emerald-600 text-white font-bold text-sm md:text-base px-6 py-3 rounded-full hover:bg-emerald-700 transition"
               >
                 About the Project
               </button>
@@ -124,7 +134,7 @@ export default function AboutPage() {
                     .getElementById("disclaimer")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="bg-white text-emerald-800 font-bold px-6 py-3 rounded-full border border-emerald-200 hover:bg-emerald-50 transition"
+                className="bg-white text-emerald-800 font-bold text-sm md:text-base px-6 py-3 rounded-full border border-emerald-200 hover:bg-emerald-50 transition"
               >
                 Read Disclaimer
               </button>
@@ -172,11 +182,11 @@ export default function AboutPage() {
             </div>
           </motion.div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center justify-center md:gap-4">
             <img
               src="/Ethan.JPG"
               alt="Ethan"
-              className=" ring-8 ring-emerald-900 w-[30rem] h-[30rem] rounded-[8rem] object-cover object-top flex-shrink-0 shadow-2xl"
+              className="ring-8 ring-emerald-900 w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] rounded-[8rem] object-cover object-top shadow-2xl"
             />
           </div>
         </div>
@@ -308,13 +318,13 @@ export default function AboutPage() {
                 </span>
               </div>
               <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                This is not $1,000 of your money in BHP shares — it reflects the
+                This is not $1,000 of your money in BHP shares - it reflects the
                 structure of the option your money sits within.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 border border-slate-100 space-y-2">
               {[
-                { label: "Funds compared", value: "None — single fund only" },
+                { label: "Funds compared", value: "None - single fund only" },
                 { label: "Data source", value: "Fund public disclosures" },
                 { label: "Update frequency", value: "Every 6 months (APRA)" },
                 {
