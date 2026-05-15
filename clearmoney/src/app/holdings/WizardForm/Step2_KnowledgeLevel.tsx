@@ -29,7 +29,10 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
   const { actions, state } = useStateMachine({ actions: { updateForm } });
 
   return (
-    <div className="flex flex-col gap-8 w-[33rem] max-w-full" ref={ref}>
+    <div
+      className="flex flex-col gap-8 w-[33rem] max-w-[22rem] md:max-w-full"
+      ref={ref}
+    >
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -67,19 +70,22 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
               `}
               onClick={() => setSelected(opt.id)}
             >
-              {/* Icon */}
-              <div className="bg-gray-200 rounded-3xl w-[6rem] h-[6rem] flex justify-center items-center">
+              <div className="bg-gray-200 rounded-3xl w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] flex justify-center items-center">
                 {opt.icon === "question" && (
-                  <Question responsiveSizing="h-[5rem] w-[5rem]" />
+                  <Question responsiveSizing="h-[4rem] w-[4rem] md:h-[5rem] md:w-[5rem]" />
                 )}
                 {opt.icon === "slider" && (
-                  <Slider responsiveSizing="h-[5rem] w-[5rem]" />
+                  <Slider responsiveSizing="h-[4rem] w-[4rem] md:h-[5rem] md:w-[5rem]" />
                 )}
               </div>
 
               <div className="flex flex-col gap-1">
-                <h1 className="font-bold text-lg">{opt.title}</h1>
-                <p className="text-sm text-gray-700 leading-snug">{opt.desc}</p>
+                <h1 className="font-bold text-[0.95rem] md:text-lg">
+                  {opt.title}
+                </h1>
+                <p className="text-xs md:text-sm text-gray-700 leading-snug">
+                  {opt.desc}
+                </p>
               </div>
 
               {isSelected && (

@@ -137,7 +137,7 @@ export function NavigationMenuDemo() {
 
 type ListItemProps = React.ComponentPropsWithoutRef<"a"> & {
   title: string;
-  icon?: React.ReactNode; // 👈 custom prop
+  icon?: React.ReactNode;
 };
 
 const ListItem = React.forwardRef<React.ElementRef<"a">, ListItemProps>(

@@ -31,7 +31,6 @@ const NavBar = () => {
     <>
       <div className="bg-white fixed top-0 z-50 w-full border-b border-slate-100 shadow-sm">
         <div className="mx-auto w-full max-w-[85rem] px-4 md:px-8 h-16 relative flex items-center">
-          {/* Left: Logo — absolute, out of flow */}
           <div className="absolute left-4 md:left-8 flex items-center">
             <a
               href="/"
@@ -41,9 +40,7 @@ const NavBar = () => {
             </a>
           </div>
 
-          {/* Center: full width, centers against entire navbar */}
           <div className="w-full flex justify-center items-center">
-            {/* Desktop: nav menu */}
             <div className="hidden md:block">
               <NavigationMenuDemo />
             </div>

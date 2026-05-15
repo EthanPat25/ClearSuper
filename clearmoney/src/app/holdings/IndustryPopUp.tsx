@@ -1,11 +1,16 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { NumericFormat } from "react-number-format";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "./WizardForm/formWizardStore";
-import { IconChevronRight } from "@tabler/icons-react";
+import { IconChevronRight, IconX } from "@tabler/icons-react";
 import { CompanyPopUp } from "./CompanyPopUp";
 
 const SECTOR_COLORS: Record<
@@ -217,7 +222,10 @@ export function IndustryPopUp({
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
-      <DialogContent className="w-full max-w-md sm:max-w-lg md:max-w-xl gap-0 border-0 p-0 overflow-hidden rounded-[2.5rem] bg-white shadow-2xl">
+      <DialogContent className="w-full max-w-md xs:max-w-[23.5rem] sm:max-w-lg md:max-w-xl gap-0 border-0 p-0 overflow-hidden rounded-[2.5rem] bg-white shadow-2xl">
+        <DialogClose className="absolute top-5 right-5 z-50 p-2 rounded-full bg-white/60 hover:bg-white transition-colors">
+          <IconX size={20} className="text-red-600" />
+        </DialogClose>
         <div
           className={`px-8 pt-10 pb-10 flex flex-col items-center text-center gap-4 ${sectorStyle.bg} border-b border-white`}
         >

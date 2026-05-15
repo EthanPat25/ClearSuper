@@ -216,8 +216,8 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
         </AnimatePresence>
       </div>
 
-      <div className="flex flex-col justify-center items-center mt-12 text-center pb-10">
-        <h1 className="text-xl font-semibold px-4">
+      <div className="flex flex-col justify-center items-center mt-12 text-center pb-10 mx-5 sm:mx-0">
+        <h1 className="text-base md:text-xl font-semibold px-4">
           <NumericFormat
             value={listedAmount}
             thousandSeparator
@@ -232,7 +232,7 @@ const HoldingsMain: React.FC<PublicHoldingsProps> = ({
           Publicly Listed Companies
         </h1>
 
-        <div className="bg-orange-50 border border-orange-200 text-orange-800 rounded-2xl w-full max-w-[40rem] p-4 mt-6 flex justify-center items-center mx-4">
+        <div className="bg-orange-50 border border-orange-200 text-orange-800 rounded-2xl w-full max-w-[40rem] p-4 mt-6 flex justify-center items-center">
           <p className="text-[0.75rem] text-justify leading-relaxed">
             <strong>Notice:</strong> Based on your fund’s official holdings
             data. Holdings are typically released by funds every 6 months.

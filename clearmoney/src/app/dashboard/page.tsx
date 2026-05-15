@@ -135,32 +135,78 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
       <div className="pt-64 lg:pt-32 pb-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
-            className="lg:pr-10"
+            className="lg:pr-10 flex flex-col"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <span className="inline-block bg-teal-50 text-teal-800 text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-6">
-              Transparency
-            </span>
+            <div className="flex w-full justify-start items-start">
+              <span className="inline-block bg-amber-100 text-amber-800 text-sm font-medium tracking-wider px-2 py-1 mb-6 rounded-md">
+                Behind The Balance
+              </span>
+            </div>
 
             <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-              What Is Your Super <br />
-              <span className="text-teal-600">Really Invested In?</span>
+              From industries <br />
+              <span className="text-teal-600">down to companies.</span>
             </h2>
 
+            <p className="text-lg text-slate-600 mb-4 leading-relaxed">
+              Curious how much of your super is in mining? Tech? Banks?
+            </p>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              ClearSuper breaks your balance into the real companies and dollar
-              amounts your fund invests in. No PDFs, no mystery.
+              ClearSuper breaks every industry down to the underlying companies,
+              so you can explore as deep as you want.
             </p>
 
-            <Button
-              asChild
-              className="bg-emerald-600 text-white px-8 py-4 text-lg font-bold rounded-full transition-all duration-200 hover:bg-emerald-700 hover:scale-105 shadow-lg shadow-emerald-200"
-            >
-              <Link href={"/holdings"}>See My Holdings →</Link>
-            </Button>
+            <div className="w-full flex justify-start items-center">
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                className="border-2  border-emerald-600 text-emerald-700 px-7 py-3 text-base font-bold rounded-full hover:bg-emerald-50 transition-all"
+              >
+                <Link href={"/holdings"} className="flex gap-3">
+                  <p>Start Exploring </p>
+                  <svg
+                    version="1.1"
+                    id="fi_271226"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    className="w-[1rem]"
+                    viewBox="0 0 492.004 492.004"
+                    enable-background="new 0 0 492.004 492.004"
+                    xmlSpace="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
+			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
+			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
+			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
+			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                </Link>
+              </motion.button>
+            </div>
           </motion.div>
 
           <motion.div
@@ -169,7 +215,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <div className="absolute bottom-0 left-[15%] translate-y-[29%] bg-white rounded-[2rem] border border-slate-100 flex flex-col overflow-hidden shadow-2xl w-[60%]">
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[29%] bg-white rounded-[2rem] border border-slate-100 flex flex-col overflow-hidden shadow-2xl w-[60%]">
               {/* Header */}
               <div className="px-8 pt-10 pb-10 flex flex-col items-center text-center gap-4 bg-amber-100 border-b border-white">
                 <div className="w-24 h-24 flex items-center justify-center bg-white rounded-3xl shadow-xl border-4 border-white">
@@ -206,9 +252,6 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
                   <h3 className="text-sm font-bold text-slate-900">
                     Biggest Pieces of the Pie
                   </h3>
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                    Showing top 3
-                  </span>
                 </div>
 
                 {[

@@ -40,7 +40,7 @@ const HeroSection = ({
 
   return (
     // Background: Your "Daylight Teal" (Bright & Engaging)
-    <div className="bg-gradient-to-t from-emerald-100 to-emerald-200 p-6 pb-24 relative">
+    <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 p-6 pb-24 relative">
       <div
         className="absolute inset-0 opacity-[0.05]"
         style={{
