@@ -4,7 +4,8 @@ import { createStore } from "little-state-machine";
 
 createStore({
   Fund: "",
-  option: "",
+  option_name: "",
+  option_id: "",
   age: 0,
   balance: 0,
 });

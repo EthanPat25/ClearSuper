@@ -397,9 +397,6 @@ export default function AboutPage() {
               <AccordionItem key={s.title} title={s.title} body={s.body} />
             ))}
           </div>
-          <p className="text-xs text-slate-400 text-center mt-10">
-            Feedback is very welcome.
-          </p>
         </div>
       </div>
     </div>

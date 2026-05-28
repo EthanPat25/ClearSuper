@@ -1,35 +1,16 @@
 "use client";
 
 import React from "react";
-import HeroSection from "./HeroSection";
+import HeroSection from "./Components/HeroSection";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "./WizardForm/formWizardStore";
-import FinalStep from "./WizardForm/Results";
+import FinalStep from "./WizardForm/HoldingsResultsLoader";
 import Step1_SelectFund from "./WizardForm/Step1_SelectFund";
 import Step2_KnowledgeLevel from "./WizardForm/Step2_KnowledgeLevel";
 import Step3a_DefaultOption from "./WizardForm/Step3a_DefaultOption";
 import Step3b_SelectOption from "./WizardForm/Step3b_SelectOption";
-import StepBalance from "./WizardForm/StepBalance";
-import Results from "./WizardForm/Results";
-
-type HoldingsData = {
-  public_companies: any[];
-  Private_Investments: any[];
-  Bonds: any[];
-  Cash: any[];
-};
-
-type Results = {
-  holdingsData: HoldingsData;
-  balance: number;
-};
-
-export type FormDataType = {
-  Fund: string;
-  option: string;
-  age?: number;
-  balance: number;
-};
+import StepBalance from "./WizardForm/Step4_EnterBalance";
+import Results from "./WizardForm/HoldingsResultsLoader";
 
 export default function Page() {
   const actionButton = React.useRef<HTMLDivElement | null>(null);
@@ -52,12 +33,13 @@ export default function Page() {
       <HeroSection
         reference={actionButton}
         fund={state.Fund}
-        option={state.option}
+        option={state.option_name}
         showSelectedFund={step === "StepFour"}
         onSelectFund={(fund) => {
           actions.updateForm({
             Fund: fund.name,
-            option: "",
+            option_name: "",
+            option_id: "",
             age: 0,
             balance: 0,
           });
@@ -99,7 +81,7 @@ export default function Page() {
         )}
 
         {step === "StepFour" && (
-          <div className="w-full flex flex-col items-center gap-4 px-0 sm:px-8 lg:px-[9rem]">
+          <div className="w-full flex flex-col items-center gap-4 px-0 ">
             <Results ref={actionButton}></Results>
           </div>
         )}

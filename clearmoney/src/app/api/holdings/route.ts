@@ -12,6 +12,7 @@ if (!supabaseUrl || !supabaseKey) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+// Returns holdings of an option given fund and option
 export async function GET(Request: NextRequest) {
   try {
     const { searchParams } = new URL(Request.url);
@@ -40,42 +41,35 @@ export async function GET(Request: NextRequest) {
         Sector,
         Description,
         Country
+      ),
+      options!Option_Id (
+        as_of_date
       )
     `;
 
-    const { data: public_holdings, error: publicError } = await supabase
+    const { data, error } = await supabase
       .from("Holdings")
       .select(selectString)
       .eq("Option_Id", option)
-      .eq("Listing_Status", "Listed")
       .order("Dollar_Value", { ascending: false });
 
-    const { data: private_investments, error: privateError } = await supabase
-      .from("Holdings")
-      .select(selectString)
-      .eq("Option_Id", option)
-      .eq("Listing_Status", "Unlisted")
-      .order("Dollar_Value", { ascending: false });
-
-    const { data: bonds, error: bondsError } = await supabase
-      .from("Holdings")
-      .select(selectString)
-      .eq("Option_Id", option)
-      .eq("Asset_Class", "Fixed Income")
-      .order("Dollar_Value", { ascending: false });
-
-    const { data: cash, error: cashError } = await supabase
-      .from("Holdings")
-      .select(selectString)
-      .eq("Option_Id", option)
-      .eq("Asset_Class", "Cash")
-      .order("Dollar_Value", { ascending: false });
-
-    if (publicError || privateError || bondsError || cashError) {
+    if (error) {
       return new Response(JSON.stringify({ error: "Database fetch failed" }), {
         status: 500,
       });
     }
+
+    const rows = data ?? [];
+
+    const public_holdings = rows.filter(
+      (row) => row.Listing_Status === "Listed",
+    );
+
+    const private_investments = rows.filter(
+      (row) => row.Listing_Status === "Unlisted",
+    );
+    const bonds = rows.filter((row) => row.Asset_Class === "Fixed Income");
+    const cash = rows.filter((row) => row.Asset_Class === "Cash");
 
     return new Response(
       JSON.stringify({

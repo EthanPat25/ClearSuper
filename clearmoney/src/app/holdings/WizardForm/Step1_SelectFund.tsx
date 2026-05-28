@@ -2,20 +2,8 @@ import React from "react";
 import { motion } from "motion/react";
 import { updateForm } from "./formWizardStore";
 import { useStateMachine } from "little-state-machine";
-import { funds } from "./funds";
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut",
-      delay: i * 0.1,
-    },
-  }),
-};
+import { funds } from "../data/SuperFunds";
+import Link from "next/link";
 
 const Step1_SelectFund = ({ updateStep, ref }) => {
   const [selected, setSelected] = React.useState(null);
@@ -27,7 +15,7 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
         className="flex flex-col gap-8 mt-10 w-full items-center px-4"
         ref={ref}
       >
-        <motion.h1 className="text-center font-bold text-xl">
+        <motion.h1 className="text-center font-bold text-lg sm:text-xl">
           Step 1: Select your super fund
         </motion.h1>
 
@@ -41,7 +29,8 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
                   setSelected(fund.name);
                   actions.updateForm({
                     Fund: fund.name,
-                    option: "",
+                    option_name: "",
+                    option_id: "",
                     age: 0,
                     balance: 0,
                   });
@@ -77,7 +66,6 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
             ))}
           </div>
 
-          {/* My fund isn't listed */}
           <motion.div
             whileTap={{ scale: 0.99, transition: { duration: 0.1 } }}
             className="cursor-pointer bg-white p-4 rounded-2xl border border-slate-200 flex items-center gap-4 shadow-sm"
@@ -93,32 +81,34 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
             </p>
           </motion.div>
 
-          <div className="bg-orange-50 border border-orange-200 text-orange-800 rounded-2xl w-full p-3 mt-4 flex items-start gap-2">
-            <p className="text-[0.72rem] leading-relaxed">
-              <strong>Notice:</strong> ClearSuper is independent and not
-              affiliated with any listed super funds. Logos are used for
-              identification purposes only.{" "}
-              <a>
-                {" "}
-                Read our full disclaimer to understand what you're engaging with
-              </a>
+          <div className="text-slate-600 pt-6 p-4 flex max-w-3xl">
+            <p className="text-xs leading-relaxed text-center ">
+              ClearSuper is independent and not affiliated with any listed super
+              funds. Logos are used for identification purposes only.{" "}
+              <Link
+                href="/about"
+                className="underline font-medium hover:text-slate-900 transition-colors"
+              >
+                Read full disclaimer
+              </Link>
             </p>
           </div>
         </div>
       </div>
-
-      <div className="flex justify-end mt-4 w-full max-w-[50rem] px-10">
-        <button
-          disabled={!selected}
-          onClick={() => updateStep("StepTwo")}
-          className={`px-6 py-2 rounded-lg font-bold transition ${
-            selected
-              ? "bg-black text-white hover:-translate-y-1"
-              : "bg-slate-300 text-slate-500 cursor-not-allowed"
-          }`}
-        >
-          Continue
-        </button>
+      <div className="sticky md:static bottom-4 md:bottom-auto w-full px-4 md:px-0 mt-4">
+        <div className="flex justify-center md:justify-end w-full max-w-[50rem] mx-auto md:px-10">
+          <button
+            disabled={!selected}
+            onClick={() => updateStep("StepTwo")}
+            className={`w-full md:w-auto px-6 py-4 md:py-2 rounded-2xl md:rounded-lg font-bold transition shadow-lg md:shadow-none ${
+              selected
+                ? "bg-black text-white hover:-translate-y-1"
+                : "bg-slate-300 text-slate-500 cursor-not-allowed"
+            }`}
+          >
+            Continue
+          </button>
+        </div>
       </div>
     </>
   );

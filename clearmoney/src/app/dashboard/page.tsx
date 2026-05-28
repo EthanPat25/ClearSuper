@@ -12,6 +12,8 @@ import { Tech } from "../AnimationComponents/Tech";
 import { Money } from "../AnimationComponents/Money";
 import { useRouter } from "next/navigation";
 import { Mining } from "../AnimationComponents/Mining";
+import { NumericFormat } from "react-number-format";
+import { ChevronDown } from "lucide-react";
 
 export default function SuperContributions() {
   const router = useRouter();
@@ -27,7 +29,7 @@ export default function SuperContributions() {
           }}
         />
 
-        <div className="max-w-7xl justify-center items-center grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-12 lg:gap-12 relative z-10">
+        <div className="max-w-7xl justify-center items-center grid grid-cols-1 mt-[5rem] lg:mt-0 lg:grid-cols-2 gap-0 md:gap-12 lg:gap-12 relative z-10">
           <div className="flex flex-col items-center text-center order-1">
             <motion.div
               animate={{ y: [0, -10, 0] }}
@@ -37,15 +39,15 @@ export default function SuperContributions() {
                 ease: "easeInOut",
               }}
               className="flex rounded-full bg-emerald-600
-ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:w-24 lg:h-24 justify-center items-center mb-6"
+ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:w-24 sm:h-24 2xl:w-28 2xl:h-28 justify-center items-center mb-6"
             >
-              <Superannuation />
+              <Superannuation responsiveSizing="w-full h-full" />
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl lg:text-7xl text-emerald-950 font-extrabold tracking-tight drop-shadow-sm leading-[1.1] mb-6 text-center"
+              className="text-5xl sm:text-6xl lg:text-7xl 2xl:text-8xl text-emerald-950 font-extrabold tracking-tight drop-shadow-sm leading-[1.1] mb-6 text-center"
             >
               Understand <br />
               <span className="text-emerald-600">Super</span>
@@ -55,7 +57,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-xl lg:text-[1.5rem] text-emerald-700 font-medium leading-relaxed mb-10 max-w-lg text-center"
+              className="text-[1.5rem] 2xl:text-[2rem] text-emerald-700 font-medium leading-relaxed mb-10 max-w-lg text-center"
             >
               See exactly what companies and industries your fund invests in.
             </motion.p>
@@ -69,7 +71,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
               }}
               whileHover={{ scale: 1.05 }}
               onClick={() => router.push("/holdings")}
-              className="bg-[#F59E0B] text-slate-900 font-bold py-3 md:px-8 md:py-5 rounded-full text-xl w-full lg:w-auto max-w-[300px] hover:bg-[#d97706] transition-colors shadow-xl hover:shadow-2xl"
+              className="bg-[#F59E0B] text-slate-900 font-bold px-6 py-7 md:px-8 md:py-5 2xl:px-10 2xl:py-6 rounded-full text-base sm:text-xl 2xl:text-2xl lg:w-auto max-w-[300px] 2xl:max-w-[340px] hover:bg-[#d97706] transition-colors shadow-xl hover:shadow-2xl"
             >
               Check My Holdings
             </motion.button>
@@ -80,48 +82,48 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full max-w-[260px] sm:max-w-[300px] lg:max-w-[340px]"
+              className="relative w-full max-w-[310px] sm:max-w-[360px] lg:max-w-[340px]"
             >
               <motion.div
                 initial={{ x: -20, opacity: 0 }}
-                animate={{ x: -30, opacity: 1 }}
+                animate={{ x: -25, opacity: 1 }}
                 transition={{ delay: 1.2 }}
-                className="absolute -left-10 lg:-left-20 top-16 lg:top-24 z-30 scale-75 lg:scale-100"
+                className="absolute -left-4 sm:-left-8 lg:-left-20 top-16 lg:top-24 z-30 scale-75 lg:scale-100"
               >
                 <div className="bg-white p-3 rounded-2xl shadow-xl shadow-teal-900/20 border border-slate-100 flex items-center gap-3 transform -rotate-3 hover:rotate-0 transition-transform">
                   <div className="bg-orange-100 p-2 rounded-lg">
-                    <Tech responsiveSizing="h-[2rem] w-[2rem]" />
+                    <Tech responsiveSizing="h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem]" />
                   </div>
                   <div className="text-left">
-                    <p className="text-[9px] text-slate-400 font-bold uppercase">
+                    <p className="text-[8px] sm:text-[9px] text-slate-400 font-bold uppercase">
                       Industry
                     </p>
-                    <p className="text-slate-800 font-bold text-xs">
+                    <p className="text-slate-800 font-bold text-[10px] sm:text-xs">
                       Tech & Software
                     </p>
                   </div>
                 </div>
               </motion.div>
 
-              <div className="drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
+              <div className="mx-auto w-[220px] sm:w-[280px] lg:w-[340px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
                 <Phone />
               </div>
 
               <motion.div
                 initial={{ x: 20, opacity: 0 }}
-                animate={{ x: 30, opacity: 1 }}
+                animate={{ x: 25, opacity: 1 }}
                 transition={{ delay: 1.4 }}
-                className="absolute -right-10 lg:-right-20 bottom-32 lg:bottom-40 z-30 scale-75 lg:scale-100"
+                className="absolute -right-4 sm:-right-8 lg:-right-20 bottom-32 lg:bottom-40 z-30 scale-75 lg:scale-100"
               >
                 <div className="bg-white py-3 px-4 rounded-2xl shadow-xl shadow-teal-900/20 border border-slate-100 flex items-center gap-3 transform rotate-3 hover:rotate-0 transition-transform">
                   <div className="bg-red-50 p-2 rounded-lg text-red-500">
-                    <Money responsiveSizing="h-[2rem] w-[2rem]" />
+                    <Money responsiveSizing="h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem]" />
                   </div>
                   <div className="text-left">
-                    <p className="text-[9px] text-slate-400 font-bold uppercase">
+                    <p className="text-[8px] sm:text-[9px] text-slate-400 font-bold uppercase">
                       Fees
                     </p>
-                    <p className="text-slate-800 font-bold text-xs">
+                    <p className="text-slate-800 font-bold text-[10px] sm:text-xs">
                       $450 / yr
                     </p>
                   </div>
@@ -132,7 +134,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 lg:
         </div>
       </div>
 
-      <div className="pt-64 lg:pt-32 pb-24 px-6 bg-white">
+      <div className="pt-[10rem] lg:pt-32 pb-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="lg:pr-10 flex flex-col"

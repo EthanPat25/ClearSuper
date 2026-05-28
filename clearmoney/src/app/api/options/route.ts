@@ -12,13 +12,14 @@ if (!supabaseUrl || !supabaseKey) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+// Returns the options for a given fund and reporting date
 export async function GET(Request: NextRequest) {
   const { searchParams } = new URL(Request.url);
   const fund = searchParams.get("fund");
 
   const { data, error } = await supabase
     .from("options")
-    .select("id, option_name")
+    .select("id, option_name, as_of_date")
     .eq("super_fund_id", fund);
 
   return new Response(JSON.stringify(data), {

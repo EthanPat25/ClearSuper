@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { Slider } from "../../AnimationComponents/Slider";
 import { Question } from "../../AnimationComponents/Question";
@@ -25,19 +25,19 @@ const OPTIONS = [
 ];
 
 const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = React.useState(null);
   const { actions, state } = useStateMachine({ actions: { updateForm } });
 
   return (
     <div
-      className="flex flex-col gap-8 w-[33rem] max-w-[22rem] md:max-w-full"
+      className="flex flex-col gap-8 w-full p-4 md:p-0 md:max-w-[33rem]"
       ref={ref}
     >
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-center font-bold text-xl"
+        className="text-center font-bold text-lg sm:text-xl"
       >
         Step 2: Tell us what you know
       </motion.h1>
@@ -53,11 +53,6 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
                 scale: 0.99,
 
                 transition: { duration: 0.1 },
-              }}
-              whileHover={{
-                y: -1,
-                scale: 1.03,
-                transition: { duration: 0.2, ease: "easeOut" },
               }}
               className={`
                 cursor-pointer bg-white p-6 rounded-xl border-[3px]

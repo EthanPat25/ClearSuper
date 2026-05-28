@@ -15,8 +15,7 @@ export default function SuperContributions() {
   return (
     <div className="w-screen min-h-screen flex flex-col">
       <HeroSection></HeroSection>
-      <div className="w-screen p-6 bg-[RGB(250,251,252)] relative">
-        <div className="mt-10"></div>
+      <div className="w-screen p-6 bg-[RGB(250,251,252)] relative h-[100svh]">
         <SuperGapCalcSection></SuperGapCalcSection>
       </div>
       <section className="mt-16 w-screen">
@@ -25,20 +24,23 @@ export default function SuperContributions() {
           <div className="flex justify-center flex-wrap gap-2 mb-6 w-full">
             <button
               onClick={() => setView("terms")}
-              className={`px-4 py-2 w-[9.8rem] rounded-3xl text-sm ${view === "terms" ? "bg-gray-900 text-white border" : "border"}`}
+              className={`px-4 py-2 rounded-3xl text-sm flex justify-center items-center gap-2 min-w-[11rem] ${view === "terms" ? "bg-gray-900 text-white border" : "border"}`}
             >
+              <div className="h-2 w-2 sm:h-3 sm:w-3 shrink-0 rounded-full sm:rounded-sm bg-red-500" />
               In Everyday Terms
             </button>
             <button
               onClick={() => setView("case")}
-              className={`px-4 py-2 w-[9.8rem] rounded-3xl text-sm ${view === "case" ? "bg-gray-900 text-white border" : "border"}`}
+              className={`px-4 py-2 rounded-3xl flex text-sm gap-2 justify-center items-center min-w-[11rem] ${view === "case" ? "bg-gray-900 text-white border" : "border"}`}
             >
+              <div className="h-2 w-2 sm:h-3 sm:w-3 shrink-0 rounded-full sm:rounded-sm bg-blue-500" />
               Why Gaps Matter
             </button>
             <button
               onClick={() => setView("close")}
-              className={`px-4 py-2 w-[9.8rem] rounded-3xl text-sm ${view === "close" ? "bg-gray-900 text-white border" : "border"}`}
+              className={`px-4 py-2 rounded-3xl flex gap-2 text-sm justify-center items-center min-w-[11rem] ${view === "close" ? "bg-gray-900 text-white border" : "border"}`}
             >
+              <div className="h-2 w-2 sm:h-3 sm:w-3 shrink-0 rounded-full sm:rounded-sm bg-green-500" />
               Close the Gap
             </button>
           </div>
