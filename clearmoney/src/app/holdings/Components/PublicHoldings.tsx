@@ -40,7 +40,7 @@ const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
                     initial="hidden"
                     animate="rest"
                     variants={parentVariant}
-                    className="bg-white rounded-3xl p-6 shadow-md text-center w-full max-w-[15rem] relative hover:shadow-xl cursor-pointer select-none"
+                    className="bg-white rounded-3xl p-6 shadow-md text-center w-full max-w-[14rem] relative hover:shadow-xl cursor-pointer select-none"
                   >
                     <motion.svg
                       version="1.1"
@@ -97,7 +97,7 @@ const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
 
                     <div className="flex flex-col justify-between items-center">
                       <img
-                        className="w-[5rem] h-[5rem] rounded-[3rem] mb-3 object-contain bg-slate-50"
+                        className="w-[3.5rem] h-[3.5rem] rounded-[3rem] mb-3 object-contain bg-slate-50"
                         src={`https://cdn.brandfetch.io/${holding.companies?.id}/icon/theme/dark/c=1idfCQLm9sumx6VuVu3`}
                         alt="logo"
                         onError={(e) => {

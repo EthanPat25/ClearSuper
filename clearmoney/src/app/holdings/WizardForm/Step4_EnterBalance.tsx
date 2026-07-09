@@ -94,20 +94,22 @@ const StepBalance = ({
         )}
       </div>
 
-      <div className="flex justify-between">
-        <button
-          onClick={() => updateStep(prevStep)}
-          className="px-6 py-2 bg-slate-200 text-slate-800 rounded-lg font-bold transition hover:bg-slate-300"
-        >
-          Back
-        </button>
-        <button
-          onClick={handleContinue}
-          disabled={!balance || balance <= 0}
-          className="px-6 py-2 bg-black text-white rounded-lg font-bold transition hover:-translate-y-1 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0"
-        >
-          Show my holdings
-        </button>
+      <div className="sticky md:static bottom-4 md:bottom-auto w-full px-4 md:px-0 mt-4 md:mt-0 pb-[env(safe-area-inset-bottom)] md:pb-0">
+        <div className="flex justify-between gap-3 w-full">
+          <button
+            onClick={() => updateStep(prevStep)}
+            className="px-6 py-4 md:py-2 bg-slate-200 text-slate-800 rounded-2xl md:rounded-lg font-bold transition hover:bg-slate-300 shadow-lg md:shadow-none shrink-0"
+          >
+            Back
+          </button>
+          <button
+            onClick={handleContinue}
+            disabled={!balance || balance <= 0}
+            className="flex-1 md:flex-none px-6 py-4 md:py-2 bg-black text-white rounded-2xl md:rounded-lg font-bold transition hover:-translate-y-1 shadow-lg md:shadow-none disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+          >
+            Show holdings
+          </button>
+        </div>
       </div>
     </div>
   );

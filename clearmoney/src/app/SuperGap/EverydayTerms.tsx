@@ -13,7 +13,7 @@ const EverydayTerms = () => {
       <div className="bg-slate-100 w-full rounded-[3rem] pb-16 max-w-5xl">
         <div className="flex flex-col items-center p-10 w-full">
           <p className="text-base text-emerald-700">
-            What does <span className="font-bold  tabular-nums">$11,000</span>{" "}
+            What does <span className="font-bold tabular-nums">$11,000</span>{" "}
             actually buy?
           </p>
           <h2 className="font-bold xs:text-[1rem] sm:text-[1.7rem] md:text-3xl mt-1">

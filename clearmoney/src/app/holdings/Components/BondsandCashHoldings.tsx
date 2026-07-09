@@ -91,7 +91,7 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
           initial="hidden"
           animate="rest"
           variants={parentVariant}
-          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[15rem] relative"
+          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[14rem] relative"
         >
           <motion.svg
             version="1.1"
@@ -149,7 +149,7 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
             {}
           </p>
           <div className="flex flex-col justify-between items-center gap-6">
-            <Banknote responsiveSizing="w-[6rem] h-[6rem]"></Banknote>
+            <Banknote responsiveSizing="w-[4rem] h-[4rem]"></Banknote>
           </div>
 
           <h2 className="text-xs sm:text-sm font-medium mb-2">Cash</h2>
@@ -172,7 +172,7 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
           initial="hidden"
           animate="rest"
           variants={parentVariant}
-          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[15rem] relative"
+          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[14rem] relative"
         >
           <motion.svg
             version="1.1"
@@ -227,7 +227,7 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
             <g></g>
           </motion.svg>
           <div className="flex flex-col justify-between items-center">
-            <Bond responsiveSizing="w-[6rem] h-[6rem]"></Bond>
+            <Bond responsiveSizing="w-[4rem] h-[4rem]"></Bond>
           </div>
 
           <h2 className="text-xs sm:text-sm font-medium mb-2">

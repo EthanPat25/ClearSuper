@@ -10,15 +10,15 @@ import { useStateMachine } from "little-state-machine";
 const OPTIONS = [
   {
     id: 1,
-    title: "I don't know my super option",
-    desc: "That's okay! We'll use your fund’s default MySuper option.",
+    title: "I don't know my investment option",
+    desc: "We'll show your fund's default (MySuper) option.",
     icon: "question",
     nextStep: "StepThree_Two",
   },
   {
     id: 2,
-    title: "I know my super option",
-    desc: "Let me pick it (Balanced, High Growth, and more).",
+    title: "I know my investment option",
+    desc: "Let me pick from my fund's options (like Balanced or High Growth).",
     icon: "slider",
     nextStep: "StepThree_One",
   },
@@ -30,7 +30,7 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
 
   return (
     <div
-      className="flex flex-col gap-8 w-full p-4 md:p-0 md:max-w-[33rem]"
+      className="flex flex-col gap-8 w-full p-4 md:p-0 md:max-w-[34rem]"
       ref={ref}
     >
       <motion.h1
@@ -65,20 +65,20 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
               `}
               onClick={() => setSelected(opt.id)}
             >
-              <div className="bg-gray-200 rounded-3xl w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] flex justify-center items-center">
+              <div className="bg-gray-200 rounded-3xl w-[6rem] h-[6rem] p-2 flex justify-center items-center">
                 {opt.icon === "question" && (
-                  <Question responsiveSizing="h-[4rem] w-[4rem] md:h-[5rem] md:w-[5rem]" />
+                  <Question responsiveSizing="h-full w-full" />
                 )}
                 {opt.icon === "slider" && (
-                  <Slider responsiveSizing="h-[4rem] w-[4rem] md:h-[5rem] md:w-[5rem]" />
+                  <Slider responsiveSizing="h-full w-full" />
                 )}
               </div>
 
               <div className="flex flex-col gap-1">
-                <h1 className="font-bold text-[0.95rem] md:text-lg">
+                <h1 className="font-bold text-[0.95rem] md:text-xl">
                   {opt.title}
                 </h1>
-                <p className="text-xs md:text-sm text-gray-700 leading-snug">
+                <p className="text-sm md:text-sm text-gray-700 leading-snug">
                   {opt.desc}
                 </p>
               </div>
@@ -96,36 +96,31 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
           );
         })}
       </div>
-      <div className="flex justify-between mt-4">
-        <button
-          onClick={() => updateStep("StepOne")}
-          className="px-6 py-2 bg-slate-200 text-slate-800 rounded-lg font-bold transition hover:bg-slate-300"
-        >
-          Back
-        </button>
 
-        <button
-          disabled={!selected}
-          onClick={() => {
-            const chosen = OPTIONS.find((o) => o.id === selected);
-
-            actions.updateForm({
-              option: chosen?.title,
-            });
-
-            updateStep(chosen?.nextStep);
-          }}
-          className={`
-            px-6 py-2 rounded-lg font-bold transition
-            ${
+      <div className="sticky md:static bottom-4 md:bottom-auto w-full px-4 md:px-0 mt-4 md:mt-0 pb-[env(safe-area-inset-bottom)] md:pb-0">
+        <div className="flex justify-between gap-3 w-full">
+          <button
+            onClick={() => updateStep("StepOne")}
+            className="px-6 py-4 md:py-2 bg-slate-200 text-slate-800 rounded-2xl md:rounded-lg font-bold transition hover:bg-slate-300 shadow-lg md:shadow-none shrink-0"
+          >
+            Back
+          </button>
+          <button
+            disabled={!selected}
+            onClick={() => {
+              const chosen = OPTIONS.find((o) => o.id === selected);
+              actions.updateForm({ option_name: chosen?.title });
+              updateStep(chosen?.nextStep);
+            }}
+            className={`flex-1 md:flex-none px-6 py-4 md:py-2 rounded-2xl md:rounded-lg font-bold transition shadow-lg md:shadow-none ${
               selected
                 ? "bg-black text-white hover:-translate-y-1"
                 : "bg-slate-300 text-slate-500 cursor-not-allowed"
-            }
-          `}
-        >
-          Continue
-        </button>
+            }`}
+          >
+            Continue
+          </button>
+        </div>
       </div>
     </div>
   );

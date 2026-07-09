@@ -9,6 +9,8 @@ import { PopUpShell, SECTOR_COLORS, DEFAULT_SECTOR_STYLE } from "./PopUpShell";
 import { ExposureCard } from "./ExposureCard";
 import { CrossOptionsList, CrossOption } from "./CrossOptionsList";
 import { Holding } from "./PopUpShell";
+import { fetch_option_allocations } from "@/app/fe-api/options/options";
+import { AllocationPie } from "../types/holdings";
 
 type CompanyPopUpProps = {
   trigger: React.ReactNode;
@@ -35,13 +37,31 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
       setLoadingOptions(true);
       try {
         const data = await fetch_company_weightings(Super_Fund, companies.id);
+        const mapped = (data.options ?? []).map((o: any) => ({
+          id: o.id,
+          optionName: o.option_name,
+          weightPercent: o.Weighting_Percentage_Clean,
+          as_of_date: o.as_of_date,
+        }));
+
+        const allocationRows = await fetch_option_allocations(
+          mapped.map((o) => o.id),
+        );
+        const allocationMap: Record<string, AllocationPie> =
+          allocationRows.reduce((acc, row) => {
+            if (!acc[row.Option_Id])
+              acc[row.Option_Id] = { listed: 0, unlisted: 0, cashAndBonds: 0 };
+            if (row.category === "Listed")
+              acc[row.Option_Id].listed = row.percentage;
+            if (row.category === "Unlisted")
+              acc[row.Option_Id].unlisted = row.percentage;
+            if (row.category === "Fixed Interest & Cash")
+              acc[row.Option_Id].cashAndBonds = row.percentage;
+            return acc;
+          }, {});
+
         setOptionsData(
-          (data.options ?? []).map((o: any) => ({
-            id: o.id,
-            optionName: o.option_name,
-            weightPercent: o.Weighting_Percentage_Clean,
-            as_of_date: o.as_of_date,
-          })),
+          mapped.map((o) => ({ ...o, allocation: allocationMap[o.id] })),
         );
       } catch {
         setOptionsData([]);
@@ -85,7 +105,7 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
           {companies?.Sector || "Investment"}
         </span>
       }
-      holding={holding}
+      asOfDate={holding.options?.as_of_date}
     >
       <ExposureCard
         value={scaledValue}

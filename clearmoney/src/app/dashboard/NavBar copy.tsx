@@ -63,7 +63,7 @@ export function NavigationMenuDemo() {
             asChild
             className={cn(
               navigationMenuTriggerStyle(),
-              "text-[0.95rem] font-[500]",
+              "text-[0.95rem] font-[500] tracking-wide",
             )}
           >
             <Link href="/holdings">View Your Fund</Link>
@@ -71,7 +71,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem className="hidden md:block">
-          <NavigationMenuTrigger className="text-[0.95rem] font-[500]">
+          <NavigationMenuTrigger className="text-[0.95rem] font-[500] tracking-wide">
             Super Tools
           </NavigationMenuTrigger>
           <NavigationMenuContent className="rounded-2xl">
@@ -124,7 +124,7 @@ export function NavigationMenuDemo() {
             asChild
             className={cn(
               navigationMenuTriggerStyle(),
-              "text-[0.95rem] font-[500]",
+              "text-[0.95rem] font-[500] tracking-wide",
             )}
           >
             <Link href="/about">About</Link>

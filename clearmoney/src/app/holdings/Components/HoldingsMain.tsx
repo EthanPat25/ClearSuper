@@ -11,6 +11,7 @@ import AssetTabs from "./AssetTab";
 import LocationBreakdown from "../_experimental/LocationBreakdown";
 import { PublicCompanyHolding } from "../types/holdings";
 import { HoldingRow } from "../types/holdings";
+import Fuse from "fuse.js";
 
 type AssetViewType = "public" | "private" | "bonds";
 
@@ -45,19 +46,19 @@ const HoldingsMain: React.FC<HoldingsMainProps> = ({
     "company",
   );
 
-  // Search-filter the listed holdings — no listing-status filter needed,
-  // because publicHoldings is already listed-only.
+  const fuse = React.useMemo(
+    () =>
+      new Fuse(publicHoldings, {
+        keys: ["Full_Name", "companies.Parsed_Name", "companies.Sector"],
+        threshold: 0.3,
+      }),
+    [publicHoldings],
+  );
+
   const filteredHoldings = React.useMemo(() => {
     if (!searchTerm.trim()) return publicHoldings;
-
-    const term = searchTerm.toLowerCase();
-    return publicHoldings.filter(
-      (h) =>
-        h.Full_Name.toLowerCase().includes(term) ||
-        h.companies?.Parsed_Name.toLowerCase().includes(term) ||
-        h.companies?.Sector.toLowerCase().includes(term),
-    );
-  }, [publicHoldings, searchTerm]);
+    return fuse.search(searchTerm).map((result) => result.item);
+  }, [fuse, searchTerm]);
 
   React.useEffect(() => {
     setStartIndex(0);
@@ -85,7 +86,7 @@ const HoldingsMain: React.FC<HoldingsMainProps> = ({
 
   return (
     <>
-      <div className="bg-slate-100 w-full rounded-[1rem] sm:rounded-[3rem] overflow-hidden max-w-5xl">
+      <motion.div className="bg-slate-100 w-full rounded-[3rem] sm:rounded-[2rem] overflow-hidden max-w-5xl">
         <AssetTabs
           AssetView={AssetView}
           setAssetView={setAssetView}
@@ -192,19 +193,6 @@ const HoldingsMain: React.FC<HoldingsMainProps> = ({
         </div>
 
         <div className="flex flex-col justify-center items-center mt-12 text-center pb-10 mx-5 sm:mx-0">
-          {/*<h1 className="text-base hidden md:block md:text-xl font-semibold px-4">
-          <NumericFormat
-            value={listedAmount}
-            thousandSeparator
-            prefix="$"
-            decimalScale={2}
-            fixedDecimalScale
-            displayType="text"
-          />{" "}
-          of your super is invested across {publicHoldings.length} Publicly
-          Listed Companies
-        </h1>*/}
-
           <div className="text-slate-600 p-4 flex max-w-3xl">
             <p className="text-xs leading-relaxed">
               Based on the selected fund's official holdings data as of{" "}
@@ -230,10 +218,7 @@ const HoldingsMain: React.FC<HoldingsMainProps> = ({
             </p>
           </div>
         </div>
-      </div>
-      <div className="bg-slate-100 mt-8 w-full flex justify-center items-center max-w-5xl p-10 rounded-[1rem] sm:rounded-[3rem]">
-        <LocationBreakdown holdings={publicHoldings} balance={balance} />
-      </div>
+      </motion.div>
     </>
   );
 };

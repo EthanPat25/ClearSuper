@@ -137,7 +137,9 @@ export function Footer() {
                 Super Tools
               </div>
               <div className="text-emerald-100/90 hover:text-white cursor-pointer transition-colors">
-                <Link prefetch={false} href="/about">About</Link>
+                <Link prefetch={false} href="/about">
+                  About
+                </Link>
               </div>
             </div>
           </div>
@@ -182,7 +184,7 @@ export function Footer() {
                 Documentation
               </div>
               <div className="text-emerald-100/60 hover:text-white cursor-pointer transition-colors">
-                About Developer
+                <Link href={"/about"}>About Developer</Link>
               </div>
             </div>
             <div className="text-sm text-emerald-100/50">
@@ -201,7 +203,10 @@ export function Footer() {
               financial service and does not provide financial advice. All
               information is for educational purposes only. Always consult with
               licensed financial professionals before making superannuation
-              decisions.
+              decisions. Read our{" "}
+              <Link className="font-bold underline" href={"/about"}>
+                Full Disclaimer.
+              </Link>
             </p>
           </div>
         </div>

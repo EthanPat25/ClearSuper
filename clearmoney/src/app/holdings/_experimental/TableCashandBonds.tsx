@@ -6,7 +6,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { dataforwardProps } from "./Components/BondsandCashHoldings";
+import { dataforwardProps } from "../Components/BondsandCashHoldings";
 import { NumericFormat } from "react-number-format";
 
 export function TableCashandBonds({

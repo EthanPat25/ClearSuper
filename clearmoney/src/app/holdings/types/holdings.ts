@@ -4,6 +4,7 @@ export type FormDataType = {
   option_id: string;
   age?: number;
   balance: number;
+  currentStep: string;
 };
 
 export type Company = {
@@ -50,4 +51,12 @@ export type CrossOption = {
   id: string;
   optionName: string;
   weightPercent: number;
+  as_of_date?: string;
+  allocation?: AllocationPie;
+};
+
+export type AllocationPie = {
+  listed: number;
+  unlisted: number;
+  cashAndBonds: number;
 };

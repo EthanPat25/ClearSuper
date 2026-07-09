@@ -33,57 +33,43 @@ const LocationBreakdown: React.FC<LocationBreakdownProps> = ({ balance }) => {
   const maxWeight = Math.max(...MOCK_LOCATIONS.map((l) => l.weight));
 
   return (
-    <div className="p-4 w-full flex justify-center items-center">
+    <div className="w-full flex justify-center">
       <div className="max-w-3xl w-full">
-        <div className="mb-6">
-          <div className="inline-flex items-center gap-2 mb-2">
-            <div className="h-3 w-3 rounded-sm bg-[#00C49F]" />
-            <span className="text-base font-medium text-slate-700">
-              Public Companies
-            </span>
-          </div>
-          <h2 className="text-lg sm:text-2xl font-bold text-slate-900">
-            By Location
-          </h2>
-        </div>
+        <p className="text-base sm:text-lg font-bold text-white mb-4">
+          Where these companies are based
+        </p>
 
-        <div className="grid gap-5">
+        <div className="flex flex-col gap-4">
           {MOCK_LOCATIONS.map(({ country, weight, Landmark }) => {
             const amount = (weight / 100) * balance;
             const barWidth = (weight / maxWeight) * 100;
 
             return (
-              <div
-                key={country}
-                className="bg-white rounded-2xl shadow-sm p-4 flex items-center gap-4"
-              >
-                <div className="p-2 bg-slate-100 rounded-2xl flex justify-center items-center flex-shrink-0">
-                  <Landmark className="w-10 h-10" />
+              <div key={country} className="flex items-center gap-3 sm:gap-4">
+                <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <Landmark className="w-8 h-8" />
                 </div>
 
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-bold text-slate-900">
-                      {country}
-                    </span>
-                    <span className="text-sm sm:text-base font-black tabular-nums text-slate-900">
-                      <NumericFormat
-                        value={amount}
-                        thousandSeparator
-                        prefix="$"
-                        decimalScale={0}
-                        displayType="text"
-                      />
-                    </span>
-                  </div>
+                <span className="text-sm font-medium text-slate-300 w-28 sm:w-40 truncate">
+                  {country}
+                </span>
 
-                  <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full transition-all"
-                      style={{ width: `${barWidth}%` }}
-                    />
-                  </div>
+                <div className="flex-1 h-1.5 bg-white/15 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full"
+                    style={{ width: `${barWidth}%` }}
+                  />
                 </div>
+
+                <span className="text-sm font-semibold tabular-nums text-white w-20 text-right">
+                  <NumericFormat
+                    value={amount}
+                    thousandSeparator
+                    prefix="$"
+                    decimalScale={0}
+                    displayType="text"
+                  />
+                </span>
               </div>
             );
           })}

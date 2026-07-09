@@ -25,7 +25,6 @@ const points = [
   {
     title: "Not always obvious",
     body: "Super sits in the background for decades, so gaps can build up without being obvious year to year.",
-
     Icon: PotPlant,
   },
 ];

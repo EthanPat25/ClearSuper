@@ -1,29 +1,68 @@
-import { ChevronLeft, Search } from "lucide-react";
+import { ChevronLeft, Check, Search } from "lucide-react";
 import { useState } from "react";
-import React from "react";
-import { fetch_options } from "../fe-api/options/options";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "../holdings/WizardForm/formWizardStore";
+import { motion } from "framer-motion";
+import AllocationPieComponent from "../holdings/Components/AllocationPie";
+import { AllocationPie } from "../holdings/types/holdings";
 
 type View = "main" | "fund" | "option";
 
-type Option = {
+export type Option = {
   id: string;
-  name: string;
+  option_name: string;
   description?: string;
+  allocation?: AllocationPie;
+  as_of_date?: string;
 };
+
+const SEGMENTS = {
+  listed: {
+    color: "#00C49F",
+    bgClass: "bg-[#00C49F]/10",
+    textClass: "text-[#007a63]",
+    label: "Public companies",
+  },
+  unlisted: {
+    color: "#3B82F6",
+    bgClass: "bg-blue-100",
+    textClass: "text-blue-700",
+    label: "Private assets",
+  },
+  cashAndBonds: {
+    color: "#F59E0B",
+    bgClass: "bg-amber-100",
+    textClass: "text-amber-700",
+    label: "Cash & bonds",
+  },
+} as const;
+
+type SegmentKey = keyof typeof SEGMENTS;
+
+const MOCK_ALLOCATIONS: Record<string, AllocationPie> = {
+  "High Growth": { listed: 80, unlisted: 12, cashAndBonds: 4 },
+  Growth: { listed: 65, unlisted: 10, cashAndBonds: 10 },
+  Balanced: { listed: 45, unlisted: 8, cashAndBonds: 17 },
+  Conservative: { listed: 25, unlisted: 5, cashAndBonds: 25 },
+  "Sustainable Growth": { listed: 60, unlisted: 10, cashAndBonds: 12 },
+};
+
+const AllocationKey = () => (
+  <div className="flex gap-4 justify-center flex-wrap px-2 py-5 border-t border-slate-100 bg-white">
+    {(Object.keys(SEGMENTS) as SegmentKey[]).map((k) => (
+      <span key={k} className="flex items-center gap-1.5 text-xs font-semibold">
+        <span
+          className="w-2 h-2 sm:w-[0.6rem] sm:h-[0.6rem] sm:rounded-sm flex-shrink-0"
+          style={{ backgroundColor: SEGMENTS[k].color }}
+        />
+        {SEGMENTS[k].label}
+      </span>
+    ))}
+  </div>
+);
 
 type OptionPickerViewProps = {
   setView: (view: View) => void;
-  actions: {
-    updateForm: (data: {
-      option_id?: string;
-      option_name?: string;
-      Fund?: string;
-      age?: number;
-      balance?: number;
-    }) => void;
-  };
   currentOption: string;
   currentFund: string;
   options: Option[];
@@ -33,14 +72,10 @@ const OptionPickerView = ({
   setView,
   currentOption,
   currentFund,
+  options,
 }: OptionPickerViewProps) => {
   const [search, setSearch] = useState("");
-  const { actions, state } = useStateMachine({ actions: { updateForm } });
-  const [loading, setLoading] = React.useState(true);
-  const [selected, setSelected] = React.useState<{
-    id: string;
-    name: string;
-  } | null>(null);
+  const { actions } = useStateMachine({ actions: { updateForm } });
 
   const handleClick = (option: { id: string; option_name: string }) => {
     actions.updateForm({
@@ -49,30 +84,10 @@ const OptionPickerView = ({
     });
     setView("main");
   };
-  const [options, setOptions] = React.useState<
-    { id: string; option_name: string }[]
-  >([]);
 
-  React.useEffect(() => {
-    if (!state.Fund) return;
-
-    const loadOptions = async () => {
-      setLoading(true);
-      try {
-        const data = await fetch_options(state.Fund);
-        const sorted = data.sort((a, b) =>
-          a.option_name.localeCompare(b.option_name),
-        );
-        setOptions(sorted);
-      } catch {
-        setOptions([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadOptions();
-  }, [state.Fund]);
+  const filtered = options.filter((o) =>
+    o.option_name.toLowerCase().includes(search.toLowerCase()),
+  );
 
   return (
     <>
@@ -88,12 +103,11 @@ const OptionPickerView = ({
           <h2 className="text-lg font-semibold text-slate-900">
             Choose option
           </h2>
-          <p className="text-xs text-slate-500">For {currentFund}</p>
         </div>
       </div>
 
       {options.length > 8 && (
-        <div className="px-4 py-3 border-b border-slate-100">
+        <div className="px-4 py-3 border-b border-slate-100 bg-white">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
             <input
@@ -101,37 +115,64 @@ const OptionPickerView = ({
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search options..."
-              className="w-full pl-9 pr-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-600"
+              className="w-full pl-9 pr-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
             />
           </div>
         </div>
       )}
 
-      <div className="max-h-96 overflow-y-auto">
-        {options.map((option) => {
+      <div className="overflow-y-auto max-h-[27rem] bg-slate-100 flex flex-col gap-3 py-4 px-4">
+        {filtered.map((option) => {
           const isSelected = option.option_name === currentOption;
+          const allocation = option.allocation;
+
           return (
             <button
               key={option.id}
               onClick={() => handleClick(option)}
-              className={`w-full flex items-start gap-3 px-6 py-3 transition-colors text-left border-b border-slate-100 last:border-b-0 ${
+              aria-pressed={isSelected}
+              className={`bg-white p-4 rounded-2xl border flex items-center gap-4 shadow-sm transition-all w-full ${
                 isSelected
-                  ? "bg-emerald-50/50 hover:bg-emerald-50"
-                  : "hover:bg-slate-50"
+                  ? "border-emerald-500 shadow-md"
+                  : "border-slate-200 hover:border-slate-300"
               }`}
             >
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-slate-900">
-                  {option.option_name}
-                </p>
+              <div className="w-10 h-10 flex items-center justify-center bg-slate-100 rounded-2xl flex-shrink-0">
+                {allocation ? (
+                  <AllocationPieComponent allocation={allocation} />
+                ) : (
+                  <span className="text-xs font-bold text-slate-400">
+                    {getInitials(option.option_name)}
+                  </span>
+                )}
               </div>
-              {isSelected && (
-                <div className="w-2 h-2 rounded-full bg-emerald-600 mt-1.5 flex-shrink-0" />
+              <span className="flex flex-col flex-1 text-left min-w-0">
+                <span className="text-sm font-bold text-slate-900 truncate">
+                  {option.option_name}
+                </span>
+                {option.as_of_date && (
+                  <span className="text-xs text-slate-400">
+                    As of {option.as_of_date}
+                  </span>
+                )}
+              </span>
+              {isSelected ? (
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  className="w-4 h-4 flex items-center justify-center flex-shrink-0"
+                >
+                  <Check className="w-4 h-4 text-emerald-600" />
+                </motion.div>
+              ) : (
+                <div className="w-4 h-4 flex-shrink-0" />
               )}
             </button>
           );
         })}
       </div>
+
+      <AllocationKey />
     </>
   );
 };

@@ -85,7 +85,7 @@ const Industries = ({ holdingsData, balance }) => {
                 initial="hidden"
                 animate="rest"
                 variants={parentVariant}
-                className="bg-white rounded-3xl px-2 py-6 pt-10 sm:px-5 sm:py-5 sm:pt-7 shadow-md text-center w-full max-w-[15rem] relative hover:shadow-xl cursor-pointer select-none"
+                className="bg-white rounded-3xl px-2 py-6 pt-10 sm:px-5 sm:py-5 sm:pt-7 shadow-md text-center w-full max-w-[14rem] relative hover:shadow-xl cursor-pointer select-none"
               >
                 <motion.svg
                   version="1.1"
@@ -141,7 +141,7 @@ const Industries = ({ holdingsData, balance }) => {
                 </motion.svg>
 
                 <div className="flex flex-col justify-between items-center">
-                  <AnimComponent responsiveSizing="h-[5.5rem] w-[5.5rem]" />
+                  <AnimComponent responsiveSizing="h-[4rem] w-[4rem]" />
                 </div>
                 <h2 className="text-[0.78rem] md:text-sm font-medium mb-2 text-center">
                   {element.industry}

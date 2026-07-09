@@ -6,6 +6,7 @@ import { NumericFormat } from "react-number-format";
 import { IconChevronRight } from "@tabler/icons-react";
 import { SectorStyle } from "./PopUpShell";
 import { CrossOption } from "../types/holdings";
+import AllocationPieComponent from "./AllocationPie";
 
 type CrossOptionsListProps = {
   title: string;
@@ -70,26 +71,24 @@ export function CrossOptionsList({
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <div
-                    className={`flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-100 rounded-2xl`}
-                  >
-                    <span className="text-xs font-bold tracking-tight">
-                      {abbr}
-                    </span>
+                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-100 rounded-2xl">
+                    {opt.allocation ? (
+                      <AllocationPieComponent allocation={opt.allocation} />
+                    ) : (
+                      <span className="text-xs font-bold tracking-tight">
+                        {abbr}
+                      </span>
+                    )}
                   </div>
                   <div className="flex-1 min-w-0">
                     <p
-                      className={`text-xs sm:text-sm font-bold truncate ${
-                        isCurrent ? sectorStyle.text : "text-slate-900"
-                      }`}
+                      className={`text-xs sm:text-sm font-bold truncate ${isCurrent ? sectorStyle.text : "text-slate-900"}`}
                     >
                       {opt.optionName}
                     </p>
                     <div className="flex items-center gap-1.5">
                       <p
-                        className={`text-[10px] font-bold ${
-                          isCurrent ? sectorStyle.text : "text-orange-500"
-                        }`}
+                        className={`text-[10px] font-bold ${isCurrent ? sectorStyle.text : "text-orange-500"}`}
                       >
                         {isZero
                           ? "Not held"

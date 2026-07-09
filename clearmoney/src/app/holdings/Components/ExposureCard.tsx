@@ -21,7 +21,7 @@ export function ExposureCard({
 }: ExposureCardProps) {
   return (
     <div className="bg-slate-50 rounded-[2rem] p-6 border border-slate-100/50 relative overflow-hidden">
-      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
+      <p className="text-sm font-bold text-slate-400 tracking-widest mb-2">
         Your proportional exposure
       </p>
       <div className="flex items-baseline gap-3">
@@ -35,7 +35,7 @@ export function ExposureCard({
             displayType="text"
           />
         </span>
-        <span className="text-sm font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-lg">
+        <span className="text-xl font-bold text-orange-600  px-2 py-0.5 rounded-lg tracking-tighter">
           {weight.toFixed(2)}%
         </span>
       </div>

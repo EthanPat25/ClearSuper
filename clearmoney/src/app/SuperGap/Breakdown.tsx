@@ -79,7 +79,7 @@ const Breakdown = () => {
 
       {/* Breakdown card */}
       <motion.div
-        className="bg-white rounded-3xl shadow-md mt-5 md:flex-1"
+        className="bg-white rounded-3xl shadow-md mt-5 h-full"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
@@ -89,7 +89,7 @@ const Breakdown = () => {
             Breakdown
           </h3>
         </div>
-        <div className="px-6 py-10 md:py-16 flex flex-col items-center justify-center text-center gap-2">
+        <div className="px-6 flex flex-col items-center justify-center text-center gap-2 h-full">
           <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center mb-2">
             <PauseIcon className="w-5 h-5 text-slate-400" strokeWidth={1.5} />
           </div>

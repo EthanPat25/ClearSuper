@@ -29,35 +29,55 @@ export default function SuperContributions() {
           }}
         />
 
-        <div className="max-w-7xl justify-center items-center grid grid-cols-1 mt-[5rem] lg:mt-0 lg:grid-cols-2 gap-0 md:gap-12 lg:gap-12 relative z-10">
-          <div className="flex flex-col items-center text-center order-1">
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="flex rounded-full bg-emerald-600
-ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:w-24 sm:h-24 2xl:w-28 2xl:h-28 justify-center items-center mb-6"
-            >
-              <Superannuation responsiveSizing="w-full h-full" />
-            </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-5xl sm:text-6xl lg:text-7xl 2xl:text-8xl text-emerald-950 font-extrabold tracking-tight drop-shadow-sm leading-[1.1] mb-6 text-center"
-            >
-              Understand <br />
-              <span className="text-emerald-600">Super</span>
-            </motion.h1>
+        <div className="max-w-6xl justify-center items-center grid grid-cols-1 sm:mt-[5rem] lg:mt-0 lg:grid-cols-2 gap-0 md:gap-12 lg:gap-12 relative z-10">
+          <div className="flex flex-col items-center text-center order-1 p-6">
+            <div className="sm:bg-none lg:bg-transparent py-10 gap-6 sm:gap-0 px-8 sm:py-10 lg:p-0 flex flex-col justify-center items-center w-full">
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="flex rounded-full bg-emerald-600 ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:w-24 sm:h-24 2xl:w-28 2xl:h-28 justify-center items-center sm:mb-8"
+              >
+                <Superannuation responsiveSizing="w-full h-full" />
+              </motion.div>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                className=" text-5xl sm:text-6xl lg:text-7xl 2xl:text-8xl text-emerald-950 font-extrabold tracking-tight drop-shadow-sm leading-[1.1] sm:mt-0 sm:mb-6 text-center"
+              >
+                Understand <span className="text-emerald-600">Super</span>
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="sm:hidden text-lg text-emerald-800 font-medium leading-relaxed max-w-xs text-center"
+              >
+                See exactly what companies and industries your fund invests in.
+              </motion.p>
 
+              <motion.button
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                whileTap={{ scale: 0.95, transition: { duration: 0.4 } }}
+                whileHover={{ scale: 1.05 }}
+                onClick={() => router.push("/holdings")}
+                className="sm:hidden bg-[#F59E0B] text-slate-900 font-bold py-3 px-6 rounded-full text-base mt-2 hover:bg-[#d97706] transition-colors shadow-xl hover:shadow-2xl"
+              >
+                Check My Holdings
+              </motion.button>
+            </div>
+
+            {/* DESKTOP subtitle + CTA */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-[1.5rem] 2xl:text-[2rem] text-emerald-700 font-medium leading-relaxed mb-10 max-w-lg text-center"
+              className="text-[1.5rem] hidden sm:block 2xl:text-[2rem] text-emerald-700 font-medium leading-relaxed mb-10 max-w-lg text-center"
             >
               See exactly what companies and industries your fund invests in.
             </motion.p>
@@ -71,13 +91,13 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
               }}
               whileHover={{ scale: 1.05 }}
               onClick={() => router.push("/holdings")}
-              className="bg-[#F59E0B] text-slate-900 font-bold px-6 py-7 md:px-8 md:py-5 2xl:px-10 2xl:py-6 rounded-full text-base sm:text-xl 2xl:text-2xl lg:w-auto max-w-[300px] 2xl:max-w-[340px] hover:bg-[#d97706] transition-colors shadow-xl hover:shadow-2xl"
+              className="bg-[#F59E0B] hidden sm:block text-slate-900 font-bold px-6 py-7 md:px-8 md:py-5 2xl:px-10 2xl:py-6 rounded-full text-base sm:text-xl 2xl:text-2xl lg:w-auto max-w-[300px] 2xl:max-w-[340px] hover:bg-[#d97706] transition-colors shadow-xl hover:shadow-2xl"
             >
               Check My Holdings
             </motion.button>
           </div>
 
-          <div className="relative flex flex-col items-center order-2 mt-20 lg:mt-0 z-20 -mb-48 lg:mb-0">
+          <div className="relative flex flex-col items-center order-2 mt-5 lg:mt-0 z-20 -mb-48 lg:mb-0">
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
@@ -88,9 +108,9 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
                 initial={{ x: -20, opacity: 0 }}
                 animate={{ x: -25, opacity: 1 }}
                 transition={{ delay: 1.2 }}
-                className="absolute -left-4 sm:-left-8 lg:-left-20 top-16 lg:top-24 z-30 scale-75 lg:scale-100"
+                className="absolute -left-3 sm:-left-8 lg:-left-20 top-16 lg:top-24 z-30 scale-75 lg:scale-100"
               >
-                <div className="bg-white p-3 rounded-2xl shadow-xl shadow-teal-900/20 border border-slate-100 flex items-center gap-3 transform -rotate-3 hover:rotate-0 transition-transform">
+                <div className="bg-white py-2 px-3 sm:p-3 rounded-2xl shadow-xl shadow-teal-900/20 border border-slate-100 flex items-center gap-3 transform -rotate-3 hover:rotate-0 transition-transform">
                   <div className="bg-orange-100 p-2 rounded-lg">
                     <Tech responsiveSizing="h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem]" />
                   </div>
@@ -113,9 +133,9 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 25, opacity: 1 }}
                 transition={{ delay: 1.4 }}
-                className="absolute -right-4 sm:-right-8 lg:-right-20 bottom-32 lg:bottom-40 z-30 scale-75 lg:scale-100"
+                className="absolute -right-3 sm:-right-8 lg:-right-20 bottom-32 lg:bottom-40 z-30 scale-75 lg:scale-100"
               >
-                <div className="bg-white py-3 px-4 rounded-2xl shadow-xl shadow-teal-900/20 border border-slate-100 flex items-center gap-3 transform rotate-3 hover:rotate-0 transition-transform">
+                <div className="bg-white py-2 px-3 sm:py-3 sm:px-4 rounded-2xl shadow-xl shadow-teal-900/20 border border-slate-100 flex items-center gap-3 transform rotate-3 hover:rotate-0 transition-transform">
                   <div className="bg-red-50 p-2 rounded-lg text-red-500">
                     <Money responsiveSizing="h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem]" />
                   </div>
@@ -144,7 +164,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
             viewport={{ once: true, margin: "-100px" }}
           >
             <div className="flex w-full justify-start items-start">
-              <span className="inline-block bg-amber-100 text-amber-800 text-sm font-medium tracking-wider px-2 py-1 mb-6 rounded-md">
+              <span className="inline-block bg-amber-100 text-amber-800 text-sm font-medium tracking-wider px-3 py-2 mb-6 rounded-xl">
                 Behind The Balance
               </span>
             </div>
@@ -154,10 +174,10 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
               <span className="text-teal-600">down to companies.</span>
             </h2>
 
-            <p className="text-lg text-slate-600 mb-4 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-4 leading-relaxed font-medium">
               Curious how much of your super is in mining? Tech? Banks?
             </p>
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-8 leading-relaxed font-medium">
               ClearSuper breaks every industry down to the underlying companies,
               so you can explore as deep as you want.
             </p>
@@ -165,16 +185,19 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
             <div className="w-full flex justify-start items-center">
               <motion.button
                 whileTap={{ scale: 0.95 }}
-                className="border-2  border-emerald-600 text-emerald-700 px-7 py-3 text-base font-bold rounded-full hover:bg-emerald-50 transition-all"
+                className="border-2 border-emerald-600 hover:fill-[#F59E0B] text-emerald-700 px-7 py-3 text-base font-bold rounded-full hover:bg-emerald-50 hover:border-[#F59E0B] hover:text-[#F59E0B] hover:scale-105 transition-all"
               >
-                <Link href={"/holdings"} className="flex gap-3">
+                <Link
+                  href={"/holdings"}
+                  className="flex gap-3 justify-center items-center w-full h-full"
+                >
                   <p>Start Exploring </p>
                   <svg
                     version="1.1"
                     id="fi_271226"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
-                    className="w-[1rem]"
+                    className="w-[1rem] fill-emerald-700 "
                     viewBox="0 0 492.004 492.004"
                     enableBackground="new 0 0 492.004 492.004"
                     xmlSpace="preserve"
@@ -212,21 +235,23 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
           </motion.div>
 
           <motion.div
-            className="relative bg-slate-50 rounded-[2.5rem] border border-slate-100 overflow-hidden aspect-square"
+            className="relative bg-slate-50 rounded-[2.5rem] border border-slate-100 overflow-hidden min-h-[36rem] sm:aspect-square sm:min-h-0 w-full max-w-lg md:max-w-xl"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[29%] bg-white rounded-[2rem] border border-slate-100 flex flex-col overflow-hidden shadow-2xl w-[60%]">
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[24%] sm:translate-y-[29%] bg-white rounded-[2rem] border border-slate-100 flex flex-col overflow-hidden shadow-2xl w-[calc(100%-2rem)] max-w-[21.5rem]">
               {/* Header */}
               <div className="px-8 pt-10 pb-10 flex flex-col items-center text-center gap-4 bg-amber-100 border-b border-white">
                 <div className="w-24 h-24 flex items-center justify-center bg-white rounded-3xl shadow-xl border-4 border-white">
-                  <Mining responsiveSizing="w-[5rem] h-[5rem]"></Mining>
+                  <Mining responsiveSizing="w-[5rem] h-[5rem]" />
                 </div>
+
                 <div className="space-y-1">
                   <h2 className="text-2xl font-black text-slate-900 tracking-tight">
                     Mining & Minerals
                   </h2>
+
                   <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest bg-amber-100 text-amber-700 border border-amber-700">
                     85 Companies
                   </span>
@@ -238,10 +263,12 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
                     Your Proportional Exposure
                   </p>
+
                   <div className="flex items-baseline gap-3">
                     <span className="text-2xl font-black text-slate-900 tabular-nums tracking-tighter">
                       $3,324.74
                     </span>
+
                     <span className="text-base font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-lg">
                       6.65%
                     </span>
@@ -289,6 +316,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
                         }}
                         alt={c.name}
                       />
+
                       <div>
                         <p className="text-xs font-bold text-slate-900">
                           {c.name}
@@ -298,6 +326,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
                         </p>
                       </div>
                     </div>
+
                     <span className="text-lg font-black text-slate-900">
                       {c.value}
                     </span>
@@ -315,7 +344,7 @@ ring-4 ring-emerald-950/20 shadow-inner border border-[#4FB3B8]/30 w-20 h-20 sm:
             <p className="text-sm font-bold text-orange-500 uppercase tracking-widest mb-3">
               Tools & Calculators
             </p>
-            <h2 className="font-extrabold text-4xl lg:text-5xl text-slate-900">
+            <h2 className="font-extrabold text-2xl lg:text-5xl text-slate-900">
               Calculators that Feel Human
             </h2>
           </div>

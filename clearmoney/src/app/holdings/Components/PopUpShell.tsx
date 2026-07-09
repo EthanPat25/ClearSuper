@@ -9,7 +9,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { IconX } from "@tabler/icons-react";
-import { PublicCompanyHolding } from "../types/holdings";
 
 export const SECTOR_COLORS: Record<
   string,
@@ -98,7 +97,7 @@ type PopUpShellProps = {
   title: string;
   meta: React.ReactNode;
   children: React.ReactNode;
-  holding: PublicCompanyHolding;
+  asOfDate?: string;
 };
 
 export function PopUpShell({
@@ -110,7 +109,7 @@ export function PopUpShell({
   title,
   meta,
   children,
-  holding,
+  asOfDate,
 }: PopUpShellProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -119,22 +118,6 @@ export function PopUpShell({
         <DialogClose className="absolute top-5 right-5 z-50 p-2 rounded-full bg-white/60 hover:bg-white transition-colors">
           <IconX className="text-red-600 w-[1.3rem] h-[1.3rem]" />
         </DialogClose>
-        {holding.options?.as_of_date && (
-          <div className="absolute top-5 left-5 z-50">
-            <span
-              className={`text-[10px] font-bold uppercase tracking-widest ${sectorStyle.text} opacity-70`}
-            >
-              {new Date(holding.options?.as_of_date).toLocaleDateString(
-                "en-AU",
-                {
-                  day: "numeric",
-                  month: "short",
-                  year: "numeric",
-                },
-              )}
-            </span>
-          </div>
-        )}
 
         <div
           className={`px-8 pt-10 pb-10 flex flex-col items-center text-center gap-4 ${sectorStyle.bg} border-b border-white`}
@@ -152,6 +135,20 @@ export function PopUpShell({
 
         <div className="px-8 pb-10 flex-1 min-h-0 space-y-8 overflow-y-auto pt-8">
           {children}
+          {asOfDate && (
+            <div className="flex w-full justify-center items-center">
+              <span
+                className={`text-[10px] font-bold uppercase tracking-widest ${sectorStyle.text} opacity-70`}
+              >
+                Reported as of{" "}
+                {new Date(asOfDate).toLocaleDateString("en-AU", {
+                  day: "numeric",
+                  month: "short",
+                  year: "numeric",
+                })}
+              </span>
+            </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>

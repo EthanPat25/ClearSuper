@@ -20,7 +20,6 @@ export default function SuperContributions() {
       </div>
       <section className="mt-16 w-screen">
         <div className="max-w-7xl mx-auto px-6 py-8">
-          {/* Toggle */}
           <div className="flex justify-center flex-wrap gap-2 mb-6 w-full">
             <button
               onClick={() => setView("terms")}

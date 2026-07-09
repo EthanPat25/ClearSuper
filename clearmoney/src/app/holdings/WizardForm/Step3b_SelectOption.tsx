@@ -2,99 +2,126 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { NumericFormat } from "react-number-format";
-import { Label } from "@/components/ui/label";
-import { updateForm } from "./formWizardStore";
+import Link from "next/link";
+import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
 import { useStateMachine } from "little-state-machine";
+import { updateForm } from "./formWizardStore";
+
+type ResolvedOption = {
+  id: string;
+  option_name: string;
+  as_of_date?: string;
+};
 
 const Step3b_SelectOption = ({
-  updateStep,
   ref,
+  updateStep,
 }: {
-  updateStep: (step: string) => void;
   ref?: React.RefObject<HTMLDivElement>;
+  updateStep: (step: string) => void;
 }) => {
   const { actions, state } = useStateMachine({ actions: { updateForm } });
-  const [age, setAge] = React.useState<number | null>(state.age || null);
+  const [option, updateOption] = React.useState<ResolvedOption | null>(null);
+
+  React.useEffect(() => {
+    const load_option = async () => {
+      const data = await fetch_MySuper(state.Fund);
+      updateOption(data.option);
+    };
+    load_option();
+  }, [state.Fund]);
 
   function handleContinue() {
-    actions.updateForm({ age: age ?? 0 });
+    if (!option) return;
+    actions.updateForm({
+      option_id: option.id,
+      option_name: option.option_name,
+      as_of_date: option.as_of_date,
+    });
     updateStep("StepBalance");
   }
 
-  const canContinue = !!age && age > 0;
-
   return (
-    <div className="flex flex-col gap-8 w-[33rem] max-w-full" ref={ref}>
+    <div className="flex flex-col gap-6 max-w-full px-4">
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-center font-bold text-xl"
+        className="text-center font-bold text-lg sm:text-xl"
       >
-        Step 3: Your details
+        Your fund's default option
       </motion.h1>
 
-      <div className="w-full bg-slate-100 rounded-[3rem] p-10 shadow-sm">
-        <form
-          className="flex flex-col gap-6"
-          onSubmit={(e) => e.preventDefault()}
-        >
-          <div className="space-y-1">
-            <Label
-              htmlFor="age"
-              className="text-base font-medium text-gray-900"
-            >
-              Your Age
-            </Label>
-            <div className="relative">
-              <NumericFormat
-                id="age"
-                thousandSeparator={false}
-                placeholder="21"
-                value={age ?? ""}
-                onValueChange={(v) => setAge(v.floatValue ?? null)}
-                className="pl-[1.1rem] h-[2.7rem] w-full text-sm rounded-xl font-normal text-gray-900 placeholder:text-gray-400 border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-slate-900"
-              />
-              <p className="text-xs text-gray-500 mt-3 leading-snug">
-                We use your age because many MySuper options adjust your
-                investments over time.{" "}
-                <a
-                  href="https://moneysmart.gov.au/how-super-works/types-of-super-funds"
-                  target="_blank"
-                  className="underline ml-1"
-                >
-                  Learn more
-                </a>
+      <div className="w-full bg-slate-100 rounded-[3rem] p-10 shadow-sm flex flex-col gap-4 sm:max-w-xl">
+        {!option ? (
+          <p className="text-sm text-slate-400 text-center py-4">
+            We couldn't determine a default option for {state.Fund}.
+          </p>
+        ) : (
+          <>
+            <div className="bg-white p-4 rounded-2xl border border-teal-500 flex items-center gap-4">
+              {option && (
+                <>
+                  <div className="w-12 h-12 rounded-xl bg-teal-100 flex-shrink-0 flex items-center justify-center">
+                    <span className="text-base font-bold text-teal-700">
+                      {option.option_name.charAt(0)}
+                    </span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-slate-900 font-bold text-base leading-tight">
+                      {option.option_name}
+                    </p>
+                  </div>
+                </>
+              )}
+              <span className="text-xs font-bold tracking-wide text-teal-950 bg-teal-100 px-2 py-1 rounded-full flex-shrink-0">
+                MySuper
+              </span>
+            </div>
+
+            {/*
+            <div className="bg-white/60 border border-slate-200 rounded-2xl p-4">
+              <p className="text-sm text-slate-600 leading-relaxed">
+                <strong className="text-slate-800">What is MySuper?</strong>{" "}
+                It&apos;s the option your fund picks for you if you don&apos;t
+                choose one yourself. MySuper was introduced in 2013 with the
+                purpose of giving everyone a simple, low-cost default.
               </p>
             </div>
-          </div>
-        </form>
+*/}
+          </>
+        )}
 
-        <div className="bg-orange-50 border border-orange-200 text-orange-800 rounded-2xl w-full p-2 mt-6 flex justify-center items-center">
-          <p className="text-[0.75rem]">
-            <strong>Notice:</strong> ClearSuper shows the likely default MySuper
-            option for your age. This may not be your actual option - please
-            check your super account to confirm.{" "}
-            <a className="underline cursor-pointer">Full Disclaimer</a>
+        <div className="text-slate-600 pt-6 p-4 flex max-w-3xl">
+          <p className="text-xs leading-relaxed text-center ">
+            ClearSuper can&apos;t know which option you&apos;re actually in. It
+            can only preselect a fund&apos;s MySuper default, so it&apos;s worth
+            checking your account to be sure. <br></br>
+            <Link
+              href="/about"
+              className="underline font-medium hover:text-slate-900 transition-colors"
+            >
+              Read full disclaimer
+            </Link>
           </p>
         </div>
       </div>
 
-      <div className="flex justify-between">
-        <button
-          onClick={() => updateStep("StepTwo")}
-          className="px-6 py-2 bg-slate-200 text-slate-800 rounded-lg font-bold transition hover:bg-slate-300"
-        >
-          Back
-        </button>
-        <button
-          onClick={handleContinue}
-          disabled={!canContinue}
-          className="px-6 py-2 bg-black text-white rounded-lg font-bold transition hover:-translate-y-1 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0"
-        >
-          Show my holdings
-        </button>
+      <div className="w-full mt-4">
+        <div className="flex justify-between gap-3 w-full">
+          <button
+            onClick={() => updateStep("StepTwo")}
+            className="px-6 py-4 md:py-2 bg-slate-200 text-slate-800 rounded-2xl md:rounded-lg font-bold transition hover:bg-slate-300 shrink-0"
+          >
+            Back
+          </button>
+          <button
+            onClick={() => handleContinue()}
+            className="flex-1 md:flex-none px-6 py-4 md:py-2 rounded-2xl md:rounded-lg font-bold transition bg-black text-white hover:-translate-y-1"
+          >
+            Continue
+          </button>
+        </div>
       </div>
     </div>
   );

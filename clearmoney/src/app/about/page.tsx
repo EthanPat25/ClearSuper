@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { LightBulb } from "../AnimationComponents/LightBulb";
+import { Highlighter } from "@/components/ui/highlighter";
+import { Pencil } from "../AnimationComponents/Pencil";
 
 const faqSections = [
   {
@@ -24,7 +26,7 @@ const faqSections = [
   },
   {
     title: "Industry Classification",
-    body: "Industries displayed on ClearSuper are generated using a large language model (LLM) to classify companies into industry categories. While best efforts have been made to manually review these classifications, this is not a perfect method and classifications may be incorrect or inconsistent in some cases. Industry classification can also be subjective - some companies may arguably fit into two or more categories. If you want to verify which industries your fund invests in, cross-reference with the official holdings data released directly by your fund.",
+    body: "Industry classifications shown on ClearSuper are created by ClearSuper and applied to the reported holdings. They are our own categorisation, not your fund's. Funds may group holdings into sectors differently, or use different category names. The categories themselves are a fixed set chosen by us. ClearSuper uses an LLM to aid in sorting companies into these categories. While best efforts have been made to review this, it's not a perfect method and classifications may be incorrect or inconsistent. Classification can also be subjective. For example, some companies may arguably fit two or more categories. To verify what your fund actually holds, refer to the official holdings data released by your fund.",
   },
   {
     title: "Holdings Data & Accuracy",
@@ -59,7 +61,57 @@ function AccordionItem({ title, body }) {
       >
         <span className="text-sm font-medium text-slate-700">{title}</span>
         <span className="text-slate-400 flex-shrink-0 text-xl leading-none">
-          {open ? "−" : "+"}
+          {open ? (
+            <svg
+              height="512"
+              viewBox="0 0 512 512"
+              width="512"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6 hover:scale-110"
+              id="fi_10308996"
+            >
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="minus">
+                  <circle
+                    id="background"
+                    cx="256"
+                    cy="256"
+                    fill="#064e3b"
+                    r="256"
+                  ></circle>
+                  <rect
+                    fill="#fff"
+                    height="280"
+                    rx="18.26"
+                    transform="matrix(0 -1 1 0 0 512)"
+                    width="65.74"
+                    x="223.13"
+                    y="116"
+                  ></rect>
+                </g>
+              </g>
+            </svg>
+          ) : (
+            <svg
+              clipRule="evenodd"
+              fillRule="evenodd"
+              className="w-6 h-6 hover:scale-110"
+              imageRendering="optimizeQuality"
+              shapeRendering="geometricPrecision"
+              textRendering="geometricPrecision"
+              viewBox="0 0 21.0001 21.0001"
+              xmlns="http://www.w3.org/2000/svg"
+              id="fi_14090273"
+            >
+              <g id="图层_x0020_1">
+                <path d="m0 0h21v21h-21z" fill="none"></path>
+                <path
+                  d="m10.5 1.3124c5.07328 0 9.1876 4.11432 9.1876 9.1876s-4.11432 9.1876-9.1876 9.1876-9.1876-4.11432-9.1876-9.1876 4.11432-9.1876 9.1876-9.1876zm-.9843 13.1257v-2.95384h-2.95384c-.54063 0-.9843-.4422-.9843-.9843 0-.54211.4422-.9843.9843-.9843h2.95384v-2.95384c0-.54211.4422-.9843.9843-.9843.54211 0 .9843.44367.9843.9843v2.95384h2.95384c.54211 0 .9843.4422.9843.9843 0 .54211-.44367.9843-.9843.9843h-2.95384v2.95384c0 .54063-.4422.9843-.9843.9843-.54211 0-.9843-.4422-.9843-.9843z"
+                  fill="#064e3b"
+                ></path>
+              </g>
+            </svg>
+          )}
         </span>
       </button>
       {open && (
@@ -88,7 +140,6 @@ export default function AboutPage() {
             >
               <LightBulb responsiveSizing="h-[5rem] w-[5rem]"></LightBulb>
             </motion.div>
-
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -100,25 +151,26 @@ export default function AboutPage() {
               <span className="text-emerald-600">ClearSuper.</span>
             </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl lg:text-[1.5rem] text-emerald-700 font-medium leading-relaxed mb-4 max-w-lg text-center"
-            >
-              What if superannuation data was actually designed for people?
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="text-base text-emerald-600 leading-relaxed max-w-md text-center"
-            >
-              ClearSuper is a proof of concept not financial advice.
-            </motion.p>
+            <div className="w-full flex justify-center items-center">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-xl lg:text-2xl text-emerald-800 italic font-normal leading-relaxed max-w-lg text-center"
+              >
+                What if superannuation data was actually designed for people?
+              </motion.p>
+            </div>
             <div className="flex gap-4 mt-8 justify-center">
-              <button
+              <motion.button
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 18,
+                  delay: 0.15,
+                }}
                 onClick={() =>
                   document
                     .getElementById("about")
@@ -127,8 +179,16 @@ export default function AboutPage() {
                 className="bg-emerald-600 text-white font-bold text-sm md:text-base px-6 py-3 rounded-full hover:bg-emerald-700 transition"
               >
                 About the Project
-              </button>
-              <button
+              </motion.button>
+              <motion.button
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 18,
+                  delay: 0.25,
+                }}
                 onClick={() =>
                   document
                     .getElementById("disclaimer")
@@ -137,13 +197,12 @@ export default function AboutPage() {
                 className="bg-white text-emerald-800 font-bold text-sm md:text-base px-6 py-3 rounded-full border border-emerald-200 hover:bg-emerald-50 transition"
               >
                 Read Disclaimer
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ── About the Developer ── */}
       <div className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -153,14 +212,13 @@ export default function AboutPage() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <span className="inline-block bg-emerald-50 text-emerald-800 text-sm font-bold tracking-wider uppercase px-3 py-1 rounded-[1rem] shadow-sm mb-6">
+            <span className="inline-block bg-emerald-50 text-emerald-800 text-base font-bold px-3 py-2 rounded-[1rem] shadow-sm mb-6">
               About the Developer
             </span>
             <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-              Hi there, <br />
-              <span className="text-emerald-600">I'm Ethan</span>
+              Hi, <span className="text-emerald-600">I'm Ethan</span>
             </h2>
-            <div className="space-y-4 text-lg text-slate-600 leading-relaxed text-pretty text-justify">
+            <div className="space-y-4 text-lg text-slate-600 leading-relaxed text-pretty text-left">
               <p>
                 I'm a computer science student based in Australia with a deep
                 interest in technology and building products that solve real
@@ -181,29 +239,32 @@ export default function AboutPage() {
               <p>ClearSuper is my attempt at that.</p>
             </div>
           </motion.div>
-
-          <div className="flex items-center justify-center md:gap-4">
+          <div className="relative flex items-center justify-center md:gap-4">
             <img
               src="/Ethan.JPG"
               alt="Ethan"
-              className="ring-8 ring-emerald-900 w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] rounded-[8rem] object-cover object-top shadow-2xl"
+              className="ring-8 ring-[#F59E0B]/60 w-[20rem] h-[20rem] md:w-[32rem] md:h-[32rem] rounded-full object-cover object-top shadow-lg"
             />
+            <div className="absolute bottom-6 left-16 md:bottom-8 md:left-20 w-14 h-14 md:w-[4.5rem] md:h-[4.5rem] rounded-full bg-white shadow-md ring-2 ring-[#F59E0B]/40 flex items-center justify-center">
+              <Pencil responsiveSizing="w-[3rem] h-[3rem]" />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-slate-50 py-32 border-t border-slate-200/60">
+      <div className="bg-white py-32 ">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col items-center text-center mb-8">
-            <p className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-3">
+            <span className="inline-block bg-emerald-50 text-emerald-600 text-base font-bold px-3 py-2 rounded-[1rem] shadow-[1rem] mb-6">
               About ClearSuper
-            </p>
+            </span>
+
             <h2 className="font-extrabold text-4xl lg:text-5xl text-slate-900 max-w-2xl leading-tight">
               Why I Built ClearSuper
             </h2>
           </div>
 
-          <div className="max-w-[50rem] mx-auto space-y-5 text-lg text-slate-600">
+          <div className="flex flex-col max-w-[52rem] mx-auto space-y-5 text-lg text-slate-600">
             <p className="text-justify">
               A few years ago I was doing Menulog deliveries during the
               pandemic. As a gig worker I wasn't earning super, so a family
@@ -213,134 +274,75 @@ export default function AboutPage() {
             </p>
             <p className="text-justify">
               Turns out I wasn't unusual. Research from AMP found a quarter of
-              Australians have never checked their super. Engagement is an
-              ongoing challenge. And I was a clear example of it.
+              Australians have never checked their super. I was a clear example
+              of it.
             </p>
             <p className="text-justify">
-              Since then I've spent time trying to understand. Both at a system
-              and personal level. I often wonder what could have made my 19 year
-              old self stop and think a little longer. To me, super never really
-              felt real. Until one day it did. I saw how it could play out over
-              a lifetime. And that it didn't always play out evenly.
+              Since then I've spent time trying to understand it, both at a
+              system and a personal level. I often wonder what could have made
+              my 19-year-old self stop and think a little longer. To me, super
+              never really felt real. Until one day it did. I saw how it could
+              play out over a lifetime. And that it didn't always play out
+              evenly.
             </p>
             <p>
-              It's a hard problem. Super is long term by design, yet digital
-              spaces increasingly demand our attention in ways that aren't.
+              Engagement is a hard problem. Super is long term by design, yet
+              the digital spaces around us increasingly compete for our
+              attention in the short term.
             </p>
 
             <p className="text-justify">
-              It's an observiaton I don't have a clean answer for. But it's
-              something I keep coming back to.
+              It's something I don't have a clean answer for. But it's something
+              I keep coming back to.
             </p>
             <p className="text-justify">
-              People increasingly expect digital experiences to feel visual,
-              personal and tangible. I believe the digital side of super is only
-              going to become more important in making super feel personal.
-              ClearSuper is a proof of concept that explores some of that. One
-              attempt at what more accessible, visual engagement with super
-              could look like. The data is public. Making it engaging is the
-              challenge.
+              I keep coming back to the psychological distance I felt at 19. I
+              don't feel that same distance when I walk into a home, even though
+              a home is also partly an abstraction: boundaries, contracts, legal
+              title, and lines on a map that we have collectively agreed to
+              recognise. What makes it feel real is the physical material. The
+              bricks, the walls, the very space you can stand in. A place
+              belonging to a community. A home belongs to the present and the
+              future at the same time.
+            </p>
+
+            <p className="text-justify">
+              Super funds invest in real things too. Companies that power our
+              phones, airports we fly from, the roads we drive on, the buildings
+              we work in. The ownership and the impact on the future can be just
+              as real as a brick home. But without something to make it felt, it
+              still appears as a number on a screen. Something distant and
+              technical.
+            </p>
+
+            <p>
+              {" "}
+              Here's my theory: if the average Aussie can understand what their
+              super fund is, what it's doing, and how it connects to the wider
+              world, that understanding could help build more confidence around
+              their finances.
+            </p>
+
+            <p className="text-justify">
+              I think this is where digital tools and services have an important
+              role. Making the abstract feel present. The way bricks make lines
+              on a map feel like a home.
+            </p>
+
+            <p>
+              I don't think anyone is getting it wrong. I think it shows how
+              hard the engagement problem is, and It's part of what has led me
+              to start building something. ClearSuper is a proof of concept. One
+              attempt at what a more visual relationship with super could look
+              like.
             </p>
             <p>If you have thoughts, I'd genuinely like to hear them.</p>
-
-            <div className="w-full flex justify-center items-center mt-36">
-              <button className="inline-block bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-6 py-3 rounded-full transition">
-                Leave Feedback
-              </button>
-            </div>
           </div>
-        </div>
-      </div>
-
-      <div className="py-24 px-6 bg-white border-t border-slate-200/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          <motion.div
-            className="lg:pr-10"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <span className="inline-block bg-teal-50 text-teal-800 text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-6">
-              The Approach
-            </span>
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-              Two things <br />
-              <span className="text-teal-600">ClearSuper explores.</span>
-            </h2>
-            <div className="space-y-4 text-lg text-slate-600 leading-relaxed">
-              <p>
-                ClearSuper takes public holdings data and makes it easier to
-                digest, turning abstract holdings into something tangible on
-                your screen. Real companies. Dollar amounts that reflect the
-                structure of your fund at the time it was reported, scaled to
-                your balance.
-              </p>
-              <p>
-                It also includes a super gap calculator. Career breaks, reduced
-                hours, lower salaries. These happen for very human reasons. They
-                are real experiences that are hard to make tangible. But they
-                create real gaps. How do you translate a gap into something
-                concrete? Coffees. Dental appointments. Overseas trips. The goal
-                is to communicate these concepts digitally in a way that feels
-                understandable and less abstract to a younger audience.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="bg-slate-50 rounded-[2.5rem] border border-slate-100 p-8 space-y-4"
-          >
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-              Example
-            </p>
-            <div className="bg-white rounded-2xl p-5 border border-slate-100">
-              <div className="flex justify-between items-center mb-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center text-white text-xs font-black">
-                    B
-                  </div>
-                  <span className="font-bold text-slate-900 text-sm">
-                    BHP Group
-                  </span>
-                </div>
-                <span className="text-xs text-slate-400">2% of fund</span>
-              </div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-black text-slate-900">
-                  $1,000
-                </span>
-                <span className="text-sm text-slate-400">
-                  on a $50,000 balance
-                </span>
-              </div>
-              <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                This is not $1,000 of your money in BHP shares - it reflects the
-                structure of the option your money sits within.
-              </p>
-            </div>
-            <div className="bg-white rounded-2xl p-5 border border-slate-100 space-y-2">
-              {[
-                { label: "Funds compared", value: "None - single fund only" },
-                { label: "Data source", value: "Fund public disclosures" },
-                { label: "Update frequency", value: "Every 6 months (APRA)" },
-                {
-                  label: "Balance stored",
-                  value: "Browser only, never server",
-                },
-              ].map((row) => (
-                <div key={row.label} className="flex justify-between text-sm">
-                  <span className="text-slate-400">{row.label}</span>
-                  <span className="font-medium text-slate-700">
-                    {row.value}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
+          <div className="w-full flex justify-center items-center mt-12">
+            <button className="bg-[#F59E0B] hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-full transition text-xl hover:scale-105">
+              Leave Feedback
+            </button>
+          </div>
         </div>
       </div>
 
@@ -350,27 +352,26 @@ export default function AboutPage() {
       >
         <div className="max-w-3xl mx-auto px-6">
           <div className="flex flex-col items-center text-center mb-12">
-            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-3">
-              Disclaimer
-            </p>
             <h2 className="font-extrabold text-4xl text-slate-900">
-              The full picture.
+              Full Disclaimer
             </h2>
           </div>
 
-          {/* Short version sits here now */}
-          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8">
-            <p className="text-xs font-semibold text-amber-700 uppercase tracking-widest mb-2">
-              The short version
-            </p>
-            <p className="text-sm text-amber-900 leading-relaxed">
-              ClearSuper is not a financial product and is not licensed to
-              provide financial advice. Holdings show the structure of a fund
-              relative to your entered balance, using reported weights to
-              calculate dollar amounts. This is not an exact or live breakdown.
+          <div className="rounded-[2rem] p-8 mb-8 shadow-sm border bg-white border-slate-100">
+            <p className="text-xs text-justify leading-relaxed">
+              <strong>A Summary:</strong> ClearSuper is not a financial product
+              and is not licensed to provide financial advice. Holdings show the
+              structure of a fund relative to your entered balance. Dollar
+              amounts are calculated using reported weights. This is not an
+              exact or live breakdown. It's the proportional exposure to
+              holdings, applied to the date at which the holdings were reproted.
               Calculators are models based on assumptions and are not
-              predictions of future outcomes. Do not use ClearSuper to make
-              financial decisions. Refer to the{" "}
+              predictions of future outcomes. ClearSuper's intention is data
+              visualisation. It's a work in progress, in beta, and subject to
+              errors. Do not make financial decisions based on what's shown.
+              Consider speaking to a licensed financial adviser, and always
+              check the fund's official PDS and reported holdings data. For
+              factual information, refer to the{" "}
               <a
                 href="https://www.ato.gov.au"
                 target="_blank"
@@ -378,8 +379,8 @@ export default function AboutPage() {
                 className="underline font-medium"
               >
                 ATO
-              </a>
-              ,{" "}
+              </a>{" "}
+              and{" "}
               <a
                 href="https://moneysmart.gov.au"
                 target="_blank"
@@ -388,7 +389,7 @@ export default function AboutPage() {
               >
                 Moneysmart
               </a>
-              , or your fund's PDS for licensed resources.
+              .
             </p>
           </div>
 

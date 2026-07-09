@@ -81,13 +81,13 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
             </p>
           </motion.div>
 
-          <div className="text-slate-600 pt-6 p-4 flex max-w-3xl">
-            <p className="text-xs leading-relaxed text-center ">
+          <div className="text-slate-400 pt-6 p-4 flex max-w-3xl">
+            <p className="text-[0.65rem] leading-relaxed text-center ">
               ClearSuper is independent and not affiliated with any listed super
               funds. Logos are used for identification purposes only.{" "}
               <Link
                 href="/about"
-                className="underline font-medium hover:text-slate-900 transition-colors"
+                className="underline font-bold hover:text-slate-900 transition-colors"
               >
                 Read full disclaimer
               </Link>

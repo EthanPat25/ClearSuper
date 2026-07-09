@@ -108,7 +108,7 @@ export function IndustryPopUp({
       sectorStyle={sectorStyle}
       icon={smallAnimation}
       title={industry}
-      holding={holdings[0]}
+      asOfDate={holdings[0]?.options?.as_of_date}
       meta={
         <span
           className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${sectorStyle.bg} ${sectorStyle.text} border-2 ${sectorStyle.border}`}

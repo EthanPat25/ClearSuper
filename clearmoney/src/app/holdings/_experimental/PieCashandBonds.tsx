@@ -7,7 +7,7 @@ import {
   Tooltip,
   Sector,
 } from "recharts";
-import { dataforwardProps } from "./Components/BondsandCashHoldings";
+import { dataforwardProps } from "../Components/BondsandCashHoldings";
 
 const data = [
   { name: "Cash", value: 49, color: "#1A8C8C" }, // dark navy

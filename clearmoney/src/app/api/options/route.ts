@@ -19,7 +19,7 @@ export async function GET(Request: NextRequest) {
 
   const { data, error } = await supabase
     .from("options")
-    .select("id, option_name, as_of_date")
+    .select("id, option_name, option_name_abbreviation, as_of_date")
     .eq("super_fund_id", fund);
 
   return new Response(JSON.stringify(data), {

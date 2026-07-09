@@ -26,7 +26,7 @@ const HeroSection = ({
   const selectedFundDomain = selectedFund?.domain;
 
   return (
-    <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 p-6 pb-24 relative">
+    <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 p-6 pb-24 relative hidden sm:block">
       <div
         className="absolute inset-0 opacity-[0.05]"
         style={{
@@ -49,15 +49,25 @@ const HeroSection = ({
           <Superannuation responsiveSizing="h-full w-full" />
         </motion.div>
 
-        <div className="text-4xl sm:text-5xl lg:text-6xl text-emerald-950 font-extrabold tracking-tight drop-shadow-sm leading-[1.1] text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-4xl sm:text-5xl lg:text-6xl text-emerald-950 font-extrabold tracking-tight drop-shadow-sm leading-[1.1] text-center"
+        >
           How your fund <br />
           <span className="text-emerald-600">invests</span>
-        </div>
+        </motion.div>
 
-        <h3 className="text-center font-medium text-emerald-900 text-[1.2rem] sm:text-[1.5rem] max-w-xl">
+        <motion.h3
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="text-center font-medium text-emerald-900 text-[1.2rem] sm:text-[1.5rem] max-w-xl"
+        >
           <br></br> View exposure to the companies, property, and assets your
           fund invests in.
-        </h3>
+        </motion.h3>
       </div>
 
       <div className="flex justify-center mb-5 relative z-10">

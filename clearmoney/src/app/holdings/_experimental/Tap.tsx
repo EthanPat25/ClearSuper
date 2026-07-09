@@ -1,7 +1,7 @@
 import React from "react";
 import Bargraph from "./Bargraph";
 import { Button } from "@/components/ui/button";
-import Info from "../FHSS/Info";
+import Info from "../../FHSS/Info";
 import { InfoIcon } from "lucide-react";
 
 const Tap = () => {

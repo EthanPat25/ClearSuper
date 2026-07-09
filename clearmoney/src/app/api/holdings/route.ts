@@ -51,7 +51,7 @@ export async function GET(Request: NextRequest) {
       .from("Holdings")
       .select(selectString)
       .eq("Option_Id", option)
-      .order("Dollar_Value", { ascending: false });
+      .order("Dollar_Value", { ascending: false, nullsFirst: false });
 
     if (error) {
       return new Response(JSON.stringify({ error: "Database fetch failed" }), {
