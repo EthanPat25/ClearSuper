@@ -24,8 +24,13 @@ const OPTIONS = [
   },
 ];
 
-const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
-  const [selected, setSelected] = React.useState(null);
+type Step2_KnowledgeLevelProps = {
+  updateStep: (step: string) => void;
+  ref: React.RefObject<HTMLDivElement>;
+}
+
+const Step2_KnowledgeLevel = ({ updateStep, ref }: Step2_KnowledgeLevelProps) => {
+  const [selectedKnowledgeLevel, setSelectedKnowledgeLevel] = React.useState(null);
   const { actions, state } = useStateMachine({ actions: { updateForm } });
 
   return (
@@ -44,8 +49,7 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
 
       <div className="flex flex-col gap-4">
         {OPTIONS.map((opt) => {
-          const isSelected = selected === opt.id;
-
+          const isSelected = selectedKnowledgeLevel === opt.id;
           return (
             <motion.div
               key={opt.id}
@@ -63,7 +67,7 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
                     : "border-gray-200 hover:border-green-400/50"
                 }
               `}
-              onClick={() => setSelected(opt.id)}
+              onClick={() => setSelectedKnowledgeLevel(opt.id)}
             >
               <div className="bg-gray-200 rounded-3xl w-[6rem] h-[6rem] p-2 flex justify-center items-center">
                 {opt.icon === "question" && (
@@ -106,14 +110,14 @@ const Step2_KnowledgeLevel = ({ updateStep, ref }) => {
             Back
           </button>
           <button
-            disabled={!selected}
+            disabled={!selectedKnowledgeLevel}
             onClick={() => {
-              const chosen = OPTIONS.find((o) => o.id === selected);
+              const chosen = OPTIONS.find((option) => option.id === selectedKnowledgeLevel);
               actions.updateForm({ option_name: chosen?.title });
               updateStep(chosen?.nextStep);
             }}
             className={`flex-1 md:flex-none px-6 py-4 md:py-2 rounded-2xl md:rounded-lg font-bold transition shadow-lg md:shadow-none ${
-              selected
+              selectedKnowledgeLevel
                 ? "bg-black text-white hover:-translate-y-1"
                 : "bg-slate-300 text-slate-500 cursor-not-allowed"
             }`}

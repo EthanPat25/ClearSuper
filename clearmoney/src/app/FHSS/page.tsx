@@ -11,9 +11,9 @@ import { Superannuation } from "../AnimationComponents/Superannuation";
 
 export default function SuperContributions() {
   // Calculate the tax savings if contributing extra to super
-
   // bg-[RGB(250,251,252)]
   //  bg-gray-100
+  // Potential colour: bg-[RGB(82,105,127)]
 
   return (
     <div className="w-full bg-[RGB(250,251,252)] relative">

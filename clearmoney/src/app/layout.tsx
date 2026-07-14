@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "ClearSuper",
   description: "See how your super is invested",
   icons: {
-    icon: "./favicon.svg",
+    icon: "./favicon1.svg",
   },
 };
 

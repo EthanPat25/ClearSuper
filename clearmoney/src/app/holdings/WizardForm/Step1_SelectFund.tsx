@@ -5,8 +5,14 @@ import { useStateMachine } from "little-state-machine";
 import { funds } from "../data/SuperFunds";
 import Link from "next/link";
 
-const Step1_SelectFund = ({ updateStep, ref }) => {
-  const [selected, setSelected] = React.useState(null);
+
+type Step1_SelectFundProps = {
+  updateStep: (step: number) => void;
+  ref: React.RefObject<HTMLDivElement>;
+}
+
+const Step1_SelectFund = ({ updateStep, ref }: Step1_SelectFundProps) => {
+  const [selectedFund, setSelectedFund] = React.useState<string | null>(null);
   const { actions } = useStateMachine({ actions: { updateForm } });
 
   return (
@@ -26,7 +32,7 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
                 key={index}
                 whileTap={{ scale: 0.99, transition: { duration: 0.1 } }}
                 onClick={() => {
-                  setSelected(fund.name);
+                  setSelectedFund(fund.name);
                   actions.updateForm({
                     Fund: fund.name,
                     option_name: "",
@@ -36,13 +42,13 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
                   });
                 }}
                 className={`cursor-pointer bg-white p-4 rounded-2xl border flex items-center gap-4 shadow-sm transition-all ${
-                  selected === fund.name
+                  selectedFund === fund.name
                     ? "border-teal-500 shadow-md"
                     : "border-slate-200"
                 }`}
               >
                 <div
-                  className={`w-10 h-10 rounded-lg transition-colors flex-shrink-0 flex items-center justify-center ${selected === fund.name ? "bg-teal-100" : "bg-orange-100"}`}
+                  className={`w-10 h-10 rounded-lg transition-colors flex-shrink-0 flex items-center justify-center ${selectedFund === fund.name ? "bg-teal-100" : "bg-orange-100"}`}
                 >
                   <img
                     className="w-[4rem] h-[4rem] object-contain"
@@ -53,7 +59,7 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
                 <p className="text-slate-800 font-bold text-sm flex-1">
                   {fund.name}
                 </p>
-                {selected === fund.name && (
+                {selectedFund === fund.name && (
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
@@ -98,10 +104,10 @@ const Step1_SelectFund = ({ updateStep, ref }) => {
       <div className="sticky md:static bottom-4 md:bottom-auto w-full px-4 md:px-0 mt-4">
         <div className="flex justify-center md:justify-end w-full max-w-[50rem] mx-auto md:px-10">
           <button
-            disabled={!selected}
+            disabled={!selectedFund}
             onClick={() => updateStep("StepTwo")}
             className={`w-full md:w-auto px-6 py-4 md:py-2 rounded-2xl md:rounded-lg font-bold transition shadow-lg md:shadow-none ${
-              selected
+              selectedFund
                 ? "bg-black text-white hover:-translate-y-1"
                 : "bg-slate-300 text-slate-500 cursor-not-allowed"
             }`}

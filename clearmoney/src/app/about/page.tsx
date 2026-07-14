@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { LightBulb } from "../AnimationComponents/LightBulb";
-import { Highlighter } from "@/components/ui/highlighter";
 import { Pencil } from "../AnimationComponents/Pencil";
 
 const faqSections = [
@@ -52,7 +51,7 @@ const faqSections = [
 ];
 
 function AccordionItem({ title, body }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
   return (
     <div className="border-b border-slate-100 last:border-0">
       <button
