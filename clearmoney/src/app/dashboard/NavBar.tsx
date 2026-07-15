@@ -106,7 +106,7 @@ const NavBar = () => {
                 </button>
               </DrawerTrigger>
 
-              <DrawerContent className="inset-y-0 right-0 left-auto mt-0 h-full w-full">
+              <DrawerContent className="inset-y-0 right-0 left-auto mt-0 h-dvh w-dvw">
                 <div className="flex items-center justify-between px-6 pt-6 pb-4">
                   <span className="text-xl font-bold text-slate-900">
                     Clear<span className="text-emerald-600">Super</span>
