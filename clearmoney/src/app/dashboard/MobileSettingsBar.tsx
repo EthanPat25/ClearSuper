@@ -95,8 +95,6 @@ const MobileSettingsBar = () => {
       onOpenChange={handleOpenChange}
       direction="bottom"
       shouldScaleBackground={false}
-      snapPoints={[0.6]}
-      activeSnapPoint={0.6}
     >
       <DrawerTrigger asChild>
         <button className="md:hidden fixed top-20 left-0 right-0 z-40 w-full bg-white border-b border-slate-100 shadow-sm px-4 py-2.5 flex items-center gap-3">

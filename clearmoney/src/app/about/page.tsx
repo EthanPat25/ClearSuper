@@ -220,8 +220,7 @@ export default function AboutPage() {
             <div className="space-y-4 text-lg text-slate-600 leading-relaxed text-pretty text-left">
               <p>
                 I'm a computer science student based in Australia with a deep
-                interest in technology and building products that solve real
-                problems.
+                interest in technology and building products that solve problems.
               </p>
               <p>
                 ClearSuper started from a simple realisation. I didn't

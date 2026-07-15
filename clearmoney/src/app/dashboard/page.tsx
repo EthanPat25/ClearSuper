@@ -349,56 +349,63 @@ export default function SuperContributions() {
             </h2>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8">
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center w-full max-w-[22rem]"
-            >
-              <span className="text-[0.65rem] font-bold tracking-widest text-emerald-600 uppercase bg-emerald-50 px-3 py-1 rounded-full mb-4">
-                First Home Saver
-              </span>
-              <h3 className="text-slate-900 font-bold text-xl mb-4 leading-tight">
-                Could you save a deposit faster using Super?
-              </h3>
-              <div className="mb-6 h-32 flex items-center justify-center w-full"></div>
-              <Button
-                asChild
-                className="w-full rounded-xl h-12 mt-auto bg-slate-900 hover:bg-emerald-600 text-white font-bold shadow-md transition-all"
-              >
-                <Link href="/FHSS">Estimate Savings</Link>
-              </Button>
-            </motion.div>
+      <div className="flex flex-wrap justify-center gap-8">
+  {/* ── Card 1: FHSS ─────────────────────────────── */}
+  <motion.div
+    initial={{ y: 20, opacity: 0 }}
+    whileInView={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    viewport={{ once: true }}
+    whileHover={{ y: -8 }}
+    className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center w-full max-w-[22rem]"
+  >
+    <span className="text-[0.7rem] font-extrabold text-emerald-600 bg-emerald-100 px-3 py-2 rounded-full mb-4">
+      FHSS Calculator
+    </span>
+    <h3 className="text-slate-900 font-bold text-lg md:text-xl mb-4 leading-tight">
+      Could you save a deposit faster using Super?
+    </h3>
+     <div className="flex items-center justify-center w-full relative">
+      <div className="absolute inset-0 bg-slate-50 rounded-full scale-90 -z-10 opacity-60" />
+      <div className="opacity-80 grayscale-[30%]">
+        <House responsiveSizing="w-[10rem] h-[10rem]" />
+      </div>
+    </div>
+    <div className="w-full rounded-xl bg-amber-50 border border-amber-200/60 flex items-center justify-center gap-2">
+      <span className="text-amber-700 font-bold text-sm tracking-wide">
+        Coming Soon
+      </span>
+    </div>
+  </motion.div>
 
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center w-full max-w-[22rem]"
-            >
-              <span className="text-[0.65rem] font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-full mb-4">
-                Gap Calculator
-              </span>
-              <h3 className="text-slate-900 font-bold text-xl mb-4 leading-tight">
-                Are you on track for a comfortable retirement?
-              </h3>
-              <div className="mb-6 h-32 flex items-center justify-center w-full relative">
-                <div className="absolute inset-0 bg-slate-50 rounded-full scale-90 -z-10" />
-                <Bar />
-              </div>
-              <Button
-                asChild
-                className="w-full rounded-xl h-12 mt-auto bg-slate-900 hover:bg-blue-600 text-white font-bold shadow-md transition-all"
-              >
-                <Link href="/SuperGap">Check My Gap</Link>
-              </Button>
-            </motion.div>
-          </div>
+  {/* ── Card 2: Super Gap Calculator ─────────────── */}
+  <motion.div
+    initial={{ y: 20, opacity: 0 }}
+    whileInView={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.5, delay: 0.1 }}
+    viewport={{ once: true }}
+    whileHover={{ y: -8 }}
+    className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center w-full max-w-[22rem]"
+  >
+    <span className="text-[0.7rem] font-extrabold text-blue-600 bg-blue-100 px-3 py-2 rounded-full mb-4">
+      Super Gap Calculator
+    </span>
+    <h3 className="text-slate-900 font-bold text-lg md:text-xl mb-4 leading-tight">
+      See how part-time work or career breaks shape your super.
+    </h3>
+    <div className="mb-6 h-32 flex items-center justify-center w-full relative">
+      <div className="absolute inset-0 bg-slate-50 rounded-full scale-90 -z-10 opacity-60" />
+      <div className="opacity-80 grayscale-[30%]">
+        <Bar />
+      </div>
+    </div>
+    <div className="w-full rounded-xl h-12 mt-auto bg-amber-50 border border-amber-200/60 flex items-center justify-center gap-2">
+      <span className="text-amber-700 font-bold text-sm tracking-wide">
+        Coming Soon
+      </span>
+    </div>
+  </motion.div>
+</div>
         </div>
       </div>
     </div>
