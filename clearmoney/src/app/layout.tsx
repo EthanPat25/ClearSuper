@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "../app/dashboard/NavBar";
@@ -11,6 +11,10 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
 
 export const metadata: Metadata = {
   title: "ClearSuper",
