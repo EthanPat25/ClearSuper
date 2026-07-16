@@ -86,7 +86,7 @@ const HoldingsMain: React.FC<HoldingsMainProps> = ({
 
   return (
     <>
-      <motion.div className="bg-slate-100 w-full rounded-[3rem] sm:rounded-[2rem] overflow-hidden max-w-5xl">
+      <motion.div className="mt-10 md:mt-0 bg-slate-100 w-full rounded-[3rem] sm:rounded-[2rem] overflow-hidden max-w-5xl">
         <AssetTabs
           AssetView={AssetView}
           setAssetView={setAssetView}
