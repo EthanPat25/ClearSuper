@@ -140,7 +140,7 @@ const ControlsBar: React.FC<ControlsBarProps> = ({
                   <IconSearch size={20} />
                 </button>
               </DialogTrigger>
-              <DialogContent className="fixed inset-x-0 bottom-0 top-auto translate-x-0 translate-y-0 w-full max-w-none rounded-t-[2rem] border-0 p-6 pb-[calc(env(safe-area-inset-bottom)+2rem)] max-h-[75svh] overflow-y-auto sm:hidden">
+              <DialogContent className="fixed inset-x-0 bottom-0 top-auto translate-x-0 translate-y-0 w-full max-w-none rounded-t-[2rem] border-0 p-6 pb-[calc(env(safe-area-inset-bottom)+2rem)] max-h-[75svh] overflow-y-auto sm:hidden bg-white">
                 <div className="flex flex-col gap-6">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-bold text-slate-900">
@@ -201,7 +201,7 @@ const ControlsBar: React.FC<ControlsBarProps> = ({
                   placeholder="e.g. Apple, BHP, Banks..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-9 pr-3 h-10 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                  className="w-full pl-9 pr-3 h-10 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white"
                 />
               </div>
             </motion.div>

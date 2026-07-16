@@ -22,6 +22,14 @@ export async function GET(Request: NextRequest) {
     .select("id, option_name, option_name_abbreviation, as_of_date")
     .eq("super_fund_id", fund);
 
+  if (error) {
+    console.error("Supabase error:", error);
+    return new Response(JSON.stringify({ error: error.message }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
   return new Response(JSON.stringify(data), {
     status: 200,
     headers: { "Content-Type": "application/json" },

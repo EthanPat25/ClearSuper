@@ -129,7 +129,7 @@ function AccordionItem({ title, body }) {
 export default function AboutPage() {
   return (
     <div className="w-screen min-h-screen flex flex-col bg-slate-50 font-sans overflow-x-hidden">
-      <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white relative pt-32 pb-32 overflow-visible min-h-[calc(100dvh-4rem)] flex justify-center items-center">
+      <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white relative pt-32 pb-32 overflow-visible min-h-[calc(100svh-4rem)] flex justify-center items-center">
         <div className="max-w-7xl px-6 gap-0 md:gap-12 lg:gap-8 items-center relative z-10">
           <div className="w- full flex flex-col items-center justify-center text-center">
             <motion.div
