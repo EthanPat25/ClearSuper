@@ -169,15 +169,15 @@ export default function SuperContributions() {
               </span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
               From industries <br />
               <span className="text-teal-600">down to companies.</span>
             </h2>
 
-            <p className="text-xl text-slate-600 mb-4 leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-slate-600 mb-4 leading-relaxed font-medium">
               Curious how much of your super is in mining? Tech? Banks?
             </p>
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-medium">
               ClearSuper breaks every industry down to the underlying companies,
               so you can explore as deep as you want.
             </p>
@@ -235,20 +235,20 @@ export default function SuperContributions() {
           </motion.div>
 
           <motion.div
-            className="relative bg-slate-50 rounded-[2.5rem] border border-slate-100 overflow-hidden min-h-[36rem] sm:aspect-square sm:min-h-0 w-full max-w-lg md:max-w-xl"
+            className="relative bg-slate-50 rounded-[2.5rem] border border-slate-100 overflow-hidden min-h-[20rem] md:min-h-[36rem] sm:aspect-square sm:min-h-0 w-full max-w-lg md:max-w-xl"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[24%] sm:translate-y-[29%] bg-white rounded-[2rem] border border-slate-100 flex flex-col overflow-hidden shadow-2xl w-[calc(100%-2rem)] max-w-[21.5rem]">
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[50%] sm:translate-y-[29%] bg-white rounded-[2rem] border border-slate-100 flex flex-col overflow-hidden shadow-2xl w-[calc(100%-2rem)] max-w-[18rem] md:max-w-[21.5rem]">
               {/* Header */}
-              <div className="px-8 pt-10 pb-10 flex flex-col items-center text-center gap-4 bg-amber-100 border-b border-white">
-                <div className="w-24 h-24 flex items-center justify-center bg-white rounded-3xl shadow-xl border-4 border-white">
+              <div className="px-4 md:px-8 pt-5 pb-5 md:pt-10 md:pb-10 flex flex-col items-center text-center gap-4 bg-amber-100 border-b border-white">
+                <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-white rounded-3xl shadow-xl border-4 border-white">
                   <Mining responsiveSizing="w-[5rem] h-[5rem]" />
                 </div>
 
                 <div className="space-y-1">
-                  <h2 className="text-2xl font-black text-slate-900 tracking-tight">
+                  <h2 className="text-xl md:text-2xl font-black text-slate-900 tracking-tight">
                     Mining & Minerals
                   </h2>
 
@@ -259,7 +259,7 @@ export default function SuperContributions() {
               </div>
 
               <div className="px-6 pt-6 pb-6">
-                <div className="bg-slate-50 rounded-[2rem] p-6 border border-slate-100/50">
+                <div className="bg-slate-50 rounded-[2rem] p-3 md:p-6 border border-slate-100/50">
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
                     Your Proportional Exposure
                   </p>

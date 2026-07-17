@@ -6,6 +6,9 @@ import Link from "next/link";
 import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "./formWizardStore";
+import AllocationPieComponent from "../Components/AllocationPie";
+import { AllocationPie } from "../types/holdings";
+import { fetch_option_allocations } from "@/app/fe-api/options/options";
 
 type ResolvedOption = {
   id: string;
@@ -23,12 +26,33 @@ const Step3b_SelectOption = ({
   const { actions, state } = useStateMachine({ actions: { updateForm } });
   const [option, updateOption] = React.useState<ResolvedOption | null>(null);
 
+  const [allocation, setAllocation] = React.useState<AllocationPie>({
+  listed: 0,
+  unlisted: 0,
+  cashAndBonds: 0,
+});
+
   React.useEffect(() => {
     const load_option = async () => {
       const data = await fetch_MySuper(state.Fund);
       updateOption(data.option);
+      const allocationRows = await fetch_option_allocations([data.option.id]);
+      console.log("hello:" + allocationRows.map(r => r.category));
+      const pie: AllocationPie = {
+        listed: 0,
+        unlisted: 0,
+        cashAndBonds: 0,
+      };
+      for (const row of allocationRows) {
+        if (row.category === "Listed") pie.listed = row.percentage;
+        if (row.category === "Unlisted") pie.unlisted = row.percentage;
+        if (row.category === "Fixed Interest & Cash")
+          pie.cashAndBonds = row.percentage;
+      }
+      setAllocation(pie);
     };
     load_option();
+
   }, [state.Fund]);
 
   function handleContinue() {
@@ -53,18 +77,14 @@ const Step3b_SelectOption = ({
       </motion.h1>
 
       <div className="w-full bg-slate-100 rounded-[3rem] p-10 shadow-sm flex flex-col gap-4 sm:max-w-xl">
-        {!option ? (
-          <p className="text-sm text-slate-400 text-center py-4">
-            We couldn't determine a default option for {state.Fund}.
-          </p>
-        ) : (
+     
           <>
             <div className="bg-white p-4 rounded-2xl border border-teal-500 flex items-center gap-4">
               {option && (
                 <>
                   <div className="w-12 h-12 rounded-xl bg-teal-100 flex-shrink-0 flex items-center justify-center">
                     <span className="text-base font-bold text-teal-700">
-                      {option.option_name.charAt(0)}
+                      <AllocationPieComponent allocation={allocation} />
                     </span>
                   </div>
                   <div className="flex-1 min-w-0">
@@ -90,7 +110,7 @@ const Step3b_SelectOption = ({
             </div>
 */}
           </>
-        )}
+    
 
         <div className="text-slate-600 pt-6 p-4 flex max-w-3xl">
           <p className="text-xs leading-relaxed text-center ">

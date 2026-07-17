@@ -214,10 +214,10 @@ export default function AboutPage() {
             <span className="inline-block bg-emerald-50 text-emerald-800 text-base font-bold px-3 py-2 rounded-[1rem] shadow-sm mb-6">
               About the Developer
             </span>
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
               Hi, <span className="text-emerald-600">I'm Ethan</span>
             </h2>
-            <div className="space-y-4 text-lg text-slate-600 leading-relaxed text-pretty text-left">
+            <div className="space-y-4 text-base md:text-lg text-slate-600 leading-relaxed text-pretty text-left">
               <p>
                 I'm a computer science student based in Australia with a deep
                 interest in technology and building products that solve problems.
@@ -257,12 +257,12 @@ export default function AboutPage() {
               About ClearSuper
             </span>
 
-            <h2 className="font-extrabold text-4xl lg:text-5xl text-slate-900 max-w-2xl leading-tight">
+            <h2 className="font-extrabold text-3xl md:text-4xl lg:text-5xl text-slate-900 max-w-2xl leading-tight">
               Why I Built ClearSuper
             </h2>
           </div>
 
-          <div className="flex flex-col max-w-[52rem] mx-auto space-y-5 text-lg text-slate-600">
+          <div className="flex flex-col max-w-[52rem] mx-auto space-y-5 text-base md:text-lg text-slate-600">
             <p className="text-justify">
               A few years ago I was doing Menulog deliveries during the
               pandemic. As a gig worker I wasn't earning super, so a family
