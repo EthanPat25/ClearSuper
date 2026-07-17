@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Dialog, DialogClose, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogClose, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { DialogTrigger } from "@radix-ui/react-dialog";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "../holdings/WizardForm/formWizardStore";
@@ -14,6 +14,7 @@ import {
 } from "../fe-api/options/options";
 import { AllocationPie } from "../holdings/types/holdings";
 import { funds } from "../holdings/data/SuperFunds";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 type View = "main" | "fund" | "option";
 
@@ -93,8 +94,14 @@ const CurrentOptionPopup = () => {
   // Don't render to server if not mounted: avoid hydration error
   if (!mounted) return null;
 
+  const currentAllocation = options.find((o) => o.option_name === currentOption)?.allocation;
+
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
+      <VisuallyHidden>
+        <DialogTitle>Viewing settings</DialogTitle>
+      </VisuallyHidden>
+
       <DialogTrigger asChild>
         <button
           className="hidden md:flex items-center gap-2.5 pl-1.5 pr-4 py-2 rounded-[2rem] bg-white border border-slate-200 hover:border-emerald-500 hover:bg-slate-50 transition-all"
@@ -153,6 +160,7 @@ const CurrentOptionPopup = () => {
             currentOption={currentOption}
             shakeTrigger={shakeTrigger}
             fundDomain={fundDomain}
+            allocation={currentAllocation}
           />
         )}
         {view === "fund" && (

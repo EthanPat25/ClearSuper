@@ -17,6 +17,7 @@ type MainSettingsViewProps = {
   currentOption: string;
   shakeTrigger: number;
   fundDomain: any;
+  allocation: AllocationPie
 };
 
 const getInitials = (name: string) =>
@@ -35,9 +36,9 @@ const MainSettingsView = ({
   currentOption,
   shakeTrigger,
   fundDomain,
+  allocation
 }: MainSettingsViewProps) => {
   const hasOption = !!currentOption;
-  const allocation = hasOption;
   const controls = useAnimation();
   const isFirstRender = useRef(true);
 

@@ -44,22 +44,26 @@ const CATEGORIES = [
   },
 ];
 
-const parentVariant = {
-  hidden: { scale: 0.9, opacity: 0 },
-  rest: {
-    scale: 1,
-    opacity: 1,
-    transition: { duration: 0.4, ease: "easeOut" },
-  },
-  active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
-};
-
 const childVariant = {
   rest: { scale: 1, fill: "#94a3b8" },
   active: { scale: 1.1, fill: "#0f172a", transition: { duration: 0 } },
 };
 
 const PrivateHoldings: React.FC<Props> = ({ holdingsData, balance }) => {
+  const isMobile = window.innerWidth < 768;
+
+  const parentVariant = {
+    hidden: { scale: 0.9, opacity: 0 },
+    rest: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.4, ease: "easeOut" },
+    },
+    ...(!isMobile && {
+      active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
+    }),
+  };
+
   function getCategoryHoldings(keyword: string) {
     return (
       holdingsData?.filter((h) =>
@@ -95,7 +99,7 @@ const PrivateHoldings: React.FC<Props> = ({ holdingsData, balance }) => {
 
           const card = (
             <motion.div
-              whileHover="active"
+              whileHover={!isMobile ? "active" : undefined}
               initial="hidden"
               animate="rest"
               variants={parentVariant}

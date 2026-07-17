@@ -25,6 +25,8 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
   holdingsbondsData,
   balance,
 }) => {
+  const isMobile = window.innerWidth < 768;
+
   const percentageCash =
     holdingsCashData?.reduce(
       (sum, h) => sum + (h.Weighting_Percentage_Clean ?? 0),
@@ -53,21 +55,6 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
     totalpercentage: percentage,
   };
 
-  function getColorForAssetClass(assetClass: string) {
-    switch (assetClass) {
-      case "Infrastructure":
-        return "bg-blue-100 text-blue-700";
-      case "Property":
-        return "bg-green-100 text-green-700";
-      case "Equity":
-        return "bg-slate-100 text-slate-700";
-      case "Alternatives":
-        return "bg-yellow-100 text-yellow-700";
-      default:
-        return "bg-gray-100 text-gray-500";
-    }
-  }
-
   const parentVariant = {
     hidden: { scale: 0.9, opacity: 0 },
     rest: {
@@ -75,7 +62,9 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
       opacity: 1,
       transition: { duration: 0.4, ease: "easeOut" },
     },
-    active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
+    ...(!isMobile && {
+      active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
+    }),
   };
 
   const childVariant = {
@@ -87,7 +76,7 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
     <div className="w-full flex justify-center pt-6">
       <div className="grid grid-cols-2 gap-x-3 md:gap-x-0 gap-y-6 sm:gap-y-8 w-full max-w-xl px-6 justify-items-center">
         <motion.div
-          whileHover="active"
+          whileHover={!isMobile ? "active" : undefined}
           initial="hidden"
           animate="rest"
           variants={parentVariant}
@@ -168,7 +157,7 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
 
         <motion.div
           transition={{ duration: 0.4, ease: "easeOut" }}
-          whileHover="active"
+          whileHover={!isMobile ? "active" : undefined}
           initial="hidden"
           animate="rest"
           variants={parentVariant}

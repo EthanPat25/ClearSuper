@@ -6,9 +6,12 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
+  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { IconX } from "@tabler/icons-react";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+
 
 export const SECTOR_COLORS: Record<
   string,
@@ -115,6 +118,9 @@ export function PopUpShell({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
       <DialogContent className="w-full max-h-[95svh] flex flex-col max-w-[23rem] sm:max-w-lg md:max-w-xl gap-0 border-0 p-0 overflow-hidden rounded-[2.5rem] bg-white shadow-2xl">
+          <VisuallyHidden >
+    <DialogTitle>{title}</DialogTitle>
+  </VisuallyHidden>
         <DialogClose className="absolute top-5 right-5 z-50 p-2 rounded-full bg-white/60 hover:bg-white transition-colors">
           <IconX className="text-red-600 w-[1.3rem] h-[1.3rem]" />
         </DialogClose>
