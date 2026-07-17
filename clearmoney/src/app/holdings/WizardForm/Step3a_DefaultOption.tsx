@@ -21,7 +21,7 @@ const getInitials = (name: string) =>
     .slice(0, 2)
     .toUpperCase();
 
-const AssetClassKey = () => {
+export const AssetClassKey = () => {
   const assetClass = [
     { name: "Public Companies", colour: "#00C49F" },
     { name: "Private Assets", colour: "#3B82F6" },

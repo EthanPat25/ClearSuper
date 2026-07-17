@@ -357,7 +357,7 @@ export default function AboutPage() {
 
           <div className="rounded-[2rem] p-8 mb-8 shadow-sm border bg-white border-slate-100">
             <p className="text-xs text-justify leading-relaxed">
-              <strong>A Summary:</strong> ClearSuper is not a financial product
+              <strong>Summary:</strong> ClearSuper is not a financial product
               and is not licensed to provide financial advice. Holdings show the
               structure of a fund relative to your entered balance. Dollar
               amounts are calculated using reported weights. This is not an

@@ -84,6 +84,17 @@ const HoldingsMain: React.FC<HoldingsMainProps> = ({
           totalResults,
         )} of ${totalResults} results`;
 
+
+    React.useEffect(() => {
+
+      if (companyMode === "industry") {
+        setSearchOpen(false)
+        setSearchTerm("");
+
+      }
+
+    },[companyMode])
+  
   return (
     <>
       <motion.div className="mt-10 md:mt-0 bg-slate-100 w-full rounded-[3rem] sm:rounded-[2rem] overflow-hidden max-w-5xl">
