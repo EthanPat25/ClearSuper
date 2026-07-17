@@ -32,6 +32,7 @@ const industryConfig = [
 
 const Industries = ({ holdingsData, balance }) => {
   const userBalance = Number(balance) || 0;
+  const isMobile = window.innerWidth < 768;
 
   const holdingsBySector = React.useMemo(() => {
     if (!holdingsData) return {} as Record<string, typeof holdingsData>;
@@ -53,7 +54,9 @@ const Industries = ({ holdingsData, balance }) => {
       opacity: 1,
       transition: { duration: 0.4, ease: "easeOut" },
     },
-    active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
+    ...(!isMobile && {
+      active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
+    }),
   };
 
   const childVariant = {
@@ -81,7 +84,7 @@ const Industries = ({ holdingsData, balance }) => {
             balance={userBalance}
             trigger={
               <motion.div
-                whileHover="active"
+                whileHover={!isMobile ? "active" : undefined}
                 initial="hidden"
                 animate="rest"
                 variants={parentVariant}

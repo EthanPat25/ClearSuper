@@ -5,6 +5,8 @@ import Industries from "./industries";
 import CompanyPopUp from "./CompanyPopUp";
 
 const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
+  const isMobile = window.innerWidth < 768;
+
   const parentVariant = {
     hidden: { scale: 0.9, opacity: 0 },
     rest: {
@@ -12,7 +14,9 @@ const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
       opacity: 1,
       transition: { duration: 0.4, ease: "easeOut" },
     },
-    active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
+    ...(!isMobile && {
+      active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
+    }),
   };
 
   const childVariant = {
@@ -36,7 +40,7 @@ const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
                 balance={userBalance}
                 trigger={
                   <motion.div
-                    whileHover="active"
+                    whileHover={!isMobile ? "active" : undefined}
                     initial="hidden"
                     animate="rest"
                     variants={parentVariant}
