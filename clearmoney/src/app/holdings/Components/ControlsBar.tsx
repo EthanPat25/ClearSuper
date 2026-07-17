@@ -50,7 +50,7 @@ const ControlsBar: React.FC<ControlsBarProps> = ({
 
   const openSearch = () => {
     setSearchOpen(true);
-    requestAnimationFrame(() => inputRef.current?.focus());
+    setTimeout(() => inputRef.current?.focus(), 50);
   };
 
   return (
@@ -87,7 +87,7 @@ const ControlsBar: React.FC<ControlsBarProps> = ({
                   placeholder="e.g. Apple, BHP, Banks..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-9 pr-3 h-10 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white"
+                  className="w-full pl-9 pr-3 h-10 border border-slate-200 rounded-xl text-base sm:text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white"
                 />
               </div>
               {searchTerm && (
@@ -240,7 +240,7 @@ const ControlsBar: React.FC<ControlsBarProps> = ({
                   placeholder="e.g. Apple, BHP, Banks..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-9 pr-3 h-10 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white"
+                  className="w-full pl-9 pr-3 h-10 border border-slate-200 rounded-xl text-base sm:text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white"
                 />
               </div>
             </motion.div>
