@@ -46,61 +46,66 @@ const ControlsBar: React.FC<ControlsBarProps> = ({
   const clearSearch = () => {
     setSearchTerm("");
     setSearchOpen(false);
+    inputRef.current?.blur();
   };
 
+  // iOS requires focus() to be called synchronously inside the gesture —
+  // so we focus first, then update state.
   const openSearch = () => {
+    inputRef.current?.focus();
     setSearchOpen(true);
-    setTimeout(() => inputRef.current?.focus(), 50);
   };
 
   return (
     <div className="w-full flex justify-center items-center px-4">
       <div className="w-full bg-white max-w-3xl border border-gray-200 rounded-2xl px-3 sm:px-6 py-2 sm:py-3 flex flex-col overflow-hidden">
 
-        {/* ── Mobile: swap between controls and search bar, no exit animation ── */}
+        {/* ── Mobile section ── */}
         <div className="flex sm:hidden w-full">
-          {searchOpen ? (
-            <motion.div
-              key="mobile-search"
-              initial={{ opacity: 0, x: 24 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.15, ease: "easeOut" }}
-              className="flex items-center gap-2 w-full"
+
+          {/* Back arrow — only visible when open */}
+          {searchOpen && (
+            <button
+              type="button"
+              aria-label="Close search"
+              onClick={clearSearch}
+              className="flex-shrink-0 p-2 -ml-1 text-gray-500 hover:text-gray-800 transition"
             >
-              <button
-                type="button"
-                aria-label="Close search"
-                onClick={clearSearch}
-                className="flex-shrink-0 p-2 -ml-1 text-gray-500 hover:text-gray-800 transition"
-              >
-                <IconArrowLeft size={20} />
-              </button>
-              <div className="relative flex-1">
-                <IconSearch
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
-                  size={16}
-                />
-                <input
-                  ref={inputRef}
-                  type="search"
-                  enterKeyHint="search"
-                  placeholder="e.g. Apple, BHP, Banks..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-9 pr-3 h-10 border border-slate-200 rounded-xl text-base sm:text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white"
-                />
-              </div>
-              {searchTerm && (
-                <button
-                  type="button"
-                  onClick={() => setSearchTerm("")}
-                  className="flex-shrink-0 p-2 text-gray-400 hover:text-gray-600 transition"
-                >
-                  <IconX size={16} />
-                </button>
-              )}
-            </motion.div>
-          ) : (
+              <IconArrowLeft size={20} />
+            </button>
+          )}
+
+          {/* Input — always in DOM so focus() works synchronously on iOS */}
+          <div className={`relative flex-1 ${searchOpen ? "flex" : "hidden"}`}>
+            <IconSearch
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+              size={16}
+            />
+            <input
+              ref={inputRef}
+              type="search"
+              enterKeyHint="search"
+              placeholder="e.g. Apple, BHP, Banks..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={(e) => { if (e.key === "Enter") inputRef.current?.blur(); }}
+              className="w-full pl-9 pr-3 h-10 border border-slate-200 rounded-xl text-[16px] focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white"
+            />
+          </div>
+
+          {/* Clear X when there's a term */}
+          {searchOpen && searchTerm && (
+            <button
+              type="button"
+              onClick={() => setSearchTerm("")}
+              className="flex-shrink-0 p-2 text-gray-400 hover:text-gray-600 transition"
+            >
+              <IconX size={16} />
+            </button>
+          )}
+
+          {/* Normal controls — hidden when search open */}
+          {!searchOpen && (
             <div className="flex w-full flex-row items-center">
               <div className="flex-1 flex justify-start">
                 <div className="flex items-center bg-gray-100/80 p-1 rounded-xl">
