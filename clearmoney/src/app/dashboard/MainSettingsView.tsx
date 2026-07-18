@@ -146,7 +146,7 @@ const MainSettingsView = ({
                 actions.updateForm({ balance: values.floatValue ?? 0 })
               }
               thousandSeparator
-              className="w-full pl-7 pr-3 py-2.5 text-sm font-semibold text-slate-900 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 focus:outline-none tabular-nums"
+              className="w-full pl-7 pr-3 py-2.5 text-base sm:text-sm font-semibold text-slate-900 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 focus:outline-none tabular-nums"
               placeholder="100,000"
             />
           </div>
