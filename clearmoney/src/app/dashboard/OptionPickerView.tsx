@@ -121,7 +121,11 @@ const OptionPickerView = ({
         </div>
       )}
 
-      <div className="overflow-y-auto max-h-[27rem] bg-slate-100 flex flex-col gap-3 py-4 px-4">
+      <div
+  data-vaul-no-drag
+  className="overflow-y-auto max-h-[27rem] bg-slate-100 flex flex-col gap-3 py-4 px-4"
+>
+
         {filtered.map((option) => {
           const isSelected = option.option_name === currentOption;
           const allocation = option.allocation;
