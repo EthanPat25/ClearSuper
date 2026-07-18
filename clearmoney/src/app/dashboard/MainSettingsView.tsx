@@ -139,16 +139,21 @@ const MainSettingsView = ({
             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 font-semibold">
               $
             </span>
-            <NumericFormat
-              id="balance-input"
-              value={state.balance}
-              onValueChange={(values) =>
-                actions.updateForm({ balance: values.floatValue ?? 0 })
-              }
-              thousandSeparator
-              className="w-full pl-7 pr-3 py-2.5 text-base sm:text-sm font-semibold text-slate-900 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 focus:outline-none tabular-nums"
-              placeholder="100,000"
-            />
+         <NumericFormat
+  id="balance-input"
+  value={state.balance}
+  onValueChange={(values) =>
+    actions.updateForm({ balance: values.floatValue ?? 0 })
+  }
+  thousandSeparator
+  inputMode="decimal"
+  enterKeyHint="done"
+  onKeyDown={(e) => {
+    if (e.key === "Enter") (e.target as HTMLInputElement).blur();
+  }}
+  className="w-full pl-7 pr-3 py-2.5 text-base sm:text-sm font-semibold text-slate-900 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 focus:outline-none tabular-nums"
+  placeholder="100,000"
+/>
           </div>
         </div>
       </div>
