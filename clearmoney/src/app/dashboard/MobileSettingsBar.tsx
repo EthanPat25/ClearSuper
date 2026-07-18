@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import {
   Drawer,
   DrawerClose,
-  DrawerContent,
+  DrawerContentTop,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "../holdings/WizardForm/formWizardStore";
 import { NumericFormat } from "react-number-format";
 import { IconX } from "@tabler/icons-react";
-import { ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import FundPickerView from "./FundPickerView";
 import MainSettingsView from "./MainSettingsView";
 import OptionPickerView, { Option } from "./OptionPickerView";
@@ -20,6 +20,7 @@ import {
   fetch_options,
 } from "../fe-api/options/options";
 import { AllocationPie } from "../holdings/types/holdings";
+import { funds } from "../holdings/data/SuperFunds";
 
 type View = "main" | "fund" | "option";
 
@@ -30,9 +31,14 @@ const MobileSettingsBar = () => {
   const [mounted, setMounted] = useState(false);
   const [options, setOptions] = React.useState<Array<Option>>([]);
   const [shakeTrigger, setShakeTrigger] = useState(0);
+  const [fundDomain, updateFundDomain] = React.useState<any>();
 
   const currentFund = state.Fund;
   const currentOption = state.option_name;
+
+  const currentAllocation = options.find(
+    (o) => o.option_name === currentOption,
+  )?.allocation;
 
   const handleOpenChange = (next: boolean) => {
     if (!next && !currentOption) {
@@ -50,6 +56,10 @@ const MobileSettingsBar = () => {
 
   React.useEffect(() => {
     if (!state.Fund) return;
+
+    const fund = funds.find((element) => element.name === currentFund);
+    updateFundDomain(fund?.domain);
+
     const loadOptions = async () => {
       try {
         const data = await fetch_options(state.Fund);
@@ -93,14 +103,14 @@ const MobileSettingsBar = () => {
     <Drawer
       open={open}
       onOpenChange={handleOpenChange}
-      direction="bottom"
+      direction="top"
       shouldScaleBackground={false}
     >
       <DrawerTrigger asChild>
         <button className="md:hidden fixed top-20 left-0 right-0 z-40 w-full bg-white border-b border-slate-100 shadow-sm px-4 py-2.5 flex items-center gap-3">
           <img
             className="w-7 h-7 rounded-lg object-contain flex-shrink-0"
-            src={`https://cdn.brandfetch.io/${currentFund}.com.au/icon.png`}
+            src={`https://cdn.brandfetch.io/${fundDomain}/icon.png`}
             alt=""
             onError={(e) => {
               e.currentTarget.style.display = "none";
@@ -120,12 +130,11 @@ const MobileSettingsBar = () => {
             displayType="text"
             className="text-sm font-semibold text-slate-800 tabular-nums flex-shrink-0"
           />
-          <ChevronUp className="w-4 h-4 text-slate-400 flex-shrink-0" />
+          <ChevronDown className="w-4 h-4 text-slate-400 flex-shrink-0" />
         </button>
       </DrawerTrigger>
 
-      <DrawerContent className="p-0 gap-0 overflow-hidden rounded-t-2xl bg-slate-100">
-        <div className="w-10 h-1 bg-slate-300 rounded-full mx-auto mt-3 mb-1 flex-shrink-0" />
+      <DrawerContentTop className="p-0 gap-0 overflow-hidden rounded-b-2xl bg-slate-100">
         <DrawerClose
           className="absolute top-4 right-4 z-50 p-1.5 rounded-lg text-rose-600 bg-rose-100 hover:bg-rose-200 transition-colors"
           aria-label="Close"
@@ -140,6 +149,8 @@ const MobileSettingsBar = () => {
             currentFund={currentFund}
             currentOption={currentOption}
             shakeTrigger={shakeTrigger}
+            fundDomain={fundDomain}
+            allocation={currentAllocation}
           />
         )}
         {view === "fund" && (
@@ -157,7 +168,7 @@ const MobileSettingsBar = () => {
             options={options}
           />
         )}
-      </DrawerContent>
+      </DrawerContentTop>
     </Drawer>
   );
 };

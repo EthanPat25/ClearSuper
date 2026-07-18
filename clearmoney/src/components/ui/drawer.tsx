@@ -55,6 +55,27 @@ const DrawerContent = React.forwardRef<
 ))
 DrawerContent.displayName = "DrawerContent"
 
+const DrawerContentTop = React.forwardRef<
+  React.ElementRef<typeof DrawerPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content>
+>(({ className, children, ...props }, ref) => (
+  <DrawerPortal>
+    <DrawerOverlay />
+    <DrawerPrimitive.Content
+      ref={ref}
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 mb-24 flex h-auto flex-col bg-background",
+        className
+      )}
+      {...props}
+    >
+      {children}
+      <div className="mx-auto mb-4 h-2 w-[100px] rounded-full bg-muted" />
+    </DrawerPrimitive.Content>
+  </DrawerPortal>
+))
+DrawerContentTop.displayName = "DrawerContentTop"
+
 const DrawerHeader = ({
   className,
   ...props
@@ -111,6 +132,7 @@ export {
   DrawerTrigger,
   DrawerClose,
   DrawerContent,
+  DrawerContentTop,
   DrawerHeader,
   DrawerFooter,
   DrawerTitle,

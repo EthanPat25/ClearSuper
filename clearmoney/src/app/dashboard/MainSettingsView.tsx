@@ -17,7 +17,7 @@ type MainSettingsViewProps = {
   currentOption: string;
   shakeTrigger: number;
   fundDomain: any;
-  allocation: AllocationPie
+  allocation?: AllocationPie;
 };
 
 const getInitials = (name: string) =>
