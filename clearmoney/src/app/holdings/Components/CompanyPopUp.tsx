@@ -10,6 +10,7 @@ import { PopUpShell, SECTOR_COLORS, DEFAULT_SECTOR_STYLE } from "./PopUpShell";
 import { ExposureCard } from "./ExposureCard";
 import { CrossOptionsList, CrossOption } from "./CrossOptionsList";
 import { fetch_option_allocations } from "@/app/fe-api/options/options";
+import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
 import { AllocationPie, PublicCompanyHolding } from "../types/holdings";
 import Loading from "./Loading";
 
@@ -22,6 +23,7 @@ type CompanyPopUpProps = {
 export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
   const [open, setOpen] = useState(false);
   const [optionsData, setOptionsData] = useState<CrossOption[]>([]);
+  const [defaultOptionId, setDefaultOptionId] = useState<string | null>(null);
   const [loadingOptions, setLoadingOptions] = useState(false);
   const [switchingOption, setSwitchingOption] = useState(false);
   const [minimumLoadingElapsed, setMinimumLoadingElapsed] = useState(true);
@@ -44,7 +46,11 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
     const loadOptionsForCompany = async () => {
       setLoadingOptions(true);
       try {
-        const data = await fetch_company_weightings(Super_Fund, companies.id);
+        const [data, defaultData] = await Promise.all([
+          fetch_company_weightings(Super_Fund, companies.id),
+          fetch_MySuper(Super_Fund).catch(() => null),
+        ]);
+        setDefaultOptionId(defaultData.option?.id ?? null);
         const mapped = (data.options ?? []).map((o: any) => ({
           id: o.id,
           optionName: o.option_name,
@@ -167,6 +173,7 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
             loading={loadingOptions}
             options={optionsData}
             currentOptionId={currentOptionId}
+            defaultOptionId={defaultOptionId}
             balance={balance}
             sectorStyle={sectorStyle}
             onSwitchOption={handleSwitchOption}

@@ -9,6 +9,7 @@ import { IconChevronRight } from "@tabler/icons-react";
 import { NumericFormat } from "react-number-format";
 import { fetch_industry_weightings } from "../../fe-api/industry_weightings/industry_weightings";
 import { fetch_option_allocations } from "@/app/fe-api/options/options";
+import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
 import { PopUpShell, SECTOR_COLORS, DEFAULT_SECTOR_STYLE } from "./PopUpShell";
 
 import { ExposureCard } from "./ExposureCard";
@@ -46,6 +47,7 @@ export function IndustryPopUp({
 }: IndustryPopUpProps) {
   const [open, setOpen] = useState(false);
   const [optionsData, setOptionsData] = useState<CrossOption[]>([]);
+  const [defaultOptionId, setDefaultOptionId] = useState<string | null>(null);
   const [loadingOptions, setLoadingOptions] = useState(false);
   const [switchingOption, setSwitchingOption] = useState(false);
   const [selectedCompany, setSelectedCompany] = useState<PublicCompanyHolding | null>(null);
@@ -94,7 +96,11 @@ export function IndustryPopUp({
     const load = async () => {
       setLoadingOptions(true);
       try {
-        const data = await fetch_industry_weightings(superFund, industry);
+        const [data, defaultData] = await Promise.all([
+          fetch_industry_weightings(superFund, industry),
+          fetch_MySuper(superFund).catch(() => null),
+        ]);
+        setDefaultOptionId(defaultData.option?.id ?? null);
         const mapped = (data.options ?? []).map((o: { id: string; option_name: string; Weighting_Percentage_Clean: number }) => ({
           id: o.id,
           optionName: o.option_name,
@@ -279,6 +285,7 @@ export function IndustryPopUp({
             loading={loadingOptions}
             options={optionsData}
             currentOptionId={currentOptionId}
+            defaultOptionId={defaultOptionId}
             balance={userBalance}
             sectorStyle={sectorStyle}
             onSwitchOption={handleSwitchOption}

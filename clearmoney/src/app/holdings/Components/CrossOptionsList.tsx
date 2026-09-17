@@ -13,6 +13,7 @@ type CrossOptionsListProps = {
   loading: boolean;
   options: Array<CrossOption>;
   currentOptionId: string;
+  defaultOptionId?: string | null;
   balance: number;
   sectorStyle: SectorStyle;
   onSwitchOption: (id: string, name: string) => void;
@@ -35,6 +36,7 @@ export function CrossOptionsList({
   loading,
   options,
   currentOptionId,
+  defaultOptionId,
   balance,
   sectorStyle,
   onSwitchOption,
@@ -55,6 +57,7 @@ export function CrossOptionsList({
         {!loading &&
           options.map((opt) => {
             const isCurrent = opt.id === currentOptionId;
+            const isFundDefault = opt.id === defaultOptionId;
             const isZero = opt.weightPercent === 0;
             const optValue = (opt.weightPercent / 100) * balance;
             const abbr = getAbbreviation(opt.optionName);
@@ -98,6 +101,14 @@ export function CrossOptionsList({
                       </p>
                     </div>
                   </div>
+
+                  {isFundDefault && (
+                    <div className="flex min-w-[84px] flex-shrink-0 items-center justify-center sm:min-w-[104px]">
+                      <span className="inline-flex whitespace-nowrap rounded-md border border-emerald-200 bg-teal-50 px-1.5 py-0.5 text-[9px] font-semibold leading-tight text-teal-800 sm:text-[10px]">
+                        Fund default
+                      </span>
+                    </div>
+                  )}
 
                   <div className="flex items-center gap-2 flex-shrink-0">
                     <span
