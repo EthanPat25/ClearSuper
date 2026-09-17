@@ -42,6 +42,7 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
 
   useEffect(() => {
     if (!open || !companies?.id) return;
+    let cancelled = false;
 
     const loadOptionsForCompany = async () => {
       setLoadingOptions(true);
@@ -50,7 +51,8 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
           fetch_company_weightings(Super_Fund, companies.id),
           fetch_MySuper(Super_Fund).catch(() => null),
         ]);
-        setDefaultOptionId(defaultData.option?.id ?? null);
+        if (cancelled) return;
+        setDefaultOptionId(defaultData?.option?.id ?? null);
         const mapped = (data.options ?? []).map((o: any) => ({
           id: o.id,
           optionName: o.option_name,
@@ -60,7 +62,8 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
 
         const allocationRows = await fetch_option_allocations(
           mapped.map((o) => o.id),
-        );
+        ).catch(() => []);
+        if (cancelled) return;
         const allocationMap: Record<string, AllocationPie> =
           allocationRows.reduce((acc, row) => {
             if (!acc[row.Option_Id])
@@ -78,13 +81,16 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
           mapped.map((o) => ({ ...o, allocation: allocationMap[o.id] })),
         );
       } catch {
-        setOptionsData([]);
+        if (!cancelled) setOptionsData([]);
       } finally {
-        setLoadingOptions(false);
+        if (!cancelled) setLoadingOptions(false);
       }
     };
 
     loadOptionsForCompany();
+    return () => {
+      cancelled = true;
+    };
   }, [open, Super_Fund, companies?.id]);
 
   function handleSwitchOption(optionId: string, optionName: string) {

@@ -92,6 +92,7 @@ export function IndustryPopUp({
 
   useEffect(() => {
     if (!open || !superFund) return;
+    let cancelled = false;
 
     const load = async () => {
       setLoadingOptions(true);
@@ -100,7 +101,8 @@ export function IndustryPopUp({
           fetch_industry_weightings(superFund, industry),
           fetch_MySuper(superFund).catch(() => null),
         ]);
-        setDefaultOptionId(defaultData.option?.id ?? null);
+        if (cancelled) return;
+        setDefaultOptionId(defaultData?.option?.id ?? null);
         const mapped = (data.options ?? []).map((o: { id: string; option_name: string; Weighting_Percentage_Clean: number }) => ({
           id: o.id,
           optionName: o.option_name,
@@ -109,7 +111,8 @@ export function IndustryPopUp({
 
         const allocationRows = await fetch_option_allocations(
           mapped.map((o) => o.id),
-        );
+        ).catch(() => []);
+        if (cancelled) return;
         const allocationMap: Record<string, AllocationPie> =
           allocationRows.reduce((acc, row) => {
             if (!acc[row.Option_Id])
@@ -127,13 +130,16 @@ export function IndustryPopUp({
           mapped.map((o) => ({ ...o, allocation: allocationMap[o.id] })),
         );
       } catch {
-        setOptionsData([]);
+        if (!cancelled) setOptionsData([]);
       } finally {
-        setLoadingOptions(false);
+        if (!cancelled) setLoadingOptions(false);
       }
     };
 
     load();
+    return () => {
+      cancelled = true;
+    };
   }, [open, superFund, industry]);
 
   function handleSwitchOption(optionId: string) {
