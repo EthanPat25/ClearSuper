@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Dialog, DialogClose, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { DialogTrigger } from "@radix-ui/react-dialog";
 import { useStateMachine } from "little-state-machine";
@@ -151,6 +152,14 @@ const CurrentOptionPopup = () => {
         >
           <IconX size={18} />
         </DialogClose>
+        <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={view}
+          initial={{ opacity: 0, x: 8 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -8 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+        >
         {view === "main" && (
           <MainSettingsView
             setView={setView}
@@ -179,6 +188,8 @@ const CurrentOptionPopup = () => {
             options={options}
           />
         )}
+        </motion.div>
+        </AnimatePresence>
       </DialogContent>
     </Dialog>
   );

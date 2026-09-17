@@ -31,18 +31,20 @@ const points = [
 
 const UnderStand = () => {
   return (
-    <div className="flex w-full justify-center items-center px-4 mb-20">
+    <div className="flex w-full justify-center items-center px-1 sm:px-4 mb-20">
       <div className="bg-slate-100 max-w-6xl rounded-[3rem] w-full overflow-hidden">
-        <div className="flex flex-col items-center px-6 md:px-14 p-10">
-          <p className="text-sm md:text-base text-emerald-600 font-semibold tracking-wide">
+        <div className="flex flex-col items-center px-4 md:px-14 p-8 md:p-10">
+          <span className="bg-emerald-100 border-4 border-emerald-300 text-emerald-800 text-sm font-semibold px-3 py-2 mb-6 rounded-xl">
+          <p className="text-sm md:text-base font-semibold tracking-wide">
             The Bigger Picture
           </p>
+            </span>
           <h2 className="font-bold text-3xl text-slate-900 mt-2 text-center">
             Why super gaps matter
           </h2>
         </div>
 
-        <div className="px-6 md:px-20 pb-16">
+        <div className="px-4 md:px-20 pb-12 md:pb-16">
           <div className="space-y-12 md:space-y-16">
             {points.map(({ title, body, Icon }, i) => (
               <div

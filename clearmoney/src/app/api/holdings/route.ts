@@ -61,15 +61,32 @@ export async function GET(Request: NextRequest) {
 
     const rows = data ?? [];
 
+    // Listing status alone is not enough to identify public companies. Some
+    // fixed-interest records are marked "Listed" in the source data, even
+    // though they belong in the bonds section and have no company record.
+    const assetClass = (row: { Asset_Class?: string | null }) =>
+      String(row.Asset_Class ?? "").trim().toLowerCase();
+    const isFixedIncome = (row: { Asset_Class?: string | null }) =>
+      assetClass(row).includes("fixed income");
+    const isCash = (row: { Asset_Class?: string | null }) =>
+      assetClass(row) === "cash";
+
     const public_holdings = rows.filter(
-      (row) => row.Listing_Status === "Listed",
+      (row) =>
+        row.Listing_Status === "Listed" &&
+        !isFixedIncome(row) &&
+        !isCash(row) &&
+        (row.Dollar_Value === null || row.Dollar_Value > 0),
     );
 
     const private_investments = rows.filter(
-      (row) => row.Listing_Status === "Unlisted",
+      (row) =>
+        row.Listing_Status === "Unlisted" &&
+        !isFixedIncome(row) &&
+        !isCash(row),
     );
-    const bonds = rows.filter((row) => row.Asset_Class === "Fixed Income");
-    const cash = rows.filter((row) => row.Asset_Class === "Cash");
+    const bonds = rows.filter((row) => isFixedIncome(row));
+    const cash = rows.filter((row) => isCash(row));
 
     return new Response(
       JSON.stringify({

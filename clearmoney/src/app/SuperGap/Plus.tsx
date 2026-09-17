@@ -8,7 +8,6 @@ const Plus = ({ className }: plusProps) => {
   return (
     <div className={className}>
       <svg
-        onClick={() => console.log()}
         className={"mx-auto cursor-pointer"}
         version="1.1"
         id="fi_149705"

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Banknote } from "../../AnimationComponents/Banknote";
 import { Bond } from "../../AnimationComponents/Bond";
 import { HoldingRow } from "../types/holdings";
+import { UnlistedHoldingPopUp } from "./UnlistedHoldingsPopup";
 
 export type BondsandCashHoldingsProps = {
   holdingsCashData: Array<HoldingRow> | null;
@@ -55,15 +56,44 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
     totalpercentage: percentage,
   };
 
+  const superFund =
+    holdingsCashData?.[0]?.Super_Fund ??
+    holdingsbondsData?.[0]?.Super_Fund ??
+    "";
+
+  const cashHolding: HoldingRow = {
+    Full_Name: "Cash",
+    Super_Fund: superFund,
+    Option_Name: "",
+    Listing_Status: "Unlisted",
+    Asset_Class: "Cash",
+    Weighting_Percentage_Clean: percentageCash,
+    Option_Id:
+      holdingsCashData?.[0]?.Option_Id ?? holdingsbondsData?.[0]?.Option_Id,
+    options: holdingsCashData?.[0]?.options ?? holdingsbondsData?.[0]?.options,
+  };
+
+  const bondsHolding: HoldingRow = {
+    Full_Name: "Fixed Interest",
+    Super_Fund: superFund,
+    Option_Name: "",
+    Listing_Status: "Unlisted",
+    Asset_Class: "Fixed Income",
+    Weighting_Percentage_Clean: percentageBonds,
+    Option_Id:
+      holdingsbondsData?.[0]?.Option_Id ?? holdingsCashData?.[0]?.Option_Id,
+    options: holdingsbondsData?.[0]?.options ?? holdingsCashData?.[0]?.options,
+  };
+
   const parentVariant = {
     hidden: { scale: 0.9, opacity: 0 },
     rest: {
       scale: 1,
       opacity: 1,
-      transition: { duration: 0.4, ease: "easeOut" },
+      transition: { duration: 0.4, ease: "easeOut" as const },
     },
     ...(!isMobile && {
-      active: { y: -6, transition: { duration: 0.4, ease: "easeOut" } },
+      active: { y: -6, transition: { duration: 0.4, ease: "easeOut" as const } },
     }),
   };
 
@@ -75,165 +105,181 @@ const BondsandCashHoldings: React.FC<BondsandCashHoldingsProps> = ({
   return (
     <div className="w-full flex justify-center pt-6">
       <div className="grid grid-cols-2 gap-x-3 md:gap-x-0 gap-y-6 sm:gap-y-8 w-full max-w-xl px-6 justify-items-center">
-        <motion.div
-          whileHover={!isMobile ? "active" : undefined}
-          initial="hidden"
-          animate="rest"
-          variants={parentVariant}
-          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[14rem] relative"
-        >
-          <motion.svg
-            version="1.1"
-            id="fi_471662"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            className="absolute top-4 right-4 w-6 h-6 fill-slate-400 hover:fill-slate-600 transition-colors"
-            viewBox="0 0 512 512"
-            variants={childVariant}
-            enableBackground="new 0 0 512 512"
-            xmlSpace="preserve"
-          >
-            <g>
-              <g>
-                <path
-                  d="M256,0C114.509,0,0,114.496,0,256c0,141.489,114.496,256,256,256c141.491,0,256-114.496,256-256
+        <UnlistedHoldingPopUp
+          holding={cashHolding}
+          balance={balance}
+          displayValue={cashAmount}
+          icon={<Banknote responsiveSizing="w-[5rem] h-[5rem]" />}
+          trigger={
+            <motion.div
+              whileHover={!isMobile ? "active" : undefined}
+              initial="hidden"
+              animate="rest"
+              variants={parentVariant}
+              className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[14rem] relative cursor-pointer"
+            >
+              <motion.svg
+                version="1.1"
+                id="fi_471662"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                className="absolute top-4 right-4 w-6 h-6 fill-slate-400 hover:fill-slate-600 transition-colors"
+                viewBox="0 0 512 512"
+                variants={childVariant}
+                enableBackground="new 0 0 512 512"
+                xmlSpace="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M256,0C114.509,0,0,114.496,0,256c0,141.489,114.496,256,256,256c141.491,0,256-114.496,256-256
                             C512,114.511,397.504,0,256,0z M256,476.279c-121.462,0-220.279-98.816-220.279-220.279S134.538,35.721,256,35.721
                             S476.279,134.537,476.279,256S377.462,476.279,256,476.279z"
-                ></path>
-              </g>
-            </g>
-            <g>
-              <g>
-                <path
-                  d="M256.006,213.397c-15.164,0-25.947,6.404-25.947,15.839v128.386c0,8.088,10.783,16.174,25.947,16.174
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M256.006,213.397c-15.164,0-25.947,6.404-25.947,15.839v128.386c0,8.088,10.783,16.174,25.947,16.174
                             c14.49,0,26.283-8.086,26.283-16.174V229.234C282.289,219.8,270.496,213.397,256.006,213.397z"
-                ></path>
-              </g>
-            </g>
-            <g>
-              <g>
-                <path
-                  d="M256.006,134.208c-15.501,0-27.631,11.12-27.631,23.925c0,12.806,12.131,24.263,27.631,24.263
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M256.006,134.208c-15.501,0-27.631,11.12-27.631,23.925c0,12.806,12.131,24.263,27.631,24.263
                             c15.164,0,27.296-11.457,27.296-24.263C283.302,145.328,271.169,134.208,256.006,134.208z"
-                ></path>
-              </g>
-            </g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-          </motion.svg>
-          <p className="absolute top-4 left-4 text-xs text-gray-400 font-medium leading-none truncate max-w-[65%]">
-            {}
-          </p>
-          <div className="flex flex-col justify-between items-center gap-6">
-            <Banknote responsiveSizing="w-[4rem] h-[4rem]"></Banknote>
-          </div>
+                    ></path>
+                  </g>
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </motion.svg>
+              <p className="absolute top-4 left-4 text-xs text-gray-400 font-medium leading-none truncate max-w-[65%]">
+                {}
+              </p>
+              <div className="flex flex-col justify-between items-center gap-6">
+                <Banknote responsiveSizing="w-[4rem] h-[4rem]"></Banknote>
+              </div>
 
-          <h2 className="text-xs sm:text-sm font-medium mb-2">Cash</h2>
+              <h2 className="text-xs sm:text-sm font-medium mb-2">Cash</h2>
 
-          <p className="font-semibold text-xl">
-            <NumericFormat
-              value={dataforward.cashAmount}
-              thousandSeparator
-              prefix="$"
-              decimalScale={2}
-              fixedDecimalScale
-              displayType="text"
-            />
-          </p>
-        </motion.div>
+              <p className="font-semibold text-xl">
+                <NumericFormat
+                  value={dataforward.cashAmount}
+                  thousandSeparator
+                  prefix="$"
+                  decimalScale={2}
+                  fixedDecimalScale
+                  displayType="text"
+                />
+              </p>
+            </motion.div>
+          }
+        />
 
-        <motion.div
-          transition={{ duration: 0.4, ease: "easeOut" }}
-          whileHover={!isMobile ? "active" : undefined}
-          initial="hidden"
-          animate="rest"
-          variants={parentVariant}
-          className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[14rem] relative"
-        >
-          <motion.svg
-            version="1.1"
-            id="fi_471662"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            className="absolute top-4 right-4 w-6 h-6 fill-slate-400 hover:fill-slate-600 transition-colors"
-            viewBox="0 0 512 512"
-            variants={childVariant}
-            enableBackground="new 0 0 512 512"
-            xmlSpace="preserve"
-          >
-            <g>
-              <g>
-                <path
-                  d="M256,0C114.509,0,0,114.496,0,256c0,141.489,114.496,256,256,256c141.491,0,256-114.496,256-256
+        <UnlistedHoldingPopUp
+          holding={bondsHolding}
+          balance={balance}
+          displayValue={bondsAmount}
+          icon={<Bond responsiveSizing="w-[5rem] h-[5rem]" />}
+          trigger={
+            <motion.div
+              transition={{ duration: 0.4, ease: "easeOut" as const }}
+              whileHover={!isMobile ? "active" : undefined}
+              initial="hidden"
+              animate="rest"
+              variants={parentVariant}
+              className="bg-white rounded-3xl p-6 pt-10 shadow-md text-center w-full max-w-[14rem] relative cursor-pointer"
+            >
+              <motion.svg
+                version="1.1"
+                id="fi_471662"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                className="absolute top-4 right-4 w-6 h-6 fill-slate-400 hover:fill-slate-600 transition-colors"
+                viewBox="0 0 512 512"
+                variants={childVariant}
+                enableBackground="new 0 0 512 512"
+                xmlSpace="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M256,0C114.509,0,0,114.496,0,256c0,141.489,114.496,256,256,256c141.491,0,256-114.496,256-256
                             C512,114.511,397.504,0,256,0z M256,476.279c-121.462,0-220.279-98.816-220.279-220.279S134.538,35.721,256,35.721
                             S476.279,134.537,476.279,256S377.462,476.279,256,476.279z"
-                ></path>
-              </g>
-            </g>
-            <g>
-              <g>
-                <path
-                  d="M256.006,213.397c-15.164,0-25.947,6.404-25.947,15.839v128.386c0,8.088,10.783,16.174,25.947,16.174
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M256.006,213.397c-15.164,0-25.947,6.404-25.947,15.839v128.386c0,8.088,10.783,16.174,25.947,16.174
                             c14.49,0,26.283-8.086,26.283-16.174V229.234C282.289,219.8,270.496,213.397,256.006,213.397z"
-                ></path>
-              </g>
-            </g>
-            <g>
-              <g>
-                <path
-                  d="M256.006,134.208c-15.501,0-27.631,11.12-27.631,23.925c0,12.806,12.131,24.263,27.631,24.263
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M256.006,134.208c-15.501,0-27.631,11.12-27.631,23.925c0,12.806,12.131,24.263,27.631,24.263
                             c15.164,0,27.296-11.457,27.296-24.263C283.302,145.328,271.169,134.208,256.006,134.208z"
-                ></path>
-              </g>
-            </g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-            <g></g>
-          </motion.svg>
-          <div className="flex flex-col justify-between items-center">
-            <Bond responsiveSizing="w-[4rem] h-[4rem]"></Bond>
-          </div>
+                    ></path>
+                  </g>
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </motion.svg>
+              <div className="flex flex-col justify-between items-center">
+                <Bond responsiveSizing="w-[4rem] h-[4rem]"></Bond>
+              </div>
 
-          <h2 className="text-xs sm:text-sm font-medium mb-2">
-            Fixed Interest
-          </h2>
+              <h2 className="text-xs sm:text-sm font-medium mb-2">
+                Fixed Interest
+              </h2>
 
-          <p className="font-semibold text-xl">
-            <NumericFormat
-              value={dataforward.bondsAmount}
-              thousandSeparator
-              prefix="$"
-              decimalScale={2}
-              fixedDecimalScale
-              displayType="text"
-            />
-          </p>
-        </motion.div>
+              <p className="font-semibold text-xl">
+                <NumericFormat
+                  value={dataforward.bondsAmount}
+                  thousandSeparator
+                  prefix="$"
+                  decimalScale={2}
+                  fixedDecimalScale
+                  displayType="text"
+                />
+              </p>
+            </motion.div>
+          }
+        />
       </div>
     </div>
   );

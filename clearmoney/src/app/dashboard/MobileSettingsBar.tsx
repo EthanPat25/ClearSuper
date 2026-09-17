@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   Drawer,
   DrawerClose,
@@ -141,6 +142,14 @@ const MobileSettingsBar = () => {
         >
           <IconX size={18} />
         </DrawerClose>
+        <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={view}
+          initial={{ opacity: 0, x: 8 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -8 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+        >
         {view === "main" && (
           <MainSettingsView
             setView={setView}
@@ -168,6 +177,8 @@ const MobileSettingsBar = () => {
             options={options}
           />
         )}
+        </motion.div>
+        </AnimatePresence>
       </DrawerContentTop>
     </Drawer>
   );

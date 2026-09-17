@@ -101,6 +101,7 @@ type PopUpShellProps = {
   meta: React.ReactNode;
   children: React.ReactNode;
   asOfDate?: string;
+  backButton?: React.ReactNode;
 };
 
 export function PopUpShell({
@@ -113,6 +114,7 @@ export function PopUpShell({
   meta,
   children,
   asOfDate,
+  backButton,
 }: PopUpShellProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -124,6 +126,7 @@ export function PopUpShell({
         <DialogClose className="absolute top-5 right-5 z-50 p-2 rounded-full bg-white/60 hover:bg-white transition-colors">
           <IconX className="text-red-600 w-[1.3rem] h-[1.3rem]" />
         </DialogClose>
+        {backButton}
 
         <div
           className={`px-8 pt-10 pb-10 flex flex-col items-center text-center gap-4 ${sectorStyle.bg} border-b border-white`}

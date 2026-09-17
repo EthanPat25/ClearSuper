@@ -82,6 +82,9 @@ const Industries = ({ holdingsData, balance }) => {
             animation={<AnimComponent responsiveSizing="w-[5rem] h-[5rem]" />}
             holdings={sectorHoldings}
             balance={userBalance}
+            fund={holdingsData?.[0]?.Super_Fund}
+            optionId={holdingsData?.[0]?.Option_Id}
+            asOfDate={holdingsData?.[0]?.options?.as_of_date}
             trigger={
               <motion.div
                 whileHover={!isMobile ? "active" : undefined}

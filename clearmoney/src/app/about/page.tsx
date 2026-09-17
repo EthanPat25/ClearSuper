@@ -58,7 +58,7 @@ function AccordionItem({ title, body }) {
         onClick={() => setOpen(!open)}
         className="w-full flex justify-between items-center py-4 text-left gap-4"
       >
-        <span className="text-sm font-medium text-slate-700">{title}</span>
+        <span className="hover:text-emerald-600 text-sm font-semibold text-slate-700">{title}</span>
         <span className="text-slate-400 flex-shrink-0 text-xl leading-none">
           {open ? (
             <svg
@@ -91,25 +91,9 @@ function AccordionItem({ title, body }) {
               </g>
             </svg>
           ) : (
-            <svg
-              clipRule="evenodd"
-              fillRule="evenodd"
-              className="w-6 h-6 hover:scale-110"
-              imageRendering="optimizeQuality"
-              shapeRendering="geometricPrecision"
-              textRendering="geometricPrecision"
-              viewBox="0 0 21.0001 21.0001"
-              xmlns="http://www.w3.org/2000/svg"
-              id="fi_14090273"
-            >
-              <g id="图层_x0020_1">
-                <path d="m0 0h21v21h-21z" fill="none"></path>
-                <path
-                  d="m10.5 1.3124c5.07328 0 9.1876 4.11432 9.1876 9.1876s-4.11432 9.1876-9.1876 9.1876-9.1876-4.11432-9.1876-9.1876 4.11432-9.1876 9.1876-9.1876zm-.9843 13.1257v-2.95384h-2.95384c-.54063 0-.9843-.4422-.9843-.9843 0-.54211.4422-.9843.9843-.9843h2.95384v-2.95384c0-.54211.4422-.9843.9843-.9843.54211 0 .9843.44367.9843.9843v2.95384h2.95384c.54211 0 .9843.4422.9843.9843 0 .54211-.44367.9843-.9843.9843h-2.95384v2.95384c0 .54063-.4422.9843-.9843.9843-.54211 0-.9843-.4422-.9843-.9843z"
-                  fill="#064e3b"
-                ></path>
-              </g>
-            </svg>
+
+            <svg id="fi_11607148" className="w-6 h-6 hover:scale-110" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2"><g id="Icon"><g id="_64" data-name="64"><rect id="Background" fill="#064e3b" height="512" rx="150" width="512"></rect><path d="m282.32 153.62v75.6h76.05c5.4 0 9.29 4.35 11.7 13.05 1.2 4.5 1.8 8.85 1.8 13.05s-.61 8.55-1.8 13.05c-2.4 8.7-6.3 13.05-11.7 13.05h-76.05v76.95c0 5.4-4.35 9.3-13.05 11.7-4.2 1.2-8.55 1.8-13.05 1.8l-13.05-1.8c-8.71-2.4-13.05-6.3-13.05-11.7v-76.95h-76.5c-5.4 0-9.3-4.35-11.7-13.05-1.2-4.5-1.8-8.85-1.8-13.05s.6-8.55 1.8-13.05c2.4-8.7 6.3-13.05 11.7-13.05h76.5v-75.6c0-5.4 4.34-9.3 13.05-11.7 4.2-1.2 8.55-1.8 13.05-1.8l13.05 1.8c8.7 2.4 13.05 6.3 13.05 11.7z" fill="#fff"></path></g></g></svg>
+      
           )}
         </span>
       </button>
@@ -211,7 +195,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <span className="inline-block bg-emerald-50 text-emerald-800 text-base font-bold px-3 py-2 rounded-[1rem] shadow-sm mb-6">
+            <span className="inline-block bg-emerald-100 text-emerald-800 border-4 border-emerald-300  text-base font-bold px-3 py-2 rounded-[1rem] shadow-sm mb-6">
               About the Developer
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
@@ -235,6 +219,14 @@ export default function AboutPage() {
                 all depend on.
               </p>
               <p>ClearSuper is my attempt at that.</p>
+
+              <div className="mt-2 flex items-center gap-6">
+
+                
+
+              <motion.svg whileHover={{scale: 1.05}}  className="h-[3rem] hover:cursor-pointer" viewBox="0 0 176 176" xmlns="http://www.w3.org/2000/svg" id="fi_3938044"><g id="Layer_2" data-name="Layer 2"><g id="_10.linkedin" data-name="10.linkedin"><path id="background" d="m144.52 173a532.59 532.59 0 0 1 -113 0 32.07 32.07 0 0 1 -28.52-28.48 532.59 532.59 0 0 1 0-113 32.07 32.07 0 0 1 28.48-28.52 532.59 532.59 0 0 1 113 0 32.07 32.07 0 0 1 28.52 28.48 532.59 532.59 0 0 1 0 113 32.07 32.07 0 0 1 -28.48 28.52z" fill="#0b66c3"></path><g id="icon" fill="#fff"><path d="m63.4 48a15 15 0 1 1 -15-15 15 15 0 0 1 15 15z"></path><path d="m60 73v66.27a3.71 3.71 0 0 1 -3.71 3.73h-15.81a3.71 3.71 0 0 1 -3.72-3.72v-66.28a3.72 3.72 0 0 1 3.72-3.72h15.81a3.72 3.72 0 0 1 3.71 3.72z"></path><path d="m142.64 107.5v32.08a3.41 3.41 0 0 1 -3.42 3.42h-17a3.41 3.41 0 0 1 -3.42-3.42v-31.09c0-4.64 1.36-20.32-12.13-20.32-10.45 0-12.58 10.73-13 15.55v35.86a3.42 3.42 0 0 1 -3.37 3.42h-16.42a3.41 3.41 0 0 1 -3.41-3.42v-66.87a3.41 3.41 0 0 1 3.41-3.42h16.42a3.42 3.42 0 0 1 3.42 3.42v5.78c3.88-5.82 9.63-10.31 21.9-10.31 27.18 0 27.02 25.38 27.02 39.32z"></path></g></g></g></motion.svg>
+              <motion.svg  whileHover={{scale: 1.05}} className="h-[3rem] hover:cursor-pointer" id="fi_2991144" enableBackground="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m452 147.1 30 158.368-30 145.532h-392l-30-142.34 30-161.56c-9.924-7.451 54.209-11.824 96.698 20.075 52.311 39.273 88.285 118.054 99.302 126.325 1.702-1.278 8.371-51.331 63.402-92.646 42.025-31.551 138.263-58.007 132.598-53.754z" fill="#fff5f5"></path><path d="m452 451 30-145.532-30-158.368c5.665-4.254-90.573 22.202-132.598 53.754-55.032 41.314-61.699 91.368-63.402 92.646v157.5z" fill="#e3e7ea"></path><g><g><path d="m381.347 200.204c-.553.414-1.216.912-1.831 1.373-.399.301.395-.296 1.831-1.373z" fill="#00a66c"></path></g></g><g id="Gmail_1_"><g><g><path d="m60 98.5v352.5h-15c-24.901 0-45-20.101-45-45v-300c0-1.201 0-2.401.3-3.6z" fill="#f03800"></path></g></g></g><g><g><path d="m512 106v300c0 24.899-20.099 45-45 45h-15v-322.5l59.7-26.1c.3 1.199.3 2.399.3 3.6z" fill="#cd0000"></path></g></g><g><g><path d="m511.7 102.4c-296.807 222.693 42.503-32.641-255.7 191.1-26.043-19.54 93.342 70.784-255.7-191.1 1.8-23.401 21.001-41.4 44.7-41.4l118.391 36.293 92.609 121.207 66.953-102.714 144.047-54.786c23.699 0 42.9 17.999 44.7 41.4z" fill="#ff641a"></path></g></g><path d="m256 293.5c.081.06.073.055 0 0 20.933-15.706 220.772-164.894 255.7-191.1-1.8-23.401-21-41.4-44.7-41.4l-144.047 54.785-66.953 102.715z" fill="#f03800"></path><path d="m467 61-211 157.5-211-157.5z" fill="#fff5f5"></path><path d="m467 61h-211v157.5z" fill="#e3e7ea"></path></g></motion.svg>
+            </div>
             </div>
           </motion.div>
           <div className="relative flex items-center justify-center md:gap-4">
@@ -253,7 +245,7 @@ export default function AboutPage() {
       <div className="bg-white py-32 ">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col items-center text-center mb-8">
-            <span className="inline-block bg-emerald-50 text-emerald-600 text-base font-bold px-3 py-2 rounded-[1rem] shadow-[1rem] mb-6">
+            <span className="inline-block bg-emerald-50 text-emerald-600 border-4 border-emerald-300  text-base font-bold px-3 py-2 rounded-[1rem] shadow-[1rem] mb-6">
               About ClearSuper
             </span>
 
@@ -362,14 +354,10 @@ export default function AboutPage() {
               structure of a fund relative to your entered balance. Dollar
               amounts are calculated using reported weights. This is not an
               exact or live breakdown. It's the proportional exposure to
-              holdings, applied to the date at which the holdings were reproted.
+              holdings, applied to the date at which the holdings were reported.
               Calculators are models based on assumptions and are not
-              predictions of future outcomes. ClearSuper's intention is data
-              visualisation. It's a work in progress, in beta, and subject to
-              errors. Do not make financial decisions based on what's shown.
-              Consider speaking to a licensed financial adviser, and always
-              check the fund's official PDS and reported holdings data. For
-              factual information, refer to the{" "}
+              predictions of future outcomes. ClearSuper's intent is to increase financial understanding, not to advise on any fund. Its purpose is data visualisation. It's a work in progress, in beta, and subject to errors.
+For this reason, do not use ClearSuper to make financial decisions. Always consult the fund's official PDS and a licensed financial adviser before making any decisions. For factual information, refer to the{" "}
               <a
                 href="https://www.ato.gov.au"
                 target="_blank"

@@ -1,13 +1,20 @@
-"use client";
 import React from "react";
 
+// House (FHSS) icon. Inlined as SVG so it can wiggle on hover — inside a
+// `group`, it does a quick playful shake, then settles.
 const House = () => {
   return (
-    <img
-      className="h-full w-full"
-      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIGQ9Ik0yMiA1LjcyNFYyYTEgMSAwIDEgMC0yIDB2Mi4zNjZMMTQuNzk3Ljg1NWE0Ljk4IDQuOTggMCAwIDAtNS41OTQgMGwtNyA0LjcyNEE0Ljk5NSA0Ljk5NSAwIDAgMCAwIDkuNzI0VjE5YzAgMi43NTcgMi4yNDMgNSA1IDVoMmExIDEgMCAwIDAgMS0xdi05YzAtLjU1MS40NDgtMSAxLTFoNmMuNTUyIDAgMSAuNDQ5IDEgMXY5YTEgMSAwIDAgMCAxIDFoMmMyLjc1NyAwIDUtMi4yNDMgNS01VjkuNzI0YTQuOTk1IDQuOTk1IDAgMCAwLTItNFoiIGZpbGw9IiMwNDc4NTciIG9wYWNpdHk9IjEiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+"
-      alt="House Image"
-    />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="h-full w-full origin-bottom group-hover:[animation:wiggle_0.55s_ease-in-out]"
+    >
+      <path
+        fill="#047857"
+        d="M22 5.724V2a1 1 0 1 0-2 0v2.366L14.797.855a4.98 4.98 0 0 0-5.594 0l-7 4.724A4.995 4.995 0 0 0 0 9.724V19c0 2.757 2.243 5 5 5h2a1 1 0 0 0 1-1v-9c0-.551.448-1 1-1h6c.552 0 1 .449 1 1v9a1 1 0 0 0 1 1h2c2.757 0 5-2.243 5-5V9.724a4.995 4.995 0 0 0-2-4Z"
+      />
+    </svg>
   );
 };
 

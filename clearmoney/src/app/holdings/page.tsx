@@ -10,15 +10,13 @@ import Step3a_DefaultOption from "./WizardForm/Step3a_DefaultOption";
 import StepBalance from "./WizardForm/Step4_EnterBalance";
 import Step3b_SelectOption from "./WizardForm/Step3b_SelectOption";
 import Step3c_Lifecycle from "./WizardForm/Step3c_Lifecycle";
-import { fetch_MySuper } from "../fe-api/MySuper/MySuper";
-import { fetch_isLifecycle } from "../fe-api/checkLifecycle/checkLifecycle";
+import { funds } from "./data/SuperFunds";
 import HoldingsResultsLoader from "./WizardForm/HoldingsResultsLoader";
 
 export default function Page() {
   const actionButton = React.useRef<HTMLDivElement | null>(null);
   const [step, setStep] = React.useState("StepOne");
   const [prevStep, setPrevStep] = React.useState("StepThree_One");
-  const [isLifecycle, setIsLifecycle] = React.useState(null);
 
   function handleStepAnimationComplete() {
     actionButton.current?.scrollIntoView({
@@ -28,6 +26,9 @@ export default function Page() {
   }
 
   function updateStep(next: string) {
+    if (next === "StepThree_Two" && funds.some((fund) => fund.name === state.Fund && fund.mysuper_is_lifecycle)) {
+      next = "StepThree_Lifecycle";
+    }
     if (next === "StepBalance") setPrevStep(step);
     setStep(next);
     actions.updateForm({ currentStep: next });
@@ -42,16 +43,6 @@ export default function Page() {
   React.useEffect(() => {
     actions.updateForm({ currentStep: "StepOne" });
   }, []);
-
-  React.useEffect(() => {
-    const fetchDefaultState = async () => {
-      const data = await fetch_isLifecycle(state.Fund);
-      console.log("lifecycle: ", data);
-      setIsLifecycle(data.fund?.mysuper_is_lifecycle);
-    };
-
-    fetchDefaultState();
-  }, [state.Fund]);
 
   return (
     <div className="w-full flex flex-col">
@@ -74,7 +65,13 @@ export default function Page() {
         />
       )}
 
-      <div className="flex w-full min-h-[55rem] justify-center items-center pt-16 pb-16 flex-col">
+      <div
+        className={`flex w-full min-h-[55rem] items-center flex-col pb-16 ${
+          step === "StepThree_Lifecycle"
+            ? "justify-start pt-24 md:justify-center md:pt-16"
+            : "justify-center pt-16"
+        }`}
+      >
         {step === "StepOne" && (
           <Step1_SelectFund
             ref={actionButton}
@@ -93,18 +90,16 @@ export default function Page() {
             updateStep={updateStep}
           ></Step3a_DefaultOption>
         )}
-        {step === "StepThree_Two" &&
-          (isLifecycle ? (
-            <Step3c_Lifecycle
-              ref={actionButton}
-              updateStep={updateStep}
-            ></Step3c_Lifecycle>
-          ) : (
-            <Step3b_SelectOption
-              ref={actionButton}
-              updateStep={updateStep}
-            ></Step3b_SelectOption>
-          ))}
+        {step === "StepThree_Two" && (
+          <Step3b_SelectOption
+            ref={actionButton}
+            updateStep={updateStep}
+          ></Step3b_SelectOption>
+        )}
+
+        {step === "StepThree_Lifecycle" && (
+          <Step3c_Lifecycle key={state.Fund} ref={actionButton} updateStep={updateStep} />
+        )}
 
         {step === "StepBalance" && (
           <StepBalance
@@ -117,6 +112,18 @@ export default function Page() {
         {step === "StepFour" && (
           <div className="w-full flex flex-col items-center gap-4 px-0 pt-14">
             <HoldingsResultsLoader ref={actionButton} />
+            {prevStep === "StepThree_Lifecycle" && state.option_name && (
+              <div className="mx-4 rounded-2xl bg-teal-50 p-4 text-center text-sm text-teal-950">
+                <p>Exploring {state.option_name} on its own with your example balance.</p>
+                <button
+                  type="button"
+                  onClick={() => updateStep("StepThree_Lifecycle")}
+                  className="mt-2 font-semibold underline underline-offset-4"
+                >
+                  Explore another lifecycle option
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>

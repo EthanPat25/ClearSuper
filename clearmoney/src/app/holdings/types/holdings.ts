@@ -2,6 +2,7 @@ export type FormDataType = {
   Fund: string;
   option_name: string;
   option_id: string;
+  as_of_date?: string;
   age?: number;
   balance: number;
   currentStep: string;
@@ -38,6 +39,8 @@ export type HoldingRow = {
   Asset_Class: string;
   Dollar_Value?: number;
   Weighting_Percentage_Clean: number;
+  Option_Id?: string;
+  options?: { as_of_date?: string | null };
 };
 
 export type HoldingsApiResponse = {

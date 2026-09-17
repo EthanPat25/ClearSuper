@@ -65,11 +65,56 @@
 }
 
 @layer base {
+  html {
+    scrollbar-gutter: stable;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body[data-scroll-locked] {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
     position: relative;
+  }
+}
+
+/* Distinct type for money figures — used sparingly, not the body font */
+.font-numeric {
+  font-family: var(--font-numeric);
+}
+
+/* A quick, decaying wiggle for dropdown icons on hover — plays once each time
+   the hover begins, then settles. Reads as a playful "boing" without looping. */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-9deg);
+  }
+  40% {
+    transform: rotate(7deg);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

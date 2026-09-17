@@ -1,10 +1,11 @@
 import { ChevronLeft, Check, Search } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "../holdings/WizardForm/formWizardStore";
 import { motion } from "framer-motion";
 import AllocationPieComponent from "../holdings/Components/AllocationPie";
 import { AllocationPie } from "../holdings/types/holdings";
+import { fetch_MySuper } from "../fe-api/MySuper/MySuper";
 
 type View = "main" | "fund" | "option";
 
@@ -48,16 +49,24 @@ const MOCK_ALLOCATIONS: Record<string, AllocationPie> = {
 };
 
 const AllocationKey = () => (
-  <div className="flex gap-4 justify-center flex-wrap px-2 py-5 border-t border-slate-100 bg-white">
-    {(Object.keys(SEGMENTS) as SegmentKey[]).map((k) => (
-      <span key={k} className="flex items-center gap-1.5 text-xs font-semibold">
-        <span
-          className="w-2 h-2 sm:w-[0.6rem] sm:h-[0.6rem] sm:rounded-sm flex-shrink-0"
-          style={{ backgroundColor: SEGMENTS[k].color }}
-        />
-        {SEGMENTS[k].label}
-      </span>
-    ))}
+  <div className="border-t border-slate-100 bg-white">
+    <div className="flex gap-4 justify-center flex-wrap px-2 pt-5 pb-3">
+      {(Object.keys(SEGMENTS) as SegmentKey[]).map((k) => (
+        <span key={k} className="flex items-center gap-1.5 text-xs font-semibold">
+          <span
+            className="w-2 h-2 sm:w-[0.6rem] sm:h-[0.6rem] sm:rounded-sm flex-shrink-0"
+            style={{ backgroundColor: SEGMENTS[k].color }}
+          />
+          {SEGMENTS[k].label}
+        </span>
+      ))}
+    </div>
+    <p className="text-center text-[0.65rem] text-slate-400 px-8 pb-4">
+       Asset breakdown is an estimate as of the reporting date.{" "}
+      <a href="/about" className="underline hover:text-slate-600">
+        Read full disclaimer
+      </a>
+    </p>
   </div>
 );
 
@@ -75,14 +84,38 @@ const OptionPickerView = ({
   options,
 }: OptionPickerViewProps) => {
   const [search, setSearch] = useState("");
+  const [defaultOptionId, setDefaultOptionId] = useState<string | null>(null);
+  const [defaultLoadedForFund, setDefaultLoadedForFund] = useState<string | null>(null);
+  const [pendingOptionId, setPendingOptionId] = useState<string | null>(null);
   const { actions } = useStateMachine({ actions: { updateForm } });
 
+  useEffect(() => {
+    let cancelled = false;
+    fetch_MySuper(currentFund)
+      .then((data) => {
+        if (!cancelled) {
+          setDefaultOptionId(data.option?.id ?? null);
+          setDefaultLoadedForFund(currentFund);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setDefaultOptionId(null);
+          setDefaultLoadedForFund(currentFund);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [currentFund]);
+
   const handleClick = (option: { id: string; option_name: string }) => {
+    setPendingOptionId(option.id);
     actions.updateForm({
       option_id: option.id,
       option_name: option.option_name,
     });
-    setView("main");
+    window.setTimeout(() => setView("main"), 300);
   };
 
   const filtered = options.filter((o) =>
@@ -122,12 +155,17 @@ const OptionPickerView = ({
       )}
 
       <div
-  data-vaul-no-drag
-  className="overflow-y-auto max-h-[27rem] bg-slate-100 flex flex-col gap-3 py-4 px-4"
->
+        data-vaul-no-drag
+        className="overflow-y-auto max-h-[27rem] bg-slate-100 flex flex-col gap-3 py-4 px-4"
+      >
 
-        {filtered.map((option) => {
-          const isSelected = option.option_name === currentOption;
+        {defaultLoadedForFund !== currentFund ? (
+          <div className="flex min-h-48 items-center justify-center">
+            <div className="h-5 w-5 animate-spin rounded-full border-2 border-slate-300 border-t-slate-600" />
+          </div>
+        ) : filtered.map((option) => {
+          const currentOptionId = options.find((o) => o.option_name === currentOption)?.id;
+          const isSelected = option.id === (pendingOptionId ?? currentOptionId);
           const allocation = option.allocation;
 
           return (
@@ -160,10 +198,16 @@ const OptionPickerView = ({
                   </span>
                 )}
               </span>
+              {defaultLoadedForFund === currentFund && defaultOptionId === option.id && (
+                <span className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md border-2 border-emerald-200 bg-teal-100 px-1.5 py-0.5 text-[11px] font-semibold leading-tight text-teal-950">
+                  Fund default
+                </span>
+              )}
               {isSelected ? (
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 500, damping: 25 }}
                   className="w-4 h-4 flex items-center justify-center flex-shrink-0"
                 >
                   <Check className="w-4 h-4 text-emerald-600" />

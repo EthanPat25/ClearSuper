@@ -6,260 +6,67 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
+  Legend,
   ResponsiveContainer,
 } from "recharts";
+import { YearPoint } from "./Forumula2";
 
-const data = [
-  {
-    name: "2025",
-    Baseline: 0,
-    WithoutContributions: 0,
-  },
-  {
-    name: "2026",
-    Baseline: 15000,
-    WithoutContributions: 22000,
-  },
-  {
-    name: "2027",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2028",
-    Baseline: 25000,
-    WithoutContributions: 35000,
-  },
-  {
-    name: "2029",
-    Baseline: 30000,
-    WithoutContributions: 40000,
-  },
-  {
-    name: "2030",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2031",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2032",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2033",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2034",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2035",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2036",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2037",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2038",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2039",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2040",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2041",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2042",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2043",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2044",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2045",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2046",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2047",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2048",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2049",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2050",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2051",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2043",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2052",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2053",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2054",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2055",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2056",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2057",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2058",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2059",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2060",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2061",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2062",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2063",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2064",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-  {
-    name: "2065",
-    Baseline: 20000,
-    WithoutContributions: 27000,
-  },
-];
+const FALLBACK_SERIES: YearPoint[] = Array.from({ length: 11 }, (_, i) => ({
+  age: 30 + i * 4,
+  baseline: 50000 + i * 45000,
+  withBreak: 50000 + i * 45000,
+}));
 
-const Graph = () => {
+const formatCurrency = (value: number) =>
+  new Intl.NumberFormat("en-AU", {
+    style: "currency",
+    currency: "AUD",
+    maximumFractionDigits: 0,
+    notation: "compact",
+  }).format(value);
+
+type GraphProps = {
+  series?: YearPoint[];
+};
+
+const Graph = ({ series }: GraphProps) => {
+  const data = series && series.length > 0 ? series : FALLBACK_SERIES;
+
   return (
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart
-        width={500}
-        height={400}
         data={data}
-        margin={{
-          top: 10,
-          right: 30,
-          left: 0,
-          bottom: 0,
-        }}
+        margin={{ top: 10, right: 10, left: 0, bottom: 0 }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
+        <CartesianGrid strokeDasharray="3 3" vertical={false} />
+        <XAxis
+          dataKey="age"
+          tickFormatter={(age) => `${age}`}
+          label={{ value: "Age", position: "insideBottom", offset: -5 }}
+        />
+        <YAxis tickFormatter={formatCurrency} width={64} />
+        <Tooltip
+          formatter={(value: number) => formatCurrency(value)}
+          labelFormatter={(age) => `Age ${age}`}
+        />
+        <Legend />
         <Area
           type="monotone"
-          dataKey="Baseline"
-          stackId="1"
-          stroke="#8884d8"
-          fill="#8884d8"
+          dataKey="baseline"
+          name="Without a break"
+          stroke="#144A38"
+          fill="#144A38"
+          fillOpacity={0.15}
+          strokeWidth={2}
         />
         <Area
           type="monotone"
-          dataKey="WithoutContributions"
-          stackId="1"
-          stroke="#82ca9d"
-          fill="#82ca9d"
-        />
-        <Area
-          type="monotone"
-          dataKey="WithVoluntary"
-          stackId="1"
-          stroke="#ffc658"
-          fill="#ffc658"
+          dataKey="withBreak"
+          name="With your career break"
+          stroke="#F59E0B"
+          fill="#F59E0B"
+          fillOpacity={0.25}
+          strokeWidth={2}
         />
       </AreaChart>
     </ResponsiveContainer>

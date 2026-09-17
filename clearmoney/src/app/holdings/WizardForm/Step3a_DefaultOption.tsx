@@ -11,6 +11,8 @@ import {
 import { Check } from "lucide-react";
 import { AllocationPie } from "../types/holdings";
 import AllocationPieComponent from "../Components/AllocationPie";
+import { funds } from "../data/SuperFunds";
+import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
 
 const getInitials = (name: string) =>
   name
@@ -21,7 +23,7 @@ const getInitials = (name: string) =>
     .slice(0, 2)
     .toUpperCase();
 
-export const AssetClassKey = () => {
+export const AssetClassKey = ({ align = "center" }: { align?: "left" | "center" }) => {
   const assetClass = [
     { name: "Public Companies", colour: "#00C49F" },
     { name: "Private Assets", colour: "#3B82F6" },
@@ -29,7 +31,7 @@ export const AssetClassKey = () => {
   ];
 
   return (
-    <div className="flex gap-3 justify-center flex-wrap mb-2">
+    <div className={`flex gap-3 flex-wrap mb-2 ${align === "left" ? "justify-start" : "justify-center"}`}>
       {assetClass.map((asset, index) => (
         <div
           key={index}
@@ -55,6 +57,13 @@ const Step3a_DefaultOption = ({
 }) => {
   const { actions, state } = useStateMachine({ actions: { updateForm } });
   const [loading, setLoading] = React.useState(true);
+  const [mySuperDefault, setMySuperDefault] = React.useState<{
+    fund: string;
+    optionId: string;
+  } | null>(null);
+  const hasSingleDefault = funds.some(
+    (fund) => fund.name === state.Fund && !fund.mysuper_is_lifecycle,
+  );
   const [selected, setSelected] = React.useState<{
     id: string;
     name: string;
@@ -65,6 +74,26 @@ const Step3a_DefaultOption = ({
   const [allocations, setAllocations] = React.useState<
     Record<string, AllocationPie>
   >({});
+
+  React.useEffect(() => {
+    if (!hasSingleDefault) return;
+    let cancelled = false;
+    const loadDefault = async () => {
+      try {
+        const data = await fetch_MySuper(state.Fund);
+        if (!cancelled && data.option?.id) {
+          setMySuperDefault({ fund: state.Fund, optionId: data.option.id });
+        }
+      } catch {
+        // Options remain selectable when the default cannot be confirmed.
+        if (!cancelled) setMySuperDefault(null);
+      }
+    };
+    loadDefault();
+    return () => {
+      cancelled = true;
+    };
+  }, [state.Fund, hasSingleDefault]);
 
   React.useEffect(() => {
     if (!state.Fund) return;
@@ -170,9 +199,18 @@ const Step3a_DefaultOption = ({
                         </span>
                       )}
                     </div>
-                    <p className="text-slate-800 font-bold text-[0.8rem] flex-1">
-                      {opt.option_name}
-                    </p>
+                    <div className="flex flex-1 min-w-0 items-center gap-4">
+                      <p className="min-w-0 text-slate-800 font-bold text-[0.8rem]">
+                        {opt.option_name}
+                      </p>
+                      {hasSingleDefault &&
+                        mySuperDefault?.fund === state.Fund &&
+                        mySuperDefault.optionId === opt.id && (
+                          <span className="inline-flex items-center whitespace-nowrap rounded-md border-2 border-emerald-200 bg-teal-100 px-1.5 py-0.5 text-[11px] font-semibold leading-tight text-teal-950 flex-shrink-0">
+                            Fund default
+                          </span>
+                        )}
+                    </div>
                     {isSelected ? (
                       <motion.div
                         initial={{ scale: 0 }}
@@ -193,12 +231,7 @@ const Step3a_DefaultOption = ({
 
         <div className="text-slate-400 pt-4 flex w-full justify-center items-center">
           <p className="text-[0.65rem] leading-relaxed text-center">
-            Displayed pie charts are ClearSuper's own interpretation of a fund's
-            published holdings data, not something produced or endorsed by the
-            fund itself. Figures are proportional estimates at time of
-            reporting, rounded and simplified for clarity, always check your
-            fund's official data for exact numbers. ClearSuper currently only
-            supports accumulation phase options.
+      Charts are ClearSuper’s interpretation of published fund holdings, not fund-produced or endorsed. Figures are proportional estimates at the time of reporting, rounded and simplified for clarity. Check your fund’s official data for exact figures. Accumulation options only.
             <br />
             <a
               href="/about"

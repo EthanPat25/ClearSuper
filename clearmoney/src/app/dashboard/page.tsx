@@ -3,7 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { Button } from "@/components/ui/button";
 import { Superannuation } from "../AnimationComponents/Superannuation";
 import { House } from "../AnimationComponents/House";
 import { Bar } from "../AnimationComponents/Bar";
@@ -12,8 +11,7 @@ import { Tech } from "../AnimationComponents/Tech";
 import { Money } from "../AnimationComponents/Money";
 import { useRouter } from "next/navigation";
 import { Mining } from "../AnimationComponents/Mining";
-import { NumericFormat } from "react-number-format";
-import { ChevronDown } from "lucide-react";
+import { Search } from "../AnimationComponents/Search";
 
 export default function SuperContributions() {
   const router = useRouter();
@@ -164,7 +162,7 @@ export default function SuperContributions() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <div className="flex w-full justify-start items-start">
-              <span className="inline-block bg-amber-100 text-amber-800 text-sm font-medium tracking-wider px-3 py-2 mb-6 rounded-xl">
+              <span className="inline-block bg-amber-100 border-2 border-amber-300 text-amber-800 text-sm font-semibold px-3 py-2 mb-6 rounded-xl">
                 Behind The Balance
               </span>
             </div>
@@ -185,50 +183,14 @@ export default function SuperContributions() {
             <div className="w-full flex justify-start items-center">
               <motion.button
                 whileTap={{ scale: 0.95 }}
-                className="border-2 border-emerald-600 hover:fill-[#F59E0B] text-emerald-700 px-7 py-3 text-base font-bold rounded-full hover:bg-emerald-50 hover:border-[#F59E0B] hover:text-[#F59E0B] hover:scale-105 transition-all"
+                className="border-4 border-emerald-600 hover:fill-[#F59E0B] text-emerald-700 px-7 py-3 text-base font-bold rounded-2xl hover:bg-emerald-50 hover:border-[#F59E0B] hover:text-[#F59E0B] hover:scale-105 transition-all shadow-sm"
               >
                 <Link
                   href={"/holdings"}
                   className="flex gap-3 justify-center items-center w-full h-full"
                 >
-                  <p>Start Exploring </p>
-                  <svg
-                    version="1.1"
-                    id="fi_271226"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    className="w-[1rem] fill-emerald-700 "
-                    viewBox="0 0 492.004 492.004"
-                    enableBackground="new 0 0 492.004 492.004"
-                    xmlSpace="preserve"
-                  >
-                    <g>
-                      <g>
-                        <path
-                          d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
-			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
-			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
-			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
-			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
-                        ></path>
-                      </g>
-                    </g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                  </svg>
+                  <p>Start Exploring</p>
+                  <Search responsiveSizing="w-[1.5rem] h-[1.5rem]" />
                 </Link>
               </motion.button>
             </div>
@@ -341,69 +303,70 @@ export default function SuperContributions() {
       <div className="bg-slate-50 py-32 border-t border-slate-200/60">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center mb-16">
-            <p className="text-sm font-bold text-orange-500 uppercase mb-3">
+            <span className="text-sm text-orange-600 border-2 border-orange-300 bg-orange-100 font-semibold px-3 py-2 mb-6 rounded-xl">
               Tools & Calculators
-            </p>
+            </span>
             <h2 className="font-extrabold text-2xl lg:text-5xl text-slate-900">
-              Calculators that Feel Human
+              Calculators that Feel <span className="text-teal-600">Human</span>
             </h2>
           </div>
 
-      <div className="flex flex-wrap justify-center gap-8">
-<motion.div
-    initial={{ y: 20, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.5 }}
-    viewport={{ once: true }}
-    whileHover={{ y: -8 }}
-    className="bg-white rounded-[2rem] p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center w-full max-w-[22rem]"
-  >
-    <span className="text-[0.75rem] text-white font-semibold bg-[#008080]/80 px-3 py-2 mb-4 rounded-2xl">
-      FHSS Calculator
-    </span>
-    <h3 className="text-slate-900 font-bold text-lg mb-4 leading-tight">
-      Could you save a deposit faster using Super?
-    </h3>
-    <div className="mb-4 h-32 flex items-center justify-center w-full relative">
-      <div className="absolute inset-0 bg-[#008080]/[0.08] rounded-full scale-90" />
-      <div className="relative opacity-80 grayscale-[30%]">
-        <House responsiveSizing="w-[8rem] h-[8rem]" />
-      </div>
-    </div>
-    <div className="w-full py-3 rounded-xl bg-slate-50 border border-slate-200/60 flex items-center justify-center gap-2">
-      <span className="text-slate-500 font-semibold text-sm tracking-wide">
-        Coming Soon
-      </span>
-    </div>
-  </motion.div>
+          <div className="flex flex-wrap justify-center gap-8">
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -8 }}
+              className="bg-white rounded-[2rem] p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center w-full max-w-[22rem]"
+            >
+              <span className="text-[0.75rem] text-white font-semibold bg-[#008080]/80 px-3 py-2 mb-4 rounded-2xl">
+                FHSS Calculator
+              </span>
+              <h3 className="text-slate-900 font-bold text-lg mb-4 leading-tight">
+                Could you save a deposit faster using Super?
+              </h3>
+              <div className="mb-4 h-32 flex items-center justify-center w-full relative">
+                <div className="absolute inset-0 bg-[#008080]/[0.08] rounded-full scale-90" />
+                <div className="relative opacity-80 grayscale-[30%]">
+                  <House responsiveSizing="w-[8rem] h-[8rem]" />
+                </div>
+              </div>
+              <div className="w-full py-3 rounded-xl bg-slate-50 border border-slate-200/60 flex items-center justify-center gap-2">
+                <span className="text-slate-500 font-semibold text-sm tracking-wide">
+                  Coming Soon
+                </span>
+              </div>
+            </motion.div>
 
-<motion.div
-    initial={{ y: 20, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.5, delay: 0.1 }}
-    viewport={{ once: true }}
-    whileHover={{ y: -8 }}
-    className="bg-white rounded-[2rem] p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center w-full max-w-[22rem]"
-  >
-    <span className="text-[0.75rem] font-semibold text-white bg-[#004687]/80 px-3 py-2 rounded-2xl mb-4">
-      Super Gap Calculator
-    </span>
-    <h3 className="text-slate-900 font-bold text-lg mb-4 leading-tight">
-      See how part-time work or career breaks shape your super.
-    </h3>
-    <div className="mb-4 h-32 flex items-center justify-center w-full relative">
-      <div className="absolute inset-0 bg-[#004687]/[0.08] rounded-full scale-90" />
-      <div className="relative opacity-80 grayscale-[30%]">
-        <Bar responsiveSizing="w-[8rem] h-[8rem]" />
-      </div>
-    </div>
-    <div className="w-full py-3 rounded-xl bg-slate-50 border border-slate-200/60 flex items-center justify-center gap-2">
-      <span className="text-slate-500 font-semibold text-sm tracking-wide">
-        Coming Soon
-      </span>
-    </div>
-  </motion.div>
-</div>
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -8 }}
+              className="bg-white rounded-[2rem] p-6 shadow-sm border border-slate-100 flex flex-col items-center text-center w-full max-w-[22rem]"
+            >
+              <span className="text-[0.75rem] font-semibold text-white bg-[#004687]/80 px-3 py-2 rounded-2xl mb-4">
+                Super Gap Calculator
+              </span>
+              <h3 className="text-slate-900 font-bold text-lg mb-4 leading-tight">
+                See how part-time work or career breaks shape your super.
+              </h3>
+              <div className="mb-4 h-32 flex items-center justify-center w-full relative">
+                <div className="absolute inset-0 bg-[#004687]/[0.08] rounded-full scale-90" />
+                <div className="relative opacity-80 grayscale-[30%]">
+                  <Bar responsiveSizing="w-[8rem] h-[8rem]" />
+                </div>
+              </div>
+              <Link
+                href="/SuperGap"
+                className="w-full rounded-xl bg-[#004687] py-3 text-center text-sm font-semibold tracking-wide text-white transition-colors hover:bg-[#00386b]"
+              >
+                Explore SuperGap →
+              </Link>
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>

@@ -2,13 +2,19 @@ import React from "react";
 
 type infoProps = {
   className: string;
+  onClick?: () => void;
+  ariaLabel?: string;
 };
 
-const Info = ({ className }: infoProps) => {
+const Info = ({ className, onClick, ariaLabel = "Show more information" }: infoProps) => {
   return (
-    <div className={className}>
+    <button
+      type="button"
+      className={className}
+      onClick={onClick}
+      aria-label={ariaLabel}
+    >
       <svg
-        onClick={() => console.log()}
         className={"mx-auto cursor-pointer"}
         id="fi_5683325"
         enableBackground="new 0 0 32 32"
@@ -21,7 +27,7 @@ const Info = ({ className }: infoProps) => {
           <path d="m22 21h4v14h-4z"></path>
         </g>
       </svg>
-    </div>
+    </button>
   );
 };
 

@@ -35,7 +35,7 @@ const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
 
             return (
               <CompanyPopUp
-                key={`${index}-${holding.companies?.id || index}`}
+              key={holding.companies?.id || holding.Full_Name || index}
                 holding={holding}
                 balance={userBalance}
                 trigger={
@@ -112,7 +112,7 @@ const PublicHoldings = ({ companyMode, pager, balance, holdingsData }) => {
                     </div>
 
                     <h2 className="text-sm font-medium mb-2">
-                      {holding.companies?.Parsed_Name || "Unknown Asset"}
+                      {holding.companies?.Parsed_Name || holding.Full_Name || "Unknown Asset"}
                     </h2>
 
                     <div className="font-semibold text-xl text-slate-900">

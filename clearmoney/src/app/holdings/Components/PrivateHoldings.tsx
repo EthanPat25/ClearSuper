@@ -96,6 +96,16 @@ const PrivateHoldings: React.FC<Props> = ({ holdingsData, balance }) => {
       <div className="grid grid-cols-2 w-full px-3 max-w-xl pt-6 gap-2 gap-y-[2rem] justify-items-center">
         {CATEGORIES.map((cat) => {
           const holding = getPrimaryHolding(cat.keyword);
+          const displayHolding: HoldingRow = holding ?? {
+            Full_Name: cat.name,
+            Super_Fund: holdingsData?.[0]?.Super_Fund ?? "",
+            Option_Name: "",
+            Listing_Status: "Unlisted",
+            Asset_Class: cat.keyword,
+            Weighting_Percentage_Clean: 0,
+            Option_Id: holdingsData?.[0]?.Option_Id,
+            options: holdingsData?.[0]?.options,
+          };
 
           const card = (
             <motion.div
@@ -161,17 +171,15 @@ const PrivateHoldings: React.FC<Props> = ({ holdingsData, balance }) => {
             </motion.div>
           );
 
-          return holding ? (
+          return (
             <UnlistedHoldingPopUp
               key={cat.name}
-              holding={holding}
+              holding={displayHolding}
               balance={balance}
               displayValue={getCategoryValue(cat.keyword)}
               icon={cat.icon}
               trigger={card}
             />
-          ) : (
-            <React.Fragment key={cat.name}>{card}</React.Fragment>
           );
         })}
       </div>

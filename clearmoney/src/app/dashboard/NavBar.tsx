@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { NavigationMenuDemo } from "./NavBar copy";
+import { DesktopNavMenu } from "./DesktopNavMenu";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "../holdings/WizardForm/formWizardStore";
 import CurrentOptionPopup from "./CurrentOptionPopup";
@@ -73,7 +73,7 @@ const NavBar = () => {
 
           <div className="flex items-center justify-center">
             <div className="hidden md:block">
-              <NavigationMenuDemo />
+              <DesktopNavMenu />
             </div>
           </div>
 

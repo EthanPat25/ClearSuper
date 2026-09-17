@@ -1,6 +1,7 @@
 import { ChevronLeft } from "lucide-react";
 import { funds } from "../holdings/data/SuperFunds";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 type View = "main" | "fund" | "option";
 
@@ -21,13 +22,16 @@ const FundPickerView = ({
   actions,
   currentFund,
 }: FundPickerViewProps) => {
+  const [pendingFund, setPendingFund] = useState<string | null>(null);
+
   const handleClick = (fundName: string) => {
+    setPendingFund(fundName);
     actions.updateForm({
       Fund: fundName,
       option_id: "",
       option_name: "",
     });
-    setView("main");
+    window.setTimeout(() => setView("main"), 300);
   };
 
   return (
@@ -45,7 +49,7 @@ const FundPickerView = ({
 
       <div className="overflow-y-auto bg-slate-100 flex flex-col gap-3 justify-center items-center py-4 px-4">
         {funds.map((fund) => {
-          const isSelected = fund.name === currentFund;
+          const isSelected = fund.name === (pendingFund ?? currentFund);
           return (
             <button
               key={fund.name}

@@ -5,7 +5,6 @@ import { useStateMachine } from "little-state-machine";
 import { funds } from "../data/SuperFunds";
 import Link from "next/link";
 
-
 type Step1_SelectFundProps = {
   updateStep: (step: number) => void;
   ref: React.RefObject<HTMLDivElement>;

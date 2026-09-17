@@ -8,7 +8,7 @@ import PrivateHoldings from "./PrivateHoldings";
 import BondsandCashHoldings from "./BondsandCashHoldings";
 import ControlsBar from "./ControlsBar";
 import AssetTabs from "./AssetTab";
-import LocationBreakdown from "../_experimental/LocationBreakdown";
+import LocationBreakdown from "./LocationBreakdown";
 import { PublicCompanyHolding } from "../types/holdings";
 import { HoldingRow } from "../types/holdings";
 import Fuse from "fuse.js";

@@ -41,7 +41,6 @@ const Step3b_SelectOption = ({
         const data = await fetch_MySuper(state.Fund);
         updateOption(data.option);
         const allocationRows = await fetch_option_allocations([data.option.id]);
-        console.log("hello:" + allocationRows.map(r => r.category));
         const pie: AllocationPie = {
           listed: 0,
           unlisted: 0,
@@ -84,7 +83,7 @@ const Step3b_SelectOption = ({
         Your fund's default option
       </motion.h1>
 
-      <div className="w-full bg-slate-100 rounded-[3rem] p-10 shadow-sm flex flex-col gap-4 sm:max-w-xl">
+      <div className="w-full bg-slate-100 rounded-[3rem] p-4 md:p-10 shadow-sm flex flex-col gap-4 sm:max-w-xl">
      
   <AssetClassKey />
           {loading ? (
@@ -96,7 +95,7 @@ const Step3b_SelectOption = ({
               {option && (
                 <>
                   <div className="w-12 h-12 rounded-xl bg-slate-100 flex-shrink-0 flex items-center justify-center">
-                    <span className="text-base font-bold text-teal-700">
+                    <span className="text-xl font-bold text-teal-700">
                       <AllocationPieComponent allocation={allocation} />
                     </span>
                   </div>
@@ -107,17 +106,16 @@ const Step3b_SelectOption = ({
                   </div>
                 </>
               )}
-              <span className="text-xs font-bold tracking-wide text-teal-950 bg-teal-100 px-2 py-1 rounded-full flex-shrink-0">
-                MySuper
+              <span className="inline-flex items-center whitespace-nowrap rounded-md border-2 border-emerald-200 bg-teal-100 px-1.5 py-0.5 text-[11px] font-semibold leading-tight text-teal-950 flex-shrink-0">
+                Fund default
               </span>
             </div>)}
 
       
         <div className="text-slate-600 pt-6 p-4 flex max-w-3xl">
           <p className="text-xs leading-relaxed text-center ">
-            ClearSuper can&apos;t know which option you&apos;re actually in. It
-            can only preselect a fund&apos;s MySuper default, so it&apos;s worth
-            checking your account to be sure. <br></br>
+          We can only preselect your fund’s MySuper default. Check your account to confirm your actual investment option. 
+          {" "}
             <Link
               href="/about"
               className="underline font-medium hover:text-slate-900 transition-colors"

@@ -8,7 +8,6 @@ const Settings = ({ className }: settingsProps) => {
   return (
     <div className={className}>
       <svg
-        onClick={() => console.log()}
         version="1.1"
         id="fi_503849"
         xmlns="http://www.w3.org/2000/svg"

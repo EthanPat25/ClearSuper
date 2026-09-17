@@ -1,72 +1,60 @@
 "use client";
 
 import React from "react";
-import EverydayTerms from "./EverydayTerms";
-import Graph from "./Graph";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import UnderStand from "./UnderStand";
-import { CloseGapCalculator } from "./CloseGapCalculator";
 import HeroSection from "./HeroSection";
 import SuperGapCalcSection from "./SuperGapCalcSection";
-import { motion } from "motion/react";
+import { SuperGapResult } from "./Forumula2";
 
 export default function SuperContributions() {
-  const [view, setView] = React.useState<"terms" | "case" | "close">("terms");
+  const [started, setStarted] = React.useState(false);
+  const reduceMotion = useReducedMotion();
+  const [result, setResult] = React.useState<SuperGapResult | null>(null);
 
   return (
-    <div className="w-screen min-h-screen flex flex-col">
-      <HeroSection></HeroSection>
-      <div className="w-screen p-6 bg-[RGB(250,251,252)] relative h-[100svh]">
-        <SuperGapCalcSection></SuperGapCalcSection>
+    <div className="w-full min-h-screen flex flex-col">
+      <div className="grid w-full flex-1 relative overflow-x-clip px-3 sm:px-6 bg-[RGB(250,251,252)]">
+        <AnimatePresence mode="sync" initial={false}>
+          <motion.div
+            key={started ? "wizard" : "intro"}
+            className={`col-start-1 row-start-1 min-w-0 ${started ? "w-full origin-top py-16" : "flex w-full items-center pt-28 pb-8 sm:pt-32 sm:pb-12"}`}
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: {
+                duration: reduceMotion ? 0 : 0.38,
+                delay: reduceMotion ? 0 : 0.1,
+                ease: [0.22, 1, 0.36, 1],
+              },
+            }}
+            exit={{
+              opacity: 0,
+              transition: { duration: reduceMotion ? 0 : 0.2, ease: "easeOut" },
+            }}
+          >
+            {started ? (
+              <div tabIndex={-1} ref={(node) => { node?.focus({ preventScroll: true }); }} className="w-full outline-none" aria-label="SuperGap calculator">
+                <SuperGapCalcSection result={result} onCalculate={setResult} />
+              </div>
+            ) : (
+              <div className="w-full">
+                <HeroSection onStart={() => setStarted(true)} />
+              </div>
+            )}
+          </motion.div>
+        </AnimatePresence>
       </div>
-      <section className="mt-16 w-screen">
-        <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="flex justify-center flex-wrap gap-2 mb-6 w-full">
-            <button
-              onClick={() => setView("terms")}
-              className={`px-4 py-2 rounded-3xl text-sm flex justify-center items-center gap-2 min-w-[11rem] ${view === "terms" ? "bg-gray-900 text-white border" : "border"}`}
-            >
-              <div className="h-2 w-2 sm:h-3 sm:w-3 shrink-0 rounded-full sm:rounded-sm bg-red-500" />
-              In Everyday Terms
-            </button>
-            <button
-              onClick={() => setView("case")}
-              className={`px-4 py-2 rounded-3xl flex text-sm gap-2 justify-center items-center min-w-[11rem] ${view === "case" ? "bg-gray-900 text-white border" : "border"}`}
-            >
-              <div className="h-2 w-2 sm:h-3 sm:w-3 shrink-0 rounded-full sm:rounded-sm bg-blue-500" />
-              Why Gaps Matter
-            </button>
-            <button
-              onClick={() => setView("close")}
-              className={`px-4 py-2 rounded-3xl flex gap-2 text-sm justify-center items-center min-w-[11rem] ${view === "close" ? "bg-gray-900 text-white border" : "border"}`}
-            >
-              <div className="h-2 w-2 sm:h-3 sm:w-3 shrink-0 rounded-full sm:rounded-sm bg-green-500" />
-              Close the Gap
-            </button>
-          </div>
+      {result?.hasBreak && (
+        <section id="gap-lenses" className="mt-16 w-full scroll-mt-24">
+          <div className="max-w-8xl mx-auto px-6 py-8">
+          
 
-          {/* Content */}
-          {view === "terms" && <EverydayTerms />}
-          {view === "case" && <UnderStand />}
-          {view === "close" && (
-            <div className="flex justify-evenly mt-10">
-              <div className="w-[45%]">
-                <CloseGapCalculator />
-              </div>
-              <div className=" flex justify-center items-center w-[55%]">
-                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 w-full">
-                  <h4 className="text-base font-medium mb-2">Impact</h4>
-                  <div className="h-[360px] bg-gray-50 rounded-xl p-3">
-                    <Graph />
-                  </div>
-                  <p className="text-sm text-gray-600 mt-3">
-                    Adjust the weekly amount to see how your trajectory changes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
+          <UnderStand />
+        
+          </div>
+        </section>
+      )}
     </div>
   );
 }

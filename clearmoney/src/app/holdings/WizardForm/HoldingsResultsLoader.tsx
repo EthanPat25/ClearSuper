@@ -13,12 +13,20 @@ const HoldingsResultsLoader = ({ ref }) => {
   const [data, setData] = React.useState<HoldingsApiResponse | null>(null);
 
   React.useEffect(() => {
+    let cancelled = false;
+
     const fetchData = async () => {
       const returnedData = await WizardFormSubmit(state);
-      setData(returnedData);
+      if (!cancelled) {
+        setData(returnedData);
+      }
     };
 
     fetchData();
+
+    return () => {
+      cancelled = true;
+    };
   }, [state.Fund, state.option_id]);
 
   return data ? (

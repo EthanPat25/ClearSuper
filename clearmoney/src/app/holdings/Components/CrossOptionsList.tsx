@@ -16,6 +16,7 @@ type CrossOptionsListProps = {
   balance: number;
   sectorStyle: SectorStyle;
   onSwitchOption: (id: string, name: string) => void;
+  allowZeroSelection?: boolean;
 };
 
 function getAbbreviation(name: string): string {
@@ -37,6 +38,7 @@ export function CrossOptionsList({
   balance,
   sectorStyle,
   onSwitchOption,
+  allowZeroSelection = false,
 }: CrossOptionsListProps) {
   if (!loading && options.length <= 1) return null;
 
@@ -60,13 +62,13 @@ export function CrossOptionsList({
             return (
               <button
                 key={opt.id}
-                disabled={isCurrent || isZero}
+                disabled={isCurrent || (isZero && !allowZeroSelection)}
                 onClick={() => onSwitchOption(opt.id, opt.optionName)}
                 className={`w-full group text-left rounded-2xl p-4 hover:shadow-md transition-all border ${
                   isCurrent
                     ? `${sectorStyle.bg} ${sectorStyle.border} shadow-sm`
                     : isZero
-                      ? "bg-slate-50 border-slate-100 opacity-40"
+                      ? `bg-slate-50 border-slate-100 ${allowZeroSelection ? "hover:border-slate-300 hover:shadow-md active:scale-[0.98] cursor-pointer" : "opacity-40"}`
                       : "bg-white border-slate-200 hover:border-slate-300 hover:shadow-md active:scale-[0.98] cursor-pointer"
                 }`}
               >
@@ -118,7 +120,7 @@ export function CrossOptionsList({
                     <IconChevronRight
                       size={14}
                       className={`transition-colors ${
-                        !isCurrent && !isZero
+                          !isCurrent && (!isZero || allowZeroSelection)
                           ? "text-slate-400 group-hover:text-slate-600"
                           : "invisible"
                       }`}

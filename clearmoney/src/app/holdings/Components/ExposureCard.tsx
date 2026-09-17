@@ -21,8 +21,8 @@ export function ExposureCard({
 }: ExposureCardProps) {
   return (
     <div className="bg-slate-50 rounded-[2rem] p-6 border border-slate-100/50 relative overflow-hidden">
-      <p className="text-sm font-bold text-slate-400 tracking-widest mb-2">
-        Your proportional exposure
+      <p className="text-sm font-bold text-slate-400 mb-2">
+        Your Proportional Exposure
       </p>
       <div className="flex items-baseline gap-3">
         <span className="text-3xl font-black text-slate-900 tabular-nums tracking-tighter">
