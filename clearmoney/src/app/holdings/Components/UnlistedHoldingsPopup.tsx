@@ -12,7 +12,8 @@ import { ExposureCard } from "./ExposureCard";
 import { Money } from "@/app/AnimationComponents/Money";
 import { Bond } from "@/app/AnimationComponents/Bond";
 import { fetch_options } from "@/app/fe-api/options/options";
-import { fetch_option_allocations } from "@/app/fe-api/options/options";
+import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
+import { funds } from "../data/SuperFunds";
 import Loading from "./Loading";
 import { AnimatePresence, motion } from "framer-motion";
 import { useStateMachine } from "little-state-machine";
@@ -48,11 +49,15 @@ function CategoryDetails({
 }) {
   const { actions, state } = useStateMachine({ actions: { updateForm } });
   const [optionsData, setOptionsData] = useState<CrossOption[]>([]);
+  const [defaultOptionId, setDefaultOptionId] = useState<string | null>(null);
   const [loadingOptions, setLoadingOptions] = useState(false);
   const [switchingOption, setSwitchingOption] = useState(false);
   const [minimumLoadingElapsed, setMinimumLoadingElapsed] = useState(true);
   const loadingTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const currentOptionId = optionId ?? "";
+  const hasSingleDefault = funds.some(
+    (item) => item.name === fund && !item.mysuper_is_lifecycle,
+  );
   const isSwitching = switchingOption && (!minimumLoadingElapsed || currentOptionId !== state.option_id);
 
   useEffect(() => {
@@ -61,7 +66,14 @@ function CategoryDetails({
     const load = async () => {
       setLoadingOptions(true);
       try {
-        const options = await fetch_options(fund);
+        const [options, defaultData] = await Promise.all([
+          fetch_options(fund),
+          hasSingleDefault
+            ? fetch_MySuper(fund).catch(() => null)
+            : Promise.resolve(null),
+        ]);
+        if (cancelled) return;
+        setDefaultOptionId(defaultData?.option?.id ?? null);
         const results = await Promise.all(
           (options ?? []).map(async (option: { id: string; option_name: string }) => {
             const response = await fetch(
@@ -85,14 +97,16 @@ function CategoryDetails({
             return { id: option.id, optionName: option.option_name, weightPercent: percentage };
           }),
         );
-        const allocationRows = await fetch_option_allocations((options ?? []).map((option: { id: string }) => option.id));
         const allocationMap: Record<string, AllocationPie> = {};
-        allocationRows.forEach((row: { Option_Id: string; category: string; percentage: number }) => {
-          allocationMap[row.Option_Id] ??= { listed: 0, unlisted: 0, cashAndBonds: 0 };
-          if (row.category === "Listed") allocationMap[row.Option_Id].listed = row.percentage;
-          if (row.category === "Unlisted") allocationMap[row.Option_Id].unlisted = row.percentage;
-          if (row.category === "Fixed Interest & Cash") allocationMap[row.Option_Id].cashAndBonds = row.percentage;
-        });
+        for (const option of options ?? []) {
+          allocationMap[option.id] = { listed: 0, unlisted: 0, cashAndBonds: 0 };
+          for (const row of option.allocations ?? []) {
+            if (row.category === "Listed") allocationMap[option.id].listed = row.percentage;
+            if (row.category === "Unlisted") allocationMap[option.id].unlisted = row.percentage;
+            if (row.category === "Fixed Interest & Cash") allocationMap[option.id].cashAndBonds = row.percentage;
+          }
+        }
+        if (cancelled) return;
         if (!cancelled) {
           const sorted = results
             .filter(Boolean)
@@ -111,7 +125,7 @@ function CategoryDetails({
     return () => {
       cancelled = true;
     };
-  }, [fund, optionId, category]);
+  }, [fund, optionId, category, hasSingleDefault]);
 
   function switchOption(id: string, name: string) {
     if (loadingTimer.current) clearTimeout(loadingTimer.current);
@@ -130,7 +144,7 @@ function CategoryDetails({
       ) : (
         <motion.div key="content" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }} className="space-y-8">
           {children}
-          <CrossOptionsList title={title} loading={loadingOptions} options={optionsData} currentOptionId={currentOptionId} balance={balance} sectorStyle={sectorStyle} onSwitchOption={switchOption} allowZeroSelection />
+          <CrossOptionsList title={title} loading={loadingOptions} options={optionsData} currentOptionId={currentOptionId} defaultOptionId={defaultOptionId} balance={balance} sectorStyle={sectorStyle} onSwitchOption={switchOption} allowZeroSelection />
         </motion.div>
       )}
     </AnimatePresence>
@@ -237,7 +251,7 @@ const HOLDING_INFO: Record<string, HoldingInfo> = {
     title: "Fixed Interest",
     label: "Fixed Interest",
     description:
-      "Loans to governments and companies that pay a set rate of return over time. Generally lower risk than shares.",
+      "Money lent to governments or companies, usually in return for a set rate of interest over time. Returns are generally more predictable than shares, but typically lower over the long term.",
     examples: ["Government bonds", "Corporate bonds", "Term deposits"],
     style: {
       bg: "bg-blue-100",

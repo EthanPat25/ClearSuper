@@ -4,15 +4,25 @@ import React from "react";
 import { motion } from "motion/react";
 import { updateForm } from "./formWizardStore";
 import { useStateMachine } from "little-state-machine";
-import {
-  fetch_options,
-  fetch_option_allocations,
-} from "@/app/fe-api/options/options";
+import { fetch_options } from "@/app/fe-api/options/options";
 import { Check } from "lucide-react";
 import { AllocationPie } from "../types/holdings";
 import AllocationPieComponent from "../Components/AllocationPie";
 import { funds } from "../data/SuperFunds";
 import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
+
+
+type FundOption = {
+  id: string;
+  option_name: string;
+  option_name_abbreviation: string | null;
+  as_of_date: string | null;
+  allocations: {
+    Option_Id: string;
+    category: string;
+    percentage: number;
+  }[];
+};
 
 const getInitials = (name: string) =>
   name
@@ -70,7 +80,7 @@ const Step3a_DefaultOption = ({
     as_of_date?: string;
   } | null>(null);
 
-  const [options, setOptions] = React.useState([]);
+  const [options, setOptions] = React.useState<FundOption[]>([]);
   const [allocations, setAllocations] = React.useState<
     Record<string, AllocationPie>
   >({});
@@ -95,47 +105,53 @@ const Step3a_DefaultOption = ({
     };
   }, [state.Fund, hasSingleDefault]);
 
-  React.useEffect(() => {
-    if (!state.Fund) return;
-    const loadOptions = async () => {
-      setLoading(true);
-      try {
-        const data = await fetch_options(state.Fund);
-        const sorted = data.sort((a, b) =>
-          a.option_name.localeCompare(b.option_name),
-        );
-        setOptions(sorted);
+React.useEffect(() => {
+  if (!state.Fund) return;
 
-        // Fetch real allocations for all options in one call
-        const ids = sorted.map((o) => o.id);
-        const allocationRows = await fetch_option_allocations(ids);
+  const loadOptions = async () => {
+    setLoading(true);
 
-        // Transform flat rows into { [option_id]: AllocationPie }
-        const allocationMap: Record<string, AllocationPie> = {};
-        for (const row of allocationRows) {
-          if (!allocationMap[row.Option_Id]) {
-            allocationMap[row.Option_Id] = {
-              listed: 0,
-              unlisted: 0,
-              cashAndBonds: 0,
-            };
-          }
+    try {
+      const data = await fetch_options(state.Fund);
+
+      const sorted = data.sort((a, b) =>
+        a.option_name.localeCompare(b.option_name),
+      );
+
+      setOptions(sorted);
+
+      const allocationMap: Record<string, AllocationPie> = {};
+
+      for (const option of sorted) {
+        allocationMap[option.id] = {
+          listed: 0,
+          unlisted: 0,
+          cashAndBonds: 0,
+        };
+
+        for (const row of option.allocations) {
           if (row.category === "Listed")
-            allocationMap[row.Option_Id].listed = row.percentage;
+            allocationMap[option.id].listed = row.percentage;
+
           if (row.category === "Unlisted")
-            allocationMap[row.Option_Id].unlisted = row.percentage;
+            allocationMap[option.id].unlisted = row.percentage;
+
           if (row.category === "Fixed Interest & Cash")
-            allocationMap[row.Option_Id].cashAndBonds = row.percentage;
+            allocationMap[option.id].cashAndBonds = row.percentage;
         }
-        setAllocations(allocationMap);
-      } catch {
-        setOptions([]);
-      } finally {
-        setLoading(false);
       }
-    };
-    loadOptions();
-  }, [state.Fund]);
+
+      setAllocations(allocationMap);
+    } catch {
+      setOptions([]);
+      setAllocations({});
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  loadOptions();
+}, [state.Fund]);
 
   function handleContinue() {
     if (!selected) return;

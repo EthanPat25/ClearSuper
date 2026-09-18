@@ -9,10 +9,11 @@ import { fetch_company_weightings } from "../../fe-api/company_weightings/compan
 import { PopUpShell, SECTOR_COLORS, DEFAULT_SECTOR_STYLE } from "./PopUpShell";
 import { ExposureCard } from "./ExposureCard";
 import { CrossOptionsList, CrossOption } from "./CrossOptionsList";
-import { fetch_option_allocations } from "@/app/fe-api/options/options";
+import { fetch_options } from "@/app/fe-api/options/options";
 import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
 import { AllocationPie, PublicCompanyHolding } from "../types/holdings";
 import Loading from "./Loading";
+import { funds } from "../data/SuperFunds";
 
 type CompanyPopUpProps = {
   trigger: React.ReactNode;
@@ -35,6 +36,9 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
   const sectorStyle = SECTOR_COLORS[companies?.Sector] ?? DEFAULT_SECTOR_STYLE;
   const companyName = companies?.Parsed_Name ?? holding.Full_Name;
   const currentOptionId = holding.Option_Id ?? "";
+  const hasSingleDefault = funds.some(
+    (item) => item.name === Super_Fund && !item.mysuper_is_lifecycle,
+  );
 
   const isSwitching =
     switchingOption &&
@@ -47,9 +51,12 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
     const loadOptionsForCompany = async () => {
       setLoadingOptions(true);
       try {
-        const [data, defaultData] = await Promise.all([
+        const [data, allOptions, defaultData] = await Promise.all([
           fetch_company_weightings(Super_Fund, companies.id),
-          fetch_MySuper(Super_Fund).catch(() => null),
+          fetch_options(Super_Fund).catch(() => []),
+          hasSingleDefault
+            ? fetch_MySuper(Super_Fund).catch(() => null)
+            : Promise.resolve(null),
         ]);
         if (cancelled) return;
         setDefaultOptionId(defaultData?.option?.id ?? null);
@@ -60,22 +67,15 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
           as_of_date: o.as_of_date,
         }));
 
-        const allocationRows = await fetch_option_allocations(
-          mapped.map((o) => o.id),
-        ).catch(() => []);
-        if (cancelled) return;
-        const allocationMap: Record<string, AllocationPie> =
-          allocationRows.reduce((acc, row) => {
-            if (!acc[row.Option_Id])
-              acc[row.Option_Id] = { listed: 0, unlisted: 0, cashAndBonds: 0 };
-            if (row.category === "Listed")
-              acc[row.Option_Id].listed = row.percentage;
-            if (row.category === "Unlisted")
-              acc[row.Option_Id].unlisted = row.percentage;
-            if (row.category === "Fixed Interest & Cash")
-              acc[row.Option_Id].cashAndBonds = row.percentage;
-            return acc;
-          }, {});
+        const allocationMap: Record<string, AllocationPie> = {};
+        for (const option of allOptions ?? []) {
+          allocationMap[option.id] = { listed: 0, unlisted: 0, cashAndBonds: 0 };
+          for (const row of option.allocations ?? []) {
+            if (row.category === "Listed") allocationMap[option.id].listed = row.percentage;
+            if (row.category === "Unlisted") allocationMap[option.id].unlisted = row.percentage;
+            if (row.category === "Fixed Interest & Cash") allocationMap[option.id].cashAndBonds = row.percentage;
+          }
+        }
 
         setOptionsData(
           mapped.map((o) => ({ ...o, allocation: allocationMap[o.id] })),
@@ -91,7 +91,7 @@ export function CompanyPopUp({ trigger, holding, balance }: CompanyPopUpProps) {
     return () => {
       cancelled = true;
     };
-  }, [open, Super_Fund, companies?.id]);
+  }, [open, Super_Fund, companies?.id, hasSingleDefault]);
 
   function handleSwitchOption(optionId: string, optionName: string) {
     if (loadingTimer.current) clearTimeout(loadingTimer.current);

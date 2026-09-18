@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useStateMachine } from "little-state-machine";
 import { updateForm } from "../WizardForm/formWizardStore";
 import { fetch_company_weightings } from "../../fe-api/company_weightings/company_weightings";
-import { fetch_option_allocations } from "@/app/fe-api/options/options";
+import { fetch_options } from "@/app/fe-api/options/options";
 import { ExposureCard } from "./ExposureCard";
 import { CrossOptionsList } from "./CrossOptionsList";
 import { CrossOption } from "../types/holdings";
@@ -35,21 +35,25 @@ export default function CompanyDetailsContent({
     const load = async () => {
       setLoadingOptions(true);
       try {
-        const data = await fetch_company_weightings(Super_Fund, companies.id);
+        const [data, allOptions] = await Promise.all([
+          fetch_company_weightings(Super_Fund, companies.id),
+          fetch_options(Super_Fund).catch(() => []),
+        ]);
         const mapped = (data.options ?? []).map((o: { id: string; option_name: string; Weighting_Percentage_Clean: number; as_of_date?: string }) => ({
           id: o.id,
           optionName: o.option_name,
           weightPercent: o.Weighting_Percentage_Clean,
           as_of_date: o.as_of_date,
         }));
-        const rows = await fetch_option_allocations(mapped.map((o: { id: string }) => o.id));
         const allocationMap: Record<string, AllocationPie> = {};
-        rows.forEach((row: { Option_Id: string; category: string; percentage: number }) => {
-          allocationMap[row.Option_Id] ??= { listed: 0, unlisted: 0, cashAndBonds: 0 };
-          if (row.category === "Listed") allocationMap[row.Option_Id].listed = row.percentage;
-          if (row.category === "Unlisted") allocationMap[row.Option_Id].unlisted = row.percentage;
-          if (row.category === "Fixed Interest & Cash") allocationMap[row.Option_Id].cashAndBonds = row.percentage;
-        });
+        for (const option of allOptions ?? []) {
+          allocationMap[option.id] = { listed: 0, unlisted: 0, cashAndBonds: 0 };
+          for (const row of option.allocations ?? []) {
+            if (row.category === "Listed") allocationMap[option.id].listed = row.percentage;
+            if (row.category === "Unlisted") allocationMap[option.id].unlisted = row.percentage;
+            if (row.category === "Fixed Interest & Cash") allocationMap[option.id].cashAndBonds = row.percentage;
+          }
+        }
         setOptionsData(mapped.map((o: { id: string }) => ({ ...o, allocation: allocationMap[o.id] })));
       } catch {
         setOptionsData([]);

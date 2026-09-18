@@ -91,10 +91,11 @@ export default function FhssWizard() {
       <div className="flex w-full items-center pt-28 pb-8 sm:pt-32 sm:pb-12">
         <ToolIntroCard
           tone="blue"
-          eyebrow="FHSS"
-          title="Use your super to help buy your first home."
-          description="Explore how the First Home Super Saver scheme could help you build a deposit."
+          eyebrow="First Home Super Saver"
+          title="Save through super or a savings account?"
+          description="Compare how the same contribution could build your first-home deposit."
           icon={<House responsiveSizing="h-full w-full" />}
+          disabled
           onStart={() => setStarted(true)}
         />
       </div>

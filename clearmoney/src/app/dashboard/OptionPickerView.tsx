@@ -12,8 +12,14 @@ type View = "main" | "fund" | "option";
 export type Option = {
   id: string;
   option_name: string;
+  option_name_abbreviation?: string | null;
   description?: string;
   allocation?: AllocationPie;
+  allocations?: {
+    Option_Id: string;
+    category: string;
+    percentage: number;
+  }[];
   as_of_date?: string;
 };
 

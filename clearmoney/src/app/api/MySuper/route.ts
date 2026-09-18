@@ -24,7 +24,7 @@ export async function GET(Request: NextRequest) {
 
   const { data: option, error: optionsError } = await supabase
     .from("options")
-    .select("id, option_name, as_of_date")
+    .select("id, option_name, option_name_abbreviation, as_of_date")
     .eq("super_fund_id", fund)
     .eq("is_mysuper_default", true)
     .single();
@@ -35,7 +35,18 @@ export async function GET(Request: NextRequest) {
     });
   }
 
-  return new Response(JSON.stringify({ option }), {
+  const { data: allocations, error: allocationsError } = await supabase
+    .from("option_asset_class_summary")
+    .select("Option_Id, category, percentage")
+    .eq("Option_Id", option.id);
+
+  if (allocationsError) {
+    return new Response(JSON.stringify({ error: "Database fetch failed" }), {
+      status: 500,
+    });
+  }
+
+  return new Response(JSON.stringify({ option: { ...option, allocations: allocations ?? [] } }), {
     status: 200,
     headers: { "Content-Type": "application/json" },
   });

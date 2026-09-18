@@ -7,14 +7,22 @@ import { useStateMachine } from "little-state-machine";
 import { updateForm } from "./formWizardStore";
 import {
   fetch_options,
-  fetch_option_allocations,
 } from "@/app/fe-api/options/options";
 import { lifecycleStrategies } from "../data/lifecycle";
 import AllocationPieComponent from "../Components/AllocationPie";
 import { AllocationPie } from "../types/holdings";
 import { AssetClassKey } from "./Step3a_DefaultOption";
 
-type FundOption = { id: string; option_name: string; as_of_date?: string };
+type FundOption = {
+  id: string;
+  option_name: string;
+  as_of_date?: string;
+  allocations?: {
+    Option_Id: string;
+    category: string;
+    percentage: number;
+  }[];
+};
 const normalize = (name: string) =>
   name.toLowerCase().replace(/[^a-z0-9]/g, "");
 
@@ -50,36 +58,23 @@ export default function Step3c_Lifecycle({
     let cancelled = false;
     fetch_options(state.Fund)
       .then((data: FundOption[]) => {
-        if (!cancelled) setOptions(data);
-        return fetch_option_allocations(data.map((option) => option.id))
-          .then(
-            (
-              rows: {
-                Option_Id: string;
-                category: string;
-                percentage: number;
-              }[],
-            ) => {
-              const next: Record<string, AllocationPie> = {};
-              for (const row of rows) {
-                const allocation = (next[row.Option_Id] ??= {
-                  listed: 0,
-                  unlisted: 0,
-                  cashAndBonds: 0,
-                });
-                if (row.category === "Listed")
-                  allocation.listed = row.percentage;
-                if (row.category === "Unlisted")
-                  allocation.unlisted = row.percentage;
-                if (row.category === "Fixed Interest & Cash")
-                  allocation.cashAndBonds = row.percentage;
-              }
-              if (!cancelled) setAllocations(next);
-            },
-          )
-          .catch(() => {
-            /* Option links still work without allocation charts. */
-          });
+        if (cancelled) return;
+        setOptions(data);
+        const next: Record<string, AllocationPie> = {};
+        for (const option of data) {
+          const allocation: AllocationPie = {
+            listed: 0,
+            unlisted: 0,
+            cashAndBonds: 0,
+          };
+          for (const row of option.allocations ?? []) {
+            if (row.category === "Listed") allocation.listed = row.percentage;
+            if (row.category === "Unlisted") allocation.unlisted = row.percentage;
+            if (row.category === "Fixed Interest & Cash") allocation.cashAndBonds = row.percentage;
+          }
+          next[option.id] = allocation;
+        }
+        setAllocations(next);
       })
       .catch(() => {
         if (!cancelled) setError(true);

@@ -8,7 +8,6 @@ import { useStateMachine } from "little-state-machine";
 import { updateForm } from "./formWizardStore";
 import AllocationPieComponent from "../Components/AllocationPie";
 import { AllocationPie } from "../types/holdings";
-import { fetch_option_allocations } from "@/app/fe-api/options/options";
 import { AssetClassKey } from "./Step3a_DefaultOption";
 
 type ResolvedOption = {
@@ -34,33 +33,41 @@ const Step3b_SelectOption = ({
   cashAndBonds: 0,
 });
 
-  React.useEffect(() => {
-    const load_option = async () => {
+React.useEffect(() => {
+  const loadOption = async () => {
+    try {
+      const data = await fetch_MySuper(state.Fund);
 
-      try {
-        const data = await fetch_MySuper(state.Fund);
-        updateOption(data.option);
-        const allocationRows = await fetch_option_allocations([data.option.id]);
-        const pie: AllocationPie = {
-          listed: 0,
-          unlisted: 0,
-          cashAndBonds: 0,
-        };
-        for (const row of allocationRows) {
-          if (row.category === "Listed") pie.listed = row.percentage;
-          if (row.category === "Unlisted") pie.unlisted = row.percentage;
-          if (row.category === "Fixed Interest & Cash")
-            pie.cashAndBonds = row.percentage;
+      updateOption(data.option);
+
+      const pie: AllocationPie = {
+        listed: 0,
+        unlisted: 0,
+        cashAndBonds: 0,
+      };
+
+      for (const row of data.option.allocations) {
+        if (row.category === "Listed") {
+          pie.listed = row.percentage;
         }
-        setAllocation(pie);
 
-      } finally {
-        setLoading(false);
+        if (row.category === "Unlisted") {
+          pie.unlisted = row.percentage;
+        }
+
+        if (row.category === "Fixed Interest & Cash") {
+          pie.cashAndBonds = row.percentage;
+        }
+      }
+
+      setAllocation(pie);
+    } finally {
+      setLoading(false);
     }
-    };
-    load_option();
+  };
 
-  }, [state.Fund]);
+  loadOption();
+}, [state.Fund]);
 
   function handleContinue() {
     if (!option) return;

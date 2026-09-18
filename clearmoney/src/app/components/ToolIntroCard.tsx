@@ -10,6 +10,8 @@ type ToolIntroCardProps = {
   icon: React.ReactNode;
   tone: "green" | "blue";
   onStart: () => void;
+  status?: string;
+  disabled?: boolean;
 };
 
 const tones = {
@@ -27,7 +29,7 @@ const tones = {
     card: "bg-[#245477]",
     circle: "bg-[#6EA4C2]/25",
     circleBorder: "border-[#B8D7E8]/20 bg-[#6EA4C2]/10",
-    icon: "bg-[#F59E0B]/20",
+    icon: "bg-[#FDE7A9]/35",
     eyebrow: "text-[#D7EAF4]",
     body: "text-[#DCECF4]",
     button: "bg-[#F59E0B] text-[#21465E] hover:bg-[#FBBF24] focus-visible:ring-[#F59E0B]",
@@ -35,7 +37,7 @@ const tones = {
   },
 } as const;
 
-export default function ToolIntroCard({ eyebrow, title, description, icon, tone, onStart }: ToolIntroCardProps) {
+export default function ToolIntroCard({ eyebrow, title, description, icon, tone, onStart, status, disabled = false }: ToolIntroCardProps) {
   const colors = tones[tone];
   return (
     <motion.section
@@ -51,11 +53,16 @@ export default function ToolIntroCard({ eyebrow, title, description, icon, tone,
         <div className={`mx-auto mb-5 flex h-24 w-24 items-center justify-center rounded-[1.75rem] p-1.5 sm:h-28 sm:w-28 ${colors.icon}`}>
           {icon}
         </div>
+        {status && (
+          <span className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-white/80">
+            {status}
+          </span>
+        )}
         <p className={`mb-5 text-sm font-semibold tracking-[0.16em] ${colors.eyebrow}`}>{eyebrow}</p>
         <h1 id={`${tone}-tool-intro`} className="mx-auto max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-[#F7FBFD] sm:text-5xl">{title}</h1>
         <p className={`mx-auto mt-5 max-w-xl text-base leading-relaxed sm:text-lg ${colors.body}`}>{description}</p>
-        <button type="button" onClick={onStart} className={`mt-8 inline-flex min-h-12 items-center justify-center gap-3 rounded-full px-8 py-3.5 text-base font-bold shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-4 ${colors.button} ${colors.offset}`}>
-          Get started <ArrowRight aria-hidden="true" className="h-4 w-4" />
+        <button type="button" onClick={onStart} disabled={disabled} className={`mt-8 inline-flex min-h-12 items-center justify-center gap-3 rounded-full px-8 py-3.5 text-base font-bold shadow-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-4 ${disabled ? "cursor-not-allowed border border-[#FDE7A9]/30 bg-[#FDE7A9]/20 text-[#FFF1B8]" : `hover:-translate-y-0.5 hover:shadow-md ${colors.button}`} ${colors.offset}`}>
+          {disabled ? "Coming soon" : status ?? "Get started"} {!disabled && <ArrowRight aria-hidden="true" className="h-4 w-4" />}
         </button>
       </div>
     </motion.section>

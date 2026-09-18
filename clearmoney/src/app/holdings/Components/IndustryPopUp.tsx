@@ -8,7 +8,7 @@ import { updateForm } from "../WizardForm/formWizardStore";
 import { IconChevronRight } from "@tabler/icons-react";
 import { NumericFormat } from "react-number-format";
 import { fetch_industry_weightings } from "../../fe-api/industry_weightings/industry_weightings";
-import { fetch_option_allocations } from "@/app/fe-api/options/options";
+import { fetch_options } from "@/app/fe-api/options/options";
 import { fetch_MySuper } from "@/app/fe-api/MySuper/MySuper";
 import { PopUpShell, SECTOR_COLORS, DEFAULT_SECTOR_STYLE } from "./PopUpShell";
 
@@ -21,6 +21,7 @@ import { PublicCompanyHolding } from "../types/holdings";
 import Loading from "./Loading";
 import CompanyDetailsContent from "./CompanyDetailsContent";
 import { IconArrowLeft } from "@tabler/icons-react";
+import { funds } from "../data/SuperFunds";
 
 type IndustryPopUpProps = {
   trigger: React.ReactNode;
@@ -58,6 +59,9 @@ export function IndustryPopUp({
   const userBalance = Number(balance) || 0;
   const superFund = holdings[0]?.Super_Fund ?? fund;
   const currentOptionId = holdings[0]?.Option_Id ?? optionId;
+  const hasSingleDefault = funds.some(
+    (item) => item.name === superFund && !item.mysuper_is_lifecycle,
+  );
 
   const isSwitching =
     switchingOption &&
@@ -97,9 +101,12 @@ export function IndustryPopUp({
     const load = async () => {
       setLoadingOptions(true);
       try {
-        const [data, defaultData] = await Promise.all([
+        const [data, allOptions, defaultData] = await Promise.all([
           fetch_industry_weightings(superFund, industry),
-          fetch_MySuper(superFund).catch(() => null),
+          fetch_options(superFund).catch(() => []),
+          hasSingleDefault
+            ? fetch_MySuper(superFund).catch(() => null)
+            : Promise.resolve(null),
         ]);
         if (cancelled) return;
         setDefaultOptionId(defaultData?.option?.id ?? null);
@@ -109,22 +116,15 @@ export function IndustryPopUp({
           weightPercent: o.Weighting_Percentage_Clean,
         }));
 
-        const allocationRows = await fetch_option_allocations(
-          mapped.map((o) => o.id),
-        ).catch(() => []);
-        if (cancelled) return;
-        const allocationMap: Record<string, AllocationPie> =
-          allocationRows.reduce((acc, row) => {
-            if (!acc[row.Option_Id])
-              acc[row.Option_Id] = { listed: 0, unlisted: 0, cashAndBonds: 0 };
-            if (row.category === "Listed")
-              acc[row.Option_Id].listed = row.percentage;
-            if (row.category === "Unlisted")
-              acc[row.Option_Id].unlisted = row.percentage;
-            if (row.category === "Fixed Interest & Cash")
-              acc[row.Option_Id].cashAndBonds = row.percentage;
-            return acc;
-          }, {});
+        const allocationMap: Record<string, AllocationPie> = {};
+        for (const option of allOptions ?? []) {
+          allocationMap[option.id] = { listed: 0, unlisted: 0, cashAndBonds: 0 };
+          for (const row of option.allocations ?? []) {
+            if (row.category === "Listed") allocationMap[option.id].listed = row.percentage;
+            if (row.category === "Unlisted") allocationMap[option.id].unlisted = row.percentage;
+            if (row.category === "Fixed Interest & Cash") allocationMap[option.id].cashAndBonds = row.percentage;
+          }
+        }
 
         setOptionsData(
           mapped.map((o) => ({ ...o, allocation: allocationMap[o.id] })),
@@ -140,7 +140,7 @@ export function IndustryPopUp({
     return () => {
       cancelled = true;
     };
-  }, [open, superFund, industry]);
+  }, [open, superFund, industry, hasSingleDefault]);
 
   function handleSwitchOption(optionId: string) {
     const selected = optionsData.find((o) => o.id === optionId);

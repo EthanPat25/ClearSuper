@@ -10,7 +10,6 @@ import FundPickerView from "./FundPickerView";
 import MainSettingsView from "./MainSettingsView";
 import OptionPickerView, { Option } from "./OptionPickerView";
 import {
-  fetch_option_allocations,
   fetch_options,
 } from "../fe-api/options/options";
 import { AllocationPie } from "../holdings/types/holdings";
@@ -60,24 +59,21 @@ const CurrentOptionPopup = () => {
           a.option_name.localeCompare(b.option_name),
         );
 
-        const ids = sorted.map((o) => o.id);
-        const allocationRows = await fetch_option_allocations(ids);
-
         const allocationMap: Record<string, AllocationPie> = {};
-        for (const row of allocationRows) {
-          if (!allocationMap[row.Option_Id]) {
-            allocationMap[row.Option_Id] = {
+        for (const option of sorted) {
+          allocationMap[option.id] = {
               listed: 0,
               unlisted: 0,
               cashAndBonds: 0,
-            };
+          };
+          for (const row of option.allocations ?? []) {
+            if (row.category === "Listed")
+              allocationMap[option.id].listed = row.percentage;
+            if (row.category === "Unlisted")
+              allocationMap[option.id].unlisted = row.percentage;
+            if (row.category === "Fixed Interest & Cash")
+              allocationMap[option.id].cashAndBonds = row.percentage;
           }
-          if (row.category === "Listed")
-            allocationMap[row.Option_Id].listed = row.percentage;
-          if (row.category === "Unlisted")
-            allocationMap[row.Option_Id].unlisted = row.percentage;
-          if (row.category === "Fixed Interest & Cash")
-            allocationMap[row.Option_Id].cashAndBonds = row.percentage;
         }
         setOptions(
           sorted.map((o) => ({ ...o, allocation: allocationMap[o.id] })),
