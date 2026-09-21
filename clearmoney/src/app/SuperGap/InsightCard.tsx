@@ -7,7 +7,7 @@ const InsightCard = () => {
       <p className="text-[0.75rem]">
         A model, not a prediction or financial advice. Speak to a licensed
         adviser before making decisions.{" "}
-        <Link href="/about" className="underline hover:text-slate-600">
+        <Link href="/about#disclaimer" className="underline hover:text-slate-600">
           Read disclaimer
         </Link>
       </p>

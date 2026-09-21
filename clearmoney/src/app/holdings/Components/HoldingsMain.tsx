@@ -221,7 +221,7 @@ const HoldingsMain: React.FC<HoldingsMainProps> = ({
               the fund holds the same weights at reporting time and are
               estimates only.{" "}
               <Link
-                href="/about"
+                href="/about#disclaimer"
                 className="underline font-medium hover:text-slate-900 transition-colors"
               >
                 <strong>Read full disclaimer</strong>

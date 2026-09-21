@@ -12,6 +12,7 @@ type ToolIntroCardProps = {
   onStart: () => void;
   status?: string;
   disabled?: boolean;
+  actionIcon?: React.ReactNode;
 };
 
 const tones = {
@@ -37,7 +38,7 @@ const tones = {
   },
 } as const;
 
-export default function ToolIntroCard({ eyebrow, title, description, icon, tone, onStart, status, disabled = false }: ToolIntroCardProps) {
+export default function ToolIntroCard({ eyebrow, title, description, icon, tone, onStart, status, disabled = false, actionIcon }: ToolIntroCardProps) {
   const colors = tones[tone];
   return (
     <motion.section
@@ -62,7 +63,7 @@ export default function ToolIntroCard({ eyebrow, title, description, icon, tone,
         <h1 id={`${tone}-tool-intro`} className="mx-auto max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-[#F7FBFD] sm:text-5xl">{title}</h1>
         <p className={`mx-auto mt-5 max-w-xl text-base leading-relaxed sm:text-lg ${colors.body}`}>{description}</p>
         <button type="button" onClick={onStart} disabled={disabled} className={`mt-8 inline-flex min-h-12 items-center justify-center gap-3 rounded-full px-8 py-3.5 text-base font-bold shadow-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-4 ${disabled ? "cursor-not-allowed border border-[#FDE7A9]/30 bg-[#FDE7A9]/20 text-[#FFF1B8]" : `hover:-translate-y-0.5 hover:shadow-md ${colors.button}`} ${colors.offset}`}>
-          {disabled ? "Coming soon" : status ?? "Get started"} {!disabled && <ArrowRight aria-hidden="true" className="h-4 w-4" />}
+          {disabled ? "Coming soon" : status ?? "Get started"} {!disabled && (actionIcon ?? <ArrowRight aria-hidden="true" className="h-4 w-4" />)}
         </button>
       </div>
     </motion.section>

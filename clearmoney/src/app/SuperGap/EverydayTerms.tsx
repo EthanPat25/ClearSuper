@@ -44,12 +44,44 @@ type EverydayTermsProps = {
   showPriceContext?: boolean;
 };
 
-const EverydayTerms = ({ gap, gapReal, futureDollars = false, showPriceContext = true }: EverydayTermsProps) => {
+const EverydayTerms = ({
+  gap,
+  gapReal,
+  futureDollars = false,
+  showPriceContext = true,
+}: EverydayTermsProps) => {
   const isExample = !gap || gap <= 0;
   const amount = isExample ? DEFAULT_EXAMPLE_GAP : gap;
   // Item prices are in today's dollars, so use the real gap for purchasing power.
   const purchasingPower = isExample ? DEFAULT_EXAMPLE_GAP : (gapReal ?? amount);
-  const [flippedCards, setFlippedCards] = React.useState<Record<string, boolean>>({});
+  const [flippedCards, setFlippedCards] = React.useState<
+    Record<string, boolean>
+  >({});
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
+    const updateIsMobile = () => setIsMobile(mediaQuery.matches);
+
+    updateIsMobile();
+    mediaQuery.addEventListener("change", updateIsMobile);
+    return () => mediaQuery.removeEventListener("change", updateIsMobile);
+  }, []);
+
+  const parentVariant = {
+    hidden: { scale: 0.9, opacity: 0 },
+    rest: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.4, ease: "easeOut" as const },
+    },
+    ...(!isMobile && {
+      active: {
+        y: -6,
+        transition: { duration: 0.4, ease: "easeOut" as const },
+      },
+    }),
+  };
 
   return (
     <div className="w-full">
@@ -58,9 +90,7 @@ const EverydayTerms = ({ gap, gapReal, futureDollars = false, showPriceContext =
         <div className="mb-6 text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-950">
             What{" "}
-            <span className="font-numeric tabular-nums">
-              {money(amount)}
-            </span>{" "}
+            <span className="font-numeric tabular-nums">{money(amount)}</span>{" "}
             could buy
           </h2>
           {!isExample && showPriceContext && (
@@ -89,24 +119,31 @@ const EverydayTerms = ({ gap, gapReal, futureDollars = false, showPriceContext =
             return (
               <motion.div
                 key={singular}
-                initial={{ opacity: 0, y: 16, scale: 0.96 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                whileHover={!isMobile ? "active" : undefined}
+                initial="hidden"
+                whileInView="rest"
                 viewport={{ once: true, margin: "-40px" }}
+                variants={parentVariant}
                 transition={{
                   delay: i * 0.06,
                   duration: 0.35,
                 }}
-                className="relative min-h-[11rem] [perspective:1000px]"
+                className="relative min-h-[11rem] cursor-pointer select-none [perspective:1000px]"
               >
                 <motion.div
                   animate={{ rotateY: flipped ? 180 : 0 }}
                   transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                   className="relative min-h-[11rem] w-full [transform-style:preserve-3d]"
                 >
-                  <div className="absolute inset-0 flex min-h-[11rem] flex-col items-center justify-center rounded-3xl bg-white p-5 text-center shadow-md [backface-visibility:hidden]">
+                  <div className="absolute inset-0 flex min-h-[11rem] flex-col items-center justify-center rounded-3xl bg-white p-5 text-center shadow-md transition-shadow hover:shadow-xl [backface-visibility:hidden]">
                     <Info
                       className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center"
-                      onClick={() => setFlippedCards((current) => ({ ...current, [singular]: true }))}
+                      onClick={() =>
+                        setFlippedCards((current) => ({
+                          ...current,
+                          [singular]: true,
+                        }))
+                      }
                       ariaLabel={`Show how the ${label} comparison is calculated`}
                     />
 
@@ -125,12 +162,19 @@ const EverydayTerms = ({ gap, gapReal, futureDollars = false, showPriceContext =
                   <div className="absolute inset-0 flex min-h-[11rem] flex-col rounded-3xl bg-slate-900 p-5 text-left text-white shadow-md [backface-visibility:hidden] [transform:rotateY(180deg)]">
                     <button
                       type="button"
-                      onClick={() => setFlippedCards((current) => ({ ...current, [singular]: false }))}
+                      onClick={() =>
+                        setFlippedCards((current) => ({
+                          ...current,
+                          [singular]: false,
+                        }))
+                      }
                       className="mb-3 self-end text-xs font-semibold text-white/70 transition hover:text-white"
                     >
                       Back
                     </button>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-white/70">Assumed price</p>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-white/70">
+                      Assumed price
+                    </p>
                     <p className="mt-3 text-2xl font-semibold tabular-nums text-white">
                       {money(price)}
                     </p>

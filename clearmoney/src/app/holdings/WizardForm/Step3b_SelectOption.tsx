@@ -124,7 +124,7 @@ React.useEffect(() => {
           We can only preselect your fund’s MySuper default. Check your account to confirm your actual investment option. 
           {" "}
             <Link
-              href="/about"
+              href="/about#disclaimer"
               className="underline font-medium hover:text-slate-900 transition-colors"
             >
               Read full disclaimer

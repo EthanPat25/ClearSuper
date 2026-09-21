@@ -69,7 +69,7 @@ const AllocationKey = () => (
     </div>
     <p className="text-center text-[0.65rem] text-slate-400 px-8 pb-4">
        Asset breakdown is an estimate as of the reporting date.{" "}
-      <a href="/about" className="underline hover:text-slate-600">
+      <a href="/about#disclaimer" className="underline hover:text-slate-600">
         Read full disclaimer
       </a>
     </p>

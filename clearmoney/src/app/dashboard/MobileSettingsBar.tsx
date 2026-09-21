@@ -6,6 +6,7 @@ import {
   Drawer,
   DrawerClose,
   DrawerContentTop,
+  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { useStateMachine } from "little-state-machine";
@@ -16,9 +17,7 @@ import { ChevronDown } from "lucide-react";
 import FundPickerView from "./FundPickerView";
 import MainSettingsView from "./MainSettingsView";
 import OptionPickerView, { Option } from "./OptionPickerView";
-import {
-  fetch_options,
-} from "../fe-api/options/options";
+import { fetch_options } from "../fe-api/options/options";
 import { AllocationPie } from "../holdings/types/holdings";
 import { funds } from "../holdings/data/SuperFunds";
 
@@ -130,6 +129,7 @@ const MobileSettingsBar = () => {
       </DrawerTrigger>
 
       <DrawerContentTop className="p-0 gap-0 overflow-hidden rounded-b-2xl bg-slate-100">
+        <DrawerTitle className="sr-only">Super fund settings</DrawerTitle>
         <DrawerClose
           className="absolute top-4 right-4 z-50 p-1.5 rounded-lg text-rose-600 bg-rose-100 hover:bg-rose-200 transition-colors"
           aria-label="Close"
@@ -137,41 +137,41 @@ const MobileSettingsBar = () => {
           <IconX size={18} />
         </DrawerClose>
         <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={view}
-          initial={{ opacity: 0, x: 8 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -8 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-        >
-        {view === "main" && (
-          <MainSettingsView
-            setView={setView}
-            state={state}
-            actions={actions}
-            currentFund={currentFund}
-            currentOption={currentOption}
-            shakeTrigger={shakeTrigger}
-            fundDomain={fundDomain}
-            allocation={currentAllocation}
-          />
-        )}
-        {view === "fund" && (
-          <FundPickerView
-            setView={setView}
-            actions={actions}
-            currentFund={currentFund}
-          />
-        )}
-        {view === "option" && (
-          <OptionPickerView
-            setView={setView}
-            currentOption={currentOption}
-            currentFund={currentFund}
-            options={options}
-          />
-        )}
-        </motion.div>
+          <motion.div
+            key={view}
+            initial={{ opacity: 0, x: 8 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -8 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+          >
+            {view === "main" && (
+              <MainSettingsView
+                setView={setView}
+                state={state}
+                actions={actions}
+                currentFund={currentFund}
+                currentOption={currentOption}
+                shakeTrigger={shakeTrigger}
+                fundDomain={fundDomain}
+                allocation={currentAllocation}
+              />
+            )}
+            {view === "fund" && (
+              <FundPickerView
+                setView={setView}
+                actions={actions}
+                currentFund={currentFund}
+              />
+            )}
+            {view === "option" && (
+              <OptionPickerView
+                setView={setView}
+                currentOption={currentOption}
+                currentFund={currentFund}
+                options={options}
+              />
+            )}
+          </motion.div>
         </AnimatePresence>
       </DrawerContentTop>
     </Drawer>

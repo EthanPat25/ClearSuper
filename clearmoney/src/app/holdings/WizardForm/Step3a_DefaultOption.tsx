@@ -250,7 +250,7 @@ React.useEffect(() => {
       Charts are ClearSuper’s interpretation of published fund holdings, not fund-produced or endorsed. Figures are proportional estimates at the time of reporting, rounded and simplified for clarity. Check your fund’s official data for exact figures. Accumulation options only.
             <br />
             <a
-              href="/about"
+              href="/about#disclaimer"
               className="inline-flex items-center font-bold gap-0.5 underline hover:text-slate-600 transition-colors"
             >
               Read full disclaimer.

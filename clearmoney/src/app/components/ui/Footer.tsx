@@ -131,10 +131,14 @@ export function Footer() {
             </h4>
             <div className="space-y-3 text-sm">
               <div className="text-emerald-100/90 hover:text-white cursor-pointer transition-colors">
-                View Your Fund
+                <Link prefetch={false} href="/holdings">
+                  View Your Fund
+                </Link>
               </div>
               <div className="text-emerald-100/90 hover:text-white cursor-pointer transition-colors">
-                Super Tools
+                <Link prefetch={false} href="/SuperGap">
+                  Super Tools
+                </Link>
               </div>
               <div className="text-emerald-100/90 hover:text-white cursor-pointer transition-colors">
                 <Link prefetch={false} href="/about">
@@ -204,7 +208,7 @@ export function Footer() {
               information is for educational purposes only. Always consult with
               licensed financial professionals before making superannuation
               decisions. Read our{" "}
-              <Link className="font-bold underline" href={"/about"}>
+              <Link className="font-bold underline" href={"/about#disclaimer"}>
                 Full Disclaimer.
               </Link>
             </p>

@@ -44,6 +44,15 @@ export default function Page() {
     actions.updateForm({ currentStep: "StepOne" });
   }, []);
 
+  React.useEffect(() => {
+    if (step === "StepFour") {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    }
+  }, [step]);
+
   return (
     <div className="w-full flex flex-col">
       {step !== "StepFour" && (
@@ -112,18 +121,6 @@ export default function Page() {
         {step === "StepFour" && (
           <div className="w-full flex flex-col items-center gap-4 px-0 pt-14">
             <HoldingsResultsLoader ref={actionButton} />
-            {prevStep === "StepThree_Lifecycle" && state.option_name && (
-              <div className="mx-4 rounded-2xl bg-teal-50 p-4 text-center text-sm text-teal-950">
-                <p>Exploring {state.option_name} on its own with your example balance.</p>
-                <button
-                  type="button"
-                  onClick={() => updateStep("StepThree_Lifecycle")}
-                  className="mt-2 font-semibold underline underline-offset-4"
-                >
-                  Explore another lifecycle option
-                </button>
-              </div>
-            )}
           </div>
         )}
       </div>
