@@ -5,6 +5,7 @@ import type { StepProps } from "./types";
 import ChipGroup from "./ChipGroup";
 import { useController, useForm } from "react-hook-form";
 import { PRESERVATION_AGE } from "./model";
+import { retirementAgeValidationError } from "../Forumula2";
 
 export default function RetirementStep({
   values,
@@ -20,15 +21,15 @@ export default function RetirementStep({
     name: "retireAge",
     control,
     rules: {
-      min: {
-        value: PRESERVATION_AGE,
-        message: `Retirement age must be at least ${PRESERVATION_AGE} (preservation age).`,
-      },
+      validate: (value) =>
+        retirementAgeValidationError(values.currentAge, value) ?? true,
     },
   });
   const changeRetireAge = (value: number) => {
     field.onChange(value);
-    if (value >= PRESERVATION_AGE) onChange({ retireAge: value });
+    if (!retirementAgeValidationError(values.currentAge, value)) {
+      onChange({ retireAge: value });
+    }
   };
   return (
     <StepFrame
@@ -42,7 +43,7 @@ export default function RetirementStep({
       hideFrameBack
     >
       <ChipGroup
-        presets={[60, 65, 67, 70]}
+        presets={[PRESERVATION_AGE, 65, 67, 70]}
         value={field.value}
         onValue={changeRetireAge}
         columns={2}

@@ -206,3 +206,131 @@ test("future-dollar results correctly inflate today's-dollar results", () => {
 
   assert.ok(Math.abs(result.gapNominal - expectedFutureGap) < 0.01);
 });
+
+const contributionOnlyInputs = {
+  currentAge: 30,
+  superBalance: 0,
+  annualAdminFee: 0,
+  investmentFeePct: 0,
+  investmentReturnPct: 0,
+  inflationPct: 0,
+  superGuaranteePct: 12,
+};
+
+test("leaves employer contributions below the concessional cap unchanged", () => {
+  const result = calculate({
+    ...contributionOnlyInputs,
+    currentAge: 59,
+    retireAge: 60,
+    salary: 75_000,
+    projectionStartDate: "2026-07-01",
+  });
+
+  assert.equal(result.baselineFinalReal, 7_650);
+});
+
+test("caps 2026-27 employer contributions at the exact threshold", () => {
+  const base = {
+    ...contributionOnlyInputs,
+    currentAge: 59,
+    retireAge: 60,
+    projectionStartDate: "2026-07-01",
+  };
+  const justBelow = calculate({ ...base, salary: 270_833 });
+  const atThreshold = calculate({ ...base, salary: 32_500 / 0.12 });
+  const justAbove = calculate({ ...base, salary: 270_834 });
+
+  assert.ok(Math.abs(justBelow.baselineFinalReal - 27_624.966) < 0.000001);
+  assert.ok(Math.abs(atThreshold.baselineFinalReal - 27_625) < 0.000001);
+  assert.ok(Math.abs(justAbove.baselineFinalReal - 27_625) < 0.000001);
+});
+
+test("caps a $300,000 salary before contributions tax", () => {
+  const result = calculate({
+    ...contributionOnlyInputs,
+    currentAge: 59,
+    retireAge: 60,
+    salary: 300_000,
+    projectionStartDate: "2026-07-01",
+  });
+
+  assert.equal(result.baselineFinalReal, 27_625);
+});
+
+test("uses the known 2025-26 concessional cap", () => {
+  const result = calculate({
+    ...contributionOnlyInputs,
+    currentAge: 59,
+    retireAge: 60,
+    salary: 300_000,
+    projectionStartDate: "2025-07-01",
+  });
+
+  assert.equal(result.baselineFinalReal, 25_500);
+});
+
+test("projects future concessional-cap increases in $2,500 wage-indexed steps", () => {
+  const result = calculate({
+    ...contributionOnlyInputs,
+    currentAge: 56,
+    retireAge: 60,
+    salary: 300_000,
+    projectionStartDate: "2026-07-01",
+  });
+
+  assert.deepEqual(
+    result.series.map((point) => point.baseline),
+    [0, 27_625, 55_250, 82_875, 112_625],
+  );
+});
+
+const validRetirementInputs = {
+  currentAge: 30,
+  retireAge: 67,
+  salary: 75_000,
+  superBalance: 50_000,
+};
+
+test("rejects a retirement age below the current age", () => {
+  assert.throws(
+    () => calculate({ ...validRetirementInputs, currentAge: 65, retireAge: 64 }),
+    /after your current age/,
+  );
+});
+
+test("rejects a retirement age equal to the current age", () => {
+  assert.throws(
+    () => calculate({ ...validRetirementInputs, currentAge: 65, retireAge: 65 }),
+    /after your current age/,
+  );
+});
+
+test("rejects a retirement age over 75", () => {
+  assert.throws(
+    () => calculate({ ...validRetirementInputs, retireAge: 76 }),
+    /between 60 and 75/,
+  );
+});
+
+test("accepts the age-60 retirement boundary", () => {
+  assert.doesNotThrow(() =>
+    calculate({ ...validRetirementInputs, retireAge: 60 }),
+  );
+});
+
+test("accepts the age-75 retirement boundary", () => {
+  assert.doesNotThrow(() =>
+    calculate({ ...validRetirementInputs, currentAge: 70, retireAge: 75 }),
+  );
+});
+
+test("accepts normal valid retirement ages", () => {
+  assert.doesNotThrow(() => calculate(validRetirementInputs));
+});
+
+test("rejects a current age with no supported retirement age remaining", () => {
+  assert.throws(
+    () => calculate({ ...validRetirementInputs, currentAge: 75, retireAge: 75 }),
+    /current age must be below 75/,
+  );
+});

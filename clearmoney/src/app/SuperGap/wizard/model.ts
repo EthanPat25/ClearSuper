@@ -1,6 +1,11 @@
-import { calculateSuperGap } from "../Forumula2";
+import {
+  calculateSuperGap,
+  MAX_RETIREMENT_AGE,
+  MIN_RETIREMENT_AGE,
+} from "../Forumula2";
 
-export const PRESERVATION_AGE = 60;
+export const PRESERVATION_AGE = MIN_RETIREMENT_AGE;
+export { MAX_RETIREMENT_AGE };
 
 export type WizardValues = {
   currentAge: number;

@@ -2,7 +2,12 @@
 
 import BreakTimeline from "./BreakTimeline";
 import SliderRow from "./SliderRow";
-import { money, PRESERVATION_AGE, type WizardValues } from "./model";
+import {
+  MAX_RETIREMENT_AGE,
+  money,
+  PRESERVATION_AGE,
+  type WizardValues,
+} from "./model";
 
 export default function AdjustPanel({
   currentAge,
@@ -31,14 +36,19 @@ export default function AdjustPanel({
           min={18}
           max={70}
           step={1}
-          onChange={(v) => onUpdate({ currentAge: v })}
+          onChange={(v) =>
+            onUpdate({
+              currentAge: v,
+              retireAge: Math.max(retireAge, v + 1),
+            })
+          }
         />
         <SliderRow
           label="Retirement age"
           display={`${retireAge}`}
           value={retireAge}
-          min={PRESERVATION_AGE}
-          max={75}
+          min={Math.max(PRESERVATION_AGE, currentAge + 1)}
+          max={MAX_RETIREMENT_AGE}
           step={1}
           onChange={(v) => onUpdate({ retireAge: v })}
         />

@@ -81,6 +81,7 @@ type OptionPickerViewProps = {
   currentOption: string;
   currentFund: string;
   options: Option[];
+  optionsLoadedForFund: string | null;
 };
 
 const OptionPickerView = ({
@@ -88,6 +89,7 @@ const OptionPickerView = ({
   currentOption,
   currentFund,
   options,
+  optionsLoadedForFund,
 }: OptionPickerViewProps) => {
   const [search, setSearch] = useState("");
   const [defaultOptionId, setDefaultOptionId] = useState<string | null>(null);
@@ -165,7 +167,8 @@ const OptionPickerView = ({
         className="overflow-y-auto max-h-[27rem] bg-slate-100 flex flex-col gap-3 py-4 px-4"
       >
 
-        {defaultLoadedForFund !== currentFund ? (
+        {defaultLoadedForFund !== currentFund ||
+        optionsLoadedForFund !== currentFund ? (
           <div className="flex min-h-48 items-center justify-center">
             <div className="h-5 w-5 animate-spin rounded-full border-2 border-slate-300 border-t-slate-600" />
           </div>

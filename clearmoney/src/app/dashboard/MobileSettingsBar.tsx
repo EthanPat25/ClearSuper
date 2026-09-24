@@ -29,6 +29,9 @@ const MobileSettingsBar = () => {
   const [view, setView] = useState<View>("main");
   const [mounted, setMounted] = useState(false);
   const [options, setOptions] = React.useState<Array<Option>>([]);
+  const [optionsLoadedForFund, setOptionsLoadedForFund] = React.useState<
+    string | null
+  >(null);
   const [shakeTrigger, setShakeTrigger] = useState(0);
   const [fundDomain, updateFundDomain] = React.useState<any>();
 
@@ -54,14 +57,24 @@ const MobileSettingsBar = () => {
   }, []);
 
   React.useEffect(() => {
-    if (!state.Fund) return;
+    if (!state.Fund) {
+      setOptions([]);
+      setOptionsLoadedForFund(null);
+      return;
+    }
+
+    let cancelled = false;
+    const requestedFund = state.Fund;
 
     const fund = funds.find((element) => element.name === currentFund);
     updateFundDomain(fund?.domain);
 
+    setOptions([]);
+    setOptionsLoadedForFund(null);
+
     const loadOptions = async () => {
       try {
-        const data = await fetch_options(state.Fund);
+        const data = await fetch_options(requestedFund);
         const sorted = data.sort((a, b) =>
           a.option_name.localeCompare(b.option_name),
         );
@@ -81,14 +94,23 @@ const MobileSettingsBar = () => {
               allocationMap[option.id].cashAndBonds = row.percentage;
           }
         }
+        if (cancelled) return;
+
         setOptions(
           sorted.map((o) => ({ ...o, allocation: allocationMap[o.id] })),
         );
+        setOptionsLoadedForFund(requestedFund);
       } catch {
+        if (cancelled) return;
         setOptions([]);
+        setOptionsLoadedForFund(requestedFund);
       }
     };
     loadOptions();
+
+    return () => {
+      cancelled = true;
+    };
   }, [state.Fund]);
 
   if (!mounted) return null;
@@ -169,6 +191,7 @@ const MobileSettingsBar = () => {
                 currentOption={currentOption}
                 currentFund={currentFund}
                 options={options}
+                optionsLoadedForFund={optionsLoadedForFund}
               />
             )}
           </motion.div>
