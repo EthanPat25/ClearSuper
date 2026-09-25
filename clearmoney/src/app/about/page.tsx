@@ -273,7 +273,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="bg-white py-32 ">
+      <div id="about" className="bg-white py-32 ">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col items-center text-center mb-8">
             <span className="inline-block bg-emerald-50 text-emerald-600 border-4 border-emerald-300  text-base font-bold px-3 py-2 rounded-[1rem] shadow-[1rem] mb-6">
