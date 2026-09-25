@@ -24,6 +24,8 @@ const Step1_SelectFund = ({ updateStep, ref }: Step1_SelectFundProps) => {
   const [selectedFund, setSelectedFund] = React.useState<string | null>(null);
   const [requestOpen, setRequestOpen] = React.useState(false);
   const [requestSubmitted, setRequestSubmitted] = React.useState(false);
+  const [requestSubmitting, setRequestSubmitting] = React.useState(false);
+  const [requestError, setRequestError] = React.useState("");
   const [requestedFund, setRequestedFund] = React.useState("");
   const [requestedOption, setRequestedOption] = React.useState("");
   const { actions } = useStateMachine({ actions: { updateForm } });
@@ -91,6 +93,8 @@ const Step1_SelectFund = ({ updateStep, ref }: Step1_SelectFundProps) => {
               setRequestOpen(open);
               if (!open) {
                 setRequestSubmitted(false);
+                setRequestSubmitting(false);
+                setRequestError("");
                 setRequestedFund("");
                 setRequestedOption("");
               }
@@ -122,12 +126,35 @@ const Step1_SelectFund = ({ updateStep, ref }: Step1_SelectFundProps) => {
               </DialogHeader>
               {requestSubmitted ? (
                 <div className="space-y-4 bg-slate-100 p-4">
-                  <p className="font-semibold text-slate-900">Thanks, we&apos;ve received your request.</p>
-                  <p className="text-sm leading-relaxed text-slate-600">We&apos;ll review the fund details and let you know when it becomes available.</p>
+                  <p className="font-semibold text-slate-900">Request submitted</p>
+                  <p className="text-sm leading-relaxed text-slate-600">Thanks, your request has been received.</p>
                   <button type="button" onClick={() => setRequestOpen(false)} className="w-full rounded-xl bg-black px-4 py-3 text-sm font-bold text-white transition hover:bg-slate-800">Close</button>
                 </div>
               ) : (
-                <form onSubmit={(event) => { event.preventDefault(); setRequestSubmitted(true); }} className="space-y-4 bg-slate-100 p-4">
+                <form
+                  onSubmit={async (event) => {
+                    event.preventDefault();
+                    setRequestSubmitting(true);
+                    setRequestError("");
+                    try {
+                      const response = await fetch("/api/fund-requests", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                          fundName: requestedFund,
+                          optionName: requestedOption,
+                        }),
+                      });
+                      if (!response.ok) throw new Error("Request failed");
+                      setRequestSubmitted(true);
+                    } catch {
+                      setRequestError("We couldn't submit that request. Please try again.");
+                    } finally {
+                      setRequestSubmitting(false);
+                    }
+                  }}
+                  className="space-y-4 bg-slate-100 p-4"
+                >
                   <label className="block space-y-2">
                     <span className="text-sm font-bold text-slate-800">Fund name</span>
                     <input required value={requestedFund} onChange={(event) => setRequestedFund(event.target.value)} placeholder="e.g. AustralianSuper" className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" />
@@ -137,7 +164,10 @@ const Step1_SelectFund = ({ updateStep, ref }: Step1_SelectFundProps) => {
                     <input value={requestedOption} onChange={(event) => setRequestedOption(event.target.value)} placeholder="e.g. Balanced" className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" />
                   </label>
                   <DialogFooter>
-                    <button type="submit" className="w-full rounded-xl bg-black px-4 py-3 text-sm font-bold text-white transition hover:bg-slate-800">Send request</button>
+                    {requestError && <p className="w-full text-sm font-semibold text-rose-600">{requestError}</p>}
+                    <button disabled={requestSubmitting} type="submit" className="w-full rounded-xl bg-black px-4 py-3 text-sm font-bold text-white transition hover:bg-slate-800 disabled:cursor-wait disabled:opacity-60">
+                      {requestSubmitting ? "Sending…" : "Send request"}
+                    </button>
                   </DialogFooter>
                 </form>
               )}
