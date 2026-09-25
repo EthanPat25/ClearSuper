@@ -8,7 +8,6 @@ import { House } from "../AnimationComponents/House";
 import { Bar } from "../AnimationComponents/Bar";
 import { Phone } from "./Iphone";
 import { Tech } from "../AnimationComponents/Tech";
-import { Money } from "../AnimationComponents/Money";
 import { useRouter } from "next/navigation";
 import { Mining } from "../AnimationComponents/Mining";
 import { Search } from "../AnimationComponents/Search";
@@ -134,15 +133,15 @@ export default function SuperContributions() {
                 className="absolute -right-3 sm:-right-8 lg:-right-20 bottom-32 lg:bottom-40 z-30 scale-75 lg:scale-100"
               >
                 <div className="bg-white py-2 px-3 sm:py-3 sm:px-4 rounded-2xl shadow-xl shadow-teal-900/20 border border-slate-100 flex items-center gap-3 transform rotate-3 hover:rotate-0 transition-transform">
-                  <div className="bg-red-50 p-2 rounded-lg text-red-500">
-                    <Money responsiveSizing="h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem]" />
+                  <div className="bg-teal-50 p-2 rounded-lg text-teal-600">
+                    <Bar responsiveSizing="h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem]" />
                   </div>
                   <div className="text-left">
                     <p className="text-[8px] sm:text-[9px] text-slate-400 font-bold uppercase">
-                      Fees
+                      Fund option
                     </p>
                     <p className="text-slate-800 font-bold text-[10px] sm:text-xs">
-                      $450 / yr
+                      Balanced
                     </p>
                   </div>
                 </div>
