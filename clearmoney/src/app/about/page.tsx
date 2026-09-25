@@ -249,9 +249,9 @@ export default function AboutPage() {
               />
               {emailCopied && <motion.span
                 role="status"
-                initial={{ opacity: 0, y: 4, scale: 0.92 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.18, ease: "easeOut" }}
+                initial={{ opacity: 0, y: 4, scale: 0.86 }}
+                animate={{ opacity: 1, y: 0, scale: [0.86, 1.08, 0.97, 1] }}
+                transition={{ duration: 0.38, ease: "easeOut" }}
                 className="absolute left-[4.5rem] top-full z-10 mt-2 whitespace-nowrap rounded-lg bg-slate-900 px-2 py-1 text-xs font-semibold text-white"
               >
                 Email copied
