@@ -111,6 +111,14 @@ function AccordionItem({ title, body }) {
 }
 
 export default function AboutPage() {
+  const [emailCopied, setEmailCopied] = React.useState(false);
+
+  const copyEmail = async () => {
+    await navigator.clipboard.writeText("ethanpato25@gmail.com");
+    setEmailCopied(true);
+    window.setTimeout(() => setEmailCopied(false), 1800);
+  };
+
   return (
     <div className="w-screen min-h-screen flex flex-col bg-slate-50 font-sans overflow-x-hidden">
       <div className="bg-gradient-to-tr from-emerald-100 to-emerald-300 text-white relative pt-32 pb-32 overflow-visible min-h-[calc(100svh-4rem)] flex justify-center items-center">
@@ -220,7 +228,7 @@ export default function AboutPage() {
               </p>
               <p>ClearSuper is my attempt at that.</p>
 
-              <div className="mt-2 flex items-center gap-6">
+              <div className="relative mt-2 flex items-center gap-6">
 
                 
 
@@ -232,6 +240,14 @@ export default function AboutPage() {
               >
                 <motion.svg whileHover={{scale: 1.05}}  className="h-[3rem] hover:cursor-pointer" viewBox="0 0 176 176" xmlns="http://www.w3.org/2000/svg" id="fi_3938044"><g id="Layer_2" data-name="Layer 2"><g id="_10.linkedin" data-name="10.linkedin"><path id="background" d="m144.52 173a532.59 532.59 0 0 1 -113 0 32.07 32.07 0 0 1 -28.52-28.48 532.59 532.59 0 0 1 0-113 32.07 32.07 0 0 1 28.48-28.52 532.59 532.59 0 0 1 113 0 32.07 32.07 0 0 1 28.52 28.48 532.59 532.59 0 0 1 0 113 32.07 32.07 0 0 1 -28.48 28.52z" fill="#0b66c3"></path><g id="icon" fill="#fff"><path d="m63.4 48a15 15 0 1 1 -15-15 15 15 0 0 1 15 15z"></path><path d="m60 73v66.27a3.71 3.71 0 0 1 -3.71 3.73h-15.81a3.71 3.71 0 0 1 -3.72-3.72v-66.28a3.72 3.72 0 0 1 3.72-3.72h15.81a3.71 3.71 0 0 1 3.71 3.72z"></path><path d="m142.64 107.5v32.08a3.41 3.41 0 0 1 -3.42 3.42h-17a3.41 3.41 0 0 1 -3.42-3.42v-31.09c0-4.64 1.36-20.32-12.13-20.32-10.45 0-12.58 10.73-13 15.55v35.86a3.42 3.42 0 0 1 -3.37 3.42h-16.42a3.41 3.41 0 0 1 -3.41-3.42v-66.87a3.41 3.41 0 0 1 3.41-3.42h16.42a3.42 3.42 0 0 1 3.42 3.42v5.78c3.88-5.82 9.63-10.31 21.9-10.31 27.18 0 27.02 25.38 27.02 39.32z"></path></g></g></g></motion.svg>
               </a>
+              <button
+                type="button"
+                onClick={copyEmail}
+                aria-label="Copy Ethan's email address"
+                title="Copy email address"
+                className="absolute left-[4.5rem] top-0 z-10 h-12 w-12 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
+              />
+              {emailCopied && <span role="status" className="absolute left-[4.5rem] top-full z-10 mt-2 whitespace-nowrap rounded-lg bg-slate-900 px-2 py-1 text-xs font-semibold text-white">Email copied</span>}
               <motion.svg  whileHover={{scale: 1.05}} className="h-[3rem] hover:cursor-pointer" id="fi_2991144" enableBackground="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m452 147.1 30 158.368-30 145.532h-392l-30-142.34 30-161.56c-9.924-7.451 54.209-11.824 96.698 20.075 52.311 39.273 88.285 118.054 99.302 126.325 1.702-1.278 8.371-51.331 63.402-92.646 42.025-31.551 138.263-58.007 132.598-53.754z" fill="#fff5f5"></path><path d="m452 451 30-145.532-30-158.368c5.665-4.254-90.573 22.202-132.598 53.754-55.032 41.314-61.699 91.368-63.402 92.646v157.5z" fill="#e3e7ea"></path><g><g><path d="m381.347 200.204c-.553.414-1.216.912-1.831 1.373-.399.301.395-.296 1.831-1.373z" fill="#00a66c"></path></g></g><g id="Gmail_1_"><g><g><path d="m60 98.5v352.5h-15c-24.901 0-45-20.101-45-45v-300c0-1.201 0-2.401.3-3.6z" fill="#f03800"></path></g></g></g><g><g><path d="m512 106v300c0 24.899-20.099 45-45 45h-15v-322.5l59.7-26.1c.3 1.199.3 2.399.3 3.6z" fill="#cd0000"></path></g></g><g><g><path d="m511.7 102.4c-296.807 222.693 42.503-32.641-255.7 191.1-26.043-19.54 93.342 70.784-255.7-191.1 1.8-23.401 21.001-41.4 44.7-41.4l118.391 36.293 92.609 121.207 66.953-102.714 144.047-54.786c23.699 0 42.9 17.999 44.7 41.4z" fill="#ff641a"></path></g></g><path d="m256 293.5c.081.06.073.055 0 0 20.933-15.706 220.772-164.894 255.7-191.1-1.8-23.401-21-41.4-44.7-41.4l-144.047 54.785-66.953 102.715z" fill="#f03800"></path><path d="m467 61-211 157.5-211-157.5z" fill="#fff5f5"></path><path d="m467 61h-211v157.5z" fill="#e3e7ea"></path></g></motion.svg>
             </div>
             </div>
