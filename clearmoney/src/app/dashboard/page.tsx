@@ -363,7 +363,7 @@ export default function SuperContributions() {
                 href="/SuperGap"
                 className="w-full rounded-xl bg-[#004687] py-3 text-center text-sm font-semibold tracking-wide text-white transition-colors hover:bg-[#00386b]"
               >
-                Explore SuperGap →
+                Explore SuperGap
               </Link>
             </motion.div>
           </div>
