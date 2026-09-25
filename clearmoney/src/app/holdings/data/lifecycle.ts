@@ -40,12 +40,12 @@ export const lifecycleStrategies: Record<string, LifecycleStrategy> = {
       "ART uses investment pools. Explore each pool where holdings are available.",
     bands: [
       {
-        age: "Under 50",
+        age: "50 and under",
         note: "High Growth Pool",
         options: ["High Growth Pool"],
       },
       {
-        age: "50–59",
+        age: "51–59",
         note: "Gradually moving into Balanced and Cash pools",
         options: ["High Growth Pool", "Balanced Pool", "Cash Pool"],
       },
